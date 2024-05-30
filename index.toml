@@ -6,7 +6,7 @@ hash = "6b0382b16279f26ff69014300541967a356a666eb0b91b422f6862f6b7dad17e"
 
 [[files]]
 file = "README.md"
-hash = "a2904a5cb4b2033bb1d6b67b1c2537addf273769f4a26742d5db1a7950a035a6"
+hash = "22fbc969302c385d66d8b9e41f7a019fbcb91f2c820a3bb7f877e7384bd389b5"
 
 [[files]]
 file = "config/defaultoptions/extra/baritone/settings.txt"
