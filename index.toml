@@ -1,14 +1,6 @@
 hash-format = "sha256"
 
 [[files]]
-file = ".aider.chat.history.md"
-hash = "c362ac6f102fef68f8aaa80fbfe95f3351de6aeb8271dab0ac0a56c38f4366bf"
-
-[[files]]
-file = ".aider.tags.cache.v3/cache.db"
-hash = "21234f942878c2c6d8a0b9194e579c5433ed719e02bfee2eac1b675765f054a7"
-
-[[files]]
 file = "LICENSE"
 hash = "6b0382b16279f26ff69014300541967a356a666eb0b91b422f6862f6b7dad17e"
 
@@ -1380,10 +1372,6 @@ metafile = true
 file = "mods/yungs-api.pw.toml"
 hash = "0604af4500f5e7ea46e38f7faef3459023c305b3155eacbf406e600073f643d9"
 metafile = true
-
-[[files]]
-file = "pack.toml.backup"
-hash = "e0a4abfc15ed7cf6ca10a4e40e6abfa81ee66ed19481e3b9ffe429c91c26c2af"
 
 [[files]]
 file = "resourcepacks/fresh-animations.pw.toml"
