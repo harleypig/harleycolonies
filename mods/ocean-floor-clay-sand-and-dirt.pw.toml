@@ -1,0 +1,13 @@
+name = "Ocean Floor - Clay Sand and Dirt"
+filename = "oceanfloor-1.20.1-1.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "4977680f30a0e0095dcbfed4d3f134afea93c638"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4624780
+project-id = 231837

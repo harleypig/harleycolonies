@@ -1,0 +1,13 @@
+name = "Vanilla AIOTs"
+filename = "VanillaAIOTs-1.20.1-3.0.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5e452b6284b35946e784b2ddd72fd82fd1d93a39"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4983752
+project-id = 482123

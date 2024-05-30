@@ -1,0 +1,13 @@
+name = "Anvil Balance"
+filename = "anvilbalance-1.20-1.1.0-all.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2cd23150373809bab25ab524c42605df8cef38d5"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5117162
+project-id = 949135

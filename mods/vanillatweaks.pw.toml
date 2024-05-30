@@ -1,0 +1,13 @@
+name = "VanillaTweaks [Fabric & Forge]"
+filename = "VanillaTweaks-forge-1.20.1-1.5.71.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "24ebac8634c8e621519787b94dd671eb72e19d60"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5004559
+project-id = 272637

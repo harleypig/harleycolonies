@@ -1,0 +1,13 @@
+name = "Cam's Better Lights"
+filename = "[v1.3.2]-Cam's-Better-Lights.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "fa21fdb7229d576a0cec4967dce1c8ea7361d603"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4942736
+project-id = 943319

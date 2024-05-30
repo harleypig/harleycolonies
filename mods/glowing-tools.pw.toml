@@ -1,0 +1,13 @@
+name = "Glowing Tools"
+filename = "glowing_tools_forge-1.4.2+1.20.1-com.miluum.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "47df3db37a98b2365e5b533070d44daa70a28bff"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5011902
+project-id = 939233

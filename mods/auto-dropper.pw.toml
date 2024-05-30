@@ -1,0 +1,13 @@
+name = "Auto Dropper"
+filename = "AutoDropper-1.20.1-12.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "34768500d08b41bb66a301d37688780b36a60565"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4659511
+project-id = 245149

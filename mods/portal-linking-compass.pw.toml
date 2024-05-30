@@ -1,0 +1,13 @@
+name = "Portal Linking Compass"
+filename = "portal-linking-compass-forge-1.0.1+mc1.20.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "bee4ae06197d9851b03c97e9b0e0e73d31ff2117"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4820269
+project-id = 854493

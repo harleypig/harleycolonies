@@ -1,0 +1,16 @@
+name = "More Immersive Aircraft"
+filename = "moreimmersiveaircraft-1.3.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1ab66f94484e7fd4f5cafadaf469bd8f359656d0"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4729943
+project-id = 907749
+
+[option]
+optional = true

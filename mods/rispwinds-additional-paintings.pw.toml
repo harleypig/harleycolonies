@@ -1,0 +1,13 @@
+name = "Rispwind's Additional Paintings [FABRIC/FORGE/NEOFORGE]"
+filename = "additionalpaintings_v110_FORGE_1_20_x.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1f0c48b382f91de36e3e0d21e100941a4edf7d48"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4952298
+project-id = 941222

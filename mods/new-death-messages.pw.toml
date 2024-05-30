@@ -1,0 +1,13 @@
+name = "New Death Messages"
+filename = "New Death Messages Mod.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "8c5477588059328310a3489bc131395a08c82172"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4765816
+project-id = 916033

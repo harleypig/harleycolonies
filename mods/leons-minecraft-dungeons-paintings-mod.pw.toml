@@ -1,0 +1,13 @@
+name = "Leon's Dungeons Paintings"
+filename = "[Forge 1.20.1]dungeons_paintings_mod-2.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "a9c02a7aa4e67c43fc66ba49b290d39221a69dba"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5241898
+project-id = 958097

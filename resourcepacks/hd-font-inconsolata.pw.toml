@@ -1,0 +1,13 @@
+name = "HD Font - Inconsolata"
+filename = "Inconsolata+120.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1f276c73d3f85305f726f137d156a1d26b3fb66c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4753855
+project-id = 394203

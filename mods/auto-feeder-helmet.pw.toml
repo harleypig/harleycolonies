@@ -1,0 +1,13 @@
+name = "Auto Feeder Helmet [NEOFORGE/FORGE]"
+filename = "FeederHelmet-47.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "9bffbc40ca67549902cb5e82af1f1588a538ce06"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4764795
+project-id = 292257

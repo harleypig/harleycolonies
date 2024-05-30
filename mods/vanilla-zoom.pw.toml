@@ -1,0 +1,13 @@
+name = "Vanilla Zoom"
+filename = "vanillazoom-1.20.1-2.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7962ec2d43480cb9006299fbc459c7cd68fa7d16"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4963661
+project-id = 695354

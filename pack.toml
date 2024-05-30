@@ -1,0 +1,12 @@
+name = "HarleyColonies"
+version = "v0.0.3"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "22a067bee9ec6855e1522be6fe5f74db8f10b737d533e632b6fa48a4032d993f"
+
+[versions]
+forge = "47.2.0"
+minecraft = "1.20.1"

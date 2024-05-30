@@ -1,0 +1,13 @@
+name = "Just Enough Sculk Sensor"
+filename = "jess-1.20.1-forge-1.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2a34fc8ba5e9e78f98c50ed958b6cc16b6b60574"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4692371
+project-id = 848098

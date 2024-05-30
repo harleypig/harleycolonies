@@ -1,0 +1,13 @@
+name = "DireColonies"
+filename = "DireColonies-3.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "65aa67ef0127acda08b84b1000a52b55272491f3"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5226185
+project-id = 906255

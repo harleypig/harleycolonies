@@ -1,0 +1,13 @@
+name = "more ships"
+filename = "more_ships_1.20.1_4.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "75f74f7e427072ad385b7796ee36574943952e36"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4805778
+project-id = 466978

@@ -1,0 +1,13 @@
+name = "Enchantsmith"
+filename = "enchantsmith-forge-1.0.4-1.20.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "116f6bcccc3bd50c287a64ccfc07e375d93b130a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5160268
+project-id = 914215

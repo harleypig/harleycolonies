@@ -1,0 +1,6 @@
+allowInventory true
+enterPortal false
+freeLook false
+randomLooking 0.1
+replantNetherWart true
+useSwordToMine false

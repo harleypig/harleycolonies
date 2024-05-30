@@ -1,0 +1,13 @@
+name = "More Automation"
+filename = "moreautomationmod-1.5.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "9dac0ce3c4936b6e243e71723598dfa9bebc0c41"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5307909
+project-id = 885289

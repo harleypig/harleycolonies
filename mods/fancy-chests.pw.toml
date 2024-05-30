@@ -1,0 +1,13 @@
+name = "Fancy Chests"
+filename = "fancychests-1.1-forge-mc1.19.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b6ed138edbcb02fc3892c72dd04de6895870e19a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4160811
+project-id = 648719

@@ -1,0 +1,13 @@
+name = "Auto HUD"
+filename = "autohud-6.3.5+1.20.1-forge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6ad6e9684f17f53efae884a67a4162198358be82"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5355371
+project-id = 623806

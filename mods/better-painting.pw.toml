@@ -1,0 +1,13 @@
+name = "Better Painting"
+filename = "better_painting_0.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "c1dbd143443af229135889dcbf96bb1b0aa8ce92"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4952390
+project-id = 949471

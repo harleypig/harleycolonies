@@ -1,0 +1,13 @@
+name = "Subterrestrial"
+filename = "subterrestrial-forge-1.20-2.2.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7a0524d0b270c81782bbd53a86fd7141bdd0db94"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4574890
+project-id = 575588

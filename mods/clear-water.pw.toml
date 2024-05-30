@@ -1,0 +1,13 @@
+name = "Clear Water"
+filename = "Clear-Water-2.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "52398c73662b66dae4d47d960236e37e0e980281"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4744630
+project-id = 286098

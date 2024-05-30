@@ -1,0 +1,13 @@
+name = "project-621192"
+filename = "baritone-api-forge-1.10.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "63289f5c67b6ef410a835b2061bd7354c8c803a7"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4586118
+project-id = 621192
