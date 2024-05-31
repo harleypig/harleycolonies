@@ -29,16 +29,16 @@ the grind and adding a variety of features to make gameplay more enjoyable.
 
 Some of the more popular mods included in this pack:
 
-- **Minecolonies**: Central to the modpack, allowing you to build and manage your own colony.
-- **Baritone AI Pathfinder**: Automate tasks and navigate the world with ease.
-- **JourneyMap**: A real-time mapping tool that helps you navigate and explore.
-- **Biomes O'Plenty**: Adds a variety of new biomes to explore.
-- **Storage Drawers**: Efficient storage solutions for your items.
-- **Better Advancements**: Improved advancement system to track your progress.
-- **JEI (Just Enough Items)**: Easily view crafting recipes and item uses.
-- **Nature's Compass**: Find specific biomes with ease.
-- **Comforts**: Adds sleeping bags and hammocks for more flexible sleeping options.
-- **Waystones**: Teleport between different locations in your world.
+- **[Minecolonies](https://www.curseforge.com/minecraft/mc-mods/minecolonies)**: Central to the modpack, allowing you to build and manage your own colony.
+- **[Baritone AI Pathfinder](https://www.curseforge.com/minecraft/mc-mods/baritone)**: Automate tasks and navigate the world with ease.
+- **[JourneyMap](https://www.curseforge.com/minecraft/mc-mods/journeymap)**: A real-time mapping tool that helps you navigate and explore.
+- **[Biomes O'Plenty](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty)**: Adds a variety of new biomes to explore.
+- **[Storage Drawers](https://www.curseforge.com/minecraft/mc-mods/storage-drawers)**: Efficient storage solutions for your items.
+- **[Better Advancements](https://www.curseforge.com/minecraft/mc-mods/better-advancements)**: Improved advancement system to track your progress.
+- **[JEI (Just Enough Items)](https://www.curseforge.com/minecraft/mc-mods/jei)**: Easily view crafting recipes and item uses.
+- **[Nature's Compass](https://www.curseforge.com/minecraft/mc-mods/natures-compass)**: Find specific biomes with ease.
+- **[Comforts](https://www.curseforge.com/minecraft/mc-mods/comforts)**: Adds sleeping bags and hammocks for more flexible sleeping options.
+- **[Waystones](https://www.curseforge.com/minecraft/mc-mods/waystones)**: Teleport between different locations in your world.
 
 ## Recommended Setup
 
