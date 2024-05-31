@@ -11,3 +11,9 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4582712
 project-id = 322360
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/shaders/vanilla-plus-shader"
+issues = "https://github.com/rre36/ShaderpackIssueTracker"
+categories = ["fantasy", "vanilla"]

@@ -1,12 +1,12 @@
 name = "HarleyColonies"
 author = "Alan Young"
-version = "v0.1.0"
+version = "v0.1.1"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "c03e69be5e4d373d85aeb6b06189919feccc4644c128976577ba08e828d03baf"
+hash = "01c23ca522e2cccb3b33f56334be1b91a3237f39e2e91ee23bab4b9031209192"
 
 [versions]
 forge = "47.2.32"

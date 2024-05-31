@@ -1414,5 +1414,5 @@ metafile = true
 
 [[files]]
 file = "vanilla-plus-shader.pw.toml"
-hash = "1eb275496604d6743f17a7398ce68a57c8199bd19b5c2f174668d1c155c0c0e0"
+hash = "27e72b90e3d059ed3bc654ebec957ddc87f4443aba70a956a0cb14d53daecf74"
 metafile = true
