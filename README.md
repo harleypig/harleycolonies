@@ -31,6 +31,10 @@ feel free to let me know.
 
 None at the moment.
 
+## Project Page
+
+- [Curseforge](https://legacy.curseforge.com/minecraft/modpacks/harleycolonies)
+
 ## Resource Packs
 
 * HD Font - Inconsolata
