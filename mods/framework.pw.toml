@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5180972
 project-id = 549225
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/framework"
+issues = "https://github.com/MrCrayfish/Framework/issues"
+source = "https://github.com/MrCrayfish/Framework"
+categories = ["library-api"]

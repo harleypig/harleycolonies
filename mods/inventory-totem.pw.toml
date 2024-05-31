@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4964664
 project-id = 349071
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/inventory-totem"
+issues = "https://github.com/Serilum/.issue-tracker/labels/Mod: Inventory Totem"
+source = "https://github.com/Serilum/Inventory-Totem"
+categories = ["armor-weapons-tools", "mc-miscellaneous"]

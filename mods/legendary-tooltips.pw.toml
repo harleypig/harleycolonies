@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4662781
 project-id = 532127
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/legendary-tooltips"
+wiki = "https://github.com/AHilyard/LegendaryTooltips/wiki/Configuration-Instructions"
+issues = "https://github.com/AHilyard/LegendaryTooltips/issues"
+source = "https://github.com/AHilyard/LegendaryTooltips"
+categories = ["utility-qol", "cosmetic", "adventure-rpg", "armor-weapons-tools", "mc-miscellaneous"]

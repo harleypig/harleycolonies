@@ -11,3 +11,8 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4160811
 project-id = 648719
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/fancy-chests"
+categories = ["utility-qol", "cosmetic"]

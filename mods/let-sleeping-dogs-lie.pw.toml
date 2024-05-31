@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4618816
 project-id = 334098
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/let-sleeping-dogs-lie"
+issues = "https://github.com/iChun/LetSleepingDogsLie/issues"
+source = "https://github.com/iChun/LetSleepingDogsLie"
+categories = ["cosmetic"]

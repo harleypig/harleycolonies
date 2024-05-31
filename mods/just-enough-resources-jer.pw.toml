@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5057220
 project-id = 240630
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/just-enough-resources-jer"
+issues = "https://github.com/way2muchnoise/JustEnoughResources/issues"
+source = "https://github.com/way2muchnoise/JustEnoughResources"
+categories = ["world-ores-resources", "world-mobs", "map-information", "world-biomes", "mc-addons"]

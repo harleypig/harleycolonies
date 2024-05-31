@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4964588
 project-id = 699577
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/manure"
+issues = "https://github.com/Serilum/.issue-tracker/labels/Mod: Manure"
+source = "https://github.com/Serilum/Manure"
+categories = ["utility-qol", "technology-farming"]

@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5152196
 project-id = 223852
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/storage-drawers"
+issues = "https://github.com/jaquadro/StorageDrawers/issues"
+source = "https://github.com/jaquadro/StorageDrawers"
+categories = ["cosmetic", "storage"]

@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5089991
 project-id = 665658
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/canary"
+issues = "https://github.com/AbdElAziz333/Canary/issues"
+source = "https://github.com/AbdElAziz333/Canary"
+categories = ["server-utility", "mc-miscellaneous"]

@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4964258
 project-id = 447359
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/passive-shield"
+issues = "https://github.com/Serilum/.issue-tracker/labels/Mod: Passive Shield"
+source = "https://github.com/Serilum/Passive-Shield"
+categories = ["cosmetic", "armor-weapons-tools", "adventure-rpg"]

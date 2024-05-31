@@ -11,3 +11,8 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4765816
 project-id = 916033
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/new-death-messages"
+categories = ["server-utility", "cosmetic", "map-information", "mc-miscellaneous", "adventure-rpg"]

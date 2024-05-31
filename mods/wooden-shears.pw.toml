@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4690898
 project-id = 443192
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/wooden-shears"
+wiki = "https://github.com/cech12/WoodenShears/wiki"
+issues = "https://github.com/cech12/WoodenShears/issues"
+source = "https://github.com/cech12/WoodenShears"
+categories = ["cosmetic", "armor-weapons-tools", "technology-farming"]

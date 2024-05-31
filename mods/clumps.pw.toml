@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5278538
 project-id = 256717
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/clumps"
+issues = "https://github.com/jaredlll08/Clumps/issues"
+source = "https://github.com/jaredlll08/Clumps"
+categories = ["storage", "utility-qol", "server-utility"]

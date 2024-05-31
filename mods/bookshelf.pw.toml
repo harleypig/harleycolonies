@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5250293
 project-id = 228525
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/bookshelf"
+issues = "https://github.com/Darkhax-Minecraft/Bookshelf/issues"
+source = "https://github.com/Darkhax-Minecraft/Bookshelf"
+categories = ["server-utility", "mc-miscellaneous", "library-api"]

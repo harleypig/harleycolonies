@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5050080
 project-id = 955605
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/cerbons-api"
+issues = "https://github.com/CERBON-MODS/CERBONs-API/issues"
+source = "https://github.com/CERBON-MODS/CERBONs-API"
+categories = ["library-api", "library-api"]

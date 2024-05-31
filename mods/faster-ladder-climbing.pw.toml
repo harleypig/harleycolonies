@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4819758
 project-id = 258881
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/faster-ladder-climbing"
+issues = "https://github.com/arollyson/FasterLadderClimbing/issues"
+source = "https://github.com/arollyson/FasterLadderClimbing"
+categories = ["mc-miscellaneous"]

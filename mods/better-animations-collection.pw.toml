@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4613527
 project-id = 323976
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/better-animations-collection"
+issues = "https://github.com/Fuzss/betteranimationscollection/issues"
+source = "https://github.com/Fuzss/betteranimationscollection"
+categories = ["utility-qol", "cosmetic"]

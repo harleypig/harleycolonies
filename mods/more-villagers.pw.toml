@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4857287
 project-id = 484954
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/more-villagers"
+issues = "https://github.com/samedifferent/morevillagers/issues"
+source = "https://github.com/samedifferent/morevillagers"
+categories = ["adventure-rpg", "world-mobs"]

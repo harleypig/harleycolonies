@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4764804
 project-id = 220318
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty"
+issues = "https://github.com/Glitchfiend/BiomesOPlenty/issues"
+source = "https://github.com/Glitchfiend/BiomesOPlenty"
+categories = ["world-biomes", "world-gen"]

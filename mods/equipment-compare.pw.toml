@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4650073
 project-id = 502561
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/equipment-compare"
+issues = "https://github.com/AHilyard/EquipmentCompare/issues"
+source = "https://github.com/AHilyard/EquipmentCompare"
+categories = ["map-information", "armor-weapons-tools", "utility-qol", "cosmetic", "mc-miscellaneous"]

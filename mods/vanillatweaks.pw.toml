@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5004559
 project-id = 272637
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/vanillatweaks"
+wiki = "https://strikerrocker.github.io/vanillatweaks/"
+issues = "https://github.com/StrikerRockers-Mods/VanillaTweaks/issues"
+source = "https://github.com/StrikerRockers-Mods/VanillaTweaks"
+categories = ["utility-qol"]

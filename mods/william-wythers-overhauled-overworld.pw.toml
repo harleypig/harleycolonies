@@ -11,3 +11,8 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4793728
 project-id = 921022
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/william-wythers-overhauled-overworld"
+categories = ["world-gen", "world-biomes", "adventure-rpg"]

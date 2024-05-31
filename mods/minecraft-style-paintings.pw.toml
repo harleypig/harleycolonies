@@ -11,3 +11,8 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5241659
 project-id = 419711
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/minecraft-style-paintings"
+categories = ["cosmetic", "cosmetic", "mc-miscellaneous"]

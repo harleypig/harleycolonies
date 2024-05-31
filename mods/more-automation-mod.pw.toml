@@ -11,3 +11,9 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5307909
 project-id = 885289
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/more-automation-mod"
+source = "https://github.com/mabidux/more-automation-mod"
+categories = ["technology-farming", "technology", "technology-automation", "redstone"]

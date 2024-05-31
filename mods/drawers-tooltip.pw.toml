@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4680046
 project-id = 381605
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/drawers-tooltip"
+issues = "https://github.com/Snownee/DrawersTooltip/issues"
+source = "https://github.com/Snownee/DrawersTooltip"
+categories = ["mc-addons", "storage", "utility-qol"]

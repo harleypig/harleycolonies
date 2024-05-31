@@ -11,3 +11,9 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5073954
 project-id = 266228
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/corail-pillar"
+issues = "https://github.com/Corail31/corail-pillar/issues"
+categories = ["world-structures", "adventure-rpg", "world-ores-resources", "cosmetic"]

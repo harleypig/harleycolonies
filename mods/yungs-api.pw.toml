@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5331703
 project-id = 421850
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/yungs-api"
+issues = "https://github.com/yungnickyoung/YUNGs-API/issues"
+source = "https://github.com/yungnickyoung/YUNGs-API"
+categories = ["library-api"]

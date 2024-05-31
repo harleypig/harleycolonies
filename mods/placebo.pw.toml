@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5098182
 project-id = 283644
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/placebo"
+issues = "https://github.com/Shadows-of-Fire/Placebo/issues"
+source = "https://github.com/Shadows-of-Fire/Placebo"
+categories = ["library-api"]

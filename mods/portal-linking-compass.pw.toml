@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4820269
 project-id = 854493
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/portal-linking-compass"
+issues = "https://github.com/maxoduke/Portal-Linking-Compass/issues"
+source = "https://github.com/maxoduke/Portal-Linking-Compass"
+categories = ["utility-qol", "map-information"]

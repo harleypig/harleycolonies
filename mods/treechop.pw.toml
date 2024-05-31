@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5168480
 project-id = 421377
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/treechop"
+issues = "https://github.com/hammertater/treechop/issues"
+source = "https://github.com/hammertater/treechop"
+categories = ["mc-miscellaneous"]

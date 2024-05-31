@@ -11,3 +11,9 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4680891
 project-id = 398623
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/flat-bedrock"
+issues = "https://github.com/nanite/Flat-Bedrock/issues"
+categories = ["world-gen"]

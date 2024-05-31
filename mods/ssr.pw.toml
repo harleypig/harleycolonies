@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5179463
 project-id = 912104
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/ssr"
+issues = "https://github.com/MCTeamPotato/Kasualix-Issue-Tracker"
+source = "https://github.com/MCTeamPotato/SparseStructuresReforged"
+categories = ["world-structures", "world-gen", "server-utility"]

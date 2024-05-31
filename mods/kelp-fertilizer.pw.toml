@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4964601
 project-id = 367598
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/kelp-fertilizer"
+issues = "https://github.com/Serilum/.issue-tracker/labels/Mod: Kelp Fertilizer"
+source = "https://github.com/Serilum/Kelp-Fertilizer"
+categories = ["world-ores-resources", "technology-farming"]

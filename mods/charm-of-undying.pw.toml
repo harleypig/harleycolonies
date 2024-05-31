@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5159193
 project-id = 316873
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/charm-of-undying"
+issues = "https://github.com/TheIllusiveC4/CurioOfUndying/issues"
+source = "https://github.com/TheIllusiveC4/CurioOfUndying"
+categories = ["armor-weapons-tools"]

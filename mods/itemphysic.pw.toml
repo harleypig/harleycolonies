@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5275217
 project-id = 258587
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/itemphysic"
+issues = "https://github.com/CreativeMD/ItemPhysic/issues"
+source = "https://github.com/CreativeMD/ItemPhysic"
+categories = ["cosmetic"]

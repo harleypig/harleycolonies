@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5140912
 project-id = 531761
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/balm"
+wiki = "https://mods.twelveiterations.com/"
+issues = "https://github.com/ModdingForBlockheads/Balm/issues"
+source = "https://github.com/ModdingForBlockheads/Balm"
+categories = ["library-api"]

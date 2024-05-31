@@ -11,3 +11,8 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4919885
 project-id = 740025
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/waterphysics"
+categories = ["adventure-rpg", "world-gen", "technology-item-fluid-energy-transport", "utility-qol"]

@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4731947
 project-id = 551736
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/dynamiclights-reforged"
+issues = "https://github.com/TeamDeusVult/DynamicLightsReforged/issues"
+source = "https://github.com/anthxnymc/DynamicLightsReforged"
+categories = ["cosmetic"]

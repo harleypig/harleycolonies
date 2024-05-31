@@ -11,3 +11,8 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5241898
 project-id = 958097
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/leons-minecraft-dungeons-paintings-mod"
+categories = ["cosmetic"]

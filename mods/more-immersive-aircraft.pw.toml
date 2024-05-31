@@ -12,5 +12,9 @@ mode = "metadata:curseforge"
 file-id = 4729943
 project-id = 907749
 
-[option]
-optional = true
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/more-immersive-aircraft"
+issues = "https://github.com/Favouriteless/MoreImmersiveAircraft/issues"
+source = "https://github.com/Favouriteless/MoreImmersiveAircraft"
+categories = ["adventure-rpg", "technology-player-transport", "technology"]

@@ -11,3 +11,9 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5127481
 project-id = 453763
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/texture-packs/fresh-animations"
+issues = "https://discord.gg/FVGp2479yU"
+categories = ["modern", "miscellaneous", "animated", "traditional", "sixteen-x"]

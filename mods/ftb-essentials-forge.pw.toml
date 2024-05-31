@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4896152
 project-id = 410811
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/ftb-essentials-forge"
+wiki = "https://feedthebeast.notion.site/FTB-Mod-Documentation-da2e359bad2449459d58d787edda3168"
+issues = "https://github.com/FTBTeam/FTB-Essentials/issues"
+source = "https://github.com/FTBTeam/FTB-Essentials"
+categories = ["map-information", "server-utility", "technology-player-transport"]

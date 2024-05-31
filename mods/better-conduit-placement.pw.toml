@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4965384
 project-id = 366997
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/better-conduit-placement"
+issues = "https://github.com/Serilum/.issue-tracker/labels/Mod: Better Conduit Placement"
+source = "https://github.com/Serilum/Better-Conduit-Placement"
+categories = ["mc-miscellaneous", "world-structures"]

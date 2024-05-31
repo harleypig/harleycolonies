@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5375143
 project-id = 353928
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/botany-pots"
+wiki = "https://github.com/Darkhax-Minecraft/BotanyPots/wiki"
+issues = "https://github.com/Darkhax-Minecraft/BotanyPots/issues"
+source = "https://github.com/Darkhax-Minecraft/BotanyPots"
+categories = ["mc-food", "world-ores-resources", "technology-farming", "cosmetic"]

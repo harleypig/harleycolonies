@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5368402
 project-id = 862201
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/distracting-trims"
+issues = "https://github.com/Darkhax-Minecraft/Distracting-Trims/issues"
+source = "https://github.com/Darkhax-Minecraft/Distracting-Trims"
+categories = ["cosmetic", "world-mobs", "armor-weapons-tools"]

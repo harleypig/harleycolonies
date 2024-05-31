@@ -11,3 +11,8 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5351562
 project-id = 591388
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/incendium"
+categories = ["world-dimensions", "world-biomes", "world-gen"]

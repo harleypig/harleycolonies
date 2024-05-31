@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4712189
 project-id = 252848
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/natures-compass"
+issues = "https://github.com/MattCzyr/NaturesCompass/issues"
+source = "https://github.com/MattCzyr/NaturesCompass"
+categories = ["armor-weapons-tools", "world-biomes", "technology", "map-information"]

@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4973441
 project-id = 348521
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/cloth-config"
+wiki = "https://shedaniel.gitbook.io/cloth-config/"
+issues = "https://github.com/shedaniel/ClothConfig/issues"
+source = "https://github.com/shedaniel/ClothConfig"
+categories = ["library-api"]

@@ -11,3 +11,8 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4952298
 project-id = 941222
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/rispwinds-additional-paintings"
+categories = ["cosmetic", "mc-creator"]

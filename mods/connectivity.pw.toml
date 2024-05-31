@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5181534
 project-id = 470193
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/connectivity"
+issues = "https://github.com/someaddons/connectivity/issues"
+source = "https://github.com/someaddons/connectivity"
+categories = ["technology-player-transport", "map-information", "server-utility"]

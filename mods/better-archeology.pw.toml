@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5343082
 project-id = 835687
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/better-archeology"
+wiki = "https://github.com/Pandarix/BetterArcheology/wiki"
+issues = "https://github.com/Pandarix/BetterArcheology/issues"
+source = "https://github.com/Pandarix/BetterArcheology"
+categories = ["armor-weapons-tools", "world-gen", "cosmetic", "adventure-rpg", "world-structures"]

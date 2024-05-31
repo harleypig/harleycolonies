@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5378112
 project-id = 342584
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/collective"
+issues = "https://github.com/Serilum/.issue-tracker/labels/Library: Collective"
+source = "https://github.com/Serilum/Collective"
+categories = ["library-api"]

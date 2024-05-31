@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4650325
 project-id = 638111
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/prism-lib"
+wiki = "https://github.com/AHilyard/Prism/wiki/Prism-Documentation"
+issues = "https://github.com/AHilyard/Prism/issues"
+source = "https://github.com/AHilyard/Prism"
+categories = ["cosmetic", "library-api", "mc-miscellaneous", "utility-qol"]

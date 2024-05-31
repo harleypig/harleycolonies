@@ -11,3 +11,8 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5117162
 project-id = 949135
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/anvil-balance"
+categories = ["technology", "armor-weapons-tools", "adventure-rpg", "utility-qol"]

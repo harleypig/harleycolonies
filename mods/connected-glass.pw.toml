@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5002550
 project-id = 383129
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/connected-glass"
+issues = "https://github.com/SuperMartijn642/ConnectedGlass/issues"
+source = "https://github.com/SuperMartijn642/ConnectedGlass"
+categories = ["cosmetic"]

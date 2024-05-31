@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4863626
 project-id = 401648
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/betterf3"
+issues = "https://github.com/TreyRuffy/BetterF3/issues/"
+source = "https://github.com/TreyRuffy/BetterF3"
+categories = ["map-information"]

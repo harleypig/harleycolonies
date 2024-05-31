@@ -11,3 +11,8 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4692371
 project-id = 848098
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/just-enough-sculk-sensor"
+categories = ["utility-qol", "mc-addons", "redstone"]

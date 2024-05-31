@@ -11,3 +11,8 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4942736
 project-id = 943319
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/cams-lights"
+categories = ["cosmetic", "redstone", "cosmetic", "redstone"]

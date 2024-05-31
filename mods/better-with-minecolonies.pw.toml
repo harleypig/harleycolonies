@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4964546
 project-id = 344906
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/better-with-minecolonies"
+wiki = "https://gitlab.com/kreezxil/Better-With-Minecolonies/-/wikis/home"
+issues = "https://gitlab.com/kreezxil/Better-With-Minecolonies/-/issues"
+source = "https://gitlab.com/kreezxil/Better-With-Minecolonies"
+categories = ["mc-miscellaneous"]

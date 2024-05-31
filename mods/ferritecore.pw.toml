@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4810975
 project-id = 429235
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/ferritecore"
+issues = "https://github.com/malte0811/FerriteCore/issues"
+source = "https://github.com/malte0811/FerriteCore"
+categories = ["performance"]

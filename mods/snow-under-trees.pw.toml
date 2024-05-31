@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5263159
 project-id = 353942
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/snow-under-trees"
+issues = "https://github.com/bl4ckscor3/SnowUnderTrees/issues"
+source = "https://github.com/bl4ckscor3/SnowUnderTrees"
+categories = ["world-gen"]

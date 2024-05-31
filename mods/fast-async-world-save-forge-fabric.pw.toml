@@ -11,3 +11,9 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5218101
 project-id = 951499
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/fast-async-world-save-forge-fabric"
+issues = "https://github.com/someaddons/FastAsyncWorldSave/issues"
+categories = ["map-information", "utility-qol", "server-utility"]

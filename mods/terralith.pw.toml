@@ -11,3 +11,9 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5351328
 project-id = 513688
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/terralith"
+wiki = "http://stardustlabs.miraheze.org"
+categories = ["world-gen", "world-biomes", "world-structures"]

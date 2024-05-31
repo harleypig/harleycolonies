@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4673529
 project-id = 293856
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/crafting-automat"
+issues = "https://github.com/Lolcroc/ProjectLepton/issues"
+source = "https://github.com/Lolcroc/CraftingAutomat"
+categories = ["redstone", "technology-processing", "technology-automation"]

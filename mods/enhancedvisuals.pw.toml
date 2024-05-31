@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5370490
 project-id = 255389
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/enhancedvisuals"
+issues = "https://github.com/CreativeMD/EnhancedVisuals/issues"
+source = "https://github.com/CreativeMD/EnhancedVisuals"
+categories = ["mc-miscellaneous"]

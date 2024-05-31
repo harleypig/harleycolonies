@@ -11,3 +11,9 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5278170
 project-id = 975460
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/pandalib"
+source = "https://github.com/PandaDap2006/PandaLib"
+categories = ["library-api", "library-api"]

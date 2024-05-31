@@ -11,3 +11,8 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4659511
 project-id = 245149
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/auto-dropper"
+categories = ["technology-item-fluid-energy-transport"]

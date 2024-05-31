@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4869702
 project-id = 379887
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/passable-foliage"
+issues = "https://github.com/Snownee/PassableFoliage/issues"
+source = "https://github.com/Snownee/PassableFoliage"
+categories = ["utility-qol"]

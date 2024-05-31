@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5170315
 project-id = 326652
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/cupboard"
+issues = "https://github.com/someaddons/cupboard/issues"
+source = "https://github.com/someaddons/cupboard"
+categories = ["utility-qol"]

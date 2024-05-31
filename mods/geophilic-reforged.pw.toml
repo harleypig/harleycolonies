@@ -11,3 +11,8 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4875199
 project-id = 936730
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/geophilic-reforged"
+categories = ["world-ores-resources", "world-biomes", "world-gen"]

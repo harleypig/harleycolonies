@@ -11,3 +11,9 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5160268
 project-id = 914215
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/enchantsmith"
+source = "https://github.com/Scouter456/Enchantsmith"
+categories = ["world-mobs", "world-gen"]

@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4711316
 project-id = 271740
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/toast-control"
+issues = "https://github.com/Shadows-of-Fire/Toast-Control/issues"
+source = "https://github.com/Shadows-of-Fire/Toast-Control"
+categories = ["cosmetic"]

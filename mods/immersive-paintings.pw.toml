@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4789114
 project-id = 639584
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/immersive-paintings"
+wiki = "https://github.com/Luke100000/ImmersivePaintings/wiki"
+issues = "https://github.com/Luke100000/ImmersivePaintings/issues"
+source = "https://github.com/Luke100000/ImmersivePaintings"
+categories = ["cosmetic"]

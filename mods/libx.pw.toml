@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5207625
 project-id = 412525
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/libx"
+wiki = "https://moddingx.org/wiki"
+issues = "https://github.com/noeppi-noeppi/LibX/issues"
+source = "https://github.com/noeppi-noeppi/LibX"
+categories = ["library-api"]

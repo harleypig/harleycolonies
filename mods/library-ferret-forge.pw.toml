@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4601234
 project-id = 532727
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/library-ferret-forge"
+wiki = "https://www.curseforge.com/minecraft/mc-mods/library-ferret-forge/pages/main"
+issues = "https://github.com/jtorleonstudios/HUB-Library-Ferret/issues"
+source = "http://adfoc.us/70606381530660"
+categories = ["library-api"]

@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4965368
 project-id = 344036
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/better-spawner-control"
+issues = "https://github.com/Serilum/.issue-tracker/labels/Mod: Better Spawner Control"
+source = "https://github.com/Serilum/Better-Spawner-Control"
+categories = ["server-utility", "world-mobs"]

@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4976264
 project-id = 378921
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/passive-endermen"
+issues = "https://github.com/Serilum/.issue-tracker/labels/Mod: Passive Endermen"
+source = "https://github.com/Serilum/Passive-Endermen"
+categories = ["adventure-rpg", "world-mobs"]

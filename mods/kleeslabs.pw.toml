@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4583104
 project-id = 241895
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/kleeslabs"
+wiki = "https://mods.twelveiterations.com/mc/kleeslabs"
+issues = "https://github.com/ModdingForBlockheads/KleeSlabs/issues"
+source = "https://github.com/ModdingForBlockheads/KleeSlabs"
+categories = ["utility-qol"]

@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5240118
 project-id = 419372
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/easy-piglins"
+issues = "https://github.com/henkelmax/easy-piglins/issues"
+source = "https://github.com/henkelmax/easy-piglins"
+categories = ["server-utility", "cosmetic", "technology-farming", "redstone"]

@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5293020
 project-id = 907856
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/recipe-essentials-forge-fabric"
+issues = "https://github.com/someaddons/recipeessentials/issues/new/choose"
+source = "https://github.com/someaddons/recipeessentials"
+categories = ["utility-qol", "server-utility", "technology-automation", "technology"]

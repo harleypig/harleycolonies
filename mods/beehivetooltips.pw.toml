@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4761156
 project-id = 376753
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/beehivetooltips"
+issues = "https://github.com/EDToaster/beehive-tooltips/issues"
+source = "https://github.com/EDToaster/beehive-tooltips"
+categories = ["map-information", "utility-qol", "cosmetic"]

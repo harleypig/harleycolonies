@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5340612
 project-id = 412082
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/supplementaries"
+wiki = "https://github.com/MehVahdJukaar/Supplementaries/wiki/Customization"
+source = "https://github.com/MehVahdJukaar/Supplementaries"
+categories = ["cosmetic", "redstone", "storage", "mc-miscellaneous"]

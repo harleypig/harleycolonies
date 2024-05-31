@@ -11,3 +11,9 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5258176
 project-id = 883585
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/pandas-extra-details"
+source = "https://github.com/PandaDap2006/Pandas-Extra-Details"
+categories = ["mc-miscellaneous"]

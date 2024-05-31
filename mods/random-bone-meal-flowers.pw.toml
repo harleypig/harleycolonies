@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4964120
 project-id = 345572
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/random-bone-meal-flowers"
+issues = "https://github.com/Serilum/.issue-tracker/labels/Mod: Random Bone Meal Flowers"
+source = "https://github.com/Serilum/Random-Bone-Meal-Flowers"
+categories = ["cosmetic", "world-gen"]

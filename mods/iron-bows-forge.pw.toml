@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5013246
 project-id = 631414
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/iron-bows-forge"
+issues = "https://github.com/mpbb/ironbows/issues"
+source = "https://github.com/mpbb/ironbows"
+categories = ["armor-weapons-tools"]

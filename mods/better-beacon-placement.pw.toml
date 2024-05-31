@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4965393
 project-id = 350018
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/better-beacon-placement"
+issues = "https://github.com/Serilum/.issue-tracker/labels/Mod: Better Beacon Placement"
+source = "https://github.com/Serilum/Better-Beacon-Placement"
+categories = ["mc-miscellaneous", "world-ores-resources"]

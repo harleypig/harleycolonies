@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4764795
 project-id = 292257
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/auto-feeder-helmet"
+issues = "https://github.com/canitzp/FeederHelmet/issues"
+source = "https://github.com/canitzp/FeederHelmet"
+categories = ["mc-food", "addons-thermalexpansion", "armor-weapons-tools", "addons-industrialcraft"]

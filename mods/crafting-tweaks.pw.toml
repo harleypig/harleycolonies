@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5140224
 project-id = 233071
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/crafting-tweaks"
+wiki = "https://mods.twelveiterations.com/mc/crafting-tweaks"
+issues = "https://github.com/blay09/CraftingTweaks/issues"
+source = "https://github.com/blay09/CraftingTweaks"
+categories = ["utility-qol"]

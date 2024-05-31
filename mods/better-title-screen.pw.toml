@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4579000
 project-id = 224223
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/better-title-screen"
+issues = "https://github.com/GirafiStudios/BetterTitleScreen/issues"
+source = "https://github.com/GirafiStudios/BetterTitleScreen"
+categories = ["mc-miscellaneous"]

@@ -11,3 +11,9 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5086735
 project-id = 915308
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/clean-swing-through-grass"
+issues = "https://github.com/ldtteam/cleanswing/issues"
+categories = ["utility-qol", "armor-weapons-tools", "adventure-rpg"]

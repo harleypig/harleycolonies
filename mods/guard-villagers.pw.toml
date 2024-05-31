@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5297214
 project-id = 360203
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/guard-villagers"
+issues = "https://github.com/seymourimadeit/guardvillagers/issues"
+source = "https://github.com/seymourimadeit/guardvillagers"
+categories = ["world-gen", "world-mobs"]

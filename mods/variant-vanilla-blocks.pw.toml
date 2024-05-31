@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4997060
 project-id = 866509
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/variant-vanilla-blocks"
+issues = "https://github.com/xanthian/VariantVanillaBlocks/issues"
+source = "https://github.com/xanthian/VariantVanillaBlocks"
+categories = ["storage", "utility-qol", "cosmetic", "adventure-rpg"]

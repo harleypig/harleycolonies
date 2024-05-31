@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4628711
 project-id = 388638
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/selectable-painting"
+wiki = "https://github.com/GeheimagentNr1/SelectablePainting/wiki"
+issues = "https://github.com/GeheimagentNr1/SelectablePainting/issues"
+source = "https://github.com/GeheimagentNr1/SelectablePainting"
+categories = ["cosmetic"]

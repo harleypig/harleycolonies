@@ -11,3 +11,9 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4966231
 project-id = 469915
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/tan-huge-trees"
+wiki = "https://github.com/TannyJungMC/THT-tree_pack/wiki"
+categories = ["adventure-rpg", "world-biomes", "mc-creator", "world-structures"]

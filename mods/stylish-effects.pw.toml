@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5096987
 project-id = 543661
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/stylish-effects"
+issues = "https://github.com/Fuzss/stylisheffects/issues"
+source = "https://github.com/Fuzss/stylisheffects"
+categories = ["utility-qol", "map-information", "cosmetic"]

@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5287198
 project-id = 412956
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/mineral-chance"
+issues = "https://github.com/Serilum/.issue-tracker/labels/Mod: Mineral Chance"
+source = "https://github.com/Serilum/Mineral-Chance"
+categories = ["adventure-rpg", "world-ores-resources"]

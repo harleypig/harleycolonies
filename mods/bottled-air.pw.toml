@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4965331
 project-id = 514444
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/bottled-air"
+issues = "https://github.com/Serilum/.issue-tracker/labels/Mod: Bottled Air"
+source = "https://github.com/Serilum/Bottled-Air"
+categories = ["mc-food", "adventure-rpg", "mc-miscellaneous"]

@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5028746
 project-id = 331983
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/corail-woodcutter"
+issues = "https://github.com/Corail31/woodcutter/issues"
+source = "https://github.com/Corail31/woodcutter"
+categories = ["cosmetic", "utility-qol"]

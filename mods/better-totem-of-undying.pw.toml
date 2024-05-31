@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5068058
 project-id = 878676
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/better-totem-of-undying"
+wiki = "https://github.com/CERBON-MODS/CERBONs-Better-Totem-of-Undying/wiki"
+issues = "https://github.com/CERBON-MODS/CERBONs-Better-Totem-of-Undying/issues"
+source = "https://github.com/CERBON-MODS/CERBONs-Better-Totem-of-Undying"
+categories = ["mc-miscellaneous", "utility-qol", "armor-weapons-tools"]

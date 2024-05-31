@@ -11,3 +11,8 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4791586
 project-id = 490008
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/jess-painting-pack"
+categories = ["mc-creator", "cosmetic"]

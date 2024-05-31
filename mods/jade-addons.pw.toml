@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4925840
 project-id = 583345
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/jade-addons"
+issues = "https://github.com/Snownee/JadeAddons/issues"
+source = "https://github.com/Snownee/JadeAddons"
+categories = ["map-information", "utility-qol", "mc-addons"]

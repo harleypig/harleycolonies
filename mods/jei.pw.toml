@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5101366
 project-id = 238222
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/jei"
+issues = "https://github.com/mezz/JustEnoughItems/issues?q=is%3Aissue"
+source = "https://github.com/mezz/JustEnoughItems"
+categories = ["library-api", "map-information"]

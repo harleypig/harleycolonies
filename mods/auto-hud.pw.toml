@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5355371
 project-id = 623806
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/auto-hud"
+issues = "https://github.com/Crendgrim/AutoHUD/issues"
+source = "https://github.com/Crendgrim/AutoHUD"
+categories = ["utility-qol"]

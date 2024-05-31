@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4964675
 project-id = 348964
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/infinite-trading"
+issues = "https://github.com/Serilum/.issue-tracker/labels/Mod: Infinite Trading"
+source = "https://github.com/Serilum/Infinite-Trading"
+categories = ["mc-miscellaneous", "adventure-rpg"]

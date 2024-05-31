@@ -11,3 +11,9 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4766090
 project-id = 459701
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/catalogue"
+issues = "https://github.com/MrCrayfish/Catalogue/issues"
+categories = ["map-information", "mc-miscellaneous", "library-api", "utility-qol"]

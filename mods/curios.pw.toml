@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5367944
 project-id = 309927
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/curios"
+wiki = "https://docs.illusivesoulworks.com/category/curios"
+issues = "https://github.com/TheIllusiveC4/Curios/issues"
+source = "https://github.com/TheIllusiveC4/Curios"
+categories = ["armor-weapons-tools", "adventure-rpg", "library-api"]

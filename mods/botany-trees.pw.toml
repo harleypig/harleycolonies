@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5127097
 project-id = 411357
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/botany-trees"
+issues = "https://github.com/Darkhax-Minecraft/BotanyTrees/issues"
+source = "https://github.com/Darkhax-Minecraft/BotanyTrees"
+categories = ["world-ores-resources", "mc-food", "cosmetic", "mc-food", "world-ores-resources", "technology-farming"]

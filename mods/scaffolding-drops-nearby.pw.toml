@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4963937
 project-id = 412742
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/scaffolding-drops-nearby"
+issues = "https://github.com/Serilum/.issue-tracker/labels/Mod: Scaffolding Drops Nearby"
+source = "https://github.com/Serilum/Scaffolding-Drops-Nearby"
+categories = ["mc-miscellaneous"]

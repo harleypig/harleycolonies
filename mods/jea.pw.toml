@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4631663
 project-id = 444941
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/jea"
+wiki = "https://melanx.github.io/Mod-Wikis/"
+issues = "https://github.com/MelanX/JustEnoughAdvancements/issues"
+source = "https://github.com/MelanX/JustEnoughAdvancements"
+categories = ["map-information", "mc-addons", "library-api"]

@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5011902
 project-id = 939233
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/glowing-tools"
+wiki = "https://imiluum.github.io/glowing-tools"
+issues = "https://github.com/iMiluum/glowing-tools/issues"
+source = "https://github.com/iMiluum/glowing-tools"
+categories = ["armor-weapons-tools", "utility-qol"]

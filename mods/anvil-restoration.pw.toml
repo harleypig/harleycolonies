@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4965463
 project-id = 523801
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/anvil-restoration"
+issues = "https://github.com/Serilum/.issue-tracker/labels/Mod: Anvil Restoration"
+source = "https://github.com/Serilum/Anvil-Restoration"
+categories = ["mc-miscellaneous", "armor-weapons-tools"]

@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4574890
 project-id = 575588
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/subterrestrial"
+issues = "https://github.com/AlexNijjar/Subterrestrial/issues"
+source = "https://github.com/AlexNijjar/Subterrestrial"
+categories = ["world-structures", "world-gen"]

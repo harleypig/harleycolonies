@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4772088
 project-id = 381597
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/regrowth"
+issues = "https://github.com/mactso/Regrowth/issues"
+source = "https://github.com/mactso/Regrowth"
+categories = ["adventure-rpg", "world-gen", "world-biomes"]

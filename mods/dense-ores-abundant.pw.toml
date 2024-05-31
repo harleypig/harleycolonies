@@ -11,3 +11,9 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4993069
 project-id = 729297
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/dense-ores-abundant"
+issues = "https://github.com/NewJumper/DenseOres/issues"
+categories = ["world-ores-resources", "world-gen"]

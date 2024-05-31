@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4983752
 project-id = 482123
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/vanilla-aiots"
+wiki = "https://melanx.github.io/Mod-Wikis/"
+issues = "https://github.com/MelanX/VanillaAIOTs/issues"
+source = "https://github.com/MelanX/VanillaAIOTs"
+categories = ["armor-weapons-tools"]

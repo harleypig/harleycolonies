@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4963999
 project-id = 367051
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/replanting-crops"
+issues = "https://github.com/Serilum/.issue-tracker/labels/Mod: Replanting Crops"
+source = "https://github.com/Serilum/Replanting-Crops"
+categories = ["technology-farming", "mc-food"]

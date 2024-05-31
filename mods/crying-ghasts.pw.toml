@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4965220
 project-id = 344360
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/crying-ghasts"
+issues = "https://github.com/Serilum/.issue-tracker/labels/Mod: Crying Ghasts"
+source = "https://github.com/Serilum/Crying-Ghasts"
+categories = ["world-mobs", "technology-farming"]

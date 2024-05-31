@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5001845
 project-id = 872868
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/botany-pots-ore-planting"
+issues = "https://github.com/mango-buff/BotanyPotsOrePlanting/issues"
+source = "https://github.com/mango-buff/BotanyPotsOrePlanting"
+categories = ["world-ores-resources", "mc-miscellaneous"]

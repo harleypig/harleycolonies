@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4705287
 project-id = 440985
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/wooden-hopper"
+wiki = "https://github.com/cech12/WoodenHopper/wiki"
+issues = "https://github.com/cech12/WoodenHopper/issues"
+source = "https://github.com/cech12/WoodenHopper"
+categories = ["technology-item-fluid-energy-transport", "storage", "redstone"]

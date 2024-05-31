@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4770683
 project-id = 318551
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/crafting-station"
+issues = "https://github.com/Tfarcenim/crafting-station/issues"
+source = "https://github.com/Tfarcenim/crafting-station"
+categories = ["mc-miscellaneous"]

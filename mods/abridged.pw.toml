@@ -11,3 +11,8 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4985756
 project-id = 948999
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/abridged"
+categories = ["adventure-rpg", "world-gen", "world-gen", "adventure-rpg", "world-structures"]

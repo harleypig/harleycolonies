@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5284254
 project-id = 376351
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/framed-compacting-drawers"
+issues = "https://github.com/eutropius225/FramedCompactDrawers/issues"
+source = "https://github.com/eutropius225/FramedCompactDrawers"
+categories = ["storage", "mc-addons", "cosmetic"]

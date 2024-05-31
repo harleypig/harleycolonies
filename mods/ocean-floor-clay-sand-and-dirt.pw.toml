@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4624780
 project-id = 231837
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/ocean-floor-clay-sand-and-dirt"
+issues = "https://github.com/PrinceOfAmber/OceanFloorControl/issues"
+source = "https://github.com/PrinceOfAmber/OceanFloorControl"
+categories = ["cosmetic", "world-ores-resources", "world-biomes", "world-dimensions"]

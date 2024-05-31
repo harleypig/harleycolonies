@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5333766
 project-id = 551520
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/better-fps-render-distance"
+issues = "https://github.com/someaddons/betterfpsdistances/issues"
+source = "https://github.com/someaddons/betterfpsdistances"
+categories = ["cosmetic", "mc-miscellaneous"]

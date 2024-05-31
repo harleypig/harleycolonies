@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5331403
 project-id = 368293
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/repurposed-structures"
+wiki = "https://github.com/TelepathicGrunt/RepurposedStructures/wiki"
+issues = "https://github.com/TelepathicGrunt/RepurposedStructures/issues"
+source = "https://github.com/TelepathicGrunt/RepurposedStructures"
+categories = ["world-gen", "world-structures"]

@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5373244
 project-id = 495476
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/puzzles-lib"
+issues = "https://github.com/Fuzss/puzzleslib/issues"
+source = "https://github.com/Fuzss/puzzleslib"
+categories = ["library-api"]

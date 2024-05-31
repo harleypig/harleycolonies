@@ -11,3 +11,9 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5371958
 project-id = 521480
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/skin-layers-3d"
+source = "https://github.com/tr7zw/3d-Skin-Layers"
+categories = ["adventure-rpg", "cosmetic"]

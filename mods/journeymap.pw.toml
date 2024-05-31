@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5293067
 project-id = 32274
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/journeymap"
+wiki = "http://journeymap.info"
+issues = "https://github.com/TeamJM/journeymap/issues"
+categories = ["map-information"]

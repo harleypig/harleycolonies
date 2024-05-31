@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5310074
 project-id = 899487
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/better-chunk-loading-forge-fabric"
+issues = "https://github.com/someaddons/betterchunkloading/issues"
+source = "https://github.com/someaddons/betterchunkloading"
+categories = ["adventure-rpg", "utility-qol", "server-utility", "world-biomes", "map-information"]

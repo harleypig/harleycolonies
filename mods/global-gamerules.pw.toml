@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4587490
 project-id = 227657
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/global-gamerules"
+issues = "https://github.com/GoryMoon/GlobalGameRules/issues"
+source = "https://github.com/GoryMoon/GlobalGameRules"
+categories = ["mc-miscellaneous"]

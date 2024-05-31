@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5378300
 project-id = 289412
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/ftb-quests-forge"
+wiki = "https://feedthebeast.notion.site/FTB-Mod-Documentation-da2e359bad2449459d58d787edda3168"
+issues = "https://github.com/FTBTeam/FTB-Quests/issues"
+source = "https://github.com/FTBTeam/FTB-Quests"
+categories = ["map-information", "server-utility", "adventure-rpg", "library-api"]

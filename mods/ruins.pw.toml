@@ -11,3 +11,8 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5373685
 project-id = 569737
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/ruins"
+categories = ["mc-addons", "world-structures", "world-gen", "world-biomes", "adventure-rpg"]

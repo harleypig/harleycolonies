@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5020441
 project-id = 714059
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/resourceful-config"
+wiki = "https://config.wiki.teamresourceful.com"
+issues = "https://github.com/Team-Resourceful/Resourceful-Config/issues"
+source = "https://github.com/Team-Resourceful/Resourceful-Config"
+categories = ["library-api"]

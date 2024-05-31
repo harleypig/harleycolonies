@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4964089
 project-id = 390873
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/random-sheep-colours"
+issues = "https://github.com/Serilum/.issue-tracker/labels/Mod: Random Sheep Colours"
+source = "https://github.com/Serilum/Random-Sheep-Colours"
+categories = ["cosmetic", "world-mobs"]

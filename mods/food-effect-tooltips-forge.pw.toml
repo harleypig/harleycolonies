@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4602215
 project-id = 776426
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/food-effect-tooltips-forge"
+issues = "https://github.com/Suel-ki/FoodEffectTooltips-Forge/issues"
+source = "https://github.com/Suel-ki/FoodEffectTooltips-Forge"
+categories = ["mc-food", "utility-qol"]

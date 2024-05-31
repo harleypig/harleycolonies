@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5137938
 project-id = 419699
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/architectury-api"
+wiki = "https://docs.architectury.dev/plugin:get_started"
+issues = "https://github.com/architectury/architectury/issues"
+source = "https://github.com/architectury/architectury"
+categories = ["library-api"]

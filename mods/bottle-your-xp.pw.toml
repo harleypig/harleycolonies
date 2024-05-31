@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4965339
 project-id = 344020
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/bottle-your-xp"
+issues = "https://github.com/Serilum/.issue-tracker/labels/Mod: Bottle Your Xp"
+source = "https://github.com/Serilum/Bottle-Your-Xp"
+categories = ["adventure-rpg", "magic"]

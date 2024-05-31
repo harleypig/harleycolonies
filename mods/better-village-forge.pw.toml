@@ -11,3 +11,9 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4703624
 project-id = 615352
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/better-village-forge"
+issues = "https://github.com/jtorleonstudios/HUB-Better-Villages/issues"
+categories = ["world-gen", "adventure-rpg", "world-structures", "cosmetic"]

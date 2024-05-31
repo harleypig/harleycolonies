@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4635878
 project-id = 232131
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/default-options"
+wiki = "https://mods.twelveiterations.com/mc/default-options"
+issues = "https://github.com/ModdingForBlockheads/DefaultOptions/issues"
+source = "https://github.com/ModdingForBlockheads/DefaultOptions"
+categories = ["mc-miscellaneous"]

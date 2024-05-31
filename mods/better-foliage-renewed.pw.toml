@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4923669
 project-id = 470013
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/better-foliage-renewed"
+issues = "https://github.com/eerussianguy/Better-Foliage/issues"
+source = "https://github.com/eerussianguy/Better-Foliage"
+categories = ["cosmetic"]

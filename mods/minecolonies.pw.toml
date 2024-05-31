@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5381618
 project-id = 245506
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/minecolonies"
+wiki = "https://wiki.minecolonies.ldtteam.com"
+issues = "https://github.com/ldtteam/minecolonies/issues/new/choose"
+source = "https://github.com/ldtteam/MineColonies"
+categories = ["world-structures", "adventure-rpg", "armor-weapons-tools", "technology-automation", "storage"]

@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4963521
 project-id = 414111
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/wool-tweaks"
+issues = "https://github.com/Serilum/.issue-tracker/labels/Mod: Wool Tweaks"
+source = "https://github.com/Serilum/Wool-Tweaks"
+categories = ["cosmetic", "server-utility", "mc-miscellaneous"]

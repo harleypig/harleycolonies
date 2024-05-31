@@ -11,3 +11,8 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4992466
 project-id = 955667
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/more-foliage"
+categories = ["world-dimensions", "addons-forestry", "cosmetic", "world-gen", "world-biomes"]

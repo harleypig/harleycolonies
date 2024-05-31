@@ -11,3 +11,8 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4753855
 project-id = 394203
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/texture-packs/hd-font-inconsolata"
+categories = ["steampunk", "font-packs", "miscellaneous", "traditional"]

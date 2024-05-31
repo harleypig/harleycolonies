@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4964886
 project-id = 551140
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/furnace-recycle"
+issues = "https://github.com/Serilum/.issue-tracker/labels/Mod: Furnace Recycle"
+source = "https://github.com/Serilum/Furnace-Recycle"
+categories = ["utility-qol", "mc-miscellaneous"]

@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4618962
 project-id = 547989
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/bee-fix"
+issues = "https://github.com/Lupicus/BeeFix/issues"
+source = "https://github.com/Lupicus/BeeFix"
+categories = ["technology-farming", "world-mobs", "world-gen", "world-structures"]

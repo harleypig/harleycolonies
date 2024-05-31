@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4930510
 project-id = 499826
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/advancement-plaques"
+issues = "https://github.com/AHilyard/AdvancementPlaques/issues"
+source = "https://github.com/AHilyard/AdvancementPlaques"
+categories = ["utility-qol", "mc-miscellaneous", "cosmetic", "map-information"]

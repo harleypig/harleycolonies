@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4963661
 project-id = 695354
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/vanilla-zoom"
+issues = "https://github.com/Serilum/.issue-tracker/labels/Mod: Vanilla Zoom"
+source = "https://github.com/Serilum/Vanilla-Zoom"
+categories = ["armor-weapons-tools", "mc-miscellaneous"]

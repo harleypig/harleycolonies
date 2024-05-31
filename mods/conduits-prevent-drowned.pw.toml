@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4965278
 project-id = 345819
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/conduits-prevent-drowned"
+issues = "https://github.com/Serilum/.issue-tracker/labels/Mod: Conduits Prevent Drowned"
+source = "https://github.com/Serilum/Conduits-Prevent-Drowned"
+categories = ["mc-miscellaneous", "world-mobs"]

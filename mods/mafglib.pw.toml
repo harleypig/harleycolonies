@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5366334
 project-id = 910766
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/mafglib"
+issues = "https://github.com/ThinkingStudios/MaLiLib-Forge/issues"
+source = "https://github.com/ThinkingStudios/MaLiLib-Forge"
+categories = ["library-api"]

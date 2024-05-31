@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5138899
 project-id = 520110
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/iceberg"
+issues = "https://github.com/AHilyard/Iceberg/issues"
+source = "https://github.com/AHilyard/Iceberg"
+categories = ["library-api"]

@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4594475
 project-id = 247136
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/just-another-rotten-flesh-to-leather-mod"
+issues = "https://gitlab.com/456Xander/JRFTL/issues/new"
+source = "https://gitlab.com/456Xander/JRFTL"
+categories = ["mc-miscellaneous"]

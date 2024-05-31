@@ -11,3 +11,8 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5138285
 project-id = 832882
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/structure-essentials-forge-fabric"
+categories = ["server-utility", "world-structures", "map-information"]

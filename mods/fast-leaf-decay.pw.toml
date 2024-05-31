@@ -11,3 +11,9 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5375681
 project-id = 230976
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/fast-leaf-decay"
+issues = "https://github.com/Olafski/FastLeafDecay/issues"
+categories = ["technology-farming"]

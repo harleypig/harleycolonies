@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5351805
 project-id = 666014
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/immersive-aircraft"
+issues = "https://github.com/Luke100000/ImmersiveAircraft/issues"
+source = "https://github.com/Luke100000/ImmersiveAircraft"
+categories = ["technology-player-transport", "adventure-rpg", "technology"]

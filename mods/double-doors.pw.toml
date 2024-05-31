@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5334522
 project-id = 348831
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/double-doors"
+issues = "https://github.com/Serilum/.issue-tracker/labels/Mod: Double Doors"
+source = "https://github.com/Serilum/Double-Doors"
+categories = ["mc-miscellaneous", "technology-processing"]

@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4964770
 project-id = 342623
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/healing-campfire"
+issues = "https://github.com/Serilum/.issue-tracker/labels/Mod: Healing Campfire"
+source = "https://github.com/Serilum/Healing-Campfire"
+categories = ["mc-food", "adventure-rpg"]

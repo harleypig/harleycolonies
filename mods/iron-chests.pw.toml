@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4614852
 project-id = 228756
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/iron-chests"
+issues = "https://github.com/progwml6/ironchest/issues"
+source = "https://github.com/progwml6/ironchest"
+categories = ["storage"]

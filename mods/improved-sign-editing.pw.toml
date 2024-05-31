@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5309690
 project-id = 952629
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/improved-sign-editing"
+issues = "https://github.com/Serilum/.issue-tracker/labels/Mod: Improved Sign Editing"
+source = "https://github.com/Serilum/Improved-Sign-Editing"
+categories = ["server-utility", "utility-qol"]

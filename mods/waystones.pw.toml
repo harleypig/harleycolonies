@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4962610
 project-id = 245755
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/waystones"
+wiki = "https://mods.twelveiterations.com/mc/waystones"
+issues = "https://github.com/ModdingForBlockheads/Waystones/issues"
+source = "https://github.com/ModdingForBlockheads/Waystones"
+categories = ["magic", "adventure-rpg", "server-utility", "technology-player-transport"]

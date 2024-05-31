@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4613497
 project-id = 658286
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/automobility"
+issues = "https://github.com/FoundationGames/Automobility/issues"
+source = "https://github.com/FoundationGames/Automobility"
+categories = ["technology", "technology-player-transport", "technology-farming"]

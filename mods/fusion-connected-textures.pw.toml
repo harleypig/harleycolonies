@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5129294
 project-id = 854949
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/fusion-connected-textures"
+wiki = "https://github.com/SuperMartijn642/Fusion/wiki"
+issues = "https://github.com/SuperMartijn642/Fusion/issues"
+source = "https://github.com/SuperMartijn642/Fusion"
+categories = ["library-api", "cosmetic"]

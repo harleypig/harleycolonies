@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4712194
 project-id = 491794
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/explorers-compass"
+issues = "https://github.com/MattCzyr/ExplorersCompass/issues"
+source = "https://github.com/MattCzyr/ExplorersCompass"
+categories = ["world-structures", "adventure-rpg", "map-information", "armor-weapons-tools"]

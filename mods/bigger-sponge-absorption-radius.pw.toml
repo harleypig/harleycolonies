@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4976445
 project-id = 391896
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/bigger-sponge-absorption-radius"
+issues = "https://github.com/Serilum/.issue-tracker/labels/Mod: Bigger Sponge Absorption Radius"
+source = "https://github.com/Serilum/Bigger-Sponge-Absorption-Radius"
+categories = ["world-ores-resources", "mc-miscellaneous"]

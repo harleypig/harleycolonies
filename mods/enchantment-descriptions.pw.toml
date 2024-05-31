@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5368102
 project-id = 250419
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions"
+issues = "https://github.com/Darkhax-Minecraft/Enchantment-Descriptions/issues"
+source = "https://github.com/Darkhax-Minecraft/Enchantment-Descriptions"
+categories = ["map-information", "magic", "utility-qol", "cosmetic"]

@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5153629
 project-id = 400514
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/easy-villagers"
+issues = "https://github.com/henkelmax/easy-villagers/issues"
+source = "https://github.com/henkelmax/easy-villagers"
+categories = ["technology-farming", "technology", "cosmetic"]

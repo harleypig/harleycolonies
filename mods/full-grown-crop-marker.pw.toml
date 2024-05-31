@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5029842
 project-id = 834457
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/full-grown-crop-marker"
+wiki = "https://github.com/tristankechlo/FullGrownCropMarker/wiki"
+issues = "https://github.com/tristankechlo/FullGrownCropMarker/issues"
+source = "https://github.com/tristankechlo/FullGrownCropMarker"
+categories = ["technology-farming", "utility-qol", "adventure-rpg"]

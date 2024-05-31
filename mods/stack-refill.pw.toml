@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5362497
 project-id = 411813
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/stack-refill"
+issues = "https://github.com/Serilum/.issue-tracker/labels/Mod: Stack Refill"
+source = "https://github.com/Serilum/Stack-Refill"
+categories = ["server-utility", "magic"]

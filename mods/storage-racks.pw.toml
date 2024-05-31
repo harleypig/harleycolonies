@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5335472
 project-id = 483682
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/storage-racks"
+issues = "https://github.com/ldtteam/StorageRacks"
+source = "https://github.com/ldtteam/StorageRacks"
+categories = ["storage", "cosmetic", "adventure-rpg", "education", "technology-automation"]

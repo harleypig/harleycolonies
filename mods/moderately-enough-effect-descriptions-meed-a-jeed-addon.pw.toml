@@ -11,3 +11,8 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5257391
 project-id = 918638
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/moderately-enough-effect-descriptions-meed-a-jeed-addon"
+categories = ["map-information", "utility-qol", "mc-addons", "server-utility"]

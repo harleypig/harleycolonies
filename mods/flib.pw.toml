@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5356442
 project-id = 661261
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/flib"
+issues = "https://github.com/Lothrazar/FLib/issues"
+source = "https://github.com/Lothrazar/FLib"
+categories = ["library-api"]

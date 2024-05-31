@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5368380
 project-id = 889205
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/anvil-repairing"
+issues = "https://github.com/Darkhax-Minecraft/Anvil-Repairing/issues"
+source = "https://github.com/Darkhax-Minecraft/Anvil-Repairing"
+categories = ["armor-weapons-tools", "utility-qol", "armor-weapons-tools", "utility-qol"]

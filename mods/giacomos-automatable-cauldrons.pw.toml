@@ -11,3 +11,8 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4592007
 project-id = 683221
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/giacomos-automatable-cauldrons"
+categories = ["technology-automation", "technology-farming", "technology-energy"]

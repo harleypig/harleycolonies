@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4809004
 project-id = 377281
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/dark-paintings"
+issues = "https://github.com/Darkhax-Minecraft/Dark-Paintings/issues"
+source = "https://github.com/Darkhax-Minecraft/Dark-Paintings"
+categories = ["map-information", "cosmetic", "adventure-rpg"]

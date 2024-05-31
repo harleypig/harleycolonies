@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5296475
 project-id = 422301
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks"
+issues = "https://github.com/P3pp3rF1y/SophisticatedBackpacks/issues"
+source = "https://github.com/P3pp3rF1y/SophisticatedBackpacks"
+categories = ["storage", "armor-weapons-tools"]

@@ -1,13 +1,21 @@
 name = "Structurize"
-filename = "structurize-1.20.1-1.0.734-BETA.jar"
+filename = "structurize-1.20.1-1.0.735-BETA.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "f87e0dfc4a76876d4a442031b6d18f069f067893"
+hash = "08e47e0546848e4f754f4e432cc431346e50c315"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 5383762
+file-id = 5387296
 project-id = 298744
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/structurize"
+wiki = "https://wiki.minecolonies.com/source/tutorials/schematics"
+issues = "https://github.com/ldtteam/structurize/issues"
+source = "https://github.com/ldtteam/structurize"
+categories = ["world-structures", "server-utility", "cosmetic"]

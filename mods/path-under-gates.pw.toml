@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5363070
 project-id = 358580
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/path-under-gates"
+issues = "https://github.com/littlej541/path-under-gates/issues"
+source = "https://github.com/littlej541/path-under-gates"
+categories = ["cosmetic"]

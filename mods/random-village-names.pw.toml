@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4964055
 project-id = 452299
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/random-village-names"
+issues = "https://github.com/Serilum/.issue-tracker/labels/Mod: Random Village Names"
+source = "https://github.com/Serilum/Random-Village-Names"
+categories = ["map-information", "adventure-rpg"]

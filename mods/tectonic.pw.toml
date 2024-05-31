@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5245755
 project-id = 686836
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/tectonic"
+issues = "https://github.com/ApolloDatapacks/tectonic/issues"
+source = "https://github.com/ApolloDatapacks/tectonic"
+categories = ["world-gen"]

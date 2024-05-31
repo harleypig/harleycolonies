@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4618813
 project-id = 231275
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/ding"
+issues = "https://github.com/iChun/Ding/issues"
+source = "https://github.com/iChun/Ding"
+categories = ["map-information"]

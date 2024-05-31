@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5159498
 project-id = 237664
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/iron-furnaces"
+wiki = "https://github.com/Qelifern/IronFurnaces/wiki"
+issues = "https://github.com/Qelifern/IronFurnaces/issues"
+source = "https://github.com/Qelifern/IronFurnaces"
+categories = ["technology-processing", "storage"]

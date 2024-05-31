@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4976124
 project-id = 345854
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/villager-names"
+issues = "https://github.com/Serilum/.issue-tracker/labels/Mod: Villager Names"
+source = "https://github.com/Serilum/Villager-Names"
+categories = ["world-mobs", "adventure-rpg"]

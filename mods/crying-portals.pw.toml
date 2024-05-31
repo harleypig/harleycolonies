@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4976432
 project-id = 547844
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/crying-portals"
+issues = "https://github.com/Serilum/.issue-tracker/labels/Mod: Crying Portals"
+source = "https://github.com/Serilum/Crying-Portals"
+categories = ["world-structures", "cosmetic", "mc-miscellaneous"]

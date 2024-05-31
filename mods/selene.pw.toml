@@ -11,3 +11,9 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5372910
 project-id = 499980
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/selene"
+source = "https://github.com/MehVahdJukaar/Selene"
+categories = ["library-api", "library-api"]

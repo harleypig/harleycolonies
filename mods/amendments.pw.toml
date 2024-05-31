@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5361097
 project-id = 896746
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/amendments"
+wiki = "https://github.com/MehVahdJukaar/Supplementaries/wiki/Amendments"
+issues = "https://github.com/MehVahdJukaar/amendments/issues"
+categories = ["cosmetic", "utility-qol"]

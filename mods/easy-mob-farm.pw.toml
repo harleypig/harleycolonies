@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5139025
 project-id = 563464
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/easy-mob-farm"
+issues = "https://github.com/MarkusBordihn/BOs-Easy-Mob-Farm/issues/new/choose"
+source = "https://github.com/MarkusBordihn/BOs-Easy-Mob-Farm"
+categories = ["world-mobs", "utility-qol"]

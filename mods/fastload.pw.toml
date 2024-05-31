@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4706149
 project-id = 630620
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/fastload"
+issues = "https://github.com/BumbleSoftware/Fastload/issues"
+source = "https://github.com/BumbleSoftware/Fastload"
+categories = ["cosmetic", "server-utility", "world-gen"]

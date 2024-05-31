@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5064474
 project-id = 472872
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/simply-improved-terrain"
+issues = "https://github.com/KdotJPG/Simply-Improved-Terrain/issues"
+source = "https://github.com/KdotJPG/Simply-Improved-Terrain"
+categories = ["world-gen"]

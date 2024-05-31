@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5066675
 project-id = 242223
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/just-enough-calculation"
+issues = "https://github.com/Towdium/JustEnoughCalculation/issues"
+source = "https://github.com/Towdium/JustEnoughCalculation"
+categories = ["map-information", "mc-addons"]

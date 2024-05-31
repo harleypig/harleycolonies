@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5157020
 project-id = 442842
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/block-runner-forge"
+issues = "https://github.com/Fuzss/blockrunner/issues"
+source = "https://github.com/Fuzss/blockrunner"
+categories = ["utility-qol"]

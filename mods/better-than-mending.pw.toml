@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 3877162
 project-id = 264738
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/better-than-mending"
+issues = "https://github.com/legobmw99/BetterThanMending/issues"
+source = "https://github.com/legobmw99/BetterThanMending"
+categories = ["armor-weapons-tools", "mc-miscellaneous"]

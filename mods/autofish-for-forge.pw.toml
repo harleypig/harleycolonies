@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4605152
 project-id = 395327
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/autofish-for-forge"
+issues = "https://github.com/North-West-Wind/forge-autofish/issues"
+source = "https://github.com/North-West-Wind/forge-autofish"
+categories = ["mc-miscellaneous", "server-utility"]

@@ -11,3 +11,9 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4945387
 project-id = 250898
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/ore-excavation"
+issues = "https://github.com/Funwayguy/OreExcavation/issues"
+categories = ["world-ores-resources", "armor-weapons-tools"]

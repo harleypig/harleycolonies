@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4578262
 project-id = 233019
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/ai-improvements"
+issues = "https://github.com/BuiltBrokenModding/AI-Improvements/issues"
+source = "https://github.com/BuiltBrokenModding/AI-Improvements"
+categories = ["world-mobs", "server-utility"]

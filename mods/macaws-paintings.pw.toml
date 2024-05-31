@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4848151
 project-id = 438116
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/macaws-paintings"
+issues = "https://github.com/sketchmacaw/MacawsModsIssues/issues"
+source = "https://github.com/sketchmacaw/Paintings"
+categories = ["cosmetic"]

@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5298558
 project-id = 813557
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/nbt-autocomplete"
+issues = "https://github.com/mt1006/mc-nbtac-mod/issues"
+source = "https://github.com/mt1006/mc-nbtac-mod"
+categories = ["utility-qol"]

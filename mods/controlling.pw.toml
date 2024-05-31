@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4646682
 project-id = 250398
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/controlling"
+issues = "https://github.com/jaredlll08/Controlling/issues"
+source = "https://github.com/jaredlll08/Controlling"
+categories = ["utility-qol", "cosmetic"]

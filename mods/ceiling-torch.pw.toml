@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5329568
 project-id = 326599
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/ceiling-torch"
+issues = "https://github.com/bl4ckscor3/CeilingTorch/issues"
+source = "https://github.com/bl4ckscor3/CeilingTorch"
+categories = ["cosmetic", "technology"]

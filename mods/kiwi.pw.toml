@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5374333
 project-id = 303657
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/kiwi"
+issues = "https://github.com/Snownee/Kiwi/issues"
+source = "https://github.com/Snownee/Kiwi"
+categories = ["library-api"]

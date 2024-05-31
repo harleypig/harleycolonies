@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5169089
 project-id = 391701
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/areas"
+issues = "https://github.com/Serilum/.issue-tracker/labels/Mod: Areas"
+source = "https://github.com/Serilum/Areas"
+categories = ["map-information", "adventure-rpg", "library-api"]

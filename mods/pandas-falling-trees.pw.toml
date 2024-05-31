@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5367372
 project-id = 880630
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/pandas-falling-trees"
+issues = "https://github.com/PandaDap2006/Pandas-Falling-Trees/issues"
+source = "https://github.com/PandaDap2006/Pandas-Falling-Trees"
+categories = ["mc-miscellaneous", "utility-qol"]

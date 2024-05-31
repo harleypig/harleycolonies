@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4593109
 project-id = 502649
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/mini-effects"
+issues = "https://github.com/Snownee/MiniEffects/issues"
+source = "https://github.com/Snownee/MiniEffects"
+categories = ["utility-qol"]
