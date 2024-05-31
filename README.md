@@ -1,21 +1,35 @@
 # HarleyColonies
 
-I grind all day at work, why would I want to play a game that requires me to
-grind to get anywhere?!
+I grind all day at work, why would I want to play a game that requires me to grind to get anywhere?!
 
 This modpack is an attempt to reduce grinding as much as possible.
 
-Minecolonies is central to this idea, so any mod that cause a conflict and
-that cannot be resolved will not be included in this pack.
+Minecolonies is central to this idea, so any mod that causes a conflict and that cannot be resolved will not be included in this pack.
 
-I'm also using Baritone AI pathfinder. If you have a problem with that, you can
-always disable it.
+I'm also using Baritone AI pathfinder. If you have a problem with that, you can always disable it.
 
 NOTE:
 
-I'm using the [`packwiz`](https://packwiz.infra.link) app to create this
-modpack. If there are any eccentricities in my documentation or configuration,
-feel free to let me know.
+I'm using the [`packwiz`](https://packwiz.infra.link) app to create this modpack. If there are any eccentricities in my documentation or configuration, feel free to let me know.
+
+## Features
+
+HarleyColonies is designed to enhance your Minecraft experience by reducing the grind and adding a variety of features to make gameplay more enjoyable. Here are some of the key features and popular mods included in this pack:
+
+### Key Features
+
+- **Minecolonies**: Central to the modpack, allowing you to build and manage your own colony.
+- **Baritone AI Pathfinder**: Automate tasks and navigate the world with ease.
+- **JourneyMap**: A real-time mapping tool that helps you navigate and explore.
+- **Biomes O'Plenty**: Adds a variety of new biomes to explore.
+- **Storage Drawers**: Efficient storage solutions for your items.
+- **Better Advancements**: Improved advancement system to track your progress.
+- **JEI (Just Enough Items)**: Easily view crafting recipes and item uses.
+- **Nature's Compass**: Find specific biomes with ease.
+- **Comforts**: Adds sleeping bags and hammocks for more flexible sleeping options.
+- **Waystones**: Teleport between different locations in your world.
+
+If you have any questions please contact our support team https://support.curseforge.com.
 
 ## Changes needed to first section
 
