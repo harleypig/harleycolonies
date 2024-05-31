@@ -1,22 +1,33 @@
 # HarleyColonies
 
-I grind all day at work, why would I want to play a game that requires me to grind to get anywhere?!
+I grind all day at work, why would I want to play a game that requires me to
+grind to get anywhere?!
 
 This modpack is an attempt to reduce grinding as much as possible.
 
-Minecolonies is central to this idea, so any mod that causes a conflict and that cannot be resolved will not be included in this pack.
+Minecolonies is central to this idea, so any mod that causes a conflict and
+that cannot be resolved will not be included in this pack.
 
-I'm also using Baritone AI pathfinder. If you have a problem with that, you can always disable it.
+I'm also using Baritone AI pathfinder. If you have a problem with that, you
+can always disable it.
 
 NOTE:
 
-I'm using the [`packwiz`](https://packwiz.infra.link) app to create this modpack. If there are any eccentricities in my documentation or configuration, feel free to let me know.
+I'm using the [`packwiz`](https://packwiz.infra.link) app to create this
+modpack. If there are any eccentricities in my documentation or configuration,
+feel free to let me know.
+
+Also, I'm still in the process of figuring out which mods work for me and
+which don't. Feel free to suggest an alternative to a mod I'm using, or stop
+using (please include reasons), or any configuration you think might be
+needed.
 
 ## Features
 
-HarleyColonies is designed to enhance your Minecraft experience by reducing the grind and adding a variety of features to make gameplay more enjoyable. Here are some of the key features and popular mods included in this pack:
+HarleyColonies is designed to enhance your Minecraft experience by reducing
+the grind and adding a variety of features to make gameplay more enjoyable.
 
-### Key Features
+Some of the more popular mods included in this pack:
 
 - **Minecolonies**: Central to the modpack, allowing you to build and manage your own colony.
 - **Baritone AI Pathfinder**: Automate tasks and navigate the world with ease.
@@ -28,21 +39,6 @@ HarleyColonies is designed to enhance your Minecraft experience by reducing the 
 - **Nature's Compass**: Find specific biomes with ease.
 - **Comforts**: Adds sleeping bags and hammocks for more flexible sleeping options.
 - **Waystones**: Teleport between different locations in your world.
-
-If you have any questions please contact our support team https://support.curseforge.com.
-
-## Changes needed to first section
-
-This project requires changes in order to be approved. Until the changes are made and the project is approved by a moderator, the project will not be visible to others, and its files will not synchronize across CurseForge.
-
-The description for HarleyColonies doesn't explain what is actually in the pack: What can a player do with it, what features it has, etc.
-
-Assume potential users aren't familiar with the mods.
-
-The description does not need to be long, but you need to provide at least a few examples of what your pack has to offer before we can approve it.
-
-
-If you have any questions please contact our support team https://support.curseforge.com.
 
 ## Recommended Setup
 
