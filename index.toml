@@ -148,6 +148,11 @@ hash = "11c40209898628cc8ca75d28f539c449384b40600bfc88272306f6138f4e4428"
 metafile = true
 
 [[files]]
+file = "mods/amendments.pw.toml"
+hash = "09c677f5c83baf5ba5fa27528522283d192eb0ee024955b98954e87f27a0bfc5"
+metafile = true
+
+[[files]]
 file = "mods/anvil-balance.pw.toml"
 hash = "6941dc753ddd1e733f89b2451d3688f0d2ac5bcb1c83bdde044a485cea2763aa"
 metafile = true
