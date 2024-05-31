@@ -17,6 +17,19 @@ I'm using the [`packwiz`](https://packwiz.infra.link) app to create this
 modpack. If there are any eccentricities in my documentation or configuration,
 feel free to let me know.
 
+## Changes needed to first section
+
+This project requires changes in order to be approved. Until the changes are made and the project is approved by a moderator, the project will not be visible to others, and its files will not synchronize across CurseForge.
+
+The description for HarleyColonies doesn't explain what is actually in the pack: What can a player do with it, what features it has, etc.
+
+Assume potential users aren't familiar with the mods.
+
+The description does not need to be long, but you need to provide at least a few examples of what your pack has to offer before we can approve it.
+
+
+If you have any questions please contact our support team https://support.curseforge.com.
+
 ## Recommended Setup
 
 * 64bit Java
