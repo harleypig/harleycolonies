@@ -284,6 +284,11 @@ hash = "4fadb9af95201dbc92da40d859fa9e9317d0e5562fd31df6a373d094ea06768f"
 metafile = true
 
 [[files]]
+file = "mods/better-totem-of-undying.pw.toml"
+hash = "82679d76e7af93b75d6c9ec0b251e9862d9d5bee57e1f5bef918991c79200689"
+metafile = true
+
+[[files]]
 file = "mods/better-village-forge.pw.toml"
 hash = "1aaff9c7a621b3af82415312ee6a152b43dcd77c4bb24c9968a7cf37a4e1931a"
 metafile = true
@@ -371,6 +376,16 @@ metafile = true
 [[files]]
 file = "mods/ceiling-torch.pw.toml"
 hash = "651c7daa653c1615671cdfbf8e4fbb42e0134e3994978e323ba31e9b20bc8adf"
+metafile = true
+
+[[files]]
+file = "mods/cerbons-api.pw.toml"
+hash = "da9026c48b5c6bc9eab17bca48f4b1fd8540fcae23365d63c9d7c4e5c7eb0a30"
+metafile = true
+
+[[files]]
+file = "mods/cerbons-better-beacons.pw.toml"
+hash = "3b0f38cd85991817f80d12ee7c2f620865f4f647911b847f96866d72d5dfbf3f"
 metafile = true
 
 [[files]]

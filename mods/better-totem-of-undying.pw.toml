@@ -1,0 +1,13 @@
+name = "CERBON's Better Totem of Undying [Forge | Fabric | NeoForge]"
+filename = "BetterTotemOfUndying-Forge-1.20.4-2.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "4f4d7591b8ec006940295d2640241f0415f3a87c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5068058
+project-id = 878676
