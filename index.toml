@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "HarleyColonies.png"
+hash = "496ff82d8521be22b3e2d7bf7449b88aed1df39aac724c0b01e990c1d62b5db5"
+
+[[files]]
 file = "LICENSE"
 hash = "6b0382b16279f26ff69014300541967a356a666eb0b91b422f6862f6b7dad17e"
 
@@ -1061,6 +1065,11 @@ metafile = true
 [[files]]
 file = "mods/ore-excavation.pw.toml"
 hash = "2be6c9d80411251a4516372d9f3ab422d8b09befc28c0231c5f1c9fa61ae3f81"
+metafile = true
+
+[[files]]
+file = "mods/pandalib.pw.toml"
+hash = "81761dddd11a6aece347ce1e8d9b800cef2e01c0579432e7afd24b709f3e113b"
 metafile = true
 
 [[files]]
