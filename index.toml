@@ -10,7 +10,7 @@ hash = "6b0382b16279f26ff69014300541967a356a666eb0b91b422f6862f6b7dad17e"
 
 [[files]]
 file = "README.md"
-hash = "22fbc969302c385d66d8b9e41f7a019fbcb91f2c820a3bb7f877e7384bd389b5"
+hash = "8994f389c54487d2a2736d7ab1b12d5bfbc317ffacebad3e145fcd1273777a8a"
 
 [[files]]
 file = "config/defaultoptions/extra/baritone/settings.txt"
@@ -885,6 +885,11 @@ metafile = true
 [[files]]
 file = "mods/just-enough-beacons-reforged.pw.toml"
 hash = "c9b08c2c9a61556b04979a930a0c95a1cc5fa45bed7c7663aed5145c242c86de"
+metafile = true
+
+[[files]]
+file = "mods/just-enough-calculation.pw.toml"
+hash = "712ac3e3cca6cd0478dfeafac21f7926dba0c54763144ae168ed200d894e6464"
 metafile = true
 
 [[files]]
