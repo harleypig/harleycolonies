@@ -10,7 +10,7 @@ hash = "6b0382b16279f26ff69014300541967a356a666eb0b91b422f6862f6b7dad17e"
 
 [[files]]
 file = "README.md"
-hash = "8994f389c54487d2a2736d7ab1b12d5bfbc317ffacebad3e145fcd1273777a8a"
+hash = "ea0d2d56e127f77d6ae25d0a77336ce25630e2002df85c39aaa56cb37ec83c11"
 
 [[files]]
 file = "config/defaultoptions/extra/baritone/settings.txt"
@@ -763,11 +763,6 @@ hash = "524da0e2ec591c1e715a258e6d54214821f09539c1840457dd46a987ecd8805e"
 metafile = true
 
 [[files]]
-file = "mods/immersive-aircraft.pw.toml"
-hash = "3c3da57a8472a9176ebcb31f6bafc6c13627a3ef5817c26d73038dead633005d"
-metafile = true
-
-[[files]]
 file = "mods/immersive-paintings.pw.toml"
 hash = "5a0417f02d5be8e77083d39ca6752b36d309c0b061834c7dd666920238c5687f"
 metafile = true
@@ -1020,11 +1015,6 @@ metafile = true
 [[files]]
 file = "mods/more-foliage.pw.toml"
 hash = "f87ce326d5f33d12a2ad7a5c6a89babf3361099077a52c0c6d60a74a26383363"
-metafile = true
-
-[[files]]
-file = "mods/more-immersive-aircraft.pw.toml"
-hash = "d011b553de98ddf1cffd2e2879258148115b9daa8471d64f8bf5e6f18b17c8cc"
 metafile = true
 
 [[files]]
