@@ -1,0 +1,13 @@
+name = "Panda's Extra Details"
+filename = "extra_details-0.3.1-beta-forge-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "69e2e1bb8ba64ba977514d7e6729baae6514ece6"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5258176
+project-id = 883585
