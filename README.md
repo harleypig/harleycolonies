@@ -27,6 +27,7 @@ the grind and adding a variety of features to make gameplay more enjoyable.
 Some of the more popular mods included in this pack:
 
 - **[Minecolonies](https://www.curseforge.com/minecraft/mc-mods/minecolonies)**: Central to the modpack, allowing you to build and manage your own colony.
+- **[Default Options](https://www.curseforge.com/minecraft/mc-mods/default-options)**:
 - **[JourneyMap](https://www.curseforge.com/minecraft/mc-mods/journeymap)**: A real-time mapping tool that helps you navigate and explore.
 - **[Biomes O'Plenty](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty)**: Adds a variety of new biomes to explore.
 - **[Storage Drawers](https://www.curseforge.com/minecraft/mc-mods/storage-drawers)**: Efficient storage solutions for your items.
