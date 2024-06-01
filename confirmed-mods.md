@@ -42,7 +42,6 @@ my modpack.
 
 - [Better Advancements](https://www.curseforge.com/minecraft/mc-mods/better-advancements)
 - [Comforts](https://www.curseforge.com/minecraft/mc-mods/comforts)
-- [Waystones](https://www.curseforge.com/minecraft/mc-mods/waystones)
 
 ## Shaders
 
@@ -130,11 +129,10 @@ Notes:
 - [Clumps](https://www.curseforge.com/minecraft/mc-mods/clumps)
 - [Connectivity](https://www.curseforge.com/minecraft/mc-mods/connectivity)
 - [Controlling](https://www.curseforge.com/minecraft/mc-mods/controlling)
-- [Default Options](https://www.curseforge.com/minecraft/mc-mods/default-options): Allows you to set default options for your modpack, ensuring a consistent experience for all players.
+- [Default Options](https://www.curseforge.com/minecraft/mc-mods/default-options)
 - [HT's TreeChop](https://www.curseforge.com/minecraft/mc-mods/treechop)
 - [Inventory Sorter](https://www.curseforge.com/minecraft/mc-mods/inventory-sorter)
 - [KleeSlabs](https://www.curseforge.com/minecraft/mc-mods/kleeslabs)
-- [Legendary Tooltips](https://www.curseforge.com/minecraft/mc-mods/legendary-tooltips)
 - [Passable Foliage 🌳 (Forge)](https://www.curseforge.com/minecraft/mc-mods/passable-foliage)
 - [PeacefulSurface](https://www.curseforge.com/minecraft/mc-mods/peacefulsurface)
 - [Waystones](https://www.curseforge.com/minecraft/mc-mods/waystones)
@@ -164,6 +162,18 @@ Notes:
 - [SuperMartijn642's Config Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib)
 - [TerraBlender (Forge)](https://www.curseforge.com/minecraft/mc-mods/terrablender)
 
+NOTE THESE DEPENDS
+
+libraryname
+  mod-name
+
+A slug is defined as the last part of the mods uri.
+
+In the section the mod-name is located, add at the end a note that matches
+existing notations, indicating which libraries that mod is dependent on.
+
+Use the slug to get the human readable name.
+
 bookshelf
   enchantment-descriptions
 
@@ -173,38 +183,38 @@ balm
   waystones
 
 cerbons_api
-  just_enough_beacons
+  just-enough-beacons-reforged
 
 searchables
   controlling
 
 terrablender
-  biomesoplenty
+  biomes-o-plenty
 
-sophhisticatedcore
-  sophisticatedbackpacks
+sophisticated-core
+  sophisticated-backpacks
 
 iceberg
 prism
-  legendarytooltips
+  legendary-tooltips
 
-puzzleslib
-  blockrunner
+puzzles-lib
+  block-runner-forge
 
-supermartijn642configlib
-  durabilitytooltip
+supermartijn642-config-lib
+  durability-tooltip
 
 cupboard
   connectivity
 
-cloth_config
+cloth-config
   betterf3
 
 flib
-  oceanfloor
+  ocean-floor-clay-sand-and-dirt
 
 iceberg
-  equipmentcompare
+  equipment-compare
 
 kiwi
-  passablefoliage
+  passable-foliage
