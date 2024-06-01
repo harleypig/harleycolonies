@@ -1,0 +1,35 @@
+## Minecolonies
+
+- [NoPhantomNoCry](https://www.curseforge.com/minecraft/mc-mods/nophantomnocry)
+- [TheOvergrowth](https://www.curseforge.com/minecraft/mc-mods/theovergrowth)
+
+## Just Enough Items (JEI)
+
+- Consider some of the mods `JEBr` and `JER Integration` support.
+- [Crafting Station: JEI Edition](https://www.curseforge.com/minecraft/mc-mods/crafting-station-jei-edition)
+- [JEITweaker](https://www.curseforge.com/minecraft/mc-mods/jeitweaker)
+
+## Mapping/Information
+
+- [Adaptive Tooltips](https://www.curseforge.com/minecraft/mc-mods/adaptive-tooltips)
+- [BetterTabs](https://www.curseforge.com/minecraft/mc-mods/bettertabs)
+- [Better Trim Tooltips](https://www.curseforge.com/minecraft/mc-mods/better-trim-tooltips)
+- [Clean Tooltips](https://www.curseforge.com/minecraft/mc-mods/clean-tooltips)
+- [Effect Tooltips](https://www.curseforge.com/minecraft/mc-mods/effect-tooltips)
+- [Enchanted ToolTips](https://www.curseforge.com/minecraft/mc-mods/enchanted-tooltips)
+- [Enchantment Requirements](https://www.curseforge.com/minecraft/mc-mods/enchantmentrequirements)
+- [Enchantment Sort](https://www.curseforge.com/minecraft/mc-mods/enchantment-sort)
+- [Great Scrollable Tooltips](https://www.curseforge.com/minecraft/mc-mods/great-scrollable-tooltips)
+- [Held Item Tooltips](https://www.curseforge.com/minecraft/mc-mods/held-item-tooltips)
+- [NBT Tooltip](https://www.curseforge.com/minecraft/mc-mods/nbt-tooltip)
+- [Netherite Compass](https://www.curseforge.com/minecraft/mc-mods/netherite-compass)
+- [Portal Linking Compass](https://www.curseforge.com/minecraft/mc-mods/portal-linking-compass)
+- [Sorted Enchantments](https://www.curseforge.com/minecraft/mc-mods/sorted-enchantments)
+- [Tool Stats](https://www.curseforge.com/minecraft/mc-mods/tool-stats)
+- [ToolTipFix](https://www.curseforge.com/minecraft/mc-mods/tooltipfix)
+- [Traveler's Compass](https://www.curseforge.com/minecraft/mc-mods/travelers-compass)
+
+## Storage
+
+- [Fluid Drawers Legacy](https://www.curseforge.com/minecraft/mc-mods/fluid-drawers-legacy)
+- [Storage Drawers: Misc Pack](https://www.curseforge.com/minecraft/mc-mods/storage-drawers-misc-pack)

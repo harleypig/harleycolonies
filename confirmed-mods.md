@@ -15,6 +15,9 @@ the record, it's a client side mod.
 Todo: Cherry pick from [The Vanilla
 Experience](https://www.curseforge.com/minecraft/modpacks/the-vanilla-experience).
 
+See if [Quark](https://www.curseforge.com/minecraft/mc-mods/quark) is still
+interesting to me.
+
 ## Minecolonies
 
 These are Minecolonies mods, created by the Minecolonies team.
@@ -31,11 +34,6 @@ These are Minecolonies mods, created by the Minecolonies team.
 - [Stylecolonies](https://www.curseforge.com/minecraft/mc-mods/stylecolonies)
 - [Vanilla Plus Tools](https://www.curseforge.com/minecraft/mc-mods/vanilla-tools)
 - [WaterPhysics](https://www.curseforge.com/minecraft/mc-mods/waterphysics)
-
-### Consider?
-
-- [NoPhantomNoCry](https://www.curseforge.com/minecraft/mc-mods/nophantomnocry)
-- [TheOvergrowth](https://www.curseforge.com/minecraft/mc-mods/theovergrowth)
 
 ## Base Mods
 
@@ -89,12 +87,6 @@ Notes:
 - `Just Enough Calculation` and `Just Enough Sculk Sensor` depend on `Architectury API`.
 - `Just Enough Advancements` depends on `LibX`.
 
-### Consider?
-
-- Consider some of the mods `JEBr` and `JER Integration` support.
-- [Crafting Station: JEI Edition](https://www.curseforge.com/minecraft/mc-mods/crafting-station-jei-edition)
-- [JEITweaker](https://www.curseforge.com/minecraft/mc-mods/jeitweaker)
-
 ## Mapping/Information
 
 - [AppleSkin](https://www.curseforge.com/minecraft/mc-mods/appleskin)
@@ -121,26 +113,6 @@ Notes:
 - [FullGrownCropMarker](https://www.curseforge.com/minecraft/mc-mods/full-grown-crop-marker)
 - [Legendary Tooltips](https://www.curseforge.com/minecraft/mc-mods/legendary-tooltips)
 - [Mod Name Tooltip](https://www.curseforge.com/minecraft/mc-mods/mod-name-tooltip)
-
-### Consider?
-
-- [Adaptive Tooltips](https://www.curseforge.com/minecraft/mc-mods/adaptive-tooltips)
-- [BetterTabs](https://www.curseforge.com/minecraft/mc-mods/bettertabs)
-- [Better Trim Tooltips](https://www.curseforge.com/minecraft/mc-mods/better-trim-tooltips)
-- [Clean Tooltips](https://www.curseforge.com/minecraft/mc-mods/clean-tooltips)
-- [Effect Tooltips](https://www.curseforge.com/minecraft/mc-mods/effect-tooltips)
-- [Enchanted ToolTips](https://www.curseforge.com/minecraft/mc-mods/enchanted-tooltips)
-- [Enchantment Requirements](https://www.curseforge.com/minecraft/mc-mods/enchantmentrequirements)
-- [Enchantment Sort](https://www.curseforge.com/minecraft/mc-mods/enchantment-sort)
-- [Great Scrollable Tooltips](https://www.curseforge.com/minecraft/mc-mods/great-scrollable-tooltips)
-- [Held Item Tooltips](https://www.curseforge.com/minecraft/mc-mods/held-item-tooltips)
-- [NBT Tooltip](https://www.curseforge.com/minecraft/mc-mods/nbt-tooltip)
-- [Netherite Compass](https://www.curseforge.com/minecraft/mc-mods/netherite-compass)
-- [Portal Linking Compass](https://www.curseforge.com/minecraft/mc-mods/portal-linking-compass)
-- [Sorted Enchantments](https://www.curseforge.com/minecraft/mc-mods/sorted-enchantments)
-- [Tool Stats](https://www.curseforge.com/minecraft/mc-mods/tool-stats)
-- [ToolTipFix](https://www.curseforge.com/minecraft/mc-mods/tooltipfix)
-- [Traveler's Compass](https://www.curseforge.com/minecraft/mc-mods/travelers-compass)
 
 ### Rejected
 
@@ -171,11 +143,6 @@ Notes:
 - [Storage Drawers](https://www.curseforge.com/minecraft/mc-mods/storage-drawers)
 - [Sophisticated Backpacks](https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks)
 - [Framed Compacting Drawers](https://www.curseforge.com/minecraft/mc-mods/framed-compacting-drawers)
-
-### Consider?
-
-- [Fluid Drawers Legacy](https://legacy.curseforge.com/minecraft/mc-mods/fluid-drawers-legacy)
-- [Storage Drawers: Misc Pack](https://legacy.curseforge.com/minecraft/mc-mods/storage-drawers-misc-pack)
 
 ## Libraries
 
