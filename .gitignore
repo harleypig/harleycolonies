@@ -1,3 +1,5 @@
+venv
+
 # Exclude exported CurseForge zip files
 *.zip
 
