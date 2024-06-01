@@ -130,7 +130,7 @@ Notes:
 - [Clumps](https://www.curseforge.com/minecraft/mc-mods/clumps)
 - [Connectivity](https://www.curseforge.com/minecraft/mc-mods/connectivity)
 - [Controlling](https://www.curseforge.com/minecraft/mc-mods/controlling)
-- [Default Options](https://www.curseforge.com/minecraft/mc-mods/default-options)
+- [Default Options](https://www.curseforge.com/minecraft/mc-mods/default-options): Allows you to set default options for your modpack, ensuring a consistent experience for all players.
 - [HT's TreeChop](https://www.curseforge.com/minecraft/mc-mods/treechop)
 - [Inventory Sorter](https://www.curseforge.com/minecraft/mc-mods/inventory-sorter)
 - [KleeSlabs](https://www.curseforge.com/minecraft/mc-mods/kleeslabs)
