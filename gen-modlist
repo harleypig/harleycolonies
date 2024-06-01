@@ -28,8 +28,9 @@ def generate_modlist():
     project_url = data.get('metadata', {}).get('curseforge',
                                                {}).get('website', '')
 
-    # if filepath starts with 'archive/' then just put mod_name, project_url
-    # in archived and continue
+    if filepath.startswith('archive/'):
+      archived.append((mod_name, project_url))
+      continue
 
     categories = data.get('metadata', {}).get('curseforge',
                                               {}).get('categories', [])
