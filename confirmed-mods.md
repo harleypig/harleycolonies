@@ -121,6 +121,7 @@ Notes:
 
 ## Utilities
 
+- [CERBON's Better Beacons](https://www.curseforge.com/minecraft/mc-mods/cerbons-better-beacons)
 - [AI Improvements](https://www.curseforge.com/minecraft/mc-mods/ai-improvements)
 - [Amendments](https://www.curseforge.com/minecraft/mc-mods/amendments)
 - [Better Days](https://www.curseforge.com/minecraft/mc-mods/betterdays)
@@ -147,4 +148,63 @@ Notes:
 ## Libraries
 
 - [Architectury API (Fabric/Forge/NeoForge)](https://www.curseforge.com/minecraft/mc-mods/architectury-api)
+- [Balm (Forge Edition)](https://www.curseforge.com/minecraft/mc-mods/balm)
+- [Bookshelf](https://www.curseforge.com/minecraft/mc-mods/bookshelf)
+- [CERBON's API](https://www.curseforge.com/minecraft/mc-mods/cerbons-api)
+- [Cloth Config API](https://www.curseforge.com/minecraft/mc-mods/cloth-config)
+- [Cupboard](https://www.curseforge.com/minecraft/mc-mods/cupboard)
+- [FLIB](https://www.curseforge.com/minecraft/mc-mods/flib)
+- [Iceberg](https://www.curseforge.com/minecraft/mc-mods/iceberg)
+- [Kiwi 🥝 (Forge)](https://www.curseforge.com/minecraft/mc-mods/kiwi)
 - [LibX](https://www.curseforge.com/minecraft/mc-mods/libx)
+- [Prism](https://www.curseforge.com/minecraft/mc-mods/prism-lib)
+- [Puzzles Lib](https://www.curseforge.com/minecraft/mc-mods/puzzles-lib)
+- [Searchables](https://www.curseforge.com/minecraft/mc-mods/searchables)
+- [Sophisticated Core](https://www.curseforge.com/minecraft/mc-mods/sophisticated-core)
+- [SuperMartijn642's Config Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib)
+- [TerraBlender (Forge)](https://www.curseforge.com/minecraft/mc-mods/terrablender)
+
+bookshelf
+  enchantment-descriptions
+
+balm
+  default-options
+  kleeslabs
+  waystones
+
+cerbons_api
+  just_enough_beacons
+
+searchables
+  controlling
+
+terrablender
+  biomesoplenty
+
+sophhisticatedcore
+  sophisticatedbackpacks
+
+iceberg
+prism
+  legendarytooltips
+
+puzzleslib
+  blockrunner
+
+supermartijn642configlib
+  durabilitytooltip
+
+cupboard
+  connectivity
+
+cloth_config
+  betterf3
+
+flib
+  oceanfloor
+
+iceberg
+  equipmentcompare
+
+kiwi
+  passablefoliage
