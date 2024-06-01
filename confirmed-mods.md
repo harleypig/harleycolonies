@@ -54,9 +54,9 @@ my modpack.
 
 ## Biomes
 
-- [Biomes O'Plenty](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty)
+- [Biomes O'Plenty](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty) (depends on [TerraBlender](https://www.curseforge.com/minecraft/mc-mods/terrablender))
 - [Geophilic Reforged – Biome Additions](https://www.curseforge.com/minecraft/mc-mods/geophilic-reforged)
-- [Ocean Floor - Clay Sand and Dirt](https://www.curseforge.com/minecraft/mc-mods/ocean-floor-clay-sand-and-dirt)
+- [Ocean Floor - Clay Sand and Dirt](https://www.curseforge.com/minecraft/mc-mods/ocean-floor-clay-sand-and-dirt) (depends on [FLIB](https://www.curseforge.com/minecraft/mc-mods/flib))
 - [Tan's Huge Trees](https://www.curseforge.com/minecraft/mc-mods/tan-huge-trees)
 
 ## JourneyMap
@@ -71,7 +71,7 @@ my modpack.
 - [JEI Integration](https://www.curseforge.com/minecraft/mc-mods/jei-integration)
 - [Just Enough Advancements (JEA)](https://www.curseforge.com/minecraft/mc-mods/jea)
 - [Just Enough Archaeology](https://www.curseforge.com/minecraft/mc-mods/just-enough-archaeology)
-- [Just Enough Beacons Reforged](https://www.curseforge.com/minecraft/mc-mods/just-enough-beacons-reforged)
+- [Just Enough Beacons Reforged](https://www.curseforge.com/minecraft/mc-mods/just-enough-beacons-reforged) (depends on [CERBON's API](https://www.curseforge.com/minecraft/mc-mods/cerbons-api))
 - [Just Enough Breeding (JEBr)](https://www.curseforge.com/minecraft/mc-mods/justenoughbreeding)
 - [Just Enough Calculation](https://www.curseforge.com/minecraft/mc-mods/just-enough-calculation)
 - [Just Enough Effect Descriptions (JEED)](https://www.curseforge.com/minecraft/mc-mods/just-enough-effect-descriptions-jeed)
@@ -89,7 +89,7 @@ Notes:
 ## Mapping/Information
 
 - [AppleSkin](https://www.curseforge.com/minecraft/mc-mods/appleskin)
-- [BetterF3](https://www.curseforge.com/minecraft/mc-mods/betterf3)
+- [BetterF3](https://www.curseforge.com/minecraft/mc-mods/betterf3) (depends on [Cloth Config API](https://www.curseforge.com/minecraft/mc-mods/cloth-config))
 - [Better Ping Display](https://www.curseforge.com/minecraft/mc-mods/better-ping-display)
 - [Catalogue](https://www.curseforge.com/minecraft/mc-mods/catalogue)
 - [Compact Help Command](https://www.curseforge.com/minecraft/mc-mods/compact-help-command)
@@ -105,12 +105,12 @@ Notes:
 
 - [BeehiveTooltips](https://www.curseforge.com/minecraft/mc-mods/beehivetooltips)
 - [Drawers Tooltip](https://www.curseforge.com/minecraft/mc-mods/drawers-tooltip)
-- [Durability Tooltip](https://www.curseforge.com/minecraft/mc-mods/durability-tooltip)
-- [Enchantment Descriptions](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions)
-- [Equipment Compare](https://www.curseforge.com/minecraft/mc-mods/equipment-compare)
+- [Durability Tooltip](https://www.curseforge.com/minecraft/mc-mods/durability-tooltip) (depends on [SuperMartijn642's Config Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib))
+- [Enchantment Descriptions](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions) (depends on [Bookshelf](https://www.curseforge.com/minecraft/mc-mods/bookshelf))
+- [Equipment Compare](https://www.curseforge.com/minecraft/mc-mods/equipment-compare) (depends on [Iceberg](https://www.curseforge.com/minecraft/mc-mods/iceberg))
 - [Food Effect Tooltips (Forge)](https://www.curseforge.com/minecraft/mc-mods/food-effect-tooltips-forge)
 - [FullGrownCropMarker](https://www.curseforge.com/minecraft/mc-mods/full-grown-crop-marker)
-- [Legendary Tooltips](https://www.curseforge.com/minecraft/mc-mods/legendary-tooltips)
+- [Legendary Tooltips](https://www.curseforge.com/minecraft/mc-mods/legendary-tooltips) (depends on [Iceberg](https://www.curseforge.com/minecraft/mc-mods/iceberg), [Prism](https://www.curseforge.com/minecraft/mc-mods/prism-lib))
 - [Mod Name Tooltip](https://www.curseforge.com/minecraft/mc-mods/mod-name-tooltip)
 
 ### Rejected
@@ -124,23 +124,23 @@ Notes:
 - [AI Improvements](https://www.curseforge.com/minecraft/mc-mods/ai-improvements)
 - [Amendments](https://www.curseforge.com/minecraft/mc-mods/amendments)
 - [Better Days](https://www.curseforge.com/minecraft/mc-mods/betterdays)
-- [Block Runner](https://www.curseforge.com/minecraft/mc-mods/block-runner-forge)
+- [Block Runner](https://www.curseforge.com/minecraft/mc-mods/block-runner-forge) (depends on [Puzzles Lib](https://www.curseforge.com/minecraft/mc-mods/puzzles-lib))
 - [Canary](https://www.curseforge.com/minecraft/mc-mods/canary)
 - [Clumps](https://www.curseforge.com/minecraft/mc-mods/clumps)
-- [Connectivity](https://www.curseforge.com/minecraft/mc-mods/connectivity)
-- [Controlling](https://www.curseforge.com/minecraft/mc-mods/controlling)
+- [Connectivity](https://www.curseforge.com/minecraft/mc-mods/connectivity) (depends on [Cupboard](https://www.curseforge.com/minecraft/mc-mods/cupboard))
+- [Controlling](https://www.curseforge.com/minecraft/mc-mods/controlling) (depends on [Searchables](https://www.curseforge.com/minecraft/mc-mods/searchables))
 - [Default Options](https://www.curseforge.com/minecraft/mc-mods/default-options)
 - [HT's TreeChop](https://www.curseforge.com/minecraft/mc-mods/treechop)
 - [Inventory Sorter](https://www.curseforge.com/minecraft/mc-mods/inventory-sorter)
 - [KleeSlabs](https://www.curseforge.com/minecraft/mc-mods/kleeslabs)
-- [Passable Foliage 🌳 (Forge)](https://www.curseforge.com/minecraft/mc-mods/passable-foliage)
+- [Passable Foliage 🌳 (Forge)](https://www.curseforge.com/minecraft/mc-mods/passable-foliage) (depends on [Kiwi 🥝 (Forge)](https://www.curseforge.com/minecraft/mc-mods/kiwi))
 - [PeacefulSurface](https://www.curseforge.com/minecraft/mc-mods/peacefulsurface)
 - [Waystones](https://www.curseforge.com/minecraft/mc-mods/waystones)
 
 ## Storage
 
 - [Storage Drawers](https://www.curseforge.com/minecraft/mc-mods/storage-drawers)
-- [Sophisticated Backpacks](https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks)
+- [Sophisticated Backpacks](https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks) (depends on [Sophisticated Core](https://www.curseforge.com/minecraft/mc-mods/sophisticated-core))
 - [Framed Compacting Drawers](https://www.curseforge.com/minecraft/mc-mods/framed-compacting-drawers)
 
 ## Libraries
