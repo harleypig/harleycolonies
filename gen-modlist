@@ -10,21 +10,27 @@ IGNORE_FILES = ["pack.toml", "index.toml"]
 def find_toml_files():
   toml_files = glob.glob('**/*.toml', recursive=True)
   toml_files = [f for f in toml_files if f not in IGNORE_FILES]
+  return toml_files
 
 def parse_toml_file(filepath):
   with open(filepath, 'r') as file:
     data = parse(file.read())
   return data
 
-def generate_modlist(directory):
-  toml_files = read_toml_files(directory)
+def generate_modlist():
+  toml_files = find_toml_files()
   mods = []
+  archived = []
 
   for filepath in toml_files:
     data = parse_toml_file(filepath)
     mod_name = data.get('name', 'Unknown Mod')
     project_url = data.get('metadata', {}).get('curseforge',
                                                {}).get('website', '')
+
+    # if filepath starts with 'archive/' then just put mod_name, project_url
+    # in archived and continue
+
     categories = data.get('metadata', {}).get('curseforge',
                                               {}).get('categories', [])
     mod_class = project_url.split('/')[-2] if project_url else 'Unknown Class'
@@ -56,4 +62,4 @@ def generate_modlist(directory):
       file.write(f"- [{mod_name}]({project_url})\n")
 
 if __name__ == "__main__":
-  generate_modlist(".")
+  generate_modlist()
