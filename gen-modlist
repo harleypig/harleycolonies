@@ -9,6 +9,7 @@ IGNORE_FILES = ["pack.toml", "index.toml"]
 
 def find_toml_files():
   toml_files = glob.glob('**/*.toml', recursive=True)
+  toml_files = [f for f in toml_files if f not in IGNORE_FILES]
 
 def parse_toml_file(filepath):
   with open(filepath, 'r') as file:
