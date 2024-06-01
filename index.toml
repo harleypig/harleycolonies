@@ -66,7 +66,7 @@ hash = "e30e4acf1f257b126738ef77d5e108a84bc335b8815e3971102327605680e1c7"
 
 [[files]]
 file = "confirmed-mods.md"
-hash = "7ef409f2f5e8ef42abe9f6d93d56b62ba5074c0ebeea7d84ae50bd900e7e9565"
+hash = "0ac48f809d26b4476788dc1401d9f499e187d9450a24b6417563c07dc6c78037"
 
 [[files]]
 file = "consider-mods.md"
@@ -178,6 +178,11 @@ hash = "fd2c9f80e9e49fff5aaa5d355dd75059ab8df6ed37849b39888eb6029fc4ef20"
 metafile = true
 
 [[files]]
+file = "mods/balm.pw.toml"
+hash = "1c2a358ef59072779084c0c908cc775cdb9479eb38efd9e9aae068a9806bba1c"
+metafile = true
+
+[[files]]
 file = "mods/beehivetooltips.pw.toml"
 hash = "70e7d87a032499e67fd0a54a753061b0b6e67e9a28bb7186eb52a98f2f3bd732"
 metafile = true
@@ -213,6 +218,16 @@ hash = "06421b9a764da73db33d8239d811466637879472bd5c1639c1c923d156cca041"
 metafile = true
 
 [[files]]
+file = "mods/blockui.pw.toml"
+hash = "d35dd643b1554b737c82984cb5f5656db68c3e111af52623f362c9eca75d8a73"
+metafile = true
+
+[[files]]
+file = "mods/bookshelf.pw.toml"
+hash = "8f28e8d546be6f0fc5bcf6230d6e0608303fb3ba77bde0f91fd35f1a0598a5e7"
+metafile = true
+
+[[files]]
 file = "mods/canary.pw.toml"
 hash = "8b333ef734d4a8b699a739185ea84ddb7f931caa6402e3c3d977ef5b18b5311c"
 metafile = true
@@ -223,13 +238,28 @@ hash = "ed2c8cc65aa54c55ea1df9754ecae0e6c192b266c6e7ac423da3a0a0947b1687"
 metafile = true
 
 [[files]]
+file = "mods/cerbons-api.pw.toml"
+hash = "2a19358d4901d76963d9561fe6fe656f7459add257d46f0371b955e092013d88"
+metafile = true
+
+[[files]]
 file = "mods/clean-swing-through-grass.pw.toml"
 hash = "bf3e265b0f0aa152c1e7ea3b4a10949570900d18c413547e516aa502bd862faa"
 metafile = true
 
 [[files]]
+file = "mods/cloth-config.pw.toml"
+hash = "8223a6e95971ac63dd4d096f022481e5815be9687580dba105f95c95160872d5"
+metafile = true
+
+[[files]]
 file = "mods/clumps.pw.toml"
 hash = "d4ba253a78cae31934fa1fce5e4ce70856f87d5b92a596a91e781b5a31ec5bcc"
+metafile = true
+
+[[files]]
+file = "mods/collective.pw.toml"
+hash = "a9f8c36a5ff8d335895a5934d661737ffaeccfca70c166b40e81f06dcdd6b972"
 metafile = true
 
 [[files]]
@@ -253,6 +283,11 @@ hash = "aeb1c996388617a991ba2caa474ee235064584e7de42870eb3ca15d752dd9683"
 metafile = true
 
 [[files]]
+file = "mods/cupboard.pw.toml"
+hash = "14adc50ab34997346006eee23f72b1421fc144a86a0d50e20be32481e7789740"
+metafile = true
+
+[[files]]
 file = "mods/default-options.pw.toml"
 hash = "49c9d61bc0bd6cea6c1415fe67e7ac59388762b1b2179606983e5eecf7cc874f"
 metafile = true
@@ -260,6 +295,11 @@ metafile = true
 [[files]]
 file = "mods/ding.pw.toml"
 hash = "c8f91831ae8303b7ed3a85787d17ec4ed97d4b295e54459f7e1c04521c3e2dea"
+metafile = true
+
+[[files]]
+file = "mods/domum-ornamentum.pw.toml"
+hash = "f11085aee46ab66f3923204f34e2243742172f2f4bef1b1e191f31d0b1889731"
 metafile = true
 
 [[files]]
@@ -288,6 +328,11 @@ hash = "d7eb0ac164e27565604e81eaf2157c2e72fc51b394599adf276afea2ffed33e4"
 metafile = true
 
 [[files]]
+file = "mods/flib.pw.toml"
+hash = "421d911128c8ec367c9473e11aee160840cbc5a4b8b9230ed43a50a08c1ec587"
+metafile = true
+
+[[files]]
 file = "mods/food-effect-tooltips-forge.pw.toml"
 hash = "7ee14e69f95cf2e5595cd5083ea375804da62e6a3916e3cc0ab7b649b5f82dec"
 metafile = true
@@ -305,6 +350,11 @@ metafile = true
 [[files]]
 file = "mods/geophilic-reforged.pw.toml"
 hash = "0defe5d3b6c99032b91f0b69ad818f85ca0e497eef53ea8486ff573cfae4af52"
+metafile = true
+
+[[files]]
+file = "mods/iceberg.pw.toml"
+hash = "524da0e2ec591c1e715a258e6d54214821f09539c1840457dd46a987ecd8805e"
 metafile = true
 
 [[files]]
@@ -398,6 +448,11 @@ hash = "24ae5caf966fa9ae59634af126757a15f0b1d85df142d01f4eebd58b0cb808de"
 metafile = true
 
 [[files]]
+file = "mods/kiwi.pw.toml"
+hash = "58a21bf71c25a7c90f63c9064f9999c319f9168f6f5cc418e26f1f204e96c6ac"
+metafile = true
+
+[[files]]
 file = "mods/kleeslabs.pw.toml"
 hash = "da48882c6730a45623f61aeaf839bef4beb0bf6647c315586d18f5326601ae9d"
 metafile = true
@@ -428,6 +483,11 @@ hash = "1438efdd90ec72bec66e14af4b9d5bc4b0f555a7f8475cbac0b1f12474f015a2"
 metafile = true
 
 [[files]]
+file = "mods/multi-piston.pw.toml"
+hash = "d15ee31b42b570e2ff2c37a13259c6482bcca6684fcb5119b08373e37d899852"
+metafile = true
+
+[[files]]
 file = "mods/natures-compass.pw.toml"
 hash = "ac23d5e5502ec8f6d963dabaf8491019e9301c6cb9f9dafcf73c789a74c27b82"
 metafile = true
@@ -453,8 +513,33 @@ hash = "9cdfe75748bcf909c1d007b1926e366a43fd466ecdb974e4fce232c2143abd42"
 metafile = true
 
 [[files]]
+file = "mods/prism-lib.pw.toml"
+hash = "ae72f0e821535fc6c3a9188ebeec8a26daa7f420e791840761e46e9fbed9148e"
+metafile = true
+
+[[files]]
+file = "mods/puzzles-lib.pw.toml"
+hash = "35538e13030269aa4a9b780ad12ecdc24774a61ebffc1b0fbd9d09ec6e8b60d8"
+metafile = true
+
+[[files]]
+file = "mods/searchables.pw.toml"
+hash = "b4166532cc48d27cb8cf3b3f8c5c9a395f569508302c70c742ff874ca5e9a161"
+metafile = true
+
+[[files]]
+file = "mods/selene.pw.toml"
+hash = "9aefecb19f7894d25637f90cb3da11710d144dbedaecc8404e93236826fae39a"
+metafile = true
+
+[[files]]
 file = "mods/sophisticated-backpacks.pw.toml"
 hash = "45d5a7980d140e6d492086e0c003dce3ceadfac80497ca522ed451396ca7a9cf"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-core.pw.toml"
+hash = "073ecca10d88481b7e19aff21230da6dfb5b54bacc4a04d59ff9a3e6dd61b979"
 metafile = true
 
 [[files]]
@@ -468,13 +553,33 @@ hash = "49bda99145fa01607ad4c521905993024b63f4f3145f6342a1794675630ac7e7"
 metafile = true
 
 [[files]]
+file = "mods/structurize.pw.toml"
+hash = "8fb3205b4f9c3e57025622dab8225711fb978df1f86980aac22704deaeaff23f"
+metafile = true
+
+[[files]]
 file = "mods/stylecolonies.pw.toml"
 hash = "766bf3cb6aa7fa5fe132bbd40e85f1d20bcaaa585120fd6cfb0202a99829e31f"
 metafile = true
 
 [[files]]
+file = "mods/supermartijn642s-config-lib.pw.toml"
+hash = "ed07f84c0fd4533e47911133c8e792ecc9cc482c545d4c48840e81f1b28607ec"
+metafile = true
+
+[[files]]
 file = "mods/tan-huge-trees.pw.toml"
 hash = "c1876213f6fbd454757690414e73787a2cfc945787aa70cdbc114d11abb90f30"
+metafile = true
+
+[[files]]
+file = "mods/terrablender.pw.toml"
+hash = "9d861d8bd33628ca8b8964c6b4b00f167769297ae1418a88134a1a4df48eba84"
+metafile = true
+
+[[files]]
+file = "mods/towntalk.pw.toml"
+hash = "96db580eb1be9204953d4d6a2827e2f868ecf4f6e1774e6eeb4c1166a43a2600"
 metafile = true
 
 [[files]]

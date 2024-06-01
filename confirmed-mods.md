@@ -145,11 +145,13 @@ my modpack.
 - [Bookshelf](https://www.curseforge.com/minecraft/mc-mods/bookshelf)
 - [CERBON's API](https://www.curseforge.com/minecraft/mc-mods/cerbons-api)
 - [Cloth Config API](https://www.curseforge.com/minecraft/mc-mods/cloth-config)
+- [Collective](https://www.curseforge.com/minecraft/mc-mods/collective)
 - [Cupboard](https://www.curseforge.com/minecraft/mc-mods/cupboard)
 - [FLIB](https://www.curseforge.com/minecraft/mc-mods/flib)
 - [Iceberg](https://www.curseforge.com/minecraft/mc-mods/iceberg)
 - [Kiwi 🥝 (Forge)](https://www.curseforge.com/minecraft/mc-mods/kiwi)
 - [LibX](https://www.curseforge.com/minecraft/mc-mods/libx)
+- [Moonlight Lib](https://www.curseforge.com/minecraft/mc-mods/selene)
 - [Prism](https://www.curseforge.com/minecraft/mc-mods/prism-lib)
 - [Puzzles Lib](https://www.curseforge.com/minecraft/mc-mods/puzzles-lib)
 - [Searchables](https://www.curseforge.com/minecraft/mc-mods/searchables)
@@ -159,9 +161,11 @@ my modpack.
 
 ### Dependencies
 
+- `Amendments` depends on `Moonlight Lib`
 - `BetterF3` depends on `Cloth Config API`
 - `Biomes O'Plenty` depends on `TerraBlender`
 - `Block Runner` depends on `puzzles-lib`
+- `Compact Help Command` depends on `Collective`
 - `Connectivity` depends on `Cupboard`
 - `Controlling` depends on `Searchables`
 - `Default Options`, `KleeSlabs`, and `Waystones` depend on `Balm`
