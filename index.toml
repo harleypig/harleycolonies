@@ -10,7 +10,7 @@ hash = "6b0382b16279f26ff69014300541967a356a666eb0b91b422f6862f6b7dad17e"
 
 [[files]]
 file = "README.md"
-hash = "ff289a8524c37466c0a9cadd54c283e5e554be634a1e1caab8dc2b5c732f6624"
+hash = "9b63583055489eaf82a05ddb044390e2dad763bcc4ad096feada5b4922a54067"
 
 [[files]]
 file = "config/defaultoptions/extra/baritone/settings.txt"
@@ -354,7 +354,7 @@ metafile = true
 
 [[files]]
 file = "mods/journeymap.pw.toml"
-hash = "f147482a2bcce45810325d1b4efe958e4737c312905d647910c75bd5611660c9"
+hash = "1f256480171f4f5d49793e337f7fe4fed2dd76e9eb784f4255962f979693f86b"
 metafile = true
 
 [[files]]
