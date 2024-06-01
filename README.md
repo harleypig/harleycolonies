@@ -8,9 +8,6 @@ This modpack is an attempt to reduce grinding as much as possible.
 Minecolonies is central to this idea, so any mod that causes a conflict and
 that cannot be resolved will not be included in this pack.
 
-I'm also using Baritone AI pathfinder. If you have a problem with that, you
-can always disable it.
-
 NOTE:
 
 I'm using the [`packwiz`](https://packwiz.infra.link) app to create this
@@ -30,7 +27,6 @@ the grind and adding a variety of features to make gameplay more enjoyable.
 Some of the more popular mods included in this pack:
 
 - **[Minecolonies](https://www.curseforge.com/minecraft/mc-mods/minecolonies)**: Central to the modpack, allowing you to build and manage your own colony.
-- **[Baritone AI Pathfinder](https://www.curseforge.com/minecraft/mc-mods/baritone)**: Automate tasks and navigate the world with ease.
 - **[JourneyMap](https://www.curseforge.com/minecraft/mc-mods/journeymap)**: A real-time mapping tool that helps you navigate and explore.
 - **[Biomes O'Plenty](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty)**: Adds a variety of new biomes to explore.
 - **[Storage Drawers](https://www.curseforge.com/minecraft/mc-mods/storage-drawers)**: Efficient storage solutions for your items.
