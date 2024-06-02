@@ -33,3 +33,7 @@
 
 - [Fluid Drawers Legacy](https://www.curseforge.com/minecraft/mc-mods/fluid-drawers-legacy)
 - [Storage Drawers: Misc Pack](https://www.curseforge.com/minecraft/mc-mods/storage-drawers-misc-pack)
+
+## Biome
+
+- [Serene Seasons](https://www.curseforge.com/minecraft/mc-mods/serene-seasons)

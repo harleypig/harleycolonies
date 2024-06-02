@@ -65,18 +65,6 @@ file = "config/defaultoptions/optionsof.txt"
 hash = "e30e4acf1f257b126738ef77d5e108a84bc335b8815e3971102327605680e1c7"
 
 [[files]]
-file = "confirmed-mods.md"
-hash = "0ac48f809d26b4476788dc1401d9f499e187d9450a24b6417563c07dc6c78037"
-
-[[files]]
-file = "consider-mods.md"
-hash = "fb1de408d43a167b49812956dc454d08c244607a43b30086f8ec7a57fec9698f"
-
-[[files]]
-file = "create-script.txt"
-hash = "5baef85f83ea06ca6ae12762c3fcaf200af074dd5e47ed9f483f3cd7ddea91b5"
-
-[[files]]
 file = "defaultconfigs/bettertitlescreen-client.toml"
 hash = "5c390d99bb5603b1599ebaeeadd14900d353e34d7b2da8c42fe22450577925a5"
 
@@ -113,10 +101,6 @@ file = "defaultconfigs/woodenshears-server.toml"
 hash = "f79e6ace5eb7a64622389f24c9ae7aa7b96ac93c70a7ff957060a08425878d12"
 
 [[files]]
-file = "gen-modlist"
-hash = "9e3ee150cf8bddeea5bdfb438a92827ed6f2ea0517430aca1c83970a0d1caa08"
-
-[[files]]
 file = "journeymap/config/5.9/addons/addon.minecolonies.config"
 hash = "ceefbe2a14e88010bcba0aaf0dd297a5451c26f6e326cf774ac0a77739b55f32"
 
@@ -147,10 +131,6 @@ hash = "137e71f92d721cf681aadfb2b1e8a2b64ae02446f0a23c7f49defe305d7aab3f"
 [[files]]
 file = "journeymap/config/5.9/journeymap.webmap.config"
 hash = "12f3cc1d873ced5b0c0fd9b4bc63a2d3d1a7cc8c3649c41bb69443d1d78b95c5"
-
-[[files]]
-file = "modlist.md"
-hash = "b354ec2b20aa34c819b837a2721b6cdb8ee48a61d4204265d22bdffa1a751b17"
 
 [[files]]
 file = "mods/ai-improvements.pw.toml"
@@ -608,10 +588,6 @@ hash = "7aef445a3fabd0b7143069b804392cd3591fb898af8ffcaafb02d8d9b34c6de3"
 metafile = true
 
 [[files]]
-file = "requirements.txt"
-hash = "8e7f334798dd05b8b54f2f7aa584b1ae9dd8c14afb9fcfdf56bfdb4004ef04ac"
-
-[[files]]
 file = "resourcepacks/fresh-animations.pw.toml"
 hash = "72f09aa7b511f28ee8daba2acdb687fe3fe8b14dc0615379cf24f7587b710a3e"
 metafile = true
@@ -627,6 +603,6 @@ hash = "1f4f4f1d1006063b8f9b6e35e82854f7ab962776cb931e003c930f854f81caa8"
 metafile = true
 
 [[files]]
-file = "vanilla-plus-shader.pw.toml"
+file = "shaderpacks/vanilla-plus-shader.pw.toml"
 hash = "27e72b90e3d059ed3bc654ebec957ddc87f4443aba70a956a0cb14d53daecf74"
 metafile = true

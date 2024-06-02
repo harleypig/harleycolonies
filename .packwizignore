@@ -1,4 +1,13 @@
-.aider*
 archive/**
+baritone/**
+docs/**
+venv/**
+work/**
+
+.aider*
 .packwizml.cache
-venv
+
+requirements.txt
+gen-modlist
+
+journeymap/**
