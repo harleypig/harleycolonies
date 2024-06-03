@@ -13,40 +13,12 @@ file = "README.md"
 hash = "9b63583055489eaf82a05ddb044390e2dad763bcc4ad096feada5b4922a54067"
 
 [[files]]
-file = "config/defaultoptions/extra/baritone/settings.txt"
-hash = "bffe865bf029af1d8ff96e5c6f710209222ddb4950389596e67295c04cfc44e1"
-
-[[files]]
-file = "config/defaultoptions/extra/blueprints/harleypig/pack.json"
-hash = "501c43fcd02aa10adf6b1519a8d9b1e54c8228aae27f0f1d7c0f1c5e9467acad"
-
-[[files]]
 file = "config/defaultoptions/extra/config/jade/jade.json"
 hash = "5795f56fd23baed7c29d39707eeab60e0ef84ef963a3464d165d4f33793c83b1"
 
 [[files]]
 file = "config/defaultoptions/extra/config/jade/plugins.json"
 hash = "695207bcb8606c71e4f9e312d4c39bfe2cbcd65aac196e15d4530d273581d86f"
-
-[[files]]
-file = "config/defaultoptions/extra/journeymap/config/5.9/addons/addon.minecolonies.config"
-hash = "ceefbe2a14e88010bcba0aaf0dd297a5451c26f6e326cf774ac0a77739b55f32"
-
-[[files]]
-file = "config/defaultoptions/extra/journeymap/config/5.9/journeymap.core.config"
-hash = "e4eac52601f37988feb941f58b9b9c3b9b4dbe15e9f6d87e89dc6b1359e1dc0a"
-
-[[files]]
-file = "config/defaultoptions/extra/journeymap/config/5.9/journeymap.fullmap.config"
-hash = "e7ddc3ccd142ffcd00ad95cb6b11a83cc074263079995e0d2c16e5135944cd04"
-
-[[files]]
-file = "config/defaultoptions/extra/journeymap/config/5.9/journeymap.minimap.config"
-hash = "15fac3f070370ef9b7b6e72715f2b0192f8ca057b043695855478fd3c0560182"
-
-[[files]]
-file = "config/defaultoptions/extra/journeymap/config/5.9/journeymap.waypoint.config"
-hash = "137e71f92d721cf681aadfb2b1e8a2b64ae02446f0a23c7f49defe305d7aab3f"
 
 [[files]]
 file = "config/defaultoptions/extra/keybindings.txt"
@@ -65,72 +37,20 @@ file = "config/defaultoptions/optionsof.txt"
 hash = "e30e4acf1f257b126738ef77d5e108a84bc335b8815e3971102327605680e1c7"
 
 [[files]]
-file = "defaultconfigs/bettertitlescreen-client.toml"
-hash = "5c390d99bb5603b1599ebaeeadd14900d353e34d7b2da8c42fe22450577925a5"
+file = "defaultconfigs/betteradvancements-client.toml"
+hash = "6e562e756b06ce27aff1e6719c4fc52bda5d5f88af167f2c47ce52802acdf9b3"
+
+[[files]]
+file = "defaultconfigs/betterdays-common.toml"
+hash = "897b807f6c9f4230698bb11a4fb0110ceaf58c8fd5cc57f41f7f04118d343493"
+
+[[files]]
+file = "defaultconfigs/comforts-server.toml"
+hash = "ded396d4d246b04477b731c3d593c00d8e42e52b3d4bdadc993fe642b7f51b14"
 
 [[files]]
 file = "defaultconfigs/defaultoptions-common.toml"
-hash = "42a2d67c00d9d506d30c5daab7fd881a1a52255b98b239f6c400b9a2f5c47207"
-
-[[files]]
-file = "defaultconfigs/equipmentcompare-common.toml"
-hash = "e20cefc6fecb0235805a98f989f3bc9ec6cd440fbf10a9c3a85344c605a4a22a"
-
-[[files]]
-file = "defaultconfigs/foodeffecttooltips-client.toml"
-hash = "be3cbe627c77c61990bd1c5c2587950756383437136130c551c0c1c7c574e69e"
-
-[[files]]
-file = "defaultconfigs/ftbessentials-server.snbt"
-hash = "4444fa163e029565eb76f6aa55940e99cfcf21727778dd6fcca4f22e1b62e5f6"
-
-[[files]]
-file = "defaultconfigs/globalgamerules-common.toml"
-hash = "37fc316a110bc3896bcc268a7b3659a0e9fd2d9021025ed18518b491e7e1828d"
-
-[[files]]
-file = "defaultconfigs/jeiintegration-client.toml"
-hash = "d53fff0a7985b5b3b6065076f32410d6dbb81f49d637a189184db53a0ae6587e"
-
-[[files]]
-file = "defaultconfigs/woodenhopper-server.toml"
-hash = "43542965aa3dcd52ed58acd1672d4fa90dba4b3f1a75433f7a437969d4e4c4b5"
-
-[[files]]
-file = "defaultconfigs/woodenshears-server.toml"
-hash = "f79e6ace5eb7a64622389f24c9ae7aa7b96ac93c70a7ff957060a08425878d12"
-
-[[files]]
-file = "journeymap/config/5.9/addons/addon.minecolonies.config"
-hash = "ceefbe2a14e88010bcba0aaf0dd297a5451c26f6e326cf774ac0a77739b55f32"
-
-[[files]]
-file = "journeymap/config/5.9/journeymap.core.config"
-hash = "e4eac52601f37988feb941f58b9b9c3b9b4dbe15e9f6d87e89dc6b1359e1dc0a"
-
-[[files]]
-file = "journeymap/config/5.9/journeymap.fullmap.config"
-hash = "facc0e68a88a72d4af809ab2807e5861717f428e9c9a17b450bfdf5f4621bcd9"
-
-[[files]]
-file = "journeymap/config/5.9/journeymap.minimap.config"
-hash = "15fac3f070370ef9b7b6e72715f2b0192f8ca057b043695855478fd3c0560182"
-
-[[files]]
-file = "journeymap/config/5.9/journeymap.minimap2.config"
-hash = "984dd6d4afdb5dca539f63785eb27d099177b3669d87e42bee7667af49c83de6"
-
-[[files]]
-file = "journeymap/config/5.9/journeymap.topo.config"
-hash = "4528bc7009bfda10f0d88f8e9afb3e52354a69c44a021f49ae112f540716c25f"
-
-[[files]]
-file = "journeymap/config/5.9/journeymap.waypoint.config"
-hash = "137e71f92d721cf681aadfb2b1e8a2b64ae02446f0a23c7f49defe305d7aab3f"
-
-[[files]]
-file = "journeymap/config/5.9/journeymap.webmap.config"
-hash = "12f3cc1d873ced5b0c0fd9b4bc63a2d3d1a7cc8c3649c41bb69443d1d78b95c5"
+hash = "060127ab74f4bac90372857f9695a3c507ad4f381630185cb00e630c0c982efd"
 
 [[files]]
 file = "mods/ai-improvements.pw.toml"
