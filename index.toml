@@ -37,6 +37,10 @@ file = "defaultconfigs/extra/config/jade/plugins.json"
 hash = "695207bcb8606c71e4f9e312d4c39bfe2cbcd65aac196e15d4530d273581d86f"
 
 [[files]]
+file = "mods/OptiFine_1.20.1_HD_U_I6.jar"
+hash = "0b67cb670aedf2e55a982f3d52b6d53e46791a0c984aa1d2ee58100fc9bfc650"
+
+[[files]]
 file = "mods/ai-improvements.pw.toml"
 hash = "f079bffa5d84f130685bd5beba2f126314941edf1f13b0c293870009f7948765"
 metafile = true
@@ -382,6 +386,10 @@ hash = "9dc6c14859e09a8aa58b24d5454aab91484c8be6eca19bfeb865e3546dda56bd"
 metafile = true
 
 [[files]]
+file = "mods/optifine.toml"
+hash = "fc2358d7a27d9152140834625854303434fd244638b787bbdf430c35d7f7c1bb"
+
+[[files]]
 file = "mods/passable-foliage.pw.toml"
 hash = "76065b2be929b307cc071778d4b7544ba18cc9697a13e3be1d8f782f72e5dc47"
 metafile = true
@@ -489,6 +497,11 @@ metafile = true
 [[files]]
 file = "mods/waystones.pw.toml"
 hash = "7aef445a3fabd0b7143069b804392cd3591fb898af8ffcaafb02d8d9b34c6de3"
+metafile = true
+
+[[files]]
+file = "resourcepacks/fresh-animations-extensions.pw.toml"
+hash = "1b877677fe3b6985092a307177b9772bd177c750ec5f7c17e1cc8790ae66cc38"
 metafile = true
 
 [[files]]

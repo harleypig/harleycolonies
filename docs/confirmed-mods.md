@@ -42,6 +42,7 @@ my modpack.
 
 - [Better Advancements](https://www.curseforge.com/minecraft/mc-mods/better-advancements)
 - [Comforts](https://www.curseforge.com/minecraft/mc-mods/comforts)
+- [Optifine](https://optifine.net)
 
 ## Shaders
 
@@ -50,6 +51,7 @@ my modpack.
 ## Texture Packs
 
 - [Fresh Animations](https://www.curseforge.com/minecraft/texture-packs/fresh-animations)
+- [Fresh Animations Extensions](https://www.curseforge.com/minecraft/texture-packs/fresh-animations-extensions)
 - [HD Font - Inconsolata](https://www.curseforge.com/minecraft/texture-packs/hd-font-inconsolata)
 
 ## Biomes

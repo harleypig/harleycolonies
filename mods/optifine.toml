@@ -1,0 +1,8 @@
+name = "OptiFine"
+filename = "OptiFine_1.20.1_HD_U_I6.jar"
+side = "client"
+
+[download]
+url = "file://mods/OptiFine_1.20.1_HD_U_I6.jar"
+hash-format = "sha256"
+hash = "0b67cb670aedf2e55a982f3d52b6d53e46791a0c984aa1d2ee58100fc9bfc650"
