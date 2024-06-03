@@ -13,30 +13,6 @@ file = "README.md"
 hash = "9b63583055489eaf82a05ddb044390e2dad763bcc4ad096feada5b4922a54067"
 
 [[files]]
-file = "config/defaultoptions/extra/config/jade/jade.json"
-hash = "5795f56fd23baed7c29d39707eeab60e0ef84ef963a3464d165d4f33793c83b1"
-
-[[files]]
-file = "config/defaultoptions/extra/config/jade/plugins.json"
-hash = "695207bcb8606c71e4f9e312d4c39bfe2cbcd65aac196e15d4530d273581d86f"
-
-[[files]]
-file = "config/defaultoptions/extra/keybindings.txt"
-hash = "a24157fed3966c88064e27ed94b2449acbd5b0a469c024920aa45b278eaaae84"
-
-[[files]]
-file = "config/defaultoptions/knownkeys.txt"
-hash = "8c1f5c470170d9d35fb27adf758870089edd1d274a397ccf40fdaa17d5ea76ac"
-
-[[files]]
-file = "config/defaultoptions/options.txt"
-hash = "17411c97ea936e84eba1b3835aa6bc5c1235c9c0f2f2776603a55ecc45ce2e6f"
-
-[[files]]
-file = "config/defaultoptions/optionsof.txt"
-hash = "e30e4acf1f257b126738ef77d5e108a84bc335b8815e3971102327605680e1c7"
-
-[[files]]
 file = "defaultconfigs/betteradvancements-client.toml"
 hash = "6e562e756b06ce27aff1e6719c4fc52bda5d5f88af167f2c47ce52802acdf9b3"
 
@@ -51,6 +27,14 @@ hash = "ded396d4d246b04477b731c3d593c00d8e42e52b3d4bdadc993fe642b7f51b14"
 [[files]]
 file = "defaultconfigs/defaultoptions-common.toml"
 hash = "060127ab74f4bac90372857f9695a3c507ad4f381630185cb00e630c0c982efd"
+
+[[files]]
+file = "defaultconfigs/extra/config/jade/jade.json"
+hash = "5795f56fd23baed7c29d39707eeab60e0ef84ef963a3464d165d4f33793c83b1"
+
+[[files]]
+file = "defaultconfigs/extra/config/jade/plugins.json"
+hash = "695207bcb8606c71e4f9e312d4c39bfe2cbcd65aac196e15d4530d273581d86f"
 
 [[files]]
 file = "mods/ai-improvements.pw.toml"
