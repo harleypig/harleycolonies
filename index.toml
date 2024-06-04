@@ -33,6 +33,38 @@ file = "defaultconfigs/options.txt"
 hash = "f0d1bbd467a0418f2ee681f1f11744d8414687900652e8a4acea3d9fe5927a2a"
 
 [[files]]
+file = "journeymap/config/5.9/addons/addon.minecolonies.config"
+hash = "0937ad53f94f3ed882a98f019aa79d6502144b8024a161147d60031ccaeb7704"
+
+[[files]]
+file = "journeymap/config/5.9/journeymap.core.config"
+hash = "06515c442967174afc1609f0d8e454c0b2a9ae44c1a47e83911977d90b5e6d24"
+
+[[files]]
+file = "journeymap/config/5.9/journeymap.fullmap.config"
+hash = "813aa95c6af5cb3142b37a454073ab85e67b67e58af2eb099bdd882558847472"
+
+[[files]]
+file = "journeymap/config/5.9/journeymap.minimap.config"
+hash = "2ad6ade7eb9084f3b1cc109e5ee019e2c8887a1ccb5c0d2e43946da1ce1c9e9e"
+
+[[files]]
+file = "journeymap/config/5.9/journeymap.minimap2.config"
+hash = "c1a63723b38dae3db18fae2da16a064377a7a0fe69266ef319da5fa3f3b49ae9"
+
+[[files]]
+file = "journeymap/config/5.9/journeymap.topo.config"
+hash = "b208a5ed42c6599e4acde8ef62f65ffe8e5fee37a040284f1751761e84d982c1"
+
+[[files]]
+file = "journeymap/config/5.9/journeymap.waypoint.config"
+hash = "0921d1dc5b81823b08c9334f5dd6985334ba986fbcaa831770a2874d7b3749a5"
+
+[[files]]
+file = "journeymap/config/5.9/journeymap.webmap.config"
+hash = "5389ad9f696f01a83ddbcec04c28446679e9a4f8782718efff3b13e62b63a644"
+
+[[files]]
 file = "mods/ai-improvements.pw.toml"
 hash = "f079bffa5d84f130685bd5beba2f126314941edf1f13b0c293870009f7948765"
 metafile = true
