@@ -47,10 +47,10 @@ modpack/
 │   │   ├── resource1.zip
 │   │   ├── resource2.zip
 │   │   └── ...
-│   └── scripts/
-│       ├── script1.zs
-│       ├── script2.zs
-│       └── ...
+│   ├── scripts/
+│   │   ├── script1.zs
+│   │   ├── script2.zs
+│   │   └── ...
 │   ├── server_scripts/
 │   │   ├── script1.js
 │   │   ├── script2.js
