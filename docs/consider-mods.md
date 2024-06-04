@@ -12,6 +12,8 @@ interesting to me.
 
 [Optifine Alternatives](https://alternativeto.net/software/optifine/)
 
+[Optifine Alternatives](https://github.com/LambdAurora/optifine_alternatives)
+
 [Additive](https://github.com/skywardmc/additive)
 
 ## Minecolonies
