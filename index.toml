@@ -22,35 +22,15 @@ hash = "897b807f6c9f4230698bb11a4fb0110ceaf58c8fd5cc57f41f7f04118d343493"
 
 [[files]]
 file = "defaultconfigs/comforts-server.toml"
-hash = "ded396d4d246b04477b731c3d593c00d8e42e52b3d4bdadc993fe642b7f51b14"
-
-[[files]]
-file = "defaultconfigs/default-configs-here.txt"
-hash = "36db47c67f3dd222d51ee28e933c7d78b6eb2292a7057fa9f4a23a97f005c4db"
+hash = "b0b580130f2a6980846078ebb919e5082dc467f419216ac2c48f91805f616e12"
 
 [[files]]
 file = "defaultconfigs/defaultoptions-common.toml"
 hash = "060127ab74f4bac90372857f9695a3c507ad4f381630185cb00e630c0c982efd"
 
 [[files]]
-file = "defaultconfigs/extra/config/jade/jade.json"
-hash = "5795f56fd23baed7c29d39707eeab60e0ef84ef963a3464d165d4f33793c83b1"
-
-[[files]]
-file = "defaultconfigs/extra/config/jade/jadestuff.txt"
-hash = "d21eecc14cc4b7b3edf337846a52d0501d44aff39265d15cc85a548e8f6b8cc8"
-
-[[files]]
-file = "defaultconfigs/extra/config/jade/plugins.json"
-hash = "695207bcb8606c71e4f9e312d4c39bfe2cbcd65aac196e15d4530d273581d86f"
-
-[[files]]
-file = "defaultconfigs/extra/extras.txt"
-hash = "9f8fbb43fe394abd8cf945ca0044b5c84f7f4fe10c00857b5fa7f1e621d92bf4"
-
-[[files]]
-file = "mods/OptiFine_1.20.1_HD_U_I6.jar"
-hash = "0b67cb670aedf2e55a982f3d52b6d53e46791a0c984aa1d2ee58100fc9bfc650"
+file = "defaultconfigs/options.txt"
+hash = "f0d1bbd467a0418f2ee681f1f11744d8414687900652e8a4acea3d9fe5927a2a"
 
 [[files]]
 file = "mods/ai-improvements.pw.toml"
@@ -388,10 +368,6 @@ hash = "1438efdd90ec72bec66e14af4b9d5bc4b0f555a7f8475cbac0b1f12474f015a2"
 metafile = true
 
 [[files]]
-file = "mods/mods.txt"
-hash = "5df073520615bef197dacb0bd1a14c0f322bc487a9f85374ffb700a2672adfdb"
-
-[[files]]
 file = "mods/multi-piston.pw.toml"
 hash = "d15ee31b42b570e2ff2c37a13259c6482bcca6684fcb5119b08373e37d899852"
 metafile = true
@@ -405,10 +381,6 @@ metafile = true
 file = "mods/ocean-floor-clay-sand-and-dirt.pw.toml"
 hash = "9dc6c14859e09a8aa58b24d5454aab91484c8be6eca19bfeb865e3546dda56bd"
 metafile = true
-
-[[files]]
-file = "mods/optifine.toml"
-hash = "896a8f6fe88a537ec51fb7a2494166f69a2b969fc8b64c872c5c7f3f43056ab1"
 
 [[files]]
 file = "mods/passable-foliage.pw.toml"
@@ -544,7 +516,3 @@ metafile = true
 file = "shaderpacks/vanilla-plus-shader.pw.toml"
 hash = "27e72b90e3d059ed3bc654ebec957ddc87f4443aba70a956a0cb14d53daecf74"
 metafile = true
-
-[[files]]
-file = "toplevel.txt"
-hash = "d19232c091ef2d3a6622efe760f8c2db7aad253f02e7607dfbf4357c6d0b1713"
