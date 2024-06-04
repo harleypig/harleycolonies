@@ -1,3 +1,7 @@
+## Lists
+
+- [UsefulMods](https://github.com/TheUsefulLists/UsefulMods)
+
 ## Minecolonies
 
 - [NoPhantomNoCry](https://www.curseforge.com/minecraft/mc-mods/nophantomnocry)

@@ -18,14 +18,47 @@ Experience](https://www.curseforge.com/minecraft/modpacks/the-vanilla-experience
 See if [Quark](https://www.curseforge.com/minecraft/mc-mods/quark) is still
 interesting to me.
 
-## Optfifine
+### Possible Sections
 
-I initially included an Optifine jar, but realized it didn't work for all the
-various computers that would be using this modpack (that I'm writing this
-for--that's a given). So, if you want it go to the website and download the
-version you'll need.
+Maybe order sections like so?
 
-- [Optifine](https://optifine.net)
+- Shaders
+- Resource Packs
+- Instance Utilities
+  - BetterTitle
+  - Ding
+- World Gen
+  - Biomes O'Plenty
+- World Utilities
+  - Better Days
+- Storage
+- Minecolonies
+- Mapping
+  - JourneyMap
+- Informational
+  - Jade
+- Tooltips
+- Inventory Utilities
+  - Sophisticated Backpacks
+  - Sorter
+- Recipe Utilities
+  - JEI
+- Libraries
+  - Dependencies
+
+## Shaders
+
+- [Vanilla Plus Shader](https://www.curseforge.com/minecraft/shaders/vanilla-plus-shader)
+
+This requires [Optifine](https://optifine.net). If you don't want to install
+it, you don't have to. The shader won't do anything unless Optifine is
+installed **and** enabled.
+
+## Texture Packs
+
+- [Fresh Animations](https://www.curseforge.com/minecraft/texture-packs/fresh-animations)
+- [Fresh Animations Extensions](https://www.curseforge.com/minecraft/texture-packs/fresh-animations-extensions)
+- [HD Font - Inconsolata](https://www.curseforge.com/minecraft/texture-packs/hd-font-inconsolata)
 
 ## Minecolonies
 
@@ -51,16 +84,6 @@ my modpack.
 
 - [Better Advancements](https://www.curseforge.com/minecraft/mc-mods/better-advancements)
 - [Comforts](https://www.curseforge.com/minecraft/mc-mods/comforts)
-
-## Shaders
-
-- [Vanilla Plus Shader](https://www.curseforge.com/minecraft/shaders/vanilla-plus-shader)
-
-## Texture Packs
-
-- [Fresh Animations](https://www.curseforge.com/minecraft/texture-packs/fresh-animations)
-- [Fresh Animations Extensions](https://www.curseforge.com/minecraft/texture-packs/fresh-animations-extensions)
-- [HD Font - Inconsolata](https://www.curseforge.com/minecraft/texture-packs/hd-font-inconsolata)
 
 ## Biomes
 
