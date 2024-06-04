@@ -34,7 +34,23 @@ modpack/
 │   ├── default1.toml
 │   ├── default2.toml
 │   └── ...
-├── kubejs/
+├── overrides/
+│   ├── config/
+│   │   ├── mod1-config.toml
+│   │   ├── mod2-config.toml
+│   │   └── ...
+│   ├── defaultconfigs/
+│   │   ├── default1.toml
+│   │   ├── default2.toml
+│   │   └── ...
+│   ├── resources/
+│   │   ├── resource1.zip
+│   │   ├── resource2.zip
+│   │   └── ...
+│   └── scripts/
+│       ├── script1.zs
+│       ├── script2.zs
+│       └── ...
 │   ├── server_scripts/
 │   │   ├── script1.js
 │   │   ├── script2.js
