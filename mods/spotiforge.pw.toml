@@ -1,0 +1,19 @@
+name = "SpotiForge"
+filename = "spotiforge-1.2-all.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "dc77d442fae1a946bb18aaf5a44ea0add267dfe0"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4679985
+project-id = 889158
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/spotiforge"
+issues = "https://github.com/suppergerrie2/SpotiForge/issues"
+categories = ["utility-qol", "cosmetic"]

@@ -8,16 +8,6 @@ categories they are in.
 
 Locations of the configuration files for the mods will be added later.
 
-Looks like the Baritone mod is no longer on Curseforge, so we'll need to
-[install it manually](https://github.com/cabaletta/baritone). And, just for
-the record, it's a client side mod.
-
-Todo: Cherry pick from [The Vanilla
-Experience](https://www.curseforge.com/minecraft/modpacks/the-vanilla-experience).
-
-See if [Quark](https://www.curseforge.com/minecraft/mc-mods/quark) is still
-interesting to me.
-
 ### Possible Sections
 
 Maybe order sections like so?
@@ -45,6 +35,11 @@ Maybe order sections like so?
   - JEI
 - Libraries
   - Dependencies
+
+## Baritone
+
+The Baritone mod is no longer on Curseforge, so we'll need to [install it
+manually](https://github.com/cabaletta/baritone).
 
 ## Shaders
 

@@ -1,6 +1,18 @@
-## Lists
+## Check These Out
 
-- [UsefulMods](https://github.com/TheUsefulLists/UsefulMods)
+[UsefulMods](https://github.com/TheUsefulLists/UsefulMods)
+
+Cherry pick from [The Vanilla
+Experience](https://www.curseforge.com/minecraft/modpacks/the-vanilla-experience).
+
+See if [Quark](https://www.curseforge.com/minecraft/mc-mods/quark) is still
+interesting to me.
+
+[Optifine Alternatives](https://optifine.alternatives.lambdaurora.dev/)
+
+[Optifine Alternatives](https://alternativeto.net/software/optifine/)
+
+[Additive](https://github.com/skywardmc/additive)
 
 ## Minecolonies
 
