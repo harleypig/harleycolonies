@@ -21,7 +21,7 @@ sleepingBagBreakChanceLuckMultiplier = 0.0
 #Format: effect;duration(secs);power
 sleepingBagEffects = [
   "minecraft:absorption 120 2",
-	"minecraft:health_boost 120 2",
-	"minecraft:regeneration 120 2",
-	"minecraft:saturation 120 2",
+  "minecraft:health_boost 120 2",
+  "minecraft:regeneration 120 2",
+  "minecraft:saturation 120 2",
 ]

@@ -18,6 +18,15 @@ Experience](https://www.curseforge.com/minecraft/modpacks/the-vanilla-experience
 See if [Quark](https://www.curseforge.com/minecraft/mc-mods/quark) is still
 interesting to me.
 
+## Optfifine
+
+I initially included an Optifine jar, but realized it didn't work for all the
+various computers that would be using this modpack (that I'm writing this
+for--that's a given). So, if you want it go to the website and download the
+version you'll need.
+
+- [Optifine](https://optifine.net)
+
 ## Minecolonies
 
 These are Minecolonies mods, created by the Minecolonies team.
@@ -42,7 +51,6 @@ my modpack.
 
 - [Better Advancements](https://www.curseforge.com/minecraft/mc-mods/better-advancements)
 - [Comforts](https://www.curseforge.com/minecraft/mc-mods/comforts)
-- [Optifine](https://optifine.net)
 
 ## Shaders
 
@@ -124,6 +132,7 @@ my modpack.
 - [Block Runner](https://www.curseforge.com/minecraft/mc-mods/block-runner-forge)
 - [Canary](https://www.curseforge.com/minecraft/mc-mods/canary)
 - [Clumps](https://www.curseforge.com/minecraft/mc-mods/clumps)
+- [Configured](https://www.curseforge.com/minecraft/mc-mods/configured)
 - [Connectivity](https://www.curseforge.com/minecraft/mc-mods/connectivity)
 - [Controlling](https://www.curseforge.com/minecraft/mc-mods/controlling)
 - [Default Options](https://www.curseforge.com/minecraft/mc-mods/default-options)
