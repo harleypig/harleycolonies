@@ -460,6 +460,11 @@ hash = "073ecca10d88481b7e19aff21230da6dfb5b54bacc4a04d59ff9a3e6dd61b979"
 metafile = true
 
 [[files]]
+file = "mods/spotiforge.pw.toml"
+hash = "2061f7471419d413aad99a6b4ef3e5a08f2e782f8a50bcb8e2e55a3e33f72b75"
+metafile = true
+
+[[files]]
 file = "mods/storage-drawers.pw.toml"
 hash = "bc791f70a05673f87ded75e59f4b567c137d76c78f119d34ceb775040a2df95b"
 metafile = true
