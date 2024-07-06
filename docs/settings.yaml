@@ -15,17 +15,17 @@ settings:
     description: |
 
   - name: allowDiagonalAscend
-    group: unknown
+    group: movement
     default:
     description: |
 
   - name: allowDiagonalDescend
-    group: unknown
+    group: movement
     default:
     description: |
 
   - name: allowDownward
-    group: unknown
+    group: movement
     default:
     description: |
 
@@ -35,7 +35,7 @@ settings:
     description: |
 
   - name: allowJumpAt256
-    group: unknown
+    group: movement
     default:
     description: |
 
@@ -55,17 +55,17 @@ settings:
     description: |
 
   - name: allowParkour
-    group: unknown
+    group: movement
     default:
     description: |
 
   - name: allowParkourAscend
-    group: unknown
+    group: movement
     default:
     description: |
 
   - name: allowParkourPlace
-    group: unknown
+    group: movement
     default:
     description: |
 
@@ -75,7 +75,7 @@ settings:
     description: |
 
   - name: allowSprint
-    group: unknown
+    group: movement
     default:
     description: |
 
@@ -90,7 +90,7 @@ settings:
     description: |
 
   - name: allowWaterBucketFall
-    group: unknown
+    group: movement
     default:
     description: |
 
@@ -110,22 +110,22 @@ settings:
     description: |
 
   - name: assumeSafeWalk
-    group: unknown
+    group: movement
     default:
     description: |
 
   - name: assumeStep
-    group: unknown
+    group: movement
     default:
     description: |
 
   - name: assumeWalkOnLava
-    group: unknown
+    group: movement
     default:
     description: |
 
   - name: assumeWalkOnWater
-    group: unknown
+    group: movement
     default:
     description: |
 
@@ -495,7 +495,7 @@ settings:
     description: |
 
   - name: freeLook
-    group: unknown
+    group: movement
     default:
     description: |
 
@@ -530,7 +530,7 @@ settings:
     description: |
 
   - name: jumpPenalty
-    group: unknown
+    group: movement
     default:
     description: |
 
@@ -950,12 +950,12 @@ settings:
     description: |
 
   - name: sprintAscends
-    group: unknown
+    group: movement
     default:
     description: |
 
   - name: sprintInWater
-    group: unknown
+    group: movement
     default:
     description: |
 
@@ -990,12 +990,12 @@ settings:
     description: |
 
   - name: walkOnWaterOnePenalty
-    group: unknown
+    group: movement
     default:
     description: |
 
   - name: walkWhileBreaking
-    group: unknown
+    group: movement
     default:
     description: |
 
