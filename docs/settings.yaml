@@ -3,7 +3,8 @@ settings:
     group: blocks
     default: [dirt, cobblestone, netherrack, stone]
     description: |
-      Blocks that Baritone is allowed to place (as throwaway, for sneak bridging, pillaring, etc.)
+      Blocks that Baritone is allowed to place (as throwaway, for sneak
+      bridging, pillaring, etc.)
 
   - name: allowBreak
     group: blocks
@@ -15,7 +16,8 @@ settings:
     group: blocks
     default: []
     description: |
-      Blocks that baritone will be allowed to break even with allowBreak set to false
+      Blocks that baritone will be allowed to break even with allowBreak set
+      to false
 
   - name: allowDiagonalAscend
     group: movement
@@ -203,8 +205,9 @@ settings:
     group: blocks
     default: true
     description: |
-      If this setting is true, Baritone will never break a block that is adjacent to an unsupported falling block.
-      
+      If this setting is true, Baritone will never break a block that is
+      adjacent to an unsupported falling block.
+
       I.E. it will never trigger cascading sand / gravel falls
 
   - name: axisHeight
@@ -264,14 +267,15 @@ settings:
     group: blocks
     default: 10.0
     description: |
-      Multiply the cost of breaking a block that's correct in the builder's schematic by this coefficient
+      Multiply the cost of breaking a block that's correct in the builder's
+      schematic by this coefficient
 
   - name: breakFromAbove
     group: blocks
     default: false
     description: |
       Allow standing above a block while mining it, in BuilderProcess
-      
+
       Experimental
 
   - name: builderTickScanRadius
@@ -284,20 +288,23 @@ settings:
     default: []
     description: |
       A list of blocks to be treated as if they're air.
-      
-      If a schematic asks for air at a certain position, and that position currently contains a block on this list, it will be treated as correct.
+
+      If a schematic asks for air at a certain position, and that position
+      currently contains a block on this list, it will be treated as correct.
 
   - name: buildIgnoreDirection
     group: blocks
     default: false
     description: |
-      If this is true, the builder will ignore directionality of certain blocks like glazed terracotta.
+      If this is true, the builder will ignore directionality of certain
+      blocks like glazed terracotta.
 
   - name: buildIgnoreExisting
     group: blocks
     default: false
     description: |
-      If this is true, the builder will treat all non-air blocks as correct. It will only place new blocks.
+      If this is true, the builder will treat all non-air blocks as correct.
+      It will only place new blocks.
 
   - name: buildIgnoreProperties
     group: blocks
@@ -335,24 +342,27 @@ settings:
     default: []
     description: |
       A list of blocks to be treated as correct.
-      
-      If a schematic asks for any block on this list at a certain position, it will be treated as correct, regardless of what it currently is.
+
+      If a schematic asks for any block on this list at a certain position, it
+      will be treated as correct, regardless of what it currently is.
 
   - name: buildSubstitutes
     group: blocks
     default: {}
     description: |
       A mapping of blocks to blocks to be built instead
-      
-      If a schematic asks for a block on this mapping, Baritone will place the first placeable block in the mapped list
+
+      If a schematic asks for a block on this mapping, Baritone will place the
+      first placeable block in the mapped list
 
   - name: buildValidSubstitutes
     group: blocks
     default: {}
     description: |
       A mapping of blocks to blocks treated as correct in their position
-      
-      If a schematic asks for a block on this mapping, all blocks on the mapped list will be accepted at that location as well
+
+      If a schematic asks for a block on this mapping, all blocks on the
+      mapped list will be accepted at that location as well
 
   - name: byLowerName
     group: unknown
@@ -584,8 +594,9 @@ settings:
     group: blocks
     default: false
     description: |
-      As well as breaking from above, set a goal to up and to the side of all blocks to break.
-      
+      As well as breaking from above, set a goal to up and to the side of all
+      blocks to break.
+
       Never turn this on without also turning on breakFromAbove.
 
   - name: goalRenderLineWidthPixels
@@ -770,14 +781,16 @@ settings:
     default: []
     description: |
       A list of blocks to become air
-      
-      If a schematic asks for a block on this list, only air will be accepted at that location (and nothing on buildIgnoreBlocks)
+
+      If a schematic asks for a block on this list, only air will be accepted
+      at that location (and nothing on buildIgnoreBlocks)
 
   - name: okIfWater
     group: blocks
     default: false
     description: |
-      Override builder's behavior to not attempt to correct blocks that are currently water
+      Override builder's behavior to not attempt to correct blocks that are
+      currently water
 
   - name: overshootTraverse
     group: unknown
