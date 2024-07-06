@@ -1,0 +1,1010 @@
+settings:
+  - name: acceptableThrowawayItems
+    group:
+    default:
+    description: |
+
+  - name: allowBreak
+    group:
+    default:
+    description: |
+
+  - name: allowBreakAnyway
+    group:
+    default:
+    description: |
+
+  - name: allowDiagonalAscend
+    group:
+    default:
+    description: |
+
+  - name: allowDiagonalDescend
+    group:
+    default:
+    description: |
+
+  - name: allowDownward
+    group:
+    default:
+    description: |
+
+  - name: allowInventory
+    group:
+    default:
+    description: |
+
+  - name: allowJumpAt256
+    group:
+    default:
+    description: |
+
+  - name: allowOnlyExposedOres
+    group:
+    default:
+    description: |
+
+  - name: allowOnlyExposedOresDistance
+    group:
+    default:
+    description: |
+
+  - name: allowOvershootDiagonalDescend
+    group:
+    default:
+    description: |
+
+  - name: allowParkour
+    group:
+    default:
+    description: |
+
+  - name: allowParkourAscend
+    group:
+    default:
+    description: |
+
+  - name: allowParkourPlace
+    group:
+    default:
+    description: |
+
+  - name: allowPlace
+    group:
+    default:
+    description: |
+
+  - name: allowSprint
+    group:
+    default:
+    description: |
+
+  - name: allowVines
+    group:
+    default:
+    description: |
+
+  - name: allowWalkOnBottomSlab
+    group:
+    default:
+    description: |
+
+  - name: allowWaterBucketFall
+    group:
+    default:
+    description: |
+
+  - name: allSettings
+    group:
+    default:
+    description: |
+
+  - name: antiCheatCompatibility
+    group:
+    default:
+    description: |
+
+  - name: assumeExternalAutoTool
+    group:
+    default:
+    description: |
+
+  - name: assumeSafeWalk
+    group:
+    default:
+    description: |
+
+  - name: assumeStep
+    group:
+    default:
+    description: |
+
+  - name: assumeWalkOnLava
+    group:
+    default:
+    description: |
+
+  - name: assumeWalkOnWater
+    group:
+    default:
+    description: |
+
+  - name: autoTool
+    group:
+    default:
+    description: |
+
+  - name: avoidance
+    group:
+    default:
+    description: |
+
+  - name: avoidBreakingMultiplier
+    group:
+    default:
+    description: |
+
+  - name: avoidUpdatingFallingBlocks
+    group:
+    default:
+    description: |
+
+  - name: axisHeight
+    group:
+    default:
+    description: |
+
+  - name: backfill
+    group:
+    default:
+    description: |
+
+  - name: backtrackCostFavoringCoefficient
+    group:
+    default:
+    description: |
+
+  - name: blacklistClosestOnFailure
+    group:
+    default:
+    description: |
+
+  - name: blockBreakAdditionalPenalty
+    group:
+    default:
+    description: |
+
+  - name: blockPlacementPenalty
+    group:
+    default:
+    description: |
+
+  - name: blockReachDistance
+    group:
+    default:
+    description: |
+
+  - name: blocksToAvoid
+    group:
+    default:
+    description: |
+
+  - name: blocksToAvoidBreaking
+    group:
+    default:
+    description: |
+
+  - name: blocksToDisallowBreaking
+    group:
+    default:
+    description: |
+
+  - name: breakCorrectBlockPenaltyMultiplier
+    group:
+    default:
+    description: |
+
+  - name: breakFromAbove
+    group:
+    default:
+    description: |
+
+  - name: builderTickScanRadius
+    group:
+    default:
+    description: |
+
+  - name: buildIgnoreBlocks
+    group:
+    default:
+    description: |
+
+  - name: buildIgnoreDirection
+    group:
+    default:
+    description: |
+
+  - name: buildIgnoreExisting
+    group:
+    default:
+    description: |
+
+  - name: buildIgnoreProperties
+    group:
+    default:
+    description: |
+
+  - name: buildInLayers
+    group:
+    default:
+    description: |
+
+  - name: buildOnlySelection
+    group:
+    default:
+    description: |
+
+  - name: buildRepeat
+    group:
+    default:
+    description: |
+
+  - name: buildRepeatCount
+    group:
+    default:
+    description: |
+
+  - name: buildRepeatSneaky
+    group:
+    default:
+    description: |
+
+  - name: buildSkipBlocks
+    group:
+    default:
+    description: |
+
+  - name: buildSubstitutes
+    group:
+    default:
+    description: |
+
+  - name: buildValidSubstitutes
+    group:
+    default:
+    description: |
+
+  - name: byLowerName
+    group:
+    default:
+    description: |
+
+  - name: cachedChunksExpirySeconds
+    group:
+    default:
+    description: |
+
+  - name: cachedChunksOpacity
+    group:
+    default:
+    description: |
+
+  - name: cancelOnGoalInvalidation
+    group:
+    default:
+    description: |
+
+  - name: censorCoordinates
+    group:
+    default:
+    description: |
+
+  - name: censorRanCommands
+    group:
+    default:
+    description: |
+
+  - name: chatControl
+    group:
+    default:
+    description: |
+
+  - name: chatControlAnyway
+    group:
+    default:
+    description: |
+
+  - name: chatDebug
+    group:
+    default:
+    description: |
+
+  - name: chunkCaching
+    group:
+    default:
+    description: |
+
+  - name: colorBestPathSoFar
+    group:
+    default:
+    description: |
+
+  - name: colorBlocksToBreak
+    group:
+    default:
+    description: |
+
+  - name: colorBlocksToPlace
+    group:
+    default:
+    description: |
+
+  - name: colorBlocksToWalkInto
+    group:
+    default:
+    description: |
+
+  - name: colorCurrentPath
+    group:
+    default:
+    description: |
+
+  - name: colorGoalBox
+    group:
+    default:
+    description: |
+
+  - name: colorInvertedGoalBox
+    group:
+    default:
+    description: |
+
+  - name: colorMostRecentConsidered
+    group:
+    default:
+    description: |
+
+  - name: colorNextPath
+    group:
+    default:
+    description: |
+
+  - name: colorSelection
+    group:
+    default:
+    description: |
+
+  - name: colorSelectionPos1
+    group:
+    default:
+    description: |
+
+  - name: colorSelectionPos2
+    group:
+    default:
+    description: |
+
+  - name: considerPotionEffects
+    group:
+    default:
+    description: |
+
+  - name: costHeuristic
+    group:
+    default:
+    description: |
+
+  - name: costVerificationLookahead
+    group:
+    default:
+    description: |
+
+  - name: cutoffAtLoadBoundary
+    group:
+    default:
+    description: |
+
+  - name: desktopNotifications
+    group:
+    default:
+    description: |
+
+  - name: disableCompletionCheck
+    group:
+    default:
+    description: |
+
+  - name: disconnectOnArrival
+    group:
+    default:
+    description: |
+
+  - name: distanceTrim
+    group:
+    default:
+    description: |
+
+  - name: doBedWaypoints
+    group:
+    default:
+    description: |
+
+  - name: doDeathWaypoints
+    group:
+    default:
+    description: |
+
+  - name: echoCommands
+    group:
+    default:
+    description: |
+
+  - name: enterPortal
+    group:
+    default:
+    description: |
+
+  - name: exploreChunkSetMinimumSize
+    group:
+    default:
+    description: |
+
+  - name: exploreForBlocks
+    group:
+    default:
+    description: |
+
+  - name: exploreMaintainY
+    group:
+    default:
+    description: |
+
+  - name: extendCacheOnThreshold
+    group:
+    default:
+    description: |
+
+  - name: fadePath
+    group:
+    default:
+    description: |
+
+  - name: failureTimeoutMS
+    group:
+    default:
+    description: |
+
+  - name: followOffsetDirection
+    group:
+    default:
+    description: |
+
+  - name: followOffsetDistance
+    group:
+    default:
+    description: |
+
+  - name: followRadius
+    group:
+    default:
+    description: |
+
+  - name: forceInternalMining
+    group:
+    default:
+    description: |
+
+  - name: freeLook
+    group:
+    default:
+    description: |
+
+  - name: goalBreakFromAbove
+    group:
+    default:
+    description: |
+
+  - name: goalRenderLineWidthPixels
+    group:
+    default:
+    description: |
+
+  - name: incorrectSize
+    group:
+    default:
+    description: |
+
+  - name: internalMiningAirException
+    group:
+    default:
+    description: |
+
+  - name: itemSaver
+    group:
+    default:
+    description: |
+
+  - name: itemSaverThreshold
+    group:
+    default:
+    description: |
+
+  - name: jumpPenalty
+    group:
+    default:
+    description: |
+
+  - name: layerHeight
+    group:
+    default:
+    description: |
+
+  - name: layerOrder
+    group:
+    default:
+    description: |
+
+  - name: legitMine
+    group:
+    default:
+    description: |
+
+  - name: legitMineIncludeDiagonals
+    group:
+    default:
+    description: |
+
+  - name: legitMineYLevel
+    group:
+    default:
+    description: |
+
+  - name: logAsToast
+    group:
+    default:
+    description: |
+
+  - name: logger
+    group:
+    default:
+    description: |
+
+  - name: mapArtMode
+    group:
+    default:
+    description: |
+
+  - name: maxCachedWorldScanCount
+    group:
+    default:
+    description: |
+
+  - name: maxCostIncrease
+    group:
+    default:
+    description: |
+
+  - name: maxFallHeightBucket
+    group:
+    default:
+    description: |
+
+  - name: maxFallHeightNoWater
+    group:
+    default:
+    description: |
+
+  - name: maxPathHistoryLength
+    group:
+    default:
+    description: |
+
+  - name: mineDropLoiterDurationMSThanksLouca
+    group:
+    default:
+    description: |
+
+  - name: mineGoalUpdateInterval
+    group:
+    default:
+    description: |
+
+  - name: mineScanDroppedItems
+    group:
+    default:
+    description: |
+
+  - name: minimumImprovementRepropagation
+    group:
+    default:
+    description: |
+
+  - name: minYLevelWhileMining
+    group:
+    default:
+    description: |
+
+  - name: mobAvoidanceCoefficient
+    group:
+    default:
+    description: |
+
+  - name: mobAvoidanceRadius
+    group:
+    default:
+    description: |
+
+  - name: mobSpawnerAvoidanceCoefficient
+    group:
+    default:
+    description: |
+
+  - name: mobSpawnerAvoidanceRadius
+    group:
+    default:
+    description: |
+
+  - name: movementTimeoutTicks
+    group:
+    default:
+    description: |
+
+  - name: notificationOnBuildFinished
+    group:
+    default:
+    description: |
+
+  - name: notificationOnExploreFinished
+    group:
+    default:
+    description: |
+
+  - name: notificationOnFarmFail
+    group:
+    default:
+    description: |
+
+  - name: notificationOnMineFail
+    group:
+    default:
+    description: |
+
+  - name: notificationOnPathComplete
+    group:
+    default:
+    description: |
+
+  - name: notifier
+    group:
+    default:
+    description: |
+
+  - name: okIfAir
+    group:
+    default:
+    description: |
+
+  - name: okIfWater
+    group:
+    default:
+    description: |
+
+  - name: overshootTraverse
+    group:
+    default:
+    description: |
+
+  - name: pathCutoffFactor
+    group:
+    default:
+    description: |
+
+  - name: pathCutoffMinimumLength
+    group:
+    default:
+    description: |
+
+  - name: pathHistoryCutoffAmount
+    group:
+    default:
+    description: |
+
+  - name: pathingMapDefaultSize
+    group:
+    default:
+    description: |
+
+  - name: pathingMapLoadFactor
+    group:
+    default:
+    description: |
+
+  - name: pathingMaxChunkBorderFetch
+    group:
+    default:
+    description: |
+
+  - name: pathRenderLineWidthPixels
+    group:
+    default:
+    description: |
+
+  - name: pathThroughCachedOnly
+    group:
+    default:
+    description: |
+
+  - name: pauseMiningForFallingBlocks
+    group:
+    default:
+    description: |
+
+  - name: planAheadFailureTimeoutMS
+    group:
+    default:
+    description: |
+
+  - name: planAheadPrimaryTimeoutMS
+    group:
+    default:
+    description: |
+
+  - name: planningTickLookahead
+    group:
+    default:
+    description: |
+
+  - name: preferSilkTouch
+    group:
+    default:
+    description: |
+
+  - name: prefix
+    group:
+    default:
+    description: |
+
+  - name: prefixControl
+    group:
+    default:
+    description: |
+
+  - name: primaryTimeoutMS
+    group:
+    default:
+    description: |
+
+  - name: pruneRegionsFromRAM
+    group:
+    default:
+    description: |
+
+  - name: randomLooking
+    group:
+    default:
+    description: |
+
+  - name: randomLooking113
+    group:
+    default:
+    description: |
+
+  - name: renderCachedChunks
+    group:
+    default:
+    description: |
+
+  - name: renderGoal
+    group:
+    default:
+    description: |
+
+  - name: renderGoalAnimated
+    group:
+    default:
+    description: |
+
+  - name: renderGoalIgnoreDepth
+    group:
+    default:
+    description: |
+
+  - name: renderGoalXZBeacon
+    group:
+    default:
+    description: |
+
+  - name: renderPath
+    group:
+    default:
+    description: |
+
+  - name: renderPathAsLine
+    group:
+    default:
+    description: |
+
+  - name: renderPathIgnoreDepth
+    group:
+    default:
+    description: |
+
+  - name: renderSelection
+    group:
+    default:
+    description: |
+
+  - name: renderSelectionBoxes
+    group:
+    default:
+    description: |
+
+  - name: renderSelectionBoxesIgnoreDepth
+    group:
+    default:
+    description: |
+
+  - name: renderSelectionCorners
+    group:
+    default:
+    description: |
+
+  - name: renderSelectionIgnoreDepth
+    group:
+    default:
+    description: |
+
+  - name: repackOnAnyBlockChange
+    group:
+    default:
+    description: |
+
+  - name: replantCrops
+    group:
+    default:
+    description: |
+
+  - name: replantNetherWart
+    group:
+    default:
+    description: |
+
+  - name: rightClickContainerOnArrival
+    group:
+    default:
+    description: |
+
+  - name: rightClickSpeed
+    group:
+    default:
+    description: |
+
+  - name: schematicFallbackExtension
+    group:
+    default:
+    description: |
+
+  - name: schematicOrientationX
+    group:
+    default:
+    description: |
+
+  - name: schematicOrientationY
+    group:
+    default:
+    description: |
+
+  - name: schematicOrientationZ
+    group:
+    default:
+    description: |
+
+  - name: selectionLineWidth
+    group:
+    default:
+    description: |
+
+  - name: selectionOpacity
+    group:
+    default:
+    description: |
+
+  - name: settingTypes
+    group:
+    default:
+    description: |
+
+  - name: shortBaritonePrefix
+    group:
+    default:
+    description: |
+
+  - name: simplifyUnloadedYCoord
+    group:
+    default:
+    description: |
+
+  - name: skipFailedLayers
+    group:
+    default:
+    description: |
+
+  - name: slowPath
+    group:
+    default:
+    description: |
+
+  - name: slowPathTimeDelayMS
+    group:
+    default:
+    description: |
+
+  - name: slowPathTimeoutMS
+    group:
+    default:
+    description: |
+
+  - name: splicePath
+    group:
+    default:
+    description: |
+
+  - name: sprintAscends
+    group:
+    default:
+    description: |
+
+  - name: sprintInWater
+    group:
+    default:
+    description: |
+
+  - name: startAtLayer
+    group:
+    default:
+    description: |
+
+  - name: strictLiquidCheck
+    group:
+    default:
+    description: |
+
+  - name: toaster
+    group:
+    default:
+    description: |
+
+  - name: toastTimer
+    group:
+    default:
+    description: |
+
+  - name: useSwordToMine
+    group:
+    default:
+    description: |
+
+  - name: verboseCommandExceptions
+    group:
+    default:
+    description: |
+
+  - name: walkOnWaterOnePenalty
+    group:
+    default:
+    description: |
+
+  - name: walkWhileBreaking
+    group:
+    default:
+    description: |
+
+  - name: worldExploringChunkOffset
+    group:
+    default:
+    description: |
+
+  - name: yLevelBoxSize
+    group:
+    default:
+    description: |
