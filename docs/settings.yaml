@@ -18,16 +18,27 @@ settings:
     group: movement
     default: false
     description: |
+      Allow diagonal ascending
+      <p>
+      Actually pretty safe, much safer than diagonal descend tbh
 
   - name: allowDiagonalDescend
     group: movement
     default: false
     description: |
+      Allow descending diagonally
+      <p>
+      Safer than allowParkour yet still slightly unsafe, can make contact with unchecked adjacent blocks, so it's unsafe in the nether.
+      <p>
+      For a generic "take some risks" mode I'd turn on this one, parkour, and parkour place.
 
   - name: allowDownward
     group: movement
     default: true
     description: |
+      Allow mining the block directly beneath its feet
+      <p>
+      Turn this off to force it to make more staircases and less shafts
 
   - name: allowInventory
     group: unknown
@@ -38,6 +49,9 @@ settings:
     group: movement
     default: false
     description: |
+      If true, parkour is allowed to make jumps when standing on blocks at the maximum height, so player feet is y=256
+      <p>
+      Defaults to false because this fails on constantiam. Please let me know if this is ever disabled. Please.
 
   - name: allowOnlyExposedOres
     group: unknown
@@ -58,16 +72,27 @@ settings:
     group: movement
     default: false
     description: |
+      You know what it is
+      <p>
+      But it's very unreliable and falls off when cornering like all the time so.
+      <p>
+      It also overshoots the landing pretty much always (making contact with the next block over), so be careful
 
   - name: allowParkourAscend
     group: movement
     default: true
     description: |
+      This should be monetized it's so good
+      <p>
+      Defaults to true, but only actually takes effect if allowParkour is also true
 
   - name: allowParkourPlace
     group: movement
     default: false
     description: |
+      Actually pretty reliable.
+      <p>
+      Doesn't make it any more dangerous compared to just normal allowParkour th
 
   - name: allowPlace
     group: unknown
@@ -78,6 +103,7 @@ settings:
     group: movement
     default: true
     description: |
+      Allow Baritone to sprint
 
   - name: allowVines
     group: unknown
@@ -93,6 +119,9 @@ settings:
     group: movement
     default: true
     description: |
+      Allow Baritone to fall arbitrary distances and place a water bucket beneath it.
+      <p>
+      Reliability: questionable.
 
   - name: allSettings
     group: unknown
@@ -113,21 +142,32 @@ settings:
     group: movement
     default: false
     description: |
+      Assume safe walk functionality; don't sneak on a backplace traverse.
+      <p>
+      Warning: if you do something janky like sneak-backplace from an ender chest, if this is true
+      it won't sneak right click, it'll just right click, which means it'll open the chest instead of placing
+      against it. That's why this defaults to off.
 
   - name: assumeStep
     group: movement
     default: false
     description: |
+      Assume step functionality; don't jump on an Ascend.
 
   - name: assumeWalkOnLava
     group: movement
     default: false
     description: |
+      If you have Fire Resistance and Jesus then I guess you could turn this on lol
 
   - name: assumeWalkOnWater
     group: movement
     default: false
     description: |
+      Allow Baritone to assume it can walk on still water just like any other block.
+      This functionality is assumed to be provided by a separate library that might have imported Baritone.
+      <p>
+      Note: This will prevent some usage of the frostwalker enchantment, like pillaring up from water.
 
   - name: autoTool
     group: unknown
@@ -498,6 +538,7 @@ settings:
     group: movement
     default: true
     description: |
+      Move without having to force the client-sided rotations
 
   - name: goalBreakFromAbove
     group: unknown
@@ -533,6 +574,7 @@ settings:
     group: movement
     default: 2D
     description: |
+      Additional penalty for hitting the space bar (ascend, pillar, or parkour) because it uses hunger
 
   - name: layerHeight
     group: unknown
@@ -953,11 +995,13 @@ settings:
     group: movement
     default: true
     description: |
+      Sprint and jump a block early on ascends wherever possible
 
   - name: sprintInWater
     group: movement
     default: true
     description: |
+      Continue sprinting while in water
 
   - name: startAtLayer
     group: unknown
@@ -993,11 +1037,13 @@ settings:
     group: movement
     default: 3D
     description: |
+      Walking on water uses up hunger really quick, so penalize it
 
   - name: walkWhileBreaking
     group: movement
     default: true
     description: |
+      Don't stop walking forward when you need to break blocks in your way
 
   - name: worldExploringChunkOffset
     group: unknown
