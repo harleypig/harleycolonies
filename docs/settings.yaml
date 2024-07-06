@@ -1,18 +1,21 @@
 settings:
   - name: acceptableThrowawayItems
-    group: unknown
-    default:
+    group: blocks
+    default: [dirt, cobblestone, netherrack, stone]
     description: |
+      Blocks that Baritone is allowed to place (as throwaway, for sneak bridging, pillaring, etc.)
 
   - name: allowBreak
-    group: unknown
-    default:
+    group: blocks
+    default: true
     description: |
+      Allow Baritone to break blocks
 
   - name: allowBreakAnyway
-    group: unknown
-    default:
+    group: blocks
+    default: []
     description: |
+      Blocks that baritone will be allowed to break even with allowBreak set to false
 
   - name: allowDiagonalAscend
     group: movement
@@ -103,9 +106,10 @@ settings:
       th
 
   - name: allowPlace
-    group: unknown
-    default:
+    group: blocks
+    default: true
     description: |
+      Allow Baritone to place blocks
 
   - name: allowSprint
     group: movement
@@ -196,9 +200,12 @@ settings:
     description: |
 
   - name: avoidUpdatingFallingBlocks
-    group: unknown
-    default:
+    group: blocks
+    default: true
     description: |
+      If this setting is true, Baritone will never break a block that is adjacent to an unsupported falling block.
+      
+      I.E. it will never trigger cascading sand / gravel falls
 
   - name: axisHeight
     group: unknown
@@ -236,29 +243,36 @@ settings:
     description: |
 
   - name: blocksToAvoid
-    group: unknown
-    default:
+    group: blocks
+    default: []
     description: |
+      Blocks that Baritone will attempt to avoid (Used in avoidance)
 
   - name: blocksToAvoidBreaking
-    group: unknown
-    default:
+    group: blocks
+    default: [crafting_table, furnace, chest, trapped_chest]
     description: |
+      Blocks that Baritone shouldn't break, but can if it needs to.
 
   - name: blocksToDisallowBreaking
-    group: unknown
-    default:
+    group: blocks
+    default: []
     description: |
+      Blocks that Baritone is not allowed to break
 
   - name: breakCorrectBlockPenaltyMultiplier
-    group: unknown
-    default:
+    group: blocks
+    default: 10.0
     description: |
+      Multiply the cost of breaking a block that's correct in the builder's schematic by this coefficient
 
   - name: breakFromAbove
-    group: unknown
-    default:
+    group: blocks
+    default: false
     description: |
+      Allow standing above a block while mining it, in BuilderProcess
+      
+      Experimental
 
   - name: builderTickScanRadius
     group: unknown
@@ -266,24 +280,30 @@ settings:
     description: |
 
   - name: buildIgnoreBlocks
-    group: unknown
-    default:
+    group: blocks
+    default: []
     description: |
+      A list of blocks to be treated as if they're air.
+      
+      If a schematic asks for air at a certain position, and that position currently contains a block on this list, it will be treated as correct.
 
   - name: buildIgnoreDirection
-    group: unknown
-    default:
+    group: blocks
+    default: false
     description: |
+      If this is true, the builder will ignore directionality of certain blocks like glazed terracotta.
 
   - name: buildIgnoreExisting
-    group: unknown
-    default:
+    group: blocks
+    default: false
     description: |
+      If this is true, the builder will treat all non-air blocks as correct. It will only place new blocks.
 
   - name: buildIgnoreProperties
-    group: unknown
-    default:
+    group: blocks
+    default: []
     description: |
+      A list of names of block properties the builder will ignore.
 
   - name: buildInLayers
     group: unknown
@@ -311,19 +331,28 @@ settings:
     description: |
 
   - name: buildSkipBlocks
-    group: unknown
-    default:
+    group: blocks
+    default: []
     description: |
+      A list of blocks to be treated as correct.
+      
+      If a schematic asks for any block on this list at a certain position, it will be treated as correct, regardless of what it currently is.
 
   - name: buildSubstitutes
-    group: unknown
-    default:
+    group: blocks
+    default: {}
     description: |
+      A mapping of blocks to blocks to be built instead
+      
+      If a schematic asks for a block on this mapping, Baritone will place the first placeable block in the mapped list
 
   - name: buildValidSubstitutes
-    group: unknown
-    default:
+    group: blocks
+    default: {}
     description: |
+      A mapping of blocks to blocks treated as correct in their position
+      
+      If a schematic asks for a block on this mapping, all blocks on the mapped list will be accepted at that location as well
 
   - name: byLowerName
     group: unknown
@@ -552,9 +581,12 @@ settings:
       Move without having to force the client-sided rotations
 
   - name: goalBreakFromAbove
-    group: unknown
-    default:
+    group: blocks
+    default: false
     description: |
+      As well as breaking from above, set a goal to up and to the side of all blocks to break.
+      
+      Never turn this on without also turning on breakFromAbove.
 
   - name: goalRenderLineWidthPixels
     group: unknown
@@ -734,14 +766,18 @@ settings:
     description: |
 
   - name: okIfAir
-    group: unknown
-    default:
+    group: blocks
+    default: []
     description: |
+      A list of blocks to become air
+      
+      If a schematic asks for a block on this list, only air will be accepted at that location (and nothing on buildIgnoreBlocks)
 
   - name: okIfWater
-    group: unknown
-    default:
+    group: blocks
+    default: false
     description: |
+      Override builder's behavior to not attempt to correct blocks that are currently water
 
   - name: overshootTraverse
     group: unknown
