@@ -16,17 +16,17 @@ settings:
 
   - name: allowDiagonalAscend
     group: movement
-    default:
+    default: false
     description: |
 
   - name: allowDiagonalDescend
     group: movement
-    default:
+    default: false
     description: |
 
   - name: allowDownward
     group: movement
-    default:
+    default: true
     description: |
 
   - name: allowInventory
@@ -36,7 +36,7 @@ settings:
 
   - name: allowJumpAt256
     group: movement
-    default:
+    default: false
     description: |
 
   - name: allowOnlyExposedOres
@@ -56,17 +56,17 @@ settings:
 
   - name: allowParkour
     group: movement
-    default:
+    default: false
     description: |
 
   - name: allowParkourAscend
     group: movement
-    default:
+    default: true
     description: |
 
   - name: allowParkourPlace
     group: movement
-    default:
+    default: false
     description: |
 
   - name: allowPlace
@@ -76,7 +76,7 @@ settings:
 
   - name: allowSprint
     group: movement
-    default:
+    default: true
     description: |
 
   - name: allowVines
@@ -91,7 +91,7 @@ settings:
 
   - name: allowWaterBucketFall
     group: movement
-    default:
+    default: true
     description: |
 
   - name: allSettings
@@ -111,22 +111,22 @@ settings:
 
   - name: assumeSafeWalk
     group: movement
-    default:
+    default: false
     description: |
 
   - name: assumeStep
     group: movement
-    default:
+    default: false
     description: |
 
   - name: assumeWalkOnLava
     group: movement
-    default:
+    default: false
     description: |
 
   - name: assumeWalkOnWater
     group: movement
-    default:
+    default: false
     description: |
 
   - name: autoTool
@@ -496,7 +496,7 @@ settings:
 
   - name: freeLook
     group: movement
-    default:
+    default: true
     description: |
 
   - name: goalBreakFromAbove
@@ -531,7 +531,7 @@ settings:
 
   - name: jumpPenalty
     group: movement
-    default:
+    default: 2D
     description: |
 
   - name: layerHeight
@@ -951,12 +951,12 @@ settings:
 
   - name: sprintAscends
     group: movement
-    default:
+    default: true
     description: |
 
   - name: sprintInWater
     group: movement
-    default:
+    default: true
     description: |
 
   - name: startAtLayer
@@ -991,12 +991,12 @@ settings:
 
   - name: walkOnWaterOnePenalty
     group: movement
-    default:
+    default: 3D
     description: |
 
   - name: walkWhileBreaking
     group: movement
-    default:
+    default: true
     description: |
 
   - name: worldExploringChunkOffset
