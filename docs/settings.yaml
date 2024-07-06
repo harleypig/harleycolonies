@@ -1,1010 +1,1010 @@
 settings:
   - name: acceptableThrowawayItems
-    group:
+    group: unknown
     default:
     description: |
 
   - name: allowBreak
-    group:
+    group: unknown
     default:
     description: |
 
   - name: allowBreakAnyway
-    group:
+    group: unknown
     default:
     description: |
 
   - name: allowDiagonalAscend
-    group:
+    group: unknown
     default:
     description: |
 
   - name: allowDiagonalDescend
-    group:
+    group: unknown
     default:
     description: |
 
   - name: allowDownward
-    group:
+    group: unknown
     default:
     description: |
 
   - name: allowInventory
-    group:
+    group: unknown
     default:
     description: |
 
   - name: allowJumpAt256
-    group:
+    group: unknown
     default:
     description: |
 
   - name: allowOnlyExposedOres
-    group:
+    group: unknown
     default:
     description: |
 
   - name: allowOnlyExposedOresDistance
-    group:
+    group: unknown
     default:
     description: |
 
   - name: allowOvershootDiagonalDescend
-    group:
+    group: unknown
     default:
     description: |
 
   - name: allowParkour
-    group:
+    group: unknown
     default:
     description: |
 
   - name: allowParkourAscend
-    group:
+    group: unknown
     default:
     description: |
 
   - name: allowParkourPlace
-    group:
+    group: unknown
     default:
     description: |
 
   - name: allowPlace
-    group:
+    group: unknown
     default:
     description: |
 
   - name: allowSprint
-    group:
+    group: unknown
     default:
     description: |
 
   - name: allowVines
-    group:
+    group: unknown
     default:
     description: |
 
   - name: allowWalkOnBottomSlab
-    group:
+    group: unknown
     default:
     description: |
 
   - name: allowWaterBucketFall
-    group:
+    group: unknown
     default:
     description: |
 
   - name: allSettings
-    group:
+    group: unknown
     default:
     description: |
 
   - name: antiCheatCompatibility
-    group:
+    group: unknown
     default:
     description: |
 
   - name: assumeExternalAutoTool
-    group:
+    group: unknown
     default:
     description: |
 
   - name: assumeSafeWalk
-    group:
+    group: unknown
     default:
     description: |
 
   - name: assumeStep
-    group:
+    group: unknown
     default:
     description: |
 
   - name: assumeWalkOnLava
-    group:
+    group: unknown
     default:
     description: |
 
   - name: assumeWalkOnWater
-    group:
+    group: unknown
     default:
     description: |
 
   - name: autoTool
-    group:
+    group: unknown
     default:
     description: |
 
   - name: avoidance
-    group:
+    group: unknown
     default:
     description: |
 
   - name: avoidBreakingMultiplier
-    group:
+    group: unknown
     default:
     description: |
 
   - name: avoidUpdatingFallingBlocks
-    group:
+    group: unknown
     default:
     description: |
 
   - name: axisHeight
-    group:
+    group: unknown
     default:
     description: |
 
   - name: backfill
-    group:
+    group: unknown
     default:
     description: |
 
   - name: backtrackCostFavoringCoefficient
-    group:
+    group: unknown
     default:
     description: |
 
   - name: blacklistClosestOnFailure
-    group:
+    group: unknown
     default:
     description: |
 
   - name: blockBreakAdditionalPenalty
-    group:
+    group: unknown
     default:
     description: |
 
   - name: blockPlacementPenalty
-    group:
+    group: unknown
     default:
     description: |
 
   - name: blockReachDistance
-    group:
+    group: unknown
     default:
     description: |
 
   - name: blocksToAvoid
-    group:
+    group: unknown
     default:
     description: |
 
   - name: blocksToAvoidBreaking
-    group:
+    group: unknown
     default:
     description: |
 
   - name: blocksToDisallowBreaking
-    group:
+    group: unknown
     default:
     description: |
 
   - name: breakCorrectBlockPenaltyMultiplier
-    group:
+    group: unknown
     default:
     description: |
 
   - name: breakFromAbove
-    group:
+    group: unknown
     default:
     description: |
 
   - name: builderTickScanRadius
-    group:
+    group: unknown
     default:
     description: |
 
   - name: buildIgnoreBlocks
-    group:
+    group: unknown
     default:
     description: |
 
   - name: buildIgnoreDirection
-    group:
+    group: unknown
     default:
     description: |
 
   - name: buildIgnoreExisting
-    group:
+    group: unknown
     default:
     description: |
 
   - name: buildIgnoreProperties
-    group:
+    group: unknown
     default:
     description: |
 
   - name: buildInLayers
-    group:
+    group: unknown
     default:
     description: |
 
   - name: buildOnlySelection
-    group:
+    group: unknown
     default:
     description: |
 
   - name: buildRepeat
-    group:
+    group: unknown
     default:
     description: |
 
   - name: buildRepeatCount
-    group:
+    group: unknown
     default:
     description: |
 
   - name: buildRepeatSneaky
-    group:
+    group: unknown
     default:
     description: |
 
   - name: buildSkipBlocks
-    group:
+    group: unknown
     default:
     description: |
 
   - name: buildSubstitutes
-    group:
+    group: unknown
     default:
     description: |
 
   - name: buildValidSubstitutes
-    group:
+    group: unknown
     default:
     description: |
 
   - name: byLowerName
-    group:
+    group: unknown
     default:
     description: |
 
   - name: cachedChunksExpirySeconds
-    group:
+    group: unknown
     default:
     description: |
 
   - name: cachedChunksOpacity
-    group:
+    group: unknown
     default:
     description: |
 
   - name: cancelOnGoalInvalidation
-    group:
+    group: unknown
     default:
     description: |
 
   - name: censorCoordinates
-    group:
+    group: unknown
     default:
     description: |
 
   - name: censorRanCommands
-    group:
+    group: unknown
     default:
     description: |
 
   - name: chatControl
-    group:
+    group: unknown
     default:
     description: |
 
   - name: chatControlAnyway
-    group:
+    group: unknown
     default:
     description: |
 
   - name: chatDebug
-    group:
+    group: unknown
     default:
     description: |
 
   - name: chunkCaching
-    group:
+    group: unknown
     default:
     description: |
 
   - name: colorBestPathSoFar
-    group:
+    group: unknown
     default:
     description: |
 
   - name: colorBlocksToBreak
-    group:
+    group: unknown
     default:
     description: |
 
   - name: colorBlocksToPlace
-    group:
+    group: unknown
     default:
     description: |
 
   - name: colorBlocksToWalkInto
-    group:
+    group: unknown
     default:
     description: |
 
   - name: colorCurrentPath
-    group:
+    group: unknown
     default:
     description: |
 
   - name: colorGoalBox
-    group:
+    group: unknown
     default:
     description: |
 
   - name: colorInvertedGoalBox
-    group:
+    group: unknown
     default:
     description: |
 
   - name: colorMostRecentConsidered
-    group:
+    group: unknown
     default:
     description: |
 
   - name: colorNextPath
-    group:
+    group: unknown
     default:
     description: |
 
   - name: colorSelection
-    group:
+    group: unknown
     default:
     description: |
 
   - name: colorSelectionPos1
-    group:
+    group: unknown
     default:
     description: |
 
   - name: colorSelectionPos2
-    group:
+    group: unknown
     default:
     description: |
 
   - name: considerPotionEffects
-    group:
+    group: unknown
     default:
     description: |
 
   - name: costHeuristic
-    group:
+    group: unknown
     default:
     description: |
 
   - name: costVerificationLookahead
-    group:
+    group: unknown
     default:
     description: |
 
   - name: cutoffAtLoadBoundary
-    group:
+    group: unknown
     default:
     description: |
 
   - name: desktopNotifications
-    group:
+    group: unknown
     default:
     description: |
 
   - name: disableCompletionCheck
-    group:
+    group: unknown
     default:
     description: |
 
   - name: disconnectOnArrival
-    group:
+    group: unknown
     default:
     description: |
 
   - name: distanceTrim
-    group:
+    group: unknown
     default:
     description: |
 
   - name: doBedWaypoints
-    group:
+    group: unknown
     default:
     description: |
 
   - name: doDeathWaypoints
-    group:
+    group: unknown
     default:
     description: |
 
   - name: echoCommands
-    group:
+    group: unknown
     default:
     description: |
 
   - name: enterPortal
-    group:
+    group: unknown
     default:
     description: |
 
   - name: exploreChunkSetMinimumSize
-    group:
+    group: unknown
     default:
     description: |
 
   - name: exploreForBlocks
-    group:
+    group: unknown
     default:
     description: |
 
   - name: exploreMaintainY
-    group:
+    group: unknown
     default:
     description: |
 
   - name: extendCacheOnThreshold
-    group:
+    group: unknown
     default:
     description: |
 
   - name: fadePath
-    group:
+    group: unknown
     default:
     description: |
 
   - name: failureTimeoutMS
-    group:
+    group: unknown
     default:
     description: |
 
   - name: followOffsetDirection
-    group:
+    group: unknown
     default:
     description: |
 
   - name: followOffsetDistance
-    group:
+    group: unknown
     default:
     description: |
 
   - name: followRadius
-    group:
+    group: unknown
     default:
     description: |
 
   - name: forceInternalMining
-    group:
+    group: unknown
     default:
     description: |
 
   - name: freeLook
-    group:
+    group: unknown
     default:
     description: |
 
   - name: goalBreakFromAbove
-    group:
+    group: unknown
     default:
     description: |
 
   - name: goalRenderLineWidthPixels
-    group:
+    group: unknown
     default:
     description: |
 
   - name: incorrectSize
-    group:
+    group: unknown
     default:
     description: |
 
   - name: internalMiningAirException
-    group:
+    group: unknown
     default:
     description: |
 
   - name: itemSaver
-    group:
+    group: unknown
     default:
     description: |
 
   - name: itemSaverThreshold
-    group:
+    group: unknown
     default:
     description: |
 
   - name: jumpPenalty
-    group:
+    group: unknown
     default:
     description: |
 
   - name: layerHeight
-    group:
+    group: unknown
     default:
     description: |
 
   - name: layerOrder
-    group:
+    group: unknown
     default:
     description: |
 
   - name: legitMine
-    group:
+    group: unknown
     default:
     description: |
 
   - name: legitMineIncludeDiagonals
-    group:
+    group: unknown
     default:
     description: |
 
   - name: legitMineYLevel
-    group:
+    group: unknown
     default:
     description: |
 
   - name: logAsToast
-    group:
+    group: unknown
     default:
     description: |
 
   - name: logger
-    group:
+    group: unknown
     default:
     description: |
 
   - name: mapArtMode
-    group:
+    group: unknown
     default:
     description: |
 
   - name: maxCachedWorldScanCount
-    group:
+    group: unknown
     default:
     description: |
 
   - name: maxCostIncrease
-    group:
+    group: unknown
     default:
     description: |
 
   - name: maxFallHeightBucket
-    group:
+    group: unknown
     default:
     description: |
 
   - name: maxFallHeightNoWater
-    group:
+    group: unknown
     default:
     description: |
 
   - name: maxPathHistoryLength
-    group:
+    group: unknown
     default:
     description: |
 
   - name: mineDropLoiterDurationMSThanksLouca
-    group:
+    group: unknown
     default:
     description: |
 
   - name: mineGoalUpdateInterval
-    group:
+    group: unknown
     default:
     description: |
 
   - name: mineScanDroppedItems
-    group:
+    group: unknown
     default:
     description: |
 
   - name: minimumImprovementRepropagation
-    group:
+    group: unknown
     default:
     description: |
 
   - name: minYLevelWhileMining
-    group:
+    group: unknown
     default:
     description: |
 
   - name: mobAvoidanceCoefficient
-    group:
+    group: unknown
     default:
     description: |
 
   - name: mobAvoidanceRadius
-    group:
+    group: unknown
     default:
     description: |
 
   - name: mobSpawnerAvoidanceCoefficient
-    group:
+    group: unknown
     default:
     description: |
 
   - name: mobSpawnerAvoidanceRadius
-    group:
+    group: unknown
     default:
     description: |
 
   - name: movementTimeoutTicks
-    group:
+    group: unknown
     default:
     description: |
 
   - name: notificationOnBuildFinished
-    group:
+    group: unknown
     default:
     description: |
 
   - name: notificationOnExploreFinished
-    group:
+    group: unknown
     default:
     description: |
 
   - name: notificationOnFarmFail
-    group:
+    group: unknown
     default:
     description: |
 
   - name: notificationOnMineFail
-    group:
+    group: unknown
     default:
     description: |
 
   - name: notificationOnPathComplete
-    group:
+    group: unknown
     default:
     description: |
 
   - name: notifier
-    group:
+    group: unknown
     default:
     description: |
 
   - name: okIfAir
-    group:
+    group: unknown
     default:
     description: |
 
   - name: okIfWater
-    group:
+    group: unknown
     default:
     description: |
 
   - name: overshootTraverse
-    group:
+    group: unknown
     default:
     description: |
 
   - name: pathCutoffFactor
-    group:
+    group: unknown
     default:
     description: |
 
   - name: pathCutoffMinimumLength
-    group:
+    group: unknown
     default:
     description: |
 
   - name: pathHistoryCutoffAmount
-    group:
+    group: unknown
     default:
     description: |
 
   - name: pathingMapDefaultSize
-    group:
+    group: unknown
     default:
     description: |
 
   - name: pathingMapLoadFactor
-    group:
+    group: unknown
     default:
     description: |
 
   - name: pathingMaxChunkBorderFetch
-    group:
+    group: unknown
     default:
     description: |
 
   - name: pathRenderLineWidthPixels
-    group:
+    group: unknown
     default:
     description: |
 
   - name: pathThroughCachedOnly
-    group:
+    group: unknown
     default:
     description: |
 
   - name: pauseMiningForFallingBlocks
-    group:
+    group: unknown
     default:
     description: |
 
   - name: planAheadFailureTimeoutMS
-    group:
+    group: unknown
     default:
     description: |
 
   - name: planAheadPrimaryTimeoutMS
-    group:
+    group: unknown
     default:
     description: |
 
   - name: planningTickLookahead
-    group:
+    group: unknown
     default:
     description: |
 
   - name: preferSilkTouch
-    group:
+    group: unknown
     default:
     description: |
 
   - name: prefix
-    group:
+    group: unknown
     default:
     description: |
 
   - name: prefixControl
-    group:
+    group: unknown
     default:
     description: |
 
   - name: primaryTimeoutMS
-    group:
+    group: unknown
     default:
     description: |
 
   - name: pruneRegionsFromRAM
-    group:
+    group: unknown
     default:
     description: |
 
   - name: randomLooking
-    group:
+    group: unknown
     default:
     description: |
 
   - name: randomLooking113
-    group:
+    group: unknown
     default:
     description: |
 
   - name: renderCachedChunks
-    group:
+    group: unknown
     default:
     description: |
 
   - name: renderGoal
-    group:
+    group: unknown
     default:
     description: |
 
   - name: renderGoalAnimated
-    group:
+    group: unknown
     default:
     description: |
 
   - name: renderGoalIgnoreDepth
-    group:
+    group: unknown
     default:
     description: |
 
   - name: renderGoalXZBeacon
-    group:
+    group: unknown
     default:
     description: |
 
   - name: renderPath
-    group:
+    group: unknown
     default:
     description: |
 
   - name: renderPathAsLine
-    group:
+    group: unknown
     default:
     description: |
 
   - name: renderPathIgnoreDepth
-    group:
+    group: unknown
     default:
     description: |
 
   - name: renderSelection
-    group:
+    group: unknown
     default:
     description: |
 
   - name: renderSelectionBoxes
-    group:
+    group: unknown
     default:
     description: |
 
   - name: renderSelectionBoxesIgnoreDepth
-    group:
+    group: unknown
     default:
     description: |
 
   - name: renderSelectionCorners
-    group:
+    group: unknown
     default:
     description: |
 
   - name: renderSelectionIgnoreDepth
-    group:
+    group: unknown
     default:
     description: |
 
   - name: repackOnAnyBlockChange
-    group:
+    group: unknown
     default:
     description: |
 
   - name: replantCrops
-    group:
+    group: unknown
     default:
     description: |
 
   - name: replantNetherWart
-    group:
+    group: unknown
     default:
     description: |
 
   - name: rightClickContainerOnArrival
-    group:
+    group: unknown
     default:
     description: |
 
   - name: rightClickSpeed
-    group:
+    group: unknown
     default:
     description: |
 
   - name: schematicFallbackExtension
-    group:
+    group: unknown
     default:
     description: |
 
   - name: schematicOrientationX
-    group:
+    group: unknown
     default:
     description: |
 
   - name: schematicOrientationY
-    group:
+    group: unknown
     default:
     description: |
 
   - name: schematicOrientationZ
-    group:
+    group: unknown
     default:
     description: |
 
   - name: selectionLineWidth
-    group:
+    group: unknown
     default:
     description: |
 
   - name: selectionOpacity
-    group:
+    group: unknown
     default:
     description: |
 
   - name: settingTypes
-    group:
+    group: unknown
     default:
     description: |
 
   - name: shortBaritonePrefix
-    group:
+    group: unknown
     default:
     description: |
 
   - name: simplifyUnloadedYCoord
-    group:
+    group: unknown
     default:
     description: |
 
   - name: skipFailedLayers
-    group:
+    group: unknown
     default:
     description: |
 
   - name: slowPath
-    group:
+    group: unknown
     default:
     description: |
 
   - name: slowPathTimeDelayMS
-    group:
+    group: unknown
     default:
     description: |
 
   - name: slowPathTimeoutMS
-    group:
+    group: unknown
     default:
     description: |
 
   - name: splicePath
-    group:
+    group: unknown
     default:
     description: |
 
   - name: sprintAscends
-    group:
+    group: unknown
     default:
     description: |
 
   - name: sprintInWater
-    group:
+    group: unknown
     default:
     description: |
 
   - name: startAtLayer
-    group:
+    group: unknown
     default:
     description: |
 
   - name: strictLiquidCheck
-    group:
+    group: unknown
     default:
     description: |
 
   - name: toaster
-    group:
+    group: unknown
     default:
     description: |
 
   - name: toastTimer
-    group:
+    group: unknown
     default:
     description: |
 
   - name: useSwordToMine
-    group:
+    group: unknown
     default:
     description: |
 
   - name: verboseCommandExceptions
-    group:
+    group: unknown
     default:
     description: |
 
   - name: walkOnWaterOnePenalty
-    group:
+    group: unknown
     default:
     description: |
 
   - name: walkWhileBreaking
-    group:
+    group: unknown
     default:
     description: |
 
   - name: worldExploringChunkOffset
-    group:
+    group: unknown
     default:
     description: |
 
   - name: yLevelBoxSize
-    group:
+    group: unknown
     default:
     description: |
