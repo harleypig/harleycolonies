@@ -48,9 +48,10 @@ settings:
       Turn this off to force it to make more staircases and less shafts
 
   - name: allowInventory
-    group: unknown
-    default:
+    group: inventory
+    default: false
     description: |
+      Allow Baritone to move items in your inventory to your hotbar
 
   - name: allowJumpAt256
     group: movement
@@ -615,14 +616,16 @@ settings:
     description: |
 
   - name: itemSaver
-    group: unknown
-    default:
+    group: inventory
+    default: false
     description: |
+      Stop using tools just before they are going to break.
 
   - name: itemSaverThreshold
-    group: unknown
-    default:
+    group: inventory
+    default: 10
     description: |
+      Durability to leave on the tool when using itemSaver
 
   - name: jumpPenalty
     group: movement
@@ -858,9 +861,10 @@ settings:
     description: |
 
   - name: preferSilkTouch
-    group: unknown
-    default:
+    group: inventory
+    default: false
     description: |
+      Always prefer silk touch tools over regular tools. This will not sacrifice speed, but it will always prefer silk touch tools over other tools of the same speed. This includes always choosing ANY silk touch tool over your hand.
 
   - name: prefix
     group: unknown
@@ -1085,9 +1089,10 @@ settings:
     description: |
 
   - name: useSwordToMine
-    group: unknown
-    default:
+    group: inventory
+    default: true
     description: |
+      Use sword to mine.
 
   - name: verboseCommandExceptions
     group: unknown
