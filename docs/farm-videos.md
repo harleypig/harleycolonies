@@ -14,6 +14,7 @@ farm to do all of them.
 * [Wool](https://youtu.be/ss3iIBXGUCo?t=278)
 * [Bonemeal](https://www.youtube.com/shorts/ml5nLfh1fHU)
 * [Wth is this?](https://www.youtube.com/shorts/bbt8fAfs3SI)
+* [How many in a 6x6 square?](https://www.youtube.com/watch?v=gsF-BQP-bQo)
 
 ## Food
 
@@ -28,6 +29,7 @@ farm to do all of them.
 
 * [Charcoal](https://www.youtube.com/watch?v=v2lkKXB0bGw)
 * [Infinite Fuel using Bamboo](https://youtu.be/e0LqWbILLDY?t=448)
+* [Infinite Fuel using Kelp](https://www.youtube.com/watch?v=SzOnYCRxVBM)
 
 ## Bonemeal
 
