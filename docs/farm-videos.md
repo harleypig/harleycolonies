@@ -12,6 +12,8 @@ farm to do all of them.
 * [Cactus](https://www.youtube.com/watch?v=Zgk0RBP2xjU&t=196s)
 * [Clay](https://youtu.be/967Cph_WVWI?t=561)
 * [Wool](https://youtu.be/ss3iIBXGUCo?t=278)
+* [Bonemeal](https://www.youtube.com/shorts/ml5nLfh1fHU)
+* [Wth is this?](https://www.youtube.com/shorts/bbt8fAfs3SI)
 
 ## Food
 
