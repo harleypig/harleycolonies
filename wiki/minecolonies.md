@@ -78,6 +78,10 @@ be belowground.
   a grouped citizen/guardtower with each of the beekeeper, cowboy,
   rabbithutch, shepherd, swineherder, and chickenherder huts.
 
+## Template World
+
+Use this [template world](https://www.planetminecraft.com/project/minecolonies-schematics-worlds/) to help with schematics.
+
 ## Custom supply ship/camp
 
 TBD
