@@ -12,9 +12,9 @@ farm to do all of them.
 * [Cactus](https://www.youtube.com/watch?v=Zgk0RBP2xjU&t=196s)
 * [Clay](https://youtu.be/967Cph_WVWI?t=561)
 * [Wool](https://youtu.be/ss3iIBXGUCo?t=278)
-* [Bonemeal](https://www.youtube.com/shorts/ml5nLfh1fHU)
 * [Wth is this?](https://www.youtube.com/shorts/bbt8fAfs3SI)
 * [How many in a 6x6 square?](https://www.youtube.com/watch?v=gsF-BQP-bQo)
+* [Moss](https://www.youtube.com/watch?v=QLR25vQoYSs)
 
 ## Food
 
@@ -35,6 +35,8 @@ farm to do all of them.
 
 * [Using Cactus](https://www.youtube.com/watch?v=e0LqWbILLDY)
 * [Using Kelp](https://www.youtube.com/watch?v=ss3iIBXGUCo)
+* [Bonemeal](https://www.youtube.com/shorts/ml5nLfh1fHU) (Bedrock, may not work)
+* [Another Bonemeal/Moss](https://www.youtube.com/watch?v=Nl9J2_RhfmA)
 
 ## Maybe
 
