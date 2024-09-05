@@ -42,6 +42,7 @@ farm to do all of them.
 ## Maybe
 
 * [Tree Farm](https://www.youtube.com/watch?v=Kr_XKNACkM0) (not auto)
+* [Starter Farms](https://www.youtube.com/watch?v=AbCp3Bi3YQQ)
 
 ## Possible Minecolonies Huts
 
