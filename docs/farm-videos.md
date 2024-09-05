@@ -42,3 +42,7 @@ farm to do all of them.
 ## Maybe
 
 * [Tree Farm](https://www.youtube.com/watch?v=Kr_XKNACkM0) (not auto)
+
+## Possible Minecolonies Huts
+
+* [Chicken](https://www.youtube.com/watch?v=QKIc3lJPf8I)
