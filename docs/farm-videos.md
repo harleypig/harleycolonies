@@ -19,6 +19,7 @@ farm to do all of them.
 ## Food
 
 * [Semi Auto Farm](https://youtu.be/e0LqWbILLDY?t=349)
+* [Small Semi Auto Wheat Farm](https://www.youtube.com/watch?v=ppC1z13iXY4)
 
 ## Lava
 
