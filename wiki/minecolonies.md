@@ -82,6 +82,8 @@ be belowground.
 
 Use this [template world](https://www.planetminecraft.com/project/minecolonies-schematics-worlds/) to help with schematics.
 
+Also, this [basic tutorial](https://www.youtube.com/watch?v=MDxCPKh6im0).
+
 ## Custom supply ship/camp
 
 TBD
