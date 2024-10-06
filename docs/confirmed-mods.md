@@ -10,7 +10,13 @@ Locations of the configuration files for the mods will be added later.
 
 XXX: Get modrinth location for mods so we have both.
 
-### Possible Sections
+## Notes
+
+- (cso) means 'Client Side Only'
+- (sso) means 'Server Side Only' (can be installed on client but not required)
+- (both) means mod must be installed on both client and server
+
+## Possible Sections
 
 Maybe order sections like so?
 
@@ -57,30 +63,31 @@ XXX: Consider including Embeddium and Oculus (both are cso).
 - [Fresh Animations Extensions](https://www.curseforge.com/minecraft/texture-packs/fresh-animations-extensions)
 - [HD Font - Inconsolata](https://www.curseforge.com/minecraft/texture-packs/hd-font-inconsolata)
 - [Clear Glass with Connected Textures! \[16x\]](https://www.curseforge.com/minecraft/texture-packs/clear-glass-pack)
+- [Borderless Glass (No Optifine Needed)](https://www.curseforge.com/minecraft/texture-packs/borderless-glass-no-optifine-needed)
 
 ## Minecolonies
 
 These are Minecolonies mods, created by the Minecolonies team.
 
-- [Minecolonies](https://www.curseforge.com/minecraft/mc-mods/minecolonies)
-  - [Domum-Ornamentum](https://www.curseforge.com/minecraft/mc-mods/domum-ornamentum)
-  - [Multi-Piston](https://www.curseforge.com/minecraft/mc-mods/multi-piston)
-  - [Structurize](https://www.curseforge.com/minecraft/mc-mods/structurize)
-  - [Town Talk](https://www.curseforge.com/minecraft/mc-mods/towntalk)
-- [Anvil Balance](https://www.curseforge.com/minecraft/mc-mods/anvil-balance)
-- [Better Treasure Map](https://www.curseforge.com/minecraft/mc-mods/treasuredistance)
-- [Clean Swing Through Grass](https://www.curseforge.com/minecraft/mc-mods/clean-swing-through-grass)
-- [Storage Racks](https://www.curseforge.com/minecraft/mc-mods/storage-racks)
-- [Stylecolonies](https://www.curseforge.com/minecraft/mc-mods/stylecolonies)
-- [Vanilla Plus Tools](https://www.curseforge.com/minecraft/mc-mods/vanilla-tools)
-- [WaterPhysics](https://www.curseforge.com/minecraft/mc-mods/waterphysics)
+- [Minecolonies](https://www.curseforge.com/minecraft/mc-mods/minecolonies) (both?)
+  - [Domum-Ornamentum](https://www.curseforge.com/minecraft/mc-mods/domum-ornamentum) (both?)
+  - [Multi-Piston](https://www.curseforge.com/minecraft/mc-mods/multi-piston) (both?)
+  - [Structurize](https://www.curseforge.com/minecraft/mc-mods/structurize) (both?)
+  - [Town Talk](https://www.curseforge.com/minecraft/mc-mods/towntalk) (both?)
+- [Anvil Balance](https://www.curseforge.com/minecraft/mc-mods/anvil-balance) (both?)
+- [Better Treasure Map](https://www.curseforge.com/minecraft/mc-mods/treasuredistance) (both?)
+- [Clean Swing Through Grass](https://www.curseforge.com/minecraft/mc-mods/clean-swing-through-grass) (both?)
+- [Storage Racks](https://www.curseforge.com/minecraft/mc-mods/storage-racks) (both?)
+- [Stylecolonies](https://www.curseforge.com/minecraft/mc-mods/stylecolonies) (both?)
+- [Vanilla Plus Tools](https://www.curseforge.com/minecraft/mc-mods/vanilla-tools) (both?)
+- [WaterPhysics](https://www.curseforge.com/minecraft/mc-mods/waterphysics) (both?)
 
 ## Base Mods
 
 These are the core, basic mods I know fairly well and know that I want them in
 my modpack.
 
-- [Better Advancements](https://www.curseforge.com/minecraft/mc-mods/better-advancements)
+- [Better Advancements](https://www.curseforge.com/minecraft/mc-mods/better-advancements) (cso?)
 - [Comforts](https://www.curseforge.com/minecraft/mc-mods/comforts)
 
 ## Biomes
@@ -92,26 +99,29 @@ my modpack.
 
 ## JourneyMap
 
-- [JourneyMap](https://www.curseforge.com/minecraft/mc-mods/journeymap)
-- [JourneyMap Integration](https://www.curseforge.com/minecraft/mc-mods/journeymap-integration)
+- [JourneyMap](https://www.curseforge.com/minecraft/mc-mods/journeymap) (cso)
+- [JourneyMap Integration](https://www.curseforge.com/minecraft/mc-mods/journeymap-integration) (cso)
 
 ## Just Enough Items (JEI)
 
-- [JEI (Just Enough Items)](https://www.curseforge.com/minecraft/mc-mods/jei)
+- [JEI (Just Enough Items)](https://www.curseforge.com/minecraft/mc-mods/jei) (cso?)
 
-- [JEI Integration](https://www.curseforge.com/minecraft/mc-mods/jei-integration)
-- [Just Enough Advancements (JEA)](https://www.curseforge.com/minecraft/mc-mods/jea)
-- [Just Enough Archaeology](https://www.curseforge.com/minecraft/mc-mods/just-enough-archaeology)
-- [Just Enough Beacons Reforged](https://www.curseforge.com/minecraft/mc-mods/just-enough-beacons-reforged)
-- [Just Enough Breeding (JEBr)](https://www.curseforge.com/minecraft/mc-mods/justenoughbreeding)
-- [Just Enough Calculation](https://www.curseforge.com/minecraft/mc-mods/just-enough-calculation)
-- [Just Enough Effect Descriptions (JEED)](https://www.curseforge.com/minecraft/mc-mods/just-enough-effect-descriptions-jeed)
-- [Just Enough Painting Previews (JEPP)](https://www.curseforge.com/minecraft/mc-mods/jepp)
-- [Just Enough Professions (JEP)](https://www.curseforge.com/minecraft/mc-mods/just-enough-professions-jep)
-- [Just Enough Resources (JER)](https://www.curseforge.com/minecraft/mc-mods/just-enough-resources-jer)
-- [Just Enough Sculk Sensor](https://www.curseforge.com/minecraft/mc-mods/just-enough-sculk-sensor)
-- [Moderately Enough Effect Descriptions (MEED) - A JEED Addon](https://www.curseforge.com/minecraft/mc-mods/moderately-enough-effect-descriptions-meed-a-jeed-addon)
-
+- [JEI Integration](https://www.curseforge.com/minecraft/mc-mods/jei-integration) (cso?)
+- [Just Enough Advancements (JEA)](https://www.curseforge.com/minecraft/mc-mods/jea) (both)
+- [Just Enough Archaeology](https://www.curseforge.com/minecraft/mc-mods/just-enough-archaeology) (both)
+- [Just Enough Beacons Reforged](https://www.curseforge.com/minecraft/mc-mods/just-enough-beacons-reforged) (cso?)
+- [Just Enough Breeding (JEBr)](https://www.curseforge.com/minecraft/mc-mods/justenoughbreeding) (cso?)
+- [Just Enough Calculation](https://www.curseforge.com/minecraft/mc-mods/just-enough-calculation) (cso?)
+- [Just Enough Effect Descriptions (JEED)](https://www.curseforge.com/minecraft/mc-mods/just-enough-effect-descriptions-jeed) (cso?)
+- [Just Enough Painting Previews (JEPP)](https://www.curseforge.com/minecraft/mc-mods/jepp) (cso?)
+- [Just Enough Professions (JEP)](https://www.curseforge.com/minecraft/mc-mods/just-enough-professions-jep) (cso?)
+- [Just Enough Resources (JER)](https://www.curseforge.com/minecraft/mc-mods/just-enough-resources-jer) (cso?)
+- [Just Enough Sculk Sensor](https://www.curseforge.com/minecraft/mc-mods/just-enough-sculk-sensor) (cso?)
+- [Moderately Enough Effect Descriptions (MEED) - A JEED Addon](https://www.curseforge.com/minecraft/mc-mods/moderately-enough-effect-descriptions-meed-a-jeed-addon) (both)
+- [JEITweaker](https://www.curseforge.com/minecraft/mc-mods/jeitweaker) (requires CraftTweaker) (sso?)
+- [JEI Integration](https://www.curseforge.com/minecraft/mc-mods/jei-integration) (cso?)
+- [JER Integration](https://www.curseforge.com/minecraft/mc-mods/jer-integration) (requires Just Enough Resources) (cso?)
+- 
 ## Mapping/Information
 
 - [AppleSkin](https://www.curseforge.com/minecraft/mc-mods/appleskin)
@@ -178,6 +188,7 @@ my modpack.
 - [CERBON's API](https://www.curseforge.com/minecraft/mc-mods/cerbons-api)
 - [Cloth Config API](https://www.curseforge.com/minecraft/mc-mods/cloth-config)
 - [Collective](https://www.curseforge.com/minecraft/mc-mods/collective)
+- [CraftTweaker](https://www.curseforge.com/minecraft/mc-mods/crafttweaker)
 - [Cupboard](https://www.curseforge.com/minecraft/mc-mods/cupboard)
 - [FLIB](https://www.curseforge.com/minecraft/mc-mods/flib)
 - [Iceberg](https://www.curseforge.com/minecraft/mc-mods/iceberg)
