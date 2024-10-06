@@ -51,19 +51,12 @@ XXX: Consider including Embeddium and Oculus (both are cso).
 - [Oculus](https://www.curseforge.com/minecraft/mc-mods/oculus)
 - [Complementary Shaders - Reimagined](https://www.curseforge.com/minecraft/shaders/complementary-reimagined) (requires beefy graphics)
 
-### Optifine
-
-- [Vanilla Plus Shader](https://www.curseforge.com/minecraft/shaders/vanilla-plus-shader)
-
-This requires [Optifine](https://optifine.net). If you don't want to install
-it, you don't have to. The shader won't do anything unless Optifine is
-installed **and** enabled.
-
 ## Resource & Texture Packs
 
 - [Fresh Animations](https://www.curseforge.com/minecraft/texture-packs/fresh-animations)
 - [Fresh Animations Extensions](https://www.curseforge.com/minecraft/texture-packs/fresh-animations-extensions)
 - [HD Font - Inconsolata](https://www.curseforge.com/minecraft/texture-packs/hd-font-inconsolata)
+- [Clear Glass with Connected Textures! \[16x\]](https://www.curseforge.com/minecraft/texture-packs/clear-glass-pack)
 
 ## Minecolonies
 
