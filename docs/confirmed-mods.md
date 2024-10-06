@@ -9,7 +9,6 @@ categories they are in.
 Locations of the configuration files for the mods will be added later.
 
 XXX: Get modrinth location for mods so we have both.
-XXX: Consider including Embeddium and Oculus (both are cso).
 
 ### Possible Sections
 
@@ -44,13 +43,13 @@ Maybe order sections like so?
 The Baritone mod is no longer on Curseforge, so we'll need to [install it
 manually](https://github.com/cabaletta/baritone).
 
-## 
-## Shaders
+## Shaders/Performance
 
-### Iris
+XXX: Consider including Embeddium and Oculus (both are cso).
 
-
-[Complementary Shaders - Reimagined](https://www.curseforge.com/minecraft/shaders/complementary-reimagined)
+- [Embeddium](https://www.curseforge.com/minecraft/mc-mods/embeddium)
+- [Oculus](https://www.curseforge.com/minecraft/mc-mods/oculus)
+- [Complementary Shaders - Reimagined](https://www.curseforge.com/minecraft/shaders/complementary-reimagined) (requires beefy graphics)
 
 ### Optifine
 
@@ -60,7 +59,7 @@ This requires [Optifine](https://optifine.net). If you don't want to install
 it, you don't have to. The shader won't do anything unless Optifine is
 installed **and** enabled.
 
-## Texture Packs
+## Resource & Texture Packs
 
 - [Fresh Animations](https://www.curseforge.com/minecraft/texture-packs/fresh-animations)
 - [Fresh Animations Extensions](https://www.curseforge.com/minecraft/texture-packs/fresh-animations-extensions)
