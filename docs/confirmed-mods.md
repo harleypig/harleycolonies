@@ -8,6 +8,9 @@ categories they are in.
 
 Locations of the configuration files for the mods will be added later.
 
+XXX: Get modrinth location for mods so we have both.
+XXX: Consider including Embeddium and Oculus (both are cso).
+
 ### Possible Sections
 
 Maybe order sections like so?
@@ -41,7 +44,15 @@ Maybe order sections like so?
 The Baritone mod is no longer on Curseforge, so we'll need to [install it
 manually](https://github.com/cabaletta/baritone).
 
+## 
 ## Shaders
+
+### Iris
+
+
+[Complementary Shaders - Reimagined](https://www.curseforge.com/minecraft/shaders/complementary-reimagined)
+
+### Optifine
 
 - [Vanilla Plus Shader](https://www.curseforge.com/minecraft/shaders/vanilla-plus-shader)
 
