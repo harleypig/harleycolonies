@@ -115,12 +115,16 @@ my modpack.
 - [Just Enough Effect Descriptions (JEED)](https://www.curseforge.com/minecraft/mc-mods/just-enough-effect-descriptions-jeed) (cso)
 - [Just Enough Painting Previews (JEPP)](https://www.curseforge.com/minecraft/mc-mods/jepp) (cso)
 - [Just Enough Professions (JEP)](https://www.curseforge.com/minecraft/mc-mods/just-enough-professions-jep) (cso)
-- [Just Enough Resources (JER)](https://www.curseforge.com/minecraft/mc-mods/just-enough-resources-jer) (cso)
 - [Just Enough Sculk Sensor](https://www.curseforge.com/minecraft/mc-mods/just-enough-sculk-sensor) (cso)
 - [Moderately Enough Effect Descriptions (MEED) - A JEED Addon](https://www.curseforge.com/minecraft/mc-mods/moderately-enough-effect-descriptions-meed-a-jeed-addon) (both)
 - [JEITweaker](https://www.curseforge.com/minecraft/mc-mods/jeitweaker) (requires CraftTweaker) (sso?)
 - [JEI Integration](https://www.curseforge.com/minecraft/mc-mods/jei-integration) (cso)
+
+### Just Enough Resources
+
+- [Just Enough Resources (JER)](https://www.curseforge.com/minecraft/mc-mods/just-enough-resources-jer) (cso)
 - [JER Integration](https://www.curseforge.com/minecraft/mc-mods/jer-integration) (requires Just Enough Resources) (cso)
+- [JER Ore Integration](https://www.curseforge.com/minecraft/mc-mods/jer-ore-integration) (requires Just Enough Resources) (cso)
 
 ## Mapping/Information
 
@@ -148,7 +152,6 @@ my modpack.
 - [FullGrownCropMarker](https://www.curseforge.com/minecraft/mc-mods/full-grown-crop-marker) (cso)
 - [Legendary Tooltips](https://www.curseforge.com/minecraft/mc-mods/legendary-tooltips) (reevaluate)
 - [Mod Name Tooltip](https://www.curseforge.com/minecraft/mc-mods/mod-name-tooltip) (cso)
-- [
 
 ### Rejected
 
@@ -164,7 +167,7 @@ my modpack.
 - [Block Runner](https://www.curseforge.com/minecraft/mc-mods/block-runner-forge)
 - [Canary](https://www.curseforge.com/minecraft/mc-mods/canary)
 - [Clumps](https://www.curseforge.com/minecraft/mc-mods/clumps)
-- [Configured](https://www.curseforge.com/minecraft/mc-mods/configured)
+- [Configured](https://www.curseforge.com/minecraft/mc-mods/configured) (cso)
 - [Connectivity](https://www.curseforge.com/minecraft/mc-mods/connectivity)
 - [Controlling](https://www.curseforge.com/minecraft/mc-mods/controlling)
 - [Default Options](https://www.curseforge.com/minecraft/mc-mods/default-options)
@@ -178,9 +181,6 @@ my modpack.
 ### Inventory
 
 - [Inventory Sorter](https://www.curseforge.com/minecraft/mc-mods/inventory-sorter)
-
-**OR**
-
 - [Inventory Essentials](https://www.curseforge.com/minecraft/mc-mods/inventory-essentials)
 
 ## Storage
