@@ -104,32 +104,32 @@ my modpack.
 
 ## Just Enough Items (JEI)
 
-- [JEI (Just Enough Items)](https://www.curseforge.com/minecraft/mc-mods/jei) (cso?)
+- [JEI (Just Enough Items)](https://www.curseforge.com/minecraft/mc-mods/jei) (both?)
 
-- [JEI Integration](https://www.curseforge.com/minecraft/mc-mods/jei-integration) (cso?)
+- [JEI Integration](https://www.curseforge.com/minecraft/mc-mods/jei-integration) (both?)
 - [Just Enough Advancements (JEA)](https://www.curseforge.com/minecraft/mc-mods/jea) (both)
 - [Just Enough Archaeology](https://www.curseforge.com/minecraft/mc-mods/just-enough-archaeology) (both)
-- [Just Enough Beacons Reforged](https://www.curseforge.com/minecraft/mc-mods/just-enough-beacons-reforged) (cso?)
-- [Just Enough Breeding (JEBr)](https://www.curseforge.com/minecraft/mc-mods/justenoughbreeding) (cso?)
-- [Just Enough Calculation](https://www.curseforge.com/minecraft/mc-mods/just-enough-calculation) (cso?)
-- [Just Enough Effect Descriptions (JEED)](https://www.curseforge.com/minecraft/mc-mods/just-enough-effect-descriptions-jeed) (cso?)
-- [Just Enough Painting Previews (JEPP)](https://www.curseforge.com/minecraft/mc-mods/jepp) (cso?)
-- [Just Enough Professions (JEP)](https://www.curseforge.com/minecraft/mc-mods/just-enough-professions-jep) (cso?)
-- [Just Enough Resources (JER)](https://www.curseforge.com/minecraft/mc-mods/just-enough-resources-jer) (cso?)
-- [Just Enough Sculk Sensor](https://www.curseforge.com/minecraft/mc-mods/just-enough-sculk-sensor) (cso?)
+- [Just Enough Beacons Reforged](https://www.curseforge.com/minecraft/mc-mods/just-enough-beacons-reforged) (cso)
+- [Just Enough Breeding (JEBr)](https://www.curseforge.com/minecraft/mc-mods/justenoughbreeding) (cso)
+- [Just Enough Calculation](https://www.curseforge.com/minecraft/mc-mods/just-enough-calculation) (cso)
+- [Just Enough Effect Descriptions (JEED)](https://www.curseforge.com/minecraft/mc-mods/just-enough-effect-descriptions-jeed) (cso)
+- [Just Enough Painting Previews (JEPP)](https://www.curseforge.com/minecraft/mc-mods/jepp) (cso)
+- [Just Enough Professions (JEP)](https://www.curseforge.com/minecraft/mc-mods/just-enough-professions-jep) (cso)
+- [Just Enough Resources (JER)](https://www.curseforge.com/minecraft/mc-mods/just-enough-resources-jer) (cso)
+- [Just Enough Sculk Sensor](https://www.curseforge.com/minecraft/mc-mods/just-enough-sculk-sensor) (cso)
 - [Moderately Enough Effect Descriptions (MEED) - A JEED Addon](https://www.curseforge.com/minecraft/mc-mods/moderately-enough-effect-descriptions-meed-a-jeed-addon) (both)
 - [JEITweaker](https://www.curseforge.com/minecraft/mc-mods/jeitweaker) (requires CraftTweaker) (sso?)
-- [JEI Integration](https://www.curseforge.com/minecraft/mc-mods/jei-integration) (cso?)
-- [JER Integration](https://www.curseforge.com/minecraft/mc-mods/jer-integration) (requires Just Enough Resources) (cso?)
-- 
+- [JEI Integration](https://www.curseforge.com/minecraft/mc-mods/jei-integration) (cso)
+- [JER Integration](https://www.curseforge.com/minecraft/mc-mods/jer-integration) (requires Just Enough Resources) (cso)
+
 ## Mapping/Information
 
 - [AppleSkin](https://www.curseforge.com/minecraft/mc-mods/appleskin)
-- [BetterF3](https://www.curseforge.com/minecraft/mc-mods/betterf3)
-- [Better Ping Display](https://www.curseforge.com/minecraft/mc-mods/better-ping-display)
-- [Catalogue](https://www.curseforge.com/minecraft/mc-mods/catalogue)
-- [Compact Help Command](https://www.curseforge.com/minecraft/mc-mods/compact-help-command)
-- [Ding (Forge)](https://www.curseforge.com/minecraft/mc-mods/ding)
+- [BetterF3](https://www.curseforge.com/minecraft/mc-mods/betterf3) (cso)
+- [Better Ping Display](https://www.curseforge.com/minecraft/mc-mods/better-ping-display) (cso)
+- [Catalogue](https://www.curseforge.com/minecraft/mc-mods/catalogue) (cso)
+- [Compact Help Command](https://www.curseforge.com/minecraft/mc-mods/compact-help-command) (cso)
+- [Ding (Forge)](https://www.curseforge.com/minecraft/mc-mods/ding) (cso)
 - [Explorer's Compass](https://www.curseforge.com/minecraft/mc-mods/explorers-compass)
 - [Jade Addons (Forge)](https://www.curseforge.com/minecraft/mc-mods/jade-addons)
 - [JadeColonies](https://www.curseforge.com/minecraft/mc-mods/jadecolonies)
@@ -139,15 +139,16 @@ my modpack.
 
 ### Tooltips
 
-- [BeehiveTooltips](https://www.curseforge.com/minecraft/mc-mods/beehivetooltips)
+- [BeehiveTooltips](https://www.curseforge.com/minecraft/mc-mods/beehivetooltips) (cso)
 - [Drawers Tooltip](https://www.curseforge.com/minecraft/mc-mods/drawers-tooltip)
-- [Durability Tooltip](https://www.curseforge.com/minecraft/mc-mods/durability-tooltip)
-- [Enchantment Descriptions](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions)
-- [Equipment Compare](https://www.curseforge.com/minecraft/mc-mods/equipment-compare)
-- [Food Effect Tooltips (Forge)](https://www.curseforge.com/minecraft/mc-mods/food-effect-tooltips-forge)
-- [FullGrownCropMarker](https://www.curseforge.com/minecraft/mc-mods/full-grown-crop-marker)
-- [Legendary Tooltips](https://www.curseforge.com/minecraft/mc-mods/legendary-tooltips)
-- [Mod Name Tooltip](https://www.curseforge.com/minecraft/mc-mods/mod-name-tooltip)
+- [Durability Tooltip](https://www.curseforge.com/minecraft/mc-mods/durability-tooltip) (cso)
+- [Enchantment Descriptions](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions) (cso)
+- [Equipment Compare](https://www.curseforge.com/minecraft/mc-mods/equipment-compare) (cso)
+- [Food Effect Tooltips (Forge)](https://www.curseforge.com/minecraft/mc-mods/food-effect-tooltips-forge) (cso)
+- [FullGrownCropMarker](https://www.curseforge.com/minecraft/mc-mods/full-grown-crop-marker) (cso)
+- [Legendary Tooltips](https://www.curseforge.com/minecraft/mc-mods/legendary-tooltips) (reevaluate)
+- [Mod Name Tooltip](https://www.curseforge.com/minecraft/mc-mods/mod-name-tooltip) (cso)
+- [
 
 ### Rejected
 
@@ -168,11 +169,15 @@ my modpack.
 - [Controlling](https://www.curseforge.com/minecraft/mc-mods/controlling)
 - [Default Options](https://www.curseforge.com/minecraft/mc-mods/default-options)
 - [HT's TreeChop](https://www.curseforge.com/minecraft/mc-mods/treechop)
-- [Inventory Sorter](https://www.curseforge.com/minecraft/mc-mods/inventory-sorter)
 - [KleeSlabs](https://www.curseforge.com/minecraft/mc-mods/kleeslabs)
 - [Passable Foliage 🌳 (Forge)](https://www.curseforge.com/minecraft/mc-mods/passable-foliage)
 - [PeacefulSurface](https://www.curseforge.com/minecraft/mc-mods/peacefulsurface)
 - [Waystones](https://www.curseforge.com/minecraft/mc-mods/waystones)
+- [Automatic Toolswap](https://www.curseforge.com/minecraft/mc-mods/automatic-tool-swap) (cso)
+
+- [Inventory Sorter](https://www.curseforge.com/minecraft/mc-mods/inventory-sorter)
+**OR**
+- [Inventory Essentials](https://www.curseforge.com/minecraft/mc-mods/inventory-essentials)
 
 ## Storage
 
