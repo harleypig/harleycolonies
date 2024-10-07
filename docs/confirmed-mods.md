@@ -175,8 +175,12 @@ my modpack.
 - [Waystones](https://www.curseforge.com/minecraft/mc-mods/waystones)
 - [Automatic Toolswap](https://www.curseforge.com/minecraft/mc-mods/automatic-tool-swap) (cso)
 
+### Inventory
+
 - [Inventory Sorter](https://www.curseforge.com/minecraft/mc-mods/inventory-sorter)
+
 **OR**
+
 - [Inventory Essentials](https://www.curseforge.com/minecraft/mc-mods/inventory-essentials)
 
 ## Storage
