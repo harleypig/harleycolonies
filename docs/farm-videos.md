@@ -8,13 +8,25 @@ farm to do all of them.
 
 * [Strings](https://www.youtube.com/watch?v=MW8xA9cuTTE)
 * [Auto Sugarcane/Bamboo](https://www.youtube.com/watch?v=qEE405lduWw)
+* [Another Auto Sugarcan/Bamboo](https://youtu.be/7u38TamjpGQ?t=246)
 * [Zombified Piglin](https://youtu.be/Z3bzbFuwZjQ?t=521)
+* [Another Zombified Piglin](https://youtu.be/7u38TamjpGQ?t=448)
 * [Cactus](https://www.youtube.com/watch?v=Zgk0RBP2xjU&t=196s)
 * [Clay](https://youtu.be/967Cph_WVWI?t=561)
 * [Wool](https://youtu.be/ss3iIBXGUCo?t=278)
 * [Wth is this?](https://www.youtube.com/shorts/bbt8fAfs3SI)
 * [How many in a 6x6 square?](https://www.youtube.com/watch?v=gsF-BQP-bQo)
 * [Moss](https://www.youtube.com/watch?v=QLR25vQoYSs)
+* [Moss Farm](https://www.youtube.com/watch?v=n-m7qJxKCqM)
+* [Cobblestone](https://www.youtube.com/watch?v=7u38TamjpGQ)
+* [Concrete](https://www.youtube.com/watch?v=Xiy_DfAJWBE) (not auto)
+
+## Flower
+
+* [Flower Farm](https://www.youtube.com/watch?v=5S0D1DS9w7c)
+* [Another Flower Farm](https://www.youtube.com/watch?v=imdoffqe2uk) (looks
+    like the same as above)
+* [Two-tall Flower](https://www.youtube.com/watch?v=qXGNm9ZuIuI)
 
 ## Food
 
