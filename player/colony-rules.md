@@ -45,6 +45,7 @@ third, but the order is up to the player. These should be placed within the
 determined based on terrain and resource availability (e.g., Forester near
 trees, Miner near a hill).
 
+# Houses should be built after the guard towers, AI!
 Once these three huts are built, a house should be built for each of those
 workers to ensure they have proper accommodations. The colony will generally start
 with 4 colonists total. After assigning colonists to the Builder, Miner, and Forester
@@ -143,10 +144,6 @@ at level 3.
 The diamond pattern for guard towers ensures the center (Town Hall) is covered
 by all four towers, with an 82-block overlap between adjacent towers’ patrol
 areas at level 3, minimizing overlap while maintaining full coverage.
-
-At level 5 (200-block radius, 400-block diameter), the overlap increases (400
-- 198 = 202 blocks total, 101 blocks per side), ensuring robust coverage
-without excessive crowding.
 
 Roads are N-S and E-W to avoid jagged diagonal paths, maintaining a clean,
 grid-based aesthetic in Minecraft’s blocky environment.
