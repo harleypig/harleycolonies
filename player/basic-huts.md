@@ -79,9 +79,33 @@ Finally, establish your basic production chain for tools and materials:
   - Smelter - Processes ores into ingots
 * Houses for these workers
 
-## Updating ...
+## Upgrading Strategy
 
-Any suggestions for how much time should be spent updating huts (and don't
-forget the huts from the previous setup) before moving on to the next group of
-huts to be created? Also, consider creating more builders, foresters and maybe
-another miner or a quarrier, depending on your needs.
+### Priority Upgrades
+Focus your first upgrades on buildings that provide the most immediate benefits:
+
+1. **Builder's Hut** - Priority upgrade to level 3-4 to speed up all future construction
+2. **Warehouse** - Upgrade to level 3 to increase storage capacity
+3. **Miner's Hut** - Upgrade to level 3 to access deeper resources
+4. **Forester's Hut** - Upgrade to level 2-3 for better wood production
+
+### Upgrade Timing
+* Upgrade your Builder's Hut immediately after completing the basic infrastructure
+* After establishing all basic huts at level 1, pause expansion when your colony reaches 15-20 citizens
+* Focus on upgrading essential buildings to level 3 before continuing expansion
+* Consider adding 1-2 additional Builders once you have 20+ citizens to handle upgrades and new construction simultaneously
+
+### Resource Preparation
+* Stockpile stone, wood, and iron before beginning major upgrade phases
+* Create a dedicated storage area for upgrade materials
+* Consider adding a second Miner and Forester before starting major upgrades
+* Add a Quarrier if stone becomes a bottleneck
+
+### Worker Expansion
+As your colony grows beyond 25 citizens, consider adding:
+* 2-3 Builders total (spread throughout your colony)
+* 2 Miners (one for deep mining, one for surface resources)
+* 2 Foresters (in different wooded areas)
+* 1 Quarrier (if stone needs are high)
+
+Balance your upgrades with new construction based on your colony's immediate needs and resource availability.
