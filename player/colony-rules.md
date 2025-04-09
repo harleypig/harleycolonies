@@ -7,9 +7,8 @@ resources have been accounted for, etc.
 
 ## Guard Tower Coverage
 
-Every hut block must be within 140 blocks of a guard tower’s hut block by the
-time towers reach level 3, matching the level 3 patrol radius of 140 blocks
-for full safety.
+Every hut block must be within 140 blocks of a guard tower’s hut block based
+on the level 3 patrol radius of 140 blocks for full safety.
 
 Early-game gaps in coverage at levels 1 (80-block radius) and 2 (110-block
 radius) are acceptable, as colonists can manage until towers are upgraded to
@@ -17,21 +16,15 @@ level 3.
 
 ## Guard Tower Placement (Diamond Pattern)
 
-Guard towers are arranged in a diamond pattern, spaced 198 blocks apart along
-the vertical and horizontal axes (forming the sides of the diamond), resulting
-in a diagonal distance of 140 blocks from the Town Hall to each guard tower.
+Guard towers are arranged in a diamond pattern, spaced 280 blocks apart along
+the vertical and horizontal axes (forming the vertexes of the diamond).
 
-The Town Hall is at (0, 0). The first four guard towers are placed at (140,
-140), (-140, 140), (140, -140), and (-140, -140), forming the initial diamond
-ring around the Town Hall.
+The Town Hall is at (0, 0). The first four guard towers are placed at (0,
+140), (0, -140), (140, 0), and (-140, 0), forming the initial diamond ring
+around the Town Hall.
 
-Future towers are added in the same diamond pattern (e.g., (280, 280), (-280,
-280), etc.), maintaining the 198-block spacing along the axes as the colony
-expands.
-
-This spacing ensures the Town Hall at the center is exactly 140 blocks from
-each guard tower, covered by all four, with an 82-block overlap between
-adjacent towers’ patrol areas at level 3.
+Future towers are added in an alternating pattern as described below in the
+`Other Intersections` section.
 
 ## Initial Hut Placement
 
