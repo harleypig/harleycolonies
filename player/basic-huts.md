@@ -19,7 +19,9 @@ forever to build. Generally, level 3 is relatively quick and easy.
 
 ## Update and create huts
 
-After establishing your initial colony infrastructure, you should focus on building the following huts in this recommended order. This progression optimizes your colony's efficiency and resource management.
+After establishing your initial colony infrastructure, you should focus on
+building the following huts in this recommended order. This progression
+optimizes your colony's efficiency and resource management.
 
 The recommended build order is:
 
@@ -28,11 +30,14 @@ The recommended build order is:
 3. **Food Processing** - Turns raw ingredients into meals for your colonists
 4. **Basic Resource Processing** - Provides tools and processed materials for further expansion
 
-You should get all of these huts working at level 1 before upgrading any of them to higher levels. This ensures you have all the basic functionality in place before investing in improvements.
+You should get all of these huts working at level 1 before upgrading any of
+them to higher levels. This ensures you have all the basic functionality in
+place before investing in improvements.
 
 ### 1. Storage and Logistics
 
-These buildings should be your first priority as they form the backbone of your colony's item management system:
+These buildings should be your first priority as they form the backbone of
+your colony's item management system:
 
 * Warehouse - Central storage for all your colony's resources
 * Courier's Hut
@@ -51,7 +56,8 @@ Once your storage system is in place, focus on sustainable food sources:
 
 ### 3. Food Processing
 
-With food sources established, build facilities to process raw ingredients into meals:
+With food sources established, build facilities to process raw ingredients
+into meals:
 
 * Cookery
   - Chef - Prepares complex meals
@@ -75,4 +81,7 @@ Finally, establish your basic production chain for tools and materials:
 
 ## Updating ...
 
-Suggestions?
+Any suggestions for how much time should be spent updating huts (and don't
+forget the huts from the previous setup) before moving on to the next group of
+huts to be created? Also, consider creating more builders, foresters and maybe
+another miner or a quarrier, depending on your needs.
