@@ -56,10 +56,7 @@ guard tower is built, you can assign an unemployed colonist to it as a guard,
 and a new colonist will automatically fill the empty slot without requiring
 additional houses. This maximizes your early population efficiency.
 
-A tavern should also be constructed during this phase of development. The tavern allows for recruiting additional colonists and serves as a social hub. The exact timing of the tavern construction is flexible and can be adjusted based on the player's priorities and resource availability.
-
-Once the guard towers are in place, houses should be built for each worker to
-ensure they have proper accommodations.
+A tavern and homes for the workers should also be constructed during this phase of development. The tavern allows for recruiting additional colonists and serves as a social hub, while homes ensure workers have proper accommodations. The exact order of construction is flexible and can be adjusted based on the player's priorities and resource availability.
 
 Once all these initial buildings are established, complete the road network.
 
