@@ -34,8 +34,8 @@ You should get all of these huts working at level 1 before upgrading any of
 them to higher levels. This ensures you have all the basic functionality in
 place before investing in improvements.
 
-Be sure to add Guard Towers at the appropriate intersections as they are
-created.
+**Be sure to add Guard Towers at the appropriate intersections as they are
+created.**
 
 ### 1. Storage and Logistics
 
