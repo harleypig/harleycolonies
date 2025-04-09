@@ -45,18 +45,18 @@ third, but the order is up to the player. These should be placed within the
 determined based on terrain and resource availability (e.g., Forester near
 trees, Miner near a hill).
 
-# Houses should be built after the guard towers, AI!
-Once these three huts are built, a house should be built for each of those
-workers to ensure they have proper accommodations. The colony will generally start
-with 4 colonists total. After assigning colonists to the Builder, Miner, and Forester
+After these initial buildings are established, the four guard towers should be built at 
+(0, 140), (140, 0), (0, -140), and (-140, 0) to establish the cardinal pattern of protection.
+
+Once the guard towers are in place, houses should be built for each worker to ensure they 
+have proper accommodations. The colony will generally start with 4 colonists total. 
+After assigning colonists to the Builder, Miner, and Forester
 positions, you'll have one unemployed colonist. Leaving this colonist unemployed
 is strategic - as each guard tower is built, you can assign an unemployed colonist
 to it as a guard, and a new colonist will automatically fill the empty slot without
 requiring additional houses. This maximizes your early population efficiency.
 
-Finally, after the initial buildings and houses are established, the four
-guard towers should be built at (0, 140), (140, 0), (0, -140), and (-140, 0)
-to establish the cardinal pattern of protection.
+Finally, complete the road network to connect all buildings.
 
 Once all these initial buildings are established, complete the road network.
 
