@@ -1,0 +1,64 @@
+modpack_info:
+  name: "harleycolonies"
+  description: "A MineColonies-focused modpack with quality of life improvements"
+  
+mods:
+  jei:
+    description: "Essential recipe viewing and item lookup mod"
+    comments: "Core dependency for most modpacks, provides recipe integration"
+    versions:
+      "1.20.1-1.00":
+        status: "active"
+      "1.19.2-0.95":
+        status: "active"
+        
+  minecolonies:
+    description: "Build and manage your own medieval colony with NPCs"
+    comments: "Main focus mod for this modpack"
+    versions:
+      "1.20.1-1.00":
+        status: "active"
+        comments: "Beta version, some research features may be unstable"
+      "1.19.2-0.95":
+        status: "active"
+        comments: "Stable release, all features working properly"
+        
+  better-village-forge:
+    description: "Improves vanilla village generation and structures"
+    status: "archived"
+    reason: "rejected"
+    comments: "Conflicts with other world gen mods, causes chunk loading issues"
+    versions:
+      "1.20.1-1.00":
+        status: "removed"
+        comments: "Removed after testing - incompatible with Terralith"
+
+  jade:
+    description: "Shows information about blocks and entities when looking at them"
+    comments: "Essential for debugging and information display"
+    versions:
+      "1.20.1-1.00":
+        status: "active"
+      "1.19.2-0.95":
+        status: "active"
+        comments: "Some mod integrations missing in this version"
+
+  sophisticated-backpacks:
+    description: "Advanced backpacks with upgrade capabilities"
+    comments: "Waiting for author to update to latest Minecraft version"
+    versions:
+      "1.20.1-1.00":
+        status: "unavailable"
+        comments: "Author working on 1.20.1 port, ETA unknown"
+      "1.19.2-0.95":
+        status: "active"
+
+  performance-mod-example:
+    description: "Hypothetical performance optimization mod"
+    versions:
+      "1.20.1-1.00":
+        status: "active"
+        comments: "New version significantly improves FPS"
+      "1.19.2-0.95":
+        status: "removed"
+        comments: "Older version caused memory leaks, removed"
