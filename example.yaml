@@ -1,7 +1,7 @@
 modpack_info:
   name: "harleycolonies"
   description: "A MineColonies-focused modpack with quality of life improvements"
-  
+
 mods:
   jei:
     description: "Essential recipe viewing and item lookup mod"
@@ -11,7 +11,7 @@ mods:
         status: "active"
       "1.19.2-0.95":
         status: "active"
-        
+
   minecolonies:
     description: "Build and manage your own medieval colony with NPCs"
     comments: "Main focus mod for this modpack"
@@ -22,7 +22,7 @@ mods:
       "1.19.2-0.95":
         status: "active"
         comments: "Stable release, all features working properly"
-        
+
   better-village-forge:
     description: "Improves vanilla village generation and structures"
     status: "archived"
