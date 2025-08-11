@@ -1,0 +1,241 @@
+------------------------------------------------------------------------------
+
+* Residence/Guard Tower
+  1 bed for guard Tower
+  per level for residence:
+    1 bed
+
+Town Hall
+
+Builder:
+  Residence/Guard Tower
+  Builder's Hut
+    per level:
+      1 rack
+
+Wood:
+  Residence/Guard Tower
+  Forester's Hut
+  Sawmill (Woodwork)
+  Fletcher's Hut (Stringwork)
+
+Stone:
+  Residence/Guard Tower
+  Mine
+    3 ladders on blocks, with tags 'cobble' and 'ladder'
+  Quarry
+  Stonemason's Hut (Stone Cake)
+  Crusher's Hut (Rocking Roll)
+  Stone Smeltery (The Flintstones)
+    per level:
+      1 furnace
+
+Storage:
+  Residence/Guard Tower
+  Warehouse
+    racks - ALL THE RACKS!
+  Courier's Hut (10)
+
+Feed the Masses:
+  Residence/Guard Tower
+  Tavern
+    4 beds and a dining room
+    (suggested) barrels - details?
+  Restaurant
+    per level:
+      1 furnace
+  Cookery
+  Bakery
+    a furnace
+
+Learning:
+  Residence/Guard Tower
+  University
+    bookshelves
+  School (Higher Learning)
+    per level:
+      2 carpet (suggest 4? what does this mean?)
+  Library (Keen)
+    bookshelves
+  Hospital (Stamina)
+    per level:
+      1 bed
+
+Produce:
+  Residence/Guard Tower
+  Farmer's Hut
+  Composter's Hut (Biodegradable)
+    per level:
+      1 composer barrel
+
+Meat:
+  Residence/Guard Tower
+  Chicken Farmer's Hut
+  Cowhand's Hut
+  Rabbit Hutch
+  Shepherd's Hut
+  Swineherd's Hut
+
+Meat II:
+  Residence/Guard Tower
+  Fisher's Hut
+    unobstructed body of water:
+      7x7 blocks square
+      2 blocks deep
+  Sifter's Hut (Sieving) With Fisher?
+
+Naming???:
+  Residence/Guard Tower
+  Apiary
+  Flowershop (Flower Power)
+    per level:
+      4 compost (barrel or compost in a frame?)
+  Dyer's Hut (Rainbow Heaven)
+    1 furnace
+
+Metal/Creative/Tinkerer???:
+  Residence/Guard Tower
+  Blacksmith's Hut (Hitting Iron!)
+  Mechanic's Hut (What ya Need?)
+  Smeltery (Hot!)
+    per level:
+      1 furnace
+  Glassblower's Hut (Those Lungs!)
+    per level:
+      1 furnace
+  Concrete Mixer's Hut (Pave the Road)
+    3 blocks of flowing water
+      solid blocks below
+      air blocks above
+      work can stand next to flowing water
+
+Magic:
+  Residence/Guard Tower
+  Enchanter's Tower
+  Alchemist Laboratory (Magic Potions)
+    leaves next to logs (custom trees)
+    per level:
+      1 brewing stand
+      2 soul sand (starting at level 2, starts with 4)
+  Nether Mine (Open the Nether)
+    nether portal
+    an enclosed 1x1 block, 2 high for worker to hide in
+
+Spiritual:
+  Residence/Guard Tower
+  Mystical Site (Ambition)
+  Graveyard (Rememberance)
+    per level:
+      start with 14, but real requirements beyond that, other than increasing
+      numbers for each level
+
+Combat:
+  Barracks (Tactic Training)
+    per level:
+      Barracks Tower (total of 4)
+        per level:
+          1 bed
+  Combat Academy (Improved Swords)
+    per level:
+      1 practice dummy
+      1 bed
+  Archery (Improved Bows)
+    per level:
+      1 practice dummy per level
+      1 bed per level
+      1 standing position (glowstone block or block tagged with 'work')
+
+Plantations:
+  Residence/Guard Tower
+  Plantation (Let It Grow)
+    per level:
+      12 (blocks? need clarification):
+        4 sugar cane
+        4 cactus
+        4 bamboo
+
+------------------------------------------------------------------------------
+Basic Layout
+
+See the various sections in the
+[Schematics](https://minecolonies.com/wiki/tutorials/schematics) page in the
+Minecolonies Wiki.
+
+* Each grouping above (wood, stone, etc.), with some exceptions, will be based
+  on an upgradable decoration schematic.
+  - Will have access points both above and below ground.
+  - Will be surrounded by a road at both ground level and underground.
+
+  Can I make groupings a parent/child?
+  Look into using auto-leveling for some blueprints.
+
+* Residence/Guard Tower Blueprints:
+  - parent/child
+  - auto level?
+  - guard tower will go much higher than residence
+  - Ground Floor:
+    +------------+
+    |           S|
+    |           t|
+    +---        a|
+    |xx|        i|
+    |  |        r|
+    |dd|dd-------+
+  - Second/Third Floor:
+    +------------+
+    |Bed        S|
+    |Bed        t|
+    +---        a|
+    |xx|        i|
+    |  |        r|
+    |--|---------+
+  - Basement Floor:
+    +------------+
+    |Bed        S|
+    |           t|
+    +---        a|
+    |xx|        i|
+    |  |        r|
+    |--|---------+
+
+------------------------------------------------------------------------------
+Notes/Questions:
+
+* Research Requirement in parens.
+
+* 'per level' is usually a minimum.
+
+* Combat grouping has no Residence or Guard Tower because of Barracks Towers.
+
+* Some hut blocks may require material not available when the main blueprint
+  is laid down. Those will need to be either created at later levels for the
+  blueprint, or a marker left at the spot and depend on the player to place
+  the hut block correctly.
+
+* Can multiple meat farmer's use a single field?
+
+* I don't like the quarry, at least the way it works in Minecolonies. I'll
+  have to see if it can be incorporated to my satisfaction. Can the opening
+  for the quary be underground?
+
+* Maybe have multiple farms in the main blueprint, one field for each farm.
+  Create separate blueprints for extra fields.
+
+* Some farm field blueprints with both above and below ground fields?
+
+* Same for plantations ... have multiple plantation huts, one field for each
+  and create separate blueprints for extra plantation fields. (see [this
+  section](https://minecolonies.com/wiki/tutorials/schematics#plantation-fields))
+  of the schematics link, as well as the following related sections.
+
+* Can a plantation field have multiple items growning from it, even if the
+  worker isn't harvesting them?
+
+* Fisher hut should have both a water/pool integrated and a version that can
+  be used with an existing body of water.
+
+* For the mine, do the required blocks need to be cobblestone if they're
+  tagged 'cobble'?
+
+* Custom mineshafts? Is that only the vertical,  initial shaft, or the
+  horizontal shafts, or both?
