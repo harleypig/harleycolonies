@@ -55,3 +55,26 @@ interesting to me.
 ## Biome
 
 - [Serene Seasons](https://www.curseforge.com/minecraft/mc-mods/serene-seasons)
+
+### Realistic Stuff
+
+From [this video](https://www.youtube.com/watch?v=TaNxGz7CPJo) that does
+realistic looking stuff.
+
+ArdaGrass
+Axiom
+ConquestReforged Fabric
+Continuity
+Distant Horizons
+Hearthfire
+Iris
+Lithosphere
+Mod Menu
+Roughly Enough Items
+Sodium
+Still Life
+Xaero's World Map
+(And All dependencies)
+
+Minecraft Shaders:
+Bliss (Ardacraft Edit)
