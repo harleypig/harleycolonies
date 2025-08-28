@@ -25,18 +25,18 @@ A list of buildings is available on the wiki. Click on the `Buildings` menu item
 * [Alchemist's Laboratory](alchemist)
 * [Apiary](apiary)
 * [Archery](archery)
-* [Bakery](bakery)
+* [Bakery](baker)
 * [Barracks](barracks)
 * [Barracks Tower](barrackstower)
 * [Blacksmith](blacksmith)
 * [Builder](builder)
-* [Chicken Farmer](chickenfarmer)
+* [Chicken Farmer](chickenherder)
 * [Combat Academy](combatacademy)
 * [Composter](composter)
 * [Concrete Mixer](concretemixer)
 * [Cookery](cookery)
 * [Courier](courier) (courier)
-* [Cowhand](cowhand)
+* [Cowhand](cowboy)
 * [Crusher](crusher)
 * [Dyer](dyer)
 * [Enchanter's Tower](enchanter)
@@ -44,7 +44,7 @@ A list of buildings is available on the wiki. Click on the `Buildings` menu item
 * [Fisherman](fisherman)
 * [Fletcher](fletcher)
 * [Flowershop](flowershop)
-* [Forester](forester)
+* [Forester](lumberjack)
 * [Glassblower](glassblower)
 * [Graveyard](graveyard)
 * [Guard Tower](guardtower)
@@ -109,13 +109,68 @@ For example:
 
 * I don't like the quarry, I won't be using it.
 
-## Custom supply ship/camp
+## Style Packs
 
-TBD
+All schematics must be organized into style packs, which are similar to resource packs or data packs. Each style pack contains:
 
-* Include two builder huts and townhall.
-* Maybe include one or two resident hut and/or guard tower?
-* Or just flat out cheat and give myself whatever I want ...
+### The pack.json File
+
+Every style pack requires a `pack.json` file with metadata:
+
+```json
+{
+  "version": 1,
+  "pack-format": 1,
+  "desc": "Description of your style pack",
+  "authors": ["Your Name"],
+  "mods": [],
+  "name": "Your Style Name",
+  "icon": "icon.png"
+}
+```
+
+Key requirements:
+- `version`: Start at 1, increase for each release
+- `pack-format`: Must be 1 currently
+- `desc`: Description visible in build tool
+- `authors`: Array of creator names
+- `mods`: Array of required mod IDs (empty if vanilla only)
+- `name`: Style pack display name
+- `icon`: Optional icon filename
+
+### Folder Structure
+
+Style packs use a specific folder structure in `*/blueprints/yourstylename/`:
+
+- `fundamentals/` - Core buildings (townhall, builder, etc.)
+- `infrastructure/` - Roads, bridges, mineshafts
+- `civilian/` - Residential and civic buildings
+- `craftsmanship/` - Production buildings
+- `combat/` - Military buildings
+- `decorations/` - Non-functional decorations
+  - `decorations/supplies/` - Supply camps and ships
+
+Each folder can have `icon.png` and `icon_disabled.png` for the build tool interface.
+
+## Custom Supply Ships and Camps
+
+Supply ships and camps have specific requirements:
+
+### File Locations
+- **Supply Camp**: `blueprints/yourstyle/decorations/supplies/supplycamp.blueprint`
+- **Supply Ship**: `blueprints/yourstyle/decorations/supplies/supplyship.blueprint`  
+- **Nether Ship**: `blueprints/yourstyle/decorations/supplies/nethership.blueprint`
+
+### Requirements
+- Only one of each type per style pack (fixed filenames)
+- Must include a `groundlevel` tag using the Tag Tool
+- Should include builder huts and townhall
+- Can include residence and guard tower if desired
+
+### Design Considerations
+- Include two builder huts and townhall for faster initial setup
+- Consider including one or two residence/guard tower pairs
+- Balance between useful starting resources and game balance
 
 ## Huts
 
@@ -155,7 +210,7 @@ able to access both above and below ground.
 ### Wood
 
 * residence/guardtower
-* forester
+* lumberjack
 * sawmill (technology 1; forester 3)
 * fletcher (technology 2; sawmill 1)
 
@@ -195,7 +250,7 @@ Maybe integrate these with townhall?
 * restaurant
   - requires 1 furnace per hut level
 * cookery
-* bakery
+* baker
   - requires 1 furnace
 
 ??? Make residence the parent, guardtower, cookery, and bakery child with
@@ -210,8 +265,8 @@ because it may take longer to get one or more of them than others (i.e.,
 rabbits don't appear in every biome and it may take some time to find them and
 bring them home).
 
-* chickenfarmer
-* cowhand
+* chickenherder
+* cowboy
 * rabbithutch
 * shepherd
 * swineherd
