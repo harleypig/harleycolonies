@@ -25,7 +25,7 @@ A list of buildings is available on the wiki. Click on the `Buildings` menu item
 * [Alchemist's Laboratory](alchemist)
 * [Apiary](apiary)
 * [Archery](archery)
-* [Bakery](bakerry)
+* [Bakery](bakery)
 * [Barracks](barracks)
 * [Barracks Tower](barrackstower)
 * [Blacksmith](blacksmith)
@@ -90,18 +90,13 @@ For example:
 
 ### Notes
 
-* Huts in parens after another hut means they are paired, or
-    [parent/child](https://minecolonies.com/wiki/tutorials/schematics#how-to-create-parentchild-buildings-or-decorations).
-    The goal is to make them autolevel if possible. (need to reword, fix
-    notations below)
+* **Residence/Guardtower pairing**: These appear together throughout the document because they should be designed as paired buildings with [parent/child](https://minecolonies.com/wiki/tutorials/schematics#how-to-create-parentchild-buildings-or-decorations) relationships to enable auto-leveling.
 
-* hutname (name #; requirement)
-  - the name in parens is the research branch,
-      the number is the level). (see
-      [research](https://minecolonies.com/wiki/systems/research))
-  - If a hut has requirements ('field block' for farmer) it will have sub
-      bullets starting with 'requires ...'. (see [hut
-      requirements](https://minecolonies.com/wiki/tutorials/schematics#hut-requirements))
+* **Research and requirement notation**: `hutname (research branch level; building requirement)`
+  - Example: `sawmill (technology 1; forester 3)` means the sawmill requires technology research level 1 AND a forester hut at level 3
+  - If no research is needed (like forester), only the hut name is shown
+  - See [research system](https://minecolonies.com/wiki/systems/research) for details
+  - Physical requirements ('field blocks' for farmer, etc.) are listed as sub-bullets starting with 'requires ...'. See [hut requirements](https://minecolonies.com/wiki/tutorials/schematics#hut-requirements)
 
 * Maybe make blueprints have road builtin?
 
