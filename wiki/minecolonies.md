@@ -185,17 +185,40 @@ Supply ships and camps have specific requirements:
     Things** as you can.
 - The rest, but as soon as you can.
 
-### Resident
+### Parent/Child Building Implementation
 
-Special case. Should have guardtower linked as parent/child or, better,
-auto-leveled pairs. See the
-[FAQ](https://minecolonies.com/wiki/tutorials/schematics#how-to-create-parentchild-buildings-or-decorations).
+Parent/child buildings allow embedding one building within another for automatic leveling and integrated designs. Key implementation details:
 
-- resident
+**Method 1: Level 0 Approach (Recommended)**
+- Create a level 0 version of the child containing only the hut block
+- Paste this level 0 into all levels of the parent schematic
+- Child upgrades independently when player chooses
+
+**Method 2: Auto-leveling**
+- Paste matching child levels into parent levels (level 1 child → level 1 parent)
+- Child upgrades automatically with parent
+- Only use for decorative children without functional requirements
+
+**Requirements:**
+- Both buildings must be in the same folder
+- Use placeholder blocks where parent/child overlap
+- Explicitly set anchor block (main parent hut or Tag Anchor)
+- Child hut must be placed with correct location and rotation
+- Mark child-only versions as `invisible` using Tag Tool
+
+### Residence/Guardtower Pairing
+
+Special case buildings that should be designed as paired structures:
+
+- residence (citizen in filenames)
 - guardtower
 
-However access is done (separately or one through the other) they should be
-able to access both above and below ground.
+Implementation options:
+- Separate buildings with coordinated design
+- Parent/child relationship for auto-leveling
+- Shared access to above and below ground areas
+
+Both should provide access to surface and underground areas regardless of implementation method.
 
 ## Possible Groupings
 
@@ -210,7 +233,8 @@ able to access both above and below ground.
   - residence/guardtower? Or separate hut for initial placement?
 
 - tavern (strongly recommended)
-  - requires 4 beds and a dining room (what makes a dining room?)
+  - requires 4 beds and a dining room
+  - optionally include barrels for decoration
   - maybe link to restaurant?
 
 ### Wood
@@ -226,8 +250,7 @@ able to access both above and below ground.
   - maybe alternate guardtower since guard should be assigned to miner--can
       that be forced?
 - mine
-  - requires a few ladders and blocks where the shaft's ladders will start.
-      They need to be tagged `[ladder]` and `[cobble]`.
+  - requires starting ladders tagged with `ladder` and `cobble` where the mineshaft will begin
 
 ### Storage
 
@@ -291,10 +314,9 @@ bring them home).
 
 - residence/guardtower
 - fisherman
-  - if including fishing pool in blueprint, the pool must be 7x7x2
-      unobstructed blocks of water (2 deep)
-  - does unobstructed mean no plants?
-  - can I make the pool do double duty for a plantation?
+  - if including fishing pool: must be at least 7x7x2 unobstructed water blocks
+  - unobstructed means no blocks above or within the water area
+  - pool can potentially serve dual purpose for plantation water plants
 - sifter (technology 2; fisher 3)
 
 --
@@ -320,7 +342,7 @@ bring them home).
 - enchanter
 - mysticalsite (civilian 1; none)
 - graveyard (civilian 1; townhall 2)
-  - requires named graves, more each level (see note in hut requirements link)
+  - requires named graves: 14 at level 1, 18 at level 2, 27 at level 3, 36 at level 4, 50 at level 5
 - alchemist (technology 3; none)
   - requires 1 brewing stand per hut level
   - requires 2 soul sand per hut level starting at level 2 (level 2 needs 4 soul
@@ -353,8 +375,8 @@ bring them home).
 
 - residence/guardtower
 - concretemixer (technology 3; crusher 1)
-  - requires 3 blocks flowing water with solid blocks below, air blocks above,
-      and space for the worker to stand next to the water
+  - requires 3 blocks of flowing water with solid blocks below and air blocks above
+  - worker must be able to stand adjacent to the water blocks
 
 --
 
@@ -368,11 +390,11 @@ bring them home).
   - requires 1 barrackstower per hut level (up to 4)
   - requires 1 bed per hut level in barrackstower
 - archery (combat 2; barracks 3)
-  - requires 1 practice dummy (per hut level?)
+  - requires 1 practice dummy (target block) per hut level
   - requires 1 bed per hut level
-  - requires 1 standing position per hut level (see requirement link for details)
+  - requires 1 standing position per hut level (glowstone block or block tagged with `work`)
 - combatacademy (combat 2; barracks 3)
-  - requires 1 practice dummy per hut level
+  - requires 1 practice dummy per hut level (carved pumpkin on hay bale)
   - requires 1 bed per hut level
 
 NOTE: A barrackstower doesn't need to be a tower. It could be quonset hut.
