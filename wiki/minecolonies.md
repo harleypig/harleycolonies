@@ -7,6 +7,11 @@ title: Minecraft Stuff
 * [Minecolonies Wiki](https://wiki.minecolonies.com)
 * [Schematics](https://minecolonies.com/wiki/tutorials/schematics)
 * [Datapacks](https://minecolonies.com/wiki/tutorials/datapacks)
+* Use this [template
+    world](https://www.planetminecraft.com/project/minecolonies-schematics-worlds/)
+    to help with schematics.
+* This [basic tutorial](https://www.youtube.com/watch?v=MDxCPKh6im0) might be
+    helpful.
 
 ## Style
 
@@ -68,18 +73,27 @@ A list of buildings is available on the wiki. Click on the `Buildings` menu item
 
 ## Why?
 
-I'm a minimalist. I want to make as much of the work huts the same layout as
-possible. I also want to put them out of site, so most of those work huts will
-be belowground.
+I'm a minimalist. I want to standardize the hut layouts as much as possible,
+to make creation of the various groupings as easy as possible.
+
+I want to put huts underground that conceptually makes sense. Some groupings
+will be all aboveground, or at least on the same level, some might be all
+underground, some might be a mix.
+
+For example:
+
+* the farm/composter group would be on the same level, though it's possible
+    fields might be scattered about
+* the combat academy, archery, and barracks might be all underground
+* one of the materials groups might be mixed (e.g., blacksmith above ground
+    and the others below)
 
 ### Notes
 
-* Some aboveground huts will extend to the belowground level to allow for
-    easier access (e.g., guardtower, resident maybe).
-
 * Huts in parens after another hut means they are paired, or
     [parent/child](https://minecolonies.com/wiki/tutorials/schematics#how-to-create-parentchild-buildings-or-decorations).
-    The goal is to make them autolevel if possible.
+    The goal is to make them autolevel if possible. (need to reword, fix
+    notations below)
 
 * hutname (name #; requirement)
   - the name in parens is the research branch,
@@ -91,19 +105,7 @@ be belowground.
 
 * Maybe make blueprints have road builtin?
 
-* Maybe create resident (with guardtower as autolevel child) and also create
-    a grouped resident/guardtower with each of the beekeeper, cowhand,
-    rabbithutch, shepherd, swineherd, and chickenfarmer huts.
-
 * I don't like the quarry, I won't be using it.
-
-## Template World
-
-Use this [template
-world](https://www.planetminecraft.com/project/minecolonies-schematics-worlds/)
-to help with schematics.
-
-Also, this [basic tutorial](https://www.youtube.com/watch?v=MDxCPKh6im0).
 
 ## Custom supply ship/camp
 
@@ -123,9 +125,15 @@ TBD
 
 ### Resident
 
-Special case. Should have guardtower linked, as in note above.
+Special case. Should have guardtower linked as parent/child or, better,
+auto-leveled pairs. See the
+[FAQ](https://minecolonies.com/wiki/tutorials/schematics#how-to-create-parentchild-buildings-or-decorations).
 
-* resident (guardtower (invisible)) (access to belowground)
+* resident
+* guardtower
+
+However access is done (separately or one through the other) they should be
+able to access both above and below ground.
 
 ## Possible Groupings
 
@@ -140,42 +148,56 @@ Special case. Should have guardtower linked, as in note above.
   - residence/guardtower? Or separate hut for initial placement?
 
 * tavern (strongly recommended)
+  - requires 4 beds and a dining room (what makes a dining room?)
 
 ### Wood
 
+* residence/guardtower
 * forester
-  - residence/guardtower
 * sawmill (technology 1; forester 3)
 * fletcher (technology 2; sawmill 1)
 
 ### Basic Materials
 
+* residence/guardtower
+  - maybe alternate guardtower since guard should be assigned to miner--can
+      that be forced?
 * mine
-  - residence/guardtower (maybe alternate guardtower since guard should be
-      assigned to miner--can that be forced?)
+  - requires a few ladders and blocks where the shaft's ladders will start.
+      They need to be tagged `[ladder]` and `[cobble]`.
 
 ### Storage
 
+* residence/guardtower
 * warehouse
-  - residence/guardtower
-  - courier (integrated into warehouse, row of small rooms?)
+  - requires at least 1 rack at first hut level, and minimum +1 rack for each
+      hut level
+* courier
 
 ### Education/Health
 
 Maybe integrate these with townhall?
 
 * university
+  - requires bookshelves
 * school (civilian 1; residence 3)
+  - requires 2 carpet per hut level
 * library (civilian 1; residence 3))
+  - requires bookshelves
 * hospital (civilian 1; none)
+  - requires 1 bed per level
 
 ### Cooking
 
-* restaurant (access to belowground?)
-  - residence/guardtower
-* cookery (access to belowground?)
-* bakery (access to belowground?)
+* residence/guardtower
+* restaurant
+  - requires 1 furnace per level
+* cookery
+* bakery
   - requires 1 furnace
+
+??? Make residence the parent, guardtower, cookery, and bakery child with
+auto-leveling?
 
 ### Husbandry
 
@@ -194,29 +216,28 @@ bring them home).
 
 ### Growing Things
 
+* residence/guardtower
 * farmer
   - field of fields (5 fields max)
   - can I slave the fields to the farm hut so they level automatically?
   - Can make underground fields.
-  - residence/guardtower
 * composter (technology 1; farmer 3)
   - requires 1 composter barrel per hut level
 
 --
 
+* residence/guardtower
 * fisherman
-  - residence/guardtower
   - if including fishing pool in blueprint, the pool must be 7x7x2
       unobstructed blocks of water (2 deep)
   - does unobstructed mean no plants?
   - can I make the pool do double duty for a plantation?
-* sifter (technology 2; fisher 3) (belowground?)
-  - incorporated into fisherman building?
+* sifter (technology 2; fisher 3)
 
 --
 
 * plantation (technology 2; farmer 3)
-  - residence/guardtower
+  - requires 12 per level, 4 each sugar cane, cactus, bamboo
   - can handle up to 3 types of fields (depending on level and research) but
       can swith between multiple types of fields -- look into setting aside
       space for all types of fields?
@@ -224,16 +245,16 @@ bring them home).
 
 --
 
+* residence/guardtower
 * flowershop (technology 2; composter 3)
-  - residence/guardtower
   - requires 4 composted dirt block per hut level
 * dyer (technology 2; composter 3) (belowground)
   - requires 1 furnace
 
 ### WooWoo
 
+* residence/guardtower
 * enchanter
-  - residence/guardtower
 * mysticalsite (civilian 1; none)
 * graveyard (civilian 1; townhall 2)
   - requires named graves, more each level (see note in hut requirements link)
@@ -246,34 +267,37 @@ bring them home).
 ### Materials
 
 * smeltery (technology 1; mine 2)
+  - requires 1 furnace per hut level
   - residence/guardtower
 * stonemason (technology 1; mine 3)
 * blacksmith (technology 1; mine 3)
 
 --
 
+* residence/guardtower
 * crusher (technology 2; stonemason 3)
-  - residence/guardtower
 * glassblower (technology 2; smeltery 3)
   - requires 1 furnace per level
 * stonesmeltery (technology 2; stonemason 1)
+  - requires 1 furnace per level
 
 --
 
+* residence/guardtower
 * mechanic (technology 2; blacksmith 3)
-  - residence/guardtower
 
 --
 
+* residence/guardtower
 * concretemixer (technology 3; crusher 1)
   - requires 3 blocks flowing water with solid blocks below, air blocks above,
       and space for the worker to stand next to the water
-  - residence/guardtower
 
 --
 
+* residence/guardtower
 * nethermine (technology 2; none)
-  - residence/guardtower
+  - requires a nether portal and an enclosed 1x1x2 (2 deep) room
 
 ### Combat
 
@@ -289,6 +313,17 @@ bring them home).
   - requires 1 bed per hut level
 
 NOTE: A barrackstower doesn't need to be a tower. It could be quonset hut.
+
+### Decorations
+
+* roads should have both above and below ground stacked to make running
+    tunnels easier.
+  - use [upgradable
+      decorations](https://minecolonies.com/wiki/tutorials/schematics#how-to-create-upgradable-decoration-schematics)
+  - straight lengths of 11,7,5,3,1
+  - intersections: 4 way, 3 way, corner
+* parks
+* what else?
 
 ## Datapacks
 
