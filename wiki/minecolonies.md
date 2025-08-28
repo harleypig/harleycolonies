@@ -90,13 +90,20 @@ For example:
 
 ### Notes
 
-* **Residence/Guardtower pairing**: These appear together throughout the document because they should be designed as paired buildings with [parent/child](https://minecolonies.com/wiki/tutorials/schematics#how-to-create-parentchild-buildings-or-decorations) relationships to enable auto-leveling.
+* **Residence/Guardtower pairing**: These appear together throughout the
+    document because they should be designed as paired buildings with
+    [parent/child](https://minecolonies.com/wiki/tutorials/schematics#how-to-create-parentchild-buildings-or-decorations)
+    relationships to enable auto-leveling.
 
 * **Research and requirement notation**: `hutname (research branch level; building requirement)`
-  - Example: `sawmill (technology 1; forester 3)` means the sawmill requires technology research level 1 AND a forester hut at level 3
+  - Example: `sawmill (technology 1; forester 3)` means the sawmill requires
+      technology research level 1 AND a forester hut at level 3
   - If no research is needed (like forester), only the hut name is shown
-  - See [research system](https://minecolonies.com/wiki/systems/research) for details
-  - Physical requirements ('field blocks' for farmer, etc.) are listed as sub-bullets starting with 'requires ...'. See [hut requirements](https://minecolonies.com/wiki/tutorials/schematics#hut-requirements)
+  - See [research system](https://minecolonies.com/wiki/systems/research) for
+      details
+  - Physical requirements ('field blocks' for farmer, etc.) are listed as
+      sub-bullets starting with 'requires ...'. See [hut
+      requirements](https://minecolonies.com/wiki/tutorials/schematics#hut-requirements)
 
 * Maybe make blueprints have road builtin?
 
