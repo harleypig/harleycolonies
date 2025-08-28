@@ -25,7 +25,7 @@ A list of buildings is available on the wiki. Click on the `Buildings` menu item
 * [Alchemist's Laboratory](alchemist)
 * [Apiary](apiary)
 * [Archery](archery)
-* [Bakerey](bakerery)
+* [Bakery](bakerry)
 * [Barracks](barracks)
 * [Barracks Tower](barrackstower)
 * [Blacksmith](blacksmith)
