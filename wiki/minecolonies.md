@@ -187,13 +187,13 @@ Maybe integrate these with townhall?
 * library (civilian 1; residence 3))
   - requires bookshelves
 * hospital (civilian 1; none)
-  - requires 1 bed per level
+  - requires 1 bed per hut level
 
 ### Cooking
 
 * residence/guardtower
 * restaurant
-  - requires 1 furnace per level
+  - requires 1 furnace per hut level
 * cookery
 * bakery
   - requires 1 furnace
@@ -239,7 +239,7 @@ bring them home).
 --
 
 * plantation (technology 2; farmer 3)
-  - requires 12 per level, 4 each sugar cane, cactus, bamboo
+  - requires 12 per hut level, 4 each sugar cane, cactus, bamboo
   - can handle up to 3 types of fields (depending on level and research) but
       can swith between multiple types of fields -- look into setting aside
       space for all types of fields?
@@ -261,8 +261,8 @@ bring them home).
 * graveyard (civilian 1; townhall 2)
   - requires named graves, more each level (see note in hut requirements link)
 * alchemist (technology 3; none)
-  - requires 1 brewing stand per level
-  - requires 2 soul sand per level starting at level 2 (level 2 needs 4 soul
+  - requires 1 brewing stand per hut level
+  - requires 2 soul sand per hut level starting at level 2 (level 2 needs 4 soul
       sand)
   - requires leaves next to logs (i.e., trees)
 
@@ -279,9 +279,9 @@ bring them home).
 * residence/guardtower
 * crusher (technology 2; stonemason 3)
 * glassblower (technology 2; smeltery 3)
-  - requires 1 furnace per level
+  - requires 1 furnace per hut level
 * stonesmeltery (technology 2; stonemason 1)
-  - requires 1 furnace per level
+  - requires 1 furnace per hut level
 
 --
 
@@ -304,11 +304,11 @@ bring them home).
 ### Combat
 
 * barracks (barrackstower) (combat 1; guardtower 3)
-  - requires 1 barrackstower per level (up to 4)
-  - requires 1 bed per level in barrackstower
+  - requires 1 barrackstower per hut level (up to 4)
+  - requires 1 bed per hut level in barrackstower
 * archery (combat 2; barracks 3)
   - requires 1 practice dummy (per hut level?)
-  - requires 1 bed per hut level level
+  - requires 1 bed per hut level
   - requires 1 standing position per hut level (see requirement link for details)
 * combatacademy (combat 2; barracks 3)
   - requires 1 practice dummy per hut level
