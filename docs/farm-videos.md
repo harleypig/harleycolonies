@@ -32,6 +32,7 @@ farm to do all of them.
 
 * [Semi Auto Farm](https://youtu.be/e0LqWbILLDY?t=349)
 * [Small Semi Auto Wheat Farm](https://www.youtube.com/watch?v=ppC1z13iXY4)
+* [Simple Cow Farm](https://www.youtube.com/watch?v=8VWPLHsGk9o)
 
 ## Lava
 
@@ -59,3 +60,8 @@ farm to do all of them.
 ## Possible Minecolonies Huts
 
 * [Chicken](https://www.youtube.com/watch?v=QKIc3lJPf8I)
+
+## Playlists
+
+* [Easy
+    Farms](https://www.youtube.com/watch?v=kDwshbClroc&list=PLO_MTA4Blm7BcFohux5xw_wk5S9IXEKU0)
