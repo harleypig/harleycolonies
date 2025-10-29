@@ -58,8 +58,7 @@ interesting to me.
 
 ### Realistic Stuff
 
-From [this video](https://www.youtube.com/watch?v=TaNxGz7CPJo) that does
-realistic looking stuff.
+From a video that does realistic looking stuff (see [videos.md](videos.md)).
 
 ArdaGrass
 Axiom

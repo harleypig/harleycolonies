@@ -10,8 +10,7 @@ title: Minecraft Stuff
 - Use this [template
     world](https://www.planetminecraft.com/project/minecolonies-schematics-worlds/)
     to help with schematics.
-- This [basic tutorial](https://www.youtube.com/watch?v=MDxCPKh6im0) might be
-    helpful.
+- See [videos.md](../docs/videos.md) for a basic tutorial that might be helpful.
 
 ## Style
 
@@ -105,9 +104,6 @@ For example:
       sub-bullets starting with 'requires ...'. See [hut
       requirements](https://minecolonies.com/wiki/tutorials/schematics#hut-requirements)
 
-- Maybe make blueprints have road builtin?
-
-- I don't like the quarry, I won't be using it.
 
 ## Style Packs
 
@@ -294,12 +290,8 @@ Maybe integrate these with townhall?
 - baker
   - requires 1 furnace
 
-??? Make residence the parent, guardtower, cookery, and bakery child with
-auto-leveling?
 
 ### Husbandry
-
-???: Will putting all animals in the same pen cause confusion for the worker?
 
 Even though I want these to have the same pen, they shouldn't be linked
 because it may take longer to get one or more of them than others (i.e.,
@@ -409,7 +401,6 @@ bring them home).
   - requires 1 practice dummy per hut level (carved pumpkin on hay bale)
   - requires 1 bed per hut level
 
-NOTE: A barrackstower doesn't need to be a tower. It could be quonset hut.
 
 ### Mine Shaft
 

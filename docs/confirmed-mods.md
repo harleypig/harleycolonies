@@ -8,8 +8,6 @@ categories they are in.
 
 Locations of the configuration files for the mods will be added later.
 
-XXX: Get modrinth location for mods so we have both.
-
 ## Notes
 
 - (cso) means 'Client Side Only'
@@ -50,8 +48,6 @@ The Baritone mod is no longer on Curseforge, so we'll need to [install it
 manually](https://github.com/cabaletta/baritone).
 
 ## Shaders/Performance
-
-XXX: Consider including Embeddium and Oculus (both are cso).
 
 - [Embeddium](https://www.curseforge.com/minecraft/mc-mods/embeddium)
 - [Oculus](https://www.curseforge.com/minecraft/mc-mods/oculus)

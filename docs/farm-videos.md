@@ -1,67 +1,8 @@
 # Farm Videos
 
-Many of these can do double or triple duty. Figure out a way to use the same
-farm to do all of them.
+Many of these can do double or triple duty. See [TODO.md](../TODO.md) for ideas about using the same farm for multiple purposes.
 
 * Cactus, Bamboo, and Sugarcan can be used to make bonemeal.
 * Bamboo and Kelp can be used as a fuel source
 
-* [Strings](https://www.youtube.com/watch?v=MW8xA9cuTTE)
-* [Auto Sugarcane/Bamboo](https://www.youtube.com/watch?v=qEE405lduWw)
-* [Another Auto Sugarcan/Bamboo](https://youtu.be/7u38TamjpGQ?t=246)
-* [Zombified Piglin](https://youtu.be/Z3bzbFuwZjQ?t=521)
-* [Another Zombified Piglin](https://youtu.be/7u38TamjpGQ?t=448)
-* [Cactus](https://www.youtube.com/watch?v=Zgk0RBP2xjU&t=196s)
-* [Clay](https://youtu.be/967Cph_WVWI?t=561)
-* [Wool](https://youtu.be/ss3iIBXGUCo?t=278)
-* [Wth is this?](https://www.youtube.com/shorts/bbt8fAfs3SI)
-* [How many in a 6x6 square?](https://www.youtube.com/watch?v=gsF-BQP-bQo)
-* [Moss](https://www.youtube.com/watch?v=QLR25vQoYSs)
-* [Moss Farm](https://www.youtube.com/watch?v=n-m7qJxKCqM)
-* [Cobblestone](https://www.youtube.com/watch?v=7u38TamjpGQ)
-* [Concrete](https://www.youtube.com/watch?v=Xiy_DfAJWBE) (not auto)
-
-## Flower
-
-* [Flower Farm](https://www.youtube.com/watch?v=5S0D1DS9w7c)
-* [Another Flower Farm](https://www.youtube.com/watch?v=imdoffqe2uk) (looks
-    like the same as above)
-* [Two-tall Flower](https://www.youtube.com/watch?v=qXGNm9ZuIuI)
-
-## Food
-
-* [Semi Auto Farm](https://youtu.be/e0LqWbILLDY?t=349)
-* [Small Semi Auto Wheat Farm](https://www.youtube.com/watch?v=ppC1z13iXY4)
-* [Simple Cow Farm](https://www.youtube.com/watch?v=8VWPLHsGk9o)
-
-## Lava
-
-* [Lava](https://youtu.be/967Cph_WVWI?t=393)
-* [Another Interesting Farm](https://youtu.be/ss3iIBXGUCo?t=129)
-
-## Fuel
-
-* [Charcoal](https://www.youtube.com/watch?v=v2lkKXB0bGw)
-* [Infinite Fuel using Bamboo](https://youtu.be/e0LqWbILLDY?t=448)
-* [Infinite Fuel using Kelp](https://www.youtube.com/watch?v=SzOnYCRxVBM)
-
-## Bonemeal
-
-* [Using Cactus](https://www.youtube.com/watch?v=e0LqWbILLDY)
-* [Using Kelp](https://www.youtube.com/watch?v=ss3iIBXGUCo)
-* [Bonemeal](https://www.youtube.com/shorts/ml5nLfh1fHU) (Bedrock, may not work)
-* [Another Bonemeal/Moss](https://www.youtube.com/watch?v=Nl9J2_RhfmA)
-
-## Maybe
-
-* [Tree Farm](https://www.youtube.com/watch?v=Kr_XKNACkM0) (not auto)
-* [Starter Farms](https://www.youtube.com/watch?v=AbCp3Bi3YQQ)
-
-## Possible Minecolonies Huts
-
-* [Chicken](https://www.youtube.com/watch?v=QKIc3lJPf8I)
-
-## Playlists
-
-* [Easy
-    Farms](https://www.youtube.com/watch?v=kDwshbClroc&list=PLO_MTA4Blm7BcFohux5xw_wk5S9IXEKU0)
+For video links, see [videos.md](videos.md).

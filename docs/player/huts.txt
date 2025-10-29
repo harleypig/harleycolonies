@@ -166,9 +166,6 @@ Minecolonies Wiki.
   - Will have access points both above and below ground.
   - Will be surrounded by a road at both ground level and underground.
 
-  Can I make groupings a parent/child?
-  Look into using auto-leveling for some blueprints.
-
 * Residence/Guard Tower Blueprints:
   - parent/child
   - auto level?
@@ -199,7 +196,7 @@ Minecolonies Wiki.
     |--|---------+
 
 ------------------------------------------------------------------------------
-Notes/Questions:
+Notes:
 
 * Research Requirement in parens.
 
@@ -207,35 +204,4 @@ Notes/Questions:
 
 * Combat grouping has no Residence or Guard Tower because of Barracks Towers.
 
-* Some hut blocks may require material not available when the main blueprint
-  is laid down. Those will need to be either created at later levels for the
-  blueprint, or a marker left at the spot and depend on the player to place
-  the hut block correctly.
-
-* Can multiple meat farmer's use a single field?
-
-* I don't like the quarry, at least the way it works in Minecolonies. I'll
-  have to see if it can be incorporated to my satisfaction. Can the opening
-  for the quary be underground?
-
-* Maybe have multiple farms in the main blueprint, one field for each farm.
-  Create separate blueprints for extra fields.
-
-* Some farm field blueprints with both above and below ground fields?
-
-* Same for plantations ... have multiple plantation huts, one field for each
-  and create separate blueprints for extra plantation fields. (see [this
-  section](https://minecolonies.com/wiki/tutorials/schematics#plantation-fields))
-  of the schematics link, as well as the following related sections.
-
-* Can a plantation field have multiple items growning from it, even if the
-  worker isn't harvesting them?
-
-* Fisher hut should have both a water/pool integrated and a version that can
-  be used with an existing body of water.
-
-* For the mine, do the required blocks need to be cobblestone if they're
-  tagged 'cobble'?
-
-* Custom mineshafts? Is that only the vertical,  initial shaft, or the
-  horizontal shafts, or both?
+See [TODO.md](../../TODO.md) for questions and items to investigate.
