@@ -8,3 +8,9 @@ work/**
 *.mrpack
 
 .packwizml.cache
+
+# User-specific configs
+journeymap/
+*.aider*
+
+# Packwiz cache (already listed above but kept for clarity)

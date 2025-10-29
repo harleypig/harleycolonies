@@ -4,7 +4,7 @@
 import glob
 from tomlkit import parse
 
-MODLIST_FN = "modlist.md"
+MODLIST_FN = "docs/mods/modlist.md"
 IGNORE_FILES = ["pack.toml", "index.toml"]
 
 def find_toml_files():
