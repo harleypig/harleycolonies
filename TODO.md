@@ -31,8 +31,6 @@
 
 ## Mods & Configuration
 
-- XXX: Get modrinth location for mods so we have both (Curseforge and Modrinth).
-- XXX: Consider including Embeddium and Oculus (both are cso).
 - Locations of the configuration files for the mods will be added later.
 
 ## Technical / Code
@@ -41,7 +39,6 @@
 
 ## Misc / Questions
 
-- Update AGENTS.md to match $DOTFILES version (v1.1.0) and extract repository-specific needs to WORKFLOW.md file
 - Check out these mods:
   - [Lithosphere](https://modrinth.com/datapack/lithosphere) - Be sure to check the Recommendations section
   - [Still Life](https://modrinth.com/datapack/still-life) - Incompatible with Biomes O' Plenty
