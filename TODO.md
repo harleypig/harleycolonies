@@ -39,6 +39,7 @@
 
 ## Misc / Questions
 
+- Add my planet minecraft [collection](https://www.planetminecraft.com/collection/287500/harleycolonies/) somewhere
 - Check out these mods:
   - [Lithosphere](https://modrinth.com/datapack/lithosphere) - Be sure to check the Recommendations section
   - [Still Life](https://modrinth.com/datapack/still-life) - Incompatible with Biomes O' Plenty
