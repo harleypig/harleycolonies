@@ -1,6 +1,7 @@
 # Documentation Index
 
-This directory contains all documentation for the HarleyColonies modpack.
+This directory contains all documentation and files for the HarleyColonies
+modpack, the HarleyColonies wiki, and related files.
 
 ## Structure
 
