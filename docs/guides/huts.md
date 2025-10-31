@@ -9,16 +9,21 @@
 **Possible Parent/Child Configuration:**
 * Auto-leveling parent/child relationship
 * Guard Tower bed is not functional, making auto-leveling viable
-* Guard Tower will go much higher than Residence, so parent/child works
-* Note: Residence beds ARE functional, but auto-leveling still works because
-  guard tower bed is decorative
+* Residence (parent) can have Guard Tower as auto-leveling child
+* Residence can also have other huts with no functional requirements and no
+  unlocking requirements as auto-leveling children (e.g., Forester's Hut)
 
 ## Town Hall
 
+* Schematic with spaces for tavern and food huts?
+
 **Possible Parent/Child Configuration:**
 * Standalone building (no parent/child relationships)
+* Or simple setup with tavern and food huts?
 
 ## Builder
+
+!!! Because builder hut must be initially built first, either create a separate hut schematic for first time placement, or make special schematic.
 
 * Residence/Guard Tower
 * Builder's Hut
@@ -43,11 +48,14 @@
 * Fletcher's Hut (Stringwork)
 
 **Possible Parent/Child Configuration:**
-* Decoration with locations OR simple parent/child for some relationships
-* All huts have functional requirements (work blocks)
-* Residence/Guard Tower: auto-level relationship
-* If embedding any wood huts: use simple parent/child (level 0 method)
-* Recommend: Decoration parent with separate hut placements for flexibility
+* Residence (parent) with auto-leveling children:
+  * Guard Tower (no functional requirements, no unlock requirements)
+  * Forester's Hut (no functional requirements, no unlock requirements)
+* If mixing auto-level and simple parent/child is supported:
+  * Sawmill and Fletcher's Hut as simple children (have functional work blocks)
+* Otherwise:
+  * Sawmill and Fletcher's Hut marked as "place hut here" decoration markers
+  * Decoration parent with separate hut placements for Sawmill and Fletcher
 
 ## Stone
 
@@ -381,6 +389,9 @@ Minecolonies Wiki.
 
 ### To be researched
 
+* **Mixing relationship types:**
+  * Can a parent building have both auto-leveling children and simple
+    parent/child children at the same time?
 * **Archery, Barracks Tower, and Combat Academy huts:**
   * Are practice dummies considered 'functional' for parent/child relationship?
   * Since beds are decorative, are they considered functional for parent/child
