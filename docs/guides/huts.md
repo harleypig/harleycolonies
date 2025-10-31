@@ -1,5 +1,11 @@
 # Building Hut Requirements
 
+This document provides detailed building requirements and schematic
+configurations for all huts in the custom Minecolonies style.
+
+If you're new to this style, start with the [Getting Started](getting-started.md)
+guide, which provides a beginner-friendly build order and recommendations.
+
 ## Residence/Guard Tower
 
 * 1 bed for guard Tower
@@ -42,6 +48,8 @@
 
 ## Wood
 
+*See [Getting Started Guide - Basic Resource Processing](getting-started.md#4-basic-resource-processing) for build order recommendations.*
+
 * Residence/Guard Tower
 * Forester's Hut
 * Sawmill (Woodwork)
@@ -58,6 +66,8 @@
   * Decoration parent with separate hut placements for Sawmill and Fletcher
 
 ## Stone
+
+*See [Getting Started Guide - Basic Resource Processing](getting-started.md#4-basic-resource-processing) for build order recommendations.*
 
 * Residence/Guard Tower
 * Mine
@@ -80,6 +90,8 @@
 
 ## Storage
 
+*See [Getting Started Guide - Storage and Logistics](getting-started.md#1-storage-and-logistics) for build order recommendations.*
+
 * Residence/Guard Tower
 * Warehouse
   * racks - ALL THE RACKS!
@@ -94,6 +106,8 @@
   locations if keeping separate for flexibility
 
 ## Feed the Masses
+
+*See [Getting Started Guide - Food Processing](getting-started.md#3-food-processing) for build order recommendations.*
 
 * Residence/Guard Tower
 * Tavern
@@ -140,6 +154,8 @@
 
 ## Produce
 
+*See [Getting Started Guide - Food Production](getting-started.md#2-food-production) for build order recommendations.*
+
 * Residence/Guard Tower
 * Farmer's Hut
 * Composter's Hut (Biodegradable)
@@ -156,6 +172,8 @@
 * Common pattern: Farmer's Hut parent with Composter child (fields embedded)
 
 ## Meat
+
+*See [Getting Started Guide - Food Production](getting-started.md#2-food-production) for build order recommendations.*
 
 * Residence/Guard Tower
 * Chicken Farmer's Hut
@@ -174,6 +192,8 @@
   (multiple animal types)
 
 ## Meat II
+
+*See [Getting Started Guide - Food Production](getting-started.md#2-food-production) for build order recommendations.*
 
 * Residence/Guard Tower
 * Fisher's Hut
@@ -212,6 +232,8 @@
 * Recommend: Decoration parent with separate hut placements for flexibility
 
 ## Metal/Creative/Tinkerer???
+
+*See [Getting Started Guide - Basic Resource Processing](getting-started.md#4-basic-resource-processing) for build order recommendations.*
 
 * Residence/Guard Tower
 * Blacksmith's Hut (Hitting Iron!)

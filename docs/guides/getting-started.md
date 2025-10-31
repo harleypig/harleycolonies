@@ -1,7 +1,11 @@
-# Basic Huts
+# Getting Started
 
-These huts and workers should be created once the initial steps outlined in
-`Colony Rules` has been completed.
+This guide provides a beginner-friendly build order for using this custom
+Minecolonies style. These huts and workers should be created once the initial
+steps outlined in `Colony Rules` has been completed.
+
+For detailed building requirements, schematic configurations, and technical
+specifications, see [Building Hut Requirements](huts.md).
 
 The exact order depends on your needs, but all of these should be completed
 before moving on to more advanced hut and worker creation.
@@ -47,6 +51,9 @@ your colony's item management system:
   - Courier - Moves items between buildings
 * House for the courier
 
+See [Storage](huts.md#storage) for detailed building requirements and
+schematic configurations.
+
 ### 2. Food Production
 
 Once your storage system is in place, focus on sustainable food sources:
@@ -56,6 +63,10 @@ Once your storage system is in place, focus on sustainable food sources:
 * Fisher's Hut
   - Fisher - Provides fish as an additional food source
 * Houses for these workers
+
+See [Produce](huts.md#produce), [Meat](huts.md#meat), and
+[Meat II](huts.md#meat-ii) for detailed building requirements and schematic
+configurations.
 
 ### 3. Food Processing
 
@@ -70,6 +81,9 @@ into meals:
   - Baker - Makes bread and pastries
 * Houses for these workers
 
+See [Feed the Masses](huts.md#feed-the-masses) for detailed building
+requirements and schematic configurations.
+
 ### 4. Basic Resource Processing
 
 Finally, establish your basic production chain for tools and materials:
@@ -81,6 +95,10 @@ Finally, establish your basic production chain for tools and materials:
 * Smeltery
   - Smelter - Processes ores into ingots
 * Houses for these workers
+
+See [Wood](huts.md#wood), [Stone](huts.md#stone), and
+[Metal/Creative/Tinkerer](huts.md#metalcreativetinkerer) for detailed
+building requirements and schematic configurations.
 
 ## Upgrading Strategy
 
