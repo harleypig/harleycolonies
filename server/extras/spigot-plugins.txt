@@ -1,0 +1,2 @@
+# https://modrinth.com/plugin/worldedit
+https://cdn.modrinth.com/data/1u6JkXh5/versions/ecqqLKUO/worldedit-bukkit-7.3.8.jar

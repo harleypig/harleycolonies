@@ -1,6 +1,6 @@
 services:
   mc:
-    image: itzg/minecraft-server:latest
+    image: itzg/minecraft-server:stable
     restart: unless-stopped
     pull_policy: daily
 
@@ -15,16 +15,21 @@ services:
 
     environment:
       EULA: "TRUE"
-      TYPE: ${TYPE}
-      ARCLIGHT_TYPE: ${ARCLIGHT_TYPE}
-      VERSION: ${VERSION}
-      NEOFORGE_VERSION: ${NEOFORGE_VERSION}
-      MEMORY: ${MEMORY}
-      ENABLE_RCON: ${ENABLE_RCON}
-      RCON_PASSWORD: ${RCON_PASSWORD}
-      RCON_PORT: ${RCON_PORT}
-      SPIGET_PLUGINS: ${SPIGET_PLUGINS}
+      TYPE: ARCLIGHT
+      ARCLIGHT_TYPE: NEOFORGE
+
+      VERSION: $VERSION
+      NEOFORGE_VERSION: $NEOFORGE_VERSION
+      MEMORY: $MEMORY
+      ENABLE_RCON: $ENABLE_RCON
+      RCON_PASSWORD: $RCON_PASSWORD
+      RCON_PORT: $RCON_PORT
+
+      SPIGET_RESOURCES: $SPIGET_PLUGINS
+      USES_PLUGINS: "TRUE"
+      PLUGINS_FILE: "/extras/$PLUGINS_FILE"
 
     volumes:
+      - ./extras:/extras
       # https://docker-minecraft-server.readthedocs.io/en/latest/data-directory/
       - ${DATA_DIR}:/data
