@@ -1,0 +1,30 @@
+services:
+  mc:
+    image: itzg/minecraft-server:latest
+    restart: unless-stopped
+    pull_policy: daily
+
+    # Enable interactive console
+    # https://docker-minecraft-server.readthedocs.io/en/latest/commands/#enabling-interactive-console
+    tty: true
+    stdin_open: true
+
+    ports:
+      - "${SERVER_PORT}:25565"
+      - "${RCON_PORT}:${RCON_PORT}"
+
+    environment:
+      EULA: "TRUE"
+      TYPE: ${TYPE}
+      ARCLIGHT_TYPE: ${ARCLIGHT_TYPE}
+      VERSION: ${VERSION}
+      NEOFORGE_VERSION: ${NEOFORGE_VERSION}
+      MEMORY: ${MEMORY}
+      ENABLE_RCON: ${ENABLE_RCON}
+      RCON_PASSWORD: ${RCON_PASSWORD}
+      RCON_PORT: ${RCON_PORT}
+
+    volumes:
+      - ./config:/config
+      # https://docker-minecraft-server.readthedocs.io/en/latest/data-directory/
+      - ${DATA_DIR}:/data

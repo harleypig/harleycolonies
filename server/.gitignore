@@ -1,0 +1,10 @@
+# Environment file with local configuration
+.env
+
+# Data directory (world data, logs, etc.)
+data/
+
+# Temporary files
+*.tmp
+*.log
+
