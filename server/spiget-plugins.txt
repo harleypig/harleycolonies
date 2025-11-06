@@ -1,0 +1,29 @@
+# Plugin list for reference
+# This file documents plugins that should be installed on the server
+# Plugins are auto-downloaded via SPIGET_PLUGINS environment variable
+
+# Format:
+# # Plugin - Short Description
+# # Description: ...
+# # Docs: URL
+# # Download: URL
+
+# TODO: Automate this with bin/site script
+# To use: Set SPIGET_PLUGINS in .env to comma-separated list of resource IDs
+# Example: SPIGET_PLUGINS=28140,12345
+#
+# Plugins will be downloaded to ${DATA_DIR}/plugins/ on server startup
+
+# LuckPerms - Permissions plugin
+# Description: Advanced permissions management plugin for Bukkit/Spigot/Paper
+# Docs: https://luckperms.net/wiki
+# Download: https://www.spigotmc.org/resources/luckperms.28140/
+28140
+
+# Fast Chunk Pregenerator
+# Download: https://www.spigotmc.org/resources/fast-chunk-pregenerator.74429/
+74429
+
+# Dynmap - Dynamic Google-style maps
+# Download: https://www.spigotmc.org/resources/dynmap%C2%AE.274/
+274

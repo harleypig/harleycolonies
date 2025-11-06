@@ -23,6 +23,7 @@ services:
       ENABLE_RCON: ${ENABLE_RCON}
       RCON_PASSWORD: ${RCON_PASSWORD}
       RCON_PORT: ${RCON_PORT}
+      SPIGET_PLUGINS: ${SPIGET_PLUGINS}
 
     volumes:
       # https://docker-minecraft-server.readthedocs.io/en/latest/data-directory/
