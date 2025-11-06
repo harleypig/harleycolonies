@@ -25,6 +25,5 @@ services:
       RCON_PORT: ${RCON_PORT}
 
     volumes:
-      - ./config:/config
       # https://docker-minecraft-server.readthedocs.io/en/latest/data-directory/
       - ${DATA_DIR}:/data
