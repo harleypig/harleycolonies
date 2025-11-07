@@ -1,0 +1,13 @@
+#!/usr/bin/bash
+
+cfmodlist='../server/extras/cf-modlist.txt'
+
+packwiz curseforge export \
+  --side server \
+  --output temp.zip
+
+unzip temp.zip manifest.json
+
+jq -r '.files[] | select(.required == true) | "\(.projectID):\(.fileID)"' manifest.json > "$cfmodlist"
+
+rm -f temp.zip manifest.json

@@ -1,7 +1,7 @@
 services:
   mc:
     image: itzg/minecraft-server:stable
-    restart: unless-stopped
+    #restart: unless-stopped
     pull_policy: daily
 
     # Enable interactive console
@@ -29,8 +29,10 @@ services:
       SPIGET_RESOURCES: $SPIGET_PLUGINS
       USES_PLUGINS: true
       PLUGINS_FILE: /extras/$PLUGINS_FILE
+      CF_API_KEY: $CF_API_KEY
+      CURSEFORGE_FILES: "@/extras/cf-modlist.txt"
 
     volumes:
-      - ./extras:/extras
+      - ./extras:/extras:ro
       # https://docker-minecraft-server.readthedocs.io/en/latest/data-directory/
       - $DATA_DIR:/data
