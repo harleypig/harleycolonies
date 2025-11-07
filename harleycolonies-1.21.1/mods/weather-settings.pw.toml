@@ -1,0 +1,13 @@
+name = "Weather settings[Forge/Fabric]"
+filename = "weathersettings-1.21-2.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d175725c33b9ca2821c552a244e2269e0f2f3f88"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5588027
+project-id = 539506

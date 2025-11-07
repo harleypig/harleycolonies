@@ -1,0 +1,13 @@
+name = "Hud Compass"
+filename = "HudCompass-1.21.1-0.6.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "e1fdb7791f20d426effe4ab91a0882f5abe41dc7"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5856971
+project-id = 420249

@@ -1,0 +1,13 @@
+name = "Netherite Compass"
+filename = "netherite_compass-1.4.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d23e197eb10120db14e34700253ecd30790c4835"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5680661
+project-id = 889147

@@ -1,0 +1,13 @@
+name = "Just Enough Painting Previews (JEPP)"
+filename = "jepp-1.21-1.2.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "f93a231169ae435877cef2d11310a311faf9b0c6"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6175720
+project-id = 546740

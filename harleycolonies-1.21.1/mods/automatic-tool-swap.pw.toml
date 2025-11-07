@@ -1,0 +1,13 @@
+name = "Automatic Tool Swap"
+filename = "ToolSwap-1.21-6.0.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b938fa82bfe05ba8f103a6ca57943a929cda61ef"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6193758
+project-id = 361977

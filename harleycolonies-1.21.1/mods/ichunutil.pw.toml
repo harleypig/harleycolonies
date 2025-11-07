@@ -1,0 +1,13 @@
+name = "iChunUtil"
+filename = "iChunUtil-1.21-NeoForge-1.0.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1f161c8b6288e6094fc57f4a9c10a6050df71081"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6000439
+project-id = 229060

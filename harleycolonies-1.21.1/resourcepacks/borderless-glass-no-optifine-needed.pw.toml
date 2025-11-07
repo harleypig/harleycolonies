@@ -1,0 +1,13 @@
+name = "Borderless Glass (No OptiFine Needed) Bedrock Support!"
+filename = "Borderless Glass V1.0.1 [For Bedrock 1.21 Versions].zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "cccb0a358bdb0673ca62fb1a3b7c0bb9b5785037"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5823742
+project-id = 845743

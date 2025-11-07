@@ -1,0 +1,13 @@
+name = "Storage Racks"
+filename = "storageracks-1.13-1.21.1-release.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "9c3efad5ae35dec796ea3573e915600256f6a580"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6306988
+project-id = 483682

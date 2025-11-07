@@ -1,0 +1,13 @@
+name = "Clear Glass with Connected Textures! [16x]"
+filename = "Clear Glass Pack 1.21.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "68685f16f2b504122223d62561d6ded9224d7c0a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5431060
+project-id = 286633

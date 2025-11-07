@@ -1,0 +1,13 @@
+name = "Vanilla Plus Tools"
+filename = "vanillaplustools-1.0.4-1.21.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "62416c99aa8c34521b4eac9389cdbf9f82aa0edf"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6306642
+project-id = 308705
