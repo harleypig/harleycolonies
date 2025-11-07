@@ -1,6 +1,6 @@
 name = "Clear Glass with Connected Textures! [16x]"
 filename = "Clear Glass Pack 1.21.zip"
-side = "both"
+side = "client"
 
 [download]
 hash-format = "sha1"
