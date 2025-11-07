@@ -24,6 +24,13 @@
 # Download: https://www.spigotmc.org/resources/fast-chunk-pregenerator.74429/
 74429
 
-# Dynmap - Dynamic Google-style maps
-# Download: https://www.spigotmc.org/resources/dynmap%C2%AE.274/
-274
+##############################################################################
+# Forge Mods Instead?
+
+# Auto Torch
+# Download: https://www.spigotmc.org/resources/auto-torch.124308/
+124308
+
+# Auto Feed
+# Download: https://www.spigotmc.org/resources/auto-feed.110839/
+110839

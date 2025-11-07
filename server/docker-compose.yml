@@ -10,11 +10,11 @@ services:
     stdin_open: true
 
     ports:
-      - "${SERVER_PORT}:25565"
-      - "${RCON_PORT}:${RCON_PORT}"
+      - ${SERVER_PORT}:25565
+      - ${RCON_PORT}:${RCON_PORT}
 
     environment:
-      EULA: "TRUE"
+      EULA: true
       TYPE: ARCLIGHT
       ARCLIGHT_TYPE: NEOFORGE
 
@@ -25,11 +25,12 @@ services:
       RCON_PASSWORD: $RCON_PASSWORD
       RCON_PORT: $RCON_PORT
 
+      REMOVE_OLD_MODS: $REMOVE_OLD_MODS
       SPIGET_RESOURCES: $SPIGET_PLUGINS
-      USES_PLUGINS: "TRUE"
-      PLUGINS_FILE: "/extras/$PLUGINS_FILE"
+      USES_PLUGINS: true
+      PLUGINS_FILE: /extras/$PLUGINS_FILE
 
     volumes:
       - ./extras:/extras
       # https://docker-minecraft-server.readthedocs.io/en/latest/data-directory/
-      - ${DATA_DIR}:/data
+      - $DATA_DIR:/data
