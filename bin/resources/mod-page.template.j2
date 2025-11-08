@@ -4,7 +4,7 @@ title: {{ name }}
 
 ## {{ name }}
 
-{{ description }}
+{{ description -}}
 
 ### Side
 
@@ -12,13 +12,12 @@ title: {{ name }}
 
 ### Modpacks
 
-{% if installed_in %}
+{% if installed_in -%}
 This mod is installed in the following modpacks:
 
-{% for modpack in installed_in %}
+{% for modpack in installed_in -%}
 - {{ modpack }}
 {% endfor %}
 {% else %}
 This mod is not currently installed in any modpacks.
 {% endif %}
-
