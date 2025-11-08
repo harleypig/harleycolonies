@@ -50,6 +50,9 @@ def generate_simple_wiki_page(mod_slug, mod_data):
     name = mod_data.get("name", mod_slug)
     description = mod_data.get("description", "")
     side = mod_data.get("side", "unknown")
+    
+    metadata = mod_data.get("metadata", {})
+    categories = metadata.get("categories", [])
 
     modpacks = mod_data.get("modpacks", {})
     installed_in = modpacks.get("installed_in", [])
@@ -59,6 +62,7 @@ def generate_simple_wiki_page(mod_slug, mod_data):
         name=name,
         description=description,
         side=side,
+        categories=categories,
         installed_in=installed_in,
     )
 

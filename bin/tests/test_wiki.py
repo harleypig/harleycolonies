@@ -72,6 +72,7 @@ This mod is not currently installed in any modpacks.
     
     content = wiki.generate_simple_wiki_page("test-mod", sample_mod_data)
     assert "title: Test Mod" in content
+    assert "categories:" in content
     assert "## Test Mod" in content
     assert "### Side" in content
     assert "### Modpacks" in content
