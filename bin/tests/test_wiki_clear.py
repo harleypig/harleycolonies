@@ -73,13 +73,18 @@ def test_generate_wiki_destructive(temp_repo):
     
     # Verify old files are removed
     assert not old_page.exists()
-    assert not mods_index.exists()
+    # Old index is removed but new one is created, so check that a new one exists
+    # (the old content is gone, but the file is recreated)
     
     # Verify new wiki page was created
     new_page = mods_wiki_dir / "test-mod.md"
     assert new_page.exists()
     
-    # Verify index page was created
+    # Verify new index page was created (replaces the old one)
     new_index = wiki.get_mods_index_path()
     assert new_index.exists()
+    # Verify it has new content (not the old "# Old Index")
+    index_content = new_index.read_text()
+    assert "# Old Index" not in index_content
+    assert "Test Mod" in index_content
 
