@@ -56,6 +56,67 @@ if sys.executable != str(VENV_DIR / "bin" / "python"):
         # Use venv Python if available
         os.execv(str(venv_python), [str(venv_python)] + sys.argv)
 
+# Check for missing dependencies and install them
+def check_and_install_dependencies():
+    """Check for required dependencies and install if missing."""
+    required_modules = [
+        "tomlkit",
+        "yaml",
+        "jinja2",
+    ]
+    
+    missing_modules = []
+    for module in required_modules:
+        try:
+            __import__(module)
+        except ImportError:
+            missing_modules.append(module)
+    
+    if missing_modules:
+        print(f"Missing dependencies detected: {', '.join(missing_modules)}")
+        print("Installing/updating dependencies...")
+        
+        import subprocess
+        venv_pip = VENV_DIR / "bin" / "pip"
+        requirements_file = SCRIPT_DIR / "requirements.txt"
+        
+        if not venv_pip.exists():
+            print("Error: pip not found in virtual environment", file=sys.stderr)
+            sys.exit(1)
+        
+        if not requirements_file.exists():
+            print("Error: requirements.txt not found", file=sys.stderr)
+            sys.exit(1)
+        
+        # Install/upgrade dependencies
+        result = subprocess.run(
+            [str(venv_pip), "install", "-r", str(requirements_file), "--upgrade"],
+            cwd=str(SCRIPT_DIR),
+            capture_output=True,
+            text=True
+        )
+        
+        if result.returncode != 0:
+            print(f"Error installing dependencies: {result.stderr}", file=sys.stderr)
+            sys.exit(1)
+        
+        print("Dependencies installed successfully.")
+        
+        # Verify all modules are now available
+        still_missing = []
+        for module in required_modules:
+            try:
+                __import__(module)
+            except ImportError:
+                still_missing.append(module)
+        
+        if still_missing:
+            print(f"Error: Still missing dependencies after installation: {', '.join(still_missing)}", file=sys.stderr)
+            sys.exit(1)
+
+# Check dependencies before importing mpmanager
+check_and_install_dependencies()
+
 # Import and run the CLI
 from mpmanager.cli import main
 
