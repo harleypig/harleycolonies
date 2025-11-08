@@ -119,6 +119,33 @@ def get_mods_index_path():
     return get_repo_root() / "pages" / "mods.md"
 
 
+def get_mods_wiki_dir():
+    """Get path to mods wiki directory."""
+    return get_repo_root() / "pages" / "mods"
+
+
+def clear_wiki_pages():
+    """Clear all wiki pages (destructive operation).
+    
+    Removes all files in pages/mods/ and removes pages/mods.md.
+    """
+    import shutil
+    
+    repo_root = get_repo_root()
+    mods_wiki_dir = get_mods_wiki_dir()
+    mods_index = get_mods_index_path()
+    
+    # Remove pages/mods directory if it exists
+    if mods_wiki_dir.exists():
+        print(f"Removing {mods_wiki_dir}")
+        shutil.rmtree(mods_wiki_dir)
+    
+    # Remove pages/mods.md if it exists
+    if mods_index.exists():
+        print(f"Removing {mods_index}")
+        mods_index.unlink()
+
+
 def generate_mods_index():
     """Generate pages/mods.md index page with all mods grouped by category."""
     from mpmanager import data

@@ -86,7 +86,9 @@ def main():
     # Wiki generation
     wiki = subparsers.add_parser("wiki", help="Generate wiki pages")
     wiki.add_argument(
-        "--regenerate", action="store_true", help="Regenerate all wiki pages"
+        "--generate",
+        action="store_true",
+        help="Generate all wiki pages (destructive: clears pages/mods and removes pages/mods.md)",
     )
     wiki.add_argument("--mod", help="Generate wiki page for specific mod")
     wiki.add_argument(
@@ -173,7 +175,7 @@ def main():
                 return 1
         elif args.command == "wiki":
             return commands.generate_wiki(
-                regenerate=args.regenerate, mod_slug=args.mod, index=args.index
+                generate=args.generate, mod_slug=args.mod, index=args.index
             )
         elif args.command == "list":
             categories = None

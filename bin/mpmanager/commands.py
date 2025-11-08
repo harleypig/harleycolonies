@@ -266,7 +266,7 @@ def modpack_export(modpack_dir):
     return 0
 
 
-def generate_wiki(regenerate=False, mod_slug=None, index=False):
+def generate_wiki(generate=False, mod_slug=None, index=False):
     """Generate wiki pages."""
     if index:
         print("Generating mods index page")
@@ -282,6 +282,13 @@ def generate_wiki(regenerate=False, mod_slug=None, index=False):
             return 1
         wiki.generate_wiki_page(mod_slug, mod)
         print(f"Generated wiki page for {mod_slug}")
+    elif generate:
+        print("Generating all wiki pages (destructive mode)")
+        # Clear pages/mods directory and remove pages/mods.md
+        wiki.clear_wiki_pages()
+        # Generate all wiki pages
+        generated = wiki.generate_all_wiki_pages()
+        print(f"Generated {len(generated)} wiki pages")
     else:
         print("Generating all wiki pages")
         generated = wiki.generate_all_wiki_pages()

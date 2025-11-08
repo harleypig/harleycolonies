@@ -102,8 +102,8 @@ generating modpacks, and creating wiki pages.
 # Generate all wiki pages
 ./bin/modpack-manager wiki
 
-# Regenerate all wiki pages
-./bin/modpack-manager wiki --regenerate
+# Generate all wiki pages (destructive: clears pages/mods and removes pages/mods.md)
+./bin/modpack-manager wiki --generate
 
 # Generate mods index page (pages/mods.md)
 ./bin/modpack-manager wiki --index
