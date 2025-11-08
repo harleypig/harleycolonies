@@ -1,0 +1,1344 @@
+mods:
+  just-enough-effect-descriptions-jeed:
+    name: Just Enough Effect Descriptions (JEED)
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 532286
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/just-enough-effect-descriptions-jeed
+      issues: https://github.com/MehVahdJukaar/JustEnoughEffectDescriptions/issues
+      source: https://github.com/MehVahdJukaar/JustEnoughEffectDescriptions
+      categories:
+      - map-information
+      - mc-addons
+  compact-help-command:
+    name: Compact Help Command
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 515753
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/compact-help-command
+      issues: 'https://github.com/Serilum/.issue-tracker/labels/Mod: Compact Help
+        Command'
+      source: https://github.com/Serilum/Compact-Help-Command
+      categories:
+      - server-utility
+      - map-information
+      - cosmetic
+      - mc-miscellaneous
+  flib:
+    name: FLIB
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 661261
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/flib
+      issues: https://github.com/Lothrazar/FLib/issues
+      source: https://github.com/Lothrazar/FLib
+      categories:
+      - library-api
+  bookshelf:
+    name: Bookshelf
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 228525
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/bookshelf
+      issues: https://github.com/Darkhax-Minecraft/Bookshelf/issues
+      source: https://github.com/Darkhax-Minecraft/Bookshelf
+      categories:
+      - server-utility
+      - mc-miscellaneous
+      - library-api
+  moderately-enough-effect-descriptions-meed-a-jeed-addon:
+    name: Moderately Enough Effect Descriptions (MEED) - A JEED Addon
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 918638
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/moderately-enough-effect-descriptions-meed-a-jeed-addon
+      categories:
+      - map-information
+      - utility-qol
+      - mc-addons
+      - server-utility
+  connectivity:
+    name: Connectivity[Forge/Fabric]
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 470193
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/connectivity
+      issues: https://github.com/someaddons/connectivity/issues
+      source: https://github.com/someaddons/connectivity
+      categories:
+      - technology-player-transport
+      - map-information
+      - server-utility
+  just-enough-calculation:
+    name: Just Enough Calculation
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 242223
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/just-enough-calculation
+      issues: https://github.com/Towdium/JustEnoughCalculation/issues
+      source: https://github.com/Towdium/JustEnoughCalculation
+      categories:
+      - map-information
+      - mc-addons
+  prism-lib:
+    name: Prism [Forge]
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 638111
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/prism-lib
+      wiki: https://github.com/AHilyard/Prism/wiki/Prism-Documentation
+      issues: https://github.com/AHilyard/Prism/issues
+      source: https://github.com/AHilyard/Prism
+      categories:
+      - cosmetic
+      - library-api
+      - mc-miscellaneous
+      - utility-qol
+  multi-piston:
+    name: Multi-Piston
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 303278
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/multi-piston
+      issues: https://github.com/ldtteam/Piston-Unlimited
+      source: https://github.com/ldtteam/Piston-Unlimited
+      categories:
+      - cosmetic
+      - adventure-rpg
+      - redstone
+      - technology-player-transport
+  better-ping-display:
+    name: Better Ping Display
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 292038
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/better-ping-display
+      issues: https://github.com/vladmarica/better-ping-display/issues
+      source: https://github.com/vladmarica/better-ping-display
+      categories:
+      - utility-qol
+      - cosmetic
+      - map-information
+  supermartijn642s-config-lib:
+    name: SuperMartijn642's Config Lib
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 438332
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib
+      issues: https://github.com/SuperMartijn642/SuperMartijn642sConfigLib/issues
+      source: https://github.com/SuperMartijn642/SuperMartijn642sConfigLib
+      categories:
+      - library-api
+  framed-compacting-drawers:
+    name: Framed Compacting Drawers
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 376351
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/framed-compacting-drawers
+      issues: https://github.com/eutropius225/FramedCompactDrawers/issues
+      source: https://github.com/eutropius225/FramedCompactDrawers
+      categories:
+      - storage
+      - mc-addons
+      - cosmetic
+  structurize:
+    name: Structurize
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 298744
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/structurize
+      wiki: https://wiki.minecolonies.com/source/tutorials/schematics
+      issues: https://github.com/ldtteam/structurize/issues
+      source: https://github.com/ldtteam/structurize
+      categories:
+      - world-structures
+      - server-utility
+      - cosmetic
+  sophisticated-core:
+    name: Sophisticated Core
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 618298
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/sophisticated-core
+      source: https://github.com/P3pp3rF1y/SophisticatedCore
+      categories:
+      - library-api
+  drawers-tooltip:
+    name: Drawers Tooltip
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 381605
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/drawers-tooltip
+      issues: https://github.com/Snownee/DrawersTooltip/issues
+      source: https://github.com/Snownee/DrawersTooltip
+      categories:
+      - mc-addons
+      - storage
+      - utility-qol
+  enchantment-descriptions:
+    name: Enchantment Descriptions
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 250419
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions
+      issues: https://github.com/Darkhax-Minecraft/Enchantment-Descriptions/issues
+      source: https://github.com/Darkhax-Minecraft/Enchantment-Descriptions
+      categories:
+      - map-information
+      - magic
+      - utility-qol
+      - cosmetic
+  tan-huge-trees:
+    name: Tan's Huge Trees
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 469915
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/tan-huge-trees
+      wiki: https://github.com/TannyJungMC/THT-tree_pack/wiki
+      categories:
+      - adventure-rpg
+      - world-biomes
+      - mc-creator
+      - world-structures
+  portal-linking-compass:
+    name: Portal Linking Compass
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 854493
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/portal-linking-compass
+      issues: https://github.com/maxoduke/Portal-Linking-Compass/issues
+      source: https://github.com/maxoduke/Portal-Linking-Compass
+      categories:
+      - utility-qol
+      - map-information
+  jea:
+    name: Just Enough Advancements (JEA)
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 444941
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/jea
+      wiki: https://melanx.github.io/Mod-Wikis/
+      issues: https://github.com/MelanX/JustEnoughAdvancements/issues
+      source: https://github.com/MelanX/JustEnoughAdvancements
+      categories:
+      - map-information
+      - mc-addons
+      - library-api
+  journeymap:
+    name: JourneyMap
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 32274
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/journeymap
+      wiki: http://journeymap.info
+      issues: https://github.com/TeamJM/journeymap/issues
+      categories:
+      - map-information
+  searchables:
+    name: Searchables
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 858542
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/searchables
+      issues: https://github.com/jaredlll08/searchables/issues
+      source: https://github.com/jaredlll08/searchables
+      categories:
+      - map-information
+      - utility-qol
+      - cosmetic
+      - library-api
+  passable-foliage:
+    name: "Passable Foliage \U0001F333 (Forge)"
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 379887
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/passable-foliage
+      issues: https://github.com/Snownee/PassableFoliage/issues
+      source: https://github.com/Snownee/PassableFoliage
+      categories:
+      - utility-qol
+  block-runner-forge:
+    name: Block Runner [Forge & Fabric]
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 442842
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/block-runner-forge
+      issues: https://github.com/Fuzss/blockrunner/issues
+      source: https://github.com/Fuzss/blockrunner
+      categories:
+      - utility-qol
+  better-advancements:
+    name: Better Advancements
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 272515
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/better-advancements
+      issues: https://github.com/way2muchnoise/BetterAdvancements/issues
+      source: https://github.com/way2muchnoise/BetterAdvancements
+      categories:
+      - cosmetic
+  blockui:
+    name: BlockUI
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 522992
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/blockui
+      source: https://github.com/ldtteam/BlockUI
+      categories:
+      - library-api
+  default-options:
+    name: Default Options
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 232131
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/default-options
+      wiki: https://mods.twelveiterations.com/mc/default-options
+      issues: https://github.com/ModdingForBlockheads/DefaultOptions/issues
+      source: https://github.com/ModdingForBlockheads/DefaultOptions
+      categories:
+      - mc-miscellaneous
+  minecolonies:
+    name: MineColonies
+    side: client
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 245506
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/minecolonies
+      wiki: https://wiki.minecolonies.ldtteam.com
+      issues: https://github.com/ldtteam/minecolonies/issues/new/choose
+      source: https://github.com/ldtteam/MineColonies
+      categories:
+      - world-structures
+      - adventure-rpg
+      - armor-weapons-tools
+      - technology-automation
+      - storage
+    versions:
+      harleycolonies-1.20.1-0.1.2:
+        metadata:
+          side: both
+  vanilla-tools:
+    name: Vanilla Plus Tools
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 308705
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/vanilla-tools
+      issues: https://github.com/ldtteam/vanilla-tools/issues/new/choose
+      source: https://github.com/ldtteam/vanilla-tools
+      categories:
+      - utility-qol
+      - utility-qol
+      - armor-weapons-tools
+      - armor-weapons-tools
+  libx:
+    name: LibX
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 412525
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/libx
+      wiki: https://moddingx.org/wiki
+      issues: https://github.com/noeppi-noeppi/LibX/issues
+      source: https://github.com/noeppi-noeppi/LibX
+      categories:
+      - library-api
+  jade:
+    name: "Jade \U0001F50D"
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 324717
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/jade
+      issues: https://github.com/Snownee/Jade/issues?q=is%3Aissue
+      source: https://github.com/Snownee/Jade
+      categories:
+      - utility-qol
+      - map-information
+  sophisticated-backpacks:
+    name: Sophisticated Backpacks
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 422301
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks
+      issues: https://github.com/P3pp3rF1y/SophisticatedBackpacks/issues
+      source: https://github.com/P3pp3rF1y/SophisticatedBackpacks
+      categories:
+      - storage
+      - armor-weapons-tools
+  kiwi:
+    name: "Kiwi \U0001F95D (Forge)"
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 303657
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/kiwi
+      issues: https://github.com/Snownee/Kiwi/issues
+      source: https://github.com/Snownee/Kiwi
+      categories:
+      - library-api
+  inventory-sorter:
+    name: Inventory Sorter
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 240633
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/inventory-sorter
+      issues: https://github.com/cpw/inventorysorter/issues
+      source: https://github.com/cpw/inventorysorter
+      categories:
+      - mc-miscellaneous
+  jepp:
+    name: Just Enough Painting Previews (JEPP)
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 546740
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/jepp
+      source: https://github.com/MehVahdJukaar/JustEnoughPainting
+      categories:
+      - mc-addons
+      - map-information
+  cupboard:
+    name: Cupboard
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 326652
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/cupboard
+      issues: https://github.com/someaddons/cupboard/issues
+      source: https://github.com/someaddons/cupboard
+      categories:
+      - utility-qol
+  beehivetooltips:
+    name: '[Forge/NeoForged/Fabric] BeehiveTooltips'
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 376753
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/beehivetooltips
+      issues: https://github.com/EDToaster/beehive-tooltips/issues
+      source: https://github.com/EDToaster/beehive-tooltips
+      categories:
+      - map-information
+      - utility-qol
+      - cosmetic
+  balm:
+    name: Balm (Forge Edition)
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 531761
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/balm
+      wiki: https://mods.twelveiterations.com/
+      issues: https://github.com/ModdingForBlockheads/Balm/issues
+      source: https://github.com/ModdingForBlockheads/Balm
+      categories:
+      - library-api
+  ai-improvements:
+    name: AI Improvements
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 233019
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/ai-improvements
+      issues: https://github.com/BuiltBrokenModding/AI-Improvements/issues
+      source: https://github.com/BuiltBrokenModding/AI-Improvements
+      categories:
+      - world-mobs
+      - server-utility
+  durability-tooltip:
+    name: Durability Tooltip
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 511040
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/durability-tooltip
+      issues: https://github.com/SuperMartijn642/DurabilityTooltip/issues
+      source: https://github.com/SuperMartijn642/DurabilityTooltip
+      categories:
+      - armor-weapons-tools
+      - cosmetic
+      - map-information
+  storage-racks:
+    name: Storage Racks
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 483682
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/storage-racks
+      issues: https://github.com/ldtteam/StorageRacks
+      source: https://github.com/ldtteam/StorageRacks
+      categories:
+      - storage
+      - cosmetic
+      - adventure-rpg
+      - education
+      - technology-automation
+  natures-compass:
+    name: Nature's Compass
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 252848
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/natures-compass
+      issues: https://github.com/MattCzyr/NaturesCompass/issues
+      source: https://github.com/MattCzyr/NaturesCompass
+      categories:
+      - armor-weapons-tools
+      - world-biomes
+      - technology
+      - map-information
+  just-enough-sculk-sensor:
+    name: Just Enough Sculk Sensor
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 848098
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/just-enough-sculk-sensor
+      categories:
+      - utility-qol
+      - mc-addons
+      - redstone
+  just-enough-archaeology:
+    name: Just Enough Archaeology
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 890755
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/just-enough-archaeology
+      categories:
+      - utility-qol
+  spotiforge:
+    name: SpotiForge
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 889158
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/spotiforge
+      issues: https://github.com/suppergerrie2/SpotiForge/issues
+      categories:
+      - utility-qol
+      - cosmetic
+  journeymap-integration:
+    name: JourneyMap Integration
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 525447
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/journeymap-integration
+      issues: https://github.com/frank89722/JourneyMapIntegration/issues
+      source: https://github.com/frank89722/JourneyMapIntegration
+      categories:
+      - mc-addons
+      - map-information
+  appleskin:
+    name: AppleSkin
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 248787
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/appleskin
+      issues: https://github.com/squeek502/AppleSkin/issues
+      source: https://github.com/squeek502/AppleSkin
+      categories:
+      - mc-food
+      - map-information
+  stylecolonies:
+    name: Stylecolonies
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 827507
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/stylecolonies
+      categories:
+      - adventure-rpg
+      - cosmetic
+      - utility-qol
+      - mc-addons
+  clean-swing-through-grass:
+    name: Clean Swing Through Grass
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 915308
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/clean-swing-through-grass
+      issues: https://github.com/ldtteam/cleanswing/issues
+      categories:
+      - utility-qol
+      - armor-weapons-tools
+      - adventure-rpg
+  treechop:
+    name: HT's TreeChop
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 421377
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/treechop
+      issues: https://github.com/hammertater/treechop/issues
+      source: https://github.com/hammertater/treechop
+      categories:
+      - mc-miscellaneous
+  full-grown-crop-marker:
+    name: FullGrownCropMarker
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 834457
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/full-grown-crop-marker
+      wiki: https://github.com/tristankechlo/FullGrownCropMarker/wiki
+      issues: https://github.com/tristankechlo/FullGrownCropMarker/issues
+      source: https://github.com/tristankechlo/FullGrownCropMarker
+      categories:
+      - technology-farming
+      - utility-qol
+      - adventure-rpg
+  amendments:
+    name: Amendments
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 896746
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/amendments
+      wiki: https://github.com/MehVahdJukaar/Supplementaries/wiki/Amendments
+      issues: https://github.com/MehVahdJukaar/amendments/issues
+      categories:
+      - cosmetic
+      - utility-qol
+  ding:
+    name: Ding (Forge)
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 231275
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/ding
+      issues: https://github.com/iChun/Ding/issues
+      source: https://github.com/iChun/Ding
+      categories:
+      - map-information
+  food-effect-tooltips-forge:
+    name: Food Effect Tooltips (Forge)
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 776426
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/food-effect-tooltips-forge
+      issues: https://github.com/Suel-ki/FoodEffectTooltips-Forge/issues
+      source: https://github.com/Suel-ki/FoodEffectTooltips-Forge
+      categories:
+      - mc-food
+      - utility-qol
+  puzzles-lib:
+    name: Puzzles Lib [Forge & Fabric]
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 495476
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/puzzles-lib
+      issues: https://github.com/Fuzss/puzzleslib/issues
+      source: https://github.com/Fuzss/puzzleslib
+      categories:
+      - library-api
+  towntalk:
+    name: TownTalk
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 900364
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/towntalk
+      categories:
+      - utility-qol
+      - adventure-rpg
+      - mc-addons
+      - cosmetic
+  mod-name-tooltip:
+    name: Mod Name Tooltip
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 238747
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/mod-name-tooltip
+      issues: https://github.com/mezz/ModNameTooltip/issues?q=is%3Aissue
+      source: https://github.com/mezz/ModNameTooltip
+      categories:
+      - map-information
+  iceberg:
+    name: Iceberg [Forge]
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 520110
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/iceberg
+      issues: https://github.com/AHilyard/Iceberg/issues
+      source: https://github.com/AHilyard/Iceberg
+      categories:
+      - library-api
+  configured:
+    name: Configured
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 457570
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/configured
+      issues: https://github.com/MrCrayfish/Configured/issues
+      source: https://github.com/MrCrayfish/Configured
+      categories:
+      - library-api
+      - utility-qol
+      - server-utility
+  jei-integration:
+    name: JEI Integration
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 265917
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/jei-integration
+      issues: https://github.com/snowshock35/jei-integration/issues
+      source: https://github.com/snowshock35/jei-integration
+      categories:
+      - map-information
+      - mc-addons
+  catalogue:
+    name: Catalogue
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 459701
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/catalogue
+      issues: https://github.com/MrCrayfish/Catalogue/issues
+      categories:
+      - map-information
+      - mc-miscellaneous
+      - library-api
+      - utility-qol
+  jadecolonies:
+    name: JadeColonies
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 882310
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/jadecolonies
+      issues: https://github.com/uecasm/jadecolonies/issues
+      source: https://github.com/uecasm/jadecolonies
+      categories:
+      - mc-addons
+      - utility-qol
+  storage-drawers:
+    name: Storage Drawers
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 223852
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/storage-drawers
+      issues: https://github.com/jaquadro/StorageDrawers/issues
+      source: https://github.com/jaquadro/StorageDrawers
+      categories:
+      - cosmetic
+      - storage
+  biomes-o-plenty:
+    name: Biomes O' Plenty
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 220318
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty
+      issues: https://github.com/Glitchfiend/BiomesOPlenty/issues
+      source: https://github.com/Glitchfiend/BiomesOPlenty
+      categories:
+      - world-biomes
+      - world-gen
+  cerbons-api:
+    name: CERBON's API [Forge | Fabric | NeoForge]
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 955605
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/cerbons-api
+      issues: https://github.com/CERBON-MODS/CERBONs-API/issues
+      source: https://github.com/CERBON-MODS/CERBONs-API
+      categories:
+      - library-api
+      - library-api
+  architectury-api:
+    name: Architectury API (Fabric/Forge/NeoForge)
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 419699
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/architectury-api
+      wiki: https://docs.architectury.dev/plugin:get_started
+      issues: https://github.com/architectury/architectury/issues
+      source: https://github.com/architectury/architectury
+      categories:
+      - library-api
+  anvil-balance:
+    name: Anvil Balance
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 949135
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/anvil-balance
+      categories:
+      - technology
+      - armor-weapons-tools
+      - adventure-rpg
+      - utility-qol
+  just-enough-professions-jep:
+    name: Just Enough Professions (JEP)
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 417645
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/just-enough-professions-jep
+      issues: https://github.com/Mrbysco/JustEnoughProfessions/issues
+      source: https://github.com/Mrbysco/JustEnoughProfessions
+      categories:
+      - utility-qol
+      - map-information
+      - mc-addons
+  comforts:
+    name: Comforts (Fabric/Forge/Quilt)
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 276951
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/comforts
+      wiki: https://github.com/illusivesoulworks/comforts/wiki
+      issues: https://github.com/illusivesoulworks/comforts/issues
+      source: https://github.com/illusivesoulworks/comforts
+      categories:
+      - mc-miscellaneous
+      - adventure-rpg
+  justenoughbreeding:
+    name: Just Enough Breeding (JEBr)
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 899386
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/justenoughbreeding
+      issues: https://github.com/Christofmeg/JustEnoughBreeding/issues
+      source: https://github.com/Christofmeg/JustEnoughBreeding
+      categories:
+      - map-information
+      - mc-addons
+      - utility-qol
+      - world-mobs
+  treasuredistance:
+    name: Better Treasure Map
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 873563
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/treasuredistance
+      issues: https://github.com/ldtteam/treasuredistance/issues
+      categories:
+      - world-gen
+      - utility-qol
+      - world-structures
+      - map-information
+      - armor-weapons-tools
+  cloth-config:
+    name: Cloth Config API (Fabric/Forge/NeoForge)
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 348521
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/cloth-config
+      wiki: https://shedaniel.gitbook.io/cloth-config/
+      issues: https://github.com/shedaniel/ClothConfig/issues
+      source: https://github.com/shedaniel/ClothConfig
+      categories:
+      - library-api
+  ocean-floor-clay-sand-and-dirt:
+    name: Ocean Floor - Clay Sand and Dirt
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 231837
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/ocean-floor-clay-sand-and-dirt
+      issues: https://github.com/PrinceOfAmber/OceanFloorControl/issues
+      source: https://github.com/PrinceOfAmber/OceanFloorControl
+      categories:
+      - cosmetic
+      - world-ores-resources
+      - world-biomes
+      - world-dimensions
+  jade-addons:
+    name: Jade Addons (Forge)
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 583345
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/jade-addons
+      issues: https://github.com/Snownee/JadeAddons/issues
+      source: https://github.com/Snownee/JadeAddons
+      categories:
+      - map-information
+      - utility-qol
+      - mc-addons
+  jei:
+    name: Just Enough Items (JEI)
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 238222
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/jei
+      issues: https://github.com/mezz/JustEnoughItems/issues?q=is%3Aissue
+      source: https://github.com/mezz/JustEnoughItems
+      categories:
+      - library-api
+      - map-information
+  domum-ornamentum:
+    name: Domum Ornamentum
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 527361
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/domum-ornamentum
+      issues: https://github.com/ldtteam/Domum-Ornamentum/issues/new
+      source: https://github.com/ldtteam/Domum-Ornamentum
+      categories:
+      - cosmetic
+      - library-api
+  terrablender:
+    name: TerraBlender (Forge)
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 563928
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/terrablender
+      issues: https://github.com/Glitchfiend/TerraBlender/
+      source: https://github.com/Glitchfiend/TerraBlender/
+      categories:
+      - world-biomes
+      - library-api
+      - world-gen
+  legendary-tooltips:
+    name: Legendary Tooltips [Forge]
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 532127
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/legendary-tooltips
+      wiki: https://github.com/AHilyard/LegendaryTooltips/wiki/Configuration-Instructions
+      issues: https://github.com/AHilyard/LegendaryTooltips/issues
+      source: https://github.com/AHilyard/LegendaryTooltips
+      categories:
+      - utility-qol
+      - cosmetic
+      - adventure-rpg
+      - armor-weapons-tools
+      - mc-miscellaneous
+  peacefulsurface:
+    name: PeacefulSurface
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 73112
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/peacefulsurface
+      wiki: https://github.com/zlainsama/PeacefulSurface/wiki
+      issues: https://github.com/zlainsama/PeacefulSurface/issues
+      source: https://github.com/zlainsama/PeacefulSurface
+      categories:
+      - world-mobs
+  just-enough-beacons-reforged:
+    name: Just Enough Beacons Reforged [Forge | Fabric | NeoForge]
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 912266
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/just-enough-beacons-reforged
+      issues: https://github.com/CERBON-MODS/Just-Enough-Beacons/issues
+      source: https://github.com/CERBON-MODS/Just-Enough-Beacons
+      categories:
+      - mc-addons
+      - map-information
+  waterphysics:
+    name: WaterPhysics
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 740025
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/waterphysics
+      categories:
+      - adventure-rpg
+      - world-gen
+      - technology-item-fluid-energy-transport
+      - utility-qol
+  geophilic-reforged:
+    name: "Geophilic Reforged \u2013 Biome Additions"
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 936730
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/geophilic-reforged
+      categories:
+      - world-ores-resources
+      - world-biomes
+      - world-gen
+  just-enough-resources-jer:
+    name: Just Enough Resources (JER)
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 240630
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/just-enough-resources-jer
+      issues: https://github.com/way2muchnoise/JustEnoughResources/issues
+      source: https://github.com/way2muchnoise/JustEnoughResources
+      categories:
+      - world-ores-resources
+      - world-mobs
+      - map-information
+      - world-biomes
+      - mc-addons
+  betterdays:
+    name: Better Days
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 895618
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/betterdays
+      issues: https://github.com/wendall911/BetterDays/issues
+      source: https://github.com/wendall911/BetterDays
+      categories:
+      - utility-qol
+      - server-utility
+  kleeslabs:
+    name: KleeSlabs
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 241895
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/kleeslabs
+      wiki: https://mods.twelveiterations.com/mc/kleeslabs
+      issues: https://github.com/ModdingForBlockheads/KleeSlabs/issues
+      source: https://github.com/ModdingForBlockheads/KleeSlabs
+      categories:
+      - utility-qol
+  waystones:
+    name: Waystones
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 245755
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/waystones
+      wiki: https://mods.twelveiterations.com/mc/waystones
+      issues: https://github.com/ModdingForBlockheads/Waystones/issues
+      source: https://github.com/ModdingForBlockheads/Waystones
+      categories:
+      - magic
+      - adventure-rpg
+      - server-utility
+      - technology-player-transport
+  equipment-compare:
+    name: Equipment Compare [Forge]
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 502561
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/equipment-compare
+      issues: https://github.com/AHilyard/EquipmentCompare/issues
+      source: https://github.com/AHilyard/EquipmentCompare
+      categories:
+      - map-information
+      - armor-weapons-tools
+      - utility-qol
+      - cosmetic
+      - mc-miscellaneous
+  collective:
+    name: Collective
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 342584
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/collective
+      issues: 'https://github.com/Serilum/.issue-tracker/labels/Library: Collective'
+      source: https://github.com/Serilum/Collective
+      categories:
+      - library-api
+  controlling:
+    name: Controlling
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 250398
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/controlling
+      issues: https://github.com/jaredlll08/Controlling/issues
+      source: https://github.com/jaredlll08/Controlling
+      categories:
+      - utility-qol
+      - cosmetic
+  explorers-compass:
+    name: Explorer's Compass
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 491794
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/explorers-compass
+      issues: https://github.com/MattCzyr/ExplorersCompass/issues
+      source: https://github.com/MattCzyr/ExplorersCompass
+      categories:
+      - world-structures
+      - adventure-rpg
+      - map-information
+      - armor-weapons-tools
+  canary:
+    name: Canary
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 665658
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/canary
+      issues: https://github.com/AbdElAziz333/Canary/issues
+      source: https://github.com/AbdElAziz333/Canary
+      categories:
+      - server-utility
+      - mc-miscellaneous
+  clumps:
+    name: Clumps
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 256717
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/clumps
+      issues: https://github.com/jaredlll08/Clumps/issues
+      source: https://github.com/jaredlll08/Clumps
+      categories:
+      - storage
+      - utility-qol
+      - server-utility
+  betterf3:
+    name: BetterF3
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 401648
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/betterf3
+      issues: https://github.com/TreyRuffy/BetterF3/issues/
+      source: https://github.com/TreyRuffy/BetterF3
+      categories:
+      - map-information
+  selene:
+    name: Moonlight Lib
+    side: both
+    modpacks:
+      installed_in:
+      - harleycolonies-1.20.1-0.1.2
+    curseforge_id: 499980
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/selene
+      source: https://github.com/MehVahdJukaar/Selene
+      categories:
+      - library-api
+      - library-api

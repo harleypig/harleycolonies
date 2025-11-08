@@ -350,6 +350,12 @@ def sync_from_modpack(modpack_dir):
         # Extract slug from filename
         mod_slug = mod_file.replace(".pw.toml", "").lower()
 
+        # Get full TOML data for metadata extraction
+        toml_data = packwiz.get_mod_toml_data(modpack_dir, mod_file)
+        metadata = {}
+        if toml_data:
+            metadata = packwiz.extract_metadata_from_toml(toml_data)
+
         # Check if mod exists in mods.yaml
         mod = data.get_mod(mod_slug)
         if not mod:
@@ -372,10 +378,79 @@ def sync_from_modpack(modpack_dir):
                 # Side already exists, don't overwrite (respects manual settings)
                 pass
 
+        # Merge metadata (canonical or version-specific)
+        if metadata:
+            data.merge_metadata(mod_slug, metadata, modpack_dir)
+
         # Add to installed_in
         data.add_to_modpack(mod_slug, modpack_dir, "installed_in")
 
     print(f"Synced {len(mod_files)} mods from {modpack_dir}")
+    return 0
+
+
+def update_mod_side(mod_slug, new_side, modpack_dir=None):
+    """Update mod side in mods.yaml and optionally in TOML files.
+    
+    If modpack_dir is provided, updates side for that specific modpack
+    (version-specific). Otherwise, updates the canonical side.
+    """
+    mod = data.get_mod(mod_slug)
+    if not mod:
+        print(f"Error: Mod {mod_slug} not found")
+        return 1
+
+    mods_data = data.load_mods()
+    mod_entry = mods_data["mods"][mod_slug]
+
+    if modpack_dir:
+        # Update version-specific side
+        if "versions" not in mod_entry:
+            mod_entry["versions"] = {}
+        if modpack_dir not in mod_entry["versions"]:
+            mod_entry["versions"][modpack_dir] = {}
+        if "metadata" not in mod_entry["versions"][modpack_dir]:
+            mod_entry["versions"][modpack_dir]["metadata"] = {}
+        
+        mod_entry["versions"][modpack_dir]["metadata"]["side"] = new_side
+        print(f"Updated side for {mod_slug} in {modpack_dir} to {new_side}")
+        
+        # Update TOML file for this modpack
+        mod_file = packwiz.find_mod_file(modpack_dir, mod_slug)
+        if mod_file:
+            if packwiz.update_mod_side_in_toml(modpack_dir, mod_file, new_side):
+                print(f"  Updated TOML file {mod_file}")
+            else:
+                print(f"  Warning: Could not update TOML file {mod_file}")
+        else:
+            print(f"  Warning: Could not find TOML file for {mod_slug} in {modpack_dir}")
+    else:
+        # Update canonical side
+        mod_entry["side"] = new_side
+        print(f"Updated canonical side for {mod_slug} to {new_side}")
+        
+        # Update TOML files in all modpacks where this mod is installed
+        modpacks = mod_entry.get("modpacks", {})
+        installed_in = modpacks.get("installed_in", [])
+        
+        for pack_dir in installed_in:
+            # Check if there's version-specific side (don't overwrite)
+            version_side = None
+            if "versions" in mod_entry:
+                version_meta = mod_entry["versions"].get(pack_dir, {}).get("metadata", {})
+                version_side = version_meta.get("side")
+            
+            # Only update TOML if there's no version-specific side
+            if not version_side:
+                mod_file = packwiz.find_mod_file(pack_dir, mod_slug)
+                if mod_file:
+                    if packwiz.update_mod_side_in_toml(pack_dir, mod_file, new_side):
+                        print(f"  Updated TOML file in {pack_dir}")
+                    else:
+                        print(f"  Warning: Could not update TOML file in {pack_dir}")
+
+    # Save the updated mods data
+    data.save_mods(mods_data)
     return 0
 
 

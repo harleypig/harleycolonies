@@ -101,6 +101,19 @@ def main():
     )
     sync.add_argument("--from-dir", required=True, help="Modpack directory to import from")
 
+    # Side management
+    side_cmd = subparsers.add_parser("side", help="Update mod side")
+    side_cmd.add_argument("mod_slug", help="Mod slug")
+    side_cmd.add_argument(
+        "new_side",
+        choices=["client", "server", "both"],
+        help="New side value (client/server/both)",
+    )
+    side_cmd.add_argument(
+        "--modpack",
+        help="Update side for specific modpack (version-specific)",
+    )
+
     args = parser.parse_args()
 
     if not args.command:
@@ -151,6 +164,10 @@ def main():
             return commands.list_mods(modpack=args.modpack, mod_slug=args.mod)
         elif args.command == "sync":
             return commands.sync_from_modpack(args.from_dir)
+        elif args.command == "side":
+            return commands.update_mod_side(
+                args.mod_slug, args.new_side, modpack_dir=args.modpack
+            )
         else:
             parser.print_help()
             return 1

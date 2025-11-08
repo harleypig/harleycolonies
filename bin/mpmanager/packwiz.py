@@ -4,8 +4,35 @@ Packwiz integration for modpack operations.
 """
 
 import subprocess
+import sys
 from pathlib import Path
 from tomlkit import parse, dumps
+
+
+def _convert_tomlkit_to_primitive(value):
+    """Convert tomlkit objects to plain Python primitives.
+    
+    Recursively processes dicts, lists, and tomlkit objects to ensure
+    all values are plain Python types that can be safely serialized
+    to YAML.
+    """
+    # Check if value is a tomlkit object (has unwrap method)
+    if hasattr(value, "unwrap"):
+        return _convert_tomlkit_to_primitive(value.unwrap())
+    
+    # Handle dicts
+    if isinstance(value, dict):
+        return {
+            _convert_tomlkit_to_primitive(k): _convert_tomlkit_to_primitive(v)
+            for k, v in value.items()
+        }
+    
+    # Handle lists
+    if isinstance(value, list):
+        return [_convert_tomlkit_to_primitive(item) for item in value]
+    
+    # Return primitive types as-is
+    return value
 
 
 def get_repo_root():
@@ -114,7 +141,8 @@ def get_mod_side_from_packwiz(modpack_dir, mod_file):
     try:
         with open(mod_toml_path, "r") as f:
             data = parse(f.read())
-            return data.get("side")
+            side = data.get("side")
+            return _convert_tomlkit_to_primitive(side) if side is not None else None
     except Exception:
         return None
 
@@ -177,6 +205,102 @@ def create_modpack(modpack_dir, mc_version, modloader, modloader_version=None):
     return result
 
 
+def extract_metadata_from_toml(toml_data):
+    """Extract metadata from packwiz TOML data.
+    
+    Returns a dict with extracted metadata fields:
+    - curseforge_id: from update.curseforge.project-id
+    - modrinth_id: from update.modrinth.project-id (if present)
+    - side: from top-level 'side' field
+    - website: from metadata.curseforge.website or metadata.modrinth.url
+    - wiki: from metadata.curseforge.wiki
+    - issues: from metadata.curseforge.issues
+    - source: from metadata.curseforge.source
+    - categories: from metadata.curseforge.categories
+    """
+    metadata = {}
+    
+    # Extract side (treat as metadata even though it's separate in TOML)
+    side = toml_data.get("side")
+    if side is not None:
+        metadata["side"] = _convert_tomlkit_to_primitive(side)
+    
+    # Extract CurseForge project ID
+    update_cf = toml_data.get("update", {}).get("curseforge", {})
+    if update_cf:
+        project_id = update_cf.get("project-id")
+        if project_id is not None:
+            metadata["curseforge_id"] = _convert_tomlkit_to_primitive(project_id)
+    
+    # Extract Modrinth project ID
+    update_mr = toml_data.get("update", {}).get("modrinth", {})
+    if update_mr:
+        project_id = update_mr.get("project-id")
+        if project_id is not None:
+            metadata["modrinth_id"] = _convert_tomlkit_to_primitive(project_id)
+    
+    # Extract CurseForge metadata
+    meta_cf = toml_data.get("metadata", {}).get("curseforge", {})
+    if meta_cf:
+        for key in ["website", "wiki", "issues", "source"]:
+            value = meta_cf.get(key)
+            if value is not None:
+                metadata[key] = _convert_tomlkit_to_primitive(value)
+        
+        categories = meta_cf.get("categories")
+        if categories is not None:
+            metadata["categories"] = _convert_tomlkit_to_primitive(categories)
+    
+    # Extract Modrinth metadata
+    meta_mr = toml_data.get("metadata", {}).get("modrinth", {})
+    if meta_mr:
+        # Modrinth uses "url" instead of "website"
+        url = meta_mr.get("url")
+        if url is not None and "website" not in metadata:
+            metadata["website"] = _convert_tomlkit_to_primitive(url)
+    
+    return metadata
+
+
+def update_mod_side_in_toml(modpack_dir, mod_file, new_side):
+    """Update the 'side' field in a packwiz TOML file."""
+    modpack_path = get_modpack_path(modpack_dir)
+    mod_toml_path = modpack_path / "mods" / mod_file
+    
+    if not mod_toml_path.exists():
+        return False
+    
+    try:
+        with open(mod_toml_path, "r") as f:
+            toml_data = parse(f.read())
+        
+        # Update the side field
+        toml_data["side"] = new_side
+        
+        with open(mod_toml_path, "w") as f:
+            f.write(dumps(toml_data))
+        
+        return True
+    except Exception as e:
+        print(f"Error updating TOML file {mod_file}: {e}", file=sys.stderr)
+        return False
+
+
+def get_mod_toml_data(modpack_dir, mod_file):
+    """Get full TOML data for a mod file."""
+    modpack_path = get_modpack_path(modpack_dir)
+    mod_toml_path = modpack_path / "mods" / mod_file
+    
+    if not mod_toml_path.exists():
+        return None
+    
+    try:
+        with open(mod_toml_path, "r") as f:
+            return parse(f.read())
+    except Exception:
+        return None
+
+
 def get_all_mods_in_modpack(modpack_dir):
     """Get list of all mod files in modpack."""
     modpack_path = get_modpack_path(modpack_dir)
@@ -191,10 +315,11 @@ def get_all_mods_in_modpack(modpack_dir):
             with open(mod_file, "r") as f:
                 data = parse(f.read())
                 mod_name = data.get("name", mod_file.stem)
+                mod_side = data.get("side")
                 mod_files.append({
                     "file": mod_file.name,
-                    "name": mod_name,
-                    "side": data.get("side"),
+                    "name": _convert_tomlkit_to_primitive(mod_name),
+                    "side": _convert_tomlkit_to_primitive(mod_side) if mod_side is not None else None,
                 })
         except Exception:
             continue

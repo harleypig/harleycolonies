@@ -4,6 +4,7 @@ Wiki page generation for mods.
 """
 
 from pathlib import Path
+from jinja2 import Environment, FileSystemLoader
 
 
 def get_repo_root():
@@ -28,6 +29,14 @@ def has_custom_wiki(mod_slug):
     return wiki_file.exists()
 
 
+def _get_template():
+    """Get Jinja2 template for wiki pages."""
+    script_dir = Path(__file__).parent.parent
+    template_dir = script_dir
+    env = Environment(loader=FileSystemLoader(str(template_dir)))
+    return env.get_template("wiki-page-template.j2")
+
+
 def generate_simple_wiki_page(mod_slug, mod_data):
     """Generate simple wiki page for mod."""
     name = mod_data.get("name", mod_slug)
@@ -37,27 +46,13 @@ def generate_simple_wiki_page(mod_slug, mod_data):
     modpacks = mod_data.get("modpacks", {})
     installed_in = modpacks.get("installed_in", [])
 
-    content = f"""---
-title: {name}
----
-
-## {name}
-
-{description}
-
-### Side
-
-{side}
-
-### Modpacks
-
-"""
-    if installed_in:
-        content += "This mod is installed in the following modpacks:\n\n"
-        for modpack in installed_in:
-            content += f"- {modpack}\n"
-    else:
-        content += "This mod is not currently installed in any modpacks.\n"
+    template = _get_template()
+    content = template.render(
+        name=name,
+        description=description,
+        side=side,
+        installed_in=installed_in,
+    )
 
     return content
 
