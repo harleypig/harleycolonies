@@ -32,7 +32,7 @@ def has_custom_wiki(mod_slug):
 def _get_template():
     """Get Jinja2 template for wiki pages."""
     script_dir = Path(__file__).parent.parent
-    template_dir = script_dir
+    template_dir = script_dir / "resources"
     env = Environment(loader=FileSystemLoader(str(template_dir)))
     return env.get_template("wiki-page-template.j2")
 
@@ -40,7 +40,7 @@ def _get_template():
 def _get_index_template():
     """Get Jinja2 template for mods index page."""
     script_dir = Path(__file__).parent.parent
-    template_dir = script_dir
+    template_dir = script_dir / "resources"
     env = Environment(loader=FileSystemLoader(str(template_dir)))
     return env.get_template("mods-index-template.j2")
 

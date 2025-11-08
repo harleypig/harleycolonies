@@ -12,7 +12,7 @@ directory.
 **Usage:**
 
 ```bash
-./bin/gen-modlist
+bin/gen-modlist
 ```
 
 This script scans all `.toml` files in the modpack directory (excluding
@@ -46,74 +46,74 @@ generating modpacks, and creating wiki pages.
 
 ```bash
 # Add a new mod
-./bin/modpack-manager add <mod-slug> [--curseforge-id ID] [--modrinth-id ID] [--side SIDE]
+bin/modpack-manager add <mod-slug> [--curseforge-id ID] [--modrinth-id ID] [--side SIDE]
 
 # Update mod information
-./bin/modpack-manager update <mod-slug> [--side SIDE]
+bin/modpack-manager update <mod-slug> [--side SIDE]
 
 # Remove a mod
-./bin/modpack-manager remove <mod-slug>
+bin/modpack-manager remove <mod-slug>
 
 # List all mods or show specific mod information
-./bin/modpack-manager list [--modpack <modpack-dir>] [--mod <mod-slug>]
+bin/modpack-manager list [--modpack <modpack-dir>] [--mod <mod-slug>]
 
 # Show categorized list (all categories)
-./bin/modpack-manager list --categories
+bin/modpack-manager list --categories
 
 # Show categorized list for specific categories
-./bin/modpack-manager list --categories adventure-rpg library-api
-./bin/modpack-manager list --categories adventure-rpg,library-api
+bin/modpack-manager list --categories adventure-rpg library-api
+bin/modpack-manager list --categories adventure-rpg,library-api
 
 # Show alphabetized list of all category names
-./bin/modpack-manager list --category-names
+bin/modpack-manager list --category-names
 
 # Update mod side (canonical or version-specific)
-./bin/modpack-manager side <mod-slug> <new-side> [--modpack <modpack-dir>]
+bin/modpack-manager side <mod-slug> <new-side> [--modpack <modpack-dir>]
 ```
 
 #### Modpack Operations
 
 ```bash
 # Create a new modpack
-./bin/modpack-manager modpack create <modpack-dir> --mc-version VERSION --modloader LOADER [--modloader-version VERSION]
+bin/modpack-manager modpack create <modpack-dir> --mc-version VERSION --modloader LOADER [--modloader-version VERSION]
 
 # Add mod to modpack
-./bin/modpack-manager modpack add <modpack-dir> <mod-slug>
+bin/modpack-manager modpack add <modpack-dir> <mod-slug>
 
 # Remove mod from modpack
-./bin/modpack-manager modpack remove <modpack-dir> <mod-slug>
+bin/modpack-manager modpack remove <modpack-dir> <mod-slug>
 
 # Mark mod as rejected in modpack
-./bin/modpack-manager modpack reject <modpack-dir> <mod-slug> --reason "Reason"
+bin/modpack-manager modpack reject <modpack-dir> <mod-slug> --reason "Reason"
 
 # Sync modpack with mods.yaml (add/remove mods)
-./bin/modpack-manager modpack sync <modpack-dir>
+bin/modpack-manager modpack sync <modpack-dir>
 
 # Export modpack using packwiz
-./bin/modpack-manager modpack export <modpack-dir>
+bin/modpack-manager modpack export <modpack-dir>
 ```
 
 #### Wiki Generation
 
 ```bash
 # Generate wiki page for a specific mod
-./bin/modpack-manager wiki --mod <mod-slug>
+bin/modpack-manager wiki --mod <mod-slug>
 
 # Generate all wiki pages
-./bin/modpack-manager wiki
+bin/modpack-manager wiki
 
 # Generate all wiki pages (destructive: clears pages/mods and removes pages/mods.md)
-./bin/modpack-manager wiki --generate
+bin/modpack-manager wiki --generate
 
 # Generate mods index page (pages/mods.md)
-./bin/modpack-manager wiki --index
+bin/modpack-manager wiki --index
 ```
 
 #### Syncing from Existing Modpacks
 
 ```bash
 # Import mods from an existing packwiz directory
-./bin/modpack-manager sync --from <modpack-dir>
+bin/modpack-manager sync --from <modpack-dir>
 ```
 
 This command will:
@@ -127,43 +127,43 @@ This command will:
 
 ```bash
 # Add a mod with CurseForge ID and side
-./bin/modpack-manager add jei --curseforge-id 238222 --side both
+bin/modpack-manager add jei --curseforge-id 238222 --side both
 
 # Create a new modpack
-./bin/modpack-manager modpack create harleycolonies-1.21.1 --mc-version 1.21.1 --modloader forge
+bin/modpack-manager modpack create harleycolonies-1.21.1 --mc-version 1.21.1 --modloader forge
 
 # Add mod to modpack
-./bin/modpack-manager modpack add harleycolonies-1.20.1-0.1.2 jei
+bin/modpack-manager modpack add harleycolonies-1.20.1-0.1.2 jei
 
 # Sync modpack with mods.yaml
-./bin/modpack-manager modpack sync harleycolonies-1.20.1-0.1.2
+bin/modpack-manager modpack sync harleycolonies-1.20.1-0.1.2
 
 # Import from existing modpack
-./bin/modpack-manager sync --from harleycolonies-1.20.1-0.1.2
+bin/modpack-manager sync --from harleycolonies-1.20.1-0.1.2
 
 # Update mod side for specific modpack
-./bin/modpack-manager side minecolonies both --modpack harleycolonies-1.20.1-0.1.2
+bin/modpack-manager side minecolonies both --modpack harleycolonies-1.20.1-0.1.2
 
 # Generate wiki page for a mod
-./bin/modpack-manager wiki --mod jei
+bin/modpack-manager wiki --mod jei
 
 # Generate mods index page
-./bin/modpack-manager wiki --index
+bin/modpack-manager wiki --index
 
 # List all mods
-./bin/modpack-manager list
+bin/modpack-manager list
 
 # List mods in a modpack
-./bin/modpack-manager list --modpack harleycolonies-1.20.1-0.1.2
+bin/modpack-manager list --modpack harleycolonies-1.20.1-0.1.2
 
 # Show categorized list of all mods
-./bin/modpack-manager list --categories
+bin/modpack-manager list --categories
 
 # Show categorized list for specific categories
-./bin/modpack-manager list --categories adventure-rpg,library-api
+bin/modpack-manager list --categories adventure-rpg,library-api
 
 # Show available category names
-./bin/modpack-manager list --category-names
+bin/modpack-manager list --category-names
 ```
 
 ### Metadata System

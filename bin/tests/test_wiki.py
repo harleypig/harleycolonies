@@ -42,8 +42,9 @@ def test_has_custom_wiki_true(temp_repo):
 def test_generate_simple_wiki_page(temp_repo, sample_mod_data):
     """Test generating simple wiki page with Jinja2 template."""
     # Create template file
-    template_file = temp_repo / "bin" / "wiki-page-template.j2"
-    template_file.parent.mkdir(parents=True, exist_ok=True)
+    resources_dir = temp_repo / "bin" / "resources"
+    resources_dir.mkdir(parents=True, exist_ok=True)
+    template_file = resources_dir / "wiki-page-template.j2"
     template_file.write_text("""---
 title: {{ name }}
 ---
