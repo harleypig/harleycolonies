@@ -16,7 +16,7 @@ def add_mod(mod_slug, curseforge_id=None, modrinth_id=None, side=None):
 
     # Check if mod already exists
     existing_mod = data.get_mod(mod_slug)
-    if existing_mod:
+    if existing_mod is not None:
         print(f"Error: Mod {mod_slug} already exists")
         return 1
 
@@ -58,7 +58,7 @@ def update_mod(mod_slug, side=None):
     print(f"Updating mod: {mod_slug}")
 
     mod = data.get_mod(mod_slug)
-    if not mod:
+    if mod is None:
         print(f"Error: Mod {mod_slug} not found")
         return 1
 
@@ -94,7 +94,7 @@ def modpack_add(modpack_dir, mod_slug):
 
     # Check if mod exists
     mod = data.get_mod(mod_slug)
-    if not mod:
+    if mod is None:
         print(f"Error: Mod {mod_slug} not found. Add it first with 'mod-manager add'")
         return 1
 
@@ -166,7 +166,7 @@ def modpack_reject(modpack_dir, mod_slug, reason):
 
     # Check if mod exists
     mod = data.get_mod(mod_slug)
-    if not mod:
+    if mod is None:
         print(f"Error: Mod {mod_slug} not found. Add it first with 'mod-manager add'")
         return 1
 
@@ -271,7 +271,7 @@ def generate_wiki(regenerate=False, mod_slug=None):
     if mod_slug:
         print(f"Generating wiki page for {mod_slug}")
         mod = data.get_mod(mod_slug)
-        if not mod:
+        if mod is None:
             print(f"Error: Mod {mod_slug} not found")
             return 1
         wiki.generate_wiki_page(mod_slug, mod)
@@ -300,7 +300,7 @@ def list_mods(modpack=None, mod_slug=None):
     elif mod_slug:
         print(f"Information for mod: {mod_slug}")
         mod = data.get_mod(mod_slug)
-        if not mod:
+        if mod is None:
             print(f"Error: Mod {mod_slug} not found")
             return 1
         name = mod.get("name", mod_slug)
