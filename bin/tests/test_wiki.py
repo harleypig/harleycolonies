@@ -47,6 +47,9 @@ def test_generate_simple_wiki_page(temp_repo, sample_mod_data):
     template_file = resources_dir / "mod-page.template.j2"
     template_file.write_text("""---
 title: {{ name }}
+{% if categories %}categories:
+{% for category in categories %}  - {{ category }}
+{% endfor %}{% endif %}
 ---
 
 ## {{ name }}

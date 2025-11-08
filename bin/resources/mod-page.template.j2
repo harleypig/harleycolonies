@@ -1,6 +1,6 @@
 ---
 title: {{ name }}
-categories: {{ categories | tojson }}
+{% if categories %}categories: {{ categories | tojson | replace('"', '') | replace('[', '[') | replace(']', ']') }}{% endif %}
 ---
 
 ## {{ name }}
