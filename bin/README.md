@@ -104,6 +104,9 @@ generating modpacks, and creating wiki pages.
 
 # Regenerate all wiki pages
 ./bin/modpack-manager wiki --regenerate
+
+# Generate mods index page (pages/mods.md)
+./bin/modpack-manager wiki --index
 ```
 
 #### Syncing from Existing Modpacks
