@@ -119,3 +119,67 @@ def test_generate_all_wiki_pages(temp_repo, sample_mod_data):
     assert len(generated) == 2
     assert all(p.exists() for p in generated)
 
+
+def test_generate_mods_index(temp_repo, sample_mod_data):
+    """Test generating mods index page."""
+    from mpmanager import data
+
+    # Set up mods with categories
+    mod_data_1 = sample_mod_data.copy()
+    mod_data_1["metadata"] = {
+        "categories": ["adventure-rpg", "library-api"]
+    }
+    data.set_mod("test-mod-1", mod_data_1)
+    
+    mod_data_2 = {"name": "Test Mod 2"}
+    mod_data_2["metadata"] = {
+        "categories": ["library-api"]
+    }
+    data.set_mod("test-mod-2", mod_data_2)
+    
+    mod_data_3 = {"name": "Test Mod 3"}
+    # No categories for test-mod-3
+    data.set_mod("test-mod-3", mod_data_3)
+
+    # Generate index
+    index_path = wiki.generate_mods_index()
+
+    assert index_path.exists()
+    content = index_path.read_text()
+
+    # Check that categories are present
+    assert "## adventure-rpg" in content
+    assert "## library-api" in content
+    assert "## Uncategorized" in content
+
+    # Check that mods are linked
+    assert "[Test Mod](mods/test-mod-1.md)" in content
+    assert "[Test Mod 2](mods/test-mod-2.md)" in content
+    assert "[Test Mod 3](mods/test-mod-3.md)" in content
+
+    # Check that Test Mod appears in both categories (duplicate allowed)
+    adventure_section = content.split("## adventure-rpg")[1].split("##")[0]
+    library_section = content.split("## library-api")[1].split("##")[0]
+    assert "Test Mod" in adventure_section
+    assert "Test Mod" in library_section
+
+
+def test_generate_mods_index_no_categories(temp_repo):
+    """Test generating mods index page with no categorized mods."""
+    from mpmanager import data
+
+    # Add mods without categories
+    data.set_mod("test-mod-1", {"name": "Test Mod 1"})
+    data.set_mod("test-mod-2", {"name": "Test Mod 2"})
+
+    # Generate index
+    index_path = wiki.generate_mods_index()
+
+    assert index_path.exists()
+    content = index_path.read_text()
+
+    # Check that uncategorized section exists
+    assert "## Uncategorized" in content
+    assert "[Test Mod 1](mods/test-mod-1.md)" in content
+    assert "[Test Mod 2](mods/test-mod-2.md)" in content
+
