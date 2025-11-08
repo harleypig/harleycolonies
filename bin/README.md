@@ -201,6 +201,64 @@ The script automatically checks for required dependencies and installs them
 from `requirements.txt` if missing. This ensures the script works correctly
 even after cloning the repository on a new system.
 
+### Relationship with Packwiz
+
+`modpack-manager` is designed to **supplement** packwiz, not replace it.
+Packwiz handles the core modpack management, while `modpack-manager` adds
+additional features like versioning, metadata management, and wiki
+generation.
+
+#### What Packwiz Handles
+
+- **Mod File Management**: Downloads and manages mod `.jar` files
+- **Mod Metadata Storage**: Stores mod information in `.pw.toml` files
+- **Mod Versioning**: Tracks mod versions within a single modpack
+- **Mod Dependencies**: Manages mod dependencies and conflicts
+- **Pack Metadata**: Manages pack information (Minecraft version, modloader,
+  etc.) in `pack.toml`
+- **Mod Side Settings**: Stores mod side (client/server/both) in TOML files
+- **Export Functionality**: Exports modpacks for distribution
+- **Update Management**: Handles mod updates from CurseForge/Modrinth
+
+#### What modpack-manager Handles
+
+- **Mod Metadata Centralization**: Stores canonical mod metadata in
+  `mods/mods.yaml`
+- **Modpack Versioning**: Manages multiple modpack versions with different
+  mod versions
+- **Version-Specific Metadata**: Tracks metadata differences between
+  modpack versions
+- **Wiki Generation**: Generates wiki pages from templates
+- **Mod Categorization**: Organizes mods by categories for documentation
+- **Side Overrides**: Can override packwiz side settings and update TOML
+  files
+- **Metadata Extraction**: Extracts metadata from packwiz TOML files and
+  stores in YAML format
+
+#### Where They Overlap
+
+- **Mod Side Management**: Both handle mod side settings. `modpack-manager`
+  can override packwiz side settings and automatically update the TOML
+  files.
+- **Mod Metadata**: Packwiz stores metadata in TOML, while
+  `modpack-manager` extracts and stores it in YAML. The YAML format is
+  used for wiki generation and cross-modpack analysis.
+- **Modpack Structure**: `modpack-manager` works with packwiz modpack
+  directories and respects packwiz's file structure.
+
+#### Workflow Integration
+
+The typical workflow is:
+1. Use packwiz to manage mod files, versions, and dependencies within a
+   modpack
+2. Use `modpack-manager sync --from` to extract metadata from packwiz TOML
+   files into the centralized YAML format
+3. Use `modpack-manager` to manage mod metadata across multiple modpack
+   versions
+4. Use `modpack-manager wiki` to generate documentation from the
+   centralized metadata
+5. Use packwiz to export modpacks for distribution
+
 ### Wiki Templates
 
 Wiki pages are generated using Jinja2 templates. The template files are
