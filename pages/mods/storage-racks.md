@@ -4,8 +4,6 @@ title: Storage Racks
 
 ## Storage Racks
 
-
-
 ### Side
 
 both
@@ -15,3 +13,4 @@ both
 This mod is installed in the following modpacks:
 
 - harleycolonies-1.20.1-0.1.2
+
