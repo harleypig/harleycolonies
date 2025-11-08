@@ -1,10 +1,6 @@
 hash-format = "sha256"
 
 [[files]]
-file = "README.md"
-hash = "15f0ae417e2463e8f098e4dc1567b09a0caaf240e886a1827d52f36c2ba32247"
-
-[[files]]
 file = "mods/actually-harvest.pw.toml"
 hash = "483c49e7798a6669c6e9688baf83853f07d384d98eb6a74ade4b713ab171f8a0"
 metafile = true
@@ -197,6 +193,11 @@ metafile = true
 [[files]]
 file = "mods/farsight.pw.toml"
 hash = "3138c13c61cca083b45ba2598c2407194ba5ea16d2a610968527eafa021c4635"
+metafile = true
+
+[[files]]
+file = "mods/ferritecore.pw.toml"
+hash = "942b02525962980b6176677cca162d27c1210b686985ad11db0055fe39d42a7d"
 metafile = true
 
 [[files]]
