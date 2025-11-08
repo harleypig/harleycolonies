@@ -26,9 +26,104 @@ harleycolonies/
 - Use lowercase names with hyphens if needed
 - Make scripts executable with shebang line
 
+## Mod Manager
+
+The `mod-manager` script provides a unified interface for managing mods,
+generating modpacks, and creating wiki pages.
+
+### Basic Usage
+
+```bash
+# Add a new mod
+./bin/mod-manager add <mod-slug> [--curseforge-id ID] [--modrinth-id ID] [--side SIDE]
+
+# Update mod information
+./bin/mod-manager update <mod-slug> [--side SIDE]
+
+# Remove a mod
+./bin/mod-manager remove <mod-slug>
+
+# List all mods
+./bin/mod-manager list
+
+# Show information for a specific mod
+./bin/mod-manager list --mod <mod-slug>
+```
+
+### Modpack Operations
+
+```bash
+# Create a new modpack
+./bin/mod-manager modpack create <modpack-dir> --mc-version VERSION --modloader LOADER [--modloader-version VERSION]
+
+# Add mod to modpack
+./bin/mod-manager modpack add <modpack-dir> <mod-slug>
+
+# Remove mod from modpack
+./bin/mod-manager modpack remove <modpack-dir> <mod-slug>
+
+# Mark mod as rejected in modpack
+./bin/mod-manager modpack reject <modpack-dir> <mod-slug> --reason "Reason"
+
+# Sync modpack with mods.yaml (add/remove mods)
+./bin/mod-manager modpack sync <modpack-dir>
+
+# Export modpack
+./bin/mod-manager modpack export <modpack-dir>
+
+# List mods in a modpack
+./bin/mod-manager list --modpack <modpack-dir>
+```
+
+### Wiki Generation
+
+```bash
+# Generate wiki page for a specific mod
+./bin/mod-manager wiki --mod <mod-slug>
+
+# Generate all wiki pages
+./bin/mod-manager wiki
+```
+
+### Syncing from Existing Modpacks
+
+```bash
+# Import mods from an existing packwiz directory
+./bin/mod-manager sync --from-dir <modpack-dir>
+```
+
+### Mod Data Structure
+
+Mod information is stored in `mods/mods.yaml` with the following structure:
+
+```yaml
+mods:
+  <mod-slug>:
+    name: "Display Name"  # Optional
+    description: "Mod description"  # Optional
+    side: "client" | "server" | "both"  # Auto-detected or manual
+    curseforge_id: <project-id>  # Optional
+    modrinth_id: <project-id>  # Optional
+    modpacks:
+      installed_in:
+        - "harleycolonies-1.20.1-0.1.2"
+      rejected_in:
+        - modpack: "harleycolonies-1.20.1-0.1.2"
+          reason: "Conflicts with other mods"
+```
+
+### Custom Mod Files
+
+Custom configuration files and wiki content can be stored in `mods/<mod-slug>/`:
+
+- `mods/<mod-slug>/config/` - Custom config files (copied to modpack when generating)
+- `mods/<mod-slug>/wiki.md` - Custom wiki page content (used instead of simple page)
+
 ## Packwiz Conventions
 
-### Mod Addition Process
+### Mod Addition Process (Legacy)
+
+For manual packwiz operations:
 
 1. Use `packwiz` commands to add mods:
    ```bash
@@ -42,7 +137,12 @@ harleycolonies/
 
 4. Regenerate mod list: `./bin/gen-modlist`
 
-### Mod Removal Process
+**Note:** It's recommended to use `mod-manager` instead for better tracking
+and automation.
+
+### Mod Removal Process (Legacy)
+
+For manual packwiz operations:
 
 1. Use `packwiz` commands to remove mods:
    ```bash
@@ -53,11 +153,15 @@ harleycolonies/
 
 3. Update documentation accordingly
 
+**Note:** It's recommended to use `mod-manager modpack remove` instead.
+
 ### Mod Configuration
 
 - Mod-specific configurations should be documented in `docs/mods/`
 - Include configuration file locations when known
 - Document any custom configurations or overrides
+- Custom configs can be stored in `mods/<mod-slug>/config/` for automatic
+  copying to modpacks
 
 ## Documentation Standards
 

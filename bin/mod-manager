@@ -1,0 +1,34 @@
+#!/usr/bin/env python3
+"""
+Mod Manager - Manage mods, generate modpacks, and create wiki pages.
+
+This script loads a virtual environment from bin/venv and runs the mod_manager
+package.
+"""
+
+import os
+import sys
+from pathlib import Path
+
+# Get the script directory (bin/)
+SCRIPT_DIR = Path(__file__).resolve().parent
+REPO_ROOT = SCRIPT_DIR.parent
+
+# Add bin/mod_manager to Python path
+MOD_MANAGER_DIR = SCRIPT_DIR / "mod_manager"
+sys.path.insert(0, str(MOD_MANAGER_DIR))
+
+# Try to activate venv if it exists
+VENV_DIR = SCRIPT_DIR / "venv"
+if VENV_DIR.exists():
+    venv_python = VENV_DIR / "bin" / "python"
+    if venv_python.exists():
+        # Use venv Python if available
+        os.execv(str(venv_python), [str(venv_python)] + sys.argv)
+
+# If no venv, use system Python
+# Import and run the CLI
+from mod_manager.cli import main
+
+if __name__ == "__main__":
+    sys.exit(main())
