@@ -57,6 +57,16 @@ generating modpacks, and creating wiki pages.
 # List all mods or show specific mod information
 ./bin/modpack-manager list [--modpack <modpack-dir>] [--mod <mod-slug>]
 
+# Show categorized list (all categories)
+./bin/modpack-manager list --categories
+
+# Show categorized list for specific categories
+./bin/modpack-manager list --categories adventure-rpg library-api
+./bin/modpack-manager list --categories adventure-rpg,library-api
+
+# Show alphabetized list of all category names
+./bin/modpack-manager list --category-names
+
 # Update mod side (canonical or version-specific)
 ./bin/modpack-manager side <mod-slug> <new-side> [--modpack <modpack-dir>]
 ```
@@ -139,6 +149,15 @@ This command will:
 
 # List mods in a modpack
 ./bin/modpack-manager list --modpack harleycolonies-1.20.1-0.1.2
+
+# Show categorized list of all mods
+./bin/modpack-manager list --categories
+
+# Show categorized list for specific categories
+./bin/modpack-manager list --categories adventure-rpg,library-api
+
+# Show available category names
+./bin/modpack-manager list --category-names
 ```
 
 ### Metadata System

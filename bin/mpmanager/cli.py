@@ -94,6 +94,16 @@ def main():
     list_cmd = subparsers.add_parser("list", help="List mods or modpacks")
     list_cmd.add_argument("--modpack", help="List mods in modpack")
     list_cmd.add_argument("--mod", help="Show information for specific mod")
+    list_cmd.add_argument(
+        "--categories",
+        nargs="*",
+        help="Show categorized list. Use without arguments for all categories, or specify category names (comma or space separated)",
+    )
+    list_cmd.add_argument(
+        "--category-names",
+        action="store_true",
+        help="Show alphabetized list of all category names",
+    )
 
     # Sync from existing modpack
     sync = subparsers.add_parser(
@@ -161,7 +171,29 @@ def main():
                 regenerate=args.regenerate, mod_slug=args.mod
             )
         elif args.command == "list":
-            return commands.list_mods(modpack=args.modpack, mod_slug=args.mod)
+            categories = None
+            if args.categories is not None:
+                # Parse categories - handle both comma and space separated
+                if len(args.categories) == 0:
+                    # --categories with no args means show all
+                    categories = []
+                else:
+                    # Parse comma-separated or space-separated categories
+                    categories = []
+                    for cat_arg in args.categories:
+                        # Split by comma if present
+                        if "," in cat_arg:
+                            categories.extend([c.strip() for c in cat_arg.split(",")])
+                        else:
+                            categories.append(cat_arg.strip())
+                    categories = [c for c in categories if c]  # Remove empty strings
+            
+            return commands.list_mods(
+                modpack=args.modpack,
+                mod_slug=args.mod,
+                categories=categories,
+                category_names=args.category_names,
+            )
         elif args.command == "sync":
             # Strip trailing slash from modpack directory
             modpack_dir = args.from_dir.rstrip("/")

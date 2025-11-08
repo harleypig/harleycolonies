@@ -283,8 +283,101 @@ def generate_wiki(regenerate=False, mod_slug=None):
     return 0
 
 
-def list_mods(modpack=None, mod_slug=None):
+def list_mods(modpack=None, mod_slug=None, categories=None, category_names=False):
     """List mods or modpack information."""
+    if category_names:
+        # Show alphabetized list of all category names
+        mods_data = data.load_mods()
+        all_categories = set()
+        for mod_info in mods_data.get("mods", {}).values():
+            metadata = mod_info.get("metadata", {})
+            mod_categories = metadata.get("categories", [])
+            all_categories.update(mod_categories)
+        
+        if all_categories:
+            sorted_categories = sorted(all_categories)
+            print("Available categories:")
+            for cat in sorted_categories:
+                print(f"  - {cat}")
+        else:
+            print("No categories found in mod metadata.")
+        return 0
+    
+    if categories is not None:
+        # Show categorized list
+        mods_data = data.load_mods()
+        
+        # Build list of mods by category
+        # Structure: {category: [(mod_name, mod_slug, website)]}
+        categorized_mods = {}
+        
+        for slug, mod_info in mods_data.get("mods", {}).items():
+            name = mod_info.get("name", slug)
+            metadata = mod_info.get("metadata", {})
+            website = metadata.get("website", "")
+            mod_categories = metadata.get("categories", [])
+            
+            # Get mod class from website URL (like gen-modlist does)
+            if website:
+                # Extract class from URL: https://www.curseforge.com/minecraft/mc-mods/.../class
+                parts = website.rstrip("/").split("/")
+                if len(parts) >= 2:
+                    mod_class = parts[-2]  # Second to last part
+                else:
+                    mod_class = "Unknown Class"
+            else:
+                mod_class = "Unknown Class"
+            
+            # Filter categories if specified
+            if categories:
+                mod_categories = [c for c in mod_categories if c in categories]
+            
+            # Add mod to each category it belongs to
+            for category in mod_categories:
+                if category not in categorized_mods:
+                    categorized_mods[category] = []
+                categorized_mods[category].append((mod_class, name, website))
+        
+        if not categorized_mods:
+            if categories:
+                print(f"No mods found in specified categories: {', '.join(categories)}")
+            else:
+                print("No mods with categories found.")
+            return 0
+        
+        # Group by mod class, then by category
+        # Structure: {mod_class: {category: set((name, website))}}
+        by_class = {}
+        for category, mod_list in categorized_mods.items():
+            for mod_class, name, website in mod_list:
+                if mod_class not in by_class:
+                    by_class[mod_class] = {}
+                if category not in by_class[mod_class]:
+                    by_class[mod_class][category] = set()
+                by_class[mod_class][category].add((name, website))
+        
+        # Sort mod classes
+        sorted_classes = sorted(by_class.keys())
+        
+        # Print categorized list
+        print("# ModList for HarleyColonies\n")
+        for mod_class in sorted_classes:
+            print(f"## {mod_class}\n")
+            categories_in_class = sorted(by_class[mod_class].keys())
+            
+            for category in categories_in_class:
+                print(f"### {category}\n")
+                # Convert set to sorted list
+                mods_in_category = sorted(list(by_class[mod_class][category]), key=lambda x: x[0])
+                for name, website in mods_in_category:
+                    if website:
+                        print(f"- [{name}]({website})")
+                    else:
+                        print(f"- {name}")
+                print()
+        
+        return 0
+    
     if modpack:
         print(f"Mods in modpack: {modpack}")
         mods_data = data.load_mods()

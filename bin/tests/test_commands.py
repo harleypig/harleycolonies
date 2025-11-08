@@ -134,3 +134,95 @@ def test_list_mods_not_found(temp_repo):
     result = commands.list_mods(mod_slug="nonexistent")
     assert result == 1
 
+
+def test_list_category_names(temp_repo):
+    """Test listing category names."""
+    # Add mods with categories
+    commands.add_mod("test-mod-1", curseforge_id=12345)
+    commands.add_mod("test-mod-2", curseforge_id=12346)
+    
+    # Set metadata with categories
+    mods_data = data.load_mods()
+    mods_data["mods"]["test-mod-1"]["metadata"] = {
+        "categories": ["adventure-rpg", "library-api"]
+    }
+    mods_data["mods"]["test-mod-2"]["metadata"] = {
+        "categories": ["library-api", "technology"]
+    }
+    data.save_mods(mods_data)
+    
+    result = commands.list_mods(category_names=True)
+    assert result == 0
+
+
+def test_list_categories_all(temp_repo):
+    """Test listing all categories."""
+    # Add mods with categories
+    commands.add_mod("test-mod-1", curseforge_id=12345)
+    commands.add_mod("test-mod-2", curseforge_id=12346)
+    
+    # Set metadata with categories and website
+    mods_data = data.load_mods()
+    mods_data["mods"]["test-mod-1"]["name"] = "Test Mod 1"
+    mods_data["mods"]["test-mod-1"]["metadata"] = {
+        "categories": ["adventure-rpg"],
+        "website": "https://www.curseforge.com/minecraft/mc-mods/test-mod-1"
+    }
+    mods_data["mods"]["test-mod-2"]["name"] = "Test Mod 2"
+    mods_data["mods"]["test-mod-2"]["metadata"] = {
+        "categories": ["library-api"],
+        "website": "https://www.curseforge.com/minecraft/mc-mods/test-mod-2"
+    }
+    data.save_mods(mods_data)
+    
+    result = commands.list_mods(categories=[])
+    assert result == 0
+
+
+def test_list_categories_filtered(temp_repo):
+    """Test listing filtered categories."""
+    # Add mods with categories
+    commands.add_mod("test-mod-1", curseforge_id=12345)
+    commands.add_mod("test-mod-2", curseforge_id=12346)
+    
+    # Set metadata with categories and website
+    mods_data = data.load_mods()
+    mods_data["mods"]["test-mod-1"]["name"] = "Test Mod 1"
+    mods_data["mods"]["test-mod-1"]["metadata"] = {
+        "categories": ["adventure-rpg", "library-api"],
+        "website": "https://www.curseforge.com/minecraft/mc-mods/test-mod-1"
+    }
+    mods_data["mods"]["test-mod-2"]["name"] = "Test Mod 2"
+    mods_data["mods"]["test-mod-2"]["metadata"] = {
+        "categories": ["library-api"],
+        "website": "https://www.curseforge.com/minecraft/mc-mods/test-mod-2"
+    }
+    data.save_mods(mods_data)
+    
+    result = commands.list_mods(categories=["library-api"])
+    assert result == 0
+
+
+def test_list_categories_multiple(temp_repo):
+    """Test listing multiple categories."""
+    # Add mods with categories
+    commands.add_mod("test-mod-1", curseforge_id=12345)
+    commands.add_mod("test-mod-2", curseforge_id=12346)
+    
+    # Set metadata with categories and website
+    mods_data = data.load_mods()
+    mods_data["mods"]["test-mod-1"]["name"] = "Test Mod 1"
+    mods_data["mods"]["test-mod-1"]["metadata"] = {
+        "categories": ["adventure-rpg"],
+        "website": "https://www.curseforge.com/minecraft/mc-mods/test-mod-1"
+    }
+    mods_data["mods"]["test-mod-2"]["name"] = "Test Mod 2"
+    mods_data["mods"]["test-mod-2"]["metadata"] = {
+        "categories": ["library-api"],
+        "website": "https://www.curseforge.com/minecraft/mc-mods/test-mod-2"
+    }
+    data.save_mods(mods_data)
+    
+    result = commands.list_mods(categories=["adventure-rpg", "library-api"])
+    assert result == 0
+
