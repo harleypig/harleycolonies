@@ -18,9 +18,39 @@ REPO_ROOT = SCRIPT_DIR.parent
 MPMANAGER_DIR = SCRIPT_DIR / "mpmanager"
 sys.path.insert(0, str(MPMANAGER_DIR))
 
-# Try to use venv if it exists and we're not already using it
+# Create venv if it doesn't exist
 VENV_DIR = SCRIPT_DIR / "venv"
-if VENV_DIR.exists() and sys.executable != str(VENV_DIR / "bin" / "python"):
+if not VENV_DIR.exists():
+    print("Creating virtual environment...")
+    import subprocess
+    result = subprocess.run(
+        [sys.executable, "-m", "venv", str(VENV_DIR)],
+        cwd=str(SCRIPT_DIR),
+        capture_output=True,
+        text=True
+    )
+    if result.returncode != 0:
+        print(f"Error creating virtual environment: {result.stderr}", file=sys.stderr)
+        sys.exit(1)
+    
+    # Install dependencies
+    venv_pip = VENV_DIR / "bin" / "pip"
+    requirements_file = SCRIPT_DIR / "requirements.txt"
+    if requirements_file.exists():
+        print("Installing dependencies...")
+        result = subprocess.run(
+            [str(venv_pip), "install", "-r", str(requirements_file)],
+            cwd=str(SCRIPT_DIR),
+            capture_output=True,
+            text=True
+        )
+        if result.returncode != 0:
+            print(f"Error installing dependencies: {result.stderr}", file=sys.stderr)
+            sys.exit(1)
+    print("Virtual environment created and dependencies installed.")
+
+# Use venv if we're not already using it
+if sys.executable != str(VENV_DIR / "bin" / "python"):
     venv_python = VENV_DIR / "bin" / "python"
     if venv_python.exists():
         # Use venv Python if available
