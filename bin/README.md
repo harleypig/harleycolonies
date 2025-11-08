@@ -6,6 +6,10 @@ This directory contains helper scripts and utilities for managing the modpack.
 
 ### gen-modlist
 
+**Note:** This script is deprecated. Use `bin/modpack-manager list --categories`
+instead, which provides the same functionality using centralized metadata from
+`mods/mods.yaml`.
+
 Generates a markdown mod list from the packwiz `.toml` files in the modpack
 directory.
 
@@ -18,6 +22,20 @@ bin/gen-modlist
 This script scans all `.toml` files in the modpack directory (excluding
 `pack.toml` and `index.toml`) and generates a `modlist.md` file organized by
 mod class and category.
+
+**Replacement:**
+
+```bash
+# Generate categorized mod list (prints to stdout)
+bin/modpack-manager list --categories
+
+# Save to file
+bin/modpack-manager list --categories > docs/mods/modlist.md
+```
+
+The `modpack-manager list --categories` command provides the same output format
+but uses centralized metadata from `mods/mods.yaml` instead of scanning TOML
+files directly.
 
 ## modpack-manager
 
