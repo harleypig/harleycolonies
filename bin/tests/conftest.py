@@ -12,16 +12,12 @@ import yaml
 
 
 @pytest.fixture(autouse=True)
-def ensure_temp_repo_isolation(tmp_path, monkeypatch):
-    """Ensure all tests use temp repo and don't modify real files."""
-    # This fixture runs automatically before every test
-    # It ensures get_repo_root is patched before any imports
-    pass
-
-
-@pytest.fixture
 def temp_repo(tmp_path, monkeypatch):
-    """Create a temporary repository structure for testing."""
+    """Create a temporary repository structure for testing.
+    
+    This fixture runs automatically for all tests to ensure they don't
+    modify real repository files.
+    """
     repo = tmp_path / "test_repo"
     repo.mkdir()
 

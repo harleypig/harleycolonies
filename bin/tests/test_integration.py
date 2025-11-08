@@ -21,15 +21,14 @@ def test_full_workflow_add_mod_to_modpack(
 
     cmd_module.validation.check_packwiz_available.return_value = (True, None)
     cmd_module.validation.validate_mod_data.return_value = (True, None)
+    cmd_module.validation.validate_mod_id.return_value = (True, None)
     cmd_module.packwiz.install_mod.return_value = MagicMock(returncode=0)
     cmd_module.packwiz.find_mod_file.return_value = "test-mod.pw.toml"
     cmd_module.packwiz.get_mod_side_from_packwiz.return_value = "both"
 
-    # 1. Add mod (check if it already exists from previous test)
-    mod = data.get_mod("test-mod")
-    if mod is None:
-        result = commands.add_mod("test-mod", curseforge_id=12345, side="both")
-        assert result == 0
+    # 1. Add mod
+    result = commands.add_mod("test-mod", curseforge_id=12345, side="both")
+    assert result == 0
 
     # 2. Add to modpack
     result = commands.modpack_add("test-modpack-1.20.1", "test-mod")

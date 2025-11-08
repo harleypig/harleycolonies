@@ -67,6 +67,7 @@ def test_modpack_add(temp_repo, sample_modpack_dir):
 
     cmd_module.validation.check_packwiz_available.return_value = (True, None)
     cmd_module.validation.validate_mod_data.return_value = (True, None)
+    cmd_module.validation.validate_mod_id.return_value = (True, None)
     cmd_module.packwiz.install_mod.return_value = MagicMock(returncode=0)
 
     commands.add_mod("test-mod", curseforge_id=12345)
