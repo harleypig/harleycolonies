@@ -40,7 +40,35 @@ def test_has_custom_wiki_true(temp_repo):
 
 
 def test_generate_simple_wiki_page(temp_repo, sample_mod_data):
-    """Test generating simple wiki page."""
+    """Test generating simple wiki page with Jinja2 template."""
+    # Create template file
+    template_file = temp_repo / "bin" / "wiki-page-template.j2"
+    template_file.parent.mkdir(parents=True, exist_ok=True)
+    template_file.write_text("""---
+title: {{ name }}
+---
+
+## {{ name }}
+
+{{ description }}
+
+### Side
+
+{{ side }}
+
+### Modpacks
+
+{% if installed_in %}
+This mod is installed in the following modpacks:
+
+{% for modpack in installed_in %}
+- {{ modpack }}
+{% endfor %}
+{% else %}
+This mod is not currently installed in any modpacks.
+{% endif %}
+""")
+    
     content = wiki.generate_simple_wiki_page("test-mod", sample_mod_data)
     assert "title: Test Mod" in content
     assert "## Test Mod" in content

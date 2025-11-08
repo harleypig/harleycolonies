@@ -25,6 +25,34 @@ def temp_repo(tmp_path, monkeypatch):
     (repo / "mods").mkdir()
     (repo / "pages" / "mods").mkdir(parents=True)
     (repo / "bin" / "mod_manager").mkdir(parents=True)
+    (repo / "bin").mkdir(parents=True, exist_ok=True)
+    
+    # Create wiki template file
+    template_file = repo / "bin" / "wiki-page-template.j2"
+    template_file.write_text("""---
+title: {{ name }}
+---
+
+## {{ name }}
+
+{{ description }}
+
+### Side
+
+{{ side }}
+
+### Modpacks
+
+{% if installed_in %}
+This mod is installed in the following modpacks:
+
+{% for modpack in installed_in %}
+- {{ modpack }}
+{% endfor %}
+{% else %}
+This mod is not currently installed in any modpacks.
+{% endif %}
+""")
 
     # Create empty mods.yaml
     mods_yaml = repo / "mods" / "mods.yaml"

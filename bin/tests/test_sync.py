@@ -22,6 +22,27 @@ def test_sync_from_modpack(temp_repo, sample_modpack_dir, sample_mod_toml):
             "side": "both",
         }
     ]
+    
+    # Mock TOML data and metadata extraction
+    cmd_module.packwiz.get_mod_toml_data.return_value = {
+        "name": "Test Mod",
+        "side": "both",
+        "update": {
+            "curseforge": {
+                "project-id": 12345
+            }
+        },
+        "metadata": {
+            "curseforge": {
+                "website": "https://www.curseforge.com/minecraft/mc-mods/test-mod"
+            }
+        }
+    }
+    cmd_module.packwiz.extract_metadata_from_toml.return_value = {
+        "curseforge_id": 12345,
+        "side": "both",
+        "website": "https://www.curseforge.com/minecraft/mc-mods/test-mod"
+    }
 
     result = commands.sync_from_modpack("test-modpack-1.20.1")
     assert result == 0
@@ -34,6 +55,10 @@ def test_sync_from_modpack(temp_repo, sample_modpack_dir, sample_mod_toml):
 
     # Check that mod was added to installed_in
     assert "test-modpack-1.20.1" in mod["modpacks"]["installed_in"]
+    
+    # Check that metadata was extracted
+    assert mod.get("curseforge_id") == 12345
+    assert "metadata" in mod
 
 
 @patch("mpmanager.commands.packwiz")
@@ -52,13 +77,27 @@ def test_sync_from_modpack_preserves_side(temp_repo, sample_modpack_dir):
             "side": "both",  # Different from manual setting
         }
     ]
+    
+    # Mock TOML data
+    cmd_module.packwiz.get_mod_toml_data.return_value = {
+        "name": "Test Mod",
+        "side": "both"
+    }
+    cmd_module.packwiz.extract_metadata_from_toml.return_value = {
+        "side": "both"
+    }
 
     result = commands.sync_from_modpack("test-modpack-1.20.1")
     assert result == 0
 
-    # Check that side was preserved
+    # Check that side was preserved (not overwritten)
     mod = data.get_mod("test-mod")
     assert mod["side"] == "client"  # Should not be overwritten
+    
+    # Check that version-specific side was stored
+    assert "versions" in mod
+    assert "test-modpack-1.20.1" in mod["versions"]
+    assert mod["versions"]["test-modpack-1.20.1"]["metadata"]["side"] == "both"
 
 
 @patch("mpmanager.commands.packwiz")
@@ -77,6 +116,15 @@ def test_sync_from_modpack_updates_missing_side(temp_repo, sample_modpack_dir):
             "side": "both",
         }
     ]
+    
+    # Mock TOML data
+    cmd_module.packwiz.get_mod_toml_data.return_value = {
+        "name": "Test Mod",
+        "side": "both"
+    }
+    cmd_module.packwiz.extract_metadata_from_toml.return_value = {
+        "side": "both"
+    }
 
     result = commands.sync_from_modpack("test-modpack-1.20.1")
     assert result == 0
