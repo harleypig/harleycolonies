@@ -266,8 +266,14 @@ def modpack_export(modpack_dir):
     return 0
 
 
-def generate_wiki(regenerate=False, mod_slug=None):
+def generate_wiki(regenerate=False, mod_slug=None, index=False):
     """Generate wiki pages."""
+    if index:
+        print("Generating mods index page")
+        index_path = wiki.generate_mods_index()
+        print(f"Generated mods index page: {index_path}")
+        return 0
+
     if mod_slug:
         print(f"Generating wiki page for {mod_slug}")
         mod = data.get_mod(mod_slug)

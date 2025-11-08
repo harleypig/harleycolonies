@@ -226,3 +226,30 @@ def test_list_categories_multiple(temp_repo):
     result = commands.list_mods(categories=["adventure-rpg", "library-api"])
     assert result == 0
 
+
+def test_generate_wiki_index(temp_repo):
+    """Test generating wiki index page."""
+    # Add mods with categories
+    commands.add_mod("test-mod-1", curseforge_id=12345)
+    commands.add_mod("test-mod-2", curseforge_id=12346)
+    
+    # Set names and categories
+    mods_data = data.load_mods()
+    mods_data["mods"]["test-mod-1"]["name"] = "Test Mod 1"
+    mods_data["mods"]["test-mod-1"]["metadata"] = {
+        "categories": ["adventure-rpg"]
+    }
+    mods_data["mods"]["test-mod-2"]["name"] = "Test Mod 2"
+    mods_data["mods"]["test-mod-2"]["metadata"] = {
+        "categories": ["library-api"]
+    }
+    data.save_mods(mods_data)
+    
+    result = commands.generate_wiki(index=True)
+    assert result == 0
+    
+    # Check that index file was created
+    from mpmanager import wiki
+    index_path = wiki.get_mods_index_path()
+    assert index_path.exists()
+

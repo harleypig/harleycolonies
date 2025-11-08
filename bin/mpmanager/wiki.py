@@ -113,3 +113,70 @@ def generate_all_wiki_pages():
 
     return generated
 
+
+def get_mods_index_path():
+    """Get path to mods index page."""
+    return get_repo_root() / "pages" / "mods.md"
+
+
+def generate_mods_index():
+    """Generate pages/mods.md index page with all mods grouped by category."""
+    from mpmanager import data
+
+    mods_data = data.load_mods()
+    mods = mods_data.get("mods", {})
+
+    # Build structure: {category: [(mod_slug, mod_name)]}
+    categorized_mods = {}
+    uncategorized_mods = []
+
+    for mod_slug, mod_info in mods.items():
+        name = mod_info.get("name", mod_slug)
+        metadata = mod_info.get("metadata", {})
+        categories = metadata.get("categories", [])
+
+        if categories:
+            for category in categories:
+                if category not in categorized_mods:
+                    categorized_mods[category] = []
+                categorized_mods[category].append((mod_slug, name))
+        else:
+            uncategorized_mods.append((mod_slug, name))
+
+    # Sort categories alphabetically
+    sorted_categories = sorted(categorized_mods.keys())
+
+    # Sort mods within each category by name
+    for category in categorized_mods:
+        categorized_mods[category].sort(key=lambda x: x[1].lower())
+
+    # Sort uncategorized mods by name
+    uncategorized_mods.sort(key=lambda x: x[1].lower())
+
+    # Generate markdown content
+    content = "# Mods\n\n"
+    content += "This page lists all mods in the modpack, grouped by category.\n\n"
+
+    # Add categorized mods
+    for category in sorted_categories:
+        content += f"## {category}\n\n"
+        for mod_slug, mod_name in categorized_mods[category]:
+            content += f"- [{mod_name}](mods/{mod_slug}.md)\n"
+        content += "\n"
+
+    # Add uncategorized mods if any
+    if uncategorized_mods:
+        content += "## Uncategorized\n\n"
+        for mod_slug, mod_name in uncategorized_mods:
+            content += f"- [{mod_name}](mods/{mod_slug}.md)\n"
+        content += "\n"
+
+    # Write to pages/mods.md
+    index_path = get_mods_index_path()
+    index_path.parent.mkdir(parents=True, exist_ok=True)
+
+    with open(index_path, "w") as f:
+        f.write(content)
+
+    return index_path
+

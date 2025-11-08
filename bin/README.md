@@ -144,6 +144,9 @@ This command will:
 # Generate wiki page for a mod
 ./bin/modpack-manager wiki --mod jei
 
+# Generate mods index page
+./bin/modpack-manager wiki --index
+
 # List all mods
 ./bin/modpack-manager list
 

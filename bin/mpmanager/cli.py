@@ -89,6 +89,11 @@ def main():
         "--regenerate", action="store_true", help="Regenerate all wiki pages"
     )
     wiki.add_argument("--mod", help="Generate wiki page for specific mod")
+    wiki.add_argument(
+        "--index",
+        action="store_true",
+        help="Generate pages/mods.md index page with all mods grouped by category",
+    )
 
     # Information
     list_cmd = subparsers.add_parser("list", help="List mods or modpacks")
@@ -168,7 +173,7 @@ def main():
                 return 1
         elif args.command == "wiki":
             return commands.generate_wiki(
-                regenerate=args.regenerate, mod_slug=args.mod
+                regenerate=args.regenerate, mod_slug=args.mod, index=args.index
             )
         elif args.command == "list":
             categories = None
