@@ -8,11 +8,68 @@ package.
 
 import os
 import sys
+import shutil
+import subprocess
+import tempfile
 from pathlib import Path
 
 # Get the script directory (bin/)
 SCRIPT_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPT_DIR.parent
+
+# Check if this is a pytest command - bypass all setup
+if len(sys.argv) > 1 and sys.argv[1] == "pytest":
+    # Run pytest in a temporary test virtual environment
+    TEST_VENV_DIR = SCRIPT_DIR / ".test-venv"
+    requirements_file = SCRIPT_DIR / "requirements.txt"
+    tests_dir = SCRIPT_DIR / "tests"
+    
+    try:
+        # Create test virtual environment
+        print("Creating test virtual environment...")
+        result = subprocess.run(
+            [sys.executable, "-m", "venv", str(TEST_VENV_DIR)],
+            cwd=str(SCRIPT_DIR),
+            capture_output=True,
+            text=True
+        )
+        if result.returncode != 0:
+            print(f"Error creating test virtual environment: {result.stderr}", file=sys.stderr)
+            sys.exit(1)
+        
+        # Install dependencies
+        test_venv_pip = TEST_VENV_DIR / "bin" / "pip"
+        if requirements_file.exists():
+            print("Installing test dependencies...")
+            result = subprocess.run(
+                [str(test_venv_pip), "install", "-r", str(requirements_file)],
+                cwd=str(SCRIPT_DIR),
+                capture_output=True,
+                text=True
+            )
+            if result.returncode != 0:
+                print(f"Error installing dependencies: {result.stderr}", file=sys.stderr)
+                sys.exit(1)
+        
+        # Run pytest
+        test_venv_python = TEST_VENV_DIR / "bin" / "python"
+        pytest_args = sys.argv[2:] if len(sys.argv) > 2 else []
+        
+        # Change to repo root for pytest
+        result = subprocess.run(
+            [str(test_venv_python), "-m", "pytest", str(tests_dir)] + pytest_args,
+            cwd=str(REPO_ROOT),
+        )
+        
+        exit_code = result.returncode
+        
+    finally:
+        # Clean up test virtual environment
+        if TEST_VENV_DIR.exists():
+            print("Cleaning up test virtual environment...")
+            shutil.rmtree(TEST_VENV_DIR)
+    
+    sys.exit(exit_code)
 
 # Add bin/mpmanager to Python path
 MPMANAGER_DIR = SCRIPT_DIR / "mpmanager"

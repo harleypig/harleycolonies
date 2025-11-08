@@ -42,6 +42,22 @@ generating modpacks, and creating wiki pages.
 
 ### Commands
 
+#### Testing
+
+```bash
+# Run all tests
+bin/modpack-manager pytest
+
+# Run tests with pytest options
+bin/modpack-manager pytest -v
+bin/modpack-manager pytest tests/test_wiki.py
+bin/modpack-manager pytest -k test_generate
+```
+
+The `pytest` command creates a temporary test virtual environment, installs
+dependencies, runs tests, and cleans up automatically. This bypasses all
+other setup in the script.
+
 #### Mod Management
 
 ```bash
