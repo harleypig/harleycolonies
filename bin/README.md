@@ -48,7 +48,7 @@ generating modpacks, and creating wiki pages.
 ./bin/mod-manager wiki
 
 # Import from existing modpack
-./bin/mod-manager sync --from-dir harleycolonies-1.20.1-0.1.2
+./bin/mod-manager sync --from harleycolonies-1.20.1-0.1.2
 ```
 
 See `WORKFLOW.md` for detailed documentation.

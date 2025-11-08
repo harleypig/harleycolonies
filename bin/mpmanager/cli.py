@@ -99,7 +99,7 @@ def main():
     sync = subparsers.add_parser(
         "sync", help="Import from existing packwiz directory"
     )
-    sync.add_argument("--from-dir", required=True, help="Modpack directory to import from")
+    sync.add_argument("--from", required=True, dest="from_dir", help="Modpack directory to import from")
 
     # Side management
     side_cmd = subparsers.add_parser("side", help="Update mod side")
@@ -163,7 +163,9 @@ def main():
         elif args.command == "list":
             return commands.list_mods(modpack=args.modpack, mod_slug=args.mod)
         elif args.command == "sync":
-            return commands.sync_from_modpack(args.from_dir)
+            # Strip trailing slash from modpack directory
+            modpack_dir = args.from_dir.rstrip("/")
+            return commands.sync_from_modpack(modpack_dir)
         elif args.command == "side":
             return commands.update_mod_side(
                 args.mod_slug, args.new_side, modpack_dir=args.modpack

@@ -89,7 +89,7 @@ generating modpacks, and creating wiki pages.
 
 ```bash
 # Import mods from an existing packwiz directory
-./bin/mod-manager sync --from-dir <modpack-dir>
+./bin/mod-manager sync --from <modpack-dir>
 ```
 
 ### Mod Data Structure
