@@ -55,9 +55,13 @@ if len(sys.argv) > 1 and sys.argv[1] == "pytest":
         test_venv_python = TEST_VENV_DIR / "bin" / "python"
         pytest_args = sys.argv[2:] if len(sys.argv) > 2 else []
         
+        # If no test path specified, default to bin/tests
+        if not pytest_args or (len(pytest_args) > 0 and pytest_args[0].startswith("-")):
+            pytest_args = [str(tests_dir)] + pytest_args
+        
         # Change to repo root for pytest
         result = subprocess.run(
-            [str(test_venv_python), "-m", "pytest", str(tests_dir)] + pytest_args,
+            [str(test_venv_python), "-m", "pytest"] + pytest_args,
             cwd=str(REPO_ROOT),
         )
         
