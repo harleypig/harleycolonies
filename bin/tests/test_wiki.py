@@ -164,6 +164,45 @@ def test_generate_mods_index(temp_repo, sample_mod_data):
     assert "Test Mod" in library_section
 
 
+def test_clean_display_name(temp_repo):
+    """Test cleaning display names with special characters."""
+    # Test removing bracketed content
+    assert wiki._clean_display_name("Legendary Tooltips [Forge]") == "Legendary Tooltips"
+    assert wiki._clean_display_name("Mod Name (Fabric/Forge)") == "Mod Name"
+    assert wiki._clean_display_name("Test [Forge] [Fabric]") == "Test"
+    
+    # Test with parentheses
+    assert wiki._clean_display_name("Mod (NeoForge)") == "Mod"
+    
+    # Test normal names
+    assert wiki._clean_display_name("Simple Mod Name") == "Simple Mod Name"
+    
+    # Test multiple spaces
+    assert wiki._clean_display_name("Mod  [Forge]  Name") == "Mod Name"
+
+
+def test_generate_mods_index_cleans_names(temp_repo):
+    """Test that mods index cleans display names."""
+    from mpmanager import data
+
+    # Add mod with bracketed name
+    mod_data = {"name": "Legendary Tooltips [Forge]"}
+    mod_data["metadata"] = {
+        "categories": ["adventure-rpg"]
+    }
+    data.set_mod("legendary-tooltips", mod_data)
+
+    # Generate index
+    index_path = wiki.generate_mods_index()
+
+    assert index_path.exists()
+    content = index_path.read_text()
+
+    # Check that display name is cleaned (no brackets)
+    assert "[Legendary Tooltips](mods/legendary-tooltips.md)" in content
+    assert "[Forge]" not in content  # Should not appear in the link text
+
+
 def test_generate_mods_index_no_categories(temp_repo):
     """Test generating mods index page with no categorized mods."""
     from mpmanager import data

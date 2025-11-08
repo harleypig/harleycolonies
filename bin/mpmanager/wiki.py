@@ -146,6 +146,24 @@ def clear_wiki_pages():
         mods_index.unlink()
 
 
+def _clean_display_name(name):
+    """Clean display name by removing non-alphanumeric characters and bracketed explanations.
+    
+    This helps prevent markdown link issues with special characters in display names.
+    """
+    import re
+    
+    # Remove bracketed content (e.g., [Forge], (Fabric/Forge), etc.)
+    # This handles explanatory information like [Forge], [Fabric], etc.
+    name = re.sub(r'\[[^\]]*\]', '', name)
+    name = re.sub(r'\([^\)]*\)', '', name)
+    
+    # Strip leading/trailing whitespace and clean up multiple spaces
+    name = re.sub(r'\s+', ' ', name).strip()
+    
+    return name
+
+
 def generate_mods_index():
     """Generate pages/mods.md index page with all mods grouped by category."""
     from mpmanager import data
@@ -153,12 +171,13 @@ def generate_mods_index():
     mods_data = data.load_mods()
     mods = mods_data.get("mods", {})
 
-    # Build structure: {category: [(mod_slug, mod_name)]}
+    # Build structure: {category: [(mod_slug, mod_name, display_name)]}
     categorized_mods = {}
     uncategorized_mods = []
 
     for mod_slug, mod_info in mods.items():
         name = mod_info.get("name", mod_slug)
+        display_name = _clean_display_name(name)
         metadata = mod_info.get("metadata", {})
         categories = metadata.get("categories", [])
 
@@ -166,9 +185,9 @@ def generate_mods_index():
             for category in categories:
                 if category not in categorized_mods:
                     categorized_mods[category] = []
-                categorized_mods[category].append((mod_slug, name))
+                categorized_mods[category].append((mod_slug, display_name))
         else:
-            uncategorized_mods.append((mod_slug, name))
+            uncategorized_mods.append((mod_slug, display_name))
 
     # Sort categories alphabetically
     sorted_categories = sorted(categorized_mods.keys())
