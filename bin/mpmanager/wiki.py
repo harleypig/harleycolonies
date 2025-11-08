@@ -182,7 +182,7 @@ def generate_mods_index():
 
     # Generate markdown content
     content = "# Mods\n\n"
-    content += "This page lists all mods in the modpack, grouped by category.\n\n"
+    content += "This page lists all mods across all modpacks in mods/mods.yaml, grouped by category.\n\n"
 
     # Add categorized mods
     for category in sorted_categories:
