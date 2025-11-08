@@ -187,7 +187,18 @@ even after cloning the repository on a new system.
 
 ### Wiki Templates
 
-Wiki pages are generated using Jinja2 templates. The template file is located
-at `bin/wiki-page-template.j2` and can be customized as needed.
+Wiki pages are generated using Jinja2 templates. The template files are
+located in `bin/resources/`:
+
+- **`wiki-page-template.j2`** - Jinja2 template for individual mod wiki pages
+  - Generates pages in `pages/mods/<mod-slug>.md`
+  - Variables: `name`, `description`, `side`, `installed_in`
+
+- **`mods-index-template.j2`** - Jinja2 template for the mods index page
+  - Generates `pages/mods.md` with all mods grouped by category
+  - Variables: `sorted_categories`, `categorized_mods`, `uncategorized_mods`
+
+These templates can be customized as needed. The templates use Jinja2
+syntax for dynamic content generation.
 
 See `WORKFLOW.md` for detailed documentation.
