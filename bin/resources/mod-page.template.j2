@@ -1,6 +1,8 @@
 ---
 title: {{ name }}
-{% if categories %}categories: {{ categories | tojson | replace('"', '') | replace('[', '[') | replace(']', ']') }}{% endif %}
+{% if categories %}categories:
+{% for category in categories %}  - {{ category }}
+{% endfor %}{% endif %}
 ---
 
 ## {{ name }}
