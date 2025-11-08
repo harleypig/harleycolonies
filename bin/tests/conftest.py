@@ -53,6 +53,30 @@ This mod is installed in the following modpacks:
 This mod is not currently installed in any modpacks.
 {% endif %}
 """)
+    
+    # Create mods index template file
+    index_template_file = repo / "bin" / "mods-index-template.j2"
+    index_template_file.write_text("""# Mods
+
+This page lists all mods across all modpacks in mods/mods.yaml, grouped by category.
+
+{% for category in sorted_categories %}
+## {{ category }}
+
+{% for mod_slug, display_name in categorized_mods[category] %}
+- [{{ display_name }}](mods/{{ mod_slug }}.md)
+{% endfor %}
+
+{% endfor %}
+{% if uncategorized_mods %}
+## Uncategorized
+
+{% for mod_slug, display_name in uncategorized_mods %}
+- [{{ display_name }}](mods/{{ mod_slug }}.md)
+{% endfor %}
+
+{% endif %}
+""")
 
     # Create empty mods.yaml
     mods_yaml = repo / "mods" / "mods.yaml"
