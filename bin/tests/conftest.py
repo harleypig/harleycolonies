@@ -27,8 +27,12 @@ def temp_repo(tmp_path, monkeypatch):
     (repo / "bin" / "mod_manager").mkdir(parents=True)
     (repo / "bin").mkdir(parents=True, exist_ok=True)
     
+    # Create resources directory
+    resources_dir = repo / "bin" / "resources"
+    resources_dir.mkdir(parents=True, exist_ok=True)
+    
     # Create wiki template file
-    template_file = repo / "bin" / "wiki-page-template.j2"
+    template_file = resources_dir / "wiki-page-template.j2"
     template_file.write_text("""---
 title: {{ name }}
 ---
@@ -55,27 +59,27 @@ This mod is not currently installed in any modpacks.
 """)
     
     # Create mods index template file
-    index_template_file = repo / "bin" / "mods-index-template.j2"
-    index_template_file.write_text("""# Mods
+    index_template_file = resources_dir / "mods-index-template.j2"
+    index_template_file.write_text("""---
+title: Mods
+---
 
 This page lists all mods across all modpacks in mods/mods.yaml, grouped by category.
 
-{% for category in sorted_categories %}
+{% for category in sorted_categories -%}
 ## {{ category }}
 
 {% for mod_slug, display_name in categorized_mods[category] -%}
 - [{{ display_name }}](mods/{{ mod_slug }}.md)
 {% endfor %}
-
 {% endfor %}
-{% if uncategorized_mods %}
+{%- if uncategorized_mods -%}
 ## Uncategorized
 
 {% for mod_slug, display_name in uncategorized_mods -%}
 - [{{ display_name }}](mods/{{ mod_slug }}.md)
-{% endfor %}
-
-{% endif %}
+{% endfor -%}
+{% endif -%}
 """)
 
     # Create empty mods.yaml
