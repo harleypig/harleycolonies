@@ -34,7 +34,7 @@ def _get_template():
     script_dir = Path(__file__).parent.parent
     template_dir = script_dir / "resources"
     env = Environment(loader=FileSystemLoader(str(template_dir)))
-    return env.get_template("wiki-page-template.j2")
+    return env.get_template("mod-page.template.j2")
 
 
 def _get_index_template():

@@ -206,7 +206,7 @@ even after cloning the repository on a new system.
 Wiki pages are generated using Jinja2 templates. The template files are
 located in `bin/resources/`:
 
-- **`wiki-page-template.j2`** - Jinja2 template for individual mod wiki pages
+- **`mod-page.template.j2`** - Jinja2 template for individual mod wiki pages
   - Generates pages in `pages/mods/<mod-slug>.md`
   - Variables: `name`, `description`, `side`, `installed_in`
 

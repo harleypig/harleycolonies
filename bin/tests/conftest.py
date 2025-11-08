@@ -32,7 +32,7 @@ def temp_repo(tmp_path, monkeypatch):
     resources_dir.mkdir(parents=True, exist_ok=True)
     
     # Create wiki template file
-    template_file = resources_dir / "wiki-page-template.j2"
+    template_file = resources_dir / "mod-page.template.j2"
     template_file.write_text("""---
 title: {{ name }}
 ---

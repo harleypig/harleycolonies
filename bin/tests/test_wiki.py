@@ -44,7 +44,7 @@ def test_generate_simple_wiki_page(temp_repo, sample_mod_data):
     # Create template file
     resources_dir = temp_repo / "bin" / "resources"
     resources_dir.mkdir(parents=True, exist_ok=True)
-    template_file = resources_dir / "wiki-page-template.j2"
+    template_file = resources_dir / "mod-page.template.j2"
     template_file.write_text("""---
 title: {{ name }}
 ---
