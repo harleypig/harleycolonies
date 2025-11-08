@@ -1,8 +1,11 @@
 ---
 title: Catalogue
+categories:
+  - map-information
+  - mc-miscellaneous
+  - library-api
+  - utility-qol
 ---
-
-## Catalogue
 
 ### Side
 

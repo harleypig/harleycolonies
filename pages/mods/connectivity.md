@@ -1,8 +1,10 @@
 ---
 title: Connectivity[Forge/Fabric]
+categories:
+  - technology-player-transport
+  - map-information
+  - server-utility
 ---
-
-## Connectivity[Forge/Fabric]
 
 ### Side
 

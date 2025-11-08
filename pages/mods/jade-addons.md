@@ -1,8 +1,10 @@
 ---
 title: Jade Addons (Forge)
+categories:
+  - map-information
+  - utility-qol
+  - mc-addons
 ---
-
-## Jade Addons (Forge)
 
 ### Side
 

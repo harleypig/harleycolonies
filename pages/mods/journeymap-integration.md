@@ -1,8 +1,9 @@
 ---
 title: JourneyMap Integration
+categories:
+  - mc-addons
+  - map-information
 ---
-
-## JourneyMap Integration
 
 ### Side
 

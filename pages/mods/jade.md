@@ -1,8 +1,9 @@
 ---
 title: Jade 🔍
+categories:
+  - utility-qol
+  - map-information
 ---
-
-## Jade 🔍
 
 ### Side
 

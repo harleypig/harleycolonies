@@ -1,8 +1,8 @@
 ---
 title: Block Runner [Forge & Fabric]
+categories:
+  - utility-qol
 ---
-
-## Block Runner [Forge & Fabric]
 
 ### Side
 

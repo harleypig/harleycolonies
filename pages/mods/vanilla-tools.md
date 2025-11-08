@@ -1,8 +1,11 @@
 ---
 title: Vanilla Plus Tools
+categories:
+  - utility-qol
+  - utility-qol
+  - armor-weapons-tools
+  - armor-weapons-tools
 ---
-
-## Vanilla Plus Tools
 
 ### Side
 

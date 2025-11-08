@@ -1,8 +1,9 @@
 ---
 title: Biomes O' Plenty
+categories:
+  - world-biomes
+  - world-gen
 ---
-
-## Biomes O' Plenty
 
 ### Side
 

@@ -1,8 +1,11 @@
 ---
 title: Multi-Piston
+categories:
+  - cosmetic
+  - adventure-rpg
+  - redstone
+  - technology-player-transport
 ---
-
-## Multi-Piston
 
 ### Side
 

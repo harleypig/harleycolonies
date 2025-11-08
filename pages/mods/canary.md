@@ -1,8 +1,9 @@
 ---
 title: Canary
+categories:
+  - server-utility
+  - mc-miscellaneous
 ---
-
-## Canary
 
 ### Side
 

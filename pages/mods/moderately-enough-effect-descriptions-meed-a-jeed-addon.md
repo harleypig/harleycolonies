@@ -1,8 +1,11 @@
 ---
 title: Moderately Enough Effect Descriptions (MEED) - A JEED Addon
+categories:
+  - map-information
+  - utility-qol
+  - mc-addons
+  - server-utility
 ---
-
-## Moderately Enough Effect Descriptions (MEED) - A JEED Addon
 
 ### Side
 

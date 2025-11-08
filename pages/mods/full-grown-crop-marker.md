@@ -1,8 +1,10 @@
 ---
 title: FullGrownCropMarker
+categories:
+  - technology-farming
+  - utility-qol
+  - adventure-rpg
 ---
-
-## FullGrownCropMarker
 
 ### Side
 

@@ -1,8 +1,8 @@
 ---
 title: LibX
+categories:
+  - library-api
 ---
-
-## LibX
 
 ### Side
 

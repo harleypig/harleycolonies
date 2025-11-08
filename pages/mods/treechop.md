@@ -1,8 +1,8 @@
 ---
 title: HT's TreeChop
+categories:
+  - mc-miscellaneous
 ---
-
-## HT's TreeChop
 
 ### Side
 

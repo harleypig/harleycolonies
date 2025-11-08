@@ -1,8 +1,8 @@
 ---
 title: Inventory Sorter
+categories:
+  - mc-miscellaneous
 ---
-
-## Inventory Sorter
 
 ### Side
 

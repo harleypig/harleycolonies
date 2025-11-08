@@ -1,8 +1,10 @@
 ---
 title: TerraBlender (Forge)
+categories:
+  - world-biomes
+  - library-api
+  - world-gen
 ---
-
-## TerraBlender (Forge)
 
 ### Side
 

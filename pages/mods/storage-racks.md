@@ -1,8 +1,12 @@
 ---
 title: Storage Racks
+categories:
+  - storage
+  - cosmetic
+  - adventure-rpg
+  - education
+  - technology-automation
 ---
-
-## Storage Racks
 
 ### Side
 

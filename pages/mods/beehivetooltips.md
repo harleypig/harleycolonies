@@ -1,8 +1,10 @@
 ---
 title: [Forge/NeoForged/Fabric] BeehiveTooltips
+categories:
+  - map-information
+  - utility-qol
+  - cosmetic
 ---
-
-## [Forge/NeoForged/Fabric] BeehiveTooltips
 
 ### Side
 

@@ -1,8 +1,9 @@
 ---
 title: Domum Ornamentum
+categories:
+  - cosmetic
+  - library-api
 ---
-
-## Domum Ornamentum
 
 ### Side
 

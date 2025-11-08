@@ -1,8 +1,8 @@
 ---
 title: Passable Foliage 🌳 (Forge)
+categories:
+  - utility-qol
 ---
-
-## Passable Foliage 🌳 (Forge)
 
 ### Side
 

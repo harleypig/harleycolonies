@@ -1,8 +1,11 @@
 ---
 title: Prism [Forge]
+categories:
+  - cosmetic
+  - library-api
+  - mc-miscellaneous
+  - utility-qol
 ---
-
-## Prism [Forge]
 
 ### Side
 

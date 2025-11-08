@@ -1,8 +1,8 @@
 ---
 title: KleeSlabs
+categories:
+  - utility-qol
 ---
-
-## KleeSlabs
 
 ### Side
 

@@ -1,8 +1,8 @@
 ---
 title: Ding (Forge)
+categories:
+  - map-information
 ---
-
-## Ding (Forge)
 
 ### Side
 

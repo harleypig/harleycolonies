@@ -1,8 +1,9 @@
 ---
 title: AppleSkin
+categories:
+  - mc-food
+  - map-information
 ---
-
-## AppleSkin
 
 ### Side
 

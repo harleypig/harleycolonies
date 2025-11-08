@@ -1,8 +1,8 @@
 ---
 title: Sophisticated Core
+categories:
+  - library-api
 ---
-
-## Sophisticated Core
 
 ### Side
 

@@ -1,8 +1,9 @@
 ---
 title: JEI Integration
+categories:
+  - map-information
+  - mc-addons
 ---
-
-## JEI Integration
 
 ### Side
 

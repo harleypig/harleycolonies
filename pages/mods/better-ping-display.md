@@ -1,8 +1,10 @@
 ---
 title: Better Ping Display
+categories:
+  - utility-qol
+  - cosmetic
+  - map-information
 ---
-
-## Better Ping Display
 
 ### Side
 

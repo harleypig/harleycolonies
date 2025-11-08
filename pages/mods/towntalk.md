@@ -1,8 +1,11 @@
 ---
 title: TownTalk
+categories:
+  - utility-qol
+  - adventure-rpg
+  - mc-addons
+  - cosmetic
 ---
-
-## TownTalk
 
 ### Side
 

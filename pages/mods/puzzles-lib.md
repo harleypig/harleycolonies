@@ -1,8 +1,8 @@
 ---
 title: Puzzles Lib [Forge & Fabric]
+categories:
+  - library-api
 ---
-
-## Puzzles Lib [Forge & Fabric]
 
 ### Side
 

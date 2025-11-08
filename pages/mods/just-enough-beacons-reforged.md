@@ -1,8 +1,9 @@
 ---
 title: Just Enough Beacons Reforged [Forge | Fabric | NeoForge]
+categories:
+  - mc-addons
+  - map-information
 ---
-
-## Just Enough Beacons Reforged [Forge | Fabric | NeoForge]
 
 ### Side
 

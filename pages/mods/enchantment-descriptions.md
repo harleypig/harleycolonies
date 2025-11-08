@@ -1,8 +1,11 @@
 ---
 title: Enchantment Descriptions
+categories:
+  - map-information
+  - magic
+  - utility-qol
+  - cosmetic
 ---
-
-## Enchantment Descriptions
 
 ### Side
 

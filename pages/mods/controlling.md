@@ -1,8 +1,9 @@
 ---
 title: Controlling
+categories:
+  - utility-qol
+  - cosmetic
 ---
-
-## Controlling
 
 ### Side
 

@@ -1,8 +1,9 @@
 ---
 title: Storage Drawers
+categories:
+  - cosmetic
+  - storage
 ---
-
-## Storage Drawers
 
 ### Side
 

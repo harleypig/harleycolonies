@@ -1,8 +1,10 @@
 ---
 title: Structurize
+categories:
+  - world-structures
+  - server-utility
+  - cosmetic
 ---
-
-## Structurize
 
 ### Side
 

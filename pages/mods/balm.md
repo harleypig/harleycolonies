@@ -1,8 +1,8 @@
 ---
 title: Balm (Forge Edition)
+categories:
+  - library-api
 ---
-
-## Balm (Forge Edition)
 
 ### Side
 

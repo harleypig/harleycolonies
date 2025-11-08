@@ -1,8 +1,9 @@
 ---
 title: AI Improvements
+categories:
+  - world-mobs
+  - server-utility
 ---
-
-## AI Improvements
 
 ### Side
 

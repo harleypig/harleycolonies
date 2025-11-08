@@ -1,8 +1,8 @@
 ---
 title: Architectury API (Fabric/Forge/NeoForge)
+categories:
+  - library-api
 ---
-
-## Architectury API (Fabric/Forge/NeoForge)
 
 ### Side
 

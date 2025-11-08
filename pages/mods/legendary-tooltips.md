@@ -1,8 +1,12 @@
 ---
 title: Legendary Tooltips [Forge]
+categories:
+  - utility-qol
+  - cosmetic
+  - adventure-rpg
+  - armor-weapons-tools
+  - mc-miscellaneous
 ---
-
-## Legendary Tooltips [Forge]
 
 ### Side
 

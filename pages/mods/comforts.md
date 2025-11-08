@@ -1,8 +1,9 @@
 ---
 title: Comforts (Fabric/Forge/Quilt)
+categories:
+  - mc-miscellaneous
+  - adventure-rpg
 ---
-
-## Comforts (Fabric/Forge/Quilt)
 
 ### Side
 

@@ -1,8 +1,11 @@
 ---
 title: WaterPhysics
+categories:
+  - adventure-rpg
+  - world-gen
+  - technology-item-fluid-energy-transport
+  - utility-qol
 ---
-
-## WaterPhysics
 
 ### Side
 

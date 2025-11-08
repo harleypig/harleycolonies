@@ -1,8 +1,8 @@
 ---
 title: FLIB
+categories:
+  - library-api
 ---
-
-## FLIB
 
 ### Side
 

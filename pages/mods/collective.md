@@ -1,8 +1,8 @@
 ---
 title: Collective
+categories:
+  - library-api
 ---
-
-## Collective
 
 ### Side
 

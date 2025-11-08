@@ -1,8 +1,11 @@
 ---
 title: Tan's Huge Trees
+categories:
+  - adventure-rpg
+  - world-biomes
+  - mc-creator
+  - world-structures
 ---
-
-## Tan's Huge Trees
 
 ### Side
 

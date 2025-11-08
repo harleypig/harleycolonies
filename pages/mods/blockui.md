@@ -1,8 +1,8 @@
 ---
 title: BlockUI
+categories:
+  - library-api
 ---
-
-## BlockUI
 
 ### Side
 

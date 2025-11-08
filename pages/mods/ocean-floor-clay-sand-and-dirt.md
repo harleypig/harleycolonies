@@ -1,8 +1,11 @@
 ---
 title: Ocean Floor - Clay Sand and Dirt
+categories:
+  - cosmetic
+  - world-ores-resources
+  - world-biomes
+  - world-dimensions
 ---
-
-## Ocean Floor - Clay Sand and Dirt
 
 ### Side
 

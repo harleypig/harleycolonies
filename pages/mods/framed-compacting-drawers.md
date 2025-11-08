@@ -1,8 +1,10 @@
 ---
 title: Framed Compacting Drawers
+categories:
+  - storage
+  - mc-addons
+  - cosmetic
 ---
-
-## Framed Compacting Drawers
 
 ### Side
 

@@ -1,8 +1,11 @@
 ---
 title: Explorer's Compass
+categories:
+  - world-structures
+  - adventure-rpg
+  - map-information
+  - armor-weapons-tools
 ---
-
-## Explorer's Compass
 
 ### Side
 

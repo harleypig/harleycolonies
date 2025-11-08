@@ -1,8 +1,10 @@
 ---
 title: Just Enough Professions (JEP)
+categories:
+  - utility-qol
+  - map-information
+  - mc-addons
 ---
-
-## Just Enough Professions (JEP)
 
 ### Side
 

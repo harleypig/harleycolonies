@@ -1,8 +1,12 @@
 ---
 title: Just Enough Resources (JER)
+categories:
+  - world-ores-resources
+  - world-mobs
+  - map-information
+  - world-biomes
+  - mc-addons
 ---
-
-## Just Enough Resources (JER)
 
 ### Side
 

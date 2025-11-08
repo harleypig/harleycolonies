@@ -1,8 +1,9 @@
 ---
 title: Just Enough Effect Descriptions (JEED)
+categories:
+  - map-information
+  - mc-addons
 ---
-
-## Just Enough Effect Descriptions (JEED)
 
 ### Side
 

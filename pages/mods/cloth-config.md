@@ -1,8 +1,8 @@
 ---
 title: Cloth Config API (Fabric/Forge/NeoForge)
+categories:
+  - library-api
 ---
-
-## Cloth Config API (Fabric/Forge/NeoForge)
 
 ### Side
 

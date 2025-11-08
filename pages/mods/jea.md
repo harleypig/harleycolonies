@@ -1,8 +1,10 @@
 ---
 title: Just Enough Advancements (JEA)
+categories:
+  - map-information
+  - mc-addons
+  - library-api
 ---
-
-## Just Enough Advancements (JEA)
 
 ### Side
 

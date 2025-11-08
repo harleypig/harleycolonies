@@ -1,8 +1,12 @@
 ---
 title: Equipment Compare [Forge]
+categories:
+  - map-information
+  - armor-weapons-tools
+  - utility-qol
+  - cosmetic
+  - mc-miscellaneous
 ---
-
-## Equipment Compare [Forge]
 
 ### Side
 

@@ -1,8 +1,11 @@
 ---
 title: Stylecolonies
+categories:
+  - adventure-rpg
+  - cosmetic
+  - utility-qol
+  - mc-addons
 ---
-
-## Stylecolonies
 
 ### Side
 

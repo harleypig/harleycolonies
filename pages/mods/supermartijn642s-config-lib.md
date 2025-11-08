@@ -1,8 +1,8 @@
 ---
 title: SuperMartijn642's Config Lib
+categories:
+  - library-api
 ---
-
-## SuperMartijn642's Config Lib
 
 ### Side
 

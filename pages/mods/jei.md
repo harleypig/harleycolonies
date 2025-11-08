@@ -1,8 +1,9 @@
 ---
 title: Just Enough Items (JEI)
+categories:
+  - library-api
+  - map-information
 ---
-
-## Just Enough Items (JEI)
 
 ### Side
 

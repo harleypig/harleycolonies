@@ -1,8 +1,8 @@
 ---
 title: BetterF3
+categories:
+  - map-information
 ---
-
-## BetterF3
 
 ### Side
 

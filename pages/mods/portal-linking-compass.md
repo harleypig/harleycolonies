@@ -1,8 +1,9 @@
 ---
 title: Portal Linking Compass
+categories:
+  - utility-qol
+  - map-information
 ---
-
-## Portal Linking Compass
 
 ### Side
 

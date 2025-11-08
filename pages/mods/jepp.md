@@ -1,8 +1,9 @@
 ---
 title: Just Enough Painting Previews (JEPP)
+categories:
+  - mc-addons
+  - map-information
 ---
-
-## Just Enough Painting Previews (JEPP)
 
 ### Side
 

@@ -1,8 +1,11 @@
 ---
 title: Searchables
+categories:
+  - map-information
+  - utility-qol
+  - cosmetic
+  - library-api
 ---
-
-## Searchables
 
 ### Side
 

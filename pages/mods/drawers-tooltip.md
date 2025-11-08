@@ -1,8 +1,10 @@
 ---
 title: Drawers Tooltip
+categories:
+  - mc-addons
+  - storage
+  - utility-qol
 ---
-
-## Drawers Tooltip
 
 ### Side
 

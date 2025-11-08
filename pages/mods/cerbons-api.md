@@ -1,8 +1,9 @@
 ---
 title: CERBON's API [Forge | Fabric | NeoForge]
+categories:
+  - library-api
+  - library-api
 ---
-
-## CERBON's API [Forge | Fabric | NeoForge]
 
 ### Side
 

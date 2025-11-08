@@ -1,8 +1,9 @@
 ---
 title: Food Effect Tooltips (Forge)
+categories:
+  - mc-food
+  - utility-qol
 ---
-
-## Food Effect Tooltips (Forge)
 
 ### Side
 

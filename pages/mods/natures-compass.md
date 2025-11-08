@@ -1,8 +1,11 @@
 ---
 title: Nature's Compass
+categories:
+  - armor-weapons-tools
+  - world-biomes
+  - technology
+  - map-information
 ---
-
-## Nature's Compass
 
 ### Side
 

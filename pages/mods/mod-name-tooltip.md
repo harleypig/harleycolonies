@@ -1,8 +1,8 @@
 ---
 title: Mod Name Tooltip
+categories:
+  - map-information
 ---
-
-## Mod Name Tooltip
 
 ### Side
 

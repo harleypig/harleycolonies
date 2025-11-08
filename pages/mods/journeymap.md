@@ -1,8 +1,8 @@
 ---
 title: JourneyMap
+categories:
+  - map-information
 ---
-
-## JourneyMap
 
 ### Side
 

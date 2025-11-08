@@ -1,8 +1,11 @@
 ---
 title: Anvil Balance
+categories:
+  - technology
+  - armor-weapons-tools
+  - adventure-rpg
+  - utility-qol
 ---
-
-## Anvil Balance
 
 ### Side
 

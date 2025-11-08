@@ -1,8 +1,10 @@
 ---
 title: Durability Tooltip
+categories:
+  - armor-weapons-tools
+  - cosmetic
+  - map-information
 ---
-
-## Durability Tooltip
 
 ### Side
 

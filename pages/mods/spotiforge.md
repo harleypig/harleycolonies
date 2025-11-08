@@ -1,8 +1,9 @@
 ---
 title: SpotiForge
+categories:
+  - utility-qol
+  - cosmetic
 ---
-
-## SpotiForge
 
 ### Side
 

@@ -1,8 +1,8 @@
 ---
 title: Just Enough Archaeology
+categories:
+  - utility-qol
 ---
-
-## Just Enough Archaeology
 
 ### Side
 

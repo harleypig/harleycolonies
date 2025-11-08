@@ -1,8 +1,10 @@
 ---
 title: Clumps
+categories:
+  - storage
+  - utility-qol
+  - server-utility
 ---
-
-## Clumps
 
 ### Side
 

@@ -1,8 +1,9 @@
 ---
 title: Amendments
+categories:
+  - cosmetic
+  - utility-qol
 ---
-
-## Amendments
 
 ### Side
 

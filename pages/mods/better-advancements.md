@@ -1,8 +1,8 @@
 ---
 title: Better Advancements
+categories:
+  - cosmetic
 ---
-
-## Better Advancements
 
 ### Side
 

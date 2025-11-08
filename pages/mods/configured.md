@@ -1,8 +1,10 @@
 ---
 title: Configured
+categories:
+  - library-api
+  - utility-qol
+  - server-utility
 ---
-
-## Configured
 
 ### Side
 

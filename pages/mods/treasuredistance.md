@@ -1,8 +1,12 @@
 ---
 title: Better Treasure Map
+categories:
+  - world-gen
+  - utility-qol
+  - world-structures
+  - map-information
+  - armor-weapons-tools
 ---
-
-## Better Treasure Map
 
 ### Side
 

@@ -1,8 +1,11 @@
 ---
 title: Just Enough Breeding (JEBr)
+categories:
+  - map-information
+  - mc-addons
+  - utility-qol
+  - world-mobs
 ---
-
-## Just Enough Breeding (JEBr)
 
 ### Side
 

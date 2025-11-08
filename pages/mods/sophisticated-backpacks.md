@@ -1,8 +1,9 @@
 ---
 title: Sophisticated Backpacks
+categories:
+  - storage
+  - armor-weapons-tools
 ---
-
-## Sophisticated Backpacks
 
 ### Side
 

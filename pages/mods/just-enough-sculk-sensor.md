@@ -1,8 +1,10 @@
 ---
 title: Just Enough Sculk Sensor
+categories:
+  - utility-qol
+  - mc-addons
+  - redstone
 ---
-
-## Just Enough Sculk Sensor
 
 ### Side
 

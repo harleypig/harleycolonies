@@ -1,8 +1,11 @@
 ---
 title: Compact Help Command
+categories:
+  - server-utility
+  - map-information
+  - cosmetic
+  - mc-miscellaneous
 ---
-
-## Compact Help Command
 
 ### Side
 

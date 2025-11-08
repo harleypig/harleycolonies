@@ -1,8 +1,9 @@
 ---
 title: Better Days
+categories:
+  - utility-qol
+  - server-utility
 ---
-
-## Better Days
 
 ### Side
 

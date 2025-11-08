@@ -1,8 +1,10 @@
 ---
 title: Clean Swing Through Grass
+categories:
+  - utility-qol
+  - armor-weapons-tools
+  - adventure-rpg
 ---
-
-## Clean Swing Through Grass
 
 ### Side
 

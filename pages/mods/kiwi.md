@@ -1,8 +1,8 @@
 ---
 title: Kiwi 🥝 (Forge)
+categories:
+  - library-api
 ---
-
-## Kiwi 🥝 (Forge)
 
 ### Side
 

@@ -1,8 +1,9 @@
 ---
 title: Just Enough Calculation
+categories:
+  - map-information
+  - mc-addons
 ---
-
-## Just Enough Calculation
 
 ### Side
 

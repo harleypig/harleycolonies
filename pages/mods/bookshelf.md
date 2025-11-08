@@ -1,8 +1,10 @@
 ---
 title: Bookshelf
+categories:
+  - server-utility
+  - mc-miscellaneous
+  - library-api
 ---
-
-## Bookshelf
 
 ### Side
 

@@ -1,8 +1,12 @@
 ---
 title: MineColonies
+categories:
+  - world-structures
+  - adventure-rpg
+  - armor-weapons-tools
+  - technology-automation
+  - storage
 ---
-
-## MineColonies
 
 ### Side
 

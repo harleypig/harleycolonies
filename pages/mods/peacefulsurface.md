@@ -1,8 +1,8 @@
 ---
 title: PeacefulSurface
+categories:
+  - world-mobs
 ---
-
-## PeacefulSurface
 
 ### Side
 

@@ -1,8 +1,9 @@
 ---
 title: JadeColonies
+categories:
+  - mc-addons
+  - utility-qol
 ---
-
-## JadeColonies
 
 ### Side
 

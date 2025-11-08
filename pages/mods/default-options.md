@@ -1,8 +1,8 @@
 ---
 title: Default Options
+categories:
+  - mc-miscellaneous
 ---
-
-## Default Options
 
 ### Side
 

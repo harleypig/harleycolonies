@@ -1,8 +1,10 @@
 ---
 title: Geophilic Reforged – Biome Additions
+categories:
+  - world-ores-resources
+  - world-biomes
+  - world-gen
 ---
-
-## Geophilic Reforged – Biome Additions
 
 ### Side
 

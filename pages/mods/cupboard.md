@@ -1,8 +1,8 @@
 ---
 title: Cupboard
+categories:
+  - utility-qol
 ---
-
-## Cupboard
 
 ### Side
 
