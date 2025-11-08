@@ -18,15 +18,14 @@ REPO_ROOT = SCRIPT_DIR.parent
 MOD_MANAGER_DIR = SCRIPT_DIR / "mod_manager"
 sys.path.insert(0, str(MOD_MANAGER_DIR))
 
-# Try to activate venv if it exists
+# Try to use venv if it exists and we're not already using it
 VENV_DIR = SCRIPT_DIR / "venv"
-if VENV_DIR.exists():
+if VENV_DIR.exists() and sys.executable != str(VENV_DIR / "bin" / "python"):
     venv_python = VENV_DIR / "bin" / "python"
     if venv_python.exists():
         # Use venv Python if available
         os.execv(str(venv_python), [str(venv_python)] + sys.argv)
 
-# If no venv, use system Python
 # Import and run the CLI
 from mod_manager.cli import main
 
