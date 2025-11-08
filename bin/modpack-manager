@@ -57,35 +57,80 @@ if sys.executable != str(VENV_DIR / "bin" / "python"):
         os.execv(str(venv_python), [str(venv_python)] + sys.argv)
 
 # Check for missing dependencies and install them
-def check_and_install_dependencies():
-    """Check for required dependencies and install if missing."""
-    required_modules = [
-        "tomlkit",
-        "yaml",
-        "jinja2",
-    ]
+def parse_requirements_file(requirements_file):
+    """Parse requirements.txt and extract module names.
     
+    Returns a list of (package_name, import_name) tuples.
+    Maps package names to their import names (e.g., pyyaml -> yaml).
+    """
+    import re
+    
+    # Map package names to their import names
+    # Some packages have different names when installed vs imported
+    package_to_import = {
+        "pyyaml": "yaml",
+        # Add more mappings as needed
+    }
+    
+    modules = []
+    if not requirements_file.exists():
+        return modules
+    
+    with open(requirements_file, "r") as f:
+        for line in f:
+            line = line.strip()
+            # Skip comments and empty lines
+            if not line or line.startswith("#"):
+                continue
+            
+            # Remove version specifiers, extras, and other pip options
+            # Examples: "package>=1.0", "package[extra]", "package==1.0.0"
+            # Extract just the base package name
+            package_name = re.split(r"[>=<\[\]!@#]", line)[0].strip()
+            
+            if package_name:
+                # Map to import name if needed, otherwise use package name
+                import_name = package_to_import.get(package_name, package_name)
+                modules.append((package_name, import_name))
+    
+    return modules
+
+
+def check_and_install_dependencies():
+    """Check for required dependencies and install if missing.
+    
+    Reads requirements.txt to determine which modules to check.
+    """
+    requirements_file = SCRIPT_DIR / "requirements.txt"
+    
+    if not requirements_file.exists():
+        print("Warning: requirements.txt not found, skipping dependency check", file=sys.stderr)
+        return
+    
+    # Parse requirements file to get modules to check
+    required_modules = parse_requirements_file(requirements_file)
+    
+    if not required_modules:
+        return
+    
+    # Check for missing modules
     missing_modules = []
-    for module in required_modules:
+    for package_name, import_name in required_modules:
         try:
-            __import__(module)
+            __import__(import_name)
         except ImportError:
-            missing_modules.append(module)
+            missing_modules.append((package_name, import_name))
     
     if missing_modules:
-        print(f"Missing dependencies detected: {', '.join(missing_modules)}")
+        missing_packages = [pkg for pkg, _ in missing_modules]
+        print(f"Missing dependencies detected: {', '.join(missing_packages)}")
         print("Installing/updating dependencies...")
         
         import subprocess
         venv_pip = VENV_DIR / "bin" / "pip"
-        requirements_file = SCRIPT_DIR / "requirements.txt"
         
         if not venv_pip.exists():
             print("Error: pip not found in virtual environment", file=sys.stderr)
-            sys.exit(1)
-        
-        if not requirements_file.exists():
-            print("Error: requirements.txt not found", file=sys.stderr)
             sys.exit(1)
         
         # Install/upgrade dependencies
@@ -104,11 +149,11 @@ def check_and_install_dependencies():
         
         # Verify all modules are now available
         still_missing = []
-        for module in required_modules:
+        for package_name, import_name in required_modules:
             try:
-                __import__(module)
+                __import__(import_name)
             except ImportError:
-                still_missing.append(module)
+                still_missing.append(package_name)
         
         if still_missing:
             print(f"Error: Still missing dependencies after installation: {', '.join(still_missing)}", file=sys.stderr)
