@@ -10,7 +10,7 @@ general agent guidelines defined in `AGENTS.md`.
 
 ```
 harleycolonies/
-??? bin/                    # Helper scripts (gen-modlist, etc.)
+??? bin/                    # Helper scripts (modpack-manager, etc.)
 ??? docs/                   # Documentation
 ?   ??? guides/            # Player-facing guides
 ?   ??? mods/              # Mod-related documentation
@@ -135,7 +135,7 @@ For manual packwiz operations:
 
 3. Update `docs/mods/confirmed-mods.md` with mod details
 
-4. Regenerate mod list: `./bin/gen-modlist`
+4. Regenerate mod list: `bin/modpack-manager list --categories > docs/mods/modlist.md`
 
 **Note:** It's recommended to use `mod-manager` instead for better tracking
 and automation.
@@ -260,7 +260,7 @@ Follow the conventions from `AGENTS.md`:
 
 ### Before Pushing
 
-1. Run `./bin/gen-modlist` to ensure mod list is current
+1. Run `bin/modpack-manager list --categories > docs/mods/modlist.md` to ensure mod list is current
 2. Verify documentation is up to date
 3. Ensure `.gitignore` excludes user-specific files
 
