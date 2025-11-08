@@ -7,7 +7,7 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 
-from mod_manager import commands, data, packwiz
+from mpmanager import commands, data, packwiz
 
 
 def test_add_mod(temp_repo):
@@ -56,11 +56,11 @@ def test_remove_mod_not_found(temp_repo):
     assert result == 1
 
 
-@patch("mod_manager.commands.validation")
-@patch("mod_manager.commands.packwiz")
+@patch("mpmanager.commands.validation")
+@patch("mpmanager.commands.packwiz")
 def test_modpack_add(temp_repo, sample_modpack_dir):
     """Test adding mod to modpack."""
-    import mod_manager.commands as cmd_module
+    import mpmanager.commands as cmd_module
     cmd_module.packwiz.get_modpack_path = lambda d: temp_repo / d
     cmd_module.packwiz.find_mod_file = lambda d, s: "test-mod.pw.toml"
     cmd_module.packwiz.get_mod_side_from_packwiz = lambda d, f: "both"
@@ -75,11 +75,11 @@ def test_modpack_add(temp_repo, sample_modpack_dir):
     assert result == 0
 
 
-@patch("mod_manager.commands.packwiz")
-@patch("mod_manager.commands.validation")
+@patch("mpmanager.commands.packwiz")
+@patch("mpmanager.commands.validation")
 def test_modpack_remove(temp_repo, sample_modpack_dir):
     """Test removing mod from modpack."""
-    import mod_manager.commands as cmd_module
+    import mpmanager.commands as cmd_module
     cmd_module.packwiz.get_modpack_path = lambda d: temp_repo / d
     cmd_module.packwiz.find_mod_file = lambda d, s: "test-mod.pw.toml"
     cmd_module.packwiz.remove_mod.return_value = MagicMock(returncode=0)

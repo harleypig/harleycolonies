@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Mod Manager - Manage mods, generate modpacks, and create wiki pages.
+Modpack Manager - Manage mods, generate modpacks, and create wiki pages.
 
-This script loads a virtual environment from bin/venv and runs the mod_manager
+This script loads a virtual environment from bin/venv and runs the mpmanager
 package.
 """
 
@@ -14,9 +14,9 @@ from pathlib import Path
 SCRIPT_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPT_DIR.parent
 
-# Add bin/mod_manager to Python path
-MOD_MANAGER_DIR = SCRIPT_DIR / "mod_manager"
-sys.path.insert(0, str(MOD_MANAGER_DIR))
+# Add bin/mpmanager to Python path
+MPMANAGER_DIR = SCRIPT_DIR / "mpmanager"
+sys.path.insert(0, str(MPMANAGER_DIR))
 
 # Try to use venv if it exists and we're not already using it
 VENV_DIR = SCRIPT_DIR / "venv"
@@ -27,7 +27,7 @@ if VENV_DIR.exists() and sys.executable != str(VENV_DIR / "bin" / "python"):
         os.execv(str(venv_python), [str(venv_python)] + sys.argv)
 
 # Import and run the CLI
-from mod_manager.cli import main
+from mpmanager.cli import main
 
 if __name__ == "__main__":
     sys.exit(main())

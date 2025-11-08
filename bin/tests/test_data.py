@@ -7,7 +7,7 @@ from pathlib import Path
 
 import pytest
 
-from mod_manager import data
+from mpmanager import data
 
 
 def test_get_repo_root(temp_repo):

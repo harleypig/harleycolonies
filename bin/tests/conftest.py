@@ -31,16 +31,16 @@ def temp_repo(tmp_path, monkeypatch):
     with open(mods_yaml, "w") as f:
         yaml.dump({"mods": {}}, f)
 
-    # Add mod_manager to path
+    # Add mpmanager to path
     import sys
-    # When running from bin/, mod_manager is in bin/mod_manager
-    # When running from repo root, mod_manager is in bin/mod_manager
-    source_mod_manager = Path(__file__).parent.parent / "mod_manager"
-    if not source_mod_manager.exists():
+    # When running from bin/, mpmanager is in bin/mpmanager
+    # When running from repo root, mpmanager is in bin/mpmanager
+    source_modpack_manager = Path(__file__).parent.parent / "mpmanager"
+    if not source_modpack_manager.exists():
         # Try from repo root
-        source_mod_manager = Path(__file__).parent.parent.parent / "bin" / "mod_manager"
-    if str(source_mod_manager) not in sys.path:
-        sys.path.insert(0, str(source_mod_manager))
+        source_modpack_manager = Path(__file__).parent.parent.parent / "bin" / "mpmanager"
+    if str(source_modpack_manager) not in sys.path:
+        sys.path.insert(0, str(source_modpack_manager))
 
     # Monkey patch get_repo_root functions
     # The patch must be applied before modules are imported to prevent
@@ -49,15 +49,15 @@ def temp_repo(tmp_path, monkeypatch):
         return repo
 
     # Import modules and patch immediately
-    import mod_manager.data
-    import mod_manager.packwiz
-    import mod_manager.wiki
+    import mpmanager.data
+    import mpmanager.packwiz
+    import mpmanager.wiki
 
     # Patch the functions - this will override any calls to get_repo_root
     # The monkeypatch will ensure all calls to get_repo_root() use the mock
-    monkeypatch.setattr(mod_manager.data, "get_repo_root", mock_get_repo_root)
-    monkeypatch.setattr(mod_manager.packwiz, "get_repo_root", mock_get_repo_root)
-    monkeypatch.setattr(mod_manager.wiki, "get_repo_root", mock_get_repo_root)
+    monkeypatch.setattr(mpmanager.data, "get_repo_root", mock_get_repo_root)
+    monkeypatch.setattr(mpmanager.packwiz, "get_repo_root", mock_get_repo_root)
+    monkeypatch.setattr(mpmanager.wiki, "get_repo_root", mock_get_repo_root)
 
     yield repo
 

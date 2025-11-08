@@ -106,7 +106,7 @@ def generate_wiki_page(mod_slug, mod_data):
 
 def generate_all_wiki_pages():
     """Generate wiki pages for all mods."""
-    from mod_manager import data
+    from mpmanager import data
 
     mods_data = data.load_mods()
     mods = mods_data.get("mods", {})

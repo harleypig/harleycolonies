@@ -6,7 +6,7 @@ CLI interface for mod-manager.
 import argparse
 import sys
 
-from mod_manager import commands
+from mpmanager import commands
 
 
 def main():

@@ -7,16 +7,16 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 
-from mod_manager import commands, data, packwiz, wiki
+from mpmanager import commands, data, packwiz, wiki
 
 
-@patch("mod_manager.commands.packwiz")
-@patch("mod_manager.commands.validation")
+@patch("mpmanager.commands.packwiz")
+@patch("mpmanager.commands.validation")
 def test_full_workflow_add_mod_to_modpack(
     temp_repo, sample_modpack_dir
 ):
     """Test full workflow: add mod, add to modpack, generate wiki."""
-    import mod_manager.commands as cmd_module
+    import mpmanager.commands as cmd_module
     cmd_module.packwiz.get_modpack_path = lambda d: temp_repo / d
 
     cmd_module.validation.check_packwiz_available.return_value = (True, None)
@@ -44,11 +44,11 @@ def test_full_workflow_add_mod_to_modpack(
     assert "test-modpack-1.20.1" in mod["modpacks"]["installed_in"]
 
 
-@patch("mod_manager.commands.packwiz")
+@patch("mpmanager.commands.packwiz")
 def test_workflow_reject_and_remove(temp_repo, sample_modpack_dir):
     """Test workflow: reject mod, then remove from modpack."""
     # Note: packwiz is already patched, but we need to set up the lambda
-    import mod_manager.commands as cmd_module
+    import mpmanager.commands as cmd_module
     cmd_module.packwiz.get_modpack_path = lambda d: temp_repo / d
 
     # Add mod

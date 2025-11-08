@@ -4,7 +4,7 @@ Tests for validation.py module.
 
 import pytest
 
-from mod_manager import validation
+from mpmanager import validation
 
 
 def test_check_packwiz_available():

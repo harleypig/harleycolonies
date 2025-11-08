@@ -6,7 +6,7 @@ from pathlib import Path
 
 import pytest
 
-from mod_manager import wiki
+from mpmanager import wiki
 
 
 def test_get_repo_root(temp_repo):
@@ -82,7 +82,7 @@ def test_generate_wiki_page_custom(temp_repo, sample_mod_data):
 
 def test_generate_all_wiki_pages(temp_repo, sample_mod_data):
     """Test generating all wiki pages."""
-    from mod_manager import data
+    from mpmanager import data
 
     data.set_mod("test-mod", sample_mod_data)
     data.set_mod("test-mod-2", {"name": "Test Mod 2"})

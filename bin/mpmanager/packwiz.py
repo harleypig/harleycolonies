@@ -42,7 +42,7 @@ def install_mod(modpack_dir, mod_slug, source="curseforge", project_id=None):
     if source == "curseforge":
         if not project_id:
             # Try to get from mods.yaml
-            from mod_manager import data
+            from mpmanager import data
 
             mod = data.get_mod(mod_slug)
             if mod and "curseforge_id" in mod:

@@ -7,7 +7,7 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 
-from mod_manager import packwiz
+from mpmanager import packwiz
 
 
 def test_get_repo_root(temp_repo):

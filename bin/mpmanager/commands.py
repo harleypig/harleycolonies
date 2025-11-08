@@ -7,7 +7,7 @@ import shutil
 import sys
 from pathlib import Path
 
-from mod_manager import data, packwiz, wiki, validation
+from mpmanager import data, packwiz, wiki, validation
 
 
 def add_mod(mod_slug, curseforge_id=None, modrinth_id=None, side=None):
