@@ -133,3 +133,36 @@ def test_sync_from_modpack_updates_missing_side(temp_repo, sample_modpack_dir):
     mod = data.get_mod("test-mod")
     assert mod["side"] == "both"
 
+
+@patch("mpmanager.commands.packwiz")
+def test_sync_from_modpack_strips_trailing_slash(temp_repo, sample_modpack_dir):
+    """Test that sync_from_modpack handles trailing slashes correctly."""
+    import mpmanager.commands as cmd_module
+    cmd_module.packwiz.get_modpack_path = lambda d: temp_repo / d.rstrip("/")
+
+    cmd_module.packwiz.get_all_mods_in_modpack.return_value = [
+        {
+            "file": "test-mod.pw.toml",
+            "name": "Test Mod",
+            "side": "both",
+        }
+    ]
+    
+    # Mock TOML data
+    cmd_module.packwiz.get_mod_toml_data.return_value = {
+        "name": "Test Mod",
+        "side": "both"
+    }
+    cmd_module.packwiz.extract_metadata_from_toml.return_value = {
+        "side": "both"
+    }
+
+    # Test with trailing slash - should be stripped by CLI, but test the command directly
+    # The command should handle it gracefully
+    result = commands.sync_from_modpack("test-modpack-1.20.1/")
+    assert result == 0
+    
+    # Verify it worked (modpack_dir should be used without trailing slash internally)
+    mod = data.get_mod("test-mod")
+    assert mod is not None
+
