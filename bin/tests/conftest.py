@@ -35,6 +35,10 @@ def temp_repo(tmp_path, monkeypatch):
     template_file = resources_dir / "mod-page.template.j2"
     template_file.write_text("""---
 title: {{ name }}
+tag: modpack
+{% if categories %}categories:
+{% for category in categories %}  - {{ category }}
+{% endfor %}{% endif %}
 ---
 
 ## {{ name }}
