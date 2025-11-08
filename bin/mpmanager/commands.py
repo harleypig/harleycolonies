@@ -289,6 +289,9 @@ def generate_wiki(generate=False, mod_slug=None, index=False):
         # Generate all wiki pages
         generated = wiki.generate_all_wiki_pages()
         print(f"Generated {len(generated)} wiki pages")
+        # Generate index page
+        index_path = wiki.generate_mods_index()
+        print(f"Generated mods index page: {index_path}")
     else:
         print("Generating all wiki pages")
         generated = wiki.generate_all_wiki_pages()

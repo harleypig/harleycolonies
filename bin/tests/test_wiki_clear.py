@@ -78,4 +78,8 @@ def test_generate_wiki_destructive(temp_repo):
     # Verify new wiki page was created
     new_page = mods_wiki_dir / "test-mod.md"
     assert new_page.exists()
+    
+    # Verify index page was created
+    new_index = wiki.get_mods_index_path()
+    assert new_index.exists()
 
