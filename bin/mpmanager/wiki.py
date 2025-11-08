@@ -37,6 +37,14 @@ def _get_template():
     return env.get_template("wiki-page-template.j2")
 
 
+def _get_index_template():
+    """Get Jinja2 template for mods index page."""
+    script_dir = Path(__file__).parent.parent
+    template_dir = script_dir
+    env = Environment(loader=FileSystemLoader(str(template_dir)))
+    return env.get_template("mods-index-template.j2")
+
+
 def generate_simple_wiki_page(mod_slug, mod_data):
     """Generate simple wiki page for mod."""
     name = mod_data.get("name", mod_slug)
@@ -199,23 +207,13 @@ def generate_mods_index():
     # Sort uncategorized mods by name
     uncategorized_mods.sort(key=lambda x: x[1].lower())
 
-    # Generate markdown content
-    content = "# Mods\n\n"
-    content += "This page lists all mods across all modpacks in mods/mods.yaml, grouped by category.\n\n"
-
-    # Add categorized mods
-    for category in sorted_categories:
-        content += f"## {category}\n\n"
-        for mod_slug, mod_name in categorized_mods[category]:
-            content += f"- [{mod_name}](mods/{mod_slug}.md)\n"
-        content += "\n"
-
-    # Add uncategorized mods if any
-    if uncategorized_mods:
-        content += "## Uncategorized\n\n"
-        for mod_slug, mod_name in uncategorized_mods:
-            content += f"- [{mod_name}](mods/{mod_slug}.md)\n"
-        content += "\n"
+    # Generate markdown content using Jinja2 template
+    template = _get_index_template()
+    content = template.render(
+        sorted_categories=sorted_categories,
+        categorized_mods=categorized_mods,
+        uncategorized_mods=uncategorized_mods,
+    )
 
     # Write to pages/mods.md
     index_path = get_mods_index_path()

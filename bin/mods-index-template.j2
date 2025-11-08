@@ -1,0 +1,21 @@
+# Mods
+
+This page lists all mods across all modpacks in mods/mods.yaml, grouped by category.
+
+{% for category in sorted_categories %}
+## {{ category }}
+
+{% for mod_slug, display_name in categorized_mods[category] %}
+- [{{ display_name }}](mods/{{ mod_slug }}.md)
+{% endfor %}
+
+{% endfor %}
+{% if uncategorized_mods %}
+## Uncategorized
+
+{% for mod_slug, display_name in uncategorized_mods %}
+- [{{ display_name }}](mods/{{ mod_slug }}.md)
+{% endfor %}
+
+{% endif %}
+
