@@ -564,7 +564,7 @@ def update_mod_side(mod_slug, new_side, modpack_dir=None):
 
 
 def copy_custom_configs(mod_slug, modpack_dir):
-    """Copy custom config files from mods/<mod-slug>/config/ to modpack."""
+    """Copy custom config files from modpacks/<mod-slug>/config/ to modpack."""
     mod_dir = wiki.get_mod_dir(mod_slug)
     config_dir = mod_dir / "config"
 
@@ -581,4 +581,398 @@ def copy_custom_configs(mod_slug, modpack_dir):
             dest_file = modpack_config_dir / config_file.name
             shutil.copy2(config_file, dest_file)
             print(f"  Copied config: {config_file.name}")
+
+
+# New command functions for restructured CLI
+
+def mod_create(mod_slug, modpack_dir, curseforge_id=None, category=None, file_id=None):
+    """Create mod entry in modpacks/mods.yaml and install using Packwiz."""
+    print(f"Creating mod: {mod_slug} in modpack: {modpack_dir}")
+
+    # Check packwiz availability
+    available, error = validation.check_packwiz_available()
+    if not available:
+        print(f"Error: {error}")
+        return 1
+
+    # Check if modpack exists
+    modpack_path = packwiz.get_modpack_path(modpack_dir)
+    if not modpack_path.exists():
+        print(f"Error: Modpack directory {modpack_dir} not found")
+        return 1
+
+    # Get mods before install to detect dependencies
+    mods_before = set()
+    mods_dir = modpack_path / "mods"
+    if mods_dir.exists():
+        for mod_file in mods_dir.glob("*.pw.toml"):
+            mods_before.add(mod_file.name)
+
+    # Install mod using packwiz curseforge add
+    mod_slug_or_id = str(curseforge_id) if curseforge_id else mod_slug
+    result = packwiz.add_mod_curseforge(
+        modpack_dir,
+        mod_slug_or_id,
+        addon_id=curseforge_id,
+        category=category,
+        file_id=file_id,
+    )
+
+    if result.returncode != 0:
+        error_output = result.stderr or result.stdout or ""
+        error_lower = error_output.lower()
+        
+        # Check if mod exists but no matching file found
+        if ("no matching file" in error_lower or 
+            "no suitable file" in error_lower or
+            "no file found" in error_lower):
+            # Mod exists but no matching file - mark as rejected
+            print(f"Mod {mod_slug} exists but no matching file found for modpack {modpack_dir}")
+            print(f"Marking as rejected in modpacks/mods.yaml")
+            
+            # Create or update mod entry
+            mod = data.get_mod(mod_slug)
+            if not mod:
+                mod_data = {"name": mod_slug}
+                if curseforge_id:
+                    mod_data["curseforge_id"] = curseforge_id
+                data.set_mod(mod_slug, mod_data)
+            
+            # Mark as rejected
+            reason = f"No matching file found for modpack {modpack_dir}"
+            data.add_to_modpack(mod_slug, modpack_dir, "rejected_in", reason)
+            print(f"Marked {mod_slug} as rejected in {modpack_dir}")
+            return 0
+        else:
+            # Other error - display to user
+            print(f"Error: {error_output}", file=sys.stderr)
+            return 1
+
+    # Get mods after install to detect dependencies
+    mods_after = set()
+    if mods_dir.exists():
+        for mod_file in mods_dir.glob("*.pw.toml"):
+            mods_after.add(mod_file.name)
+    
+    # Find newly added mod files (including dependencies)
+    new_mods = mods_after - mods_before
+    
+    # Find the main mod file (should match mod_slug or be the first new one)
+    main_mod_file = None
+    for mod_file in new_mods:
+        if mod_slug.lower() in mod_file.lower():
+            main_mod_file = mod_file
+            break
+    
+    if not main_mod_file and new_mods:
+        # Use first new mod file if we can't find a match
+        main_mod_file = list(new_mods)[0]
+    
+    if not main_mod_file:
+        print(f"Warning: Could not find installed mod file for {mod_slug}")
+        return 1
+
+    # Extract metadata from installed mod
+    toml_data = packwiz.get_mod_toml_data(modpack_dir, main_mod_file)
+    metadata = {}
+    if toml_data:
+        metadata = packwiz.extract_metadata_from_toml(toml_data)
+        mod_name = toml_data.get("name", mod_slug)
+        mod_side = toml_data.get("side")
+    else:
+        mod_name = mod_slug
+        mod_side = None
+
+    # Create or update mod entry in modpacks/mods.yaml
+    mod = data.get_mod(mod_slug)
+    if not mod:
+        mod_data = {"name": mod_name}
+        if mod_side:
+            mod_data["side"] = mod_side
+        if curseforge_id:
+            mod_data["curseforge_id"] = curseforge_id
+        elif "curseforge_id" in metadata:
+            mod_data["curseforge_id"] = metadata["curseforge_id"]
+        data.set_mod(mod_slug, mod_data)
+        print(f"  Created mod entry: {mod_slug}")
+    else:
+        # Update existing mod
+        if mod_name and not mod.get("name"):
+            mod["name"] = mod_name
+        if mod_side and not mod.get("side"):
+            mod["side"] = mod_side
+        if curseforge_id and not mod.get("curseforge_id"):
+            mod["curseforge_id"] = curseforge_id
+        data.set_mod(mod_slug, mod)
+        print(f"  Updated mod entry: {mod_slug}")
+
+    # Merge metadata
+    if metadata:
+        data.merge_metadata(mod_slug, metadata, modpack_dir)
+
+    # Add to installed_in
+    data.add_to_modpack(mod_slug, modpack_dir, "installed_in")
+
+    # Copy custom configs if they exist
+    copy_custom_configs(mod_slug, modpack_dir)
+
+    # Handle dependencies (TBD - for now just report them)
+    dependencies = new_mods - {main_mod_file}
+    if dependencies:
+        print(f"  Dependencies detected: {len(dependencies)} mod(s)")
+        print(f"  Note: Dependency handling is TBD")
+
+    print(f"Created mod: {mod_slug} in modpack: {modpack_dir}")
+    return 0
+
+
+def mod_list(mod_slug=None, modpack=None, categories=None, category_names=False):
+    """List mods."""
+    return list_mods(modpack=modpack, mod_slug=mod_slug, categories=categories, category_names=category_names)
+
+
+def mod_update(mod_slug, side=None, curseforge_id=None, modrinth_id=None):
+    """Update mod information."""
+    print(f"Updating mod: {mod_slug}")
+
+    mod = data.get_mod(mod_slug)
+    if mod is None:
+        print(f"Error: Mod {mod_slug} not found")
+        return 1
+
+    if side:
+        mod["side"] = side
+        data.set_mod(mod_slug, mod)
+        print(f"Updated side for {mod_slug} to {side}")
+
+    if curseforge_id:
+        mod["curseforge_id"] = curseforge_id
+        data.set_mod(mod_slug, mod)
+        print(f"Updated curseforge_id for {mod_slug} to {curseforge_id}")
+
+    if modrinth_id:
+        mod["modrinth_id"] = modrinth_id
+        data.set_mod(mod_slug, mod)
+        print(f"Updated modrinth_id for {mod_slug} to {modrinth_id}")
+
+    return 0
+
+
+def mod_remove(mod_slug, from_modpack=None):
+    """Remove mod from modpack or from modpacks directory entirely."""
+    if from_modpack:
+        # Remove from modpack only
+        print(f"Removing {mod_slug} from modpack {from_modpack}")
+        
+        # Find mod file in modpack
+        mod_file = packwiz.find_mod_file(from_modpack, mod_slug)
+        if not mod_file:
+            print(f"Error: Mod {mod_slug} not found in modpack {from_modpack}")
+            return 1
+
+        # Remove using packwiz
+        result = packwiz.remove_mod(from_modpack, mod_file)
+        if result.returncode != 0:
+            print(f"Error removing mod: {result.stderr}")
+            return 1
+
+        # Update mods.yaml
+        data.remove_from_modpack(mod_slug, from_modpack)
+        print(f"Removed {mod_slug} from {from_modpack}")
+    else:
+        # Remove from modpacks directory entirely
+        print(f"Removing mod: {mod_slug} from modpacks directory")
+        
+        if not data.remove_mod(mod_slug):
+            print(f"Error: Mod {mod_slug} not found")
+            return 1
+
+        # Remove mod directory if it exists
+        mod_dir = wiki.get_mod_dir(mod_slug)
+        if mod_dir.exists():
+            shutil.rmtree(mod_dir)
+            print(f"  Removed mod directory: {mod_dir}")
+
+        print(f"Removed mod: {mod_slug}")
+    
+    return 0
+
+
+def mod_sync(modpack_dir, mod_slug=None):
+    """Sync mod(s) from modpack TOML to modpacks/mods.yaml."""
+    print(f"Syncing mod(s) from modpack: {modpack_dir}")
+
+    modpack_path = packwiz.get_modpack_path(modpack_dir)
+    if not modpack_path.exists():
+        print(f"Error: Modpack directory {modpack_dir} not found")
+        return 1
+
+    if mod_slug:
+        # Sync single mod
+        mod_file = packwiz.find_mod_file(modpack_dir, mod_slug)
+        if not mod_file:
+            print(f"Error: Mod {mod_slug} not found in modpack {modpack_dir}")
+            return 1
+        
+        mod_files = [{"file": mod_file}]
+    else:
+        # Sync all mods
+        mod_files = packwiz.get_all_mods_in_modpack(modpack_dir)
+
+    for mod_info in mod_files:
+        mod_file = mod_info["file"]
+        mod_name = mod_info.get("name", mod_file.replace(".pw.toml", ""))
+        mod_side = mod_info.get("side")
+
+        # Extract slug from filename
+        mod_slug_from_file = mod_file.replace(".pw.toml", "").lower()
+
+        # Get full TOML data for metadata extraction
+        toml_data = packwiz.get_mod_toml_data(modpack_dir, mod_file)
+        metadata = {}
+        if toml_data:
+            metadata = packwiz.extract_metadata_from_toml(toml_data)
+            if not mod_name:
+                mod_name = toml_data.get("name", mod_slug_from_file)
+            if not mod_side:
+                mod_side = toml_data.get("side")
+
+        # Check if mod exists in modpacks/mods.yaml
+        mod = data.get_mod(mod_slug_from_file)
+        if not mod:
+            # Create new mod entry
+            mod_data = {"name": mod_name}
+            if mod_side:
+                mod_data["side"] = mod_side
+            data.set_mod(mod_slug_from_file, mod_data)
+            print(f"  Added new mod: {mod_slug_from_file} (side: {mod_side or 'unknown'})")
+        else:
+            # Update side if not already set (preserve manual settings)
+            if not mod.get("side") and mod_side:
+                mod["side"] = mod_side
+                data.set_mod(mod_slug_from_file, mod)
+                print(f"  Updated side for {mod_slug_from_file} to {mod_side}")
+
+        # Merge metadata (canonical or version-specific)
+        if metadata:
+            data.merge_metadata(mod_slug_from_file, metadata, modpack_dir)
+
+        # Add to installed_in
+        data.add_to_modpack(mod_slug_from_file, modpack_dir, "installed_in")
+
+    print(f"Synced {len(mod_files)} mod(s) from {modpack_dir}")
+    return 0
+
+
+def modpack_list(modpack_dir=None):
+    """List modpacks or mods in modpack."""
+    if modpack_dir:
+        # List mods in specific modpack
+        return list_mods(modpack=modpack_dir)
+    else:
+        # List all modpacks (TBD - would need modpacks.yaml)
+        print("Listing all modpacks (TBD - requires modpacks.yaml)")
+        return 0
+
+
+def modpack_update(modpack_dir, mc_version=None, modloader=None):
+    """Update modpack metadata."""
+    print(f"Updating modpack: {modpack_dir}")
+
+    modpack_path = packwiz.get_modpack_path(modpack_dir)
+    if not modpack_path.exists():
+        print(f"Error: Modpack directory {modpack_dir} not found")
+        return 1
+
+    # Update pack.toml
+    pack_toml = modpack_path / "pack.toml"
+    if not pack_toml.exists():
+        print(f"Error: pack.toml not found in {modpack_dir}")
+        return 1
+
+    try:
+        from tomlkit import parse, dumps
+        with open(pack_toml, "r") as f:
+            pack_data = parse(f.read())
+
+        if "versions" not in pack_data:
+            pack_data["versions"] = {}
+
+        if mc_version:
+            pack_data["versions"]["minecraft"] = mc_version
+            print(f"  Updated Minecraft version to {mc_version}")
+
+        if modloader:
+            # Get current modloader version or use "latest"
+            current_version = pack_data["versions"].get(modloader, "latest")
+            pack_data["versions"][modloader] = current_version
+            print(f"  Updated modloader to {modloader}")
+
+        with open(pack_toml, "w") as f:
+            f.write(dumps(pack_data))
+
+        print(f"Updated modpack: {modpack_dir}")
+        return 0
+    except Exception as e:
+        print(f"Error updating modpack: {e}", file=sys.stderr)
+        return 1
+
+
+def modpack_remove(modpack_dir, from_filesystem=False):
+    """Remove modpack from tracking or from filesystem."""
+    if from_filesystem:
+        # Delete modpack directory
+        print(f"Removing modpack directory: {modpack_dir}")
+        modpack_path = packwiz.get_modpack_path(modpack_dir)
+        if not modpack_path.exists():
+            print(f"Error: Modpack directory {modpack_dir} not found")
+            return 1
+        
+        shutil.rmtree(modpack_path)
+        print(f"Removed modpack directory: {modpack_dir}")
+    else:
+        # Remove from tracking only (TBD - would need modpacks.yaml)
+        print(f"Removing modpack from tracking: {modpack_dir} (TBD - requires modpacks.yaml)")
+    
+    return 0
+
+
+def modpack_sync_from(modpack_dir):
+    """Sync modpacks/mods.yaml FROM modpack (imports all mods)."""
+    return sync_from_modpack(modpack_dir)
+
+
+def modpack_remove_mod(modpack_dir, mod_slug):
+    """Remove mod from modpack."""
+    print(f"Removing {mod_slug} from modpack {modpack_dir}")
+
+    # Find mod file in modpack
+    mod_file = packwiz.find_mod_file(modpack_dir, mod_slug)
+    if not mod_file:
+        print(f"Error: Mod {mod_slug} not found in modpack {modpack_dir}")
+        return 1
+
+    # Remove using packwiz
+    result = packwiz.remove_mod(modpack_dir, mod_file)
+    if result.returncode != 0:
+        print(f"Error removing mod: {result.stderr}")
+        return 1
+
+    # Update mods.yaml
+    data.remove_from_modpack(mod_slug, modpack_dir)
+
+    print(f"Removed {mod_slug} from {modpack_dir}")
+    return 0
+
+
+def wiki_generate(all_pages=False, mod_slug=None, index=False):
+    """Generate wiki pages."""
+    if all_pages:
+        return generate_wiki(generate=True, mod_slug=mod_slug, index=index)
+    elif mod_slug:
+        return generate_wiki(generate=False, mod_slug=mod_slug, index=False)
+    elif index:
+        return generate_wiki(generate=False, mod_slug=None, index=True)
+    else:
+        return generate_wiki(generate=False, mod_slug=None, index=False)
 

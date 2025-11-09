@@ -14,7 +14,7 @@ def get_repo_root():
 
 def get_mod_dir(mod_slug):
     """Get mod custom directory."""
-    return get_repo_root() / "mods" / mod_slug
+    return get_repo_root() / "modpacks" / mod_slug
 
 
 def get_wiki_page_path(mod_slug):

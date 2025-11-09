@@ -15,7 +15,7 @@ def get_repo_root():
 
 def get_mods_yaml_path():
     """Get path to mods.yaml file."""
-    return get_repo_root() / "mods" / "mods.yaml"
+    return get_repo_root() / "modpacks" / "mods.yaml"
 
 
 def load_mods():
@@ -191,9 +191,9 @@ def _deep_compare_dicts(dict1, dict2):
 def merge_metadata(mod_slug, new_metadata, modpack_dir):
     """Merge metadata for a mod, storing canonical or version-specific.
     
-    If mod has no existing metadata, store in mods/<mod-slug>/metadata.
+    If mod has no existing metadata, store in modpacks/<mod-slug>/metadata.
     If mod has existing metadata, compare and store differences in
-    mods/<mod-slug>/versions/<modpack-dir>/metadata.
+    modpacks/<mod-slug>/versions/<modpack-dir>/metadata.
     
     Note: curseforge_id and modrinth_id are stored at the top level,
     not in the metadata dict. 'side' is also stored at top level but

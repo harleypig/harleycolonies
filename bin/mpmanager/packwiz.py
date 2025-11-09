@@ -62,6 +62,38 @@ def run_packwiz(command, modpack_dir, *args, check=True):
     return result
 
 
+def add_mod_curseforge(modpack_dir, mod_slug_or_id, addon_id=None, category=None, file_id=None):
+    """Add mod from CurseForge using packwiz curseforge add.
+    
+    Args:
+        modpack_dir: Modpack directory name
+        mod_slug_or_id: Mod slug, ID, URL, or search term
+        addon_id: CurseForge project ID (--addon-id flag)
+        category: Category to add files from (--category flag)
+        file_id: CurseForge file ID (--file-id flag)
+    
+    Returns:
+        subprocess.CompletedProcess result
+    """
+    modpack_path = get_modpack_path(modpack_dir)
+    cmd = ["packwiz", "curseforge", "add", str(mod_slug_or_id)]
+    
+    if addon_id:
+        cmd.extend(["--addon-id", str(addon_id)])
+    if category:
+        cmd.extend(["--category", category])
+    if file_id:
+        cmd.extend(["--file-id", str(file_id)])
+    
+    result = subprocess.run(
+        cmd,
+        cwd=str(modpack_path),
+        capture_output=True,
+        text=True,
+    )
+    return result
+
+
 def install_mod(modpack_dir, mod_slug, source="curseforge", project_id=None):
     """Install mod using packwiz."""
     modpack_path = get_modpack_path(modpack_dir)

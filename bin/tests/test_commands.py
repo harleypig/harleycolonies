@@ -253,3 +253,65 @@ def test_generate_wiki_index(temp_repo):
     index_path = wiki.get_mods_index_path()
     assert index_path.exists()
 
+
+# Tests for new command structure
+
+def test_mod_update(temp_repo):
+    """Test mod update command."""
+    commands.add_mod("test-mod")
+    result = commands.mod_update("test-mod", side="client")
+    assert result == 0
+    mod = data.get_mod("test-mod")
+    assert mod["side"] == "client"
+
+
+def test_mod_update_curseforge_id(temp_repo):
+    """Test mod update with curseforge_id."""
+    commands.add_mod("test-mod")
+    result = commands.mod_update("test-mod", curseforge_id=12345)
+    assert result == 0
+    mod = data.get_mod("test-mod")
+    assert mod["curseforge_id"] == 12345
+
+
+def test_mod_remove_from_modpack(temp_repo, sample_modpack_dir):
+    """Test mod remove from modpack."""
+    import mpmanager.commands as cmd_module
+    cmd_module.packwiz.get_modpack_path = lambda d: temp_repo / d
+    cmd_module.packwiz.find_mod_file = lambda d, s: "test-mod.pw.toml"
+    cmd_module.packwiz.remove_mod = MagicMock(return_value=MagicMock(returncode=0))
+    
+    commands.add_mod("test-mod")
+    data.add_to_modpack("test-mod", "test-modpack-1.20.1", "installed_in")
+    result = commands.mod_remove("test-mod", from_modpack="test-modpack-1.20.1")
+    assert result == 0
+
+
+def test_mod_remove_from_modpacks_dir(temp_repo):
+    """Test mod remove from modpacks directory."""
+    commands.add_mod("test-mod")
+    result = commands.mod_remove("test-mod")
+    assert result == 0
+    assert data.get_mod("test-mod") is None
+
+
+def test_wiki_generate_all(temp_repo):
+    """Test wiki generate --all command."""
+    commands.add_mod("test-mod")
+    result = commands.wiki_generate(all_pages=True)
+    assert result == 0
+
+
+def test_wiki_generate_mod(temp_repo):
+    """Test wiki generate --mod command."""
+    commands.add_mod("test-mod")
+    result = commands.wiki_generate(mod_slug="test-mod")
+    assert result == 0
+
+
+def test_wiki_generate_index(temp_repo):
+    """Test wiki generate --index command."""
+    commands.add_mod("test-mod")
+    result = commands.wiki_generate(index=True)
+    assert result == 0
+
