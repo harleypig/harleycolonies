@@ -736,7 +736,7 @@ mods:
       - utility-qol
   ding:
     name: Ding (Forge)
-    side: both
+    side: client
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
@@ -1036,7 +1036,7 @@ mods:
       - world-dimensions
   jade-addons:
     name: Jade Addons (Forge)
-    side: both
+    side: client
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
