@@ -5,6 +5,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 532286
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/just-enough-effect-descriptions-jeed
@@ -19,6 +20,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 515753
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/compact-help-command
@@ -78,6 +80,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 470193
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/connectivity
@@ -124,6 +127,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 303278
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/multi-piston
@@ -140,6 +144,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 292038
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/better-ping-display
@@ -155,6 +160,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 438332
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib
@@ -183,6 +189,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 298744
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/structurize
@@ -271,6 +278,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 444941
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/jea
@@ -287,6 +295,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 32274
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/journeymap
@@ -300,6 +309,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 858542
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/searchables
@@ -355,6 +365,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 522992
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/blockui
@@ -367,6 +378,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 232131
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/default-options
@@ -381,6 +393,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 245506
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/minecolonies
@@ -397,12 +410,16 @@ mods:
       harleycolonies-1.20.1-0.1.2:
         metadata:
           side: both
+      harleycolonies-1.21.1:
+        metadata:
+          side: both
   vanilla-tools:
     name: Vanilla Plus Tools
     side: both
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 308705
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/vanilla-tools
@@ -419,6 +436,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 412525
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/libx
@@ -433,6 +451,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 324717
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/jade
@@ -487,6 +506,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 546740
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/jepp
@@ -500,6 +520,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 326652
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/cupboard
@@ -528,6 +549,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 531761
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/balm
@@ -542,6 +564,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 233019
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/ai-improvements
@@ -556,6 +579,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 511040
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/durability-tooltip
@@ -571,6 +595,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 483682
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/storage-racks
@@ -588,6 +613,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 252848
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/natures-compass
@@ -617,6 +643,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 890755
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/just-enough-archaeology
@@ -641,6 +668,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 525447
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/journeymap-integration
@@ -655,6 +683,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 248787
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/appleskin
@@ -669,6 +698,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 827507
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/stylecolonies
@@ -683,6 +713,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 915308
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/clean-swing-through-grass
@@ -697,6 +728,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 421377
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/treechop
@@ -740,6 +772,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 231275
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/ding
@@ -767,6 +800,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 495476
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/puzzles-lib
@@ -780,6 +814,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 900364
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/towntalk
@@ -864,6 +899,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 882310
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/jadecolonies
@@ -906,6 +942,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 955605
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/cerbons-api
@@ -920,6 +957,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 419699
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/architectury-api
@@ -948,6 +986,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 417645
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/just-enough-professions-jep
@@ -963,6 +1002,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 276951
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/comforts
@@ -978,6 +1018,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 899386
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/justenoughbreeding
@@ -994,6 +1035,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 873563
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/treasuredistance
@@ -1010,6 +1052,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 348521
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/cloth-config
@@ -1040,6 +1083,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 583345
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/jade-addons
@@ -1055,6 +1099,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 238222
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/jei
@@ -1069,6 +1114,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 527361
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/domum-ornamentum
@@ -1116,6 +1162,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 73112
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/peacefulsurface
@@ -1130,6 +1177,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 912266
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/just-enough-beacons-reforged
@@ -1188,6 +1236,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 895618
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/betterdays
@@ -1202,6 +1251,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 241895
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/kleeslabs
@@ -1216,6 +1266,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 245755
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/waystones
@@ -1250,6 +1301,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 342584
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/collective
@@ -1263,6 +1315,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 250398
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/controlling
@@ -1277,6 +1330,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 491794
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/explorers-compass
@@ -1307,6 +1361,7 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.20.1-0.1.2
+      - harleycolonies-1.21.1
     curseforge_id: 256717
     metadata:
       website: https://www.curseforge.com/minecraft/mc-mods/clumps
@@ -1342,3 +1397,304 @@ mods:
       categories:
       - library-api
       - library-api
+  entity-texture-features-fabric:
+    name: '[ETF] Entity Texture Features - [Fabric & Forge]'
+    side: client
+    curseforge_id: 568563
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  shutdowner:
+    name: Shutdowner
+    side: both
+    curseforge_id: 366565
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  dynamic-view:
+    name: Dynamic View[Forge]
+    side: both
+    curseforge_id: 366140
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  theovergrowth:
+    name: TheOvergrowth
+    side: both
+    curseforge_id: 714353
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  climate-rivers:
+    name: Climate Rivers
+    side: both
+    curseforge_id: 1255421
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  clickable-advancements:
+    name: Clickable advancements[Forge/Fabric]
+    side: both
+    curseforge_id: 511733
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  jei-integration-reborn:
+    name: 'JEI Integration: Reborn'
+    side: both
+    curseforge_id: 1291136
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  structure-compass:
+    name: Structure Compass
+    side: both
+    curseforge_id: 319598
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  travelers-compass:
+    name: Traveler's Compass
+    side: both
+    curseforge_id: 954415
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  weather-settings:
+    name: Weather settings[Forge/Fabric]
+    side: both
+    curseforge_id: 539506
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  clean-tooltips:
+    name: Clean Tooltips
+    side: both
+    curseforge_id: 855017
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  actually-harvest:
+    name: Actually Harvest (right click and XP)
+    side: both
+    curseforge_id: 1076278
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  better-fps-render-distance:
+    name: Better Fps - Render Distance[Forge]
+    side: both
+    curseforge_id: 551520
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  automatic-tool-swap:
+    name: Automatic Tool Swap
+    side: both
+    curseforge_id: 361977
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  ferritecore:
+    name: FerriteCore ((Neo)Forge)
+    side: both
+    curseforge_id: 429235
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  entityculling:
+    name: Entity Culling Fabric/Forge
+    side: both
+    curseforge_id: 448233
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  modernfix:
+    name: ModernFix
+    side: both
+    curseforge_id: 790626
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  packed-up-backpacks:
+    name: Packed Up (Backpacks)
+    side: both
+    curseforge_id: 361867
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  terrablender-neoforge:
+    name: TerraBlender (NeoForge)
+    side: both
+    curseforge_id: 940057
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  better-chunk-loading-forge-fabric:
+    name: Better chunk loading[Forge/Fabric]
+    side: both
+    curseforge_id: 899487
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  hud-compass:
+    name: Hud Compass
+    side: both
+    curseforge_id: 420249
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  william-wythers-overhauled-overworld:
+    name: William Wythers' Overhauled Overworld
+    side: both
+    curseforge_id: 921022
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  smithing-template-viewer:
+    name: Smithing Template Viewer for JEI/EMI
+    side: client
+    curseforge_id: 1133580
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  farsight:
+    name: Farsight [Forge/Neo]
+    side: both
+    curseforge_id: 495693
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  bad-wither-no-cookie-reloaded:
+    name: Bad Wither No Cookie - Reloaded
+    side: both
+    curseforge_id: 261251
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  moderately-enough-effect-descriptions-meed:
+    name: Moderately Enough Effect Descriptions (MEED)
+    side: both
+    curseforge_id: 918638
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  ftb-quests-forge:
+    name: FTB Quests (Forge)
+    side: both
+    curseforge_id: 289412
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  new-paper-doll:
+    name: "Paper\_Doll"
+    side: both
+    curseforge_id: 857970
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  fix-gpu-memory-leak:
+    name: fix GPU memory leak[Forge/Fabric]
+    side: both
+    curseforge_id: 882495
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  entity-model-features:
+    name: '[EMF] Entity Model Features [Fabric & Forge]'
+    side: client
+    curseforge_id: 844662
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  cerbons-better-beacons:
+    name: CERBON's Better Beacons [Forge | Fabric | NeoForge]
+    side: both
+    curseforge_id: 921066
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  visual-workbench:
+    name: Visual Workbench
+    side: both
+    curseforge_id: 500273
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  kotlin-for-forge:
+    name: Kotlin for Forge
+    side: both
+    curseforge_id: 351264
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  client-crafting:
+    name: Client Crafting
+    side: both
+    curseforge_id: 888790
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  ichunutil:
+    name: iChunUtil
+    side: both
+    curseforge_id: 229060
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  inventory-essentials:
+    name: Inventory Essentials
+    side: both
+    curseforge_id: 368825
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  ftb-teams-forge:
+    name: FTB Teams (Forge)
+    side: both
+    curseforge_id: 404468
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  block-runner:
+    name: Block Runner
+    side: both
+    curseforge_id: 442842
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  supermartijn642s-core-lib:
+    name: SuperMartijn642's Core Lib
+    side: both
+    curseforge_id: 454372
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  resource-pack-overrides:
+    name: Resource Pack Overrides
+    side: both
+    curseforge_id: 832644
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  ftb-library-forge:
+    name: FTB Library (Forge)
+    side: both
+    curseforge_id: 404465
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  prickle:
+    name: Prickle
+    side: both
+    curseforge_id: 1023259
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
+  embeddium:
+    name: Embeddium
+    side: client
+    curseforge_id: 908741
+    modpacks:
+      installed_in:
+      - harleycolonies-1.21.1
