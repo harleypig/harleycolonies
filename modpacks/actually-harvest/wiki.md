@@ -1,4 +1,4 @@
-Actually Harvest lets you harvest mature crops by right‑clicking instead of
+**Actually Harvest** lets you harvest mature crops by right‑clicking instead of
 breaking them, optionally replanting automatically. It can grant experience
 on harvest, supports blacklist/whitelist controls, and includes range
 expansion for hoes (tier‑based and enchantment‑based). It can also allow
