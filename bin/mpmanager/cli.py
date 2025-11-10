@@ -45,6 +45,12 @@ def main():
         help="Show alphabetized list of all category names",
     )
 
+    # mod refresh
+    mod_refresh = mod_subparsers.add_parser("refresh", help="Refresh a mod's metadata from packwiz TOML")
+    mod_refresh.add_argument("mod_slug", help="Mod slug")
+    mod_refresh.add_argument("--modpack", help="Modpack directory to read TOML from")
+    mod_refresh.add_argument("--force-remote", action="store_true", help="Replace local integrations/dependencies with remote values")
+
     # mod update
     mod_update = mod_subparsers.add_parser("update", help="Update mod information")
     mod_update.add_argument("mod_slug", help="Mod slug")
@@ -178,6 +184,12 @@ def main():
                     modpack=args.modpack,
                     categories=categories,
                     category_names=args.category_names,
+                )
+            elif args.mod_command == "refresh":
+                return commands.mod_refresh(
+                    args.mod_slug,
+                    modpack_dir=args.modpack,
+                    force_remote=bool(args.force_remote),
                 )
             elif args.mod_command == "update":
                 return commands.mod_update(

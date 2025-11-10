@@ -10,6 +10,49 @@ from pathlib import Path
 from mpmanager import data, packwiz, wiki, validation
 
 
+def mod_refresh(mod_slug, modpack_dir=None, force_remote=False):
+    """Refresh a mod's metadata from its packwiz TOML using merge rules.
+    
+    - Categories are overwritten from remote (if present)
+    - Integrations/dependencies are merged (union) unless --force-remote
+    """
+    print(f"Refreshing metadata for mod: {mod_slug}")
+    # Ensure mod exists
+    mod = data.get_mod(mod_slug)
+    if not mod:
+        print(f"Error: Mod {mod_slug} not found in mods.yaml")
+        return 1
+
+    # Resolve modpack_dir if not provided: prefer an installed_in entry
+    resolved_modpack = modpack_dir
+    if not resolved_modpack:
+        modpacks = mod.get("modpacks", {})
+        installed_list = modpacks.get("installed_in", [])
+        if installed_list:
+            resolved_modpack = installed_list[0]
+    if not resolved_modpack:
+        print("Error: Could not resolve a modpack. Pass --modpack to specify one.")
+        return 1
+
+    # Find the packwiz TOML file
+    mod_file = packwiz.find_mod_file(resolved_modpack, mod_slug)
+    if not mod_file:
+        print(f"Error: Could not find packwiz .pw.toml for '{mod_slug}' in '{resolved_modpack}'")
+        return 1
+
+    toml_data = packwiz.get_mod_toml_data(resolved_modpack, mod_file)
+    if not toml_data:
+        print(f"Error: Failed to read TOML for {mod_file} in {resolved_modpack}")
+        return 1
+
+    remote_metadata = packwiz.extract_metadata_from_toml(toml_data)
+    # Apply merge rules and persist
+    data.update_mod_from_remote(mod_slug, remote_metadata, resolved_modpack, force_remote=force_remote)
+
+    print(f"Refreshed metadata for {mod_slug} using modpack '{resolved_modpack}'")
+    return 0
+
+
 def add_mod(mod_slug, curseforge_id=None, modrinth_id=None, side=None):
     """Add a new mod to mods.yaml."""
     print(f"Adding mod: {mod_slug}")

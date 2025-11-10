@@ -62,6 +62,9 @@ bin/modpack-manager mod remove <mod-slug> [--from-modpack <modpack-dir>]
 
 # Sync mod(s) from modpack TOML to modpacks/mods.yaml
 bin/modpack-manager mod sync --from <modpack-dir> [--slug <mod-slug>]
+
+# Refresh a mod's metadata from packwiz TOML
+bin/modpack-manager mod refresh <mod-slug> [--modpack <modpack-dir>] [--force-remote]
 ```
 
 **Note**: `mod create` requires `--modpack` and the modpack directory must exist. The command uses `packwiz curseforge add` to install the mod. If the mod exists but no matching file is found for the modpack, it will automatically be marked as rejected in `modpacks/mods.yaml`.
@@ -189,6 +192,43 @@ The modpack-manager uses a two-tier metadata system:
 
 This allows tracking metadata differences between modpack versions while
 keeping a single source of truth for the canonical metadata.
+
+#### Metadata fields
+
+`modpacks/mods.yaml` stores canonical metadata under each mod entry. Relevant
+fields for this workflow:
+
+```yaml
+mods:
+  some-mod:
+    name: Some Mod
+    side: both
+    curseforge_id: 12345
+    modrinth_id: abcdef
+    metadata:
+      # Categories are remote-sourced (CurseForge/packwiz) and refreshed
+      # via the CLI; treat as read-only in the CLI.
+      categories: [utility-qol, ui]
+
+      # Optional, user-maintained or inferred
+      integrations: [jei]
+
+      # Optional. Use 'required' for true hard dependencies, 'optional' for
+      # soft deps that enhance features.
+      dependencies:
+        required: [fabric-api]
+        optional: [jei]
+```
+
+#### Refresh and merge rules
+
+- `mod refresh` pulls metadata from the mod's packwiz `.pw.toml`.
+- Categories are always overwritten by remote values when present.
+- Integrations and dependencies are merged by default (union with local
+  values preserved). Use `--force-remote` to replace locals entirely with
+  remote values.
+- `mods.yaml` remains the source of truth; manual additions persist unless
+  `--force-remote` is specified.
 
 **Note**: The `mods/` directory has been renamed to `modpacks/` to avoid
 confusion with modpack directories. All mod metadata is now stored in

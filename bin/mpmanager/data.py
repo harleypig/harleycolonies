@@ -267,3 +267,116 @@ def merge_metadata(mod_slug, new_metadata, modpack_dir):
     
     save_mods(mods_data)
 
+
+def _merge_string_lists(local_list, remote_list):
+    """Union of two string lists preserving local order and uniqueness."""
+    if not isinstance(local_list, list):
+        local_list = []
+    if not isinstance(remote_list, list):
+        remote_list = []
+    seen = set()
+    merged = []
+    # keep locals first
+    for item in local_list:
+        if isinstance(item, str):
+            key = item
+        else:
+            key = str(item)
+        if key not in seen:
+            seen.add(key)
+            merged.append(item)
+    # add remotes not present
+    for item in remote_list:
+        if isinstance(item, str):
+            key = item
+        else:
+            key = str(item)
+        if key not in seen:
+            seen.add(key)
+            merged.append(item)
+    return merged
+
+
+def update_mod_from_remote(mod_slug, remote_metadata, modpack_dir, force_remote=False):
+    """Update a mod's metadata from remotely retrieved values.
+    
+    Rules:
+      - categories: overwrite canonical categories with remote (when present)
+      - integrations: if provided remotely
+          - default: union(local, remote)
+          - force_remote: replace with remote
+      - dependencies.{required, optional}: if provided remotely
+          - default: union per-list
+          - force_remote: replace with remote dict/lists
+      - other metadata fields are merged using merge_metadata (version-aware)
+    """
+    mods_data = load_mods()
+    if "mods" not in mods_data:
+        mods_data["mods"] = {}
+    if mod_slug not in mods_data["mods"]:
+        mods_data["mods"][mod_slug] = {}
+    mod = mods_data["mods"][mod_slug]
+    if "metadata" not in mod:
+        mod["metadata"] = {}
+    metadata = mod["metadata"]
+
+    # Handle categories: overwrite if present in remote
+    if "categories" in remote_metadata:
+        remote_categories = remote_metadata.get("categories") or []
+        # Ensure list type
+        if not isinstance(remote_categories, list):
+            remote_categories = [remote_categories] if remote_categories else []
+        metadata["categories"] = remote_categories
+        # Remove from remote_metadata before delegating to merge_metadata
+        remote_metadata = {k: v for k, v in remote_metadata.items() if k != "categories"}
+
+    # Handle integrations (optional)
+    if "integrations" in remote_metadata:
+        remote_integrations = remote_metadata.get("integrations") or []
+        local_integrations = metadata.get("integrations", [])
+        if force_remote:
+            metadata["integrations"] = remote_integrations
+        else:
+            metadata["integrations"] = _merge_string_lists(local_integrations, remote_integrations)
+        # Remove from remote_metadata to avoid version-diff handling
+        remote_metadata = {k: v for k, v in remote_metadata.items() if k != "integrations"}
+
+    # Handle dependencies (optional)
+    if "dependencies" in remote_metadata and isinstance(remote_metadata.get("dependencies"), dict):
+        remote_deps = remote_metadata.get("dependencies") or {}
+        local_deps = metadata.get("dependencies", {})
+        if force_remote:
+            metadata["dependencies"] = {
+                "required": list(remote_deps.get("required", []) or []),
+                "optional": list(remote_deps.get("optional", []) or []),
+            }
+        else:
+            merged_required = _merge_string_lists(local_deps.get("required", []), remote_deps.get("required", []))
+            merged_optional = _merge_string_lists(local_deps.get("optional", []), remote_deps.get("optional", []))
+            if merged_required or "required" in local_deps:
+                # preserve key presence if it existed
+                local_deps["required"] = merged_required
+            if merged_optional or "optional" in local_deps:
+                local_deps["optional"] = merged_optional
+            metadata["dependencies"] = local_deps
+        # Remove from remote_metadata to avoid version-diff handling
+        remote_metadata = {k: v for k, v in remote_metadata.items() if k != "dependencies"}
+
+    # Delegate remaining fields (ids, side, website/wiki/issues/source, etc.)
+    merge_metadata(mod_slug, dict(remote_metadata), modpack_dir)
+
+    # Ensure our updates are persisted (merge_metadata saves, but we altered metadata above)
+    # Reload and write back the updated mod metadata
+    mods_data = load_mods()
+    if "mods" not in mods_data:
+        mods_data["mods"] = {}
+    if mod_slug not in mods_data["mods"]:
+        mods_data["mods"][mod_slug] = {}
+    current = mods_data["mods"][mod_slug]
+    current.setdefault("metadata", {})
+    # sync categories/integrations/dependencies we may have changed
+    for key in ("categories", "integrations", "dependencies"):
+        if key in metadata:
+            current["metadata"][key] = metadata[key]
+    save_mods(mods_data)
+

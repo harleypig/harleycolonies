@@ -38,6 +38,35 @@ def validate_mod_data(mod_data):
         if mod_data["side"] not in ["client", "server", "both"]:
             return False, f"Invalid side value: {mod_data['side']}"
 
+    # Validate metadata structure if present
+    if "metadata" in mod_data:
+        metadata = mod_data["metadata"]
+        if not isinstance(metadata, dict):
+            return False, "'metadata' must be a dictionary"
+        # categories: list[str]
+        if "categories" in metadata:
+            categories = metadata["categories"]
+            if not isinstance(categories, list) or not all(isinstance(c, str) for c in categories):
+                return False, "'metadata.categories' must be a list of strings"
+        # integrations: list[str]
+        if "integrations" in metadata:
+            integrations = metadata["integrations"]
+            if not isinstance(integrations, list) or not all(isinstance(i, str) for i in integrations):
+                return False, "'metadata.integrations' must be a list of strings"
+        # dependencies: {required?: list[str], optional?: list[str]}
+        if "dependencies" in metadata:
+            deps = metadata["dependencies"]
+            if not isinstance(deps, dict):
+                return False, "'metadata.dependencies' must be a dictionary"
+            if "required" in deps:
+                req = deps["required"]
+                if not isinstance(req, list) or not all(isinstance(i, str) for i in req):
+                    return False, "'metadata.dependencies.required' must be a list of strings"
+            if "optional" in deps:
+                opt = deps["optional"]
+                if not isinstance(opt, list) or not all(isinstance(i, str) for i in opt):
+                    return False, "'metadata.dependencies.optional' must be a list of strings"
+
     if "modpacks" in mod_data:
         modpacks = mod_data["modpacks"]
         if not isinstance(modpacks, dict):
