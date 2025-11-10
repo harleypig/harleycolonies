@@ -1,7 +1,3 @@
----
-title: Actually Harvest (right click and XP)
----
-
 ## Actually Harvest
 
 Actually Harvest lets you harvest mature crops by right‑clicking instead of
