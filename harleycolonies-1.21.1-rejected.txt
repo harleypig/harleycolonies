@@ -1,0 +1,13 @@
+Rejected for various reasons (conflicts, dependencies, not available for this
+version of neoforge, etc.)
+------------------------------------------------------------------------------
+
+configured
+bookshelf
+moonlight
+selene
+amendments
+enchantment-descriptions
+netherite-compass
+portal-linking-compass
+jer-integration

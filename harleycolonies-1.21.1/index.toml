@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "mods/actually-harvest.pw.toml"
-hash = "483c49e7798a6669c6e9688baf83853f07d384d98eb6a74ade4b713ab171f8a0"
+hash = "5cd33a09220c4bfbacb3cbd3fb9a077ce301dad1ba642f89582625d1c3f3c166"
 metafile = true
 
 [[files]]
@@ -53,11 +53,6 @@ metafile = true
 [[files]]
 file = "mods/betterdays.pw.toml"
 hash = "bfc87776286283ea7571375f8941fa98073172d0906a40fa2bb9400b74cf2d00"
-metafile = true
-
-[[files]]
-file = "mods/block-runner.pw.toml"
-hash = "811b76b8d4e9e65bde15493b0e3dd72e1d19a0686d92fa02c592e4ed4c6b7c76"
 metafile = true
 
 [[files]]

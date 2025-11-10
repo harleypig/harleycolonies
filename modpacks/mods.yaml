@@ -1481,6 +1481,14 @@ mods:
     modpacks:
       installed_in:
       - harleycolonies-1.21.1
+    metadata:
+      website: https://www.curseforge.com/minecraft/mc-mods/actually-harvest
+      issues: https://github.com/wendall911/ActuallyHarvest/issues
+      source: https://github.com/wendall911/ActuallyHarvest
+      categories:
+      - technology-farming
+      - utility-qol
+      - mc-food
   better-fps-render-distance:
     name: Better Fps - Render Distance[Forge]
     side: both
@@ -1660,9 +1668,6 @@ mods:
     name: Block Runner
     side: both
     curseforge_id: 442842
-    modpacks:
-      installed_in:
-      - harleycolonies-1.21.1
   supermartijn642s-core-lib:
     name: SuperMartijn642's Core Lib
     side: both
