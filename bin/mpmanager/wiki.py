@@ -90,8 +90,9 @@ def generate_simple_wiki_page(mod_slug, mod_data):
     metadata = mod_data.get("metadata", {})
     categories = metadata.get("categories", [])
 
-    modpacks = mod_data.get("modpacks", {})
-    installed_in = modpacks.get("installed_in", [])
+    # Compute installed_in from per-modpack state
+    from mpmanager import data as data_mod
+    installed_in = data_mod.list_modpacks_with_mod(mod_slug)
 
     template = _get_template()
     content = template.render(
@@ -120,8 +121,8 @@ def generate_custom_wiki_page(mod_slug, mod_data):
         custom_content = f.read()
 
     # Add modpack list if not already present
-    modpacks = mod_data.get("modpacks", {})
-    installed_in = modpacks.get("installed_in", [])
+    from mpmanager import data as data_mod
+    installed_in = data_mod.list_modpacks_with_mod(mod_slug)
 
     if installed_in and "### Modpacks" not in custom_content:
         custom_content += "\n\n### Modpacks\n\n"
@@ -147,8 +148,8 @@ def generate_wiki_page(mod_slug, mod_data):
     metadata = mod_data.get("metadata", {})
     categories = metadata.get("categories", [])
 
-    modpacks = mod_data.get("modpacks", {})
-    installed_in = modpacks.get("installed_in", [])
+    from mpmanager import data as data_mod
+    installed_in = data_mod.list_modpacks_with_mod(mod_slug)
 
     # Read custom wiki.md content (without frontmatter) if present
     custom_content = _read_custom_wiki_content(mod_slug)

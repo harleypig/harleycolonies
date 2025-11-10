@@ -17,8 +17,8 @@ generating modpacks, and creating wiki pages.
   templates
 - **Metadata Management**: Two-tier metadata system (canonical and
   version-specific)
-- **Side Management**: Update mod side (client/server/both) with automatic TOML
-  updates
+- **Side Management**: Update mod side (client/server/both) via tags with
+  automatic TOML updates
 - **Automatic Dependency Checking**: Automatically installs missing
   dependencies from `requirements.txt`
 - **Client-Side Detection**: Auto-detect mod side from packwiz files
@@ -84,11 +84,14 @@ bin/modpack-manager modpack update <modpack-dir> [--mc-version VERSION] [--modlo
 # Remove modpack (from tracking or from filesystem)
 bin/modpack-manager modpack remove <modpack-dir> [--from-filesystem]
 
-# Sync modpack TO match modpacks/mods.yaml (installs/removes mods)
+# Sync modpack TO match per-modpack state (installs/removes mods)
 bin/modpack-manager modpack sync <modpack-dir>
 
 # Sync modpacks/mods.yaml FROM modpack (imports all mods)
 bin/modpack-manager modpack sync --from <modpack-dir>
+
+# Migrate central modpack state to per-modpack files
+bin/modpack-manager modpack migrate-state
 
 # Add mod to modpack
 bin/modpack-manager modpack add <modpack-dir> <mod-slug>
@@ -269,13 +272,45 @@ generation.
   modpack versions
 - **Wiki Generation**: Generates wiki pages from templates
 - **Mod Categorization**: Organizes mods by categories for documentation
-- **Side Overrides**: Can override packwiz side settings and update TOML
-  files
+- **Side Overrides**: Can override packwiz side settings (as tags) and update
+  TOML files
 - **Metadata Extraction**: Extracts metadata from packwiz TOML files and
   stores in YAML format
 - **Mod Creation with Packwiz**: Uses `packwiz curseforge add` to install mods
 - **Error Handling**: Automatically marks mods as rejected when no matching file found
 - **Dependency Detection**: Detects when Packwiz installs dependencies (handling TBD)
+
+### Per‑modpack Files
+
+Each modpack directory (e.g., `harleycolonies-1.21.1/`) now contains its own
+state/config files:
+
+```yaml
+# harleycolonies-1.21.1/info.yaml
+name: harleycolonies-1.21.1
+# Optional fields:
+# mc_version: 1.21.1
+# modloader: forge
+# modloader_version: <version>
+```
+
+```yaml
+# harleycolonies-1.21.1/mods.yaml
+mods:
+  jei:
+    status: installed
+  some-mod:
+    status: rejected
+    reason: No matching file found
+```
+
+- `modpack-manager modpack create <dir>` will read missing versions/loader
+  from `<dir>/info.yaml` when not provided as flags.
+- `modpack-manager modpack sync <dir>` installs/removes mods to match
+  `<dir>/mods.yaml`.
+
+Use `modpack-manager modpack migrate-state` once to migrate existing central
+`modpacks/mods.yaml` modpack references to the new per‑modpack files.
 
 #### Where They Overlap
 

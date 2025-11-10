@@ -253,7 +253,7 @@ def modpack_reject(modpack_dir, mod_slug, reason):
 
 
 def modpack_sync(modpack_dir):
-    """Sync modpack with mods.yaml."""
+    """Sync modpack with per-modpack state."""
     print(f"Syncing modpack {modpack_dir}")
 
     modpack_path = packwiz.get_modpack_path(modpack_dir)
@@ -261,13 +261,12 @@ def modpack_sync(modpack_dir):
         print(f"Error: Modpack directory {modpack_dir} not found")
         return 1
 
-    # Get all mods that should be installed
-    mods_data = data.load_mods()
-    mods_to_install = []
-    for mod_slug, mod_info in mods_data.get("mods", {}).items():
-        modpacks = mod_info.get("modpacks", {})
-        if modpack_dir in modpacks.get("installed_in", []):
-            mods_to_install.append(mod_slug)
+    # Get all mods that should be installed from per-modpack state
+    state = data.load_modpack_state(modpack_dir)
+    mods_to_install = sorted(
+        slug for slug, entry in state.get("mods", {}).items()
+        if isinstance(entry, dict) and entry.get("status") == "installed"
+    )
 
     # Get all mods currently in modpack
     current_mods = packwiz.get_all_mods_in_modpack(modpack_dir)
@@ -310,7 +309,15 @@ def modpack_sync(modpack_dir):
 
 
 def modpack_create(modpack_dir, mc_version, modloader, modloader_version=None):
-    """Create new modpack."""
+    """Create new modpack.
+    
+    If mc_version or modloader is missing, read them from per-modpack info.yaml.
+    """
+    if not mc_version or not modloader:
+        info = data.load_modpack_info(modpack_dir)
+        mc_version = mc_version or info.get("mc_version")
+        modloader = modloader or info.get("modloader")
+        modloader_version = modloader_version or info.get("modloader_version")
     print(f"Creating modpack {modpack_dir} for {mc_version} {modloader}")
 
     # Check packwiz availability
@@ -338,6 +345,51 @@ def modpack_export(modpack_dir):
         return 1
 
     print(f"Exported modpack {modpack_dir}")
+    return 0
+
+
+def modpack_migrate_from_central():
+    """Migrate central mods.yaml modpack data to per-modpack state files."""
+    print("Migrating central modpack data to per-modpack files")
+    mods_data = data.load_mods()
+    mods = mods_data.get("mods", {})
+    modpack_states = {}
+
+    # Collect installed and rejected per modpack
+    for slug, mod_entry in mods.items():
+        modpacks = mod_entry.get("modpacks", {})
+        for pack in modpacks.get("installed_in", []) or []:
+            st = modpack_states.setdefault(pack, {"mods": {}})
+            st["mods"].setdefault(slug, {})["status"] = "installed"
+        for rej in modpacks.get("rejected_in", []) or []:
+            if isinstance(rej, dict):
+                pack = rej.get("modpack")
+                reason = rej.get("reason", "")
+                if pack:
+                    st = modpack_states.setdefault(pack, {"mods": {}})
+                    st["mods"].setdefault(slug, {})["status"] = "rejected"
+                    st["mods"][slug]["reason"] = reason
+
+    # Write per-modpack state and minimal info.yaml if missing
+    for pack, state in modpack_states.items():
+        data.save_modpack_state(pack, state)
+        info = data.load_modpack_info(pack)
+        if not info:
+            info = {"name": pack}
+            data.save_modpack_info(pack, info)
+        print(f"  Wrote {pack}/mods.yaml with {len(state.get('mods', {}))} entries")
+
+    # Remove central modpack references
+    changed = False
+    for slug, mod_entry in mods.items():
+        if "modpacks" in mod_entry:
+            del mod_entry["modpacks"]
+            changed = True
+    if changed:
+        data.save_mods(mods_data)
+        print("  Removed central 'modpacks' references from modpacks/mods.yaml")
+    else:
+        print("  No central 'modpacks' references found")
     return 0
 
 
@@ -471,13 +523,14 @@ def list_mods(modpack=None, mod_slug=None, categories=None, category_names=False
     
     if modpack:
         print(f"Mods in modpack: {modpack}")
-        mods_data = data.load_mods()
-        mods_in_pack = []
-        for slug, mod_info in mods_data.get("mods", {}).items():
-            modpacks = mod_info.get("modpacks", {})
-            if modpack in modpacks.get("installed_in", []):
-                mods_in_pack.append((slug, mod_info))
-        for slug, mod_info in mods_in_pack:
+        state = data.load_modpack_state(modpack)
+        mods_data = data.load_mods().get("mods", {})
+        installed_slugs = [
+            s for s, e in state.get("mods", {}).items()
+            if isinstance(e, dict) and e.get("status") == "installed"
+        ]
+        for slug in sorted(installed_slugs):
+            mod_info = mods_data.get(slug, {})
             name = mod_info.get("name", slug)
             side = _get_side_from_mod(mod_info)
             print(f"  - {name} ({slug}) - {side}")
@@ -490,20 +543,13 @@ def list_mods(modpack=None, mod_slug=None, categories=None, category_names=False
         name = mod.get("name", mod_slug)
         description = mod.get("description", "")
         side = _get_side_from_mod(mod)
-        modpacks = mod.get("modpacks", {})
-        installed_in = modpacks.get("installed_in", [])
-        rejected_in = modpacks.get("rejected_in", [])
+        installed_in = data.list_modpacks_with_mod(mod_slug)
 
         print(f"Name: {name}")
         print(f"Description: {description}")
         print(f"Side: {side}")
         if installed_in:
             print(f"Installed in: {', '.join(installed_in)}")
-        if rejected_in:
-            print("Rejected in:")
-            for r in rejected_in:
-                if isinstance(r, dict):
-                    print(f"  - {r.get('modpack')}: {r.get('reason', 'No reason')}")
     else:
         print("All mods:")
         mods_data = data.load_mods()

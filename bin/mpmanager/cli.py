@@ -81,12 +81,12 @@ def main():
     # modpack create
     modpack_create = modpack_subparsers.add_parser("create", help="Create new modpack")
     modpack_create.add_argument("modpack_dir", help="Modpack directory name")
-    modpack_create.add_argument("--mc-version", required=True, help="Minecraft version")
+    modpack_create.add_argument("--mc-version", help="Minecraft version (optional; reads from info.yaml if omitted)")
     modpack_create.add_argument(
-        "--modloader", required=True, choices=["forge", "fabric", "quilt"], help="Modloader"
+        "--modloader", choices=["forge", "fabric", "quilt"], help="Modloader (optional; reads from info.yaml if omitted)"
     )
     modpack_create.add_argument(
-        "--modloader-version", help="Modloader version (optional)"
+        "--modloader-version", help="Modloader version (optional; reads from info.yaml if omitted)"
     )
 
     # modpack list
@@ -108,6 +108,9 @@ def main():
     modpack_sync = modpack_subparsers.add_parser("sync", help="Sync modpack")
     modpack_sync.add_argument("modpack_dir", nargs="?", help="Modpack directory name (for syncing TO modpack)")
     modpack_sync.add_argument("--from", dest="from_dir", help="Sync modpacks/mods.yaml FROM modpack (imports all mods)")
+
+    # modpack migrate-state
+    modpack_migrate = modpack_subparsers.add_parser("migrate-state", help="Migrate central modpack data to per-modpack files")
 
     # modpack add
     modpack_add = modpack_subparsers.add_parser("add", help="Add mod to modpack")
@@ -216,8 +219,8 @@ def main():
             if args.modpack_command == "create":
                 return commands.modpack_create(
                     args.modpack_dir,
-                    args.mc_version,
-                    args.modloader,
+                    mc_version=args.mc_version,
+                    modloader=args.modloader,
                     modloader_version=args.modloader_version,
                 )
             elif args.modpack_command == "list":
@@ -243,6 +246,8 @@ def main():
                 else:
                     modpack_sync.print_help()
                     return 1
+            elif args.modpack_command == "migrate-state":
+                return commands.modpack_migrate_from_central()
             elif args.modpack_command == "add":
                 return commands.modpack_add(args.modpack_dir, args.mod_slug)
             elif args.modpack_command == "remove-mod":
