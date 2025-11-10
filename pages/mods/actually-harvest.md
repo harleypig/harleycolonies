@@ -2,6 +2,10 @@
 title: Actually Harvest (right click and XP)
 ---
 
+### Side
+
+both
+
 ## Actually Harvest
 
 Actually Harvest lets you harvest mature crops by right‑clicking instead of
@@ -103,10 +107,9 @@ same names as in the mod’s config file.
   - Format: `"modid:item"`.
 
 
-
-
 ### Modpacks
 
 This mod is installed in the following modpacks:
 
 - harleycolonies-1.21.1
+

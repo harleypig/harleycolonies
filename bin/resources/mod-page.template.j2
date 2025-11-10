@@ -11,6 +11,12 @@ title: {{ name }}
 
 {{ side }}
 
+{% if custom_content -%}
+
+{{ custom_content -}}
+
+{% endif -%}
+
 ### Modpacks
 
 {% if installed_in -%}

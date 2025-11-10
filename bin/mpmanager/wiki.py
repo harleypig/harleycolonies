@@ -45,6 +45,34 @@ def _get_index_template():
     return env.get_template("mods-index-template.j2")
 
 
+def _read_custom_wiki_content(mod_slug: str) -> str:
+    """Read custom wiki.md content for a mod, stripping YAML frontmatter if present."""
+    mod_dir = get_mod_dir(mod_slug)
+    wiki_file = mod_dir / "wiki.md"
+    if not wiki_file.exists():
+        return ""
+    raw = wiki_file.read_text()
+    # Strip leading YAML frontmatter block if present
+    # Frontmatter format:
+    # ---
+    # key: value
+    # ---
+    if raw.startswith("---"):
+        # Find the closing '---' after the opening line
+        parts = raw.split("\n")
+        # Skip first line ('---') and search for the next line that is exactly '---'
+        end_idx = None
+        for i in range(1, len(parts)):
+            if parts[i].strip() == "---":
+                end_idx = i
+                break
+        if end_idx is not None:
+            # Content after frontmatter block
+            content = "\n".join(parts[end_idx + 1 :]).lstrip("\n")
+            return content
+    return raw
+
+
 def generate_simple_wiki_page(mod_slug, mod_data):
     """Generate simple wiki page for mod."""
     name = mod_data.get("name", mod_slug)
@@ -64,6 +92,7 @@ def generate_simple_wiki_page(mod_slug, mod_data):
         side=side,
         categories=categories,
         installed_in=installed_in,
+        custom_content="",
     )
 
     return content
@@ -95,11 +124,30 @@ def generate_custom_wiki_page(mod_slug, mod_data):
 
 
 def generate_wiki_page(mod_slug, mod_data):
-    """Generate wiki page for mod (simple or custom)."""
-    if has_custom_wiki(mod_slug):
-        content = generate_custom_wiki_page(mod_slug, mod_data)
-    else:
-        content = generate_simple_wiki_page(mod_slug, mod_data)
+    """Generate wiki page for mod using template, embedding custom wiki content if present."""
+    name = mod_data.get("name", mod_slug)
+    description = mod_data.get("description", "")
+    side = mod_data.get("side", "unknown")
+
+    metadata = mod_data.get("metadata", {})
+    categories = metadata.get("categories", [])
+
+    modpacks = mod_data.get("modpacks", {})
+    installed_in = modpacks.get("installed_in", [])
+
+    # Read custom wiki.md content (without frontmatter) if present
+    custom_content = _read_custom_wiki_content(mod_slug)
+
+    # Render via the common template
+    template = _get_template()
+    content = template.render(
+        name=name,
+        description=description,
+        side=side,
+        categories=categories,
+        installed_in=installed_in,
+        custom_content=custom_content,
+    )
 
     # Write to pages/mods/
     wiki_path = get_wiki_page_path(mod_slug)
