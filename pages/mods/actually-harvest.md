@@ -1,12 +1,12 @@
 ---
 title: Actually Harvest (right click and XP)
+categories:
+  - technology-farming
+  - utility-qol
+  - mc-food
 ---
 
-### Side
-
-both
-
-## Actually Harvest
+[Website](https://www.curseforge.com/minecraft/mc-mods/actually-harvest) | [Issues](https://github.com/wendall911/ActuallyHarvest/issues) | [Source](https://github.com/wendall911/ActuallyHarvest)Client/Server: both
 
 Actually Harvest lets you harvest mature crops by right‑clicking instead of
 breaking them, optionally replanting automatically. It can grant experience

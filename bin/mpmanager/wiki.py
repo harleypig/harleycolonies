@@ -91,6 +91,7 @@ def generate_simple_wiki_page(mod_slug, mod_data):
         description=description,
         side=side,
         categories=categories,
+        metadata=metadata,
         installed_in=installed_in,
         custom_content="",
     )
@@ -145,6 +146,7 @@ def generate_wiki_page(mod_slug, mod_data):
         description=description,
         side=side,
         categories=categories,
+        metadata=metadata,
         installed_in=installed_in,
         custom_content=custom_content,
     )

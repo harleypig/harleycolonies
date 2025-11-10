@@ -5,16 +5,20 @@ title: {{ name }}
 {% endfor %}{% endif -%}
 ---
 
+{% if metadata and (metadata.website or metadata.issues or metadata.source) -%}
+{% set sep = joiner(' | ') -%}
+{% if metadata.website %}{{ sep() }}[Website]({{ metadata.website }}){% endif -%}
+{% if metadata.issues %}{{ sep() }}[Issues]({{ metadata.issues }}){% endif -%}
+{% if metadata.source %}{{ sep() }}[Source]({{ metadata.source }}){% endif -%}
+
+{% endif -%}
+
+Client/Server: {{ side }}
+
 {{ description -}}
 
-### Side
-
-{{ side }}
-
 {% if custom_content -%}
-
 {{ custom_content -}}
-
 {% endif -%}
 
 ### Modpacks
