@@ -288,10 +288,14 @@ state/config files:
 ```yaml
 # harleycolonies-1.21.1/info.yaml
 name: harleycolonies-1.21.1
-# Optional fields:
-# mc_version: 1.21.1
-# modloader: forge
-# modloader_version: <version>
+author: HarleyColonies
+# Optional fields used to replay `packwiz init` and pack settings:
+mc_version: 1.21.1
+modloader: forge            # forge | fabric | quilt | neoforge
+modloader_version: latest   # or an explicit loader version
+version: 0.1.0              # pack.toml 'version'
+index_file: index.toml      # pack.toml 'index'
+hash_format: sha256         # pack.toml 'hash-format'
 ```
 
 ```yaml

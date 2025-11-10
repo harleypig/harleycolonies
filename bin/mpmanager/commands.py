@@ -318,6 +318,18 @@ def modpack_create(modpack_dir, mc_version, modloader, modloader_version=None):
         mc_version = mc_version or info.get("mc_version")
         modloader = modloader or info.get("modloader")
         modloader_version = modloader_version or info.get("modloader_version")
+        name = info.get("name")
+        author = info.get("author")
+        pack_version = info.get("version")
+        index_file = info.get("index_file") or info.get("index")
+        hash_format = info.get("hash_format")
+    else:
+        info = data.load_modpack_info(modpack_dir)
+        name = info.get("name")
+        author = info.get("author")
+        pack_version = info.get("version")
+        index_file = info.get("index_file") or info.get("index")
+        hash_format = info.get("hash_format")
     print(f"Creating modpack {modpack_dir} for {mc_version} {modloader}")
 
     # Check packwiz availability
@@ -326,7 +338,17 @@ def modpack_create(modpack_dir, mc_version, modloader, modloader_version=None):
         print(f"Error: {error}")
         return 1
 
-    result = packwiz.create_modpack(modpack_dir, mc_version, modloader, modloader_version)
+    result = packwiz.create_modpack(
+        modpack_dir,
+        mc_version,
+        modloader,
+        modloader_version,
+        name=name,
+        author=author,
+        pack_version=pack_version,
+        index_file=index_file,
+        hash_format=hash_format,
+    )
     if result.returncode != 0:
         print(f"Error creating modpack: {result.stderr}")
         return 1

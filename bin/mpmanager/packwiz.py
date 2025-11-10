@@ -200,13 +200,32 @@ def find_mod_file(modpack_dir, mod_slug):
     return None
 
 
-def create_modpack(modpack_dir, mc_version, modloader, modloader_version=None):
-    """Create new modpack using packwiz."""
+def create_modpack(
+    modpack_dir,
+    mc_version,
+    modloader,
+    modloader_version=None,
+    name=None,
+    author=None,
+    pack_version=None,
+    index_file=None,
+    hash_format=None,
+):
+    """Create new modpack using packwiz.
+    
+    Optional fields mirror pack.toml keys and packwiz init flags:
+    - name, author (init flags and pack.toml)
+    - pack_version -> pack.toml['version']
+    - index_file   -> pack.toml['index']
+    - hash_format  -> pack.toml['hash-format']
+    """
     modpack_path = get_modpack_path(modpack_dir)
     modpack_path.mkdir(parents=True, exist_ok=True)
 
     # Initialize packwiz
-    cmd = ["packwiz", "init", "--name", modpack_dir, "--author", "HarleyColonies"]
+    init_name = name or modpack_dir
+    init_author = author or "HarleyColonies"
+    cmd = ["packwiz", "init", "--name", init_name, "--author", init_author]
     result = subprocess.run(
         cmd,
         cwd=str(modpack_path),
@@ -222,6 +241,18 @@ def create_modpack(modpack_dir, mc_version, modloader, modloader_version=None):
         pack_toml = modpack_path / "pack.toml"
         with open(pack_toml, "r") as f:
             data = parse(f.read())
+
+        # Basic pack metadata
+        if name:
+            data["name"] = name
+        if author:
+            data["author"] = author
+        if pack_version:
+            data["version"] = pack_version
+        if index_file:
+            data["index"] = index_file
+        if hash_format:
+            data["hash-format"] = hash_format
 
         if "versions" not in data:
             data["versions"] = {}
