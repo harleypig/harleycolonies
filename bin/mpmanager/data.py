@@ -196,8 +196,7 @@ def merge_metadata(mod_slug, new_metadata, modpack_dir):
     modpacks/<mod-slug>/versions/<modpack-dir>/metadata.
     
     Note: curseforge_id and modrinth_id are stored at the top level,
-    not in the metadata dict. 'side' is also stored at top level but
-    treated as metadata for comparison purposes.
+    not in the metadata dict.
     """
     mods_data = load_mods()
     if "mods" not in mods_data:
@@ -226,22 +225,9 @@ def merge_metadata(mod_slug, new_metadata, modpack_dir):
                     mod["versions"][modpack_dir]["metadata"] = {}
                 mod["versions"][modpack_dir]["metadata"][id_key] = new_id
     
-    # Handle 'side' at top level (but treat as metadata for comparison)
+    # Remove any stray 'side' from new_metadata; side is tracked via tags now
     if "side" in new_metadata:
-        new_side = new_metadata.pop("side")
-        existing_side = mod.get("side")
-        if not existing_side:
-            # First time - store at top level
-            mod["side"] = new_side
-        elif existing_side != new_side:
-            # Different side - store in version-specific
-            if "versions" not in mod:
-                mod["versions"] = {}
-            if modpack_dir not in mod["versions"]:
-                mod["versions"][modpack_dir] = {}
-            if "metadata" not in mod["versions"][modpack_dir]:
-                mod["versions"][modpack_dir]["metadata"] = {}
-            mod["versions"][modpack_dir]["metadata"]["side"] = new_side
+        new_metadata.pop("side", None)
     
     # Handle remaining metadata fields
     existing_metadata = mod.get("metadata", {})
@@ -342,6 +328,27 @@ def update_mod_from_remote(mod_slug, remote_metadata, modpack_dir, force_remote=
         remote_metadata = {k: v for k, v in remote_metadata.items() if k != "integrations"}
 
     # Handle dependencies (optional)
+    # Handle side from TOML into tags with precedence to existing entry
+    if "side" in remote_metadata:
+        remote_side = remote_metadata.get("side")
+        # sanitize remote_side
+        allowed_sides = {"client", "server", "both"}
+        if isinstance(remote_side, str) and remote_side in allowed_sides:
+            tags = metadata.get("tags", [])
+            if not isinstance(tags, list):
+                tags = []
+            # check if local already has a side tag; if so, keep local (entry precedence)
+            local_side = None
+            for s in allowed_sides:
+                if s in tags:
+                    local_side = s
+                    break
+            if not local_side:
+                # add remote side tag
+                tags.append(remote_side)
+                metadata["tags"] = tags
+        # Remove from remote_metadata
+        remote_metadata = {k: v for k, v in remote_metadata.items() if k != "side"}
     if "dependencies" in remote_metadata and isinstance(remote_metadata.get("dependencies"), dict):
         remote_deps = remote_metadata.get("dependencies") or {}
         local_deps = metadata.get("dependencies", {})

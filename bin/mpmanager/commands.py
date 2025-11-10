@@ -10,6 +10,17 @@ from pathlib import Path
 from mpmanager import data, packwiz, wiki, validation
 
 
+def _get_side_from_mod(mod_entry):
+    """Derive side from metadata.tags."""
+    metadata = mod_entry.get("metadata", {})
+    tags = metadata.get("tags", [])
+    if isinstance(tags, list):
+        for s in ("client", "server", "both"):
+            if s in tags:
+                return s
+    return "unknown"
+
+
 def mod_refresh(mod_slug, modpack_dir=None, force_remote=False):
     """Refresh a mod's metadata from its packwiz TOML using merge rules.
     
@@ -83,7 +94,14 @@ def add_mod(mod_slug, curseforge_id=None, modrinth_id=None, side=None):
     if modrinth_id:
         mod_data["modrinth_id"] = modrinth_id
     if side:
-        mod_data["side"] = side
+        # Store side as a tag
+        mod_data.setdefault("metadata", {})
+        tags = mod_data["metadata"].get("tags", [])
+        if not isinstance(tags, list):
+            tags = []
+        tags = [t for t in tags if t not in ("client", "server", "both")]
+        tags.append(side)
+        mod_data["metadata"]["tags"] = tags
 
     # Validate mod data
     valid, error = validation.validate_mod_data(mod_data)
@@ -106,9 +124,16 @@ def update_mod(mod_slug, side=None):
         return 1
 
     if side:
-        mod["side"] = side
+        # Update side tag
+        mod.setdefault("metadata", {})
+        tags = mod["metadata"].get("tags", [])
+        if not isinstance(tags, list):
+            tags = []
+        tags = [t for t in tags if t not in ("client", "server", "both")]
+        tags.append(side)
+        mod["metadata"]["tags"] = tags
         data.set_mod(mod_slug, mod)
-        print(f"Updated side for {mod_slug} to {side}")
+        print(f"Updated side tag for {mod_slug} to {side}")
 
     return 0
 
@@ -160,15 +185,22 @@ def modpack_add(modpack_dir, mod_slug):
         print(f"Error installing mod: {result.stderr}")
         return 1
 
-    # Auto-detect side from packwiz file if not already set
+    # Auto-detect side from packwiz file if not already set as a tag
     mod_file = packwiz.find_mod_file(modpack_dir, mod_slug)
     if mod_file:
         detected_side = packwiz.get_mod_side_from_packwiz(modpack_dir, mod_file)
-        if detected_side and not mod.get("side"):
-            # Update mod with detected side
-            mod["side"] = detected_side
-            data.set_mod(mod_slug, mod)
-            print(f"  Auto-detected side: {detected_side}")
+        if detected_side:
+            current_side = _get_side_from_mod(mod)
+            if current_side == "unknown":
+                mod.setdefault("metadata", {})
+                tags = mod["metadata"].get("tags", [])
+                if not isinstance(tags, list):
+                    tags = []
+                tags = [t for t in tags if t not in ("client", "server", "both")]
+                tags.append(detected_side)
+                mod["metadata"]["tags"] = tags
+                data.set_mod(mod_slug, mod)
+                print(f"  Auto-detected side: {detected_side}")
 
     # Update mods.yaml
     data.add_to_modpack(mod_slug, modpack_dir, "installed_in")
@@ -447,7 +479,7 @@ def list_mods(modpack=None, mod_slug=None, categories=None, category_names=False
                 mods_in_pack.append((slug, mod_info))
         for slug, mod_info in mods_in_pack:
             name = mod_info.get("name", slug)
-            side = mod_info.get("side", "unknown")
+            side = _get_side_from_mod(mod_info)
             print(f"  - {name} ({slug}) - {side}")
     elif mod_slug:
         print(f"Information for mod: {mod_slug}")
@@ -457,7 +489,7 @@ def list_mods(modpack=None, mod_slug=None, categories=None, category_names=False
             return 1
         name = mod.get("name", mod_slug)
         description = mod.get("description", "")
-        side = mod.get("side", "unknown")
+        side = _get_side_from_mod(mod)
         modpacks = mod.get("modpacks", {})
         installed_in = modpacks.get("installed_in", [])
         rejected_in = modpacks.get("rejected_in", [])
@@ -477,7 +509,7 @@ def list_mods(modpack=None, mod_slug=None, categories=None, category_names=False
         mods_data = data.load_mods()
         for slug, mod_info in mods_data.get("mods", {}).items():
             name = mod_info.get("name", slug)
-            side = mod_info.get("side", "unknown")
+            side = _get_side_from_mod(mod_info)
             print(f"  - {name} ({slug}) - {side}")
     return 0
 
@@ -515,20 +547,31 @@ def sync_from_modpack(modpack_dir):
             mod_data = {
                 "name": mod_name,
             }
-            # Only set side if detected from packwiz
+            # Only set side tag if detected from packwiz
             if mod_side:
-                mod_data["side"] = mod_side
+                mod_data.setdefault("metadata", {})
+                tags = mod_data["metadata"].get("tags", [])
+                if not isinstance(tags, list):
+                    tags = []
+                tags = [t for t in tags if t not in ("client", "server", "both")]
+                tags.append(mod_side)
+                mod_data["metadata"]["tags"] = tags
             data.set_mod(mod_slug, mod_data)
             print(f"  Added new mod: {mod_slug} (side: {mod_side or 'unknown'})")
         else:
-            # Update side if not already set (preserve manual settings)
-            if not mod.get("side") and mod_side:
-                mod["side"] = mod_side
-                data.set_mod(mod_slug, mod)
-                print(f"  Updated side for {mod_slug} to {mod_side}")
-            elif mod.get("side") and mod_side:
-                # Side already exists, don't overwrite (respects manual settings)
-                pass
+            # Update side tag if not already set (preserve manual settings)
+            if mod_side:
+                current_side = _get_side_from_mod(mod)
+                if current_side == "unknown":
+                    mod.setdefault("metadata", {})
+                    tags = mod["metadata"].get("tags", [])
+                    if not isinstance(tags, list):
+                        tags = []
+                    tags = [t for t in tags if t not in ("client", "server", "both")]
+                    tags.append(mod_side)
+                    mod["metadata"]["tags"] = tags
+                    data.set_mod(mod_slug, mod)
+                    print(f"  Updated side for {mod_slug} to {mod_side}")
 
         # Merge metadata (canonical or version-specific)
         if metadata:
@@ -542,11 +585,7 @@ def sync_from_modpack(modpack_dir):
 
 
 def update_mod_side(mod_slug, new_side, modpack_dir=None):
-    """Update mod side in mods.yaml and optionally in TOML files.
-    
-    If modpack_dir is provided, updates side for that specific modpack
-    (version-specific). Otherwise, updates the canonical side.
-    """
+    """Update mod side tag in mods.yaml and TOML files."""
     mod = data.get_mod(mod_slug)
     if not mod:
         print(f"Error: Mod {mod_slug} not found")
@@ -555,19 +594,21 @@ def update_mod_side(mod_slug, new_side, modpack_dir=None):
     mods_data = data.load_mods()
     mod_entry = mods_data["mods"][mod_slug]
 
+    # Update canonical tag
+    tags = mod_entry.get("metadata", {}).get("tags", [])
+    if not isinstance(tags, list):
+        tags = []
+    tags = [t for t in tags if t not in ("client", "server", "both")]
+    tags.append(new_side)
+    mod_entry.setdefault("metadata", {})
+    mod_entry["metadata"]["tags"] = tags
+    print(f"Updated side tag for {mod_slug} to {new_side}")
+
+    # Save the updated mods data
+    data.save_mods(mods_data)
+
+    # Update TOML file(s)
     if modpack_dir:
-        # Update version-specific side
-        if "versions" not in mod_entry:
-            mod_entry["versions"] = {}
-        if modpack_dir not in mod_entry["versions"]:
-            mod_entry["versions"][modpack_dir] = {}
-        if "metadata" not in mod_entry["versions"][modpack_dir]:
-            mod_entry["versions"][modpack_dir]["metadata"] = {}
-        
-        mod_entry["versions"][modpack_dir]["metadata"]["side"] = new_side
-        print(f"Updated side for {mod_slug} in {modpack_dir} to {new_side}")
-        
-        # Update TOML file for this modpack
         mod_file = packwiz.find_mod_file(modpack_dir, mod_slug)
         if mod_file:
             if packwiz.update_mod_side_in_toml(modpack_dir, mod_file, new_side):
@@ -577,32 +618,15 @@ def update_mod_side(mod_slug, new_side, modpack_dir=None):
         else:
             print(f"  Warning: Could not find TOML file for {mod_slug} in {modpack_dir}")
     else:
-        # Update canonical side
-        mod_entry["side"] = new_side
-        print(f"Updated canonical side for {mod_slug} to {new_side}")
-        
-        # Update TOML files in all modpacks where this mod is installed
         modpacks = mod_entry.get("modpacks", {})
         installed_in = modpacks.get("installed_in", [])
-        
         for pack_dir in installed_in:
-            # Check if there's version-specific side (don't overwrite)
-            version_side = None
-            if "versions" in mod_entry:
-                version_meta = mod_entry["versions"].get(pack_dir, {}).get("metadata", {})
-                version_side = version_meta.get("side")
-            
-            # Only update TOML if there's no version-specific side
-            if not version_side:
-                mod_file = packwiz.find_mod_file(pack_dir, mod_slug)
-                if mod_file:
-                    if packwiz.update_mod_side_in_toml(pack_dir, mod_file, new_side):
-                        print(f"  Updated TOML file in {pack_dir}")
-                    else:
-                        print(f"  Warning: Could not update TOML file in {pack_dir}")
-
-    # Save the updated mods data
-    data.save_mods(mods_data)
+            mod_file = packwiz.find_mod_file(pack_dir, mod_slug)
+            if mod_file:
+                if packwiz.update_mod_side_in_toml(pack_dir, mod_file, new_side):
+                    print(f"  Updated TOML file in {pack_dir}")
+                else:
+                    print(f"  Warning: Could not update TOML file in {pack_dir}")
     return 0
 
 
@@ -731,7 +755,13 @@ def mod_create(mod_slug, modpack_dir, curseforge_id=None, category=None, file_id
     if not mod:
         mod_data = {"name": mod_name}
         if mod_side:
-            mod_data["side"] = mod_side
+            mod_data.setdefault("metadata", {})
+            tags = mod_data["metadata"].get("tags", [])
+            if not isinstance(tags, list):
+                tags = []
+            tags = [t for t in tags if t not in ("client", "server", "both")]
+            tags.append(mod_side)
+            mod_data["metadata"]["tags"] = tags
         if curseforge_id:
             mod_data["curseforge_id"] = curseforge_id
         elif "curseforge_id" in metadata:
@@ -742,8 +772,16 @@ def mod_create(mod_slug, modpack_dir, curseforge_id=None, category=None, file_id
         # Update existing mod
         if mod_name and not mod.get("name"):
             mod["name"] = mod_name
-        if mod_side and not mod.get("side"):
-            mod["side"] = mod_side
+        if mod_side:
+            current_side = _get_side_from_mod(mod)
+            if current_side == "unknown":
+                mod.setdefault("metadata", {})
+                tags = mod["metadata"].get("tags", [])
+                if not isinstance(tags, list):
+                    tags = []
+                tags = [t for t in tags if t not in ("client", "server", "both")]
+                tags.append(mod_side)
+                mod["metadata"]["tags"] = tags
         if curseforge_id and not mod.get("curseforge_id"):
             mod["curseforge_id"] = curseforge_id
         data.set_mod(mod_slug, mod)
@@ -784,9 +822,15 @@ def mod_update(mod_slug, side=None, curseforge_id=None, modrinth_id=None):
         return 1
 
     if side:
-        mod["side"] = side
+        mod.setdefault("metadata", {})
+        tags = mod["metadata"].get("tags", [])
+        if not isinstance(tags, list):
+            tags = []
+        tags = [t for t in tags if t not in ("client", "server", "both")]
+        tags.append(side)
+        mod["metadata"]["tags"] = tags
         data.set_mod(mod_slug, mod)
-        print(f"Updated side for {mod_slug} to {side}")
+        print(f"Updated side tag for {mod_slug} to {side}")
 
     if curseforge_id:
         mod["curseforge_id"] = curseforge_id
@@ -886,15 +930,29 @@ def mod_sync(modpack_dir, mod_slug=None):
             # Create new mod entry
             mod_data = {"name": mod_name}
             if mod_side:
-                mod_data["side"] = mod_side
+                mod_data.setdefault("metadata", {})
+                tags = mod_data["metadata"].get("tags", [])
+                if not isinstance(tags, list):
+                    tags = []
+                tags = [t for t in tags if t not in ("client", "server", "both")]
+                tags.append(mod_side)
+                mod_data["metadata"]["tags"] = tags
             data.set_mod(mod_slug_from_file, mod_data)
             print(f"  Added new mod: {mod_slug_from_file} (side: {mod_side or 'unknown'})")
         else:
-            # Update side if not already set (preserve manual settings)
-            if not mod.get("side") and mod_side:
-                mod["side"] = mod_side
-                data.set_mod(mod_slug_from_file, mod)
-                print(f"  Updated side for {mod_slug_from_file} to {mod_side}")
+            # Update side tag if not already set (preserve manual settings)
+            if mod_side:
+                current_side = _get_side_from_mod(mod)
+                if current_side == "unknown":
+                    mod.setdefault("metadata", {})
+                    tags = mod["metadata"].get("tags", [])
+                    if not isinstance(tags, list):
+                        tags = []
+                    tags = [t for t in tags if t not in ("client", "server", "both")]
+                    tags.append(mod_side)
+                    mod["metadata"]["tags"] = tags
+                    data.set_mod(mod_slug_from_file, mod)
+                    print(f"  Updated side for {mod_slug_from_file} to {mod_side}")
 
         # Merge metadata (canonical or version-specific)
         if metadata:

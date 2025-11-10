@@ -77,7 +77,15 @@ def generate_simple_wiki_page(mod_slug, mod_data):
     """Generate simple wiki page for mod."""
     name = mod_data.get("name", mod_slug)
     description = mod_data.get("description", "")
-    side = mod_data.get("side", "unknown")
+    # Derive side from metadata.tags
+    side = "unknown"
+    metadata = mod_data.get("metadata", {})
+    tags = metadata.get("tags", [])
+    if isinstance(tags, list):
+        for s in ("client", "server", "both"):
+            if s in tags:
+                side = s
+                break
     
     metadata = mod_data.get("metadata", {})
     categories = metadata.get("categories", [])
@@ -128,7 +136,13 @@ def generate_wiki_page(mod_slug, mod_data):
     """Generate wiki page for mod using template, embedding custom wiki content if present."""
     name = mod_data.get("name", mod_slug)
     description = mod_data.get("description", "")
-    side = mod_data.get("side", "unknown")
+    side = "unknown"
+    tags = mod_data.get("metadata", {}).get("tags", [])
+    if isinstance(tags, list):
+        for s in ("client", "server", "both"):
+            if s in tags:
+                side = s
+                break
 
     metadata = mod_data.get("metadata", {})
     categories = metadata.get("categories", [])

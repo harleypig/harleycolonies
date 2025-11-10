@@ -33,10 +33,7 @@ def validate_mod_data(mod_data):
     if not isinstance(mod_data, dict):
         return False, "Mod data must be a dictionary"
 
-    # Check optional fields
-    if "side" in mod_data:
-        if mod_data["side"] not in ["client", "server", "both"]:
-            return False, f"Invalid side value: {mod_data['side']}"
+    # Check optional fields (top-level 'side' deprecated; no longer validated)
 
     # Validate metadata structure if present
     if "metadata" in mod_data:
@@ -48,6 +45,11 @@ def validate_mod_data(mod_data):
             categories = metadata["categories"]
             if not isinstance(categories, list) or not all(isinstance(c, str) for c in categories):
                 return False, "'metadata.categories' must be a list of strings"
+        # tags: list[str]; recommended to include exactly one of client/server/both
+        if "tags" in metadata:
+            tags = metadata["tags"]
+            if not isinstance(tags, list) or not all(isinstance(t, str) for t in tags):
+                return False, "'metadata.tags' must be a list of strings"
         # integrations: list[str]
         if "integrations" in metadata:
             integrations = metadata["integrations"]
