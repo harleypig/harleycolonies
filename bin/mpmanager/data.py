@@ -38,22 +38,34 @@ def save_mods(data):
 
 
 def get_modpack_info_path(modpack_dir: str) -> Path:
-    """Get path to per-modpack info.yaml."""
-    return get_repo_root() / modpack_dir / "info.yaml"
+    """Get path to per-modpack info.yaml (under modpacks/<modpack>/info.yaml)."""
+    return get_repo_root() / "modpacks" / modpack_dir / "info.yaml"
 
 
 def get_modpack_state_path(modpack_dir: str) -> Path:
-    """Get path to per-modpack mods.yaml (state)."""
-    return get_repo_root() / modpack_dir / "mods.yaml"
+    """Get path to per-modpack mods.yaml (state) under modpacks/<modpack>/mods.yaml."""
+    return get_repo_root() / "modpacks" / modpack_dir / "mods.yaml"
 
 
 def load_modpack_info(modpack_dir: str) -> dict:
-    """Load per-modpack info.yaml."""
+    """Load per-modpack info.yaml. Falls back to legacy path and migrates."""
     path = get_modpack_info_path(modpack_dir)
-    if not path.exists():
-        return {}
-    with open(path, "r") as f:
-        return yaml.safe_load(f) or {}
+    if path.exists():
+        with open(path, "r") as f:
+            return yaml.safe_load(f) or {}
+    # Legacy fallback: <repo>/<modpack>/info.yaml
+    legacy = get_repo_root() / modpack_dir / "info.yaml"
+    if legacy.exists():
+        with open(legacy, "r") as f:
+            info = yaml.safe_load(f) or {}
+        # Migrate to new location
+        save_modpack_info(modpack_dir, info)
+        try:
+            legacy.unlink()
+        except Exception:
+            pass
+        return info
+    return {}
 
 
 def save_modpack_info(modpack_dir: str, info: dict) -> None:
@@ -65,12 +77,28 @@ def save_modpack_info(modpack_dir: str, info: dict) -> None:
 
 
 def load_modpack_state(modpack_dir: str) -> dict:
-    """Load per-modpack mods.yaml state: {mods: {slug: {status, reason?}}}."""
+    """Load per-modpack mods.yaml state: {mods: {slug: {status, reason?}}}.
+    
+    Falls back to legacy path and migrates when found.
+    """
     path = get_modpack_state_path(modpack_dir)
-    if not path.exists():
-        return {"mods": {}}
-    with open(path, "r") as f:
-        data = yaml.safe_load(f) or {}
+    if path.exists():
+        with open(path, "r") as f:
+            data = yaml.safe_load(f) or {}
+    else:
+        # Legacy fallback: <repo>/<modpack>/mods.yaml
+        legacy = get_repo_root() / modpack_dir / "mods.yaml"
+        if legacy.exists():
+            with open(legacy, "r") as f:
+                data = yaml.safe_load(f) or {}
+            # Migrate to new location
+            save_modpack_state(modpack_dir, data)
+            try:
+                legacy.unlink()
+            except Exception:
+                pass
+        else:
+            data = {"mods": {}}
     if "mods" not in data or not isinstance(data["mods"], dict):
         data["mods"] = {}
     return data
@@ -397,14 +425,11 @@ def update_mod_from_remote(mod_slug, remote_metadata, modpack_dir, force_remote=
 
 def list_modpacks_with_mod(mod_slug: str) -> list:
     """Return list of modpack dirs that have this mod installed per state files."""
-    root = get_repo_root()
+    root = get_repo_root() / "modpacks"
     modpacks = []
     # Scan top-level directories only
     for child in root.iterdir():
         if not child.is_dir():
-            continue
-        # skip known non-modpack dirs
-        if child.name in ("bin", "pages", "modpacks", ".git", ".venv"):
             continue
         state_path = child / "mods.yaml"
         if not state_path.exists():

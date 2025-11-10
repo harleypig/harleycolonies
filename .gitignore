@@ -13,4 +13,4 @@ work/**
 journeymap/
 *.aider*
 
-# Packwiz cache (already listed above but kept for clarity)
+tmpconfig/**
