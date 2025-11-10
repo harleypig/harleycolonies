@@ -5,9 +5,9 @@ categories:
   - storage
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/storage-drawers) | [Issues](https://github.com/jaquadro/StorageDrawers/issues) | [Source](https://github.com/jaquadro/StorageDrawers)
 
-both
+Client/Server: both
 
 ### Modpacks
 

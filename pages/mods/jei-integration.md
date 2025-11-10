@@ -5,9 +5,9 @@ categories:
   - mc-addons
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/jei-integration) | [Issues](https://github.com/snowshock35/jei-integration/issues) | [Source](https://github.com/snowshock35/jei-integration)
 
-both
+Client/Server: both
 
 ### Modpacks
 

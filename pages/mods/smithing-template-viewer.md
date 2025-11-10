@@ -2,9 +2,9 @@
 title: Smithing Template Viewer for JEI/EMI
 ---
 
-### Side
 
-client
+
+Client/Server: client
 
 ### Modpacks
 

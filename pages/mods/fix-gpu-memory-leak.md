@@ -2,9 +2,9 @@
 title: fix GPU memory leak[Forge/Fabric]
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

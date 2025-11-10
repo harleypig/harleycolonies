@@ -2,9 +2,9 @@
 title: Better Fps - Render Distance[Forge]
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

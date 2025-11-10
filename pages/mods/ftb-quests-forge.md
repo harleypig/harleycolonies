@@ -2,9 +2,9 @@
 title: FTB Quests (Forge)
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

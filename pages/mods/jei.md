@@ -5,9 +5,9 @@ categories:
   - map-information
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/jei) | [Issues](https://github.com/mezz/JustEnoughItems/issues?q=is%3Aissue) | [Source](https://github.com/mezz/JustEnoughItems)
 
-both
+Client/Server: both
 
 ### Modpacks
 

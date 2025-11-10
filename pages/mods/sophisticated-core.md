@@ -4,9 +4,9 @@ categories:
   - library-api
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/sophisticated-core) | [Source](https://github.com/P3pp3rF1y/SophisticatedCore)
 
-both
+Client/Server: both
 
 ### Modpacks
 

@@ -8,9 +8,9 @@ categories:
   - armor-weapons-tools
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/treasuredistance) | [Issues](https://github.com/ldtteam/treasuredistance/issues)
 
-both
+Client/Server: both
 
 ### Modpacks
 

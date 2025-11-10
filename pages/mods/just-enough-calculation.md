@@ -5,9 +5,9 @@ categories:
   - mc-addons
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/just-enough-calculation) | [Issues](https://github.com/Towdium/JustEnoughCalculation/issues) | [Source](https://github.com/Towdium/JustEnoughCalculation)
 
-both
+Client/Server: both
 
 ### Modpacks
 

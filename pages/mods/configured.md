@@ -6,9 +6,9 @@ categories:
   - server-utility
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/configured) | [Issues](https://github.com/MrCrayfish/Configured/issues) | [Source](https://github.com/MrCrayfish/Configured)
 
-both
+Client/Server: both
 
 ### Modpacks
 

@@ -6,9 +6,9 @@ categories:
   - adventure-rpg
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/clean-swing-through-grass) | [Issues](https://github.com/ldtteam/cleanswing/issues)
 
-both
+Client/Server: both
 
 ### Modpacks
 

@@ -6,9 +6,9 @@ categories:
   - map-information
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/better-ping-display) | [Issues](https://github.com/vladmarica/better-ping-display/issues) | [Source](https://github.com/vladmarica/better-ping-display)
 
-both
+Client/Server: both
 
 ### Modpacks
 

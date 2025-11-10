@@ -4,9 +4,9 @@ categories:
   - utility-qol
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/kleeslabs) | [Issues](https://github.com/ModdingForBlockheads/KleeSlabs/issues) | [Source](https://github.com/ModdingForBlockheads/KleeSlabs)
 
-both
+Client/Server: both
 
 ### Modpacks
 

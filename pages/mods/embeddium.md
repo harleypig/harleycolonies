@@ -2,9 +2,9 @@
 title: Embeddium
 ---
 
-### Side
 
-client
+
+Client/Server: client
 
 ### Modpacks
 

@@ -5,9 +5,9 @@ categories:
   - map-information
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/jade) | [Issues](https://github.com/Snownee/Jade/issues?q=is%3Aissue) | [Source](https://github.com/Snownee/Jade)
 
-both
+Client/Server: both
 
 ### Modpacks
 

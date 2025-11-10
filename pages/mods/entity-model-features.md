@@ -2,9 +2,9 @@
 title: [EMF] Entity Model Features [Fabric & Forge]
 ---
 
-### Side
 
-client
+
+Client/Server: client
 
 ### Modpacks
 

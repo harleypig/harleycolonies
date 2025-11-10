@@ -5,9 +5,9 @@ categories:
   - adventure-rpg
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/comforts) | [Issues](https://github.com/illusivesoulworks/comforts/issues) | [Source](https://github.com/illusivesoulworks/comforts)
 
-both
+Client/Server: both
 
 ### Modpacks
 

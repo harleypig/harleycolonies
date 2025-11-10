@@ -5,9 +5,9 @@ categories:
   - cosmetic
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/controlling) | [Issues](https://github.com/jaredlll08/Controlling/issues) | [Source](https://github.com/jaredlll08/Controlling)
 
-both
+Client/Server: both
 
 ### Modpacks
 

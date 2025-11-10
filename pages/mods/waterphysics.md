@@ -7,9 +7,9 @@ categories:
   - utility-qol
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/waterphysics)
 
-both
+Client/Server: both
 
 ### Modpacks
 

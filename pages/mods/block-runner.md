@@ -2,13 +2,11 @@
 title: Block Runner
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 
-This mod is installed in the following modpacks:
 
-- harleycolonies-1.21.1
-
+This mod is not currently installed in any modpacks.

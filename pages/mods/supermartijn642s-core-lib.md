@@ -2,9 +2,9 @@
 title: SuperMartijn642's Core Lib
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

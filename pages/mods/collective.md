@@ -4,9 +4,9 @@ categories:
   - library-api
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/collective) | [Issues](https://github.com/Serilum/.issue-tracker/labels/Library: Collective) | [Source](https://github.com/Serilum/Collective)
 
-both
+Client/Server: both
 
 ### Modpacks
 

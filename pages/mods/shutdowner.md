@@ -2,9 +2,9 @@
 title: Shutdowner
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

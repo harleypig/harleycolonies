@@ -4,9 +4,9 @@ categories:
   - library-api
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/architectury-api) | [Issues](https://github.com/architectury/architectury/issues) | [Source](https://github.com/architectury/architectury)
 
-both
+Client/Server: both
 
 ### Modpacks
 

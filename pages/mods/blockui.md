@@ -4,9 +4,9 @@ categories:
   - library-api
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/blockui) | [Source](https://github.com/ldtteam/BlockUI)
 
-both
+Client/Server: both
 
 ### Modpacks
 

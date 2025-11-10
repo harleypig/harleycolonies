@@ -6,9 +6,9 @@ categories:
   - cosmetic
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/structurize) | [Issues](https://github.com/ldtteam/structurize/issues) | [Source](https://github.com/ldtteam/structurize)
 
-both
+Client/Server: both
 
 ### Modpacks
 

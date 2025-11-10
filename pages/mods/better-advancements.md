@@ -4,9 +4,9 @@ categories:
   - cosmetic
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/better-advancements) | [Issues](https://github.com/way2muchnoise/BetterAdvancements/issues) | [Source](https://github.com/way2muchnoise/BetterAdvancements)
 
-both
+Client/Server: both
 
 ### Modpacks
 

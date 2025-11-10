@@ -4,9 +4,9 @@ categories:
   - library-api
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib) | [Issues](https://github.com/SuperMartijn642/SuperMartijn642sConfigLib/issues) | [Source](https://github.com/SuperMartijn642/SuperMartijn642sConfigLib)
 
-both
+Client/Server: both
 
 ### Modpacks
 

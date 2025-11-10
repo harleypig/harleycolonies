@@ -7,9 +7,9 @@ categories:
   - mc-addons
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/stylecolonies)
 
-both
+Client/Server: both
 
 ### Modpacks
 

@@ -2,9 +2,9 @@
 title: Farsight [Forge/Neo]
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

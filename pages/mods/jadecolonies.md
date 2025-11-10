@@ -5,9 +5,9 @@ categories:
   - utility-qol
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/jadecolonies) | [Issues](https://github.com/uecasm/jadecolonies/issues) | [Source](https://github.com/uecasm/jadecolonies)
 
-both
+Client/Server: both
 
 ### Modpacks
 

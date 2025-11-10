@@ -7,9 +7,9 @@ categories:
   - technology-player-transport
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/waystones) | [Issues](https://github.com/ModdingForBlockheads/Waystones/issues) | [Source](https://github.com/ModdingForBlockheads/Waystones)
 
-both
+Client/Server: both
 
 ### Modpacks
 

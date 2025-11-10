@@ -8,9 +8,9 @@ categories:
   - storage
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/minecolonies) | [Issues](https://github.com/ldtteam/minecolonies/issues/new/choose) | [Source](https://github.com/ldtteam/MineColonies)
 
-client
+Client/Server: client
 
 ### Modpacks
 

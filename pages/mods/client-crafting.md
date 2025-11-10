@@ -2,9 +2,9 @@
 title: Client Crafting
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

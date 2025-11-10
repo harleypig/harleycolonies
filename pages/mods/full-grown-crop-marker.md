@@ -6,9 +6,9 @@ categories:
   - adventure-rpg
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/full-grown-crop-marker) | [Issues](https://github.com/tristankechlo/FullGrownCropMarker/issues) | [Source](https://github.com/tristankechlo/FullGrownCropMarker)
 
-both
+Client/Server: both
 
 ### Modpacks
 

@@ -2,9 +2,9 @@
 title: Clean Tooltips
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

@@ -4,9 +4,9 @@ categories:
   - world-mobs
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/peacefulsurface) | [Issues](https://github.com/zlainsama/PeacefulSurface/issues) | [Source](https://github.com/zlainsama/PeacefulSurface)
 
-both
+Client/Server: both
 
 ### Modpacks
 

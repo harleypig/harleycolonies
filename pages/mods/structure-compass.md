@@ -2,9 +2,9 @@
 title: Structure Compass
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

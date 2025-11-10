@@ -2,9 +2,9 @@
 title: Hud Compass
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

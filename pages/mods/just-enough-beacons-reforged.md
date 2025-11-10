@@ -5,9 +5,9 @@ categories:
   - map-information
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/just-enough-beacons-reforged) | [Issues](https://github.com/CERBON-MODS/Just-Enough-Beacons/issues) | [Source](https://github.com/CERBON-MODS/Just-Enough-Beacons)
 
-both
+Client/Server: both
 
 ### Modpacks
 

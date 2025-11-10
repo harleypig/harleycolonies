@@ -7,9 +7,9 @@ categories:
   - mc-miscellaneous
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/compact-help-command) | [Issues](https://github.com/Serilum/.issue-tracker/labels/Mod: Compact Help Command) | [Source](https://github.com/Serilum/Compact-Help-Command)
 
-both
+Client/Server: both
 
 ### Modpacks
 

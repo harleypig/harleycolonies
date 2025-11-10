@@ -2,9 +2,9 @@
 title: Prickle
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

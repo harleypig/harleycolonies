@@ -4,9 +4,9 @@ categories:
   - mc-miscellaneous
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/treechop) | [Issues](https://github.com/hammertater/treechop/issues) | [Source](https://github.com/hammertater/treechop)
 
-both
+Client/Server: both
 
 ### Modpacks
 

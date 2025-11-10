@@ -5,9 +5,9 @@ categories:
   - server-utility
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/ai-improvements) | [Issues](https://github.com/BuiltBrokenModding/AI-Improvements/issues) | [Source](https://github.com/BuiltBrokenModding/AI-Improvements)
 
-both
+Client/Server: both
 
 ### Modpacks
 

@@ -7,9 +7,9 @@ categories:
   - armor-weapons-tools
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/explorers-compass) | [Issues](https://github.com/MattCzyr/ExplorersCompass/issues) | [Source](https://github.com/MattCzyr/ExplorersCompass)
 
-both
+Client/Server: both
 
 ### Modpacks
 

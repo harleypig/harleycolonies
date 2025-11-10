@@ -5,9 +5,9 @@ categories:
   - server-utility
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/betterdays) | [Issues](https://github.com/wendall911/BetterDays/issues) | [Source](https://github.com/wendall911/BetterDays)
 
-both
+Client/Server: both
 
 ### Modpacks
 

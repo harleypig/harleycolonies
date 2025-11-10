@@ -7,9 +7,9 @@ categories:
   - armor-weapons-tools
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/vanilla-tools) | [Issues](https://github.com/ldtteam/vanilla-tools/issues/new/choose) | [Source](https://github.com/ldtteam/vanilla-tools)
 
-both
+Client/Server: both
 
 ### Modpacks
 

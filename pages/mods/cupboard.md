@@ -4,9 +4,9 @@ categories:
   - utility-qol
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/cupboard) | [Issues](https://github.com/someaddons/cupboard/issues) | [Source](https://github.com/someaddons/cupboard)
 
-both
+Client/Server: both
 
 ### Modpacks
 

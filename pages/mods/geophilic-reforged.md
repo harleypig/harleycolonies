@@ -6,9 +6,9 @@ categories:
   - world-gen
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/geophilic-reforged)
 
-both
+Client/Server: both
 
 ### Modpacks
 

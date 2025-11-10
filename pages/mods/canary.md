@@ -5,9 +5,9 @@ categories:
   - mc-miscellaneous
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/canary) | [Issues](https://github.com/AbdElAziz333/Canary/issues) | [Source](https://github.com/AbdElAziz333/Canary)
 
-both
+Client/Server: both
 
 ### Modpacks
 

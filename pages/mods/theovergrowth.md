@@ -2,9 +2,9 @@
 title: TheOvergrowth
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

@@ -4,9 +4,9 @@ categories:
   - library-api
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/puzzles-lib) | [Issues](https://github.com/Fuzss/puzzleslib/issues) | [Source](https://github.com/Fuzss/puzzleslib)
 
-both
+Client/Server: both
 
 ### Modpacks
 

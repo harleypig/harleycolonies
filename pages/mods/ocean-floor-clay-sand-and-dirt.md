@@ -7,9 +7,9 @@ categories:
   - world-dimensions
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/ocean-floor-clay-sand-and-dirt) | [Issues](https://github.com/PrinceOfAmber/OceanFloorControl/issues) | [Source](https://github.com/PrinceOfAmber/OceanFloorControl)
 
-both
+Client/Server: both
 
 ### Modpacks
 

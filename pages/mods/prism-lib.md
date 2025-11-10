@@ -7,9 +7,9 @@ categories:
   - utility-qol
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/prism-lib) | [Issues](https://github.com/AHilyard/Prism/issues) | [Source](https://github.com/AHilyard/Prism)
 
-both
+Client/Server: both
 
 ### Modpacks
 

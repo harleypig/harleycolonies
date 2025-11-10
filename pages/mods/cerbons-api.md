@@ -5,9 +5,9 @@ categories:
   - library-api
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/cerbons-api) | [Issues](https://github.com/CERBON-MODS/CERBONs-API/issues) | [Source](https://github.com/CERBON-MODS/CERBONs-API)
 
-both
+Client/Server: both
 
 ### Modpacks
 

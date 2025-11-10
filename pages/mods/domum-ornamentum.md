@@ -5,9 +5,9 @@ categories:
   - library-api
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/domum-ornamentum) | [Issues](https://github.com/ldtteam/Domum-Ornamentum/issues/new) | [Source](https://github.com/ldtteam/Domum-Ornamentum)
 
-both
+Client/Server: both
 
 ### Modpacks
 

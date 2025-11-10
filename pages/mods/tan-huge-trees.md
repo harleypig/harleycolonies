@@ -7,9 +7,9 @@ categories:
   - world-structures
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/tan-huge-trees)
 
-both
+Client/Server: both
 
 ### Modpacks
 

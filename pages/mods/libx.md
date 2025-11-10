@@ -4,9 +4,9 @@ categories:
   - library-api
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/libx) | [Issues](https://github.com/noeppi-noeppi/LibX/issues) | [Source](https://github.com/noeppi-noeppi/LibX)
 
-both
+Client/Server: both
 
 ### Modpacks
 

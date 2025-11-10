@@ -6,9 +6,9 @@ categories:
   - cosmetic
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/beehivetooltips) | [Issues](https://github.com/EDToaster/beehive-tooltips/issues) | [Source](https://github.com/EDToaster/beehive-tooltips)
 
-both
+Client/Server: both
 
 ### Modpacks
 

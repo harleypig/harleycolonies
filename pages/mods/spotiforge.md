@@ -5,9 +5,9 @@ categories:
   - cosmetic
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/spotiforge) | [Issues](https://github.com/suppergerrie2/SpotiForge/issues)
 
-both
+Client/Server: both
 
 ### Modpacks
 

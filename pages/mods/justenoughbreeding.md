@@ -7,9 +7,9 @@ categories:
   - world-mobs
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/justenoughbreeding) | [Issues](https://github.com/Christofmeg/JustEnoughBreeding/issues) | [Source](https://github.com/Christofmeg/JustEnoughBreeding)
 
-both
+Client/Server: both
 
 ### Modpacks
 

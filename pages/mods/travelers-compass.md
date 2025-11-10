@@ -2,9 +2,9 @@
 title: Traveler's Compass
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

@@ -2,9 +2,9 @@
 title: Better chunk loading[Forge/Fabric]
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

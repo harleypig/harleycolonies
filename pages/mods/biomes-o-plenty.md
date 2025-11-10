@@ -5,9 +5,9 @@ categories:
   - world-gen
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty) | [Issues](https://github.com/Glitchfiend/BiomesOPlenty/issues) | [Source](https://github.com/Glitchfiend/BiomesOPlenty)
 
-both
+Client/Server: both
 
 ### Modpacks
 

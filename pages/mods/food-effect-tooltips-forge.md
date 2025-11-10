@@ -5,9 +5,9 @@ categories:
   - utility-qol
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/food-effect-tooltips-forge) | [Issues](https://github.com/Suel-ki/FoodEffectTooltips-Forge/issues) | [Source](https://github.com/Suel-ki/FoodEffectTooltips-Forge)
 
-both
+Client/Server: both
 
 ### Modpacks
 

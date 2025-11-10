@@ -5,9 +5,9 @@ categories:
   - armor-weapons-tools
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks) | [Issues](https://github.com/P3pp3rF1y/SophisticatedBackpacks/issues) | [Source](https://github.com/P3pp3rF1y/SophisticatedBackpacks)
 
-both
+Client/Server: both
 
 ### Modpacks
 

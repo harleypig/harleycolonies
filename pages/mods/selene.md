@@ -5,9 +5,9 @@ categories:
   - library-api
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/selene) | [Source](https://github.com/MehVahdJukaar/Selene)
 
-both
+Client/Server: both
 
 ### Modpacks
 

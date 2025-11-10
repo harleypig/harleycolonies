@@ -7,9 +7,9 @@ categories:
   - utility-qol
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/catalogue) | [Issues](https://github.com/MrCrayfish/Catalogue/issues)
 
-both
+Client/Server: both
 
 ### Modpacks
 

@@ -7,9 +7,9 @@ categories:
   - library-api
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/searchables) | [Issues](https://github.com/jaredlll08/searchables/issues) | [Source](https://github.com/jaredlll08/searchables)
 
-both
+Client/Server: both
 
 ### Modpacks
 

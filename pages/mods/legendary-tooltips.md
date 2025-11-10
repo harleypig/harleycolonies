@@ -8,9 +8,9 @@ categories:
   - mc-miscellaneous
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/legendary-tooltips) | [Issues](https://github.com/AHilyard/LegendaryTooltips/issues) | [Source](https://github.com/AHilyard/LegendaryTooltips)
 
-both
+Client/Server: both
 
 ### Modpacks
 

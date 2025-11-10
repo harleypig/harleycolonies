@@ -5,9 +5,9 @@ categories:
   - map-information
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/appleskin) | [Issues](https://github.com/squeek502/AppleSkin/issues) | [Source](https://github.com/squeek502/AppleSkin)
 
-both
+Client/Server: both
 
 ### Modpacks
 

@@ -4,9 +4,9 @@ categories:
   - utility-qol
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/passable-foliage) | [Issues](https://github.com/Snownee/PassableFoliage/issues) | [Source](https://github.com/Snownee/PassableFoliage)
 
-both
+Client/Server: both
 
 ### Modpacks
 

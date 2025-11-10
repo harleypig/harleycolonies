@@ -4,9 +4,9 @@ categories:
   - library-api
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/balm) | [Issues](https://github.com/ModdingForBlockheads/Balm/issues) | [Source](https://github.com/ModdingForBlockheads/Balm)
 
-both
+Client/Server: both
 
 ### Modpacks
 

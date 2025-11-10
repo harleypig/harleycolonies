@@ -6,9 +6,9 @@ categories:
   - library-api
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/bookshelf) | [Issues](https://github.com/Darkhax-Minecraft/Bookshelf/issues) | [Source](https://github.com/Darkhax-Minecraft/Bookshelf)
 
-both
+Client/Server: both
 
 ### Modpacks
 

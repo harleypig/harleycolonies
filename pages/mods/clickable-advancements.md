@@ -2,9 +2,9 @@
 title: Clickable advancements[Forge/Fabric]
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

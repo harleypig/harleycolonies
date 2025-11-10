@@ -6,9 +6,9 @@ categories:
   - utility-qol
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/drawers-tooltip) | [Issues](https://github.com/Snownee/DrawersTooltip/issues) | [Source](https://github.com/Snownee/DrawersTooltip)
 
-both
+Client/Server: both
 
 ### Modpacks
 

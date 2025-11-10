@@ -2,9 +2,9 @@
 title: Inventory Essentials
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

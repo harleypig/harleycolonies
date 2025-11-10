@@ -4,9 +4,9 @@ categories:
   - mc-miscellaneous
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/inventory-sorter) | [Issues](https://github.com/cpw/inventorysorter/issues) | [Source](https://github.com/cpw/inventorysorter)
 
-both
+Client/Server: both
 
 ### Modpacks
 

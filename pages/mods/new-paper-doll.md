@@ -2,9 +2,9 @@
 title: Paper Doll
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

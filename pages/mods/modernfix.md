@@ -2,9 +2,9 @@
 title: ModernFix
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

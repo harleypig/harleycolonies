@@ -5,9 +5,9 @@ categories:
   - map-information
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/journeymap-integration) | [Issues](https://github.com/frank89722/JourneyMapIntegration/issues) | [Source](https://github.com/frank89722/JourneyMapIntegration)
 
-both
+Client/Server: both
 
 ### Modpacks
 

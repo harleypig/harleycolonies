@@ -6,9 +6,9 @@ categories:
   - server-utility
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/clumps) | [Issues](https://github.com/jaredlll08/Clumps/issues) | [Source](https://github.com/jaredlll08/Clumps)
 
-both
+Client/Server: both
 
 ### Modpacks
 

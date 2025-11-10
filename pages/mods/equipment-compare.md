@@ -8,9 +8,9 @@ categories:
   - mc-miscellaneous
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/equipment-compare) | [Issues](https://github.com/AHilyard/EquipmentCompare/issues) | [Source](https://github.com/AHilyard/EquipmentCompare)
 
-both
+Client/Server: both
 
 ### Modpacks
 

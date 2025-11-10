@@ -2,9 +2,9 @@
 title: JEI Integration: Reborn
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

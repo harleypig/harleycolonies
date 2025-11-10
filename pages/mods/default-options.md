@@ -4,9 +4,9 @@ categories:
   - mc-miscellaneous
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/default-options) | [Issues](https://github.com/ModdingForBlockheads/DefaultOptions/issues) | [Source](https://github.com/ModdingForBlockheads/DefaultOptions)
 
-both
+Client/Server: both
 
 ### Modpacks
 

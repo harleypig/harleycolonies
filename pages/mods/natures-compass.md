@@ -7,9 +7,9 @@ categories:
   - map-information
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/natures-compass) | [Issues](https://github.com/MattCzyr/NaturesCompass/issues) | [Source](https://github.com/MattCzyr/NaturesCompass)
 
-both
+Client/Server: both
 
 ### Modpacks
 

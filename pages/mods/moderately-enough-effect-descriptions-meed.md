@@ -2,9 +2,9 @@
 title: Moderately Enough Effect Descriptions (MEED)
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

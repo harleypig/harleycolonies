@@ -6,9 +6,9 @@ categories:
   - world-gen
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/terrablender) | [Issues](https://github.com/Glitchfiend/TerraBlender/) | [Source](https://github.com/Glitchfiend/TerraBlender/)
 
-both
+Client/Server: both
 
 ### Modpacks
 

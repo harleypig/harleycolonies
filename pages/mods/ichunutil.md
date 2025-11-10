@@ -2,9 +2,9 @@
 title: iChunUtil
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

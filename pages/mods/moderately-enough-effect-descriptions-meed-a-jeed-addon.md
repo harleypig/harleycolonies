@@ -7,9 +7,9 @@ categories:
   - server-utility
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/moderately-enough-effect-descriptions-meed-a-jeed-addon)
 
-both
+Client/Server: both
 
 ### Modpacks
 

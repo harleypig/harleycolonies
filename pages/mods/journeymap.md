@@ -4,9 +4,9 @@ categories:
   - map-information
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/journeymap) | [Issues](https://github.com/TeamJM/journeymap/issues)
 
-both
+Client/Server: both
 
 ### Modpacks
 

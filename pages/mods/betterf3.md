@@ -4,9 +4,9 @@ categories:
   - map-information
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/betterf3) | [Issues](https://github.com/TreyRuffy/BetterF3/issues/) | [Source](https://github.com/TreyRuffy/BetterF3)
 
-both
+Client/Server: both
 
 ### Modpacks
 

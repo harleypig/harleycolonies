@@ -2,9 +2,9 @@
 title: FTB Library (Forge)
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

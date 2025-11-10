@@ -2,9 +2,9 @@
 title: Entity Culling Fabric/Forge
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

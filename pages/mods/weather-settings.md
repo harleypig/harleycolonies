@@ -2,9 +2,9 @@
 title: Weather settings[Forge/Fabric]
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

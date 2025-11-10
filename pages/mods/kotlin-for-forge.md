@@ -2,9 +2,9 @@
 title: Kotlin for Forge
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

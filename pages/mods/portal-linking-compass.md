@@ -5,9 +5,9 @@ categories:
   - map-information
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/portal-linking-compass) | [Issues](https://github.com/maxoduke/Portal-Linking-Compass/issues) | [Source](https://github.com/maxoduke/Portal-Linking-Compass)
 
-both
+Client/Server: both
 
 ### Modpacks
 

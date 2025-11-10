@@ -4,9 +4,9 @@ categories:
   - map-information
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/ding) | [Issues](https://github.com/iChun/Ding/issues) | [Source](https://github.com/iChun/Ding)
 
-client
+Client/Server: client
 
 ### Modpacks
 

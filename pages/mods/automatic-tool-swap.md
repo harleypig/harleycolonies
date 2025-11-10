@@ -2,9 +2,9 @@
 title: Automatic Tool Swap
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

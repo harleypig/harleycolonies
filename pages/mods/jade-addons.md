@@ -6,9 +6,9 @@ categories:
   - mc-addons
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/jade-addons) | [Issues](https://github.com/Snownee/JadeAddons/issues) | [Source](https://github.com/Snownee/JadeAddons)
 
-client
+Client/Server: client
 
 ### Modpacks
 

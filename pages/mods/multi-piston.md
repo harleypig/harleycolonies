@@ -7,9 +7,9 @@ categories:
   - technology-player-transport
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/multi-piston) | [Issues](https://github.com/ldtteam/Piston-Unlimited) | [Source](https://github.com/ldtteam/Piston-Unlimited)
 
-both
+Client/Server: both
 
 ### Modpacks
 

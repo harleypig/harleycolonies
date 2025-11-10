@@ -7,9 +7,9 @@ categories:
   - utility-qol
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/anvil-balance)
 
-both
+Client/Server: both
 
 ### Modpacks
 

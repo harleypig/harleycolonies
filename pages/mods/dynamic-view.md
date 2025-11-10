@@ -2,9 +2,9 @@
 title: Dynamic View[Forge]
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

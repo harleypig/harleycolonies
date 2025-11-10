@@ -4,9 +4,9 @@ categories:
   - map-information
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/mod-name-tooltip) | [Issues](https://github.com/mezz/ModNameTooltip/issues?q=is%3Aissue) | [Source](https://github.com/mezz/ModNameTooltip)
 
-both
+Client/Server: both
 
 ### Modpacks
 

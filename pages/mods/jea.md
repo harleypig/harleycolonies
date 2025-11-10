@@ -6,9 +6,9 @@ categories:
   - library-api
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/jea) | [Issues](https://github.com/MelanX/JustEnoughAdvancements/issues) | [Source](https://github.com/MelanX/JustEnoughAdvancements)
 
-both
+Client/Server: both
 
 ### Modpacks
 

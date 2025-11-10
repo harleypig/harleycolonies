@@ -2,9 +2,9 @@
 title: FTB Teams (Forge)
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

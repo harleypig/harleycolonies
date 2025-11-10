@@ -4,9 +4,9 @@ categories:
   - library-api
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/kiwi) | [Issues](https://github.com/Snownee/Kiwi/issues) | [Source](https://github.com/Snownee/Kiwi)
 
-both
+Client/Server: both
 
 ### Modpacks
 

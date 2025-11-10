@@ -2,9 +2,9 @@
 title: CERBON's Better Beacons [Forge | Fabric | NeoForge]
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

@@ -2,9 +2,9 @@
 title: Bad Wither No Cookie - Reloaded
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

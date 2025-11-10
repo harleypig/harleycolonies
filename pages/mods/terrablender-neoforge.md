@@ -2,9 +2,9 @@
 title: TerraBlender (NeoForge)
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

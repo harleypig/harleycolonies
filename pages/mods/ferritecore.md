@@ -2,9 +2,9 @@
 title: FerriteCore ((Neo)Forge)
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

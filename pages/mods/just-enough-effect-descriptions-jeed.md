@@ -5,9 +5,9 @@ categories:
   - mc-addons
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/just-enough-effect-descriptions-jeed) | [Issues](https://github.com/MehVahdJukaar/JustEnoughEffectDescriptions/issues) | [Source](https://github.com/MehVahdJukaar/JustEnoughEffectDescriptions)
 
-both
+Client/Server: both
 
 ### Modpacks
 

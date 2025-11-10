@@ -2,9 +2,9 @@
 title: Resource Pack Overrides
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

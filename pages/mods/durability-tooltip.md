@@ -6,9 +6,9 @@ categories:
   - map-information
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/durability-tooltip) | [Issues](https://github.com/SuperMartijn642/DurabilityTooltip/issues) | [Source](https://github.com/SuperMartijn642/DurabilityTooltip)
 
-both
+Client/Server: both
 
 ### Modpacks
 

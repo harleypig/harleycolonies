@@ -2,9 +2,9 @@
 title: Visual Workbench
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

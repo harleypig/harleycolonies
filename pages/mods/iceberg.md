@@ -4,9 +4,9 @@ categories:
   - library-api
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/iceberg) | [Issues](https://github.com/AHilyard/Iceberg/issues) | [Source](https://github.com/AHilyard/Iceberg)
 
-both
+Client/Server: both
 
 ### Modpacks
 

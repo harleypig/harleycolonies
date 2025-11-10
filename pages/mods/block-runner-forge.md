@@ -4,9 +4,9 @@ categories:
   - utility-qol
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/block-runner-forge) | [Issues](https://github.com/Fuzss/blockrunner/issues) | [Source](https://github.com/Fuzss/blockrunner)
 
-both
+Client/Server: both
 
 ### Modpacks
 

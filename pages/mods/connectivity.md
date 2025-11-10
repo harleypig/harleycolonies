@@ -6,9 +6,9 @@ categories:
   - server-utility
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/connectivity) | [Issues](https://github.com/someaddons/connectivity/issues) | [Source](https://github.com/someaddons/connectivity)
 
-both
+Client/Server: both
 
 ### Modpacks
 

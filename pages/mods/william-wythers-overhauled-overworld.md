@@ -2,9 +2,9 @@
 title: William Wythers' Overhauled Overworld
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

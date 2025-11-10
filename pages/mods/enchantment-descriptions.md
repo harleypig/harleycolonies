@@ -7,9 +7,9 @@ categories:
   - cosmetic
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions) | [Issues](https://github.com/Darkhax-Minecraft/Enchantment-Descriptions/issues) | [Source](https://github.com/Darkhax-Minecraft/Enchantment-Descriptions)
 
-both
+Client/Server: both
 
 ### Modpacks
 

@@ -2,9 +2,9 @@
 title: Climate Rivers
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

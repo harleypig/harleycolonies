@@ -8,9 +8,9 @@ categories:
   - technology-automation
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/storage-racks) | [Issues](https://github.com/ldtteam/StorageRacks) | [Source](https://github.com/ldtteam/StorageRacks)
 
-both
+Client/Server: both
 
 ### Modpacks
 

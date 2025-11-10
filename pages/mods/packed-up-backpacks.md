@@ -2,9 +2,9 @@
 title: Packed Up (Backpacks)
 ---
 
-### Side
 
-both
+
+Client/Server: both
 
 ### Modpacks
 

@@ -4,9 +4,9 @@ categories:
   - utility-qol
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/just-enough-archaeology)
 
-both
+Client/Server: both
 
 ### Modpacks
 

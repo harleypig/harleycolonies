@@ -6,9 +6,9 @@ categories:
   - mc-addons
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/just-enough-professions-jep) | [Issues](https://github.com/Mrbysco/JustEnoughProfessions/issues) | [Source](https://github.com/Mrbysco/JustEnoughProfessions)
 
-both
+Client/Server: both
 
 ### Modpacks
 

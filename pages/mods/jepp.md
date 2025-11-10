@@ -5,9 +5,9 @@ categories:
   - map-information
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/jepp) | [Source](https://github.com/MehVahdJukaar/JustEnoughPainting)
 
-both
+Client/Server: both
 
 ### Modpacks
 

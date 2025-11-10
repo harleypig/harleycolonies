@@ -7,9 +7,9 @@ categories:
   - cosmetic
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/towntalk)
 
-both
+Client/Server: both
 
 ### Modpacks
 

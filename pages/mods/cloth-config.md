@@ -4,9 +4,9 @@ categories:
   - library-api
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/cloth-config) | [Issues](https://github.com/shedaniel/ClothConfig/issues) | [Source](https://github.com/shedaniel/ClothConfig)
 
-both
+Client/Server: both
 
 ### Modpacks
 

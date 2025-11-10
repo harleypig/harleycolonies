@@ -4,9 +4,9 @@ categories:
   - library-api
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/flib) | [Issues](https://github.com/Lothrazar/FLib/issues) | [Source](https://github.com/Lothrazar/FLib)
 
-both
+Client/Server: both
 
 ### Modpacks
 

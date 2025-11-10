@@ -5,9 +5,9 @@ categories:
   - utility-qol
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/amendments) | [Issues](https://github.com/MehVahdJukaar/amendments/issues)
 
-both
+Client/Server: both
 
 ### Modpacks
 

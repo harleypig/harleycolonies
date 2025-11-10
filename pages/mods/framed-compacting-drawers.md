@@ -6,9 +6,9 @@ categories:
   - cosmetic
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/framed-compacting-drawers) | [Issues](https://github.com/eutropius225/FramedCompactDrawers/issues) | [Source](https://github.com/eutropius225/FramedCompactDrawers)
 
-both
+Client/Server: both
 
 ### Modpacks
 

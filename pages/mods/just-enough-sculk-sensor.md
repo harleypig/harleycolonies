@@ -6,9 +6,9 @@ categories:
   - redstone
 ---
 
-### Side
+[Website](https://www.curseforge.com/minecraft/mc-mods/just-enough-sculk-sensor)
 
-both
+Client/Server: both
 
 ### Modpacks
 
