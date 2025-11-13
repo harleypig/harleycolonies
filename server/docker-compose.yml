@@ -17,6 +17,7 @@ services:
       EULA: true
       TYPE: ARCLIGHT
       ARCLIGHT_TYPE: NEOFORGE
+      ARCLIGHT_RELEASE: $ARCLIGHT_RELEASE
 
       VERSION: $VERSION
       NEOFORGE_VERSION: $NEOFORGE_VERSION
@@ -30,7 +31,7 @@ services:
       USES_PLUGINS: true
       PLUGINS_FILE: /extras/$PLUGINS_FILE
       CF_API_KEY: $CF_API_KEY
-      CURSEFORGE_FILES: "@/extras/cf-modlist.txt"
+      CURSEFORGE_FILES: "@/extras/$CF_MODLIST"
 
     volumes:
       - ./extras:/extras:ro
