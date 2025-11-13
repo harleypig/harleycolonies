@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/shutdowner.json"
+hash = "0438b7e34fbd8418c09d96875ebc9b2d6dbe9e06723e57326c29cf85c3feebcc"
+
+[[files]]
 file = "mods/actually-harvest.pw.toml"
 hash = "5cd33a09220c4bfbacb3cbd3fb9a077ce301dad1ba642f89582625d1c3f3c166"
 metafile = true
@@ -207,12 +211,12 @@ metafile = true
 
 [[files]]
 file = "mods/ftb-quests-forge.pw.toml"
-hash = "4c815298380c86c4dffb14f4db3ff6159a1935629cfda47b769550d66585f16b"
+hash = "94261122a7d8bad5b7e75529bf69823e651f6f6bf46e36d7f1091b19aeb796e1"
 metafile = true
 
 [[files]]
 file = "mods/ftb-teams-forge.pw.toml"
-hash = "ec32ed4418310d282eedba77f3e08898037e2a1b7ed904ba9d00971d0aa4b4c9"
+hash = "4d5bc66c323c53d2d5dbcf1f6554efbd240e6144c431bfedf575118b5d569024"
 metafile = true
 
 [[files]]
@@ -227,7 +231,7 @@ metafile = true
 
 [[files]]
 file = "mods/inventory-essentials.pw.toml"
-hash = "11caa0f933a60871f90c04af165bdc7c2ec96c9ec2b3045f5ac1cd88cfba76aa"
+hash = "4342dcbd0025656cac33eac9ad5e5fae9f48a9869021a97e2e4e316976bd6293"
 metafile = true
 
 [[files]]
@@ -247,7 +251,7 @@ metafile = true
 
 [[files]]
 file = "mods/jea.pw.toml"
-hash = "c26d3d0fc2d1e0fa23ec74f1b4d473ee09fcc98406c059af726aa051af9ee9ce"
+hash = "f17d026b0ae178ab836e90cf4b73d1f156bd3454b01e637f91fd5f2f44350869"
 metafile = true
 
 [[files]]
@@ -317,7 +321,7 @@ metafile = true
 
 [[files]]
 file = "mods/minecolonies.pw.toml"
-hash = "5ce6ef06d45a72aa63cd763e67943a79b04251d7fa69c5daad2a2da439b3f935"
+hash = "6bb956a21d28d8eac266c0f145702fc5e7c8384057952a5d57dda77b83a38d52"
 metafile = true
 
 [[files]]
@@ -327,7 +331,7 @@ metafile = true
 
 [[files]]
 file = "mods/modernfix.pw.toml"
-hash = "4e82a688470620148b1bbcd609438af5bc5fe76cef22c56962c8e8d8f4f2f901"
+hash = "97521b85e74dfbc642b9102a46be0cdda07b9cfe36aba027a3878054f93ccfcb"
 metafile = true
 
 [[files]]
@@ -397,7 +401,7 @@ metafile = true
 
 [[files]]
 file = "mods/structurize.pw.toml"
-hash = "8f857c83c1097e6a0538f71979fb5271f94299a87cbdc68d2a197b57fc101970"
+hash = "3b25ea7af38b76225cc8ac78944a998e457cab2b56260d801fdb71efef62dfdd"
 metafile = true
 
 [[files]]
