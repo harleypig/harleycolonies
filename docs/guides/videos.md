@@ -73,3 +73,5 @@
 ## Unclassified
 
 * [Video link](https://youtu.be/ZY8gCHx7lIU?si=NLZTCHBSP9_rxLs5) - Found in TODO.md without description
+* [Crafting Station](https://www.youtube.com/shorts/2wh0N1jpFEo) (look at
+    channel)
