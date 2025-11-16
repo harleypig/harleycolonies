@@ -1,14 +1,3 @@
----
-title: AI Improvements
-categories:
-  - server-utility
-  - world-mobs
----
-
-[Website](https://www.curseforge.com/minecraft/mc-mods/ai-improvements) | [Issues](https://github.com/BuiltBrokenModding/AI-Improvements/issues) | [Source](https://github.com/BuiltBrokenModding/AI-Improvements)
-
-Client/Server: server
-
 **AI Improvements** is a performance optimization mod that reduces CPU
 usage from entity AI tasks. It can selectively disable or replace
 inefficient AI behaviors for various mob types, including removing look
@@ -188,11 +177,4 @@ Each mob AI task setting includes:
 - `remove_eat_block` (default: `false`)
   - Removes the sheep's eat-block AI task. Sheep will no longer eat
     grass, and thus be unable to regenerate their wool.
-
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.20.1-0.1.2
-- harleycolonies-1.21.1
 

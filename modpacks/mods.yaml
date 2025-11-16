@@ -473,10 +473,10 @@ mods:
       issues: https://github.com/BuiltBrokenModding/AI-Improvements/issues
       source: https://github.com/BuiltBrokenModding/AI-Improvements
       categories:
-      - world-mobs
       - server-utility
+      - world-mobs
       tags:
-      - both
+      - server
   durability-tooltip:
     name: Durability Tooltip
     curseforge_id: 511040
@@ -1241,7 +1241,7 @@ mods:
       - mc-food
       tags:
       - both
-      - test-side-server
+      - test-side-server-only
       - mechanic-tweak
   better-fps-render-distance:
     name: Better Fps - Render Distance[Forge]
