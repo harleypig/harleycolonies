@@ -44,3 +44,6 @@
   - [Lithosphere](https://modrinth.com/datapack/lithosphere) - Be sure to check the Recommendations section
   - [Still Life](https://modrinth.com/datapack/still-life) - Incompatible with Biomes O' Plenty
   - [Old English Style](https://www.planetminecraft.com/mod/old-english-stylepack-for-minecolonies-1-20/)
+- Consider design where house is above ground (e.g., above space for
+    mushrooms, netherwart, etc. or even build a series of farm fields where
+    house is 3 blocks up, and guard towers on the corners.
