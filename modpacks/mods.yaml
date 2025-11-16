@@ -573,7 +573,10 @@ mods:
       - mc-food
       - map-information
       tags:
-      - both
+      - client
+      - test-side-both
+      - tooltip
+      - hud
   stylecolonies:
     name: Stylecolonies
     curseforge_id: 827507

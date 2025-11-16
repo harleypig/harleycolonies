@@ -77,3 +77,6 @@ Xaero's World Map
 
 Minecraft Shaders:
 Bliss (Ardacraft Edit)
+
+- [In Control](https://www.curseforge.com/minecraft/mc-mods/in-control) - rules for spawning
+- [Better HUD](https://github.com/mccreery/better-hud)
