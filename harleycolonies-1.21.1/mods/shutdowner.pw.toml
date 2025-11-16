@@ -1,6 +1,6 @@
 name = "Shutdowner"
 filename = "shutdowner-1.21-2.3.jar"
-side = "both"
+side = "server"
 
 [download]
 hash-format = "sha1"

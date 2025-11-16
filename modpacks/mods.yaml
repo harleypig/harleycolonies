@@ -1170,7 +1170,7 @@ mods:
     curseforge_id: 366565
     metadata:
       tags:
-      - both
+      - server
   dynamic-view:
     name: Dynamic View[Forge]
     curseforge_id: 366140
