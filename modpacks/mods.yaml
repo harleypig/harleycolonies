@@ -1238,6 +1238,8 @@ mods:
       - mc-food
       tags:
       - both
+      - test-side-server
+      - mechanic-tweak
   better-fps-render-distance:
     name: Better Fps - Render Distance[Forge]
     curseforge_id: 551520

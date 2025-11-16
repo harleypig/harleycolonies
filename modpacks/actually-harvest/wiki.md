@@ -95,5 +95,3 @@ same names as in the mod’s config file.
 - `blacklistHeldItems` (default: `[]`)
   - Held items that should disable right‑click harvesting.  
   - Format: `"modid:item"`.
-
-
