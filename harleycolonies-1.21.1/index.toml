@@ -381,7 +381,7 @@ metafile = true
 
 [[files]]
 file = "mods/shutdowner.pw.toml"
-hash = "6068aaf4cc6ca742a92779ede7a021bd9c90175d7cc0d7be8250c971f9b2aebb"
+hash = "1597f0dbc2574e2e4f3007fc0984f8816a84e2c0f4de6b230308c17937a25632"
 metafile = true
 
 [[files]]

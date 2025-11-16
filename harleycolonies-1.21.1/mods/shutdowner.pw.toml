@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 6128590
 project-id = 366565
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/shutdowner"
+categories = ["server-utility"]
+added = 2025-11-15T19:03:00.553955122-07:00
+last-updated = 2025-01-26T22:29:31.097Z

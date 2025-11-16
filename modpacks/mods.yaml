@@ -1171,6 +1171,12 @@ mods:
     metadata:
       tags:
       - server
+    versions:
+      harleycolonies-1.21.1:
+        metadata:
+          website: https://www.curseforge.com/minecraft/mc-mods/shutdowner
+          categories:
+          - server-utility
   dynamic-view:
     name: Dynamic View[Forge]
     curseforge_id: 366140
