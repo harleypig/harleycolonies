@@ -10,7 +10,7 @@ categories:
 
 Client/Server: both
 
-Actually Harvest lets you harvest mature crops by right‑clicking instead of
+**Actually Harvest** lets you harvest mature crops by right‑clicking instead of
 breaking them, optionally replanting automatically. It can grant experience
 on harvest, supports blacklist/whitelist controls, and includes range
 expansion for hoes (tier‑based and enchantment‑based). It can also allow
@@ -107,8 +107,6 @@ same names as in the mod’s config file.
 - `blacklistHeldItems` (default: `[]`)
   - Held items that should disable right‑click harvesting.  
   - Format: `"modid:item"`.
-
-
 ### Modpacks
 
 This mod is installed in the following modpacks:

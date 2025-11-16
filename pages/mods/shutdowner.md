@@ -1,10 +1,12 @@
 ---
 title: Shutdowner
+categories:
+  - server-utility
 ---
 
+[Website](https://www.curseforge.com/minecraft/mc-mods/shutdowner)
 
-
-Client/Server: both
+Client/Server: server
 
 ### Modpacks
 
