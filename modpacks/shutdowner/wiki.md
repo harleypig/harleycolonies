@@ -1,13 +1,3 @@
----
-title: Shutdowner
-categories:
-  - server-utility
----
-
-[Website](https://www.curseforge.com/minecraft/mc-mods/shutdowner)
-
-Client/Server: server
-
 **Shutdowner** is a lightweight server utility mod that enables
 scheduled automatic shutdowns or restarts of your Minecraft server. It can
 detect when the server hangs during runtime or shutdown and force a shutdown
@@ -60,10 +50,4 @@ same names as in the mod's config file.
 - `printThreads` (default: `true`)
   - If `true`, prints remaining threads to the log when hang detection
     triggers.
-
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
 
