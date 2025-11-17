@@ -1,5 +1,8 @@
 # TODO
 
+- Add or create a datapack that [increases jungle sapling
+    resources](https://www.youtube.com/watch?v=htbD9vbf9cw)
+
 ## Blueprints & Schematics
 
 - Make blueprints of farms
