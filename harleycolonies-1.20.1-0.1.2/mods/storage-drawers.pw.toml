@@ -1,15 +1,15 @@
 name = "Storage Drawers"
-filename = "storagedrawers-1.20.1-12.0.3.jar"
+filename = "StorageDrawers-forge-1.20.1-12.14.3.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "ea5d343239fddf815ad44bee5a2d0dc2503f9cfb"
+hash = "afca74c6e18883632e74e15a549004bfca245a90"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 5152196
+file-id = 6994481
 project-id = 223852
 
 [metadata]
@@ -17,4 +17,6 @@ project-id = 223852
 website = "https://www.curseforge.com/minecraft/mc-mods/storage-drawers"
 issues = "https://github.com/jaquadro/StorageDrawers/issues"
 source = "https://github.com/jaquadro/StorageDrawers"
-categories = ["cosmetic", "storage"]
+categories = ["storage", "cosmetic"]
+added = 2025-11-18T12:16:27.346251767-07:00
+last-updated = 2025-09-14T00:31:55.107Z

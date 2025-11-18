@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 6231254
 project-id = 417645
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/just-enough-professions-jep"
+issues = "https://github.com/Mrbysco/JustEnoughProfessions/issues"
+source = "https://github.com/Mrbysco/JustEnoughProfessions"
+categories = ["map-information", "utility-qol", "mc-addons"]
+added = 2025-11-18T12:05:47.173421647-07:00
+last-updated = 2025-02-24T20:39:10.923Z

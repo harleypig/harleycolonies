@@ -1,6 +1,6 @@
 name = "Borderless Glass (No OptiFine Needed) Bedrock Support!"
 filename = "Borderless Glass V1.0.1 [For Bedrock 1.21 Versions].zip"
-side = "client"
+side = "both"
 
 [download]
 hash-format = "sha1"
@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5823742
 project-id = 845743
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/texture-packs/borderless-glass-no-optifine-needed"
+categories = ["miscellaneous", "photo-realistic", "traditional", "sixteen-x", "modern"]
+added = 2025-11-18T12:09:04.516680107-07:00
+last-updated = 2024-10-19T06:35:56.38Z

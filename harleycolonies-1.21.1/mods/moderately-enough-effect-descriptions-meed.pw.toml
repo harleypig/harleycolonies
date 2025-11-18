@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 7182986
 project-id = 918638
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/moderately-enough-effect-descriptions-meed"
+categories = ["server-utility", "utility-qol", "map-information", "mc-addons"]
+added = 2025-11-18T12:06:11.39553385-07:00
+last-updated = 2025-11-03T18:48:19.943Z

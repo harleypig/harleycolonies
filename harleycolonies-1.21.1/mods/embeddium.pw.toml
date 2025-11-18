@@ -1,6 +1,6 @@
 name = "Embeddium"
 filename = "embeddium-1.0.15+mc1.21.1.jar"
-side = "client"
+side = "both"
 
 [download]
 hash-format = "sha1"
@@ -11,3 +11,13 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 6118392
 project-id = 908741
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/embeddium"
+wiki = "https://github.com/FiniteReality/embeddium/wiki"
+issues = "https://github.com/FiniteReality/embeddium/issues"
+source = "https://github.com/FiniteReality/embeddium"
+categories = ["performance"]
+added = 2025-11-18T12:04:37.761294536-07:00
+last-updated = 2025-01-24T01:04:56.523Z

@@ -1,20 +1,23 @@
 name = "Enchantment Descriptions"
-filename = "EnchantmentDescriptions-Forge-1.20.1-17.0.15.jar"
+filename = "EnchantmentDescriptions-Forge-1.20.1-17.1.19.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "3a74fe0e8907520df16759f33a69804c2b91a070"
+hash = "7cb8e1242d058c9800e1f3f886930647de7f44e1"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 5368102
+file-id = 5855251
 project-id = 250419
 
 [metadata]
 [metadata.curseforge]
 website = "https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions"
+wiki = "https://docs.darkhax.net/mods/enchantment-descriptions?curseforge"
 issues = "https://github.com/Darkhax-Minecraft/Enchantment-Descriptions/issues"
 source = "https://github.com/Darkhax-Minecraft/Enchantment-Descriptions"
-categories = ["map-information", "magic", "utility-qol", "cosmetic"]
+categories = ["map-information", "utility-qol", "cosmetic", "magic"]
+added = 2025-11-18T12:16:02.864678542-07:00
+last-updated = 2024-10-28T22:30:06.733Z

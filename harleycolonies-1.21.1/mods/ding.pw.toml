@@ -1,6 +1,6 @@
 name = "Ding (Forge)"
 filename = "Ding-1.21-NeoForge-1.5.0.jar"
-side = "client"
+side = "both"
 
 [download]
 hash-format = "sha1"
@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5478493
 project-id = 231275
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/ding"
+issues = "https://github.com/iChun/Ding/issues"
+source = "https://github.com/iChun/Ding"
+categories = ["map-information"]
+added = 2025-11-18T12:04:36.883117212-07:00
+last-updated = 2024-06-27T03:44:06.77Z

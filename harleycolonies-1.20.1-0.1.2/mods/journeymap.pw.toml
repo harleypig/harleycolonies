@@ -1,15 +1,15 @@
 name = "JourneyMap"
-filename = "journeymap-1.20.1-5.9.22-forge.jar"
+filename = "journeymap-1.20.1-5.10.3-forge.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "3a0b44f588e255f6c829cb1bc0e3a2063aa9c682"
+hash = "d0bbe7c23049892b154b6417904dd027fb53a37a"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 5388203
+file-id = 5789363
 project-id = 32274
 
 [metadata]
@@ -18,3 +18,5 @@ website = "https://www.curseforge.com/minecraft/mc-mods/journeymap"
 wiki = "http://journeymap.info"
 issues = "https://github.com/TeamJM/journeymap/issues"
 categories = ["map-information"]
+added = 2025-11-18T12:16:07.406537728-07:00
+last-updated = 2024-10-06T18:58:45.91Z

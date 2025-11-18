@@ -1,18 +1,20 @@
-name = "Fresh Animations Extensions"
-filename = "FA+All_Extensions-v1.3.zip"
+name = "Fresh Animations: Extensions"
+filename = "FA+All_Extensions-v1.6.zip"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "d246f76a9832fbaf747b2ac8a0c376dcfacc149c"
+hash = "e71c03d52e3eafe72e1625b6fa8c42e7783c71a3"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 5159356
+file-id = 7002991
 project-id = 813608
 
 [metadata]
 [metadata.curseforge]
 website = "https://www.curseforge.com/minecraft/texture-packs/fresh-animations-extensions"
-categories = ["miscellaneous", "animated", "modern", "sixteen-x"]
+categories = ["sixteen-x", "animated", "modern", "miscellaneous"]
+added = 2025-11-18T12:17:11.004436827-07:00
+last-updated = 2025-09-16T14:05:07.347Z

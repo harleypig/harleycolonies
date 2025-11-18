@@ -17,4 +17,6 @@ project-id = 882310
 website = "https://www.curseforge.com/minecraft/mc-mods/jadecolonies"
 issues = "https://github.com/uecasm/jadecolonies/issues"
 source = "https://github.com/uecasm/jadecolonies"
-categories = ["mc-addons", "utility-qol"]
+categories = ["utility-qol", "mc-addons"]
+added = 2025-11-18T12:16:05.787436634-07:00
+last-updated = 2024-01-21T01:16:59.56Z

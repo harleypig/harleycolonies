@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 6329637
 project-id = 890755
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/just-enough-archaeology"
+issues = "https://github.com/JDKDigital/jearchaeology/issues"
+source = "https://github.com/JDKDigital/jearchaeology"
+categories = ["utility-qol"]
+added = 2025-11-18T12:05:45.944454553-07:00
+last-updated = 2025-03-21T21:03:14.68Z

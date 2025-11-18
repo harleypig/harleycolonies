@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5546996
 project-id = 438332
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib"
+issues = "https://github.com/SuperMartijn642/SuperMartijn642sConfigLib/issues"
+source = "https://github.com/SuperMartijn642/SuperMartijn642sConfigLib"
+categories = ["library-api"]
+added = 2025-11-18T12:06:16.242101445-07:00
+last-updated = 2024-07-19T22:10:58.73Z

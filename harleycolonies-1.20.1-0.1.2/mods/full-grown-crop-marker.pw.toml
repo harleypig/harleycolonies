@@ -1,15 +1,15 @@
 name = "FullGrownCropMarker"
-filename = "crop-marker-forge-1.20.4-1.2.0.jar"
+filename = "crop-marker-forge-1.20.4-1.2.3.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "600c1217f46a8095ef37f9d8394d4632c1fbc8e0"
+hash = "a53c15a147a9968a2217de84c9026ac0c48d54f1"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 5029842
+file-id = 7126484
 project-id = 834457
 
 [metadata]
@@ -18,4 +18,6 @@ website = "https://www.curseforge.com/minecraft/mc-mods/full-grown-crop-marker"
 wiki = "https://github.com/tristankechlo/FullGrownCropMarker/wiki"
 issues = "https://github.com/tristankechlo/FullGrownCropMarker/issues"
 source = "https://github.com/tristankechlo/FullGrownCropMarker"
-categories = ["technology-farming", "utility-qol", "adventure-rpg"]
+categories = ["adventure-rpg", "technology-farming", "utility-qol"]
+added = 2025-11-18T12:16:04.53707486-07:00
+last-updated = 2025-10-19T18:17:28.217Z

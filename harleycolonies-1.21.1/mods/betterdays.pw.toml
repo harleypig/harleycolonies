@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 7179335
 project-id = 895618
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/betterdays"
+issues = "https://github.com/wendall911/BetterDays/issues"
+source = "https://github.com/wendall911/BetterDays"
+categories = ["server-utility", "utility-qol"]
+added = 2025-11-18T12:03:20.151935505-07:00
+last-updated = 2025-11-02T18:54:55.343Z

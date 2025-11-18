@@ -15,4 +15,6 @@ project-id = 900364
 [metadata]
 [metadata.curseforge]
 website = "https://www.curseforge.com/minecraft/mc-mods/towntalk"
-categories = ["utility-qol", "adventure-rpg", "mc-addons", "cosmetic"]
+categories = ["cosmetic", "adventure-rpg", "mc-addons", "utility-qol"]
+added = 2025-11-18T12:16:29.175368667-07:00
+last-updated = 2024-05-19T10:00:09.153Z

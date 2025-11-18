@@ -17,4 +17,6 @@ project-id = 858542
 website = "https://www.curseforge.com/minecraft/mc-mods/searchables"
 issues = "https://github.com/jaredlll08/searchables/issues"
 source = "https://github.com/jaredlll08/searchables"
-categories = ["map-information", "utility-qol", "cosmetic", "library-api"]
+categories = ["library-api", "cosmetic", "map-information", "utility-qol"]
+added = 2025-11-18T12:16:26.243204657-07:00
+last-updated = 2024-04-23T06:56:49.313Z

@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 6508946
 project-id = 525447
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/journeymap-integration"
+issues = "https://github.com/frank89722/JourneyMapIntegration/issues"
+source = "https://github.com/frank89722/JourneyMapIntegration"
+categories = ["mc-addons", "map-information"]
+added = 2025-11-18T12:05:45.42848198-07:00
+last-updated = 2025-05-08T14:22:25.267Z

@@ -1,6 +1,6 @@
 name = "Clear Glass with Connected Textures! [16x]"
 filename = "Clear Glass Pack 1.21.zip"
-side = "client"
+side = "both"
 
 [download]
 hash-format = "sha1"
@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5431060
 project-id = 286633
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/texture-packs/clear-glass-pack"
+categories = ["steampunk", "traditional", "miscellaneous", "sixteen-x", "modern"]
+added = 2025-11-18T12:09:09.347122589-07:00
+last-updated = 2024-06-15T12:42:20.787Z

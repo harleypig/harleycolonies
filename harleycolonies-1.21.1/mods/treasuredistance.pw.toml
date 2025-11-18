@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5430841
 project-id = 873563
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/treasuredistance"
+issues = "https://github.com/ldtteam/treasuredistance/issues"
+categories = ["map-information", "armor-weapons-tools", "utility-qol", "world-gen", "world-structures"]
+added = 2025-11-18T12:06:17.853847533-07:00
+last-updated = 2024-06-15T11:10:17.783Z

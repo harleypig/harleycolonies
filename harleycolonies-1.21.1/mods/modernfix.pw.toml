@@ -11,3 +11,13 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 7200212
 project-id = 790626
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/modernfix"
+wiki = "https://github.com/embeddedt/ModernFix/wiki/Summary-of-Patches"
+issues = "https://github.com/embeddedt/ModernFix/issues"
+source = "https://github.com/embeddedt/ModernFix"
+categories = ["server-utility", "utility-qol", "performance"]
+added = 2025-11-18T12:06:11.612201949-07:00
+last-updated = 2025-11-08T20:04:57.983Z

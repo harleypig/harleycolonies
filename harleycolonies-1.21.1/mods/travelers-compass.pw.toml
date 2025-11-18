@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 7174896
 project-id = 954415
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/travelers-compass"
+issues = "https://github.com/0Templ/TravelersCompass/issues"
+source = "https://github.com/0Templ/TravelersCompass"
+categories = ["armor-weapons-tools", "map-information", "utility-qol", "adventure-rpg"]
+added = 2025-11-18T12:06:17.525672956-07:00
+last-updated = 2025-11-01T18:24:47.103Z

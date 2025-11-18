@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 6054947
 project-id = 940057
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/terrablender-neoforge"
+issues = "https://github.com/Glitchfiend/TerraBlender/"
+source = "https://github.com/Glitchfiend/TerraBlender"
+categories = ["world-gen", "world-biomes", "library-api"]
+added = 2025-11-18T12:06:16.884825176-07:00
+last-updated = 2025-01-05T04:27:14.547Z

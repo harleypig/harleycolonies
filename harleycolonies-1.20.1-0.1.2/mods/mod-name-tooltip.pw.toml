@@ -18,3 +18,5 @@ website = "https://www.curseforge.com/minecraft/mc-mods/mod-name-tooltip"
 issues = "https://github.com/mezz/ModNameTooltip/issues?q=is%3Aissue"
 source = "https://github.com/mezz/ModNameTooltip"
 categories = ["map-information"]
+added = 2025-11-18T12:16:23.846829017-07:00
+last-updated = 2023-07-19T02:01:51.96Z

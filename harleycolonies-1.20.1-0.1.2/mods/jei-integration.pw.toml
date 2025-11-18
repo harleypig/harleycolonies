@@ -17,4 +17,6 @@ project-id = 265917
 website = "https://www.curseforge.com/minecraft/mc-mods/jei-integration"
 issues = "https://github.com/snowshock35/jei-integration/issues"
 source = "https://github.com/snowshock35/jei-integration"
-categories = ["map-information", "mc-addons"]
+categories = ["mc-addons", "map-information"]
+added = 2025-11-18T12:16:06.437820525-07:00
+last-updated = 2024-01-01T18:27:01.287Z

@@ -1,15 +1,15 @@
-name = "Kiwi 🥝 (Forge)"
-filename = "Kiwi-1.20.1-Forge-11.8.8.jar"
+name = "Kiwi 🥝 (Neo/Forge)"
+filename = "Kiwi-1.20.1-Forge-11.9.2.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "d46fdd806a586661e89f6904ba48e18613cab251"
+hash = "8e056749be2b26f520c9ca0a7130a7280bffc288"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 5374333
+file-id = 6907020
 project-id = 303657
 
 [metadata]
@@ -18,3 +18,5 @@ website = "https://www.curseforge.com/minecraft/mc-mods/kiwi"
 issues = "https://github.com/Snownee/Kiwi/issues"
 source = "https://github.com/Snownee/Kiwi"
 categories = ["library-api"]
+added = 2025-11-18T12:16:18.908286472-07:00
+last-updated = 2025-08-20T10:38:44.91Z

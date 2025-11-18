@@ -1,15 +1,15 @@
 name = "Cupboard"
-filename = "cupboard-1.20.1-2.6.jar"
+filename = "cupboard-1.20.1-2.7.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "9371c91104799702e31b482f6790a2e39c63505f"
+hash = "204bc8aa83e8a685f64311b72d55505ab2eca867"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 5170315
+file-id = 5470032
 project-id = 326652
 
 [metadata]
@@ -18,3 +18,5 @@ website = "https://www.curseforge.com/minecraft/mc-mods/cupboard"
 issues = "https://github.com/someaddons/cupboard/issues"
 source = "https://github.com/someaddons/cupboard"
 categories = ["utility-qol"]
+added = 2025-11-18T12:15:53.755592949-07:00
+last-updated = 2024-06-24T20:50:03.14Z

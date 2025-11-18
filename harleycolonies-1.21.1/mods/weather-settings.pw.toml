@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5588027
 project-id = 539506
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/weather-settings"
+issues = "https://github.com/someaddons/weathersettings/issues"
+source = "https://github.com/someaddons/weathersettings"
+categories = ["cosmetic", "server-utility"]
+added = 2025-11-18T12:06:19.246181067-07:00
+last-updated = 2024-08-01T21:15:15.113Z

@@ -1,15 +1,15 @@
 name = "Durability Tooltip"
-filename = "durabilitytooltip-1.1.5-forge-mc1.20.jar"
+filename = "durabilitytooltip-1.1.6-forge-mc1.20.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "9bcc5359fd7f9f4a268bc774a3325ea0feb81909"
+hash = "e2ad1faa1f9764cf444851d6e4b700d1cc5f6ead"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 4741017
+file-id = 6833215
 project-id = 511040
 
 [metadata]
@@ -17,4 +17,6 @@ project-id = 511040
 website = "https://www.curseforge.com/minecraft/mc-mods/durability-tooltip"
 issues = "https://github.com/SuperMartijn642/DurabilityTooltip/issues"
 source = "https://github.com/SuperMartijn642/DurabilityTooltip"
-categories = ["armor-weapons-tools", "cosmetic", "map-information"]
+categories = ["cosmetic", "map-information", "armor-weapons-tools"]
+added = 2025-11-18T12:16:02.489397667-07:00
+last-updated = 2025-07-31T17:47:25.623Z

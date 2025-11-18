@@ -1,4 +1,4 @@
-name = "Legendary Tooltips [Forge]"
+name = "Legendary Tooltips [Neo/Forge]"
 filename = "LegendaryTooltips-1.20.1-forge-1.4.5.jar"
 side = "both"
 
@@ -16,6 +16,8 @@ project-id = 532127
 [metadata.curseforge]
 website = "https://www.curseforge.com/minecraft/mc-mods/legendary-tooltips"
 wiki = "https://github.com/AHilyard/LegendaryTooltips/wiki/Configuration-Instructions"
-issues = "https://github.com/AHilyard/LegendaryTooltips/issues"
+issues = "https://discord.gg/UCKjnamDaW"
 source = "https://github.com/AHilyard/LegendaryTooltips"
-categories = ["utility-qol", "cosmetic", "adventure-rpg", "armor-weapons-tools", "mc-miscellaneous"]
+categories = ["mc-miscellaneous", "adventure-rpg", "cosmetic", "armor-weapons-tools", "utility-qol"]
+added = 2025-11-18T12:16:19.634410392-07:00
+last-updated = 2023-07-24T22:59:56.82Z

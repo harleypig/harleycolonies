@@ -17,4 +17,6 @@ project-id = 376351
 website = "https://www.curseforge.com/minecraft/mc-mods/framed-compacting-drawers"
 issues = "https://github.com/eutropius225/FramedCompactDrawers/issues"
 source = "https://github.com/eutropius225/FramedCompactDrawers"
-categories = ["storage", "mc-addons", "cosmetic"]
+categories = ["cosmetic", "mc-addons", "storage"]
+added = 2025-11-18T12:16:04.226899573-07:00
+last-updated = 2024-04-23T10:05:35.24Z

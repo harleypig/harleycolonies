@@ -1,15 +1,15 @@
-name = "Comforts (Fabric/Forge/Quilt)"
-filename = "comforts-forge-6.3.5+1.20.1.jar"
+name = "Comforts"
+filename = "comforts-forge-6.4.0+1.20.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "e119443dcbd6c9fd07e922ceb6f070d28de7aef7"
+hash = "e7b9fe89566bb1ee013e33745f22f309f679536e"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 5068863
+file-id = 5503516
 project-id = 276951
 
 [metadata]
@@ -19,3 +19,5 @@ wiki = "https://github.com/illusivesoulworks/comforts/wiki"
 issues = "https://github.com/illusivesoulworks/comforts/issues"
 source = "https://github.com/illusivesoulworks/comforts"
 categories = ["mc-miscellaneous", "adventure-rpg"]
+added = 2025-11-18T12:15:52.422253876-07:00
+last-updated = 2024-07-05T03:34:48.973Z

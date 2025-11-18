@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5721338
 project-id = 882310
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/jadecolonies"
+issues = "https://github.com/uecasm/jadecolonies/issues"
+source = "https://github.com/uecasm/jadecolonies"
+categories = ["utility-qol", "mc-addons"]
+added = 2025-11-18T12:05:44.001664021-07:00
+last-updated = 2024-09-14T03:52:24.94Z

@@ -1,6 +1,6 @@
 name = "HD Font - Inconsolata"
 filename = "Inconsolata+120.zip"
-side = "client"
+side = "both"
 
 [download]
 hash-format = "sha1"
@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 4753855
 project-id = 394203
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/texture-packs/hd-font-inconsolata"
+categories = ["traditional", "font-packs", "steampunk", "miscellaneous"]
+added = 2025-11-18T12:09:10.337701946-07:00
+last-updated = 2023-09-15T21:34:16.08Z

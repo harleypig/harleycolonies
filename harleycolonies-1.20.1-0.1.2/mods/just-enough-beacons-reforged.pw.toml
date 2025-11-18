@@ -17,4 +17,6 @@ project-id = 912266
 website = "https://www.curseforge.com/minecraft/mc-mods/just-enough-beacons-reforged"
 issues = "https://github.com/CERBON-MODS/Just-Enough-Beacons/issues"
 source = "https://github.com/CERBON-MODS/Just-Enough-Beacons"
-categories = ["mc-addons", "map-information"]
+categories = ["map-information", "mc-addons"]
+added = 2025-11-18T12:16:07.860500293-07:00
+last-updated = 2024-01-28T20:03:56.663Z

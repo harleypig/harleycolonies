@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5936660
 project-id = 292038
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/better-ping-display"
+issues = "https://github.com/vladmarica/better-ping-display/issues"
+source = "https://github.com/vladmarica/better-ping-display"
+categories = ["cosmetic", "utility-qol", "map-information"]
+added = 2025-11-18T12:03:20.697311751-07:00
+last-updated = 2024-11-25T16:57:49.227Z

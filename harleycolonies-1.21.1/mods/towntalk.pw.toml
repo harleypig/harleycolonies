@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5653504
 project-id = 900364
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/towntalk"
+categories = ["cosmetic", "adventure-rpg", "mc-addons", "utility-qol"]
+added = 2025-11-18T12:06:17.322863712-07:00
+last-updated = 2024-08-22T17:27:26.837Z

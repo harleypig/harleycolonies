@@ -17,4 +17,6 @@ project-id = 417645
 website = "https://www.curseforge.com/minecraft/mc-mods/just-enough-professions-jep"
 issues = "https://github.com/Mrbysco/JustEnoughProfessions/issues"
 source = "https://github.com/Mrbysco/JustEnoughProfessions"
-categories = ["utility-qol", "map-information", "mc-addons"]
+categories = ["map-information", "utility-qol", "mc-addons"]
+added = 2025-11-18T12:16:08.996132793-07:00
+last-updated = 2023-06-14T18:02:52.73Z

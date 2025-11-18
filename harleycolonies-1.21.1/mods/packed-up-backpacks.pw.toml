@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 6091517
 project-id = 361867
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/packed-up-backpacks"
+issues = "https://github.com/SuperMartijn642/PackedUp/issues"
+source = "https://github.com/SuperMartijn642/PackedUp"
+categories = ["storage"]
+added = 2025-11-18T12:06:12.959687473-07:00
+last-updated = 2025-01-15T23:45:03.853Z

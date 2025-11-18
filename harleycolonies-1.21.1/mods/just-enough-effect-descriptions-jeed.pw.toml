@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 7035045
 project-id = 532286
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/just-enough-effect-descriptions-jeed"
+issues = "https://github.com/MehVahdJukaar/JustEnoughEffectDescriptions/issues"
+source = "https://github.com/MehVahdJukaar/JustEnoughEffectDescriptions"
+categories = ["map-information", "mc-addons"]
+added = 2025-11-18T12:05:46.670610667-07:00
+last-updated = 2025-09-26T12:49:00.867Z

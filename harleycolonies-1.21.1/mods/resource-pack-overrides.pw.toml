@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5733968
 project-id = 832644
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/resource-pack-overrides"
+issues = "https://github.com/Fuzss/resourcepackoverrides/issues"
+source = "https://github.com/Fuzss/resourcepackoverrides"
+categories = ["library-api"]
+added = 2025-11-18T12:06:14.192975585-07:00
+last-updated = 2024-09-18T10:17:11.957Z

@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 7167812
 project-id = 448233
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/entityculling"
+issues = "https://github.com/tr7zw/EntityCulling/issues"
+source = "https://github.com/tr7zw/EntityCulling-Fabric"
+categories = ["mc-miscellaneous", "mc-miscellaneous", "utility-qol", "utility-qol"]
+added = 2025-11-18T12:05:13.897167733-07:00
+last-updated = 2025-10-30T19:05:58.967Z

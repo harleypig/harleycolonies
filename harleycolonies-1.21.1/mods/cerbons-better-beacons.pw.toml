@@ -11,3 +11,13 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 6201865
 project-id = 921066
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/cerbons-better-beacons"
+wiki = "https://github.com/CERBON-MODS/CERBONs-Better-Beacons/wiki"
+issues = "https://github.com/CERBON-MODS/CERBONs-Better-Beacons/issues"
+source = "https://github.com/CERBON-MODS/CERBONs-Better-Beacons"
+categories = ["utility-qol", "adventure-rpg", "mc-miscellaneous"]
+added = 2025-11-18T11:59:26.953295313-07:00
+last-updated = 2025-02-17T02:28:24.967Z

@@ -1,15 +1,15 @@
 name = "Compact Help Command"
-filename = "compacthelpcommand-1.20.1-2.6.jar"
+filename = "compacthelpcommand-1.20.1-2.8.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "f88d8f4301e75b3f25428b20e6f2968cc985a77b"
+hash = "48aba2656742fca61720a85c9d65a6569c4a21c1"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 5169072
+file-id = 6186352
 project-id = 515753
 
 [metadata]
@@ -17,4 +17,6 @@ project-id = 515753
 website = "https://www.curseforge.com/minecraft/mc-mods/compact-help-command"
 issues = "https://github.com/Serilum/.issue-tracker/labels/Mod: Compact Help Command"
 source = "https://github.com/Serilum/Compact-Help-Command"
-categories = ["server-utility", "map-information", "cosmetic", "mc-miscellaneous"]
+categories = ["map-information", "cosmetic", "mc-miscellaneous", "server-utility"]
+added = 2025-11-18T12:15:52.716702959-07:00
+last-updated = 2025-02-12T18:34:54.933Z

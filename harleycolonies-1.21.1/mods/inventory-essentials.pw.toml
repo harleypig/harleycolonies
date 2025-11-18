@@ -11,3 +11,13 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 7207589
 project-id = 368825
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/inventory-essentials"
+wiki = "https://mods.twelveiterations.com/mc/inventory-essentials"
+issues = "https://github.com/ModdingForBlockheads/InventoryEssentials/issues"
+source = "https://github.com/ModdingForBlockheads/InventoryEssentials"
+categories = ["utility-qol"]
+added = 2025-11-18T12:05:43.566997048-07:00
+last-updated = 2025-11-10T18:53:53.907Z

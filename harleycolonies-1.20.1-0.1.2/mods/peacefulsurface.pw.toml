@@ -1,15 +1,15 @@
 name = "PeacefulSurface"
-filename = "peacefulsurface-1.20.1-v2.jar"
+filename = "peacefulsurface-1.20.1-v2b.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "c96991528f9aa8b8881f5599e13f285b62c0c51c"
+hash = "ec4c88b8965d75e266a7cf22d107dee699845edf"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 5044765
+file-id = 6110753
 project-id = 73112
 
 [metadata]
@@ -19,3 +19,5 @@ wiki = "https://github.com/zlainsama/PeacefulSurface/wiki"
 issues = "https://github.com/zlainsama/PeacefulSurface/issues"
 source = "https://github.com/zlainsama/PeacefulSurface"
 categories = ["world-mobs"]
+added = 2025-11-18T12:16:25.068900227-07:00
+last-updated = 2025-01-21T18:32:17.943Z

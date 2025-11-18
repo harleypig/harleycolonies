@@ -11,3 +11,13 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 7130481
 project-id = 319598
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/structure-compass"
+wiki = "https://github.com/Mrbysco/StructureCompass/wiki"
+issues = "https://github.com/Mrbysco/StructureCompass/issues"
+source = "https://github.com/Mrbysco/StructureCompass"
+categories = ["map-information", "world-gen"]
+added = 2025-11-18T12:06:15.490080959-07:00
+last-updated = 2025-10-20T18:46:08.153Z

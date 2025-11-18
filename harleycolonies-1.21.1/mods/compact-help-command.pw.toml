@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 6186353
 project-id = 515753
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/compact-help-command"
+issues = "https://github.com/Serilum/.issue-tracker/labels/Mod: Compact Help Command"
+source = "https://github.com/Serilum/Compact-Help-Command"
+categories = ["map-information", "cosmetic", "mc-miscellaneous", "server-utility"]
+added = 2025-11-18T12:04:27.612592379-07:00
+last-updated = 2025-02-12T18:35:17.16Z

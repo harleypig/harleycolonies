@@ -15,4 +15,7 @@ project-id = 936730
 [metadata]
 [metadata.curseforge]
 website = "https://www.curseforge.com/minecraft/mc-mods/geophilic-reforged"
-categories = ["world-ores-resources", "world-biomes", "world-gen"]
+issues = "https://github.com/everloste/my-mc-projects/issues"
+categories = ["world-gen", "world-ores-resources", "world-biomes"]
+added = 2025-11-18T12:16:04.842331697-07:00
+last-updated = 2023-11-17T15:28:30.73Z

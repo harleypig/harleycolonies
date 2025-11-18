@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 6172735
 project-id = 261251
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/bad-wither-no-cookie-reloaded"
+issues = "https://gitlab.com/kreezxil/BadWitherNoCookie/-/issues"
+source = "https://gitlab.com/kreezxil/BadWitherNoCookie/"
+categories = ["mc-miscellaneous", "utility-qol"]
+added = 2025-11-18T12:03:19.391278761-07:00
+last-updated = 2025-02-08T21:33:24.397Z

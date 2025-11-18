@@ -11,3 +11,13 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 6193758
 project-id = 361977
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/automatic-tool-swap"
+wiki = "https://wiki.chaotictrials.de/"
+issues = "https://github.com/ChaoticTrials/ToolSwap/issues"
+source = "https://github.com/ChaoticTrials/ToolSwap"
+categories = ["armor-weapons-tools"]
+added = 2025-11-18T12:03:19.116360911-07:00
+last-updated = 2025-02-14T20:00:51.067Z

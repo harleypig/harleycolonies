@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 6798196
 project-id = 500273
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/visual-workbench"
+issues = "https://github.com/Fuzss/visualworkbench/issues"
+source = "https://github.com/Fuzss/visualworkbench"
+categories = ["cosmetic", "utility-qol", "cosmetic", "utility-qol"]
+added = 2025-11-18T12:06:18.700870867-07:00
+last-updated = 2025-07-22T10:04:22.49Z

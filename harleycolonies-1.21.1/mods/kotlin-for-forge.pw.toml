@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 6994056
 project-id = 351264
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/kotlin-for-forge"
+issues = "https://github.com/thedarkcolour/KotlinForForge/issues"
+source = "https://github.com/thedarkcolour/KotlinForForge"
+categories = ["library-api"]
+added = 2025-11-18T12:05:47.92628955-07:00
+last-updated = 2025-09-13T21:05:44.58Z

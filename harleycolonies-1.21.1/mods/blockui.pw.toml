@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 7041877
 project-id = 522992
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/blockui"
+source = "https://github.com/ldtteam/BlockUI"
+categories = ["library-api"]
+added = 2025-11-18T12:03:20.913902751-07:00
+last-updated = 2025-09-28T11:07:15.147Z

@@ -1,13 +1,20 @@
 name = "Xray Ultimate"
-filename = "Xray_Ultimate_1.20.2_v5.0.0.zip"
+filename = "Xray_Ultimate_1.21_v5.2.2.zip"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "b61088811e6c9dff85163b22af179b4af55c4e62"
+hash = "7d6fa4ae1e69cd83fbd00299a312504b47873edd"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 4825530
+file-id = 6078638
 project-id = 226375
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/texture-packs/xray-ultimate-1-11-compatible"
+categories = ["traditional", "mod-support", "modern", "sixteen-x", "miscellaneous"]
+added = 2025-11-18T12:17:16.600478999-07:00
+last-updated = 2025-01-12T01:10:40.933Z

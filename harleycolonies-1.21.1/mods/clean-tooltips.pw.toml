@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5862815
 project-id = 855017
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/clean-tooltips"
+issues = "https://github.com/stal111/Clean-Tooltips/issues"
+source = "https://github.com/stal111/Clean-Tooltips"
+categories = ["utility-qol"]
+added = 2025-11-18T12:03:22.018091355-07:00
+last-updated = 2024-10-31T13:40:04.123Z

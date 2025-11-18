@@ -1,19 +1,21 @@
 name = "Fresh Animations"
-filename = "FreshAnimations_v1.9.zip"
+filename = "FreshAnimations_v1.10.1.zip"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "b092779da2ac9b397955248a342aa78e6b18f7a2"
+hash = "7747988f7cd47f5e46dbec54474126223ec95a47"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 5127481
+file-id = 6943060
 project-id = 453763
 
 [metadata]
 [metadata.curseforge]
 website = "https://www.curseforge.com/minecraft/texture-packs/fresh-animations"
 issues = "https://discord.gg/FVGp2479yU"
-categories = ["modern", "miscellaneous", "animated", "traditional", "sixteen-x"]
+categories = ["animated", "sixteen-x", "modern", "miscellaneous"]
+added = 2025-11-18T12:17:16.023668866-07:00
+last-updated = 2025-08-30T00:00:28.25Z

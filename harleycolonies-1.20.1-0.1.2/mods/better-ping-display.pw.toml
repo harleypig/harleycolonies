@@ -17,4 +17,6 @@ project-id = 292038
 website = "https://www.curseforge.com/minecraft/mc-mods/better-ping-display"
 issues = "https://github.com/vladmarica/better-ping-display/issues"
 source = "https://github.com/vladmarica/better-ping-display"
-categories = ["utility-qol", "cosmetic", "map-information"]
+categories = ["cosmetic", "utility-qol", "map-information"]
+added = 2025-11-18T12:15:11.550371973-07:00
+last-updated = 2023-06-18T02:10:24.983Z

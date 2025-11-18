@@ -17,4 +17,6 @@ project-id = 252848
 website = "https://www.curseforge.com/minecraft/mc-mods/natures-compass"
 issues = "https://github.com/MattCzyr/NaturesCompass/issues"
 source = "https://github.com/MattCzyr/NaturesCompass"
-categories = ["armor-weapons-tools", "world-biomes", "technology", "map-information"]
+categories = ["map-information", "armor-weapons-tools", "world-biomes", "technology"]
+added = 2025-11-18T12:16:24.345841847-07:00
+last-updated = 2023-08-19T13:57:24.937Z

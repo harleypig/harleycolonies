@@ -17,4 +17,6 @@ project-id = 231837
 website = "https://www.curseforge.com/minecraft/mc-mods/ocean-floor-clay-sand-and-dirt"
 issues = "https://github.com/PrinceOfAmber/OceanFloorControl/issues"
 source = "https://github.com/PrinceOfAmber/OceanFloorControl"
-categories = ["cosmetic", "world-ores-resources", "world-biomes", "world-dimensions"]
+categories = ["world-biomes", "world-ores-resources", "cosmetic", "world-dimensions"]
+added = 2025-11-18T12:16:24.550074257-07:00
+last-updated = 2023-07-04T15:36:17.167Z

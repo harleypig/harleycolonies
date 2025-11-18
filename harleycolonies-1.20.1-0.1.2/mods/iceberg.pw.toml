@@ -1,20 +1,22 @@
-name = "Iceberg [Forge]"
-filename = "Iceberg-1.20.1-forge-1.1.21.jar"
+name = "Iceberg [Neo/Forge]"
+filename = "Iceberg-1.20.1-forge-1.1.25.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "1692af84ef74a07b1f2e5dcdbff821effafdd24b"
+hash = "d551ff55814cfb01403b812459ee5a02b020d87b"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 5138899
+file-id = 5838149
 project-id = 520110
 
 [metadata]
 [metadata.curseforge]
 website = "https://www.curseforge.com/minecraft/mc-mods/iceberg"
-issues = "https://github.com/AHilyard/Iceberg/issues"
+issues = "https://discord.gg/UCKjnamDaW"
 source = "https://github.com/AHilyard/Iceberg"
 categories = ["library-api"]
+added = 2025-11-18T12:16:05.152017008-07:00
+last-updated = 2024-10-23T17:31:24.767Z

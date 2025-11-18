@@ -11,3 +11,13 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5856971
 project-id = 420249
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/hud-compass"
+wiki = "https://github.com/gigaherz/HudCompass/wiki"
+issues = "https://github.com/gigaherz/HudCompass/issues"
+source = "https://github.com/gigaherz/HudCompass"
+categories = ["map-information", "library-api"]
+added = 2025-11-18T12:05:42.951047356-07:00
+last-updated = 2024-10-29T14:45:32.133Z

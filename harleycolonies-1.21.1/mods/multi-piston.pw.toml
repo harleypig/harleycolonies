@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 7097877
 project-id = 303278
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/multi-piston"
+issues = "https://github.com/ldtteam/Piston-Unlimited"
+source = "https://github.com/ldtteam/Piston-Unlimited"
+categories = ["cosmetic", "redstone", "technology-player-transport", "adventure-rpg"]
+added = 2025-11-18T12:06:11.885144805-07:00
+last-updated = 2025-10-12T08:09:34.46Z

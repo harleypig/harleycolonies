@@ -1,15 +1,15 @@
 name = "Inventory Sorter"
-filename = "inventorysorter-1.20.1-23.0.1.jar"
+filename = "inventorysorter-1.20.1-23.0.11.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "32e30b71d7ef67b306a24191c655528509454cb5"
+hash = "fe77bda0f98df034f00ecdcb9537b31bf3800477"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 4655091
+file-id = 7188685
 project-id = 240633
 
 [metadata]
@@ -18,3 +18,5 @@ website = "https://www.curseforge.com/minecraft/mc-mods/inventory-sorter"
 issues = "https://github.com/cpw/inventorysorter/issues"
 source = "https://github.com/cpw/inventorysorter"
 categories = ["mc-miscellaneous"]
+added = 2025-11-18T12:16:05.360067396-07:00
+last-updated = 2025-11-05T11:56:03.443Z

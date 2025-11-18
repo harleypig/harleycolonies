@@ -1,15 +1,15 @@
-name = "Jade Addons (Forge)"
-filename = "JadeAddons-1.20.1-forge-5.2.2.jar"
+name = "Jade Addons (Neo/Forge)"
+filename = "JadeAddons-1.20.1-Forge-5.5.0.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "74b567a2b23bf34cd37ee4c02059318f8cc702d7"
+hash = "5e74e87f61cf05c18457f09dfa1cb70332b6b777"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 4925840
+file-id = 6274674
 project-id = 583345
 
 [metadata]
@@ -17,4 +17,6 @@ project-id = 583345
 website = "https://www.curseforge.com/minecraft/mc-mods/jade-addons"
 issues = "https://github.com/Snownee/JadeAddons/issues"
 source = "https://github.com/Snownee/JadeAddons"
-categories = ["map-information", "utility-qol", "mc-addons"]
+categories = ["map-information", "mc-addons", "utility-qol"]
+added = 2025-11-18T12:16:05.572101171-07:00
+last-updated = 2025-03-07T12:14:18.823Z

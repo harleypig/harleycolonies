@@ -1,4 +1,4 @@
-name = "FTB Quests (Forge)"
+name = "FTB Quests (NeoForge)"
 filename = "ftb-quests-neoforge-2101.1.18.jar"
 side = "both"
 
@@ -11,3 +11,13 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 7213963
 project-id = 289412
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/ftb-quests-forge"
+wiki = "https://docs.feed-the-beast.com"
+issues = "https://github.com/FTBTeam/FTB-Mods-Issues/issues"
+source = "https://github.com/FTBTeam/FTB-Quests"
+categories = ["adventure-rpg", "map-information", "server-utility", "library-api"]
+added = 2025-11-18T12:05:42.428244538-07:00
+last-updated = 2025-11-12T11:34:10.8Z

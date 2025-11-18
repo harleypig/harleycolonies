@@ -17,4 +17,6 @@ project-id = 381605
 website = "https://www.curseforge.com/minecraft/mc-mods/drawers-tooltip"
 issues = "https://github.com/Snownee/DrawersTooltip/issues"
 source = "https://github.com/Snownee/DrawersTooltip"
-categories = ["mc-addons", "storage", "utility-qol"]
+categories = ["utility-qol", "mc-addons", "storage"]
+added = 2025-11-18T12:16:02.155074767-07:00
+last-updated = 2023-08-03T09:53:33.013Z

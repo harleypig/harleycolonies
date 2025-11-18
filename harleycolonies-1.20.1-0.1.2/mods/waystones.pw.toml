@@ -1,15 +1,15 @@
 name = "Waystones"
-filename = "waystones-forge-1.20-14.1.3.jar"
+filename = "waystones-forge-1.20.1-14.1.17.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "e71a99318c7a5267223f7f5ada7f6851023c0377"
+hash = "0572e124fa1af248b5b978d7c615fb31629103e5"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 4962610
+file-id = 6856603
 project-id = 245755
 
 [metadata]
@@ -17,5 +17,7 @@ project-id = 245755
 website = "https://www.curseforge.com/minecraft/mc-mods/waystones"
 wiki = "https://mods.twelveiterations.com/mc/waystones"
 issues = "https://github.com/ModdingForBlockheads/Waystones/issues"
-source = "https://github.com/ModdingForBlockheads/Waystones"
-categories = ["magic", "adventure-rpg", "server-utility", "technology-player-transport"]
+source = "https://github.com/TwelveIterationMods/Waystones"
+categories = ["technology-player-transport", "adventure-rpg", "magic", "server-utility"]
+added = 2025-11-18T12:16:30.538303196-07:00
+last-updated = 2025-08-06T19:01:45.367Z

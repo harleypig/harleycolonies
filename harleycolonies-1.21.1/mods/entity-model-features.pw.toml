@@ -1,6 +1,6 @@
 name = "[EMF] Entity Model Features [Fabric & Forge]"
 filename = "entity_model_features_1.21-neoforge-3.0.1.jar"
-side = "client"
+side = "both"
 
 [download]
 hash-format = "sha1"
@@ -11,3 +11,13 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 6922725
 project-id = 844662
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/entity-model-features"
+wiki = "https://github.com/Traben-0/Entity_Model_Features/blob/master/FEATURES.md"
+issues = "https://github.com/Traben-0/Entity_Model_Features/issues"
+source = "https://github.com/Traben-0/Entity_Model_Features"
+categories = ["world-mobs", "cosmetic", "utility-qol"]
+added = 2025-11-18T12:05:14.423725026-07:00
+last-updated = 2025-08-24T13:41:01.683Z

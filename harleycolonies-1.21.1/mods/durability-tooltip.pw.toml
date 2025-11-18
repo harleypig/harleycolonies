@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 6833316
 project-id = 511040
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/durability-tooltip"
+issues = "https://github.com/SuperMartijn642/DurabilityTooltip/issues"
+source = "https://github.com/SuperMartijn642/DurabilityTooltip"
+categories = ["cosmetic", "map-information", "armor-weapons-tools"]
+added = 2025-11-18T12:04:37.325349944-07:00
+last-updated = 2025-07-31T18:19:48.227Z

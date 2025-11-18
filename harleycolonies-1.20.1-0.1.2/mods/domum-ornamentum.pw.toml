@@ -1,15 +1,15 @@
 name = "Domum Ornamentum"
-filename = "domum_ornamentum-1.20.1-1.0.186-RELEASE-universal.jar"
+filename = "domum_ornamentum-1.20.1-1.0.292-snapshot-universal.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "497979f9c1ae139fee5f6f32727a19785dd1e17d"
+hash = "1b3b96dda8dd4541afba652c7a975ba439fc1026"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 5281660
+file-id = 7185824
 project-id = 527361
 
 [metadata]
@@ -17,4 +17,6 @@ project-id = 527361
 website = "https://www.curseforge.com/minecraft/mc-mods/domum-ornamentum"
 issues = "https://github.com/ldtteam/Domum-Ornamentum/issues/new"
 source = "https://github.com/ldtteam/Domum-Ornamentum"
-categories = ["cosmetic", "library-api"]
+categories = ["library-api", "cosmetic"]
+added = 2025-11-18T12:16:01.945027416-07:00
+last-updated = 2025-11-04T15:31:54.24Z

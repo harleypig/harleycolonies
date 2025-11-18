@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 7016590
 project-id = 495693
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/farsight"
+issues = "https://github.com/someaddons/farsight/issues"
+source = "https://github.com/someaddons/farsight"
+categories = ["cosmetic", "adventure-rpg", "map-information"]
+added = 2025-11-18T12:05:41.318379424-07:00
+last-updated = 2025-09-20T20:02:35.973Z

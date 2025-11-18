@@ -1,15 +1,15 @@
 name = "Jade 🔍"
-filename = "Jade-1.20.1-forge-11.9.2.jar"
+filename = "Jade-1.20.1-Forge-11.13.2.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "c393847a8a8fc5ed6f594a12618e68900abe447c"
+hash = "1997e5fe2db3a0575ca79bfe4720019f01fd2b8c"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 5339264
+file-id = 6855440
 project-id = 324717
 
 [metadata]
@@ -17,4 +17,6 @@ project-id = 324717
 website = "https://www.curseforge.com/minecraft/mc-mods/jade"
 issues = "https://github.com/Snownee/Jade/issues?q=is%3Aissue"
 source = "https://github.com/Snownee/Jade"
-categories = ["utility-qol", "map-information"]
+categories = ["map-information", "utility-qol"]
+added = 2025-11-18T12:16:05.989151389-07:00
+last-updated = 2025-08-06T14:19:52.7Z

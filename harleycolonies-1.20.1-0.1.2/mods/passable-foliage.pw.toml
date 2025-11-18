@@ -1,4 +1,4 @@
-name = "Passable Foliage 🌳 (Forge)"
+name = "Passable Foliage 🌳 (Neo/Forge)"
 filename = "PassableFoliage-1.20.1-forge-8.2.1.jar"
 side = "both"
 
@@ -18,3 +18,5 @@ website = "https://www.curseforge.com/minecraft/mc-mods/passable-foliage"
 issues = "https://github.com/Snownee/PassableFoliage/issues"
 source = "https://github.com/Snownee/PassableFoliage"
 categories = ["utility-qol"]
+added = 2025-11-18T12:16:24.772147097-07:00
+last-updated = 2023-11-15T09:31:01.067Z

@@ -15,4 +15,6 @@ project-id = 740025
 [metadata]
 [metadata.curseforge]
 website = "https://www.curseforge.com/minecraft/mc-mods/waterphysics"
-categories = ["adventure-rpg", "world-gen", "technology-item-fluid-energy-transport", "utility-qol"]
+categories = ["utility-qol", "world-gen", "technology-item-fluid-energy-transport", "adventure-rpg"]
+added = 2025-11-18T12:16:30.202580679-07:00
+last-updated = 2023-12-02T13:33:35.6Z

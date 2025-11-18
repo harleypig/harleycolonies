@@ -1,15 +1,15 @@
 name = "Cloth Config API (Fabric/Forge/NeoForge)"
-filename = "cloth-config-11.1.118-forge.jar"
+filename = "cloth-config-11.1.136-forge.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "c46ca3fba95691873a765f4e79750c615f33e446"
+hash = "c65d07748acc57ceb45d53b3964368b84f34d54f"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 4973441
+file-id = 5729105
 project-id = 348521
 
 [metadata]
@@ -19,3 +19,5 @@ wiki = "https://shedaniel.gitbook.io/cloth-config/"
 issues = "https://github.com/shedaniel/ClothConfig/issues"
 source = "https://github.com/shedaniel/ClothConfig"
 categories = ["library-api"]
+added = 2025-11-18T12:15:32.865817501-07:00
+last-updated = 2024-09-16T17:13:48.94Z

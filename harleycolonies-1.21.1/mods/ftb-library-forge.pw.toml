@@ -11,3 +11,13 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 7182154
 project-id = 404465
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/ftb-library-forge"
+wiki = "https://go.ftb.team/docs-library"
+issues = "https://go.ftb.team/support-mod-issues"
+source = "https://github.com/FTBTeam/FTB-GUI-Library"
+categories = ["library-api"]
+added = 2025-11-18T12:05:42.229951727-07:00
+last-updated = 2025-11-03T14:13:10.203Z

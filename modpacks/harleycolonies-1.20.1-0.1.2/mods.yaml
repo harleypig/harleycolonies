@@ -185,3 +185,11 @@ mods:
     status: installed
   selene:
     status: installed
+  entity-model-features:
+    status: installed
+  glitchcore:
+    status: installed
+  ichunutil:
+    status: installed
+  entity-texture-features-fabric:
+    status: installed

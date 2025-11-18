@@ -1,4 +1,4 @@
-name = "Architectury API (Fabric/Forge/NeoForge)"
+name = "Architectury API"
 filename = "architectury-9.2.14-forge.jar"
 side = "both"
 
@@ -19,3 +19,5 @@ wiki = "https://docs.architectury.dev/plugin:get_started"
 issues = "https://github.com/architectury/architectury/issues"
 source = "https://github.com/architectury/architectury"
 categories = ["library-api"]
+added = 2025-11-18T12:15:09.600554289-07:00
+last-updated = 2024-02-26T13:18:59.227Z

@@ -1,13 +1,23 @@
 name = "MineColonies"
-filename = "minecolonies-1.1.1191-1.21.1-snapshot.jar"
+filename = "minecolonies-1.1.1197-1.21.1-snapshot.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "6c269b8e62df7012d5bc0779c6396eb7fcdd38d6"
+hash = "c33ab26a4219bdf924f37e0defe5be632a01ec1f"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 7215546
+file-id = 7228576
 project-id = 245506
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/minecolonies"
+wiki = "https://wiki.minecolonies.ldtteam.com"
+issues = "https://github.com/ldtteam/minecolonies/issues/new/choose"
+source = "https://github.com/ldtteam/MineColonies"
+categories = ["technology-automation", "armor-weapons-tools", "world-structures", "adventure-rpg", "storage"]
+added = 2025-11-18T12:06:11.096962697-07:00
+last-updated = 2025-11-16T12:48:47.753Z

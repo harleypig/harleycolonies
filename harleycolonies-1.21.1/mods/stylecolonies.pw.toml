@@ -11,3 +11,10 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 7157517
 project-id = 827507
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/stylecolonies"
+categories = ["cosmetic", "utility-qol", "mc-addons", "adventure-rpg"]
+added = 2025-11-18T12:06:15.94333873-07:00
+last-updated = 2025-10-27T21:17:07.177Z

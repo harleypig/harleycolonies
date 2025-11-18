@@ -1,6 +1,6 @@
 name = "Fresh Animations"
 filename = "FreshAnimations_v1.10.1.zip"
-side = "client"
+side = "both"
 
 [download]
 hash-format = "sha1"
@@ -11,3 +11,11 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 6943060
 project-id = 453763
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/texture-packs/fresh-animations"
+issues = "https://discord.gg/FVGp2479yU"
+categories = ["animated", "sixteen-x", "modern", "miscellaneous"]
+added = 2025-11-18T12:09:10.016502648-07:00
+last-updated = 2025-08-30T00:00:28.25Z

@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 6616291
 project-id = 248787
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/appleskin"
+issues = "https://github.com/squeek502/AppleSkin/issues"
+source = "https://github.com/squeek502/AppleSkin"
+categories = ["mc-food", "map-information"]
+added = 2025-11-18T12:03:18.494474493-07:00
+last-updated = 2025-06-05T04:43:44.343Z

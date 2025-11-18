@@ -1,15 +1,15 @@
 name = "Just Enough Items (JEI)"
-filename = "jei-1.20.1-forge-15.3.0.4.jar"
+filename = "jei-1.20.1-forge-15.20.0.121.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "1a431d34991d51998f9971c4291bac2d58eaa154"
+hash = "62d996ad8a14d5fe82d5de9fc4c04fbb5f2d556c"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 5101366
+file-id = 7229087
 project-id = 238222
 
 [metadata]
@@ -17,4 +17,6 @@ project-id = 238222
 website = "https://www.curseforge.com/minecraft/mc-mods/jei"
 issues = "https://github.com/mezz/JustEnoughItems/issues?q=is%3Aissue"
 source = "https://github.com/mezz/JustEnoughItems"
-categories = ["library-api", "map-information"]
+categories = ["map-information", "library-api"]
+added = 2025-11-18T12:16:06.654906191-07:00
+last-updated = 2025-11-16T14:45:04.23Z

@@ -1,4 +1,4 @@
-name = "FTB Teams (Forge)"
+name = "FTB Teams (NeoForge)"
 filename = "ftb-teams-neoforge-2101.1.7.jar"
 side = "both"
 
@@ -11,3 +11,13 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 7209616
 project-id = 404468
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/ftb-teams-forge"
+wiki = "https://go.ftb.team/docs-teams"
+issues = "https://github.com/FTBTeam/FTB-Mods-Issues/issues"
+source = "https://github.com/FTBTeam/FTB-Teams"
+categories = ["library-api"]
+added = 2025-11-18T12:05:42.634938919-07:00
+last-updated = 2025-11-11T08:42:12.127Z

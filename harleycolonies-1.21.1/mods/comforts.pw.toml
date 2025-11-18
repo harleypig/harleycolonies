@@ -11,3 +11,13 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 6559909
 project-id = 276951
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/comforts"
+wiki = "https://github.com/illusivesoulworks/comforts/wiki"
+issues = "https://github.com/illusivesoulworks/comforts/issues"
+source = "https://github.com/illusivesoulworks/comforts"
+categories = ["mc-miscellaneous", "adventure-rpg"]
+added = 2025-11-18T12:04:27.291503286-07:00
+last-updated = 2025-05-23T23:36:10.387Z

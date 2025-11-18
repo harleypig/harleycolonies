@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5549205
 project-id = 888790
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/client-crafting"
+issues = "https://github.com/someaddons/clientcrafting/issues"
+source = "https://github.com/someaddons/clientcrafting"
+categories = ["utility-qol", "armor-weapons-tools", "mc-addons", "technology"]
+added = 2025-11-18T12:03:22.443682163-07:00
+last-updated = 2024-07-20T18:16:46.79Z

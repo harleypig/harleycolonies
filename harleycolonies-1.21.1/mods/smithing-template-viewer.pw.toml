@@ -1,6 +1,6 @@
 name = "Smithing Template Viewer for JEI/EMI"
 filename = "smithingtemplateviewer-1.0.3.jar"
-side = "client"
+side = "both"
 
 [download]
 hash-format = "sha1"
@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 6502654
 project-id = 1133580
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/smithing-template-viewer"
+issues = "https://github.com/Buuz135/SmithingTemplateViewer/issues"
+source = "https://github.com/Buuz135/SmithingTemplateViewer"
+categories = ["mc-addons", "cosmetic"]
+added = 2025-11-18T12:06:15.011835678-07:00
+last-updated = 2025-05-06T16:33:59.75Z

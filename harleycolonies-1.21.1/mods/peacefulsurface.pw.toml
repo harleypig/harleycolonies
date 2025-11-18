@@ -11,3 +11,13 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 6027513
 project-id = 73112
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/peacefulsurface"
+wiki = "https://github.com/zlainsama/PeacefulSurface/wiki"
+issues = "https://github.com/zlainsama/PeacefulSurface/issues"
+source = "https://github.com/zlainsama/PeacefulSurface"
+categories = ["world-mobs"]
+added = 2025-11-18T12:06:13.265044712-07:00
+last-updated = 2024-12-27T16:08:59.41Z

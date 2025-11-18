@@ -1,15 +1,15 @@
-name = "Connectivity[Forge/Fabric]"
-filename = "connectivity-1.20.1-5.5.jar"
+name = "Connectivity"
+filename = "connectivity-1.20.1-7.2.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "16ef782df574b993f7096bbf9f19dd350f784879"
+hash = "b05ecfb2729938fb5ce38df6af43b0b4e55b1833"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 5181534
+file-id = 7032387
 project-id = 470193
 
 [metadata]
@@ -17,4 +17,6 @@ project-id = 470193
 website = "https://www.curseforge.com/minecraft/mc-mods/connectivity"
 issues = "https://github.com/someaddons/connectivity/issues"
 source = "https://github.com/someaddons/connectivity"
-categories = ["technology-player-transport", "map-information", "server-utility"]
+categories = ["map-information", "technology-player-transport", "server-utility"]
+added = 2025-11-18T12:15:53.267699816-07:00
+last-updated = 2025-09-25T15:10:50.523Z

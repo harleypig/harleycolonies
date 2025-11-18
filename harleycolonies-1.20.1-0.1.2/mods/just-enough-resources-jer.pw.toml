@@ -17,4 +17,6 @@ project-id = 240630
 website = "https://www.curseforge.com/minecraft/mc-mods/just-enough-resources-jer"
 issues = "https://github.com/way2muchnoise/JustEnoughResources/issues"
 source = "https://github.com/way2muchnoise/JustEnoughResources"
-categories = ["world-ores-resources", "world-mobs", "map-information", "world-biomes", "mc-addons"]
+categories = ["map-information", "mc-addons", "world-ores-resources", "world-biomes", "world-mobs"]
+added = 2025-11-18T12:16:09.294054506-07:00
+last-updated = 2024-01-24T19:29:26.507Z

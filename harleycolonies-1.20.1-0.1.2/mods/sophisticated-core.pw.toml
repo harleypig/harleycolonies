@@ -1,15 +1,15 @@
 name = "Sophisticated Core"
-filename = "sophisticatedcore-1.20.1-0.6.22.611.jar"
+filename = "sophisticatedcore-1.20.1-1.2.107.1240.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "f2f9639f50d04fa4f6ae7a2e972428f40a8f80d4"
+hash = "bd25a3a9d1b4a6e25b4087b58c0cd3a9564a78a7"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 5326245
+file-id = 7169400
 project-id = 618298
 
 [metadata]
@@ -17,3 +17,5 @@ project-id = 618298
 website = "https://www.curseforge.com/minecraft/mc-mods/sophisticated-core"
 source = "https://github.com/P3pp3rF1y/SophisticatedCore"
 categories = ["library-api"]
+added = 2025-11-18T12:16:26.854303487-07:00
+last-updated = 2025-10-31T05:57:33.977Z

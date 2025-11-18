@@ -15,7 +15,9 @@ project-id = 444941
 [metadata]
 [metadata.curseforge]
 website = "https://www.curseforge.com/minecraft/mc-mods/jea"
-wiki = "https://melanx.github.io/Mod-Wikis/"
-issues = "https://github.com/MelanX/JustEnoughAdvancements/issues"
-source = "https://github.com/MelanX/JustEnoughAdvancements"
-categories = ["map-information", "mc-addons", "library-api"]
+wiki = "https://wiki.chaotictrials.de/"
+issues = "https://github.com/ChaoticTrials/JustEnoughAdvancements/issues"
+source = "https://github.com/ChaoticTrials/JustEnoughAdvancements"
+categories = ["map-information", "library-api", "mc-addons"]
+added = 2025-11-18T12:16:06.221689903-07:00
+last-updated = 2023-07-08T14:20:47.647Z

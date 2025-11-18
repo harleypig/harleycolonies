@@ -15,4 +15,6 @@ project-id = 394203
 [metadata]
 [metadata.curseforge]
 website = "https://www.curseforge.com/minecraft/texture-packs/hd-font-inconsolata"
-categories = ["steampunk", "font-packs", "miscellaneous", "traditional"]
+categories = ["traditional", "font-packs", "steampunk", "miscellaneous"]
+added = 2025-11-18T12:17:16.28430128-07:00
+last-updated = 2023-09-15T21:34:16.08Z

@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 6000439
 project-id = 229060
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/ichunutil"
+issues = "https://github.com/iChun/iChunUtil/issues"
+source = "https://github.com/iChun/iChunUtil"
+categories = ["library-api"]
+added = 2025-11-18T12:05:43.256685805-07:00
+last-updated = 2024-12-18T00:58:03.477Z

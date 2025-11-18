@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 6306642
 project-id = 308705
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/vanilla-tools"
+issues = "https://github.com/ldtteam/vanilla-tools/issues/new/choose"
+source = "https://github.com/ldtteam/vanilla-tools"
+categories = ["armor-weapons-tools", "utility-qol"]
+added = 2025-11-18T12:06:18.378977148-07:00
+last-updated = 2025-03-15T11:31:35.84Z

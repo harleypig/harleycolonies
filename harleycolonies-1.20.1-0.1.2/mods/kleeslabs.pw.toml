@@ -1,15 +1,15 @@
 name = "KleeSlabs"
-filename = "kleeslabs-forge-1.20-15.0.0.jar"
+filename = "kleeslabs-forge-1.20.1-15.0.9.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "d2971582787e0cad73158c809b56cf622daf7344"
+hash = "c61a556c8b3a032f0e381512ed3539dc16d3bf1e"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 4583104
+file-id = 6868042
 project-id = 241895
 
 [metadata]
@@ -19,3 +19,5 @@ wiki = "https://mods.twelveiterations.com/mc/kleeslabs"
 issues = "https://github.com/ModdingForBlockheads/KleeSlabs/issues"
 source = "https://github.com/ModdingForBlockheads/KleeSlabs"
 categories = ["utility-qol"]
+added = 2025-11-18T12:16:19.312401306-07:00
+last-updated = 2025-08-09T16:35:42.29Z

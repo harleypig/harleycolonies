@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 6961457
 project-id = 1023259
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/prickle"
+issues = "https://github.com/Darkhax-Minecraft/PrickleMC/issues"
+source = "https://github.com/Darkhax-Minecraft/PrickleMC"
+categories = ["utility-qol", "library-api", "server-utility"]
+added = 2025-11-18T12:06:13.575000835-07:00
+last-updated = 2025-09-04T03:19:33.637Z

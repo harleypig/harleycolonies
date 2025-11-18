@@ -16,4 +16,6 @@ project-id = 546740
 [metadata.curseforge]
 website = "https://www.curseforge.com/minecraft/mc-mods/jepp"
 source = "https://github.com/MehVahdJukaar/JustEnoughPainting"
-categories = ["mc-addons", "map-information"]
+categories = ["map-information", "mc-addons"]
+added = 2025-11-18T12:16:06.863110673-07:00
+last-updated = 2023-07-20T14:30:01.603Z

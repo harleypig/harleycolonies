@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 7116125
 project-id = 1255421
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/climate-rivers"
+issues = "https://github.com/Fuzss/climaterivers/issues"
+source = "https://github.com/Fuzss/climaterivers"
+categories = ["world-biomes", "bug-fixes", "bug-fixes", "world-biomes"]
+added = 2025-11-18T12:03:22.661312599-07:00
+last-updated = 2025-10-17T06:59:48.967Z

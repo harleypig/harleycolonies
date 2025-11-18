@@ -11,3 +11,13 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 7216851
 project-id = 444941
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/jea"
+wiki = "https://wiki.chaotictrials.de/"
+issues = "https://github.com/ChaoticTrials/JustEnoughAdvancements/issues"
+source = "https://github.com/ChaoticTrials/JustEnoughAdvancements"
+categories = ["map-information", "library-api", "mc-addons"]
+added = 2025-11-18T12:05:44.509477198-07:00
+last-updated = 2025-11-13T06:16:29.727Z

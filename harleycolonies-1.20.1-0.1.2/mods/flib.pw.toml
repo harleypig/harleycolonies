@@ -1,15 +1,15 @@
 name = "FLIB"
-filename = "flib-1.20.1-0.0.13.jar"
+filename = "flib-1.20.1-0.0.15.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "0ea89b6c9cad76ef6694c7f7f0bb467ac48d736e"
+hash = "39a45a151ca3843d03f25a5a038139a63a858489"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 5356442
+file-id = 6369719
 project-id = 661261
 
 [metadata]
@@ -18,3 +18,5 @@ website = "https://www.curseforge.com/minecraft/mc-mods/flib"
 issues = "https://github.com/Lothrazar/FLib/issues"
 source = "https://github.com/Lothrazar/FLib"
 categories = ["library-api"]
+added = 2025-11-18T12:16:03.698558906-07:00
+last-updated = 2025-03-31T06:36:38.397Z

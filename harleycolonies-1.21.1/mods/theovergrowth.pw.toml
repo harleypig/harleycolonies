@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 6153566
 project-id = 714353
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/theovergrowth"
+issues = "https://github.com/ldtteam/Overgrowth/issues"
+source = "https://github.com/ldtteam/Overgrowth"
+categories = ["adventure-rpg", "utility-qol", "technology", "world-gen"]
+added = 2025-11-18T12:06:17.087146412-07:00
+last-updated = 2025-02-03T14:03:32.263Z

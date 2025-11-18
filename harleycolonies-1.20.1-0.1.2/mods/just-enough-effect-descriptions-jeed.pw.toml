@@ -1,15 +1,15 @@
 name = "Just Enough Effect Descriptions (JEED)"
-filename = "jeed-1.20-2.1.12.jar"
+filename = "jeed-1.20-2.2.5.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "38d95e3a45183e01dd527289ea765fbb69917646"
+hash = "9f6b1884ad8b81c0e8796daf7871eeb54271f27b"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 5186339
+file-id = 6172935
 project-id = 532286
 
 [metadata]
@@ -18,3 +18,5 @@ website = "https://www.curseforge.com/minecraft/mc-mods/just-enough-effect-descr
 issues = "https://github.com/MehVahdJukaar/JustEnoughEffectDescriptions/issues"
 source = "https://github.com/MehVahdJukaar/JustEnoughEffectDescriptions"
 categories = ["map-information", "mc-addons"]
+added = 2025-11-18T12:16:08.672721386-07:00
+last-updated = 2025-02-08T22:50:21.437Z

@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5570957
 project-id = 366140
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/dynamic-view"
+issues = "https://github.com/someaddons/Dynamic-View/issues/new/choose"
+source = "https://github.com/someaddons/Dynamic-View"
+categories = ["world-gen", "server-utility"]
+added = 2025-11-18T12:04:37.552903334-07:00
+last-updated = 2024-07-27T12:55:17.107Z

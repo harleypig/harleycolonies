@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 6816404
 project-id = 899386
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/justenoughbreeding"
+issues = "https://github.com/Christofmeg/JustEnoughBreeding/issues"
+source = "https://github.com/Christofmeg/JustEnoughBreeding"
+categories = ["world-mobs", "map-information", "mc-addons", "utility-qol"]
+added = 2025-11-18T12:05:46.452465087-07:00
+last-updated = 2025-07-27T07:04:05.423Z

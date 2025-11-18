@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5831692
 project-id = 858542
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/searchables"
+issues = "https://github.com/jaredlll08/searchables/issues"
+source = "https://github.com/jaredlll08/searchables"
+categories = ["library-api", "cosmetic", "map-information", "utility-qol"]
+added = 2025-11-18T12:06:14.587817502-07:00
+last-updated = 2024-10-21T20:44:39.39Z

@@ -1,15 +1,15 @@
 name = "Food Effect Tooltips (Forge)"
-filename = "foodeffecttooltips-1.0.1+forge-1.20.jar.jar"
+filename = "foodeffecttooltips+forge-1.20.1-1.3.0.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "f894a91b230a60e086f7ff415b531a44c8445997"
+hash = "032c0ce96e81a967784c378e92e3cd499cca0f09"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 4602215
+file-id = 5411412
 project-id = 776426
 
 [metadata]
@@ -18,3 +18,5 @@ website = "https://www.curseforge.com/minecraft/mc-mods/food-effect-tooltips-for
 issues = "https://github.com/Suel-ki/FoodEffectTooltips-Forge/issues"
 source = "https://github.com/Suel-ki/FoodEffectTooltips-Forge"
 categories = ["mc-food", "utility-qol"]
+added = 2025-11-18T12:16:04.004739684-07:00
+last-updated = 2024-06-09T07:47:23.623Z

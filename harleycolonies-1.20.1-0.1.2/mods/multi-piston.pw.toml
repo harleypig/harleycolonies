@@ -1,15 +1,15 @@
 name = "Multi-Piston"
-filename = "multipiston-1.20-1.2.43-RELEASE.jar"
+filename = "multipiston-1.20-0.0.47-snapshot.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "1fc108ebf5f9fe34cf0366c7b71adf230400a74c"
+hash = "11b4ee209c6fba7991f25c50c0cd6376c1362dbf"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 5204918
+file-id = 7097889
 project-id = 303278
 
 [metadata]
@@ -17,4 +17,6 @@ project-id = 303278
 website = "https://www.curseforge.com/minecraft/mc-mods/multi-piston"
 issues = "https://github.com/ldtteam/Piston-Unlimited"
 source = "https://github.com/ldtteam/Piston-Unlimited"
-categories = ["cosmetic", "adventure-rpg", "redstone", "technology-player-transport"]
+categories = ["cosmetic", "redstone", "technology-player-transport", "adventure-rpg"]
+added = 2025-11-18T12:16:24.057069197-07:00
+last-updated = 2025-10-12T08:16:22.373Z

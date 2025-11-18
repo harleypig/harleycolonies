@@ -1,18 +1,20 @@
 name = "Stylecolonies"
-filename = "stylecolonies-1.4.jar"
+filename = "stylecolonies-1.20.1-1.15.42.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "9b4f7c531a37cf269fd2023b3afa376bb7243ecb"
+hash = "fc0560cd88b51203f22d26f40e2439d82061b16f"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 5283070
+file-id = 7157506
 project-id = 827507
 
 [metadata]
 [metadata.curseforge]
 website = "https://www.curseforge.com/minecraft/mc-mods/stylecolonies"
-categories = ["adventure-rpg", "cosmetic", "utility-qol", "mc-addons"]
+categories = ["cosmetic", "utility-qol", "mc-addons", "adventure-rpg"]
+added = 2025-11-18T12:16:27.935646647-07:00
+last-updated = 2025-10-27T21:13:16.453Z

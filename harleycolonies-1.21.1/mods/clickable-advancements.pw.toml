@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5551404
 project-id = 511733
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/clickable-advancements"
+issues = "https://github.com/someaddons/ClickableAdvancements/issues"
+source = "https://github.com/someaddons/ClickableAdvancements"
+categories = ["map-information", "adventure-rpg"]
+added = 2025-11-18T12:03:22.227771466-07:00
+last-updated = 2024-07-21T13:47:29.733Z

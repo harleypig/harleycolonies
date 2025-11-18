@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 6831585
 project-id = 857970
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/new-paper-doll"
+issues = "https://github.com/Fuzss/paperdoll/issues"
+source = "https://github.com/Fuzss/paperdoll"
+categories = ["utility-qol", "map-information"]
+added = 2025-11-18T12:06:12.517172764-07:00
+last-updated = 2025-07-31T08:19:48.98Z

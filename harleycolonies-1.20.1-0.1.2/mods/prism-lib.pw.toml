@@ -1,4 +1,4 @@
-name = "Prism [Forge]"
+name = "Prism [Neo/Forge]"
 filename = "Prism-1.20.1-forge-1.0.5.jar"
 side = "both"
 
@@ -16,6 +16,8 @@ project-id = 638111
 [metadata.curseforge]
 website = "https://www.curseforge.com/minecraft/mc-mods/prism-lib"
 wiki = "https://github.com/AHilyard/Prism/wiki/Prism-Documentation"
-issues = "https://github.com/AHilyard/Prism/issues"
+issues = "https://discord.gg/UCKjnamDaW"
 source = "https://github.com/AHilyard/Prism"
-categories = ["cosmetic", "library-api", "mc-miscellaneous", "utility-qol"]
+categories = ["cosmetic", "library-api", "utility-qol", "mc-miscellaneous"]
+added = 2025-11-18T12:16:25.662991757-07:00
+last-updated = 2023-07-17T22:39:15.03Z

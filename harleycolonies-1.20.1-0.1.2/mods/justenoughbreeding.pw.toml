@@ -1,15 +1,15 @@
 name = "Just Enough Breeding (JEBr)"
-filename = "justenoughbreeding-forge-1.20.x-1.2.1.jar"
+filename = "justenoughbreeding-forge-1.20-1.20.1-2.3.0.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "b00f42235859d1effda49cd79cf709afbeba9b67"
+hash = "d325712c17f5a91d0e6e70da825c2310629962e2"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 5224495
+file-id = 7195982
 project-id = 899386
 
 [metadata]
@@ -17,4 +17,6 @@ project-id = 899386
 website = "https://www.curseforge.com/minecraft/mc-mods/justenoughbreeding"
 issues = "https://github.com/Christofmeg/JustEnoughBreeding/issues"
 source = "https://github.com/Christofmeg/JustEnoughBreeding"
-categories = ["map-information", "mc-addons", "utility-qol", "world-mobs"]
+categories = ["world-mobs", "map-information", "mc-addons", "utility-qol"]
+added = 2025-11-18T12:16:08.076237845-07:00
+last-updated = 2025-11-07T16:41:49.733Z

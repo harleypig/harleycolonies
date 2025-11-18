@@ -17,4 +17,6 @@ project-id = 483682
 website = "https://www.curseforge.com/minecraft/mc-mods/storage-racks"
 issues = "https://github.com/ldtteam/StorageRacks"
 source = "https://github.com/ldtteam/StorageRacks"
-categories = ["storage", "cosmetic", "adventure-rpg", "education", "technology-automation"]
+categories = ["storage", "education", "cosmetic", "technology-automation", "adventure-rpg"]
+added = 2025-11-18T12:16:27.539149847-07:00
+last-updated = 2024-05-11T16:20:34.42Z

@@ -11,3 +11,12 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 5513549
 project-id = 882495
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/fix-gpu-memory-leak"
+issues = "https://github.com/someaddons/gpumemleakfix/issues"
+source = "https://github.com/someaddons/gpumemleakfix"
+categories = ["cosmetic", "utility-qol"]
+added = 2025-11-18T12:05:42.008269968-07:00
+last-updated = 2024-07-08T12:10:50.6Z
