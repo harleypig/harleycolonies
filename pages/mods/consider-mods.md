@@ -58,7 +58,7 @@ interesting to me.
 
 ### Realistic Stuff
 
-From a video that does realistic looking stuff (see [videos.md](videos.md)).
+From a video that does realistic looking stuff (see [[guides/videos|videos]]).
 
 ArdaGrass
 Axiom
