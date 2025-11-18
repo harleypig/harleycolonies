@@ -48,7 +48,7 @@ guide, which provides a beginner-friendly build order and recommendations.
 
 ## Wood
 
-*See [Getting Started Guide - Basic Resource Processing](getting-started.md#4-basic-resource-processing) for build order recommendations.*
+*See [Getting Started Guide - Basic Resource Processing](guides/getting-started#4-basic-resource-processing) for build order recommendations.*
 
 * Residence/Guard Tower
 * Forester's Hut
@@ -67,7 +67,7 @@ guide, which provides a beginner-friendly build order and recommendations.
 
 ## Stone
 
-*See [Getting Started Guide - Basic Resource Processing](getting-started.md#4-basic-resource-processing) for build order recommendations.*
+*See [Getting Started Guide - Basic Resource Processing](guides/getting-started#4-basic-resource-processing) for build order recommendations.*
 
 * Residence/Guard Tower
 * Mine
@@ -90,7 +90,7 @@ guide, which provides a beginner-friendly build order and recommendations.
 
 ## Storage
 
-*See [Getting Started Guide - Storage and Logistics](getting-started.md#1-storage-and-logistics) for build order recommendations.*
+*See [Getting Started Guide - Storage and Logistics](guides/getting-started#1-storage-and-logistics) for build order recommendations.*
 
 * Residence/Guard Tower
 * Warehouse
@@ -107,7 +107,7 @@ guide, which provides a beginner-friendly build order and recommendations.
 
 ## Feed the Masses
 
-*See [Getting Started Guide - Food Processing](getting-started.md#3-food-processing) for build order recommendations.*
+*See [Getting Started Guide - Food Processing](guides/getting-started#3-food-processing) for build order recommendations.*
 
 * Residence/Guard Tower
 * Tavern
@@ -154,7 +154,7 @@ guide, which provides a beginner-friendly build order and recommendations.
 
 ## Produce
 
-*See [Getting Started Guide - Food Production](getting-started.md#2-food-production) for build order recommendations.*
+*See [Getting Started Guide - Food Production](guides/getting-started#2-food-production) for build order recommendations.*
 
 * Residence/Guard Tower
 * Farmer's Hut
@@ -173,7 +173,7 @@ guide, which provides a beginner-friendly build order and recommendations.
 
 ## Meat
 
-*See [Getting Started Guide - Food Production](getting-started.md#2-food-production) for build order recommendations.*
+*See [Getting Started Guide - Food Production](guides/getting-started#2-food-production) for build order recommendations.*
 
 * Residence/Guard Tower
 * Chicken Farmer's Hut
@@ -193,7 +193,7 @@ guide, which provides a beginner-friendly build order and recommendations.
 
 ## Meat II
 
-*See [Getting Started Guide - Food Production](getting-started.md#2-food-production) for build order recommendations.*
+*See [Getting Started Guide - Food Production](guides/getting-started#2-food-production) for build order recommendations.*
 
 * Residence/Guard Tower
 * Fisher's Hut
@@ -233,7 +233,7 @@ guide, which provides a beginner-friendly build order and recommendations.
 
 ## Metal/Creative/Tinkerer???
 
-*See [Getting Started Guide - Basic Resource Processing](getting-started.md#4-basic-resource-processing) for build order recommendations.*
+*See [Getting Started Guide - Basic Resource Processing](guides/getting-started#4-basic-resource-processing) for build order recommendations.*
 
 * Residence/Guard Tower
 * Blacksmith's Hut (Hitting Iron!)
