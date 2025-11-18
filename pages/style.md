@@ -91,6 +91,15 @@ For example:
   - See [research system](https://minecolonies.com/wiki/systems/research) for
       details
   - Physical requirements ('field blocks' for farmer, etc.) are listed as
-      sub-bullets starting with 'requires ...'. See [hut
-      requirements](https://minecolonies.com/wiki/tutorials/schematics#hut-requirements)
+    sub-bullets starting with 'requires ...'. See [hut
+    requirements](https://minecolonies.com/wiki/tutorials/schematics#hut-requirements)
 
+## Style Guide Sections
+
+- [Style Packs](style/style-packs) - Style pack structure and requirements
+- [Supply Ships and Camps](style/supply-ships-camps) - Custom supply ship and camp requirements
+- [Huts](style/huts) - Hut implementation details and parent/child relationships
+- [Parent/Child Buildings](style/parent-child) - Guide to parent/child building relationships
+- [Possible Groupings](style/groupings) - Building groupings and requirements
+- [Tag Tool Usage](style/tag-tool) - Tag Tool reference
+- [Datapacks](style/datapacks) - Datapack customization
