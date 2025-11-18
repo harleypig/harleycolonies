@@ -1,11 +1,3 @@
----
-title: CERBON's Better Beacons [Forge | Fabric | NeoForge]
----
-
-
-
-Client/Server: both
-
 **CERBON's Better Beacons** enhances Minecraft's beacon system with a
 new user interface, additional features, fresh effects, and new
 advancements. This highly configurable mod introduces tertiary effects
@@ -168,10 +160,4 @@ effects are enabled, one for when they are disabled).
 - `beaconPaymentItemsUI.sixth.tertiaryPosX` (default: `119`)
   - X position of the sixth payment slot when tertiary effects are
     enabled.
-
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
 
