@@ -649,4 +649,4 @@ Walking on water uses up hunger really quick, so penalize it
 ---
 
 
-[← Back to Settings Index](SETTINGS.md)
+[← Back to Settings Index](baritone/SETTINGS)

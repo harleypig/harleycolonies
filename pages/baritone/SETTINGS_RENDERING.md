@@ -218,4 +218,4 @@ The opacity of the selection. 0 is completely transparent, 1 is completely opaqu
 ---
 
 
-[← Back to Settings Index](SETTINGS.md)
+[← Back to Settings Index](baritone/SETTINGS)

@@ -98,4 +98,4 @@ Usage:
 ---
 
 
-[← Back to Commands Index](COMMANDS.md)
+[← Back to Commands Index](baritone/COMMANDS)

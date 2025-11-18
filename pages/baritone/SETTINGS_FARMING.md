@@ -41,4 +41,4 @@ Replant nether wart while farming. This setting only has an effect when replantC
 ---
 
 
-[← Back to Settings Index](SETTINGS.md)
+[← Back to Settings Index](baritone/SETTINGS)

@@ -133,4 +133,4 @@ Print out ALL command exceptions as a stack trace to stdout, even simple syntax 
 ---
 
 
-[← Back to Settings Index](SETTINGS.md)
+[← Back to Settings Index](baritone/SETTINGS)

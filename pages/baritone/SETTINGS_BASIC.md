@@ -475,4 +475,4 @@ The size of the box that is rendered when the current goal is a GoalYLevel
 ---
 
 
-[← Back to Settings Index](SETTINGS.md)
+[← Back to Settings Index](baritone/SETTINGS)

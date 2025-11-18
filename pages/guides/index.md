@@ -6,10 +6,10 @@ title: Guides
 
 Player-facing guides and tutorials:
 
-- [[guides/getting-started|Getting Started]] - Beginner-friendly build order for Minecolonies style
-- [[guides/huts|Building Hut Requirements]] - Detailed building requirements and schematic configurations
-- [[guides/parent-child|Parent/Child Buildings]] - Guide to parent/child building relationships
-- [[guides/colony-rules|Colony Rules]] - Colony layout and organization rules
-- [[guides/videos|Videos]] - Collection of useful video links
-- [[guides/farm-videos|Farm Videos]] - Farm video references
+- [Getting Started](guides/getting-started) - Beginner-friendly build order for Minecolonies style
+- [Building Hut Requirements](guides/huts) - Detailed building requirements and schematic configurations
+- [Parent/Child Buildings](guides/parent-child) - Guide to parent/child building relationships
+- [Colony Rules](guides/colony-rules) - Colony layout and organization rules
+- [Videos](guides/videos) - Collection of useful video links
+- [Farm Videos](guides/farm-videos) - Farm video references
 

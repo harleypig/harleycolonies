@@ -5,7 +5,7 @@ Minecolonies style. These huts and workers should be created once the initial
 steps outlined in `Colony Rules` has been completed.
 
 For detailed building requirements, schematic configurations, and technical
-specifications, see [Building Hut Requirements](huts.md).
+specifications, see [Building Hut Requirements](guides/huts).
 
 The exact order depends on your needs, but all of these should be completed
 before moving on to more advanced hut and worker creation.

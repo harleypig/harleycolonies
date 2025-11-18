@@ -10,5 +10,5 @@ title: Resources
 - Use this [template
     world](https://www.planetminecraft.com/project/minecolonies-schematics-worlds/)
     to help with schematics.
-- See [[guides/videos|videos]] for a basic tutorial that might be helpful.
+- See [videos](guides/videos) for a basic tutorial that might be helpful.
 

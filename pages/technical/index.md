@@ -6,8 +6,8 @@ title: Technical Documentation
 
 Technical documentation and references:
 
-- [[technical/modpack-info|Modpack Info]] - Modpack information and structure
-- [[technical/baritone-settings-reference|Baritone Settings Reference]] - Links to Baritone settings
-- [[technical/resources|Resources]] - Development resources and tools
-- [[technical/possible-tags|Possible Tags]] - Tag reference documentation
+- [Modpack Info](technical/modpack-info) - Modpack information and structure
+- [Baritone Settings Reference](technical/baritone-settings-reference) - Links to Baritone settings
+- [Resources](technical/resources) - Development resources and tools
+- [Possible Tags](technical/possible-tags) - Tag reference documentation
 

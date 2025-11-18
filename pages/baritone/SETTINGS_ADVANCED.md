@@ -43,4 +43,4 @@ Start planning the next path once the remaining movements tick estimates sum up 
 ---
 
 
-[← Back to Settings Index](SETTINGS.md)
+[← Back to Settings Index](baritone/SETTINGS)

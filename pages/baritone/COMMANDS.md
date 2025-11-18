@@ -6,17 +6,17 @@ Commands can be executed in-game using the `#` prefix (default), or without a pr
 
 ## Quick Links
 
-- [Building](COMMANDS_BUILDING.md) - 3 commands
-- [Elytra](COMMANDS_ELYTRA.md) - 1 command
-- [Exploration](COMMANDS_EXPLORATION.md) - 2 commands
-- [Farming](COMMANDS_FARMING.md) - 1 command
-- [Following & Entities](COMMANDS_FOLLOWING.md) - 1 command
-- [Mining & Resources](COMMANDS_MINING.md) - 4 commands
-- [Pathfinding & Navigation](COMMANDS_PATHFINDING.md) - 7 commands
-- [Rendering](COMMANDS_RENDERING.md) - 1 command
-- [Schematic Tools](COMMANDS_SCHEMATIC.md) - 2 commands
-- [System & Control](COMMANDS_SYSTEM.md) - 18 commands
-- [Waypoints](COMMANDS_WAYPOINTS.md) - 3 commands
+- [Building](baritone/COMMANDS_BUILDING) - 3 commands
+- [Elytra](baritone/COMMANDS_ELYTRA) - 1 command
+- [Exploration](baritone/COMMANDS_EXPLORATION) - 2 commands
+- [Farming](baritone/COMMANDS_FARMING) - 1 command
+- [Following & Entities](baritone/COMMANDS_FOLLOWING) - 1 command
+- [Mining & Resources](baritone/COMMANDS_MINING) - 4 commands
+- [Pathfinding & Navigation](baritone/COMMANDS_PATHFINDING) - 7 commands
+- [Rendering](baritone/COMMANDS_RENDERING) - 1 command
+- [Schematic Tools](baritone/COMMANDS_SCHEMATIC) - 2 commands
+- [System & Control](baritone/COMMANDS_SYSTEM) - 18 commands
+- [Waypoints](baritone/COMMANDS_WAYPOINTS) - 3 commands
 
 ## Using Commands
 

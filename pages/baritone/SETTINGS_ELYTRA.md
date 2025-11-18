@@ -140,4 +140,4 @@ Has the user read and understood the elytra terms and conditions
 ---
 
 
-[← Back to Settings Index](SETTINGS.md)
+[← Back to Settings Index](baritone/SETTINGS)

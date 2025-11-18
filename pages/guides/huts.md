@@ -3,7 +3,7 @@
 This document provides detailed building requirements and schematic
 configurations for all huts in the custom Minecolonies style.
 
-If you're new to this style, start with the [Getting Started](getting-started.md)
+If you're new to this style, start with the [Getting Started](guides/getting-started)
 guide, which provides a beginner-friendly build order and recommendations.
 
 ## Residence/Guard Tower

@@ -6,16 +6,16 @@ Settings can be modified using the `#set` command in-game, or by editing the `se
 
 ## Quick Links
 
-- [Basic Permissions & Actions](SETTINGS_BASIC.md) - Core permissions for breaking, placing, sprinting, etc.
-- [Pathfinding & Movement](SETTINGS_PATHING.md) - Pathfinding algorithm, movement types, and path optimization
-- [Mining](SETTINGS_MINING.md) - Mining behavior, ore detection, and mining-related settings
-- [Building & Schematics](SETTINGS_BUILDING.md) - Schematic building, block substitution, and builder behavior
-- [Farming](SETTINGS_FARMING.md) - Crop farming and replanting settings
-- [Rendering & Visual](SETTINGS_RENDERING.md) - Visual rendering, colors, and display options
-- [Chat & Control](SETTINGS_CHAT.md) - Chat commands, prefixes, and control settings
-- [Performance & Caching](SETTINGS_PERFORMANCE.md) - Chunk caching, performance optimization, and memory management
-- [Elytra](SETTINGS_ELYTRA.md) - Elytra flight and pathfinding settings
-- [Advanced/Internal](SETTINGS_ADVANCED.md) - Advanced A* settings, internal optimizations, and debugging
+- [Basic Permissions & Actions](baritone/SETTINGS_BASIC) - Core permissions for breaking, placing, sprinting, etc.
+- [Pathfinding & Movement](baritone/SETTINGS_PATHING) - Pathfinding algorithm, movement types, and path optimization
+- [Mining](baritone/SETTINGS_MINING) - Mining behavior, ore detection, and mining-related settings
+- [Building & Schematics](baritone/SETTINGS_BUILDING) - Schematic building, block substitution, and builder behavior
+- [Farming](baritone/SETTINGS_FARMING) - Crop farming and replanting settings
+- [Rendering & Visual](baritone/SETTINGS_RENDERING) - Visual rendering, colors, and display options
+- [Chat & Control](baritone/SETTINGS_CHAT) - Chat commands, prefixes, and control settings
+- [Performance & Caching](baritone/SETTINGS_PERFORMANCE) - Chunk caching, performance optimization, and memory management
+- [Elytra](baritone/SETTINGS_ELYTRA) - Elytra flight and pathfinding settings
+- [Advanced/Internal](baritone/SETTINGS_ADVANCED) - Advanced A* settings, internal optimizations, and debugging
 
 ## Using Settings
 

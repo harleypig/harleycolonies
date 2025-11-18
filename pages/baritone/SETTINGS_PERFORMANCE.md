@@ -113,4 +113,4 @@ This can result in more efficient loading, if you set this to the render distanc
 ---
 
 
-[← Back to Settings Index](SETTINGS.md)
+[← Back to Settings Index](baritone/SETTINGS)

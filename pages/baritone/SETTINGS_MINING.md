@@ -220,4 +220,4 @@ Use sword to mine.
 ---
 
 
-[← Back to Settings Index](SETTINGS.md)
+[← Back to Settings Index](baritone/SETTINGS)

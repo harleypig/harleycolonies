@@ -5,4 +5,4 @@ Many of these can do double or triple duty. See [TODO.md](../TODO.md) for ideas 
 * Cactus, Bamboo, and Sugarcan can be used to make bonemeal.
 * Bamboo and Kelp can be used as a fuel source
 
-For video links, see [[guides/videos|videos]].
+For video links, see [videos](guides/videos).

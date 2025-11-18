@@ -160,4 +160,4 @@ Start building the schematic at a specific layer. Can help on larger builds when
 ---
 
 
-[← Back to Settings Index](SETTINGS.md)
+[← Back to Settings Index](baritone/SETTINGS)
