@@ -8,7 +8,7 @@ HarleyColonies modpack and related resources.
 ## Main Sections
 
 - [Resources](resources) - Useful links, tutorials, and external resources
-- [Style Guide](style/index) - Guide to creating custom Minecolonies styles
+- [Style Guide](style) - Guide to creating custom Minecolonies styles
 - [Mods](mods) - Mod list and documentation
 - [Minecolonies](minecolonies) - Minecolonies-specific information
 
