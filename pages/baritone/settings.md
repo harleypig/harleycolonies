@@ -1,4 +1,6 @@
-# Baritone Settings Documentation
+---
+title: Baritone Settings Documentation
+---
 
 This document provides a comprehensive reference for all Baritone settings, organized by capability.
 

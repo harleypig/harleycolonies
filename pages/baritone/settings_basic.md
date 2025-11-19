@@ -1,4 +1,6 @@
-# Basic Permissions & Actions
+---
+title: Basic Permissions & Actions
+---
 
 This document contains all settings related to basic permissions & actions.
 

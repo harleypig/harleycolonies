@@ -1,4 +1,6 @@
-# Advanced/Internal
+---
+title: Advanced/Internal
+---
 
 This document contains all settings related to advanced/internal.
 

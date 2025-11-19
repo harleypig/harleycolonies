@@ -1,4 +1,6 @@
-# Baritone Commands Documentation
+---
+title: Baritone Commands Documentation
+---
 
 This document provides a comprehensive reference for all Baritone commands, organized by capability.
 

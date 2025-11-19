@@ -1,4 +1,6 @@
-# Rendering
+---
+title: Rendering
+---
 
 This document contains all commands related to rendering.
 

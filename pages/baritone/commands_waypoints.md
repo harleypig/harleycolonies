@@ -1,4 +1,6 @@
-# Waypoints
+---
+title: Waypoints
+---
 
 This document contains all commands related to waypoints.
 

@@ -1,4 +1,6 @@
-# Schematic Tools
+---
+title: Schematic Tools
+---
 
 This document contains all commands related to schematic tools.
 

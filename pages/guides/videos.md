@@ -1,4 +1,6 @@
-# Video Links
+---
+title: Video Links
+---
 
 ## Farm Videos
 

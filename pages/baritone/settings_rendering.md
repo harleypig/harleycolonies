@@ -1,4 +1,6 @@
-# Rendering & Visual
+---
+title: Rendering & Visual
+---
 
 This document contains all settings related to rendering & visual.
 

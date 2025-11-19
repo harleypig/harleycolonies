@@ -1,4 +1,6 @@
-# Elytra
+---
+title: Elytra
+---
 
 This document contains all commands related to elytra.
 

@@ -1,4 +1,6 @@
-# Mining
+---
+title: Mining
+---
 
 This document contains all settings related to mining.
 

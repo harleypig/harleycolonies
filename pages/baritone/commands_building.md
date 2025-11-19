@@ -1,4 +1,6 @@
-# Building
+---
+title: Building
+---
 
 This document contains all commands related to building.
 

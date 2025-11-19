@@ -1,4 +1,6 @@
-# Colony Rules
+---
+title: Colony Rules
+---
 
 General rules for a colony layout.
 

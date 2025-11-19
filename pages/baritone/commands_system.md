@@ -1,4 +1,6 @@
-# System & Control
+---
+title: System & Control
+---
 
 This document contains all commands related to system & control.
 

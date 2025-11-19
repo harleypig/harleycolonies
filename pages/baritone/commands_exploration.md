@@ -1,4 +1,6 @@
-# Exploration
+---
+title: Exploration
+---
 
 This document contains all commands related to exploration.
 

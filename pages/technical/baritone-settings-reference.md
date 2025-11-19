@@ -1,4 +1,6 @@
-# Baritone Settings Reference
+---
+title: Baritone Settings Reference
+---
 
 This document provides links to Baritone's Settings.java file for reference.
 

@@ -1,4 +1,6 @@
-# Building Hut Requirements
+---
+title: Building Hut Requirements
+---
 
 This document provides detailed building requirements and schematic
 configurations for all huts in the custom Minecolonies style.

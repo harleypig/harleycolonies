@@ -1,4 +1,6 @@
-# Following & Entities
+---
+title: Following & Entities
+---
 
 This document contains all commands related to following & entities.
 

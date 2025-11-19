@@ -1,4 +1,6 @@
-# Simple Parent/Child Instructions
+---
+title: Simple Parent/Child Instructions
+---
 
 *(Instructions for designing a building where one structure is embedded inside another — e.g., courier inside warehouse.)*
 
@@ -33,7 +35,7 @@
 
 ---
 
-# Auto-Leveling Parent/Child Instructions
+## Auto-Leveling Parent/Child Instructions
 
 *(Instructions for when the child automatically upgrades whenever the parent upgrades.)*
 
@@ -56,7 +58,7 @@
 
 ---
 
-# Common Instructions
+## Common Instructions
 
 ### Supported Structure
 
@@ -80,7 +82,7 @@
 
 ---
 
-# Examples
+## Examples
 
 ### Parent/Child Example (Manual Embedding)
 
@@ -105,7 +107,7 @@
 
 ---
 
-# Scanning & Embedding Checklist
+## Scanning & Embedding Checklist
 
 **Use this list while preparing scans and blueprints:**
 
@@ -128,7 +130,7 @@
 
 ---
 
-# Troubleshooting
+## Troubleshooting
 
 ### ❗ Anchor Ambiguous
 

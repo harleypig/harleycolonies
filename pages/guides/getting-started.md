@@ -1,4 +1,6 @@
-# Getting Started
+---
+title: Getting Started
+---
 
 This guide provides a beginner-friendly build order for using this custom
 Minecolonies style. These huts and workers should be created once the initial

@@ -1,4 +1,6 @@
-# Pathfinding & Movement
+---
+title: Pathfinding & Movement
+---
 
 This document contains all settings related to pathfinding & movement.
 

@@ -1,4 +1,6 @@
-# Suggested Behavior-Oriented Tags
+---
+title: Suggested Behavior-Oriented Tags
+---
 
 ## Mechanics / Rules
 

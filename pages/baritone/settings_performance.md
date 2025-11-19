@@ -1,4 +1,6 @@
-# Performance & Caching
+---
+title: Performance & Caching
+---
 
 This document contains all settings related to performance & caching.
 

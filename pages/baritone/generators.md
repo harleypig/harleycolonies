@@ -1,4 +1,6 @@
-# Documentation Generators
+---
+title: Documentation Generators
+---
 
 This directory contains automatically generated documentation files. The source files are generated from the Baritone source code using Python scripts located in the `scripts/` directory.
 

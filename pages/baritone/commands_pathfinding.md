@@ -1,4 +1,6 @@
-# Pathfinding & Navigation
+---
+title: Pathfinding & Navigation
+---
 
 This document contains all commands related to pathfinding & navigation.
 

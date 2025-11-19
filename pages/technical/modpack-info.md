@@ -1,4 +1,6 @@
-# Modpack Structure
+---
+title: Modpack Structure
+---
 
 Finding documentation on a Minecraft modpack is proving difficult, so I'll be
 documenting what I find here.

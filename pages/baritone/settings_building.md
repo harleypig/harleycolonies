@@ -1,4 +1,6 @@
-# Building & Schematics
+---
+title: Building & Schematics
+---
 
 This document contains all settings related to building & schematics.
 

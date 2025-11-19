@@ -1,4 +1,6 @@
-# Farming
+---
+title: Farming
+---
 
 This document contains all settings related to farming.
 

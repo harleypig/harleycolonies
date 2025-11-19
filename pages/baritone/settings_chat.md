@@ -1,4 +1,6 @@
-# Chat & Control
+---
+title: Chat & Control
+---
 
 This document contains all settings related to chat & control.
 

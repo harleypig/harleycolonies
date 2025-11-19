@@ -1,4 +1,6 @@
-# Farm Videos
+---
+title: Farm Videos
+---
 
 Many of these can do double or triple duty. See [TODO.md](../TODO.md) for ideas about using the same farm for multiple purposes.
 

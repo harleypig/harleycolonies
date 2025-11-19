@@ -1,4 +1,6 @@
-# Mining & Resources
+---
+title: Mining & Resources
+---
 
 This document contains all commands related to mining & resources.
 

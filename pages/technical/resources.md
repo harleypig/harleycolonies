@@ -1,4 +1,6 @@
-# Development Resources
+---
+title: Development Resources
+---
 
 A collection of useful resources and tools for Minecraft modpack development.
 
