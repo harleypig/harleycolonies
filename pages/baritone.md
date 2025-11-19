@@ -2,8 +2,6 @@
 title: Baritone Documentation
 ---
 
-# Baritone Documentation
-
 Baritone settings and commands documentation:
 
 ## Commands

@@ -2,8 +2,6 @@
 title: Resources
 ---
 
-## Resources
-
 - [Minecolonies Wiki](https://wiki.minecolonies.com)
 - [Schematics](https://minecolonies.com/wiki/tutorials/schematics)
 - [Datapacks](https://minecolonies.com/wiki/tutorials/datapacks)

@@ -1,10 +1,6 @@
 ---
-title: Technical Documentation
+title: Technical Documentation and References
 ---
-
-# Technical Documentation
-
-Technical documentation and references:
 
 - [Modpack Info](technical/modpack-info) - Modpack information and structure
 - [Baritone Settings Reference](technical/baritone-settings-reference) - Links to Baritone settings

@@ -2,8 +2,6 @@
 title: Style Guide
 ---
 
-## Style
-
 I want to create my own style for [Minecolonies](https://minecolonies.com). So
 we need to start with a list of huts. This list is based off of the
 [tutorial](https://minecolonies.com/wiki/tutorials/schematics) for creating

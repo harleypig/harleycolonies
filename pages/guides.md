@@ -2,8 +2,6 @@
 title: Guides
 ---
 
-# Guides
-
 Player-facing guides and tutorials:
 
 - [Getting Started](guides/getting-started) - Beginner-friendly build order for Minecolonies style
