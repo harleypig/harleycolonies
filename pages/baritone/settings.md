@@ -6,16 +6,16 @@ Settings can be modified using the `#set` command in-game, or by editing the `se
 
 ## Quick Links
 
-- [Basic Permissions & Actions](baritone/SETTINGS_BASIC) - Core permissions for breaking, placing, sprinting, etc.
-- [Pathfinding & Movement](baritone/SETTINGS_PATHING) - Pathfinding algorithm, movement types, and path optimization
-- [Mining](baritone/SETTINGS_MINING) - Mining behavior, ore detection, and mining-related settings
-- [Building & Schematics](baritone/SETTINGS_BUILDING) - Schematic building, block substitution, and builder behavior
-- [Farming](baritone/SETTINGS_FARMING) - Crop farming and replanting settings
-- [Rendering & Visual](baritone/SETTINGS_RENDERING) - Visual rendering, colors, and display options
-- [Chat & Control](baritone/SETTINGS_CHAT) - Chat commands, prefixes, and control settings
-- [Performance & Caching](baritone/SETTINGS_PERFORMANCE) - Chunk caching, performance optimization, and memory management
-- [Elytra](baritone/SETTINGS_ELYTRA) - Elytra flight and pathfinding settings
-- [Advanced/Internal](baritone/SETTINGS_ADVANCED) - Advanced A* settings, internal optimizations, and debugging
+- [Basic Permissions & Actions](settings_basic) - Core permissions for breaking, placing, sprinting, etc.
+- [Pathfinding & Movement](settings_pathing) - Pathfinding algorithm, movement types, and path optimization
+- [Mining](settings_mining) - Mining behavior, ore detection, and mining-related settings
+- [Building & Schematics](settings_building) - Schematic building, block substitution, and builder behavior
+- [Farming](settings_farming) - Crop farming and replanting settings
+- [Rendering & Visual](settings_rendering) - Visual rendering, colors, and display options
+- [Chat & Control](settings_chat) - Chat commands, prefixes, and control settings
+- [Performance & Caching](settings_performance) - Chunk caching, performance optimization, and memory management
+- [Elytra](settings_elytra) - Elytra flight and pathfinding settings
+- [Advanced/Internal](settings_advanced) - Advanced A* settings, internal optimizations, and debugging
 
 ## Using Settings
 

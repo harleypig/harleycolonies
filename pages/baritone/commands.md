@@ -6,17 +6,17 @@ Commands can be executed in-game using the `#` prefix (default), or without a pr
 
 ## Quick Links
 
-- [Building](baritone/COMMANDS_BUILDING) - 3 commands
-- [Elytra](baritone/COMMANDS_ELYTRA) - 1 command
-- [Exploration](baritone/COMMANDS_EXPLORATION) - 2 commands
-- [Farming](baritone/COMMANDS_FARMING) - 1 command
-- [Following & Entities](baritone/COMMANDS_FOLLOWING) - 1 command
-- [Mining & Resources](baritone/COMMANDS_MINING) - 4 commands
-- [Pathfinding & Navigation](baritone/COMMANDS_PATHFINDING) - 7 commands
-- [Rendering](baritone/COMMANDS_RENDERING) - 1 command
-- [Schematic Tools](baritone/COMMANDS_SCHEMATIC) - 2 commands
-- [System & Control](baritone/COMMANDS_SYSTEM) - 18 commands
-- [Waypoints](baritone/COMMANDS_WAYPOINTS) - 3 commands
+- [Building](commands_building) - 3 commands
+- [Elytra](commands_elytra) - 1 command
+- [Exploration](commands_exploration) - 2 commands
+- [Farming](commands_farming) - 1 command
+- [Following & Entities](commands_following) - 1 command
+- [Mining & Resources](commands_mining) - 4 commands
+- [Pathfinding & Navigation](commands_pathfinding) - 7 commands
+- [Rendering](commands_rendering) - 1 command
+- [Schematic Tools](commands_schematic) - 2 commands
+- [System & Control](commands_system) - 18 commands
+- [Waypoints](commands_waypoints) - 3 commands
 
 ## Using Commands
 
