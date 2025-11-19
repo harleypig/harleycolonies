@@ -16,6 +16,9 @@ title: Video Links
 * [Moss Farm](https://www.youtube.com/watch?v=n-m7qJxKCqM)
 * [Cobblestone](https://www.youtube.com/watch?v=7u38TamjpGQ)
 * [Concrete](https://www.youtube.com/watch?v=Xiy_DfAJWBE) (not auto)
+* [Starter](https://www.youtube.com/shorts/SHx5Xl2ljao)
+* [Survival Home](https://www.youtube.com/shorts/z3I_n7hiy1o)
+* [XP Farm w/ Armadillos](https://www.youtube.com/shorts/n_U6fSDX9NU)
 
 ### Mob Farms
 
