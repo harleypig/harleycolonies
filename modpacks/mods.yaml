@@ -2065,7 +2065,7 @@ mods:
     curseforge_id: 899487
     metadata:
       tags:
-      - both
+      - server
     versions:
       harleycolonies-1.21.1:
         metadata:
