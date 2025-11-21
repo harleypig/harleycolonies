@@ -167,9 +167,7 @@ effects are enabled, one for when they are disabled).
 
 - `beaconPaymentItemsUI.sixth.tertiaryPosX` (default: `119`)
   - X position of the sixth payment slot when tertiary effects are
-    enabled.
-
-### Modpacks
+    enabled.### Modpacks
 
 This mod is installed in the following modpacks:
 

@@ -1,0 +1,68 @@
+[time]
+	# Use interpolation mode for variable time speeds throughout the day/night cycle
+	speedMethod = "RATIO"
+	enableInterpolatedTime = true
+	interpolatedTimeSmoothingFactor = 0.5
+	
+    # https://minecraft.wiki/w/Daylight_cycle#24-hour_Minecraft_day
+    # Time | Tick    | Note
+    # 0600 | 0/24000 | Start of day
+    # 0610 | 167     | Moon sets
+    # 0800 | 2000    | Villagers begin working (same for colonists?)
+    # 1200 | 6000    | Noon
+    # 1500 | 9000    | Villagers end workday
+    # 1750 | 11834   | Moon rises
+    # 1800 | 12000   | Dusk
+    # 1900 | 13000   | Night
+    # 1942 | 13702   | Sun sets
+    # 0000 | 18000   | Midnight
+    # 0418 | 22300   | Sun appears
+    # 0500 | 23000   | Sun rise
+
+	# Interpolation points: "tick,speed"
+	# Day speed (45 minutes): 10/45 = 0.2222
+	# Night speed (15 minutes): 10/15 = 0.6667
+    # Transition speed
+	interpolatedTimeList = [
+		"0,1.5",           # Start of day - transition
+        "2000,0.2222",     # Start of work day - day speed
+        "12000,1.5",       # Dusk - transition speed
+        "13702,0.6667",    # Night - night speed
+		"24000,0.6667"     # End of cycle - night speed
+	]
+	
+	[time.effects]
+		weatherEffect = "SLEEPING"
+		randomTickEffect = "SLEEPING"
+		baseRandomTickSpeed = 3
+		potionEffect = "NEVER"
+		hungerEffect = "NEVER"
+		blockEntityEffect = "NEVER"
+
+[sleep]
+	enableSleepFeature = true
+	sleepSpeedMax = 110.0
+	sleepSpeedMin = 1.0
+	sleepSpeedAll = -1.0
+	sleepSpeedCurve = 0.3
+	clearWeatherOnWake = false
+	allowDaySleep = false
+	displayBedClock = true
+	ratioPlayersForSleep = 0.25
+
+	[sleep.messages]
+		[sleep.messages.morning]
+			message = "§e§oTempus fugit!"
+			type = "GAME_INFO"
+			target = "DIMENSION"
+
+		[sleep.messages.enterBed]
+			message = "${player} is now sleeping. [${sleepingPlayers}/${totalPlayers}]"
+			type = "GAME_INFO"
+			target = "DIMENSION"
+
+		[sleep.messages.leaveBed]
+			message = "${player} has left their bed. [${sleepingPlayers}/${totalPlayers}]"
+			type = "GAME_INFO"
+			target = "DIMENSION"
+

@@ -1550,6 +1550,7 @@ mods:
       - server-utility
       tags:
       - both
+      - test-side-either
     versions:
       harleycolonies-1.21.1:
         metadata:
