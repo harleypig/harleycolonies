@@ -1,0 +1,20 @@
+autoUse = true
+restrictSleeping = false
+restMultiplier = 2.0
+hammockUse = "DAY"
+sleepingBagUse = "NIGHT"
+daySleepingPercentage = -1
+dayWakeTimeOffset = 0
+nightWakeTimeOffset = 0
+hammocksStopPhantoms = true
+sleepingBagsStopPhantoms = true
+sleepingBagBreakChance = 0
+sleepingBagBreakChanceLuckMultiplier = 0.0
+sleepingBagEffects = [
+  "minecraft:absorption 120 2",
+  "minecraft:regeneration 120 2",
+  "minecraft:resistance 120 1",
+  "minecraft:invisibility 60 1",
+  "minecraft:saturation 120 2"
+]
+

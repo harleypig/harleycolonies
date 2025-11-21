@@ -35,6 +35,7 @@
 ## Mods & Configuration
 
 - Locations of the configuration files for the mods will be added later.
+- https://www.curseforge.com/minecraft/mc-mods/ready-player-fun
 
 ## Technical / Code
 
