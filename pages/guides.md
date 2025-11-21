@@ -9,3 +9,7 @@ Player-facing guides and tutorials:
 - [Videos](guides/videos) - Collection of useful video links
 - [Farm Videos](guides/farm-videos) - Farm video references
 
+## GUI Optimization
+
+- [Pushing Minecraft to its
+    Limits](https://www.youtube.com/watch?v=lBqM25AMGzI)
