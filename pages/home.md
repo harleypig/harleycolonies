@@ -15,4 +15,5 @@ HarleyColonies modpack and related resources.
 
 - [Guides](guides) - Player guides and tutorials
 - [Technical](technical) - Technical documentation and references
+- [Server and Modpack Information](server-and-modpack-information) - Server setup research and modpack configuration decisions
 - [Baritone](baritone) - Baritone settings and commands
