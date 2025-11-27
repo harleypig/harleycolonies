@@ -1,0 +1,22 @@
+name = "Polymorph (Fabric/Forge/Quilt)"
+filename = "polymorph-neoforge-1.1.0+1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "84f8c539fa326dc723ae62b7a6916d6b01982d07"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6794589
+project-id = 388800
+
+[metadata]
+[metadata.curseforge]
+website = "https://www.curseforge.com/minecraft/mc-mods/polymorph"
+issues = "https://github.com/TheIllusiveC4/Polymorph/issues"
+source = "https://github.com/TheIllusiveC4/Polymorph"
+categories = ["mc-miscellaneous"]
+added = 2025-11-20T19:40:51.035651503-07:00
+last-updated = 2025-07-21T10:56:20.123Z
