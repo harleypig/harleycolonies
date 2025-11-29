@@ -51,3 +51,18 @@
 - Consider design where house is above ground (e.g., above space for
     mushrooms, netherwart, etc. or even build a series of farm fields where
     house is 3 blocks up, and guard towers on the corners.
+
+## Tools
+
+### Seed
+- [ ] [ChunkBase](https://chunkbase.com)
+- [ ] [MCSeeder](https://mcseeder.com)
+- [ ] [MCSeedMap](https://mcseedmap.net)
+- [ ] [Cubiomes Viewer](https://github.com/Cubitect/cubiomes-viewer)
+- [ ] [MinecraftSeeds](https://minecraftseeds.vercel.app)
+
+### Misc
+- [ ] [Minecraft Tools](https://minecraft.tools)
+- [ ] [MC Tools](https://mctools.org)
+- [ ] [MatCool's server.properties](https://matcool.github.io/server-properties)
+
