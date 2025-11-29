@@ -10,6 +10,9 @@ and the itzg/minecraft-server Docker image used for running the server.
 - **[itzg Docker Image](itzg-docker-image.md)** - Documentation about the
   itzg/minecraft-server Docker image, including data directory structure,
   volume mounts, and file management
+- **[Environment Variables](environment-variables.md)** - Evaluation of
+  environment variables from itzg/minecraft-server and recommendations for
+  which to use
 
 ## Related Documentation
 

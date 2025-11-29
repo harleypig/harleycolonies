@@ -22,6 +22,11 @@ services:
       VERSION: $VERSION
       NEOFORGE_VERSION: $NEOFORGE_VERSION
       MEMORY: $MEMORY
+      # Timezone for server logs and time-based operations
+      TZ: $TZ
+      # Use Aikar's recommended JVM flags for better performance
+      USE_AIKAR_FLAGS: $USE_AIKAR_FLAGS
+
       ENABLE_RCON: $ENABLE_RCON
       RCON_PASSWORD: $RCON_PASSWORD
       RCON_PORT: $RCON_PORT
