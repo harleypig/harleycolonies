@@ -24,6 +24,10 @@
 # Download: https://www.spigotmc.org/resources/fast-chunk-pregenerator.74429/
 74429
 
+# Light Cleaner
+# Download: https://www.spigotmc.org/resources/light-cleaner.42469/
+42469
+
 ##############################################################################
 # Forge Mods Instead?
 
