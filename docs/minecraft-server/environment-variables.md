@@ -130,27 +130,21 @@ they should be set as environment variables or managed in configuration files.
   - **Location**: env.template
 
 - **USE_AIKAR_FLAGS** (`true`)
-  - **Status**: Not configured
-  - **Recommendation**: Add - Recommended JVM flags for Minecraft servers
-  - **Default**: `false`
-  - **Suggested**: `true` for better performance
-  - **Location**: env.template
+  - **Status**: Hardcoded in docker-compose.yml
+  - **Recommendation**: Keep hardcoded - Recommended JVM flags for Minecraft
+    servers
+  - **Default**: `false` (if not set)
+  - **Value**: `true` (hardcoded)
+  - **Location**: docker-compose.yml
+  - **Note**: Overrides conflicting settings in JVM_OPTS and JVM_XX_OPTS
 
 ### JVM Options
 
-- **JVM_OPTS** (Additional JVM options)
-  - **Status**: Not configured
-  - **Recommendation**: Optional - Add if custom JVM tuning needed
-  - **Default**: None
-  - **Suggested**: Leave empty unless specific tuning required
-  - **Location**: env.template (commented out)
-
-- **JVM_XX_OPTS** (Additional JVM -XX options)
-  - **Status**: Not configured
-  - **Recommendation**: Optional - Add if custom JVM tuning needed
-  - **Default**: None
-  - **Suggested**: Leave empty unless specific tuning required
-  - **Location**: env.template (commented out)
+**Note**: `JVM_OPTS` and `JVM_XX_OPTS` are not included in the configuration
+because `USE_AIKAR_FLAGS` is hardcoded to `true` in docker-compose.yml, which
+overrides conflicting settings in these variables. If custom JVM tuning is
+needed that conflicts with Aikar's flags, `USE_AIKAR_FLAGS` would need to be
+disabled in docker-compose.yml and these variables added to env.template.
 
 ### Server Settings (Should Use Configuration Files)
 
@@ -197,24 +191,31 @@ runtime changes and better separation of concerns.
 
 ### Recommended Additions
 - TZ (timezone)
-- USE_AIKAR_FLAGS
 
-### Optional Additions
-- JVM_OPTS (if custom tuning needed)
-- JVM_XX_OPTS (if custom tuning needed)
+### Hardcoded (Keep as-is)
+- USE_AIKAR_FLAGS: true (hardcoded in docker-compose.yml, overrides
+  conflicting JVM_OPTS/JVM_XX_OPTS)
+
+### Variables Not Included
+- JVM_OPTS (removed - USE_AIKAR_FLAGS overrides conflicting options)
+- JVM_XX_OPTS (removed - USE_AIKAR_FLAGS overrides conflicting options)
 
 ### Hardcoded (Keep as-is)
 - EULA: true
 - TYPE: ARCLIGHT
 - ARCLIGHT_TYPE: NEOFORGE
 - USES_PLUGINS: true
+- USE_AIKAR_FLAGS: true (overrides conflicting JVM_OPTS/JVM_XX_OPTS)
 
 ## Implementation Plan
 
-1. Add TZ and USE_AIKAR_FLAGS to env.template
-2. Add optional JVM_OPTS and JVM_XX_OPTS (commented) to env.template
-3. Update docker-compose.yml to use TZ from environment
-4. Document which settings belong in server.properties vs environment
-  variables
-5. Ensure all required variables are documented in env.template
+1. Add TZ to env.template
+2. Hardcode USE_AIKAR_FLAGS to true in docker-compose.yml
+3. Remove JVM_OPTS and JVM_XX_OPTS from env.template (not useful when
+   USE_AIKAR_FLAGS is enabled)
+4. Update docker-compose.yml to use TZ from environment
+5. Document which settings belong in server.properties vs environment
+   variables
+6. Ensure all required variables are documented in env.template
+7. Document that USE_AIKAR_FLAGS overrides conflicting JVM_OPTS/JVM_XX_OPTS
 
