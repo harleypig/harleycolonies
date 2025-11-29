@@ -48,21 +48,6 @@
     even if defaults are acceptable. Document findings in
     `docs/minecraft-server/` directory.
   - **Docker and Infrastructure Configuration:**
-    - `docker-compose.yml`: Review service definitions, port mappings,
-      environment variables, volume mounts, container settings (tty,
-      stdin_open, restart policy, pull_policy)
-    - `env.template` and `.env`: Review all environment variables from
-      itzg/minecraft-server, including:
-      - Memory settings (MEMORY, potentially INIT_MEMORY/MAX_MEMORY)
-      - Server type (TYPE, ARCLIGHT_TYPE, ARCLIGHT_RELEASE)
-      - Version settings (VERSION, NEOFORGE_VERSION)
-      - RCON configuration (ENABLE_RCON, RCON_PASSWORD, RCON_PORT)
-      - Mod/plugin management (REMOVE_OLD_MODS, SPIGET_RESOURCES,
-        PLUGINS_FILE, CURSEFORGE_FILES, CF_API_KEY)
-      - Timezone (TZ)
-      - JVM flags (USE_AIKAR_FLAGS, JVM_OPTS, JVM_XX_OPTS)
-      - Other variables from [itzg/minecraft-server
-        documentation](https://docker-minecraft-server.readthedocs.io/en/latest/variables/)
     - `extras/` directory: Review plugin and mod list files
       (spiget-plugins.txt, CF_MODLIST, PLUGINS_FILE)
   - **Core Server Configuration Files (in ${DATA_DIR}):**
