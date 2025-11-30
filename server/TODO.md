@@ -62,8 +62,6 @@
       - Resource pack settings
       - Network compression, max tick time
       - All other vanilla server properties
-    - `eula.txt`: Verify EULA acceptance (auto-generated but needs
-      verification)
   - **Player Management Files (in ${DATA_DIR}):**
     - `ops.json`: Review operator management and permission levels
     - `whitelist.json`: Review whitelist management
