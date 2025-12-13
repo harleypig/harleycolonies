@@ -1,5 +1,9 @@
 # Server TODO
 
+## Resources
+
+- [Setup MC](https://setupmc.com)
+
 ## Configuration
 
 - Determine the optimal value for the `MEMORY` variable for the server
