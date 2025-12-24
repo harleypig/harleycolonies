@@ -74,6 +74,7 @@ title: Video Links
 ## Mods & Realistic Builds
 
 * [Realistic looking stuff](https://www.youtube.com/watch?v=TaNxGz7CPJo) - Video about realistic looking builds (from consider-mods.md)
+* [Better than Distant Horizons?](https://www.youtube.com/watch?v=SA_Ngg6hasw)
 
 ## Unclassified
 
