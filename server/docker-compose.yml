@@ -1,11 +1,12 @@
+# https://docker-minecraft-server.readthedocs.io
 services:
   mc:
-    image: itzg/minecraft-server:stable
-    #restart: unless-stopped
+    #image: itzg/minecraft-server:stable
+    image: itzg/minecraft-server:java24-graalvm
     pull_policy: daily
+    restart: unless-stopped
 
     # Enable interactive console
-    # https://docker-minecraft-server.readthedocs.io/en/latest/commands/#enabling-interactive-console
     tty: true
     stdin_open: true
 
@@ -14,17 +15,48 @@ services:
       - ${RCON_PORT}:${RCON_PORT}
 
     environment:
-      EULA: true
-      TYPE: ARCLIGHT
-      ARCLIGHT_TYPE: NEOFORGE
       ARCLIGHT_RELEASE: $ARCLIGHT_RELEASE
-
-      VERSION: $VERSION
-      NEOFORGE_VERSION: $NEOFORGE_VERSION
+      ARCLIGHT_TYPE: NEOFORGE
+      EULA: true
+      # ICON: "https://mc.harleypig.com/hc-icon.png"
+      # MAX_PLAYERS: $MAX_PLAYERS
       MEMORY: $MEMORY
+      # MOTD: "motd here"
+      NEOFORGE_VERSION: $NEOFORGE_VERSION
+      # OVERRIDE_ICON: true
+      TYPE: ARCLIGHT
+      TZ: $TZ
+      USE_MEOWICE_FLAGS: true
+      USE_MEOWICE_GRAALVM_FLAGS: true
+      VERSION: $VERSION
+
+      # Advanced
+      # Content
+      # Miscellaneous
+      # Networking
+      # Players
+
+      # RCON
       ENABLE_RCON: $ENABLE_RCON
       RCON_PASSWORD: $RCON_PASSWORD
       RCON_PORT: $RCON_PORT
+
+      # Resource Pack
+
+      # World
+      # DIFFICULTY: "1"
+      PVP: false
+      MODE: "0"
+      # SIMULATION_DISTANCE: "32"
+      # VIEW_DISTANCE: "12"
+      # SEED: "12345"
+      LEVEL: "HarleyColonies"
+      # LEVEL_TYPE: "normal"
+      # SPAWN_PROTECTION: "256"
+      # MAX_WORLD_SIZE: "29999984"
+
+      # GENERATOR_SETTINGS: |-
+      #   {}
 
       REMOVE_OLD_MODS: $REMOVE_OLD_MODS
       SPIGET_RESOURCES: $SPIGET_PLUGINS
