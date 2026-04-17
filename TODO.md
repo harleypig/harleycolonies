@@ -37,6 +37,12 @@
 - Locations of the configuration files for the mods will be added later.
 - https://www.curseforge.com/minecraft/mc-mods/ready-player-fun
 
+- Set hide-online-players=true in server.properties to keep scanners from
+    tracking players
+- Consider trying to configure something called 'disallow direct-IP joining'
+    ... is it too complex for a simple server?
+- Is there a fail2ban for minecraft servers?
+
 ## Technical / Code
 
 - TODO: Can `blocksToAvoidBreaking` be a HashSet or ImmutableSet? (from Settings.java)
