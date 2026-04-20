@@ -161,3 +161,7 @@ drops land directly in inventory:
   In every case the crop is not harvested, not replanted, and
   the farmland beneath it is never flagged as empty because a
   growing crop block is not air.
+  Expanding the list has been requested upstream —
+  [cabaletta/baritone#896](https://github.com/cabaletta/baritone/issues/896)
+  ("Add berry bushes to #farm") has been open since September
+  2019, so don't hold your breath.
