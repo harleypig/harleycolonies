@@ -117,13 +117,14 @@ drops land directly in inventory:
   self-sustain.
 - Carrots and potatoes are their own "seed," so they self-sustain
   too.
-- Pumpkin and melon stems are the exception — harvesting a
-  pumpkin block or melon block drops the fruit, not seeds.
-  Baritone will only replant pumpkin or melon stems while you
-  already have `pumpkin_seeds` or `melon_seeds` in inventory, and
-  it has no way to craft more from the harvested fruit. Stock
-  seeds up front for pumpkin/melon fields, or expect empty stems
-  once the starter seeds run out.
+- Pumpkin and melon work differently — `FarmProcess` only
+  targets the fruit blocks (`Blocks.PUMPKIN`, `Blocks.MELON`),
+  never the stem. The stem stays intact and regrows a fruit on
+  its own, so there is nothing to replant. Do **not** stock
+  pumpkin or melon seeds for a farm run: if Baritone happens to
+  have seeds on hand it will plant them on the freshly-empty
+  farmland tile beside the existing stem, ending up with a
+  redundant new stem instead of just letting the original regrow.
 
 ### Completion and notifications
 
