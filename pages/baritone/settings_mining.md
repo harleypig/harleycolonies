@@ -44,15 +44,6 @@ If this is true, the builder will treat all non-air blocks as correct. It will o
 
 ---
 
-### `elytraMinFireworksBeforeLanding`
-
-**Type**: `Integer`  
-**Default**: `5`  
-
-The minimum fireworks before landing early for safety
-
----
-
 ### `exploreForBlocks`
 
 **Type**: `Boolean`  
