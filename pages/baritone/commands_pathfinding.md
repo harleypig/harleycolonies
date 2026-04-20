@@ -74,20 +74,6 @@ Usage:
 
 ---
 
-### `surface`, `top`
-
-**Description**: Used to get out of caves, mines, ...  
-
-The surface/top command tells Baritone to head towards the closest surface-like area.
-
-This can be the surface or the highest available air space, depending on circumstances.
-
-Usage:
-> surface - Used to get out of caves, mines, ...
-> top - Used to get out of caves, mines, ...
-
----
-
 ### `thisway`, `forward`
 
 **Description**: Travel in your current direction  

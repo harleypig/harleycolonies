@@ -103,16 +103,4 @@ Temporarily reenabled @see Issue #248
 
 ---
 
-### `worldExploringChunkOffset`
-
-**Type**: `Integer`  
-**Default**: `0`  
-
-While exploring the world, offset the closest unloaded chunk by this much in both axes.
-
-This can result in more efficient loading, if you set this to the render distance.
-
----
-
-
 [← Back to Settings Index](baritone/SETTINGS)

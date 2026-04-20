@@ -182,15 +182,6 @@ For example, if you have Mining Fatigue or Haste, adjust the costs of breaking b
 
 ---
 
-### `disableCompletionCheck`
-
-**Type**: `Boolean`  
-**Default**: `false`  
-
-Turn this on if your exploration filter is enormous, you don't want it to check if it's done, and you are just fine with it just hanging on completion
-
----
-
 ### `disconnectOnArrival`
 
 **Type**: `Boolean`  

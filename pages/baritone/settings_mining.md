@@ -53,32 +53,12 @@ The minimum fireworks before landing early for safety
 
 ---
 
-### `exploreChunkSetMinimumSize`
-
-**Type**: `Integer`  
-**Default**: `10`  
-
-Take the 10 closest chunks, even if they aren't strictly tied for distance metric from origin.
-
----
-
 ### `exploreForBlocks`
 
 **Type**: `Boolean`  
 **Default**: `true`  
 
 When GetToBlock or non-legit Mine doesn't know any locations for the desired block, explore randomly instead of giving up.
-
----
-
-### `exploreMaintainY`
-
-**Type**: `Integer`  
-**Default**: `64`  
-
-Attempt to maintain Y coordinate while exploring
-
--1 to disable
 
 ---
 
@@ -164,15 +144,6 @@ Mine will not scan for or remember more than this many target locations. Note th
 **Default**: `true`  
 
 While mining, should it also consider dropped items of the correct type as a pathing destination (as well as ore blocks)?
-
----
-
-### `notificationOnExploreFinished`
-
-**Type**: `Boolean`  
-**Default**: `true`  
-
-Desktop notification on explore finished
 
 ---
 
