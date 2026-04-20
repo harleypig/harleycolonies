@@ -192,18 +192,35 @@ they look single-slot but aren't.
 Aliases: `sethome`
 
 Convenience alias for `waypoints save home`. Saves a waypoint
-at your current position with the `HOME` tag and no name. Use
-`sethome` from a repeat location (shelter, spawn, stash) that
-you'll want to pair with `home` later.
+at your current position with the `HOME` tag. Extra arguments
+are forwarded to `save`, so `sethome mycolony` becomes
+`waypoints save home mycolony` and saves a named HOME waypoint
+(see [Multiples per tag](#multiples-per-tag) — you can keep
+several named HOME entries).
 
 ## home
 
 Aliases: `home`
 
-Convenience alias for `waypoints goto home`. Sets a goal to
-your most recent `HOME`-tagged waypoint and starts pathing.
-If you have more than one `HOME` waypoint, the standard
-disambiguation picker appears.
+Convenience alias for `waypoints goto home`. Sets a goal to a
+`HOME`-tagged waypoint and starts pathing. If more than one
+`HOME` waypoint exists, the standard disambiguation picker
+appears.
+
+This alias **does not** accept a name — it hard-codes `home` as
+the selector and `goto` only reads one token as selector. So
+`home mycolony` expands to `waypoints goto home mycolony`, which
+collects every HOME waypoint and then either silently picks the
+only match (ignoring `mycolony`) or tries to use `mycolony` as a
+paginator page number and errors. To path to a specifically-
+named waypoint, drop the alias and use the selector directly:
+
+```
+wp goto mycolony
+```
+
+`wp goto <name>` works because selectors fall through to a
+case-insensitive name match when the token isn't a tag name.
 
 ## Best Practices
 
