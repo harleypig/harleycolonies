@@ -5,11 +5,11 @@ title: Building
 Building commands hand Baritone a block-by-block plan and let it
 path, break, and place until the plan matches reality. Plans come
 from three sources: a schematic file on disk (`build`), an open
-schematic in the Litematica or Schematica mod (`litematica`,
-`schematica`), and ad-hoc volumetric operations against a
-selection (`sel`). All four funnel through the same
-`BuilderProcess`, so the settings on this page apply uniformly
-regardless of which entry point you used.
+schematic in the Litematica, Forgematica (its Forge port), or
+Schematica mod (`litematica`, `schematica`), and ad-hoc
+volumetric operations against a selection (`sel`). All four
+funnel through the same `BuilderProcess`, so the settings on this
+page apply uniformly regardless of which entry point you used.
 
 The `sel` command is also the WorldEdit-style tool for creating
 and transforming selections — the same selection objects used
@@ -249,7 +249,9 @@ Move the selection without resizing. Same argument rules as
 
 Aliases: `litematica`
 
-Build a schematic currently loaded in the Litematica mod.
+Build a schematic currently loaded in the Litematica mod, or in
+Forgematica (the Forge port — Baritone detects it through the
+same namespace, so the command works identically).
 
 ### Arguments
 
@@ -259,8 +261,9 @@ Build a schematic currently loaded in the Litematica mod.
 
 ### Error states
 
-- `Litematica is not present` — the Litematica mod isn't
-  loaded. Install the mod or use `build <file>` instead.
+- `Litematica is not present` — neither Litematica nor
+  Forgematica is loaded. Install one of them or use
+  `build <file>` instead.
 - `List of placements has no entry <N>` — the requested
   placement index is out of range.
 - Litematica version errors bubble up from the format parser:
