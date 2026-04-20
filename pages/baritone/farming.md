@@ -3,8 +3,8 @@ title: Farming
 ---
 
 Farming commands tell Baritone to walk a bounded area and automate
-crop harvest and replant. The `FarmProcess` scans within a cubic
-range around a chosen center, harvests ripe crops, picks up the
+crop harvest and replant. The `FarmProcess` scans within a spherical
+radius around a chosen center, harvests ripe crops, picks up the
 drops, applies bonemeal when it has some, and replants where
 allowed by the replant settings.
 
@@ -28,9 +28,11 @@ replant.
 
 ### Arguments
 
-- `[<range>]` — optional integer radius (in blocks) around the
-  center point. When omitted, the scan uses `farmMaxScanSize` to
-  bound the search without a user-supplied cap.
+- `[<range>]` — optional integer radius (in blocks) measured from
+  the center point as a Euclidean distance. Reachable blocks are
+  those where `distance(block, center) ≤ range`, so doubling the
+  argument roughly octuples the scan volume. When omitted, range
+  is unbounded and only `farmMaxScanSize` caps the work.
 - `[<waypoint>]` — optional waypoint that overrides the default
   center. Resolved through `ForWaypoints`, so tab completion
   offers your existing waypoint tags/names. Only valid when a
@@ -108,9 +110,10 @@ and a separate opt-in covers nether wart.
 
 ## Notes & Limitations
 
-- The scan is cubic around the center; if your field is a long
-  strip, pick a center that puts both ends inside the range
-  rather than one at the edge.
+- The reachable area is a sphere around the center, not a cube
+  or square; if your field is a long strip, pick a center in the
+  middle so both ends fall inside the radius rather than placing
+  the center at one end.
 - Replanting requires the matching seed/item in your inventory.
   Baritone will skip replants it can't fulfill; that's the most
   common cause of a partially-replanted field.
