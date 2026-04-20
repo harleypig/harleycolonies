@@ -193,11 +193,14 @@ navigate there without X-ray hints.
   peeking through walls). Forces exploration on regardless of
   `exploreForBlocks`.
 - `legitMineIncludeDiagonals` (Boolean, default `false`) —
-  expand the "visible" rule to include diagonal neighbors.
-  Intentionally off by default because it causes weird cases
-  (e.g. seeing ore across lava without being able to mine to
-  it); enable only if you accept the tradeoff described in the
-  setting comment.
+  expand the "visible" rule to include diagonal neighbors. Off
+  by default because it interacts badly with the lava-adjacency
+  rule: a single visible top ore lets Baritone "see" the whole
+  vein through a lava lake, then mine that vein from the other
+  side without ever breaking a lava-adjacent block. A real
+  player can't see through lava, so the resulting behavior
+  defeats the point of `legitMine`. Enable only if you're
+  willing to give up that plausibility.
 
 ### Internal mining
 
