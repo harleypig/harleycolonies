@@ -81,11 +81,13 @@ implementation.
 
 ### Scan range and scale
 
-- `farmMaxScanSize` (Integer, default `256`) — upper bound on the
-  number of blocks the farming scan will consider. Raising it
-  lets Baritone manage a bigger field in one command at the cost
-  of longer scan ticks; lowering it tightens the working area and
-  keeps scans cheap.
+- `farmMaxScanSize` (Integer, default `256`) — cap on the number
+  of candidate blocks returned by the world scan, not a distance.
+  The scan itself always walks out to 10 chunks around the center
+  and stops once this many matching blocks have been collected.
+  Raising it lets Baritone track more crops at once (useful for
+  dense megafields); lowering it keeps scans cheap at the cost of
+  only seeing the closest matches.
 
 ### Replanting
 
