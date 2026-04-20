@@ -163,14 +163,17 @@ Hard clamps on the Y range Baritone is allowed to mine at.
 Handy for keeping ore runs in the diamond layer without wasting
 time on surface veins, and for legit-style strip mining.
 
-- `minYLevelWhileMining` (Integer, default `0`) — minimum Y
-  level to mine at. `0` disables the clamp. On worlds with
-  negative Y, the value to set is **absolute** after subtracting
-  the world's min height (e.g. Y = –55 on a –64 world → set to
-  9). Counter-intuitive; read the setting comment in
-  `Settings.java` if in doubt.
+- `minYLevelWhileMining` (Integer, default `0`) — minimum Y to
+  mine at, **measured as an offset from the world's bottom Y**,
+  not as a raw coordinate. The filter is
+  `pos.Y ≥ minYLevelWhileMining + dimension.minY`. On a
+  modern overworld (min Y = –64), set `9` to mine at Y ≥ –55.
+  `0` acts as "off" because the resulting floor (`dimension.minY`)
+  is below any real block.
 - `maxYLevelWhileMining` (Integer, default `2031`) — maximum Y
-  level to mine ores at. Default is effectively "no cap."
+  to mine ores at, **as a raw coordinate** (no offset). The
+  asymmetry with the min is a real quirk of the code, not a
+  documentation artifact. Default is effectively "no cap."
 - `legitMineYLevel` (Integer, default `-59`) — Y level legit
   strip mining descends to and operates at. Only used when
   `legitMine` is on.
