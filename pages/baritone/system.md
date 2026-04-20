@@ -195,7 +195,7 @@ in cyan.
 - **Left-click a block** — set a `GoalBlock` to that block and
   start pathing.
 - **Left-click-drag** — create a
-  [selection](building#selections) between the two block
+  [selection](building#sel-selection-s) between the two block
   positions. Replaces any existing selections. Prints a clickable
   `help sel` so you can see what you can do with it.
 - **Right-click a block** — set a `GoalBlock` to the block

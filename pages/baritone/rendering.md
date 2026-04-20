@@ -160,9 +160,9 @@ block to trigger a pressure plate, portal, etc.).
 
 ### Selection rendering
 
-The `sel` command's selection boxes (used for building and
-scaffolding) have their own rendering controls, separate from
-the block-action boxes above.
+The [`sel`](building#sel-selection-s) command's selection boxes
+(used for building and scaffolding) have their own rendering
+controls, separate from the block-action boxes above.
 
 - `renderSelection` (Boolean, default `true`) — master toggle
   for selection rendering.
