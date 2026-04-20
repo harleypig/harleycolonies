@@ -257,9 +257,10 @@ housekeeping.
 
 ## Notes & Limitations
 
-- `help` only shows non-hidden commands. A few commands are
-  marked `hiddenFromHelp()` and won't appear in the listing —
-  you can still run them if you know the name.
+- `help` filters on `hiddenFromHelp()`, a per-command override
+  that defaults to `false`. No command currently overrides it,
+  so every registered command appears in the listing — the
+  filter exists for future use.
 - `set save` is almost never needed because the individual
   mutating subcommands save automatically. The only time you
   benefit from it is after a script or API caller has set a
