@@ -117,7 +117,11 @@ Positional arguments depend on the action. Shared patterns:
 - Name selector: free text.
 - `@ <timestamp>` disambiguation: when a tag or name matches
   multiple waypoints, append a literal `@` and the creation
-  timestamp (milliseconds since epoch) to pick one.
+  timestamp to pick one. The timestamp is parsed strictly as a
+  `long` (milliseconds since epoch) and matched by exact equality
+  — no fuzzy parsing (`last week`, date strings, etc.) and no
+  tolerance, so off-by-one fails. Get the exact value from the
+  clickable chat output or from `wp info`.
 - Position: coordinates in `x y z` form, accepting `~`
   relatives.
 
