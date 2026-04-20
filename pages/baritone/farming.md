@@ -104,6 +104,27 @@ and a separate opt-in covers nether wart.
   Nether wart is opt-in because soul sand is scarce enough that
   you may want the drops without spending the stock on replant.
 
+Replanting is re-evaluated every scan: empty farmland (and soul
+sand, when enabled) stays in the replant queue until inventory
+has a matching seed item, so starting the run with no seeds is
+fine — the first wave of harvests won't replant, but every pass
+after that will, once drops are picked up.
+
+Baritone does not craft. It can only replant whatever vanilla
+drops land directly in inventory:
+
+- Wheat and beetroot crops drop their seeds on harvest, so they
+  self-sustain.
+- Carrots and potatoes are their own "seed," so they self-sustain
+  too.
+- Pumpkin and melon stems are the exception — harvesting a
+  pumpkin block or melon block drops the fruit, not seeds.
+  Baritone will only replant pumpkin or melon stems while you
+  already have `pumpkin_seeds` or `melon_seeds` in inventory, and
+  it has no way to craft more from the harvested fruit. Stock
+  seeds up front for pumpkin/melon fields, or expect empty stems
+  once the starter seeds run out.
+
 ### Completion and notifications
 
 - `notificationOnFarmFail` (Boolean, default `true`) — desktop
