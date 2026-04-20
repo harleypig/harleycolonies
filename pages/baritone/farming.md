@@ -145,3 +145,12 @@ drops land directly in inventory:
   movement settings allow it — combine with your usual safety
   settings (sprint/parkour/etc.) rather than relying on farming
   to avoid hazards.
+- Modded crops are not recognized. The harvest list, the
+  plantable list, and the pickup list are all hardcoded to
+  vanilla `Blocks.*` / `Items.*` references with identity
+  comparisons — there is no tag lookup and no registry hook.
+  Crops from mods like Farmer's Delight (tomatoes, cabbages,
+  rice, onions), Croptopia, Pam's HarvestCraft, etc. are
+  invisible to `FarmProcess`: not harvested, not replanted, and
+  the farmland beneath them is never flagged as empty because a
+  growing modded crop is not air.
