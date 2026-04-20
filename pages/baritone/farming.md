@@ -145,12 +145,19 @@ drops land directly in inventory:
   movement settings allow it — combine with your usual safety
   settings (sprint/parkour/etc.) rather than relying on farming
   to avoid hazards.
-- Modded crops are not recognized. The harvest list, the
-  plantable list, and the pickup list are all hardcoded to
+- Only the eleven crops above are recognized. The harvest list,
+  the plantable list, and the pickup list are all hardcoded to
   vanilla `Blocks.*` / `Items.*` references with identity
-  comparisons — there is no tag lookup and no registry hook.
-  Crops from mods like Farmer's Delight (tomatoes, cabbages,
-  rice, onions), Croptopia, Pam's HarvestCraft, etc. are
-  invisible to `FarmProcess`: not harvested, not replanted, and
-  the farmland beneath them is never flagged as empty because a
-  growing modded crop is not air.
+  comparisons — no tag lookup and no registry hook. That means
+  several other vanilla plants are also invisible to
+  `FarmProcess`, not just modded ones:
+  - **Vanilla, but unsupported**: sweet berry bushes, glow
+    berries / cave vines, chorus fruit, kelp, red and brown
+    mushrooms, crimson/warped fungi and nylium, twisting and
+    weeping vines, torchflower, pitcher crop.
+  - **Modded crops** (Farmer's Delight tomatoes/cabbages/rice/
+    onions, Croptopia, Pam's HarvestCraft, etc.) are invisible
+    for the same reason.
+  In every case the crop is not harvested, not replanted, and
+  the farmland beneath it is never flagged as empty because a
+  growing crop block is not air.
