@@ -160,6 +160,33 @@ The four built-in tags, with their aliases:
 Tags are enum values, not free-form strings. You cannot create
 a new tag.
 
+### Multiples per tag
+
+A tag is a *label*, not a single-slot. Every tag holds a set of
+waypoints, and there's no uniqueness constraint on name or
+position. Running `sethome` from two different locations keeps
+both; dying ten times creates ten `DEATH` entries; interacting
+with two different beds creates two `BED` entries. The only
+dedup is in `WaypointBehavior`, which skips a new `BED` entry
+when one already exists at exactly the same block position.
+
+This means you can treat tags as loose categories and keep the
+name field for disambiguation:
+
+```
+wp s home mycolony
+wp s home friendcolony
+wp s bed remotecamp1
+wp s bed remotecamp2
+```
+
+Both `home` entries coexist. `wp goto home` then shows the
+standard picker so you can choose between `mycolony` and
+`friendcolony` rather than silently grabbing one. The `home`
+alias and `sethome` shortcut are thin wrappers around
+`wp goto home` / `wp save home` and inherit this behavior —
+they look single-slot but aren't.
+
 ## sethome
 
 Aliases: `sethome`
