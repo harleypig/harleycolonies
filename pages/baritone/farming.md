@@ -33,10 +33,10 @@ replant.
   those where `distance(block, center) ≤ range`, so doubling the
   argument roughly octuples the scan volume. When omitted, range
   is unbounded and only `farmMaxScanSize` caps the work.
-- `[<waypoint>]` — optional waypoint that overrides the default
-  center. Resolved through `ForWaypoints`, so tab completion
-  offers your existing waypoint tags/names. Only valid when a
-  `<range>` is also given.
+- `[<waypoint>]` — optional [waypoint](waypoints) that overrides
+  the default center. Resolved through `ForWaypoints`, so tab
+  completion offers your existing waypoint tags/names. Only
+  valid when a `<range>` is also given.
 
 When no `<waypoint>` is supplied, the center is your position at
 the moment the command runs.
