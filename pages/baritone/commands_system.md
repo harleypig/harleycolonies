@@ -6,17 +6,6 @@ This document contains all commands related to system & control.
 
 ## Commands
 
-### `cancel`, `c`, `stop`
-
-**Description**: Cancel what Baritone is currently doing  
-
-The cancel command tells Baritone to stop whatever it's currently doing.
-
-Usage:
-> cancel
-
----
-
 ### `click`
 
 **Description**: Open click  
@@ -39,17 +28,6 @@ Be aware that the ETA to your goal is really unprecise
 
 Usage:
 > eta - View ETA, if present
-
----
-
-### `forcecancel`
-
-**Description**: Force cancel  
-
-Like cancel, but more forceful.
-
-Usage:
-> forcecancel
 
 ---
 
@@ -97,30 +75,6 @@ This command is an alias, for: set modified ...
 
 ---
 
-### `pause`, `p`, `paws`
-
-**Description**: Pauses Baritone until you use resume  
-
-The pause command tells Baritone to temporarily stop whatever it's doing.
-
-This can be used to pause pathing, building, following, whatever. A single use of the resume command will start it right back up again!
-
-Usage:
-> pause
-
----
-
-### `paused`
-
-**Description**: Tells you if Baritone is paused  
-
-The paused command tells you if Baritone is currently paused by use of the pause command.
-
-Usage:
-> paused
-
----
-
 ### `proc`
 
 **Description**: View process state information  
@@ -163,17 +117,6 @@ Usage:
 **Description**: Reset all settings or just one  
 
 This command is an alias, for: set reset ...
-
----
-
-### `resume`, `r`, `unpause`, `unpaws`
-
-**Description**: Resumes Baritone after a pause  
-
-The resume command tells Baritone to resume whatever it was doing when you last used pause.
-
-Usage:
-> resume
 
 ---
 
