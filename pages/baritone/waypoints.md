@@ -101,7 +101,8 @@ the known tag names or aliases.
 #### waypoints goal / g
 
 Set Baritone's goal to a waypoint's position (as a `GoalBlock`)
-without starting to path. Use `path` afterward to begin.
+without starting to path. Use [`path`](pathfinding#path) afterward
+to begin.
 
 #### waypoints goto
 
