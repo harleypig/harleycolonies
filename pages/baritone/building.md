@@ -518,3 +518,15 @@ schematic shape.
   "dry run" or preview — pair it with a sensible
   `startAtLayer` / `buildInLayers` setup if you want to stage
   the build incrementally.
+- `BuilderProcess` tracks exactly one schematic at a time.
+  Running `build`, `litematica`, or `schematica` while another
+  build is active replaces the current plan rather than queuing
+  or merging — the previous schematic, origin, layer progress,
+  and completion tracking are all discarded. To build two
+  schematics back-to-back, wait for the first to finish (or
+  cancel it) before starting the second. To build two things as
+  one plan, merge them into a single schematic file first.
+  Litematica's multiple-placement support is a mod-side feature:
+  the ghost overlays for all loaded placements stay visible, but
+  Baritone only executes the placement index you pass to
+  `litematica`.
