@@ -43,6 +43,7 @@ setting.
 - [avoidBreakingMultiplier](#cost-tuning)
 - [avoidUpdatingFallingBlocks](#fall-safety)
 - [axisHeight](#goal-behavior)
+- [backfill](#backfill)
 - [backtrackCostFavoringCoefficient](#cost-tuning)
 - [blacklistClosestOnFailure](#goal-behavior)
 - [blockBreakAdditionalPenalty](#cost-tuning)
@@ -539,6 +540,40 @@ Low-level behavior Baritone uses while *executing* a path.
 - `strictLiquidCheck` (Boolean, default `false`) — don't break
   blocks adjacent to liquids. Enable if a mod adds non-vanilla
   fluid physics that could drown the pathing.
+
+### Backfill
+
+- `backfill` (Boolean, default `false`) — after breaking a
+  block to pass through it, place a block back in its
+  original position once you've moved on.
+
+Runs as a dedicated `BackfillProcess`: every block Baritone
+breaks while pathing gets recorded (position + pre-break
+state), and the process later tries to place the original
+block back from the hotbar. The effect is "leave no trail"
+pathing — mined tunnels close up behind you.
+
+Conflicts with [`allowParkour`](#movement-rules-what-baritone-may-do):
+enabling both at once is rejected at runtime with
+`Backfill cannot be used with allowParkour true`, and
+`backfill` is force-toggled off. If you want backfill,
+allowParkour has to stay off.
+
+Other constraints and caveats:
+
+- The block must still be in your inventory. Baritone pulls
+  it up to the hotbar via `allowInventory` if needed; without
+  [`allowInventory`](inventory), only hotbar stock is
+  available.
+- Backfill only places vanilla-identical blocks. A tunnel
+  through stone backfills with stone only if you had stone;
+  it won't guess a substitute.
+- Backfill yields to other processes via `DEFER` when there's
+  nothing to place, so it doesn't interfere with active
+  pathing or mining.
+- Placement respects all the normal rotation/reach rules, so
+  backfilling may pause briefly mid-path to aim at an
+  awkward spot.
 
 ### Internal data structures
 

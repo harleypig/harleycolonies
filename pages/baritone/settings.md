@@ -71,6 +71,8 @@ definition.
   protection, silk touch preference, right-click rate.
 - [Look & Rotation](look) — freeLook, block interactions,
   smoothing, jitter, anticheat rotation sync.
+- [Chunk Caching](caching) — the 2-bit chunk cache, packer
+  queue, eviction, sync.
 
 ## Setting types
 
@@ -90,18 +92,6 @@ Values in `settings.txt` and `#set` are parsed as:
   `CLOCKWISE_90`)
 
 Setting names are case-insensitive when used via `#set`.
-
-## Pending consolidation
-
-A handful of settings haven't been grouped into a topic page
-yet. They live in holding-pen files until they find a home:
-
-- [Performance & caching](settings_performance) — chunk cache,
-  packer queue, backfill.
-
-If you land on one of those pages looking for a setting that's
-already been moved, each holding pen points you at the topic
-page that now owns it.
 
 ## Notes
 
