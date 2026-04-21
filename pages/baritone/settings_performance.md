@@ -1,15 +1,23 @@
 ---
-title: Performance & Caching
+title: Performance & Caching (pending consolidation)
 ---
 
-This document contains all settings related to performance & caching.
+This file is a holding pen for performance/caching settings that
+have not yet been moved to a topic page. Settings already
+documented elsewhere (`elytraCacheCullDistance`,
+`elytraTimeBetweenCacheCullSecs`, `extendCacheOnThreshold`,
+`maxCachedWorldScanCount`) have been removed; see
+[elytra](elytra) and [mining](mining) for those.
+
+The settings below still need a home. They cluster around chunk
+caching and the chunk packer queue.
 
 ## Settings
 
 ### `backfill`
 
-**Type**: `Boolean`  
-**Default**: `false`  
+**Type**: `Boolean`
+**Default**: `false`
 
 Fill in blocks behind you
 
@@ -17,8 +25,8 @@ Fill in blocks behind you
 
 ### `cachedChunksExpirySeconds`
 
-**Type**: `Long`  
-**Default**: `-1`  
+**Type**: `Long`
+**Default**: `-1`
 
 Cached chunks (regardless of if they're in RAM or saved to disk) expire and are deleted after this number of seconds -1 to disable
 
@@ -34,8 +42,8 @@ Having a robust cache greatly improves long distance pathfinding, as it's able t
 
 ### `chunkCaching`
 
-**Type**: `Boolean`  
-**Default**: `true`  
+**Type**: `Boolean`
+**Default**: `true`
 
 The big one. Download all chunks in simplified 2-bit format and save them for better very-long-distance pathing.
 
@@ -43,8 +51,8 @@ The big one. Download all chunks in simplified 2-bit format and save them for be
 
 ### `chunkPackerQueueMaxSize`
 
-**Type**: `Integer`  
-**Default**: `2000`  
+**Type**: `Integer`
+**Default**: `2000`
 
 The chunk packer queue can never grow to larger than this, if it does, the oldest chunks are discarded
 
@@ -52,55 +60,13 @@ The newest chunks are kept, so that if you're moving in a straight line quickly 
 
 ---
 
-### `elytraCacheCullDistance`
-
-**Type**: `Integer`  
-**Default**: `5000`  
-
-Maximum distance chunks can be before being culled from the nether pathfinder chunk cache
-
----
-
-### `elytraTimeBetweenCacheCullSecs`
-
-**Type**: `Long`  
-**Default**: `3 minutes`  
-
-Time between culling far away chunks from the nether pathfinder chunk cache
-
----
-
-### `extendCacheOnThreshold`
-
-**Type**: `Boolean`  
-**Default**: `false`  
-
-When the cache scan gives less blocks than the maximum threshold (but still above zero), scan the main world too.
-
-Only if you have a beefy CPU and automatically mine blocks that are in cache
-
----
-
-### `maxCachedWorldScanCount`
-
-**Type**: `Integer`  
-**Default**: `10`  
-
-After finding this many instances of the target block in the cache, it will stop expanding outward the chunk search.
-
----
-
 ### `pruneRegionsFromRAM`
 
-**Type**: `Boolean`  
-**Default**: `true`  
+**Type**: `Boolean`
+**Default**: `true`
 
 On save, delete from RAM any cached regions that are more than 1024 blocks away from the player
 
 Temporarily disabled
 
 Temporarily reenabled @see Issue #248
-
----
-
-[← Back to Settings Index](baritone/SETTINGS)
