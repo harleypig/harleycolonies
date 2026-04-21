@@ -8,11 +8,11 @@ been moved to a topic page. Settings already documented on topic
 pages (`allowBreak`, `allowSprint`, `allowPlace`, `axisHeight`,
 etc.) have been removed; see [pathfinding](pathfinding),
 [building](building), [mining](mining), [rendering](rendering),
-[waypoints](waypoints), and [elytra](elytra) for those.
+[waypoints](waypoints), [elytra](elytra), and [chat](chat) for
+those.
 
 The settings below still need a home. They split roughly into
-inventory/tool handling, chat-adjacent behavior, and
-look/rotation controls.
+inventory/tool handling and look/rotation controls.
 
 ## Settings
 
@@ -161,12 +161,3 @@ The number of ticks to average across for `smoothLook`;
 **Default**: `1`
 
 Wait this many ticks between InventoryBehavior moving inventory items
-
----
-
-### `useMessageTag`
-
-**Type**: `Boolean`
-**Default**: `false`
-
-Use a modern message tag instead of a prefix when logging to chat

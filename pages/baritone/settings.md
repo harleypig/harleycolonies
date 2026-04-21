@@ -63,6 +63,8 @@ definition.
 - [Rendering](rendering) — what is drawn, colors, layers,
   frustum culling.
 - [Waypoints](waypoints) — automatic bed/death waypoints.
+- [Chat & Control](chat) — prefix and chat-control settings,
+  output channels, censoring, debug output.
 
 ## Setting types
 
@@ -90,8 +92,6 @@ yet. They live in holding-pen files until they find a home:
 
 - [Basic permissions & actions](settings_basic) — inventory
   handling, auto-tool, look/rotation controls.
-- [Chat & control](settings_chat) — prefix and logging
-  behavior (pending the `chat` topic page).
 - [Performance & caching](settings_performance) — chunk cache,
   packer queue, backfill.
 

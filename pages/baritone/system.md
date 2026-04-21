@@ -154,11 +154,16 @@ Two common actions have top-level aliases in `DefaultCommands`:
   finish.
 - Writing a value logs the old value as a clickable "click to
   revert" line, so undoing a single setting change is one click.
-- Turning off both `chatControl` and `chatControlAnyway` at the
-  same time, or turning off `prefixControl` when `chatControl`
-  is already off, prints a red warning because the next command
-  will be unreachable. The clickable-revert line lets you back
-  out without restarting.
+- Turning off [`chatControl`](chat#turning-chat-control-on-and-off)
+  while [`chatControlAnyway`](chat#turning-chat-control-on-and-off)
+  is already off (or vice versa) prints a red warning that "Chat
+  commands will no longer work." Turning off
+  [`prefixControl`](chat#turning-chat-control-on-and-off) always
+  prints a red warning that "Prefixed commands will no longer
+  work." In both cases the clickable-revert line on the previous
+  output line lets you back out without restarting, and the other
+  control path (if it's still on) remains usable. See
+  [Chat & Control](chat) for how these settings interact.
 
 #### Error states
 
