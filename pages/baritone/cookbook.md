@@ -7,6 +7,19 @@ combinations that solve a concrete problem. Each recipe links
 out to the topic pages for the underlying settings and
 commands.
 
+**A note on defaults.** Every recipe below lists the full set of
+settings that are related to the task, not just the ones the
+recipe changes. Each `#set` line is annotated `# default` if
+that value is already the out-of-box default, or `# default: X`
+if the recipe is overriding a different default. The reason to
+include defaults explicitly is that these related settings are
+the ones you're most likely to want to tweak for your own
+situation — seeing them all at once gives you a complete menu.
+When pasting into chat, paste only the `#set <name> <value>`
+portion; when pasting into
+`.minecraft/baritone/settings.txt`, drop the `#set` prefix (the
+trailing `# ...` annotations are valid comments in that file).
+
 ## Profile: Good citizen (look human to anticheat)
 
 **Scenario.** You're on a server where staff tolerates Baritone
@@ -16,47 +29,44 @@ instant-snap rotations, no parkour micro-decisions, no inhuman
 inventory shuffling.
 
 ```
-#set antiCheatCompatibility true
-#set freeLook false
-#set blockFreeLook false
-#set smoothLook true
-#set smoothLookTicks 5
-#set randomLooking 0.01
-#set randomLooking113 2
-#set rightClickSpeed 4
-#set blockBreakSpeed 6
-#set allowSprint false
-#set allowParkour false
-#set allowParkourAscend false
-#set allowInventory true
-#set inventoryMoveOnlyIfStationary true
-#set ticksBetweenInventoryMoves 5
-#set itemSaver true
+#set antiCheatCompatibility true         # default
+#set freeLook false                      # default: true
+#set blockFreeLook false                 # default
+#set smoothLook true                     # default: false
+#set smoothLookTicks 5                   # default
+#set randomLooking 0.01                  # default
+#set randomLooking113 2                  # default
+#set rightClickSpeed 4                   # default
+#set blockBreakSpeed 6                   # default
+#set allowSprint false                   # default: true
+#set allowParkour false                  # default
+#set allowParkourAscend false            # default: true (gated by allowParkour)
+#set allowInventory true                 # default: false
+#set inventoryMoveOnlyIfStationary true  # default: false
+#set ticksBetweenInventoryMoves 5        # default: 1
+#set itemSaver true                      # default: false
 ```
 
-The deltas from default that matter most:
+The deltas that matter most:
 
-- `freeLook false` (default `true`) — send real rotations to
-  the server so the direction you appear to look matches the
-  block you're interacting with. See
-  [freeLook](look#free-look).
-- `smoothLook true` (default `false`) — interpolate yaw/pitch
-  over `smoothLookTicks` ticks instead of snapping. See
+- `freeLook false` — send real rotations to the server so the
+  direction you appear to look matches the block you're
+  interacting with. See [freeLook](look#free-look).
+- `smoothLook true` — interpolate yaw/pitch over
+  `smoothLookTicks` ticks instead of snapping. See
   [smoothLook](look#smoothing).
-- `inventoryMoveOnlyIfStationary true` (default `false`) and
-  `ticksBetweenInventoryMoves 5` (default `1`) — pace inventory
-  packets. See [inventory](inventory#anticheat-safe-pacing).
-- `allowSprint false` (default `true`) — vanilla players sprint
-  in bursts; a perpetually-sprinting bot is a classic anticheat
-  flag.
-- `rightClickSpeed 4` / `blockBreakSpeed 6` — both are the
-  vanilla-game defaults. Don't lower them.
+- `inventoryMoveOnlyIfStationary true` and
+  `ticksBetweenInventoryMoves 5` — pace inventory packets. See
+  [inventory](inventory#anticheat-safe-pacing).
+- `allowSprint false` — vanilla players sprint in bursts; a
+  perpetually-sprinting bot is a classic anticheat flag.
 - `itemSaver true` — pause rather than snap a tool; a broken
   pickaxe re-drawing is a bot tell.
 
-Leave `randomLooking*` at their defaults — the tiny yaw/pitch
-jitter Baritone adds helps you blend in. Zero them out only if
-you specifically want identical-frame rotations.
+`rightClickSpeed` and `blockBreakSpeed` are already the vanilla-
+game defaults — don't lower them for this profile. Leave
+`randomLooking*` at their defaults too: the tiny yaw/pitch
+jitter Baritone adds helps you blend in.
 
 ## Profile: Resource-friendly on a lax server
 
@@ -67,35 +77,34 @@ you do something else on the side. This profile is essentially
 "defaults, but turn off the anticheat-evasion overhead."
 
 ```
-#set antiCheatCompatibility false
-#set freeLook true
-#set smoothLook false
-#set randomLooking 0
-#set randomLooking113 0
-#set rightClickSpeed 4
-#set blockBreakSpeed 6
-#set allowSprint true
-#set allowParkour false
-#set allowInventory true
-#set inventoryMoveOnlyIfStationary false
-#set ticksBetweenInventoryMoves 1
-#set chunkCaching true
-#set pruneRegionsFromRAM true
-#set chunkPackerQueueMaxSize 2000
-#set cachedChunksExpirySeconds -1
-#set repackOnAnyBlockChange true
-#set primaryTimeoutMS 500
-#set planAheadPrimaryTimeoutMS 4000
+#set antiCheatCompatibility false        # default: true
+#set freeLook true                       # default
+#set smoothLook false                    # default
+#set randomLooking 0                     # default: 0.01
+#set randomLooking113 0                  # default: 2
+#set rightClickSpeed 4                   # default
+#set blockBreakSpeed 6                   # default
+#set allowSprint true                    # default
+#set allowParkour false                  # default
+#set allowInventory true                 # default: false
+#set inventoryMoveOnlyIfStationary false # default
+#set ticksBetweenInventoryMoves 1        # default
+#set chunkCaching true                   # default
+#set pruneRegionsFromRAM true            # default
+#set chunkPackerQueueMaxSize 2000        # default
+#set cachedChunksExpirySeconds -1        # default
+#set repackOnAnyBlockChange true         # default
+#set primaryTimeoutMS 500                # default
+#set planAheadPrimaryTimeoutMS 4000      # default
 ```
 
 Most of these are already the out-of-box defaults. Worth calling
 out:
 
 - `antiCheatCompatibility false`, `randomLooking 0`,
-  `randomLooking113 0`, `smoothLook false` — no jitter, no
-  rotation averaging, no mandatory server-side rotation sync.
-  Small per-tick savings that add up on long sessions. See
-  [Look & Rotation](look).
+  `randomLooking113 0` — no jitter, no mandatory server-side
+  rotation sync. Small per-tick savings that add up on long
+  sessions. See [Look & Rotation](look).
 - `pruneRegionsFromRAM true` (default) plus
   `cachedChunksExpirySeconds -1` (default) — RAM bounded to
   ~1024 blocks of cached regions, disk cache never expires.
@@ -117,38 +126,38 @@ as fast as the engine allows. Every setting here trades CPU or
 RAM for speed, completeness, or both.
 
 ```
-#set antiCheatCompatibility false
-#set freeLook true
-#set blockFreeLook false
-#set smoothLook false
-#set randomLooking 0
-#set randomLooking113 0
-#set rightClickSpeed 1
-#set blockBreakSpeed 1
-#set allowSprint true
-#set allowParkour true
-#set allowParkourAscend true
-#set allowInventory true
-#set inventoryMoveOnlyIfStationary false
-#set ticksBetweenInventoryMoves 1
-#set itemSaver false
-#set autoTool true
-#set primaryTimeoutMS 2000
-#set failureTimeoutMS 5000
-#set planAheadPrimaryTimeoutMS 10000
-#set planAheadFailureTimeoutMS 15000
-#set movementTimeoutTicks 200
-#set chunkCaching true
-#set pruneRegionsFromRAM false
-#set chunkPackerQueueMaxSize 10000
-#set repackOnAnyBlockChange true
-#set builderTickScanRadius 10
-#set maxCachedWorldScanCount 20
-#set renderPath false
-#set renderGoal false
-#set renderSelectionBoxes false
-#set renderSelection false
-#set renderCachedChunks false
+#set antiCheatCompatibility false        # default: true
+#set freeLook true                       # default
+#set blockFreeLook false                 # default
+#set smoothLook false                    # default
+#set randomLooking 0                     # default: 0.01
+#set randomLooking113 0                  # default: 2
+#set rightClickSpeed 1                   # default: 4
+#set blockBreakSpeed 1                   # default: 6
+#set allowSprint true                    # default
+#set allowParkour true                   # default: false
+#set allowParkourAscend true             # default
+#set allowInventory true                 # default: false
+#set inventoryMoveOnlyIfStationary false # default
+#set ticksBetweenInventoryMoves 1        # default
+#set itemSaver false                     # default
+#set autoTool true                       # default
+#set primaryTimeoutMS 2000               # default: 500
+#set failureTimeoutMS 5000               # default: 2000
+#set planAheadPrimaryTimeoutMS 10000     # default: 4000
+#set planAheadFailureTimeoutMS 15000     # default: 5000
+#set movementTimeoutTicks 200            # default: 100
+#set chunkCaching true                   # default
+#set pruneRegionsFromRAM false           # default: true
+#set chunkPackerQueueMaxSize 10000       # default: 2000
+#set repackOnAnyBlockChange true         # default
+#set builderTickScanRadius 10            # default: 5
+#set maxCachedWorldScanCount 20          # default: 10
+#set renderPath false                    # default: true
+#set renderGoal false                    # default: true
+#set renderSelectionBoxes false          # default: true
+#set renderSelection false               # default: true
+#set renderCachedChunks false            # default
 ```
 
 What's heavy here:
@@ -166,11 +175,11 @@ What's heavy here:
 - `chunkPackerQueueMaxSize 10000` — let the packer buffer
   aggressively before shedding work, so fast elytra / long
   teleports don't leave cache gaps.
-- `builderTickScanRadius 10` (default 5) — the builder rescans
-  a larger ring each tick for schematic discrepancies. More CPU,
-  faster reaction to changes outside player reach.
-- `maxCachedWorldScanCount 20` (default 10) — more ore
-  candidates per mining scan, larger per-tick cost.
+- `builderTickScanRadius 10` — the builder rescans a larger
+  ring each tick for schematic discrepancies. More CPU, faster
+  reaction to changes outside player reach.
+- `maxCachedWorldScanCount 20` — more ore candidates per mining
+  scan, larger per-tick cost.
 - All `render*` turned off — disable path/goal/selection/cached-
   chunk geometry generation each frame. You lose the visual
   feedback; you gain client-side CPU and GPU. See
@@ -181,6 +190,46 @@ What's heavy here:
 Skip the `render*` turn-offs if you actually want to watch
 Baritone work. They're the biggest perceptual difference; the
 other settings only move numbers.
+
+## Differences between the three profiles
+
+Settings where at least two profiles disagree. For any setting
+not listed here, all three profiles use the same value (see each
+profile's full block above). Read the linked topic pages to
+decide whether to pull a value between profiles for your own
+mix.
+
+- **antiCheatCompatibility** — Good citizen `true`; others `false`.
+- **freeLook** — Good citizen `false`; others `true`.
+- **smoothLook** — Good citizen `true`; others `false`.
+- **randomLooking** — Good citizen `0.01`; others `0`.
+- **randomLooking113** — Good citizen `2`; others `0`.
+- **rightClickSpeed** — Max `1`; others `4`.
+- **blockBreakSpeed** — Max `1`; others `6`.
+- **allowSprint** — Good citizen `false`; others `true`.
+- **allowParkour** — Max `true`; others `false`.
+- **allowParkourAscend** — Good citizen `false`; others `true`.
+- **inventoryMoveOnlyIfStationary** — Good citizen `true`;
+  others `false`.
+- **ticksBetweenInventoryMoves** — Good citizen `5`; others `1`.
+- **itemSaver** — Good citizen `true`; others `false`.
+- **primaryTimeoutMS** — Max `2000`; others `500`.
+- **failureTimeoutMS** — Max `5000`; others `2000`.
+- **planAheadPrimaryTimeoutMS** — Max `10000`; others `4000`.
+- **planAheadFailureTimeoutMS** — Max `15000`; others `5000`.
+- **movementTimeoutTicks** — Max `200`; others `100`.
+- **pruneRegionsFromRAM** — Max `false`; others `true`.
+- **chunkPackerQueueMaxSize** — Max `10000`; others `2000`.
+- **builderTickScanRadius** — Max `10`; others `5`.
+- **maxCachedWorldScanCount** — Max `20`; others `10`.
+- **renderPath** / **renderGoal** / **renderSelectionBoxes** /
+  **renderSelection** — Max `false`; others `true`.
+
+Everything else (blockFreeLook, smoothLookTicks,
+allowInventory, chunkCaching, cachedChunksExpirySeconds,
+repackOnAnyBlockChange, renderCachedChunks, autoTool) is the
+same across all three — mostly because these settings' defaults
+are already the right answer in every profile.
 
 ## Flatten a selection from the top down
 
@@ -195,9 +244,18 @@ spawn mobs while you work.
 through `BuilderProcess.build`, so they obey `buildInLayers`
 and `layerOrder` the same way a schematic build does.
 
+The block below lists every layered-building setting —
+`layerHeight`, `startAtLayer`, and `skipFailedLayers` aren't
+required for the minimal recipe but are shown so you can see
+the complete set of knobs and tune them for your specific
+flatten:
+
 ```
-#set buildInLayers true
-#set layerOrder true
+#set buildInLayers true          # default: false
+#set layerOrder true             # default: false (false = bottom-up, true = top-down)
+#set layerHeight 1               # default
+#set startAtLayer 0              # default
+#set skipFailedLayers false      # default
 #sel pos1
 <stand at the opposite corner>
 #sel pos2
@@ -219,19 +277,19 @@ What each line does:
 - `sel cleararea` — shortcut for `sel set air`. Runs against
   every active selection.
 
-**When the selection is tall.** The default `layerHeight=1`
-means one pass per Y-level; for a 30-block-tall hill that's
-30 passes and a lot of vertical repositioning. Bump it up:
+**When the selection is tall.** `layerHeight 1` means one pass
+per Y-level; for a 30-block-tall hill that's 30 passes and a
+lot of vertical repositioning. Bump it up:
 
 ```
-#set layerHeight 3
+#set layerHeight 3               # default: 1
 ```
 
 The trade-off is that inside each 3-block slice the builder
 can reach blocks in any order, so you briefly see a
 3-layer-deep dig face instead of a flat ceiling. For daylight
 work that's fine; for night work with mobs nearby, keep
-`layerHeight=1`.
+`layerHeight 1`.
 
 **Resetting afterwards.** `buildInLayers` and `layerOrder`
 stay on until you turn them off, and they affect normal
@@ -277,8 +335,15 @@ the same way a schematic build does: the builder looks at each
 position, sees grass where it wanted dirt, and treats it as
 already-correct instead of breaking it.
 
+The block below shows the three block-matching-tolerance
+settings that are most relevant here. Only `buildValidSubstitutes`
+changes; the others are shown at default so you know what
+Baritone is doing with unmentioned blocks.
+
 ```
-#set buildValidSubstitutes dirt->grass_block
+#set buildValidSubstitutes dirt->grass_block   # default: {} (empty)
+#set buildIgnoreBlocks                         # default: [] (empty)
+#set buildIgnoreExisting false                 # default
 #sel pos1
 <stand at the opposite corner>
 #sel pos2
@@ -307,7 +372,7 @@ except the one block type you want to preserve.
 coarse dirt, dirt paths), extend the substitute list:
 
 ```
-#set buildValidSubstitutes dirt->grass_block,podzol,coarse_dirt,dirt_path
+#set buildValidSubstitutes dirt->grass_block,podzol,coarse_dirt,dirt_path   # default: {} (empty)
 ```
 
 Dirt-to-dirt mappings aren't needed — identical blocks always
@@ -349,8 +414,17 @@ Whenever the builder looks at a position that's air in the
 schematic but contains one of these blocks in the world, it
 treats the position as already-correct and moves on.
 
+The settings below are the full block-matching-tolerance knobs
+that interact with this recipe. Only `buildIgnoreBlocks`
+changes; `buildValidSubstitutes` is shown empty because you'd
+reach for it next if the schematic asks for non-air at a
+spawner (see below).
+
 ```
-#set buildIgnoreBlocks spawner,torch,wall_torch
+#set buildIgnoreBlocks spawner,torch,wall_torch   # default: [] (empty)
+#set buildValidSubstitutes                        # default: {} (empty)
+#set buildIgnoreExisting false                    # default
+#set okIfAir                                      # default: [] (empty)
 #sel pos1
 <stand at the opposite corner>
 #sel pos2
@@ -388,7 +462,7 @@ broken regardless of this list. Two fixes for that case:
   spawner:
 
   ```
-  #set buildValidSubstitutes stone->spawner
+  #set buildValidSubstitutes stone->spawner   # default: {} (empty)
   ```
 
   Now any position where the schematic wants stone but the world
