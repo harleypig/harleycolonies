@@ -65,6 +65,12 @@ definition.
 - [Waypoints](waypoints) — automatic bed/death waypoints.
 - [Chat & Control](chat) — prefix and chat-control settings,
   output channels, censoring, debug output.
+- [Inventory](inventory) — moving items between inventory and
+  hotbar, pacing, anticheat-safe swaps.
+- [Tools & Item Handling](tools) — auto-tool, durability
+  protection, silk touch preference, right-click rate.
+- [Look & Rotation](look) — freeLook, block interactions,
+  smoothing, jitter, anticheat rotation sync.
 
 ## Setting types
 
@@ -90,8 +96,6 @@ Setting names are case-insensitive when used via `#set`.
 A handful of settings haven't been grouped into a topic page
 yet. They live in holding-pen files until they find a home:
 
-- [Basic permissions & actions](settings_basic) — inventory
-  handling, auto-tool, look/rotation controls.
 - [Performance & caching](settings_performance) — chunk cache,
   packer queue, backfill.
 

@@ -70,3 +70,12 @@ On save, delete from RAM any cached regions that are more than 1024 blocks away 
 Temporarily disabled
 
 Temporarily reenabled @see Issue #248
+
+---
+
+### `repackOnAnyBlockChange`
+
+**Type**: `Boolean`
+**Default**: `true`
+
+Whenever a block changes, repack the whole chunk that it's in
