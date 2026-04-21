@@ -7,6 +7,181 @@ combinations that solve a concrete problem. Each recipe links
 out to the topic pages for the underlying settings and
 commands.
 
+## Profile: Good citizen (look human to anticheat)
+
+**Scenario.** You're on a server where staff tolerates Baritone
+but you'd rather not draw attention. You want movement, look,
+and inventory interaction to look as human as they can — no
+instant-snap rotations, no parkour micro-decisions, no inhuman
+inventory shuffling.
+
+```
+#set antiCheatCompatibility true
+#set freeLook false
+#set blockFreeLook false
+#set smoothLook true
+#set smoothLookTicks 5
+#set randomLooking 0.01
+#set randomLooking113 2
+#set rightClickSpeed 4
+#set blockBreakSpeed 6
+#set allowSprint false
+#set allowParkour false
+#set allowParkourAscend false
+#set allowInventory true
+#set inventoryMoveOnlyIfStationary true
+#set ticksBetweenInventoryMoves 5
+#set itemSaver true
+```
+
+The deltas from default that matter most:
+
+- `freeLook false` (default `true`) — send real rotations to
+  the server so the direction you appear to look matches the
+  block you're interacting with. See
+  [freeLook](look#free-look).
+- `smoothLook true` (default `false`) — interpolate yaw/pitch
+  over `smoothLookTicks` ticks instead of snapping. See
+  [smoothLook](look#smoothing).
+- `inventoryMoveOnlyIfStationary true` (default `false`) and
+  `ticksBetweenInventoryMoves 5` (default `1`) — pace inventory
+  packets. See [inventory](inventory#anticheat-safe-pacing).
+- `allowSprint false` (default `true`) — vanilla players sprint
+  in bursts; a perpetually-sprinting bot is a classic anticheat
+  flag.
+- `rightClickSpeed 4` / `blockBreakSpeed 6` — both are the
+  vanilla-game defaults. Don't lower them.
+- `itemSaver true` — pause rather than snap a tool; a broken
+  pickaxe re-drawing is a bot tell.
+
+Leave `randomLooking*` at their defaults — the tiny yaw/pitch
+jitter Baritone adds helps you blend in. Zero them out only if
+you specifically want identical-frame rotations.
+
+## Profile: Resource-friendly on a lax server
+
+**Scenario.** Server staff don't care about bots, and you don't
+care about looking human, but you also don't want Baritone
+hogging your client or flooding the server with packets while
+you do something else on the side. This profile is essentially
+"defaults, but turn off the anticheat-evasion overhead."
+
+```
+#set antiCheatCompatibility false
+#set freeLook true
+#set smoothLook false
+#set randomLooking 0
+#set randomLooking113 0
+#set rightClickSpeed 4
+#set blockBreakSpeed 6
+#set allowSprint true
+#set allowParkour false
+#set allowInventory true
+#set inventoryMoveOnlyIfStationary false
+#set ticksBetweenInventoryMoves 1
+#set chunkCaching true
+#set pruneRegionsFromRAM true
+#set chunkPackerQueueMaxSize 2000
+#set cachedChunksExpirySeconds -1
+#set repackOnAnyBlockChange true
+#set primaryTimeoutMS 500
+#set planAheadPrimaryTimeoutMS 4000
+```
+
+Most of these are already the out-of-box defaults. Worth calling
+out:
+
+- `antiCheatCompatibility false`, `randomLooking 0`,
+  `randomLooking113 0`, `smoothLook false` — no jitter, no
+  rotation averaging, no mandatory server-side rotation sync.
+  Small per-tick savings that add up on long sessions. See
+  [Look & Rotation](look).
+- `pruneRegionsFromRAM true` (default) plus
+  `cachedChunksExpirySeconds -1` (default) — RAM bounded to
+  ~1024 blocks of cached regions, disk cache never expires.
+  The cache is self-correcting, so old data never causes wrong
+  pathing. See [eviction](caching#eviction).
+- `chunkPackerQueueMaxSize 2000` (default) — if you churn
+  chunks faster than the packer can keep up (fast travel,
+  elytra), the packer sheds oldest work instead of queueing
+  unbounded. See [packer backpressure](caching#packer-backpressure).
+- Leave `primaryTimeoutMS` and `planAheadPrimaryTimeoutMS` at
+  default. Raising them is a CPU-for-completeness trade you
+  don't want on a shared machine.
+
+## Profile: Maximum throughput (CPU is cheap)
+
+**Scenario.** Dedicated machine, you don't care about anticheat
+or fan noise, and you want Baritone to path, mine, and build
+as fast as the engine allows. Every setting here trades CPU or
+RAM for speed, completeness, or both.
+
+```
+#set antiCheatCompatibility false
+#set freeLook true
+#set blockFreeLook false
+#set smoothLook false
+#set randomLooking 0
+#set randomLooking113 0
+#set rightClickSpeed 1
+#set blockBreakSpeed 1
+#set allowSprint true
+#set allowParkour true
+#set allowParkourAscend true
+#set allowInventory true
+#set inventoryMoveOnlyIfStationary false
+#set ticksBetweenInventoryMoves 1
+#set itemSaver false
+#set autoTool true
+#set primaryTimeoutMS 2000
+#set failureTimeoutMS 5000
+#set planAheadPrimaryTimeoutMS 10000
+#set planAheadFailureTimeoutMS 15000
+#set movementTimeoutTicks 200
+#set chunkCaching true
+#set pruneRegionsFromRAM false
+#set chunkPackerQueueMaxSize 10000
+#set repackOnAnyBlockChange true
+#set builderTickScanRadius 10
+#set maxCachedWorldScanCount 20
+#set renderPath false
+#set renderGoal false
+#set renderSelectionBoxes false
+#set renderSelection false
+#set renderCachedChunks false
+```
+
+What's heavy here:
+
+- `rightClickSpeed 1` / `blockBreakSpeed 1` — interact every
+  tick. Values below 1 are clamped to 1.
+- `primaryTimeoutMS 2000` / `failureTimeoutMS 5000` and their
+  `planAhead*` twins raised 2-3× — let A\* search longer before
+  giving up. More CPU per planning pass, but fewer dead-end
+  re-plans and better long paths. See
+  [timeouts](pathfinding#timeouts).
+- `pruneRegionsFromRAM false` — never drop cached regions from
+  RAM. With a roaming bot this can grow large; trade disk reads
+  for resident memory. See [eviction](caching#eviction).
+- `chunkPackerQueueMaxSize 10000` — let the packer buffer
+  aggressively before shedding work, so fast elytra / long
+  teleports don't leave cache gaps.
+- `builderTickScanRadius 10` (default 5) — the builder rescans
+  a larger ring each tick for schematic discrepancies. More CPU,
+  faster reaction to changes outside player reach.
+- `maxCachedWorldScanCount 20` (default 10) — more ore
+  candidates per mining scan, larger per-tick cost.
+- All `render*` turned off — disable path/goal/selection/cached-
+  chunk geometry generation each frame. You lose the visual
+  feedback; you gain client-side CPU and GPU. See
+  [rendering](rendering).
+- `itemSaver false` — stop pausing to protect low-durability
+  tools. If you're OK with breaks, remove the pacing stop.
+
+Skip the `render*` turn-offs if you actually want to watch
+Baritone work. They're the biggest perceptual difference; the
+other settings only move numbers.
+
 ## Flatten a selection from the top down
 
 **Problem.** You want to flatten terrain (or any filled
