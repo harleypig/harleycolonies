@@ -196,7 +196,7 @@ off a ledge yourself, or let Baritone do it for you.
   after you've read the in-game gatekeep message once to stop it
   reappearing. Purely a UX setting; does not change behavior.
 
-## Notes & Limitations
+## Notes and Limitations
 
 - Only works in the Nether.
 - Only works with **vanilla** firework boosting — no "hacks"/mods that

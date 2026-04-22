@@ -131,7 +131,7 @@ None. Tab completion is empty.
   notification when exploration finishes (either "Explored all chunks"
   on success, or "Exploration failed" on failure).
 
-## Notes & Limitations
+## Notes and Limitations
 
 - `explore` picks chunks using Baritone's chunk cache plus the
   optional filter. It won't "un-explore" a chunk that Baritone has

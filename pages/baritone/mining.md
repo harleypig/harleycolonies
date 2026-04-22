@@ -262,7 +262,7 @@ that happens and how much it remembers.
   notification when mining fails (no candidates, no reachable
   candidates, etc.).
 
-## Notes & Limitations
+## Notes and Limitations
 
 - `find` only works for blocks in
   `CachedChunk.BLOCKS_TO_KEEP_TRACK_OF`. The cache is a

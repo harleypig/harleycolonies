@@ -1,5 +1,5 @@
 ---
-title: Pathfinding & Navigation
+title: Pathfinding and Navigation
 ---
 
 Pathfinding is Baritone's core loop: given a goal, compute a sequence
@@ -585,7 +585,7 @@ rare low-memory or profiling scenarios.
 - `pathingMapLoadFactor` (Float, default `0.75`) — load factor.
   Lower is faster but uses more memory.
 
-## Notes & Limitations
+## Notes and Limitations
 
 - `goal` and `goto` both accept the same coordinate forms, but
   `goal` *only* sets the goal. `goto` also calls `setGoalAndPath`,

@@ -149,7 +149,7 @@ unless you're profiling pack-thread overhead — turning it off
 saves packer work at the cost of stale "where is the chest"
 info for those block categories.
 
-## Notes & Limitations
+## Notes and Limitations
 
 - Region storage is keyed by world — singleplayer worlds,
   each multiplayer server, and each dimension on a server

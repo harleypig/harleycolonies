@@ -246,7 +246,7 @@ waypoint cache on your behalf — e.g. on a server where you'd
 rather manage bed positions manually, or if death waypoints
 are polluting your list during testing.
 
-## Notes & Limitations
+## Notes and Limitations
 
 - The restore history is in-memory and per-session. Closing
   Minecraft (or disconnecting and reconnecting) empties the

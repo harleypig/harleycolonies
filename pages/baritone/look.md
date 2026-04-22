@@ -1,5 +1,5 @@
 ---
-title: Look & Rotation
+title: Look and Rotation
 ---
 
 Baritone controls two separate rotation states: the **server-
@@ -161,7 +161,7 @@ doesn't move, but the server sees consistent look+movement.
 Turn off only if you're instrumenting rotations for testing
 and want the unmodified server-sided rotation to come through.
 
-## Notes & Limitations
+## Notes and Limitations
 
 - `blockFreeLook` without `freeLook` is a no-op: the outer
   `freeLook` gate must be open for the inner check to fire.

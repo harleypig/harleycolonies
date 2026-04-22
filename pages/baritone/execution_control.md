@@ -73,7 +73,7 @@ Use `cancel` by default. Reach for `forcecancel` only when `cancel`
 isn't actually stopping things — for example, if Baritone seems stuck
 in an un-cancellable action.
 
-## Notes & Limitations
+## Notes and Limitations
 
 - All five commands take zero positional arguments. Passing any
   argument produces an argument-count error from the command parser.

@@ -1,5 +1,5 @@
 ---
-title: Tools & Item Handling
+title: Tools and Item Handling
 ---
 
 Baritone's auto-tool picks the best tool in your inventory for
@@ -122,7 +122,7 @@ so the default matches vanilla. `BlockPlaceHelper` subtracts
 right-click as fast as possible; raising it slows placement
 and can help on servers that flag rapid block placement.
 
-## Notes & Limitations
+## Notes and Limitations
 
 - Auto-tool only triggers on the *break* path. Tool choice for
   right-click interactions (hoe on grass for farming, bucket

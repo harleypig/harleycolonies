@@ -79,7 +79,7 @@ firework-slot refill cooldown (`invTickCountdown` in
 `ElytraBehavior`), so raising it affects how quickly the
 elytra process can re-arm after firing a rocket.
 
-## Notes & Limitations
+## Notes and Limitations
 
 - `allowInventory` is checked at the point of each action, not
   once at the start of a task. Toggling it mid-run takes

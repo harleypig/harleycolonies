@@ -1,5 +1,5 @@
 ---
-title: System & Control
+title: System and Control
 ---
 
 System commands cover the meta-layer: command discovery, settings,
@@ -163,7 +163,7 @@ Two common actions have top-level aliases in `DefaultCommands`:
   work." In both cases the clickable-revert line on the previous
   output line lets you back out without restarting, and the other
   control path (if it's still on) remains usable. See
-  [Chat & Control](chat) for how these settings interact.
+  [Chat and Control](chat) for how these settings interact.
 
 #### Error states
 
@@ -260,7 +260,7 @@ session where memory has grown; modern JVMs rarely benefit from
 it, so treat this as a debug tool rather than routine
 housekeeping.
 
-## Notes & Limitations
+## Notes and Limitations
 
 - `help` filters on `hiddenFromHelp()`, a per-command override
   that defaults to `false`. No command currently overrides it,

@@ -496,7 +496,7 @@ schematic shape.
   build scaffolding more aggressively; higher values push it
   toward cleaner pathing.
 
-## Notes & Limitations
+## Notes and Limitations
 
 - The `build` command resolves paths relative to
   `.minecraft/schematics/`, not the Baritone directory. That's

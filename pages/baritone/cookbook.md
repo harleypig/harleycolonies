@@ -104,7 +104,7 @@ out:
 - `antiCheatCompatibility false`, `randomLooking 0`,
   `randomLooking113 0` — no jitter, no mandatory server-side
   rotation sync. Small per-tick savings that add up on long
-  sessions. See [Look & Rotation](look).
+  sessions. See [Look and Rotation](look).
 - `pruneRegionsFromRAM true` (default) plus
   `cachedChunksExpirySeconds -1` (default) — RAM bounded to
   ~1024 blocks of cached regions, disk cache never expires.

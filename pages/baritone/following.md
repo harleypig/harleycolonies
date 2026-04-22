@@ -107,7 +107,7 @@ of fire.
   sweep would otherwise drag Baritone across the whole render
   distance.
 
-## Notes & Limitations
+## Notes and Limitations
 
 - The target list is a live filter, not a snapshot. A new
   skeleton spawning inside your render distance while you have

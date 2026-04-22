@@ -1,5 +1,5 @@
 ---
-title: Chat & Control
+title: Chat and Control
 ---
 
 Baritone's chat integration does two separate jobs: it reads
@@ -188,7 +188,7 @@ Two independent toggles redact coordinate values from output:
 Turn both on together when recording or streaming with
 coordinate-sensitive content.
 
-## Notes & Limitations
+## Notes and Limitations
 
 - All the "permissive" chat-control settings (`chatControl`,
   `chatControlAnyway`, `prefixControl`) default to on. Baritone

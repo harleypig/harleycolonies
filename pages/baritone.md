@@ -47,7 +47,7 @@ Each topic page follows the same shape:
 4. **Best Practices** — settings grouped by theme, with
    explanations of how they interact and which combinations
    make sense.
-5. **Notes & Limitations** — caveats and cross-references to
+5. **Notes and Limitations** — caveats and cross-references to
    related pages.
 
 Settings live on their topic page, not in a flat reference.
@@ -58,7 +58,7 @@ descriptions, see [settings](baritone/settings).
 
 ### Feature commands
 
-- [Pathfinding & Navigation](baritone/pathfinding) — `goal`,
+- [Pathfinding and Navigation](baritone/pathfinding) — `goal`,
   `goto`, `path`, `invert`, `axis`, `come`, `surface`,
   `thisway`, plus movement rules, cost tuning, timeouts,
   avoidance, and backfill.
@@ -76,9 +76,9 @@ descriptions, see [settings](baritone/settings).
 - [Waypoints](baritone/waypoints) — `waypoints`, `sethome`,
   `home`; bookmarking positions.
 
-### Control & system
+### Control and system
 
-- [System & Control](baritone/system) — `set`, `help`,
+- [System and Control](baritone/system) — `set`, `help`,
   `version`, `click`, `reloadall`, `saveall`, `repack`, `gc`,
   `proc`, `eta`.
 - [Execution Control](baritone/execution_control) — `pause`,
@@ -88,14 +88,14 @@ descriptions, see [settings](baritone/settings).
 
 These pages own settings that affect many activities at once.
 
-- [Chat & Control](baritone/chat) — prefix and chat-control
+- [Chat and Control](baritone/chat) — prefix and chat-control
   settings, output channels, censoring, debug output.
 - [Inventory](baritone/inventory) — inventory-to-hotbar moves
   and anticheat-safe pacing.
-- [Tools & Item Handling](baritone/tools) — auto-tool,
+- [Tools and Item Handling](baritone/tools) — auto-tool,
   durability protection, silk-touch preference, right-click
   rate.
-- [Look & Rotation](baritone/look) — freeLook, smoothing,
+- [Look and Rotation](baritone/look) — freeLook, smoothing,
   randomization, anticheat rotation sync.
 - [Rendering](baritone/rendering) — what is drawn, colors,
   layers, frustum culling.

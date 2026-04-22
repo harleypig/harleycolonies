@@ -211,7 +211,7 @@ expensive.
   turn off `renderCachedChunks` instead of setting opacity to
   zero), `1` = fully opaque.
 
-## Notes & Limitations
+## Notes and Limitations
 
 - Elytra debug rendering (`elytraRenderRaytraces`,
   `elytraRenderHitboxRaytraces`, `elytraRenderSimulation`) lives

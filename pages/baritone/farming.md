@@ -132,7 +132,7 @@ drops land directly in inventory:
   notification when farming fails (e.g., no harvestable crops in
   range, or pathing to them is impossible).
 
-## Notes & Limitations
+## Notes and Limitations
 
 - The reachable area is a sphere around the center, not a cube
   or square; if your field is a long strip, pick a center in the

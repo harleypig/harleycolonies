@@ -45,10 +45,10 @@ setting it owns, alphabetical, linked to a section that
 discusses the setting in context rather than as an isolated
 definition.
 
-- [Pathfinding & Navigation](pathfinding) — movement rules, cost
+- [Pathfinding and Navigation](pathfinding) — movement rules, cost
   tuning, avoidance, fall safety, timeouts, path shape, goal
   behavior, A* internals.
-- [Building & Schematics](building) — schematic loading, block
+- [Building and Schematics](building) — schematic loading, block
   substitution, builder pacing, scaffolding, map-art mode.
 - [Mining](mining) — ore scanning, legit mode, branch mining,
   tunnel behavior, pickup.
@@ -63,13 +63,13 @@ definition.
 - [Rendering](rendering) — what is drawn, colors, layers,
   frustum culling.
 - [Waypoints](waypoints) — automatic bed/death waypoints.
-- [Chat & Control](chat) — prefix and chat-control settings,
+- [Chat and Control](chat) — prefix and chat-control settings,
   output channels, censoring, debug output.
 - [Inventory](inventory) — moving items between inventory and
   hotbar, pacing, anticheat-safe swaps.
-- [Tools & Item Handling](tools) — auto-tool, durability
+- [Tools and Item Handling](tools) — auto-tool, durability
   protection, silk touch preference, right-click rate.
-- [Look & Rotation](look) — freeLook, block interactions,
+- [Look and Rotation](look) — freeLook, block interactions,
   smoothing, jitter, anticheat rotation sync.
 - [Chunk Caching](caching) — the 2-bit chunk cache, packer
   queue, eviction, sync.
