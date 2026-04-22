@@ -79,3 +79,58 @@ tracking. The usual workaround is to build a tiny throwaway
 schematic in Litematica's Area Editor containing exactly the
 blocks and quantities you want, then use its Material List as
 the tracker.
+
+## Can Baritone clean up after itself — remove scaffolding it placed and refill voids it dug?
+
+**No.** Baritone places scaffolding/bridging blocks and digs
+through whatever is in its way, but there's no cleanup pass for
+either — no command and no setting. After a build or a long
+`goto`, you end up with a trail of cobblestone pillars, bridges,
+and tunnels and Baritone considers its work done.
+
+Why nothing does this automatically:
+
+- **Scaffolding isn't tracked.** When Baritone places a
+  throwaway block (default list in
+  `acceptableThrowawayItems`),
+  it just places it as a normal block and forgets the position.
+  Without a tracked list, "remove what I placed" is
+  indistinguishable from "remove every cobblestone in the area"
+  — which would happily eat your existing builds.
+- **Tunnels aren't tracked either.** When pathfinding digs
+  through stone to reach a build site, the dug positions aren't
+  recorded as "Baritone's mess" — they're just the lowest-cost
+  path that was found.
+
+Workarounds, in order of how well they actually work:
+
+1. **Select-and-clear or fill the affected region.** If you
+   know roughly where the mess is, [`#sel pos1`](building#sel--selection--s)
+   / `#sel pos2` around it and either
+   [`#sel cleararea`](building#fill-actions) (to remove pillars
+   and bridges) or `#sel fill <block>` (to refill voids you
+   dug). This is the closest thing to a real cleanup.
+2. **`#mine <block>` for the scaffolding material** — works but
+   blunt: it'll target *every* block of that type in scan range,
+   including any pre-existing structures and natural deposits,
+   not just the ones Baritone placed.
+3. **Pre-empt the mess.** If you're willing to plan ahead,
+   building from a Litematica schematic that includes the access
+   ramp / staircase you want means Baritone uses the schematic
+   instead of improvising scaffolding. You still need to break
+   the access path manually after, but at least it's in a known
+   shape.
+
+For the void-refilling case there's nothing better than option
+1 — Baritone doesn't know what was there before it dug.
+
+If this is something you want often, opening an issue upstream
+asking for an opt-in "track placed scaffolding" mode is a
+reasonable feature request — currently this is a deliberate gap,
+not a bug.
+
+**Related:**
+[sel](building#sel--selection--s),
+[sel cleararea / sel fill](building#fill-actions),
+[mine](mining#mine),
+[litematica](building#litematica).
