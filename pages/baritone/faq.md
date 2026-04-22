@@ -62,3 +62,20 @@ button is the fast path.
 [build](building#build),
 [litematica](building#litematica),
 [Cookbook: Create a schematic of a spawner farm](cookbook/spawner-farm-schematic).
+
+## Is there a mod that tracks what I have against a list of blocks I need?
+
+For a schematic, **yes — Litematica's Material List does this
+live.** Once a schematic is loaded as a placement, the list
+shows **Total / Missing / Available** columns; *Available* is
+read from your inventory and updates as you mine, craft, or
+unload chests. Sort by Missing (or toggle "Hide available") and
+you have a shopping list that shrinks in real time. Same screen
+covered above — no extra mod needed.
+
+For an **arbitrary** list of blocks not tied to a schematic, I
+don't know of a maintained mod that does target-vs-have
+tracking. The usual workaround is to build a tiny throwaway
+schematic in Litematica's Area Editor containing exactly the
+blocks and quantities you want, then use its Material List as
+the tracker.
