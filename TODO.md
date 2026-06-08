@@ -2,15 +2,20 @@
 
 ## Tooling: backup, mod lists & blueprints
 
-- **Wiki page: client-side-only mods.** Create a page under `pages/`:
-  a curated reference list of known client-side-only mods that work on
-  any server, so they can be installed when connecting to any server I
-  play on. This is **independent of the packwiz setup** — it is a
-  general "mods I can always run client-side" catalogue, not the pack's
-  mod list (though some may also end up in my own modpack). Each entry
-  needs a name and a link to where it lives (CurseForge/Modrinth/source).
-  Seed it from `MyCSOMods.txt` rescued from the stale clone (see
-  migration checklist in `.claude/CLAUDE.md`) and grow it over time.
+- **Wiki page: client-side-only mods.** A curated reference list of
+  known client-side-only mods that work on any server, so they can be
+  installed when connecting to any server I play on. This is a general
+  "mods I can always run client-side" catalogue, separate from the
+  HarleyColonies pack's mod list (though some may also end up in my own
+  modpack). Approach: use **packwiz** to maintain a "fake" modpack — a
+  packwiz directory used only as a tracking store, never built or
+  published — to hold these mods. `packwiz` then handles fetching each
+  mod's metadata into per-mod `.pw.toml` files (name, side, links,
+  source). Generate the wiki page under `pages/` by parsing those
+  `.pw.toml` files for the name and `metadata.*.website` / `source`
+  link, the same data shape as the real packs. Seed the fake pack from
+  `MyCSOMods.txt` rescued from the stale clone (see migration checklist
+  in `.claude/CLAUDE.md`) and grow it over time.
 
 - **Backup script: mod reinstall manifest.** `bin/backup-instance`
   excludes mod jars (regenerable), so the backup needs a record of which
