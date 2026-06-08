@@ -31,7 +31,7 @@ session will be started in this directory to continue.
 - **`bin/backup-instance`** — backup script for a Minecraft instance.
   Written, executable, shellcheck-clean, tested against the United
   Colonies instance (2.1 GB instance → 1.3 MB tarball, 666 entries).
-  Currently **uncommitted**, sitting on the `docs/baritone` branch.
+  **Committed** on the `fix-dual-repo` branch (`9bf9f46`) and pushed.
   - Captures the irreplaceable ~MB slice only:
     `journeymap/data/**/waypoints/` (raw `WaypointData.dat`),
     `journeymap/config/` (JourneyMap settings — **no mod API exists for
@@ -49,9 +49,6 @@ session will be started in this directory to continue.
 
 ## In progress / goals
 
-- Decide where `bin/backup-instance` should be committed. A backup tool
-  is not baritone docs, so it should go on a `feature/backup-instance`
-  branch, not `docs/baritone`. **Do not commit without the user's OK.**
 - Establish a real workflow for the United Colonies instance backup
   (when to run it, where backups live, rotation/retention).
 
