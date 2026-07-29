@@ -1,100 +1,126 @@
 # Repository Workflow
 
-This document defines repository-specific workflow rules and conventions for
-the HarleyColonies modpack repository. These rules extend and complement the
-general agent guidelines defined in `AGENTS.md`.
+Repository-specific workflow and conventions for the HarleyColonies modpack
+repository. Agent-facing configuration lives in `.claude/`.
 
 ## Repository Structure
 
-### Directory Organization
-
-```
+```text
 harleycolonies/
-??? bin/                    # Helper scripts (modpack-manager, etc.)
-??? docs/                   # Documentation
-?   ??? guides/            # Player-facing guides
-?   ??? mods/              # Mod-related documentation
-?   ??? technical/         # Technical documentation
-??? pages/                  # Wiki pages (Gollum)
-??? archive/                # Historical/review files
-??? harleycolonies-1.20.1-0.1.2/  # Active modpack directory
+├── bin/                          # Helper scripts and the Python tooling
+│   ├── modpack-manager           #   CLI entry point
+│   ├── mpmanager/                #   the package behind it
+│   ├── backup-instance           #   instance backup script
+│   ├── mk-cf-modlist             #   CurseForge server modlist generator
+│   ├── resources/                #   Jinja2 wiki templates
+│   └── tests/                    #   pytest suite
+├── modpacks/                     # Mod METADATA + per-mod wiki sources
+│   ├── mods.yaml                 #   source of truth for mods
+│   └── <mod-slug>/               #   custom config/ and wiki.md
+├── harleycolonies-1.20.1-0.1.2/  # Packwiz pack — Forge 1.20.1
+├── harleycolonies-1.21.1/        # Packwiz pack — NeoForge 1.21.1
+├── pages/                        # Wiki (Gollum) — guides, mods, style, …
+├── server/                       # Server stack (docker-compose, itzg)
+├── docs/                         # Server/infrastructure documentation
+├── config/                       # Default configurations
+└── archive/                      # Historical/review files
 ```
+
+**Naming trap:** `modpacks/` holds mod *metadata and wiki sources*, not
+modpacks. The actual packs are the two `harleycolonies-*` directories.
 
 ### Script Naming
 
-- Scripts go in `bin/` directory (not `scripts/`)
-- Use lowercase names with hyphens if needed
-- Make scripts executable with shebang line
+- Scripts go in `bin/` (not `scripts/`)
+- Lowercase names with hyphens
+- Executable, with a shebang line
 
-## Mod Manager
+## modpack-manager
 
-The `mod-manager` script provides a unified interface for managing mods,
-generating modpacks, and creating wiki pages.
+`bin/modpack-manager` is the unified interface for managing mods, modpacks,
+and wiki generation. It has three command groups — `mod`, `modpack`, and
+`wiki`. Every level accepts `--help`.
 
-### Basic Usage
+It needs `bin/requirements.txt` installed (`tomlkit`, `pyyaml`, `pytest`,
+`jinja2`); a gitignored `bin/venv/` is the usual home.
+
+### Mod operations
 
 ```bash
-# Add a new mod
-./bin/mod-manager add <mod-slug> [--curseforge-id ID] [--modrinth-id ID] [--side SIDE]
+# Create a mod entry and install it into a modpack via packwiz
+./bin/modpack-manager mod create <mod-slug> --modpack <modpack-dir> \
+    [--curseforge-id ID] [--category CATEGORY] [--file-id FILE_ID]
+
+# List mods, optionally filtered
+./bin/modpack-manager mod list [--slug SLUG] [--modpack MODPACK] \
+    [--categories [CATEGORIES ...]] [--category-names]
+
+# Refresh a mod's metadata from its packwiz TOML
+./bin/modpack-manager mod refresh <mod-slug>
 
 # Update mod information
-./bin/mod-manager update <mod-slug> [--side SIDE]
+./bin/modpack-manager mod update <mod-slug> [--side {client,server,both}] \
+    [--curseforge-id ID] [--modrinth-id ID]
 
 # Remove a mod
-./bin/mod-manager remove <mod-slug>
+./bin/modpack-manager mod remove <mod-slug>
 
-# List all mods
-./bin/mod-manager list
-
-# Show information for a specific mod
-./bin/mod-manager list --mod <mod-slug>
+# Import mods from an existing packwiz directory
+./bin/modpack-manager mod sync --from <modpack-dir> [--slug SLUG]
 ```
 
-### Modpack Operations
+### Modpack operations
 
 ```bash
 # Create a new modpack
-./bin/mod-manager modpack create <modpack-dir> --mc-version VERSION --modloader LOADER [--modloader-version VERSION]
+./bin/modpack-manager modpack create <modpack-dir> [--mc-version VERSION] \
+    [--modloader {forge,fabric,quilt}] [--modloader-version VERSION]
 
-# Add mod to modpack
-./bin/mod-manager modpack add <modpack-dir> <mod-slug>
+# List modpacks, or the mods in one
+./bin/modpack-manager modpack list [--dir DIR]
 
-# Remove mod from modpack
-./bin/mod-manager modpack remove <modpack-dir> <mod-slug>
+# Update modpack metadata
+./bin/modpack-manager modpack update <modpack-dir>
 
-# Mark mod as rejected in modpack
-./bin/mod-manager modpack reject <modpack-dir> <mod-slug> --reason "Reason"
+# Add / remove a mod
+./bin/modpack-manager modpack add <modpack-dir> <mod-slug>
+./bin/modpack-manager modpack remove-mod <modpack-dir> <mod-slug>
 
-# Sync modpack with mods.yaml (add/remove mods)
-./bin/mod-manager modpack sync <modpack-dir>
+# Mark a mod as rejected for a modpack
+./bin/modpack-manager modpack reject <modpack-dir> <mod-slug> --reason "..."
 
-# Export modpack
-./bin/mod-manager modpack export <modpack-dir>
+# Sync a modpack against mods.yaml
+./bin/modpack-manager modpack sync <modpack-dir>
 
-# List mods in a modpack
-./bin/mod-manager list --modpack <modpack-dir>
+# Export via packwiz
+./bin/modpack-manager modpack export <modpack-dir>
+
+# Remove a modpack entirely
+./bin/modpack-manager modpack remove <modpack-dir>
 ```
 
-### Wiki Generation
+Note the asymmetry: `modpack remove` removes the **modpack**;
+`modpack remove-mod` removes a **mod from** a modpack.
+
+### Wiki generation
 
 ```bash
-# Generate wiki page for a specific mod
-./bin/mod-manager wiki --mod <mod-slug>
+# Generate the page for one mod
+./bin/modpack-manager wiki generate --mod <mod-slug>
 
-# Generate all wiki pages
-./bin/mod-manager wiki
+# Regenerate the mods index
+./bin/modpack-manager wiki generate --index
+
+# Regenerate everything
+./bin/modpack-manager wiki generate --all
 ```
 
-### Syncing from Existing Modpacks
-
-```bash
-# Import mods from an existing packwiz directory
-./bin/mod-manager sync --from <modpack-dir>
-```
+**`--all` is destructive** — it clears `pages/mods/` and removes
+`pages/mods.md` before regenerating. Prefer `--mod` for a single change.
 
 ### Mod Data Structure
 
-Mod information is stored in `mods/mods.yaml` with the following structure:
+Mod information lives in `modpacks/mods.yaml`:
 
 ```yaml
 mods:
@@ -114,73 +140,64 @@ mods:
 
 ### Custom Mod Files
 
-Custom configuration files and wiki content can be stored in `mods/<mod-slug>/`:
+Per-mod custom content lives in `modpacks/<mod-slug>/`:
 
-- `mods/<mod-slug>/config/` - Custom config files (copied to modpack when generating)
-- `mods/<mod-slug>/wiki.md` - Custom wiki page content (used instead of simple page)
+- `modpacks/<mod-slug>/config/` — custom config files, copied into the
+  modpack when generating
+- `modpacks/<mod-slug>/wiki.md` — custom wiki content, used instead of the
+  simple generated page
 
 ## Packwiz Conventions
 
-### Mod Addition Process (Legacy)
+Prefer `modpack-manager` over raw `packwiz`: it keeps `modpacks/mods.yaml`
+and the pack in step. Direct `packwiz` calls bypass that bookkeeping and
+leave the two out of sync.
 
-For manual packwiz operations:
+### Manual operations (legacy)
 
-1. Use `packwiz` commands to add mods:
-   ```bash
-   packwiz curseforge install <mod-name>
-   packwiz modrinth install <mod-name>
-   ```
+```bash
+packwiz curseforge install <mod-name>
+packwiz modrinth install <mod-name>
+packwiz remove <mod-file>.toml
+```
 
-2. Test the modpack after adding new mods
+After any manual operation, test the modpack and reconcile the metadata with
+`./bin/modpack-manager mod sync --from <modpack-dir>`.
 
-3. Update `docs/mods/confirmed-mods.md` with mod details
+### Server modlist
 
-4. Regenerate mod list: `bin/modpack-manager list --categories > docs/mods/modlist.md`
-
-**Note:** It's recommended to use `mod-manager` instead for better tracking
-and automation.
-
-### Mod Removal Process (Legacy)
-
-For manual packwiz operations:
-
-1. Use `packwiz` commands to remove mods:
-   ```bash
-   packwiz remove <mod-file>.toml
-   ```
-
-2. Test the modpack after removal
-
-3. Update documentation accordingly
-
-**Note:** It's recommended to use `mod-manager modpack remove` instead.
-
-### Mod Configuration
-
-- Mod-specific configurations should be documented in `docs/mods/`
-- Include configuration file locations when known
-- Document any custom configurations or overrides
-- Custom configs can be stored in `mods/<mod-slug>/config/` for automatic
-  copying to modpacks
+`bin/mk-cf-modlist` exports the server-side CurseForge modlist to
+`server/extras/cf-modlist.txt`. Run it from within a pack directory.
 
 ## Documentation Standards
 
 ### File Naming
 
-- Use lowercase with hyphens: `example-file.md`
-- Keep names descriptive and concise
+- Lowercase with hyphens: `example-file.md`
+- Descriptive and concise
 
 ### Markdown Formatting
 
-- Word wrap at 78 columns in Markdown files and comments
-- Use proper heading hierarchy (h1 for page title, h2 for sections, etc.)
-- Include table of contents for longer documents
+- Wrap prose at 78 columns in Markdown files and comments
+- Proper heading hierarchy (h1 for page title, h2 for sections)
+- Table of contents for longer documents
+- Linted by markdownlint via pre-commit; see `.markdownlint.json`
 
-### Guide Organization
+### Wiki organization
 
-- Player guides go in `docs/guides/`
-- Include practical examples
-- Cross-reference related documentation
+Player-facing content lives in the Gollum wiki under `pages/`:
+
+- `pages/guides/` — player guides
+- `pages/mods/` — **generated** mod pages; edit the source in
+  `modpacks/<mod-slug>/wiki.md`, not these
+- `pages/style/` — the custom MineColonies style guide
+- `pages/baritone/` — Baritone documentation
+- `pages/technical/` — technical notes
+
+`docs/` holds server and infrastructure documentation only.
+
+Wiki links are page-relative and extensionless — `[Huts](style/huts)`, not
+`style/huts.md`. Every page opens with `--- title: ... ---` frontmatter.
 
 ## Schematic and Blueprint Workflow
 
@@ -205,91 +222,84 @@ For manual packwiz operations:
 
 Updating the Journeymap mod overwrites the entire `journeymap/` directory,
 which can result in loss of:
+
 - Custom waypoints
 - Map exploration data
 - Personal settings and configurations
 
 **How to backup:**
 
-1. Before updating Journeymap, copy the `journeymap/` directory:
-   ```bash
-   cp -r journeymap/ journeymap-backup-$(date +%Y%m%d)/
-   ```
+Use `bin/backup-instance`, which captures the irreplaceable slice of an
+instance — JourneyMap waypoints and config, blueprints, `options.txt`,
+baritone settings, and `servers.dat` — while skipping regenerable data:
 
-2. Alternatively, backup specific files:
-   - `journeymap/data/mp/<world-name>/waypoints.json` - Waypoints
-   - `journeymap/data/mp/<world-name>/` - Map data
+```bash
+bin/backup-instance [--dest DIR] [--dry-run] <instance-path>
+```
 
-3. After updating, restore if needed:
-   ```bash
-   cp -r journeymap-backup-<date>/journeymap/* journeymap/
-   ```
+Destination precedence: `--dest` > `$MC_BACKUP_DIR` >
+`~/projects/minecraft/backups`.
 
-**Note:** The `journeymap/` directory is in `.gitignore` and should not be
-committed to the repository as it contains user-specific world data.
+**Note:** `journeymap/` is gitignored and must not be committed — it holds
+user-specific world data.
 
 ## Git Workflow
 
+`master` is protected: PRs required, force-push and deletion blocked, CI must
+pass. All branch work happens in a worktree.
+
 ### Branch Naming
 
-Follow the conventions from `AGENTS.md`:
-- `feature/` - New features or mod additions
-- `bugfix/` - Bug fixes
-- `refactor/` - Code or structure refactoring
+- `feature/` — new features or mod additions
+- `bugfix/` — bug fixes
+- `docs/` — documentation only
 
 ### Commit Messages
 
-- Use descriptive commit messages
-- Reference issue numbers if applicable
-- Follow conventional commit format when appropriate
+Conventional Commits — `<type>(<scope>): <subject>`, imperative mood, subject
+under 72 characters.
 
 ### Modpack Versioning
 
-- Current format: `harleycolonies-<mc-version>-<pack-version>`
-- Example: `harleycolonies-1.20.1-0.1.2`
-- Update version in `pack.toml` when making releases
+- Directory format: `harleycolonies-<mc-version>-<pack-version>`
+- The authoritative version is the `version` field in each `pack.toml`
+- Releases are tagged per pack (`<pack-dir>/vX.Y.Z`); see
+  `.claude/CONVENTIONS.md`
 
 ## Testing Workflow
 
-### Before Committing
+```bash
+cd bin && python -m pytest tests/ -q
+```
+
+The suite currently has known pre-existing failures from fixture drift — see
+`.claude/TESTS.md` before reading a red run as your own breakage.
+
+### Before committing
 
 1. Test modpack loading
 2. Verify mod compatibility
 3. Check for configuration errors
 4. Validate packwiz format
 
-### Before Pushing
-
-1. Run `bin/modpack-manager list --categories > docs/mods/modlist.md` to ensure mod list is current
-2. Verify documentation is up to date
-3. Ensure `.gitignore` excludes user-specific files
-
 ## Configuration Management
 
 ### User-Specific Files
 
-These should be in `.gitignore`:
-- `journeymap/` - User-specific map data
-- `*.aider*` - Aider temporary files
-- Other user-specific configs
+Gitignored:
+
+- `journeymap/` — user-specific map data
+- `*.aider*` — Aider temporary files
+- `bin/venv/`, `work/`, `tmpconfig/`
+- Exported packs (`*.zip`, `*.mrpack`) and mod jars
 
 ### Modpack Configs
 
-- Default configurations go in `config/` directory
-- Document configuration file locations in `docs/mods/`
-- Keep example configurations when helpful
-
-## Wiki Pages
-
-### Moving Documentation to Wiki
-
-- Documentation in `pages/` is used by the Gollum wiki
-- Consider moving relevant guides from `docs/guides/` to `pages/` for wiki
-  integration
-- Keep technical documentation in `docs/technical/`
+- Default configurations go in `config/`
+- Per-mod overrides go in `modpacks/<mod-slug>/config/`
 
 ## Resources
 
 - [Packwiz Documentation](https://packwiz.infra.link/)
 - [MineColonies Wiki](https://minecolonies.com/wiki/)
-- See `docs/technical/resources.md` for additional development resources
+- `pages/technical/` — additional development resources
