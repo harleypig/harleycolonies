@@ -9,7 +9,6 @@ config.
 auto-merge: enabled
 resolve-task: autonomous
 merge-finalization: enforce
-team-managed: enabled
 ```
 
 - **`auto-merge: enabled`** — invoking **push-pr** is consent through merge
@@ -22,10 +21,32 @@ team-managed: enabled
 - **`merge-finalization: enforce`** — merge-time finalization is a hard block,
   not a reminder: completed `[x]` items must be pruned and their issues closed
   before a merge lands.
-- **`team-managed: enabled`** — the main thread acts as the PM/orchestrator
-  and dispatches substantive edits to the owning role-subagent. The hook
-  nudges; it never blocks. Read from the working tree, so it is live
-  immediately.
+
+### ICEBOX: team-managed — deliberately off, revisit later
+
+**`team-managed` is not set here, on purpose.** It would make the main thread
+a PM/orchestrator that dispatches substantive edits to role-subagents
+(config-engineer, backend-developer, writer) rather than making them itself.
+
+It was enabled on 2026-07-29 and removed the same day. Two reasons:
+
+1. **It conflicted with how sessions here actually run.** Sessions have been
+   operating with subagent dispatch unavailable, so the delegation hook
+   nudged on *every* substantive edit while offering no way to comply — pure
+   noise. Worse, the sentinel reserves an `enforce` value for a future
+   hard-block variant; if that ships while dispatch is unavailable, the noise
+   becomes a blocker.
+2. **The work does not suit it yet.** Consolidating four merged attempts is
+   exploratory archaeology — what makes each fix correct is accumulated
+   context about how the repo got this way, which does not decompose cleanly
+   into discrete edits handed to specialist roles.
+
+**When to re-enable:** once the pieces are under control and work shifts from
+archaeology to well-scoped feature building — the case the team model is
+actually for. Check first that subagent dispatch is available in the session,
+otherwise the same conflict returns. Note the sentinel is read from the
+**working-tree** `.claude/`, not the default branch, so it goes live the
+instant it is written rather than at the next PR.
 
 ## Deliverability — nothing ships yet
 
