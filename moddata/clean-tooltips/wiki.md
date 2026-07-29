@@ -8,18 +8,18 @@ readability of tooltips with better spacing, color coding for curses and
 enchantments, and organized sections. This makes it easier to quickly
 identify important information about items.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config file, `clean_tooltips-client.toml`.
 
-#### Durability Settings
+### Durability Settings
 
 - `durability.enabled` (default: `true`)
   - Should the Durability section be enabled? When enabled, durability
     information is displayed in a dedicated section of the tooltip.
 
-#### Enchantment Settings
+### Enchantment Settings
 
 - `enchantments.enabled` (default: `true`)
   - Should the fancied up Enchantment section be used? When enabled,
@@ -40,22 +40,15 @@ the same names as in the mod's config file, `clean_tooltips-client.toml`.
   - The color max level enchantments should have. Uses the same color
     values as `curse`.
 
-#### Color Settings
+### Color Settings
 
 - `color.enabled` (default: `true`)
   - Should the fancied up Color section be used? When enabled, color
     information is displayed in a dedicated section.
 
-#### Gap Settings
+### Gap Settings
 
 - `gap.enabled` (default: `true`)
   - Should sections of the tooltip have spacing between them? When
     enabled, visual spacing is added between different tooltip sections for
     better readability.
-
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-

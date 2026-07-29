@@ -4,7 +4,7 @@ categories:
   - utility-qol
 ---
 
-[Website](https://www.curseforge.com/minecraft/mc-mods/cupboard) | [Issues](https://github.com/someaddons/cupboard/issues) | [Source](https://github.com/someaddons/cupboard)
+[Website](<https://www.curseforge.com/minecraft/mc-mods/cupboard>) | [Issues](<https://github.com/someaddons/cupboard/issues>) | [Source](<https://github.com/someaddons/cupboard>)
 
 Client/Server: both
 
@@ -14,12 +14,12 @@ loading, chunk loading, and command execution. The mod includes options
 for debugging off-thread entity additions, preventing crashes on entity
 load errors, and creating heap dumps for out-of-memory issues.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config file, `cupboard.json`.
 
-#### Error Handling
+### Error Handling
 
 - `showCommandExecutionErrors` (default: `true`)
   - Whether to display errors during command execution. When enabled,
@@ -31,7 +31,7 @@ the same names as in the mod's config file, `cupboard.json`.
     loading are caught and logged instead of crashing the server. Use with
     caution as this may hide underlying issues.
 
-#### Debug Settings
+### Debug Settings
 
 - `debugChunkloadAttempts` (default: `false`)
   - Enables debug logging of chunks being force-loaded on server thread by
@@ -52,16 +52,9 @@ the same names as in the mod's config file, `cupboard.json`.
     space. When enabled, a heap dump file is created when the server runs
     out of memory, which can be analyzed to identify memory leaks.
 
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-
-### Modpacks
+## Modpacks
 
 This mod is installed in the following modpacks:
 
 - harleycolonies-1.20.1-0.1.2
 - harleycolonies-1.21.1
-

@@ -8,12 +8,12 @@ multiple display styles including numbers, text descriptions, and visual
 bars, with customizable colors and formatting options. This makes it easier
 for players to quickly assess the condition of their equipment.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config file, `durabilitytooltip-common.toml`.
 
-#### Display Style
+### Display Style
 
 - `Client.tooltipStyle` (default: `"NUMBERS"`)
   - What should be the style of the tooltip? `NUMBERS` means 'Durability:
@@ -25,7 +25,7 @@ the same names as in the mod's config file, `durabilitytooltip-common.toml`.
   - Should the tooltip include the 'Durability:' hint? When enabled, the
     word "Durability:" is shown before the durability information.
 
-#### Color Settings
+### Color Settings
 
 - `Client.tooltipColorStyle` (default: `"VARYING"`)
   - What colors should be used for the reactive part (numbers/text/bar
@@ -40,7 +40,7 @@ the same names as in the mod's config file, `durabilitytooltip-common.toml`.
     `RED`, `LIGHT_PURPLE`, `YELLOW`, `WHITE`, `OBFUSCATED`, `BOLD`,
     `STRIKETHROUGH`, `UNDERLINE`, `ITALIC`, `RESET`.
 
-#### Filtering Options
+### Filtering Options
 
 - `Client.onlyVanillaTools` (default: `false`)
   - Should the durability tooltip only be shown on vanilla tools? When
@@ -55,11 +55,3 @@ the same names as in the mod's config file, `durabilitytooltip-common.toml`.
   - Which mods should be blacklisted? Items from blacklisted mods won't
     show the durability tooltip. Enter mod IDs separated by commas. Range:
     `0` to `100` characters.
-
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-- harleycolonies-1.20.1-0.1.2
-

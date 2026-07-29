@@ -7,13 +7,12 @@ categories:
   - utility-qol
 ---
 
-[Website](https://www.curseforge.com/minecraft/mc-mods/anvil-balance)
+[Website](<https://www.curseforge.com/minecraft/mc-mods/anvil-balance>)
 
 Client/Server: both
 
-### Modpacks
+## Modpacks
 
 This mod is installed in the following modpacks:
 
 - harleycolonies-1.20.1-0.1.2
-

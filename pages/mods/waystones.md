@@ -7,7 +7,7 @@ categories:
   - technology-player-transport
 ---
 
-[Website](https://www.curseforge.com/minecraft/mc-mods/waystones) | [Issues](https://github.com/ModdingForBlockheads/Waystones/issues) | [Source](https://github.com/ModdingForBlockheads/Waystones)
+[Website](<https://www.curseforge.com/minecraft/mc-mods/waystones>) | [Issues](<https://github.com/ModdingForBlockheads/Waystones/issues>) | [Source](<https://github.com/ModdingForBlockheads/Waystones>)
 
 Client/Server: both
 
@@ -19,12 +19,12 @@ configurable XP costs and cooldowns. Waystones can spawn naturally in the
 world and villages, and the mod integrates with JourneyMap, BlueMap, and
 Dynmap.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config file, `waystones-common.toml`.
 
-#### General Settings
+### General Settings
 
 - `general.restrictedWaystones` (default: `["PLAYER"]`)
   - List of waystone origins that should prevent others from editing.
@@ -51,7 +51,7 @@ the same names as in the mod's config file, `waystones-common.toml`.
   - The time in ticks it takes to use a scroll. This is the charge-up time
     when holding right-click.
 
-#### Inventory Button Settings
+### Inventory Button Settings
 
 - `inventoryButton.inventoryButton` (default: `""`)
   - Set to `'NONE'` for no inventory button. Set to `'NEAREST'` for an
@@ -72,7 +72,7 @@ the same names as in the mod's config file, `waystones-common.toml`.
 - `inventoryButton.creativeInventoryButtonY` (default: `33`)
   - The y position of the inventory button in the creative menu.
 
-#### World Generation Settings
+### World Generation Settings
 
 - `worldGen.wildWaystoneStyle` (default: `"BIOME"`)
   - Set to `'DEFAULT'` to only generate the normally textured waystones.
@@ -116,7 +116,7 @@ the same names as in the mod's config file, `waystones-common.toml`.
     to disable waystone generation in villages. Allowed values: `DISABLED`,
     `REGULAR`, `FREQUENT`.
 
-#### Teleport Settings
+### Teleport Settings
 
 - `teleports.enableCosts` (default: `true`)
   - Set to `false` to simply disable all xp costs. See `warpRequirements`
@@ -156,13 +156,13 @@ the same names as in the mod's config file, `waystones-common.toml`.
   - Set to `true` to enable warp modifier items for applying status effects
     on teleports.
 
-#### Client Settings
+### Client Settings
 
 - `client.disableTextGlow` (default: `false`)
   - If enabled, the text overlay on waystones will no longer always render
     at full brightness.
 
-#### Compatibility Settings
+### Compatibility Settings
 
 - `compatibility.journeyMap` (default: `true`)
   - If enabled, JourneyMap waypoints will be created for each activated
@@ -180,17 +180,9 @@ the same names as in the mod's config file, `waystones-common.toml`.
   - If enabled, Waystones will add markers for waystones and sharestones
     to Dynmap.
 
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-- harleycolonies-1.20.1-0.1.2
-
-### Modpacks
+## Modpacks
 
 This mod is installed in the following modpacks:
 
 - harleycolonies-1.20.1-0.1.2
 - harleycolonies-1.21.1
-

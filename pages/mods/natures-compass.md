@@ -7,7 +7,7 @@ categories:
   - map-information
 ---
 
-[Website](https://www.curseforge.com/minecraft/mc-mods/natures-compass) | [Issues](https://github.com/MattCzyr/NaturesCompass/issues) | [Source](https://github.com/MattCzyr/NaturesCompass)
+[Website](<https://www.curseforge.com/minecraft/mc-mods/natures-compass>) | [Issues](<https://github.com/MattCzyr/NaturesCompass/issues>) | [Source](<https://github.com/MattCzyr/NaturesCompass>)
 
 Client/Server: both
 
@@ -18,12 +18,12 @@ distance, making biome exploration easier and more efficient. It supports
 both vanilla and modded biomes and includes configurable search parameters
 and teleportation options for creative/op players.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config files.
 
-#### Client Settings
+### Client Settings
 
 These settings are configured in `naturescompass-client.toml`.
 
@@ -46,7 +46,7 @@ These settings are configured in `naturescompass-client.toml`.
     `RIGHT`. This determines which side of the screen the biome
     information overlay appears on.
 
-#### General Settings
+### General Settings
 
 These settings are configured in `naturescompass-common.toml`.
 
@@ -83,17 +83,9 @@ These settings are configured in `naturescompass-common.toml`.
     Higher values provide more accurate results but use more resources.
     Range: `0` to `1000000`.
 
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-- harleycolonies-1.20.1-0.1.2
-
-### Modpacks
+## Modpacks
 
 This mod is installed in the following modpacks:
 
 - harleycolonies-1.20.1-0.1.2
 - harleycolonies-1.21.1
-

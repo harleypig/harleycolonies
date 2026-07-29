@@ -9,12 +9,12 @@ rendering entities that are behind walls or outside the player's view,
 significantly improving FPS, especially in areas with many entities or
 block entities.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config file, `entityculling.json`.
 
-#### General Settings
+### General Settings
 
 - `configVersion` (default: `7`)
   - Configuration version. Used internally to track config format changes.
@@ -57,7 +57,7 @@ the same names as in the mod's config file, `entityculling.json`.
   - Enable frustum culling for block entities. When enabled, block entities
     outside the camera frustum are not rendered.
 
-#### Whitelists
+### Whitelists
 
 - `blockEntityWhitelist` (default: `["create:rope_pulley",
   "botania:flame_ring", "minecraft:beacon", "create:hose_pulley",
@@ -76,10 +76,3 @@ the same names as in the mod's config file, `entityculling.json`.
   - List of entities that should never have their ticks culled, even if
     they are visually culled. These entities will continue to tick even
     when not rendered.
-
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-

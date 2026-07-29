@@ -9,12 +9,12 @@ information on the HUD, including coordinates and distance, making
 exploration easier and more efficient. It supports both vanilla and modded
 structures and includes configurable search parameters.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config files.
 
-#### Client Settings
+### Client Settings
 
 These settings are configured in `explorerscompass-client.toml`.
 
@@ -38,7 +38,7 @@ These settings are configured in `explorerscompass-client.toml`.
     `RIGHT`. This determines which side of the screen the structure
     information overlay appears on.
 
-#### General Settings
+### General Settings
 
 These settings are configured in `explorerscompass-common.toml`.
 
@@ -69,11 +69,3 @@ These settings are configured in `explorerscompass-common.toml`.
     match any number of characters, and `?` can be used to match one
     character. Example: `["minecraft:stronghold", "minecraft:endcity",
     "minecraft:*village*"]`.
-
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-- harleycolonies-1.20.1-0.1.2
-

@@ -7,12 +7,12 @@ smart chunk loading, and various optimization features to improve
 performance. It requires the Cupboard dependency and is only required on
 the server side.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config file.
 
-#### Prediction Settings
+### Prediction Settings
 
 - `enablePrediction.enablePrediction` (default: `true`)
   - Enables predictive chunk loading, which predicts player movement and
@@ -30,7 +30,7 @@ the same names as in the mod's config file.
     many chunks ahead of the player will be preloaded. Maximum: `32`,
     minimum: `2`.
 
-#### Smart Chunk Loading
+### Smart Chunk Loading
 
 - `enableSmartChunkLoading.enableSmartChunkLoading` (default: `true`)
   - Enables smart chunk loading around the player, which dynamically loads
@@ -43,7 +43,7 @@ the same names as in the mod's config file.
     increases the speed at which chunks load around the player. Note that
     faster loading also means higher impact on TPS. Range: `0.01` to `10.0`.
 
-#### Optimization Features
+### Optimization Features
 
 - `preventWalkUnloaded.preventWalkUnloaded` (default: `true`)
   - Prevents players from moving into unloaded areas on the server side.
@@ -64,10 +64,9 @@ the same names as in the mod's config file.
   - Optimizes the time the world is stalled while waiting for a chunk to
     load. This reduces server lag when chunks are being loaded.
 
-#### Debug Settings
+### Debug Settings
 
 - `debugLogging.debugLogging` (default: `false`)
   - Enables debug logging to show chunk loading changes. When enabled, the
     mod will log detailed information about chunk loading operations, which
     can be useful for troubleshooting performance issues.
-

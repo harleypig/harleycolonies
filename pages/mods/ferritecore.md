@@ -2,8 +2,6 @@
 title: FerriteCore ((Neo)Forge)
 ---
 
-
-
 Client/Server: both
 
 **FerriteCore** is a performance optimization mod that reduces memory usage
@@ -12,12 +10,12 @@ mod uses various memory optimization techniques including caching,
 deduplication, and compact data structures to significantly reduce RAM
 usage, especially in modded environments with many blocks and items.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config file, `ferritecore-mixin.toml`.
 
-#### Memory Optimization Settings
+### Memory Optimization Settings
 
 - `compactFastMap` (default: `false`)
   - Use a slightly more compact, but also slightly slower representation
@@ -71,15 +69,8 @@ the same names as in the mod's config file, `ferritecore-mixin.toml`.
     implementations. When enabled, shares vertex data between identical
     quads.
 
-### Modpacks
+## Modpacks
 
 This mod is installed in the following modpacks:
 
 - harleycolonies-1.21.1
-
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-

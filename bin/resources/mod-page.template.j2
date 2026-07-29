@@ -7,28 +7,27 @@ title: {{ name }}
 
 {% if metadata and (metadata.website or metadata.issues or metadata.source) -%}
 {% set sep = joiner(' | ') -%}
-{% if metadata.website %}{{ sep() }}[Website]({{ metadata.website }}){% endif -%}
-{% if metadata.issues %}{{ sep() }}[Issues]({{ metadata.issues }}){% endif -%}
-{% if metadata.source %}{{ sep() }}[Source]({{ metadata.source }}){% endif -%}
+{% if metadata.website %}{{ sep() }}[Website](<{{ metadata.website }}>){% endif -%}
+{% if metadata.issues %}{{ sep() }}[Issues](<{{ metadata.issues }}>){% endif -%}
+{% if metadata.source %}{{ sep() }}[Source](<{{ metadata.source }}>){% endif %}
 
-{% endif %}
-
+{% endif -%}
 Client/Server: {{ side }}
 
-{{ description -}}
+{% if description %}{{ description | trim }}
 
-{% if custom_content -%}
-{{ custom_content -}}
 {% endif -%}
+{% if custom_content %}{{ custom_content | trim }}
 
-### Modpacks
+{% endif -%}
+## Modpacks
 
 {% if installed_in -%}
 This mod is installed in the following modpacks:
 
 {% for modpack in installed_in -%}
 - {{ modpack }}
-{% endfor %}
-{% else %}
+{% endfor -%}
+{%- else -%}
 This mod is not currently installed in any modpacks.
-{% endif %}
+{% endif -%}

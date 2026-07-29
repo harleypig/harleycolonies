@@ -9,12 +9,12 @@ useful on servers with many mods that may send large amounts of data. It
 provides configurable timeout settings and debugging options to help
 identify and resolve networking issues.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config file, `connectivity.json`.
 
-#### Packet Limits
+### Packet Limits
 
 - `disableLoginLimits` (default: `true`)
   - Should login packet size limits be disabled? This prevents errors like
@@ -27,7 +27,7 @@ the same names as in the mod's config file, `connectivity.json`.
     "Badly compressed packet" during gameplay. When enabled, larger packets
     are allowed, which can help prevent disconnections on modded servers.
 
-#### Chat Settings
+### Chat Settings
 
 - `disableChatVerificationDisconnect` (default: `true`)
   - (Client-side) Disables players disconnecting on chat message
@@ -35,7 +35,7 @@ the same names as in the mod's config file, `connectivity.json`.
     causing issues. When enabled, players won't be kicked for chat
     verification failures, improving connection stability.
 
-#### Timeout Settings
+### Timeout Settings
 
 - `logintimeout` (default: `120`)
   - Set the max login timeout in seconds. This determines how long the
@@ -48,7 +48,7 @@ the same names as in the mod's config file, `connectivity.json`.
     seconds. This determines how long the server waits before forcefully
     disconnecting a player who is no longer responding.
 
-#### Debug Settings
+### Debug Settings
 
 - `debugPrintMessages` (default: `false`)
   - Enable additional debug logging for networking errors. When enabled,
@@ -64,11 +64,3 @@ the same names as in the mod's config file, `connectivity.json`.
   - Enable to see the full log output for all resource location exceptions.
     When enabled, complete error messages are shown for resource location
     issues, which can help identify mod conflicts or missing resources.
-
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-- harleycolonies-1.20.1-0.1.2
-

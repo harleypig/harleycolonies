@@ -5,7 +5,7 @@ categories:
   - world-mobs
 ---
 
-[Website](https://www.curseforge.com/minecraft/mc-mods/ai-improvements) | [Issues](https://github.com/BuiltBrokenModding/AI-Improvements/issues) | [Source](https://github.com/BuiltBrokenModding/AI-Improvements)
+[Website](<https://www.curseforge.com/minecraft/mc-mods/ai-improvements>) | [Issues](<https://github.com/BuiltBrokenModding/AI-Improvements/issues>) | [Source](<https://github.com/BuiltBrokenModding/AI-Improvements>)
 
 Client/Server: server
 
@@ -16,12 +16,12 @@ goals, random movement tasks, and replacing the look controller with a
 more efficient cached version. The mod supports per-mob-type
 configuration and filter lists for fine-grained control.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and lists use
 the same names as in the mod's config file.
 
-#### General
+### General
 
 - `allow_remove_calls` (default: `true`)
   - Allows AI tasks to be removed from entities at runtime. If disabled,
@@ -31,7 +31,7 @@ the same names as in the mod's config file.
   - Allows repeat remove calls to bubble to the top of the list to
     improve performance of repeat mob spawning.
 
-#### Mob AI Tasks
+### Mob AI Tasks
 
 - `remove_look_goal` (default: `false`)
   - Removes the look-at-goal (player or attack target) AI task. This
@@ -55,7 +55,7 @@ Each mob AI task setting includes:
 - `filter_list` (default: `[]`)
   - List of mobs affected by this setting according to `is_allowlist`.
 
-#### Fish AI Tasks
+### Fish AI Tasks
 
 - `remove_swim` (default: `false`)
   - Removes the fish's random swimming pathfinder. Fish will stay in
@@ -74,7 +74,7 @@ Each mob AI task setting includes:
 - `remove_puff` (default: `false`)
   - Removes the fish's AI task to puff up when entities are nearby.
 
-#### Squid AI Tasks
+### Squid AI Tasks
 
 - `remove_flee` (default: `false`)
   - Removes the squid's flee pathfinder. Squid will not run away.
@@ -83,7 +83,7 @@ Each mob AI task setting includes:
   - Removes the squid's random movement pathfinder. Squid will not swim
     around randomly.
 
-#### Cow AI Tasks
+### Cow AI Tasks
 
 - `remove_float` (default: `false`)
   - Removes the cow's float AI task. Cows will no longer swim in water.
@@ -108,7 +108,7 @@ Each mob AI task setting includes:
   - Removes the cow's random stroll AI task. Cows will no longer walk
     around randomly.
 
-#### Chicken AI Tasks
+### Chicken AI Tasks
 
 - `remove_float` (default: `false`)
   - Removes the chicken's float AI task. Chickens will no longer swim
@@ -134,7 +134,7 @@ Each mob AI task setting includes:
   - Removes the chicken's random stroll AI task. Chickens will no longer
     walk around randomly.
 
-#### Pig AI Tasks
+### Pig AI Tasks
 
 - `remove_float` (default: `false`)
   - Removes the pig's float AI task. Pigs will no longer swim in water.
@@ -159,7 +159,7 @@ Each mob AI task setting includes:
   - Removes the pig's random stroll AI task. Pigs will no longer walk
     around randomly.
 
-#### Sheep AI Tasks
+### Sheep AI Tasks
 
 - `remove_float` (default: `false`)
   - Removes the sheep's float AI task. Sheep will no longer swim in
@@ -189,10 +189,9 @@ Each mob AI task setting includes:
   - Removes the sheep's eat-block AI task. Sheep will no longer eat
     grass, and thus be unable to regenerate their wool.
 
-### Modpacks
+## Modpacks
 
 This mod is installed in the following modpacks:
 
 - harleycolonies-1.20.1-0.1.2
 - harleycolonies-1.21.1
-

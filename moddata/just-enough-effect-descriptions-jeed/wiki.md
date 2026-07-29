@@ -10,12 +10,12 @@ to understand what effects do and how to obtain them. JEED integrates
 seamlessly with JEI and REI, showing effect information alongside recipes
 and items.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config file, `jeed-client.toml`.
 
-#### Display Settings
+### Display Settings
 
 - `effect_color` (default: `true`)
   - Show effect colors in tooltip. When enabled, effect tooltips display
@@ -32,7 +32,7 @@ the same names as in the mod's config file, `jeed-client.toml`.
     box). When enabled, JEED's enhanced tooltips replace the default
     vanilla tooltips for better information display.
 
-#### Effect Filtering
+### Effect Filtering
 
 - `ignore_derivative_potions` (default: `true`)
   - Ignore derivative potions (long and strong) when showing effects. When
@@ -45,7 +45,7 @@ the same names as in the mod's config file, `jeed-client.toml`.
     specific effects from display. Useful for hiding internal or debug
     effects.
 
-#### Ingredients Display
+### Ingredients Display
 
 - `ingredients_list` (default: `true`)
   - Show ingredients list along with an effect description. When enabled,
@@ -60,10 +60,3 @@ the same names as in the mod's config file, `jeed-client.toml`.
   - Renders individual slots instead of a big one. Only works for REI. When
     enabled, REI displays ingredients in separate slots rather than a single
     combined display, providing more detailed visual representation.
-
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-

@@ -2,8 +2,6 @@
 title: Inventory Essentials
 ---
 
-
-
 Client/Server: both
 
 **Inventory Essentials** enhances inventory management with various
@@ -13,12 +11,12 @@ inventories, transfer entire stacks or single items, and perform bulk
 operations. This significantly speeds up inventory management, especially
 when dealing with large inventories or storage systems.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config file, `inventoryessentials-common.toml`.
 
-#### Transfer Settings
+### Transfer Settings
 
 - `enableShiftDrag` (default: `true`)
   - Should holding shift and moving your mouse over items quick-transfer
@@ -60,22 +58,15 @@ the same names as in the mod's config file, `inventoryessentials-common.toml`.
     once? When enabled, holding shift and control while drop-clicking drops
     all items matching the clicked item's type.
 
-#### Development Settings
+### Development Settings
 
 - `forceClientImplementation` (default: `false`)
   - Use the client implementation even on servers that have the mod
     installed - only useful for development purposes. When enabled, forces
     client-side implementation even when server-side is available.
 
-### Modpacks
+## Modpacks
 
 This mod is installed in the following modpacks:
 
 - harleycolonies-1.21.1
-
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-

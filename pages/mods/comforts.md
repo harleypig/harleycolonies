@@ -5,7 +5,7 @@ categories:
   - adventure-rpg
 ---
 
-[Website](https://www.curseforge.com/minecraft/mc-mods/comforts) | [Issues](https://github.com/illusivesoulworks/comforts/issues) | [Source](https://github.com/illusivesoulworks/comforts)
+[Website](<https://www.curseforge.com/minecraft/mc-mods/comforts>) | [Issues](<https://github.com/illusivesoulworks/comforts/issues>) | [Source](<https://github.com/illusivesoulworks/comforts>)
 
 Client/Server: both
 
@@ -16,7 +16,7 @@ making it ideal for adventurers who want to skip time without resetting
 their home base spawn. Sleeping bags and hammocks come in all 16 standard
 Minecraft colors and are stackable, making them convenient for travel.
 
-### Features
+## Features
 
 - **Sleeping Bags**: Portable beds that allow players to sleep through the
   night without setting a spawn point. Crafted using three pieces of
@@ -28,12 +28,12 @@ Minecraft colors and are stackable, making them convenient for travel.
   wool in the center, sticks at the top and bottom, and strings filling
   the remaining slots. Also available in all 16 colors.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config file, `comforts-server.toml`.
 
-#### General Settings
+### General Settings
 
 - `autoUse` (default: `true`)
   - If enabled, players automatically attempt to use sleeping bags when
@@ -50,7 +50,7 @@ the same names as in the mod's config file, `comforts-server.toml`.
     wait time before a player can sleep again. Larger numbers allow
     players to sleep sooner. Range: `1.0` to `20.0`.
 
-#### Usage Restrictions
+### Usage Restrictions
 
 - `hammockUse` (default: `"DAY"`)
   - The time of day that hammocks can be used. Allowed values: `NONE`,
@@ -60,7 +60,7 @@ the same names as in the mod's config file, `comforts-server.toml`.
   - The time of day that sleeping bags can be used. Allowed values:
     `NONE`, `DAY`, `NIGHT`, `DAY_OR_NIGHT`.
 
-#### Sleep Percentage
+### Sleep Percentage
 
 - `daySleepingPercentage` (default: `-1`)
   - What percentage of players must sleep to skip the day. A percentage
@@ -69,7 +69,7 @@ the same names as in the mod's config file, `comforts-server.toml`.
     skipping the day. A value of less than `0` will default to the
     `playerSleepingPercentage` game rule. Range: `-1` to `100`.
 
-#### Wake Time Offsets
+### Wake Time Offsets
 
 - `dayWakeTimeOffset` (default: `0`)
   - The amount of time, in ticks, to add or remove from the new time
@@ -82,7 +82,7 @@ the same names as in the mod's config file, `comforts-server.toml`.
     the night, negative values wake them earlier. Range: `-2000` to
     `2000`.
 
-#### Phantom Prevention
+### Phantom Prevention
 
 - `hammocksStopPhantoms` (default: `true`)
   - If enabled, attempting to sleep in hammocks stops phantoms from
@@ -94,7 +94,7 @@ the same names as in the mod's config file, `comforts-server.toml`.
     from spawning. This prevents phantom mobs from appearing when
     players use sleeping bags during the night.
 
-#### Sleeping Bag Durability
+### Sleeping Bag Durability
 
 - `sleepingBagBreakChance` (default: `0`)
   - The percentage chance that a sleeping bag will break upon use. A
@@ -107,7 +107,7 @@ the same names as in the mod's config file, `comforts-server.toml`.
     chance with luck, negative values decrease it. Range: `-1.0` to
     `1.0`.
 
-#### Status Effects
+### Status Effects
 
 - `sleepingBagEffects` (default: `[]`)
   - The status effects to apply to players after using the sleeping bag.
@@ -116,16 +116,9 @@ the same names as in the mod's config file, `comforts-server.toml`.
     Example: `["minecraft:absorption 120 2", "minecraft:regeneration 120
     2"]`.
 
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-
-### Modpacks
+## Modpacks
 
 This mod is installed in the following modpacks:
 
 - harleycolonies-1.20.1-0.1.2
 - harleycolonies-1.21.1
-

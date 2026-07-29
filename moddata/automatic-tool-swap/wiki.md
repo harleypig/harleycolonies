@@ -8,12 +8,12 @@ mod searches your inventory for the optimal tool when you target a block
 and swaps to it automatically. This eliminates the need to manually switch
 tools, making mining and building more efficient.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config file, `toolswap-client.toml`.
 
-#### Tool Selection Settings
+### Tool Selection Settings
 
 - `save` (default: `false`)
   - If this is on, tool with 1 durability left will be saved. Only works
@@ -56,10 +56,3 @@ the same names as in the mod's config file, `toolswap-client.toml`.
     the most suitable tool every tick while mining, rather than only when
     a new block is targeted. When enabled, tool selection updates
     continuously during mining.
-
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-

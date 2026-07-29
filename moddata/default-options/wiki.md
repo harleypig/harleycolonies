@@ -8,12 +8,12 @@ and optionally lock difficulty to prevent players from changing it. This is
 useful for modpacks that want to ensure a consistent gameplay experience
 across all players.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config file, `defaultoptions-common.toml`.
 
-#### Difficulty Settings
+### Difficulty Settings
 
 - `defaultDifficulty` (default: `"NORMAL"`)
   - The default difficulty selected for newly created worlds. Allowed
@@ -24,10 +24,3 @@ the same names as in the mod's config file, `defaultoptions-common.toml`.
     the specific default. This cannot be unlocked by players without
     external tools! Probably a bad idea. Not recommended. When enabled,
     players cannot change the difficulty setting in-game.
-
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-

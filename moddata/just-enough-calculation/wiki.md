@@ -8,17 +8,10 @@ needed to craft items in bulk. The mod helps players plan large-scale
 crafting projects by calculating ingredient requirements and showing
 intermediate steps.
 
-### Features
+## Features
 
 - **JEI Integration**: Calculator interface integrated into JEI.
 - **Bulk Crafting Calculations**: Calculate resources needed for crafting
   multiple items.
 - **Recipe Breakdown**: Shows intermediate crafting steps and ingredient
   requirements.
-
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-

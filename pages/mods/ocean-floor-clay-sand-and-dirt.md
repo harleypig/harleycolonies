@@ -7,13 +7,12 @@ categories:
   - world-dimensions
 ---
 
-[Website](https://www.curseforge.com/minecraft/mc-mods/ocean-floor-clay-sand-and-dirt) | [Issues](https://github.com/PrinceOfAmber/OceanFloorControl/issues) | [Source](https://github.com/PrinceOfAmber/OceanFloorControl)
+[Website](<https://www.curseforge.com/minecraft/mc-mods/ocean-floor-clay-sand-and-dirt>) | [Issues](<https://github.com/PrinceOfAmber/OceanFloorControl/issues>) | [Source](<https://github.com/PrinceOfAmber/OceanFloorControl>)
 
 Client/Server: both
 
-### Modpacks
+## Modpacks
 
 This mod is installed in the following modpacks:
 
 - harleycolonies-1.20.1-0.1.2
-

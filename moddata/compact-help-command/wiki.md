@@ -9,12 +9,12 @@ including colors, spacing, and pagination. This makes it easier for players
 to navigate and understand available commands, especially on servers with
 many mods that add numerous commands.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config file, `compacthelpcommand.json5`.
 
-#### Display Settings
+### Display Settings
 
 - `addVerticalBarSpacing` (default: `true`)
   - When enabled, adds a space in front and behind a vertical bar in the
@@ -26,7 +26,7 @@ the same names as in the mod's config file, `compacthelpcommand.json5`.
     This setting controls pagination, making it easier to browse through
     command lists. Range: `1` to `50`.
 
-#### Color Settings
+### Color Settings
 
 - `commandColour` (default: `2`)
   - The colour of the command in `/help`. The possible values are: `0`:
@@ -39,11 +39,3 @@ the same names as in the mod's config file, `compacthelpcommand.json5`.
   - The colour of the subcommand in `/help`. Uses the same color values as
     `commandColour`. This allows you to differentiate between main commands
     and their subcommands visually. Range: `0` to `15`.
-
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-- harleycolonies-1.20.1-0.1.2
-

@@ -7,7 +7,7 @@ categories:
   - cosmetic
 ---
 
-[Website](https://www.curseforge.com/minecraft/mc-mods/towntalk)
+[Website](<https://www.curseforge.com/minecraft/mc-mods/towntalk>)
 
 Client/Server: both
 
@@ -15,22 +15,15 @@ Client/Server: both
 The mod enhances multiplayer communication with town-specific chat channels
 and communication tools.
 
-### Features
+## Features
 
 - **Town Chat**: Town-specific chat channels.
 - **Communication Tools**: Enhanced communication features.
 - **Colony Integration**: Works with colony and town systems.
 
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-
-### Modpacks
+## Modpacks
 
 This mod is installed in the following modpacks:
 
 - harleycolonies-1.20.1-0.1.2
 - harleycolonies-1.21.1
-

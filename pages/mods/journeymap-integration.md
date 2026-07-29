@@ -5,7 +5,7 @@ categories:
   - map-information
 ---
 
-[Website](https://www.curseforge.com/minecraft/mc-mods/journeymap-integration) | [Issues](https://github.com/frank89722/JourneyMapIntegration/issues) | [Source](https://github.com/frank89722/JourneyMapIntegration)
+[Website](<https://www.curseforge.com/minecraft/mc-mods/journeymap-integration>) | [Issues](<https://github.com/frank89722/JourneyMapIntegration/issues>) | [Source](<https://github.com/frank89722/JourneyMapIntegration>)
 
 Client/Server: both
 
@@ -15,12 +15,12 @@ systems. The mod integrates with FTB Chunks, Waystones, and provides
 configurable waypoint messaging. It also includes options for managing
 JourneyMap default configurations.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config file, `jmi-client.toml`.
 
-#### FTB Chunks Integration
+### FTB Chunks Integration
 
 - `FTBChunks.ftbChunks` (default: `true`)
   - Enable FTBChunks Integration. When enabled, the mod integrates with
@@ -34,7 +34,7 @@ the same names as in the mod's config file, `jmi-client.toml`.
     waypoint). When enabled, conflicting features are disabled to prevent
     overlap.
 
-#### Waystones Integration
+### Waystones Integration
 
 - `Waystones.waystones` (default: `true`)
   - Enable Waystones Integration. When enabled, waystones appear as
@@ -42,10 +42,10 @@ the same names as in the mod's config file, `jmi-client.toml`.
 
 - `Waystones.wayStoneMarkerColor` (default: `16777215`)
   - The color code for Waystone marker. You can generate the color code
-    from https://www.mathsisfun.com/hexadecimal-decimal-colors.html. Range:
+    from <https://www.mathsisfun.com/hexadecimal-decimal-colors.html>. Range:
     `0` to `16777215`.
 
-#### Waypoint Message Settings
+### Waypoint Message Settings
 
 - `WaypointMessage.waypointMessageBlocks` (default: `[]`)
   - List of block IDs and tags for WaypointMessage. Example:
@@ -56,7 +56,7 @@ the same names as in the mod's config file, `jmi-client.toml`.
   - Only show waypoint messages when holding an empty hand. When enabled,
     messages only appear when not holding any items.
 
-#### JourneyMap Default Config
+### JourneyMap Default Config
 
 - `JourneyMap Default Config.defaultConfigVersion` (default: `-1`)
   - When local JM default config version is older than
@@ -64,16 +64,9 @@ the same names as in the mod's config file, `jmi-client.toml`.
     `/config/jmdefaultconfig/` to `/journeymap/` and replace the existing
     files. Set to `-1` to disable. Range: greater than `-1`.
 
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-
-### Modpacks
+## Modpacks
 
 This mod is installed in the following modpacks:
 
 - harleycolonies-1.20.1-0.1.2
 - harleycolonies-1.21.1
-

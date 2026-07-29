@@ -9,12 +9,12 @@ closest player, and can display the crafting result. This provides visual
 feedback for crafting operations and makes the crafting process more
 immersive.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config files.
 
-#### Client Settings
+### Client Settings
 
 These settings are configured in `visualworkbench-client.toml`.
 
@@ -34,7 +34,7 @@ These settings are configured in `visualworkbench-client.toml`.
     table contents. When enabled, the crafted item is displayed on the
     table along with the ingredients.
 
-#### Common Settings
+### Common Settings
 
 These settings are configured in `visualworkbench-common.toml`.
 
@@ -48,10 +48,3 @@ These settings are configured in `visualworkbench-common.toml`.
     generation. Does not affect already generated blocks. When enabled,
     structures spawn with Visual Workbench crafting tables instead of
     vanilla ones.
-
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-

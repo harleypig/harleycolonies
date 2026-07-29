@@ -4,7 +4,7 @@ categories:
   - library-api
 ---
 
-[Website](https://www.curseforge.com/minecraft/mc-mods/collective) | [Issues](https://github.com/Serilum/.issue-tracker/labels/Library: Collective) | [Source](https://github.com/Serilum/Collective)
+[Website](<https://www.curseforge.com/minecraft/mc-mods/collective>) | [Issues](<https://github.com/Serilum/.issue-tracker/labels/Library: Collective>) | [Source](<https://github.com/Serilum/Collective>)
 
 Client/Server: both
 
@@ -14,12 +14,12 @@ replacement, item transfer, procedural drop generation, and block detection
 around entities. The mod is designed to be a dependency for other mods
 rather than a standalone feature mod.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config file, `collective.json5`.
 
-#### Entity Settings
+### Entity Settings
 
 - `transferItemsBetweenReplacedEntities` (default: `true`)
   - When enabled, transfer the held items and armour from replaced entities
@@ -42,16 +42,9 @@ the same names as in the mod's config file, `collective.json5`.
 - `enablePatronPets` (default: `true`)
   - Enables pets for Patrons. Will be added in a future release.
 
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-
-### Modpacks
+## Modpacks
 
 This mod is installed in the following modpacks:
 
 - harleycolonies-1.20.1-0.1.2
 - harleycolonies-1.21.1
-

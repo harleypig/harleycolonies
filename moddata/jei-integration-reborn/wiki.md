@@ -9,12 +9,12 @@ food values, registry names, max stack size, tags, translation keys, and
 data components. All tooltips are configurable and can be set to always
 show, show on shift, show in debug mode, or be disabled.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config file, `jei_integration_reborn-client.toml`.
 
-#### Tooltip Options
+### Tooltip Options
 
 All tooltip options support the following modes: `DISABLE` (never show),
 `ENABLE` (always show), `SHIFT` (show when holding shift), `DEBUG` (show
@@ -47,10 +47,3 @@ mode).
 
 - `Tooltip_Options.dataComponentsMode` (default: `"DISABLE"`)
   - Display data components tooltip.
-
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-

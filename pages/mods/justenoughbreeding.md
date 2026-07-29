@@ -7,14 +7,13 @@ categories:
   - world-mobs
 ---
 
-[Website](https://www.curseforge.com/minecraft/mc-mods/justenoughbreeding) | [Issues](https://github.com/Christofmeg/JustEnoughBreeding/issues) | [Source](https://github.com/Christofmeg/JustEnoughBreeding)
+[Website](<https://www.curseforge.com/minecraft/mc-mods/justenoughbreeding>) | [Issues](<https://github.com/Christofmeg/JustEnoughBreeding/issues>) | [Source](<https://github.com/Christofmeg/JustEnoughBreeding>)
 
 Client/Server: both
 
-### Modpacks
+## Modpacks
 
 This mod is installed in the following modpacks:
 
 - harleycolonies-1.20.1-0.1.2
 - harleycolonies-1.21.1
-

@@ -9,12 +9,12 @@ entire tree including leaves. The mod includes configurable chop counting
 algorithms, tree detection settings, visual indicators, and compatibility
 with various mods like Tinkers' Construct and Apotheosis.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config files.
 
-#### Client Settings
+### Client Settings
 
 These settings are configured in `treechop-client.toml`.
 
@@ -57,7 +57,7 @@ These settings are configured in `treechop-client.toml`.
 - `settingsScreen.showTooltips` (default: `true`)
   - Show tooltips in the settings screen (can be toggled in-game).
 
-#### Common Settings
+### Common Settings
 
 These settings are configured in `treechop-common.toml`.
 
@@ -148,10 +148,3 @@ The mod also includes extensive compatibility settings for various mods
 like Carry On, Project MMO, The One Probe, Terraformers mods, MultiMine,
 Apotheosis, Silent Gear, and Tinkers' Construct. See the config file for
 detailed compatibility options.
-
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-

@@ -2,8 +2,6 @@
 title: Embeddium
 ---
 
-
-
 Client/Server: client
 
 **Embeddium** is a performance-focused rendering mod for Minecraft that
@@ -12,12 +10,12 @@ includes chunk building optimizations, entity culling, fog occlusion, and
 various rendering performance improvements. It also provides configurable
 quality settings for weather, leaves, and other visual effects.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config file, `embeddium-options.json`.
 
-#### Quality Settings
+### Quality Settings
 
 - `quality.weather_quality` (default: `"DEFAULT"`)
   - Quality setting for weather rendering. Controls the detail level of
@@ -35,7 +33,7 @@ the same names as in the mod's config file, `embeddium-options.json`.
   - Use quad normals for shading calculations. When enabled, uses more
     accurate shading but may impact performance.
 
-#### Advanced Settings
+### Advanced Settings
 
 - `advanced.enable_memory_tracing` (default: `false`)
   - Enable memory tracing. When enabled, tracks memory usage for
@@ -53,7 +51,7 @@ the same names as in the mod's config file, `embeddium-options.json`.
   - CPU render ahead limit. Controls how many frames ahead the CPU can
     prepare for rendering.
 
-#### Performance Settings
+### Performance Settings
 
 - `performance.chunk_builder_threads` (default: `0`)
   - Number of threads to use for chunk building. `0` means automatic
@@ -96,7 +94,7 @@ the same names as in the mod's config file, `embeddium-options.json`.
   - Use no-error GL context. When enabled, disables OpenGL error checking
     for better performance (use with caution).
 
-#### Notification Settings
+### Notification Settings
 
 - `notifications.has_cleared_donation_button` (default: `false`)
   - Whether the donation button has been cleared. Used internally.
@@ -104,15 +102,8 @@ the same names as in the mod's config file, `embeddium-options.json`.
 - `notifications.has_seen_donation_prompt` (default: `false`)
   - Whether the donation prompt has been seen. Used internally.
 
-### Modpacks
+## Modpacks
 
 This mod is installed in the following modpacks:
 
 - harleycolonies-1.21.1
-
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-

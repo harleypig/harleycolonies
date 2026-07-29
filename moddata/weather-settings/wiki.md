@@ -8,12 +8,12 @@ and weights. The mod can skip weather after sleeping and provides commands
 for weather control. Weather entries can be configured per dimension with
 custom durations and weights for rain and thunder.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config file, `weathersettings.json`.
 
-#### General Settings
+### General Settings
 
 - `skipWeatherOnSleep` (default: `false`)
   - Whether to skip weather after sleeping. When enabled, weather is
@@ -23,7 +23,7 @@ the same names as in the mod's config file, `weathersettings.json`.
   - Command for clean weather. This is the command executed when weather
     should be cleared.
 
-#### Weather Entries
+### Weather Entries
 
 - `weatherEntries` (default: `[{"world": "minecraft:overworld", "rain":
   {"command": "weather rain", "weight": 100, "duration": 300,
@@ -38,10 +38,3 @@ the same names as in the mod's config file, `weathersettings.json`.
     - `duration`: How long the weather lasts in seconds
     - `clearDuration`: How long clear weather lasts after this weather type
       ends
-
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-

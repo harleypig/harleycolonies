@@ -8,12 +8,12 @@ region sizes, weights, and distribution across different dimensions. It
 allows multiple biome mods to work together by organizing biomes into
 regions and controlling how they interact with vanilla biomes.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config file, `terrablender.toml`.
 
-#### General Settings
+### General Settings
 
 - `general.overworld_region_size` (default: `3`)
   - The size of overworld biome regions from each mod that uses
@@ -32,7 +32,7 @@ the same names as in the mod's config file, `terrablender.toml`.
   - The weighting of vanilla biome regions in the nether. Higher values
     make vanilla nether biomes more common.
 
-#### End Settings
+### End Settings
 
 - `end.edge_biome_size` (default: `3`)
   - The size of edge end biomes. Controls how large edge biomes are in the
@@ -65,11 +65,3 @@ the same names as in the mod's config file, `terrablender.toml`.
 - `end.vanilla_small_end_islands_weight` (default: `10`)
   - The weight of Vanilla small end islands biomes. Higher values make
     vanilla small end islands more common.
-
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-- harleycolonies-1.20.1-0.1.2
-

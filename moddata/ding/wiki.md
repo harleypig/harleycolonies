@@ -8,12 +8,12 @@ play sounds when resources are reloaded or when connecting to a server.
 This is particularly useful for players who want to know when the game has
 finished loading without constantly checking the screen.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config file, `ding.toml`.
 
-#### Load Sound Settings
+### Load Sound Settings
 
 - `load.playOnLoad` (default: `true`)
   - Play sound when the game loads. When enabled, a sound plays when
@@ -37,7 +37,7 @@ the same names as in the mod's config file, `ding.toml`.
     Examples: `"ambient"` or `"music"`. Defaults to `"master"` if Ding
     cannot find your category.
 
-#### Resources Reload Sound Settings
+### Resources Reload Sound Settings
 
 - `resourcesReload.playOnResourcesReload` (default: `true`)
   - Play sound when resources complete reloading. Requires game to be
@@ -59,7 +59,7 @@ the same names as in the mod's config file, `ding.toml`.
   - Sound category for the sound played when resources complete reloading.
     See `load.category` for details.
 
-#### World Load Sound Settings
+### World Load Sound Settings
 
 - `world.playOnWorld` (default: `false`)
   - Play sound when the world loads after connecting to a server. Requires
@@ -81,10 +81,3 @@ the same names as in the mod's config file, `ding.toml`.
 - `world.categoryWorld` (default: `"master"`)
   - Sound category for the sound played when the world finishes loading.
     See `load.category` for details.
-
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-

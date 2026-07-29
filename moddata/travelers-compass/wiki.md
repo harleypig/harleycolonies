@@ -10,12 +10,12 @@ configurable search ranges, filters, HUD display options, and integration
 with JEI/REI/EMI and Jade/TOP. The mod also supports XP costs for searches
 to balance gameplay.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config files.
 
-#### General Search Settings
+### General Search Settings
 
 These settings are configured in `travelerscompass-common.toml`.
 
@@ -56,7 +56,7 @@ These settings are configured in `travelerscompass-common.toml`.
   - Allows the compass to search inside block containers (chests, furnaces,
     barrels, etc.). Requires `enable_containers_search` to be enabled.
 
-#### Behavior Settings
+### Behavior Settings
 
 - `behavior.chunk_search_range` (default: `10`)
   - Maximum search radius in chunks from the player. Applies to any block
@@ -93,7 +93,7 @@ These settings are configured in `travelerscompass-common.toml`.
     scanning. Only the closest or most relevant targets will be cached,
     based on priority and distance. Range: greater than `0`.
 
-#### Search Filters
+### Search Filters
 
 - `search-filters.mods_filter_type` (default: `"BLACKLIST"`)
   - Filter mode for mod namespaces. Allowed values: `WHITELIST`,
@@ -124,7 +124,7 @@ These settings are configured in `travelerscompass-common.toml`.
   - List of entity IDs to filter. Example: `["minecraft:enderman",
     "aether:valkyrie"]`.
 
-#### HUD Settings
+### HUD Settings
 
 - `hud.enable_hud` (default: `true`)
   - Enables the compass HUD overlay.
@@ -141,7 +141,7 @@ These settings are configured in `travelerscompass-common.toml`.
 - `hud.default_hud_scale` (default: `1.0`)
   - Default HUD scale.
 
-#### Compatibility Settings
+### Compatibility Settings
 
 - `compatibility.enable_lootr_search` (default: `true`)
   - Enables Lootr containers searching when Lootr mod is installed.
@@ -164,7 +164,7 @@ These settings are configured in `travelerscompass-common.toml`.
 - `compatibility.the_one_probe_compatibility` (default: `true`)
   - Enable displaying Block/Entity search info in the TOP info panel.
 
-#### Search Cost Settings
+### Search Cost Settings
 
 These settings are configured in `travelerscompass-cost.toml`.
 
@@ -182,10 +182,3 @@ These settings are configured in `travelerscompass-cost.toml`.
     both item tags and block tags. If an item has a cost defined both in
     `items_search_cost` and here, the `items_search_cost` value takes
     priority. Example: `["minecraft:planks=1/3"]`.
-
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-

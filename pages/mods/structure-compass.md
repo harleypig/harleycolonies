@@ -2,8 +2,6 @@
 title: Structure Compass
 ---
 
-
-
 Client/Server: both
 
 **Structure Compass** helps players locate structures in Minecraft by
@@ -13,12 +11,12 @@ configurable search parameters. Structures can be marked as explored to
 prevent re-finding them, and the mod supports asynchronous searching for
 better performance.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config file, `structurecompass-common.toml`.
 
-#### General Settings
+### General Settings
 
 - `general.compassRange` (default: `10000`)
   - Sets the range in blocks in which the structure compasses can locate
@@ -40,15 +38,8 @@ the same names as in the mod's config file, `structurecompass-common.toml`.
     Supports wildcard `*`. Example: `'minecraft:*'` will blacklist
     anything in the minecraft domain.
 
-### Modpacks
+## Modpacks
 
 This mod is installed in the following modpacks:
 
 - harleycolonies-1.21.1
-
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-

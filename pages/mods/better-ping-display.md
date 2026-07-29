@@ -6,7 +6,7 @@ categories:
   - map-information
 ---
 
-[Website](https://www.curseforge.com/minecraft/mc-mods/better-ping-display) | [Issues](https://github.com/vladmarica/better-ping-display/issues) | [Source](https://github.com/vladmarica/better-ping-display)
+[Website](<https://www.curseforge.com/minecraft/mc-mods/better-ping-display>) | [Issues](<https://github.com/vladmarica/better-ping-display/issues>) | [Source](<https://github.com/vladmarica/better-ping-display>)
 
 Client/Server: both
 
@@ -17,12 +17,12 @@ Minecraft ping bars with customizable text displays that can be color-coded
 based on latency. The mod offers flexible formatting options and can work
 alongside or replace the vanilla ping bar display.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config file, `betterpingdisplay-client.toml`.
 
-#### Display Settings
+### Display Settings
 
 - `textColor` (default: `"#A0A0A0"`)
   - The color of the ping display text, written in hex format. This setting
@@ -41,7 +41,7 @@ the same names as in the mod's config file, `betterpingdisplay-client.toml`.
     colors transitioning based on ping value. If this setting is `true`, then
     the `textColor` setting is ignored.
 
-#### Visual Options
+### Visual Options
 
 - `renderPingBars` (default: `false`)
   - Whether to also draw the default Minecraft ping bars alongside the
@@ -49,16 +49,9 @@ the same names as in the mod's config file, `betterpingdisplay-client.toml`.
     the traditional ping bars are shown. When set to `false`, only the
     numerical display is shown.
 
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-
-### Modpacks
+## Modpacks
 
 This mod is installed in the following modpacks:
 
 - harleycolonies-1.20.1-0.1.2
 - harleycolonies-1.21.1
-

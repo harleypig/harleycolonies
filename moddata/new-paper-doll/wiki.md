@@ -8,12 +8,12 @@ appears during specific actions like sprinting, swimming, or crouching,
 providing visual feedback about the player's current state. The mod
 includes configurable positioning, scaling, and display conditions.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config file, `paperdoll-client.toml`.
 
-#### Display Settings
+### Display Settings
 
 - `first_person_only` (default: `true`)
   - Only show paper doll when in first-person mode. When enabled, the
@@ -56,10 +56,3 @@ the same names as in the mod's config file, `paperdoll-client.toml`.
   - Shift paper doll downwards when it would otherwise overlap with potion
     icons while showing in the top screen right corner. When enabled,
     prevents overlap with potion effect icons.
-
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-

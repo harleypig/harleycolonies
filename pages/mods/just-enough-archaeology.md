@@ -4,7 +4,7 @@ categories:
   - utility-qol
 ---
 
-[Website](https://www.curseforge.com/minecraft/mc-mods/just-enough-archaeology)
+[Website](<https://www.curseforge.com/minecraft/mc-mods/just-enough-archaeology>)
 
 Client/Server: both
 
@@ -14,12 +14,12 @@ suspicious sand and suspicious gravel blocks. The mod displays archaeology
 loot tables and compatibility with other archaeology mods, making it
 easier to see what items can be discovered through archaeology.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config file, `jearchaeology-common.toml`.
 
-#### Compatibility Settings
+### Compatibility Settings
 
 - `atm_compat` (default: `true`)
   - Enable compatibility with ATM (All The Mods). When enabled, the mod
@@ -29,17 +29,9 @@ the same names as in the mod's config file, `jearchaeology-common.toml`.
   - Enable compatibility with Better Archaeology. When enabled, the mod
     integrates with Better Archaeology mod's features.
 
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-- harleycolonies-1.20.1-0.1.2
-
-### Modpacks
+## Modpacks
 
 This mod is installed in the following modpacks:
 
 - harleycolonies-1.20.1-0.1.2
 - harleycolonies-1.21.1
-

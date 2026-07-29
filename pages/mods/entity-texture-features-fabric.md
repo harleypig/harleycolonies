@@ -2,8 +2,6 @@
 title: [ETF] Entity Texture Features - [Fabric & Forge]
 ---
 
-
-
 Client/Server: client
 
 **Entity Texture Features** allows resource pack creators to add custom
@@ -13,12 +11,12 @@ textures, emissive overlays, enchanted textures, armor and trim textures,
 skin features, blinking animations, and various rendering optimizations.
 It provides extensive compatibility with OptiFine resource packs.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config file, `entity_texture_features.json`.
 
-#### General Settings
+### General Settings
 
 - `enableCustomTextures` (default: `true`)
   - Enable custom entity textures from resource packs.
@@ -47,7 +45,7 @@ the same names as in the mod's config file, `entity_texture_features.json`.
 - `enableArmorAndTrims` (default: `true`)
   - Enable custom armor and trim textures.
 
-#### Skin Features
+### Skin Features
 
 - `skinFeaturesEnabled` (default: `true`)
   - Enable skin features like transparency and custom textures.
@@ -70,7 +68,7 @@ the same names as in the mod's config file, `entity_texture_features.json`.
 - `enableEnemyTeamPlayersSkinFeatures` (default: `true`)
   - Enable skin features for enemy team players.
 
-#### Animation Settings
+### Animation Settings
 
 - `enableBlinking` (default: `true`)
   - Enable blinking animations for entities.
@@ -81,7 +79,7 @@ the same names as in the mod's config file, `entity_texture_features.json`.
 - `blinkLength` (default: `1`)
   - Length of blink animation in ticks.
 
-#### Performance Settings
+### Performance Settings
 
 - `advanced_IncreaseCacheSizeModifier` (default: `1.0`)
   - Modifier for cache size. Higher values use more memory but may improve
@@ -99,7 +97,7 @@ the same names as in the mod's config file, `entity_texture_features.json`.
 - `configButtonLoc` (default: `"BOTTOM_RIGHT"`)
   - Location of the config button on screen.
 
-#### Compatibility Settings
+### Compatibility Settings
 
 - `optifine_limitRandomVariantGapsBy10` (default: `true`)
   - Limit random variant gaps by 10 for OptiFine compatibility.
@@ -122,7 +120,7 @@ the same names as in the mod's config file, `entity_texture_features.json`.
 - `enableFullBodyWardenTextures` (default: `true`)
   - Enable full body textures for Wardens.
 
-#### Override Settings
+### Override Settings
 
 - `entityEmissiveOverrides` (default: `{}`)
   - Override emissive settings for specific entities.
@@ -145,16 +143,9 @@ the same names as in the mod's config file, `entity_texture_features.json`.
 - `entityLightOverrides` (default: `{}`)
   - Override lighting for specific entities.
 
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-
-### Modpacks
+## Modpacks
 
 This mod is installed in the following modpacks:
 
 - harleycolonies-1.20.1-0.1.2
 - harleycolonies-1.21.1
-

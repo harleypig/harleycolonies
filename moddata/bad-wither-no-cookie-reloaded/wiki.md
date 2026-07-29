@@ -10,12 +10,12 @@ from playing globally. The mod provides configurable sound silencing with
 support for custom sound events and includes a command utility to help
 identify sounds for advanced customization.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config file, `bwncr-common.toml`.
 
-#### General Settings
+### General Settings
 
 - `general.silenceWither` (default: `true`)
   - Silence the server-wide Wither spawn and death broadcast sounds. When
@@ -49,10 +49,3 @@ the same names as in the mod's config file, `bwncr-common.toml`.
     received and whether or not they are being canceled. This is useful for
     troubleshooting and identifying sound event names, but should be kept
     disabled during normal gameplay to avoid console spam.
-
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-

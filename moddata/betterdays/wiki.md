@@ -8,12 +8,12 @@ random tick synchronization, and a customizable bed clock interface. The
 mod supports both single-player and multiplayer servers, with different
 time speeds based on the number of sleeping players.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config files.
 
-#### GUI Settings
+### GUI Settings
 
 These settings control the bed clock display and are configured in
 `betterdays-client.toml`.
@@ -41,7 +41,7 @@ These settings control the bed clock display and are configured in
     jittering when using `/time set` command in certain dimensions like
     the Aether.
 
-#### Time Settings
+### Time Settings
 
 These settings are configured in `betterdays-common.toml`.
 
@@ -100,7 +100,7 @@ These settings are configured in `betterdays-common.toml`.
     specified day/night tick. The two default pairs need to exist, but
     their time speed values can be modified.
 
-#### Time Effects
+### Time Effects
 
 These settings are configured in `betterdays-common.toml`.
 
@@ -154,7 +154,7 @@ These settings are configured in `betterdays-common.toml`.
     effect only applies when at least one player is sleeping in a
     dimension. Allowed values: `NEVER`, `ALWAYS`, `SLEEPING`.
 
-#### Sleep Settings
+### Sleep Settings
 
 These settings are configured in `betterdays-common.toml`.
 
@@ -206,7 +206,7 @@ These settings are configured in `betterdays-common.toml`.
     means half the players must be sleeping, etc. A value of `0`
     effectively disables this feature. Range: `0.0` to `1.0`.
 
-#### Sleep Messages
+### Sleep Messages
 
 These settings are configured in `betterdays-common.toml`. Sleep messages
 support Minecraft formatting codes and variables that can be inserted using
@@ -250,4 +250,3 @@ empty string.
 - `sleep.messages.leaveBed.target` (default: `"DIMENSION"`)
   - Sets to whom this message is sent. Allowed values: `ALL`, `DIMENSION`,
     `SLEEPING`.
-

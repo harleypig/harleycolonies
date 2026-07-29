@@ -8,18 +8,18 @@ time, including torches going out, farmland degrading, paths decaying,
 mossy blocks forming, mud spreading, and various other natural processes.
 This adds realism and encourages active maintenance of builds.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config file, `overgrowth-server.toml`.
 
-#### Global Settings
+### Global Settings
 
 - `main.globalspeed` (default: `80`)
   - Global update rate. In general how often the individual handlers are
     ticked. `0` to turn it off. Range: `0` to `1000`.
 
-#### Feature Handlers
+### Feature Handlers
 
 Each handler controls how often a specific decay/transformation feature is
 processed. Higher values mean more frequent updates. Set to `0` to disable
@@ -83,10 +83,3 @@ a feature.
 - `main.caveentities` (default: `false`)
   - Allow neutral animals to spawn in caves. When enabled, neutral mobs can
     spawn in cave biomes.
-
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-

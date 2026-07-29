@@ -2,8 +2,6 @@
 title: Packed Up (Backpacks)
 ---
 
-
-
 Client/Server: both
 
 **Packed Up (Backpacks)** adds multiple tiers of backpacks with increasing
@@ -13,12 +11,12 @@ Backpacks can be nested inside other backpacks (with configurable depth
 limits), can be configured to persist on death, and have burn protection
 options.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config file, `packedup-common.toml`.
 
-#### General Settings
+### General Settings
 
 - `General.allowBagInBag` (default: `true`)
   - Can backpacks be put inside other backpacks? When enabled, backpacks
@@ -39,7 +37,7 @@ the same names as in the mod's config file, `packedup-common.toml`.
     backpacks can be destroyed by fire and lava. When disabled, backpacks
     are fireproof.
 
-#### Backpack Settings
+### Backpack Settings
 
 Each backpack tier (Basic, Iron, Copper, Silver, Gold, Diamond, Obsidian)
 has the following settings:
@@ -57,15 +55,8 @@ has the following settings:
   - How many columns does this backpack have? Range: `1` to `13`. All
     tiers default to `9` columns.
 
-### Modpacks
+## Modpacks
 
 This mod is installed in the following modpacks:
 
 - harleycolonies-1.21.1
-
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-

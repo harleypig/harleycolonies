@@ -8,12 +8,12 @@ The mod supports custom entity models, animations, holograms, and various
 rendering modes. It provides extensive compatibility with OptiFine resource
 packs and includes performance optimizations for model rendering.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config file, `entity_model_features.json`.
 
-#### General Settings
+### General Settings
 
 - `logModelCreationData` (default: `false`)
   - Log model creation data to console. Useful for debugging model loading
@@ -77,7 +77,7 @@ the same names as in the mod's config file, `entity_model_features.json`.
 - `showReloadErrorToast` (default: `true`)
   - Show error toast notifications when reloading resources.
 
-#### Override Settings
+### Override Settings
 
 - `entityRenderModeOverrides` (default: `{}`)
   - Override render modes for specific entities.
@@ -90,10 +90,3 @@ the same names as in the mod's config file, `entity_model_features.json`.
 
 - `allowEBEModConfigModify` (default: `true`)
   - Allow Entity Block Entity mod config modifications.
-
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-
