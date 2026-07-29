@@ -101,3 +101,4 @@ For example:
 - [Possible Groupings](style/groupings) - Building groupings and requirements
 - [Tag Tool Usage](style/tag-tool) - Tag Tool reference
 - [Datapacks](style/datapacks) - Datapack customization
+- [Lazybones Style](style/lazybones) - Dense district-based style design (in design)
