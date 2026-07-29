@@ -52,42 +52,24 @@ session will be started in this directory to continue.
 - Establish a real workflow for the United Colonies instance backup
   (when to run it, where backups live, rotation/retention).
 
-## Migration checklist — rescue from the stale clone
+## Migrated to issues
 
-Assets that currently exist ONLY in `~/projects/harleycolonies` (all
-untracked there). Move/handle each, then tick it off:
+The migration checklist and cleanup list that used to live here are now
+tracked as GitHub issues — this file no longer duplicates them:
 
-- [ ] `client-side-only/United Colonies/` — 2.1 GB Minecraft instance.
-      Don't move wholesale; run `bin/backup-instance` against it to
-      capture the irreplaceable slice, then decide what (if anything)
-      else to keep.
-- [ ] `client-side-only/minecolonies-blueprints/` — a **nested git
-      repo** (has its own `.git`). Decide: standalone repo, submodule,
-      or copy of blueprints only.
-- [ ] `client-side-only/ClientSideMods/` — 112 MB of mods/resourcepacks.
-      Likely re-downloadable; keep the *list* (`MyCSOMods.txt`), not the
-      binaries.
-- [ ] `client-side-only/MyCSOMods.txt` — the actual client-side-only mod
-      *documentation*. This is the real CSO project content; bring it in
-      and track it.
-- [ ] zips/jars in `client-side-only/` (schematic worlds, resource
-      packs, baritone jar) — `*.zip` is gitignored; keep them as local
-      assets or external storage, not in git.
+| Was | Now |
+| --- | --- |
+| Rescue assets from the stale clone | [#6](https://github.com/harleypig/harleycolonies/issues/6) |
+| `modpacks/` is misleadingly named | [#7](https://github.com/harleypig/harleycolonies/issues/7) |
+| Stale `WORKFLOW.md` | **done** — corrected in #3 |
+| `.gitignore` too narrow | **done** — hardened in #3 |
+| `AGENTS.md` is generic boilerplate | **done** — deleted in #3 |
 
-## Open cleanup items (from the repo scan — verify against THIS clone)
-
-- [ ] `WORKFLOW.md` is stale: documents a non-existent `bin/mod-manager`
-      (real entry points are `bin/modpack-manager` + the `bin/mpmanager`
-      package) and refers to `mods/mods.yaml` when the dir is `modpacks/`.
-- [ ] `.gitignore` doesn't cover the instance dir, jars, or baritone
-      `.bcr` caches — only `*.zip`/`*.mrpack`. Harden it so a stray add
-      can't pull in gigabytes.
-- [ ] `modpacks/` is misleadingly named — it's the mod metadata + wiki
-      store (`modpacks/mods.yaml`, per-mod `wiki.md`), not modpacks. The
-      actual packs are `harleycolonies-1.20.1-0.1.2/` and
-      `harleycolonies-1.21.1/`.
-- [ ] `AGENTS.md` is generic multi-agent boilerplate, largely unrelated
-      to this Minecraft repo — candidate for trimming to what applies.
+Surfaced while onboarding, also tracked:
+[#4](https://github.com/harleypig/harleycolonies/issues/4) (red test suite),
+[#5](https://github.com/harleypig/harleycolonies/issues/5) (markdownlint
+backlog), [#8](https://github.com/harleypig/harleycolonies/issues/8)
+(pre-commit phase 2).
 
 ## Quick reference
 
@@ -97,5 +79,5 @@ untracked there). Move/handle each, then tick it off:
   `bin/tests/`). Mod data: `modpacks/mods.yaml`.
 - Server: `server/docker-compose.yml` (itzg, ARCLIGHT/NeoForge, RCON).
 - Wiki (Gollum): `pages/`.
-- Branches present: `master`, `docs/baritone` (current),
+- Branches present: `master`, `docs/baritone` (merged, deletable),
   `feature/docker-config-audit`.
