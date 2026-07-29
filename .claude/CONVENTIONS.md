@@ -27,34 +27,69 @@ team-managed: enabled
   nudges; it never blocks. Read from the working tree, so it is live
   immediately.
 
+## Deliverability — nothing ships yet
+
+**Nothing in this repo is currently deliverable.** It is the consolidation of
+several earlier attempts, and every piece is still being brought under
+control. That is the governing constraint for the sections below:
+
+- **Do not build release machinery ahead of a deliverable.** No tags, no
+  version bumps, no publish workflow until the thing being released exists in
+  shippable form.
+- **Add checks per piece, not repo-wide.** A pre-commit hook or CI job is
+  added when a piece stabilizes, scoped to that piece. A gate over
+  unconsolidated code produces noise that gets ignored or worked around,
+  which is worse than no gate — the phase-1 baseline is deliberately narrow
+  for exactly this reason.
+
+Asked whether something should be gated, versioned, or released, the default
+answer is **not yet**; establish which piece is under control first.
+
+## What this repo owns, and what it does not
+
+**packwiz controls how the modpack is built.** This repo *stores modpack
+information* — mod metadata in `moddata/`, per-mod config and wiki sources.
+The build is packwiz's job.
+
+The user maintains a fork, **`harleypig/packwiz`** (upstream
+`packwiz/packwiz`), cloned at `~/projects/minecraft/packwiz/packwiz`. So
+packwiz's behaviour is **changeable**, not fixed.
+
+When a need would be better handled by packwiz, **file it as an issue on the
+fork** rather than building a workaround here. Growing local tooling around a
+build concern is how the retired `mpmanager` layer came about.
+
 ## Versioning & tagging
 
-**Method: `subdir`.** The two modpacks version independently and ship as
-separate artifacts, so each is tagged on its own:
+**Method: `subdir`** — each shippable component versions independently and is
+tagged on its own, as `<component>/vX.Y.Z`.
 
-```text
-harleycolonies-1.20.1/vX.Y.Z
-harleycolonies-1.21.1/vX.Y.Z
-```
+**No component qualifies yet, so the repo carries no tags and none should be
+cut.** This section records the intended scheme so it is not reinvented; it
+is not a process to start using.
 
-- The authoritative version for a pack is the `version` field in its
-  `pack.toml`; a tag records a release of that pack, and the two must agree.
-- Both packs are pre-1.0, so **alpha rules apply** — breakage is expected and
-  the `y.z` split is loose. Reaching `v1.0.0` is a deliberate decision, not a
-  drift.
-- Annotated tags only, at the merge commit on `master`, never moved once
-  pushed.
-- The repo carries **no tags yet**; the first release of either pack
-  establishes the pattern. Use the **release-tag** skill.
+Components that will eventually need a version stream:
 
-Nothing in the repo outside the two pack directories is a shipped artifact,
-so a repo-level `vX.Y.Z` tag would version nothing meaningful.
+- the two packwiz packs — authoritative version is the `version` field in
+  each `pack.toml`
+- **Lazybones**, once it exists as a style pack rather than a design
+  document. It is meant to be usable on other people's servers, so it is a
+  distributable artifact in its own right and will need a `pack.json`
+  version (see `pages/style/style-packs.md`). Its tag prefix is
+  **undecided** — settle that when the pack is real.
+
+When tagging does begin: annotated tags only, at the merge commit on
+`master`, never moved once pushed; pre-1.0 means **alpha rules** (breakage
+expected, loose `y.z`), and reaching `v1.0.0` is a deliberate decision. Use
+the **release-tag** skill.
 
 ## Quality assurance
 
-Concrete commands for this repo. Every `qa.md` dimension carries a status;
-several are genuinely N/A for a wiki-plus-tooling repo with no runtime
-surface.
+Concrete commands for this repo. Every `qa.md` dimension carries a status.
+
+Read these against *nothing ships yet*, above: a **Planned** here means "when
+that piece is under control", not "soon". Statuses are per-piece, so a
+dimension can be Active for the wiki and Off for the server at the same time.
 
 | # | Dimension | Status | Notes |
 | --- | --- | --- | --- |
@@ -65,11 +100,11 @@ surface.
 | 5 | Security | **Planned** | No SAST/SCA yet. `bin/requirements.txt` is unpinned, so there is nothing for SCA to resolve against; pinning is the prerequisite. |
 | 6 | Tests | **Active (failing)** | `pytest bin/tests/` — **34 of 103 fail on `master`**, pre-existing: the fixtures assert an old `mods/` schema the code replaced. Tracked; not a required check until fixed. |
 | 7 | UI/UX & accessibility | **N/A** | No UI. The wiki is Gollum-rendered Markdown. |
-| 8 | End-to-end | **N/A** | No running application. |
-| 9 | Compatibility | **Off** | The packs target fixed Minecraft/loader versions declared in `pack.toml`; there is no compatibility matrix to sweep. |
-| 10 | Performance & load | **N/A** | No service, no measurable workload. |
-| 11 | Reliability & observability | **N/A** | `server/docker-compose.yml` runs a third-party image; we do not operate it as a monitored service. |
-| 12 | Build | **Planned** | Pack export (`packwiz`) is manual. No automated build or artifact check. |
+| 8 | End-to-end | **Off** | There *is* a running application — the server plus a pack a player actually loads — so this is not N/A. Nothing exercises that path today; verification is manual. |
+| 9 | Compatibility | **Planned** | Each pack targets a fixed Minecraft/loader pair, but **Lazybones** is meant to run on other people's servers, so it will need a real compatibility story once it is a pack. |
+| 10 | Performance & load | **Off** | The server is small and single-purpose; no measured workload today. Not N/A — it is a running service, just not one under load pressure. |
+| 11 | Reliability & observability | **Planned** | The server (`server/`) is **operated**, not merely configured, so this applies. Nothing is monitored yet — no health checks, no alerting. |
+| 12 | Build | **Off** | The modpack build belongs to **packwiz**, not this repo (see above). Automating an export here would be building the wrong thing in the wrong place. |
 | 13 | Documentation | **Active** | markdownlint via pre-commit; the doc bar in `documentation.md`. No changelog — the repo does not keep one. |
 | 14 | Code review | **Off (informal)** | Solo repo. The `master` ruleset requires a PR but not an approval, so review is a self-review in practice. |
 | 15 | CI | **Active** | `.github/workflows/ci.yml` — pre-commit and pytest jobs. |
