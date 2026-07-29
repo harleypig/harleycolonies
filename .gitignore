@@ -14,3 +14,14 @@ journeymap/
 *.aider*
 
 tmpconfig/**
+
+# Mod binaries — always re-downloadable from packwiz metadata, never tracked
+*.jar
+
+# Client-side-only assets: Minecraft instances, loose mods, resource packs.
+# A sibling clone accumulated 2.3 GB here one `git add -A` away from a commit.
+client-side-only/
+
+# Baritone caches — regenerable chunk/region data
+*.bcr
+baritone/**/cache/

@@ -1,0 +1,68 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+permissions:
+  contents: read
+
+jobs:
+  pre-commit:
+    name: pre-commit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          # Full history so the changed-file range below can be resolved.
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+
+      - name: Install pre-commit
+        run: pip install pre-commit
+
+      # Scoped to the files this PR touches, not --all-files.
+      #
+      # The repo carries a pre-existing markdownlint backlog (~333 findings,
+      # mostly MD001 in the GENERATED pages/mods/ pages and the
+      # modpacks/*/wiki.md sources behind them). Gating on --all-files would
+      # make every PR red for reasons unrelated to it. Held content is still
+      # gated: anything a PR touches must pass. Clearing the backlog is
+      # tracked separately, and this step becomes --all-files when it lands.
+      #
+      # no-commit-to-branch is skipped: it guards local commits, and in CI the
+      # checked-out ref is not a contributor's branch.
+      - name: Run pre-commit on changed files
+        env:
+          SKIP: no-commit-to-branch
+        run: |
+          pre-commit run \
+            --from-ref "origin/${{ github.base_ref || 'master' }}" \
+            --to-ref HEAD \
+            --show-diff-on-failure
+
+  tests:
+    name: tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r bin/requirements.txt
+
+      # NOT a required check yet — 34 of 103 tests fail on master from
+      # fixture drift (the fixtures assert the retired mods/ schema; the code
+      # moved to modpacks/). See .claude/TESTS.md. This job reports so the
+      # failures stay visible; promoting it to required is the closing step of
+      # the fixture-repair issue.
+      - name: Run pytest
+        working-directory: bin
+        run: python -m pytest tests/ -q

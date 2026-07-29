@@ -1,0 +1,46 @@
+# Check-only config — never mutates the tree. This is the gate.
+#
+# The auto-fixing counterparts live in .pre-commit-config-fix.yaml; run that
+# once as a prep step, then this one to confirm clean (see qa.md
+# "Fix-then-check discipline").
+#
+# Phase 1 covers universal hygiene, branch protection, and Markdown. Python
+# (ruff) and shell (shellcheck) linting are phase 2 — deliberately deferred so
+# the first adoption does not bury a review under pre-existing findings.
+#
+# Every hook here is NON-MUTATING. trailing-whitespace and end-of-file-fixer
+# are deliberately absent: they have no check-only mode and always rewrite
+# files, so including them would make this config mutate the tree. They live
+# in the fix config only.
+
+exclude: |
+  (?x)^(
+    archive/.*|
+    bin/venv/.*
+  )$
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      # Layer 2 of the master protection (git.md "Protecting the Default
+      # Branch") — fails a direct commit before a push is attempted, and is
+      # what activates the edit-time branch-protection.py guard.
+      - id: no-commit-to-branch
+        args: [--branch, master]
+
+      - id: check-added-large-files
+        args: [--maxkb=2048]
+      - id: check-merge-conflict
+      - id: check-case-conflict
+      - id: check-yaml
+      - id: check-toml
+      - id: check-json
+
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.49.1
+    hooks:
+      # docker_image variant for commit-time/CI parity (pre-commit.md).
+      # Reads the repo-local .markdownlint.json — a containerized hook cannot
+      # see a user-level config, so that file is required, not optional.
+      - id: markdownlint-docker

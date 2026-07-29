@@ -1,0 +1,27 @@
+# Auto-fixing config — mutates the tree. Run once as a prep step:
+#
+#   pre-commit run --config .pre-commit-config-fix.yaml --all-files
+#
+# then run the check config to confirm clean. Never wire this one into CI —
+# CI gates, it must not commit.
+#
+# no-commit-to-branch is deliberately absent here: this config is a fixer, not
+# a gate, and the check config owns that guard.
+
+exclude: |
+  (?x)^(
+    archive/.*|
+    bin/venv/.*
+  )$
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.49.1
+    hooks:
+      - id: markdownlint-fix-docker
