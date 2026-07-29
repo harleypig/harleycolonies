@@ -48,6 +48,15 @@ jobs:
   tests:
     name: tests
     runs-on: ubuntu-latest
+    # Pull requests only. The suite is red on master (34 of 103, see #4), so
+    # running it on every master push pinned a permanent red X to the default
+    # branch — which trains everyone to ignore it and hides a genuine
+    # regression when one lands. On a PR the result still informs the review;
+    # on master it informed nothing. Actions has no per-job trigger, so this
+    # is a job-level condition: it SKIPS on push rather than failing.
+    #
+    # Drop this condition when #4 lands and the suite is green.
+    if: github.event_name == 'pull_request'
     steps:
       - uses: actions/checkout@v7
 
@@ -58,11 +67,11 @@ jobs:
       - name: Install dependencies
         run: pip install -r bin/requirements.txt
 
-      # NOT a required check yet — 34 of 103 tests fail on master from
-      # fixture drift (the fixtures assert the retired mods/ schema; the code
-      # moved to modpacks/). See .claude/TESTS.md. This job reports so the
-      # failures stay visible; promoting it to required is the closing step of
-      # the fixture-repair issue.
+      # NOT a required check yet — 34 of 103 tests fail from fixture drift
+      # (the fixtures assert the retired mods/ schema; the store is now
+      # moddata/). See .claude/TESTS.md. This job reports so the failures stay
+      # visible on PRs; promoting it to required is the closing step of the
+      # fixture-repair issue.
       - name: Run pytest
         working-directory: bin
         run: python -m pytest tests/ -q

@@ -11,13 +11,17 @@ the checklists and move finished work out of "In progress".
   (the user keeps all Minecraft repos under `~/projects/minecraft/`:
   baritone, packwiz, docker-minecraft-server, journeymap-api,
   journeymap-waypoint-manager, MDK templates). **All work happens here.**
-- **Stale asset-stash clone:** `~/projects/harleycolonies` — an old
+- **Stale asset-stash clone:** `~/projects/wikis/harleycolonies` — an old
   `master`@`wip` checkout that became a dumping ground for ~2.3 GB of
   **untracked** binary assets under `client-side-only/`. It is in sync
   with origin on tracked files. Treat it as a *read-only asset stash*,
   not a working repo. **Never `git add -A` there.** Pull assets *from*
-  it as needed (see Migration checklist), then it can eventually be
-  deleted once everything useful is rescued.
+  it as needed, then it can be deleted once everything useful is rescued
+  (tracked as issue #6, blocked by #17/#18/#19).
+
+  It **moved** from `~/projects/harleycolonies` — verified intact at the
+  new path: 2.3 GB total, the 2.1 GB `United Colonies` instance, the
+  nested `minecolonies-blueprints/.git`, and `MyCSOMods.txt`.
 
 ## How this came about
 
