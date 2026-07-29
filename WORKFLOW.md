@@ -14,7 +14,7 @@ harleycolonies/
 │   ├── mk-cf-modlist             #   CurseForge server modlist generator
 │   ├── resources/                #   Jinja2 wiki templates
 │   └── tests/                    #   pytest suite
-├── modpacks/                     # Mod METADATA + per-mod wiki sources
+├── moddata/                      # Mod METADATA + per-mod wiki sources
 │   ├── mods.yaml                 #   source of truth for mods
 │   └── <mod-slug>/               #   custom config/ and wiki.md
 ├── harleycolonies-1.20.1-0.1.2/  # Packwiz pack — Forge 1.20.1
@@ -26,8 +26,11 @@ harleycolonies/
 └── archive/                      # Historical/review files
 ```
 
-**Naming trap:** `modpacks/` holds mod *metadata and wiki sources*, not
-modpacks. The actual packs are the two `harleycolonies-*` directories.
+`moddata/` holds two kinds of thing: a directory per **mod** (`<mod-slug>/`
+with its `config/` and `wiki.md`), and a small state directory per **modpack**
+(`harleycolonies-1.21.1/` with `info.yaml` and `mods.yaml`). The latter share
+their names with the real pack directories at the repo root but are not the
+packs — they are metadata *about* them.
 
 ### Script Naming
 
@@ -120,7 +123,7 @@ Note the asymmetry: `modpack remove` removes the **modpack**;
 
 ### Mod Data Structure
 
-Mod information lives in `modpacks/mods.yaml`:
+Mod information lives in `moddata/mods.yaml`:
 
 ```yaml
 mods:
@@ -140,16 +143,16 @@ mods:
 
 ### Custom Mod Files
 
-Per-mod custom content lives in `modpacks/<mod-slug>/`:
+Per-mod custom content lives in `moddata/<mod-slug>/`:
 
-- `modpacks/<mod-slug>/config/` — custom config files, copied into the
+- `moddata/<mod-slug>/config/` — custom config files, copied into the
   modpack when generating
-- `modpacks/<mod-slug>/wiki.md` — custom wiki content, used instead of the
+- `moddata/<mod-slug>/wiki.md` — custom wiki content, used instead of the
   simple generated page
 
 ## Packwiz Conventions
 
-Prefer `modpack-manager` over raw `packwiz`: it keeps `modpacks/mods.yaml`
+Prefer `modpack-manager` over raw `packwiz`: it keeps `moddata/mods.yaml`
 and the pack in step. Direct `packwiz` calls bypass that bookkeeping and
 leave the two out of sync.
 
@@ -189,7 +192,7 @@ Player-facing content lives in the Gollum wiki under `pages/`:
 
 - `pages/guides/` — player guides
 - `pages/mods/` — **generated** mod pages; edit the source in
-  `modpacks/<mod-slug>/wiki.md`, not these
+  `moddata/<mod-slug>/wiki.md`, not these
 - `pages/style/` — the custom MineColonies style guide
 - `pages/baritone/` — Baritone documentation
 - `pages/technical/` — technical notes
@@ -296,7 +299,7 @@ Gitignored:
 ### Modpack Configs
 
 - Default configurations go in `config/`
-- Per-mod overrides go in `modpacks/<mod-slug>/config/`
+- Per-mod overrides go in `moddata/<mod-slug>/config/`
 
 ## Resources
 

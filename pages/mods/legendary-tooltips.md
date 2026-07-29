@@ -8,13 +8,12 @@ categories:
   - mc-miscellaneous
 ---
 
-[Website](https://www.curseforge.com/minecraft/mc-mods/legendary-tooltips) | [Issues](https://github.com/AHilyard/LegendaryTooltips/issues) | [Source](https://github.com/AHilyard/LegendaryTooltips)
+[Website](<https://www.curseforge.com/minecraft/mc-mods/legendary-tooltips>) | [Issues](<https://github.com/AHilyard/LegendaryTooltips/issues>) | [Source](<https://github.com/AHilyard/LegendaryTooltips>)
 
 Client/Server: both
 
-### Modpacks
+## Modpacks
 
 This mod is installed in the following modpacks:
 
 - harleycolonies-1.20.1-0.1.2
-

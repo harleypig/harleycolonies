@@ -5,7 +5,7 @@ categories:
   - utility-qol
 ---
 
-[Website](https://www.curseforge.com/minecraft/mc-mods/amendments) | [Issues](https://github.com/MehVahdJukaar/amendments/issues)
+[Website](<https://www.curseforge.com/minecraft/mc-mods/amendments>) | [Issues](<https://github.com/MehVahdJukaar/amendments/issues>)
 
 Client/Server: both
 
@@ -13,22 +13,14 @@ Client/Server: both
 enhance building and gameplay. The mod provides additional content that
 complements vanilla Minecraft with new blocks, items, and features.
 
-### Features
+## Features
 
 - **Decorative Blocks**: Additional decorative building blocks.
 - **Functional Items**: New functional items and blocks.
 - **Building Enhancements**: More options for building and decoration.
 
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-- harleycolonies-1.20.1-0.1.2
-
-### Modpacks
+## Modpacks
 
 This mod is installed in the following modpacks:
 
 - harleycolonies-1.20.1-0.1.2
-

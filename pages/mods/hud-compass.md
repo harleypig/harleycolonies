@@ -2,8 +2,6 @@
 title: Hud Compass
 ---
 
-
-
 Client/Server: both
 
 **Hud Compass** displays a compass overlay on the HUD showing cardinal
@@ -13,12 +11,12 @@ comprehensive navigation aid. The compass can be configured to show
 different information based on conditions like holding a compass or
 sneaking, making it flexible for various gameplay styles.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config files.
 
-#### Display Settings
+### Display Settings
 
 These settings are configured in `hudcompass-client.toml`.
 
@@ -62,7 +60,7 @@ These settings are configured in `hudcompass-client.toml`.
     to `0`, waypoints will never disappear. Range: `0.0` to
     `1.7976931348623157E308`.
 
-#### General Settings
+### General Settings
 
 These settings are configured in `hudcompass-common.toml`.
 
@@ -82,15 +80,8 @@ These settings are configured in `hudcompass-common.toml`.
     (don't display other players, ever), `TEAM` (only display players that
     are in the same team), `ALL` (display all players).
 
-### Modpacks
+## Modpacks
 
 This mod is installed in the following modpacks:
 
 - harleycolonies-1.21.1
-
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-

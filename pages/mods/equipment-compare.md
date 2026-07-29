@@ -8,7 +8,7 @@ categories:
   - mc-miscellaneous
 ---
 
-[Website](https://www.curseforge.com/minecraft/mc-mods/equipment-compare) | [Issues](https://github.com/AHilyard/EquipmentCompare/issues) | [Source](https://github.com/AHilyard/EquipmentCompare)
+[Website](<https://www.curseforge.com/minecraft/mc-mods/equipment-compare>) | [Issues](<https://github.com/AHilyard/EquipmentCompare/issues>) | [Source](<https://github.com/AHilyard/EquipmentCompare>)
 
 Client/Server: both
 
@@ -17,21 +17,14 @@ equipment items, showing how they compare to currently equipped items. The
 mod helps players make informed decisions about equipment upgrades by
 showing stat differences.
 
-### Features
+## Features
 
 - **Comparison Tooltips**: Shows stat differences between items.
 - **Equipment Stats**: Displays armor, damage, and other relevant stats.
 - **Upgrade Planning**: Helps identify equipment upgrades.
 
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-
-### Modpacks
+## Modpacks
 
 This mod is installed in the following modpacks:
 
 - harleycolonies-1.20.1-0.1.2
-

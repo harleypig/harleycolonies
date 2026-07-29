@@ -6,7 +6,7 @@ categories:
   - cosmetic
 ---
 
-[Website](https://www.curseforge.com/minecraft/mc-mods/structurize) | [Issues](https://github.com/ldtteam/structurize/issues) | [Source](https://github.com/ldtteam/structurize)
+[Website](<https://www.curseforge.com/minecraft/mc-mods/structurize>) | [Issues](<https://github.com/ldtteam/structurize/issues>) | [Source](<https://github.com/ldtteam/structurize>)
 
 Client/Server: both
 
@@ -17,12 +17,12 @@ pasting structures. It includes a scan tool for creating blueprints, a
 build tool for placing them, and configurable rendering and gameplay
 options.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config files.
 
-#### Client Settings
+### Client Settings
 
 These settings are configured in `structurize-client.toml`.
 
@@ -56,7 +56,7 @@ These settings are configured in `structurize-client.toml`.
   - Sneak+scroll on the hotbar switches scan tool slots. When enabled,
     you can scroll through scan tool slots while sneaking.
 
-#### Server Settings
+### Server Settings
 
 These settings are configured in `structurize-server.toml`.
 
@@ -112,16 +112,9 @@ These settings are configured in `structurize-server.toml`.
     blocked; disable to teleport exactly to target. When enabled, the mod
     finds a safe landing spot near the target.
 
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-
-### Modpacks
+## Modpacks
 
 This mod is installed in the following modpacks:
 
 - harleycolonies-1.20.1-0.1.2
 - harleycolonies-1.21.1
-

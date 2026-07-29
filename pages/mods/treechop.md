@@ -4,7 +4,7 @@ categories:
   - mc-miscellaneous
 ---
 
-[Website](https://www.curseforge.com/minecraft/mc-mods/treechop) | [Issues](https://github.com/hammertater/treechop/issues) | [Source](https://github.com/hammertater/treechop)
+[Website](<https://www.curseforge.com/minecraft/mc-mods/treechop>) | [Issues](<https://github.com/hammertater/treechop/issues>) | [Source](<https://github.com/hammertater/treechop>)
 
 Client/Server: both
 
@@ -15,12 +15,12 @@ entire tree including leaves. The mod includes configurable chop counting
 algorithms, tree detection settings, visual indicators, and compatibility
 with various mods like Tinkers' Construct and Apotheosis.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config files.
 
-#### Client Settings
+### Client Settings
 
 These settings are configured in `treechop-client.toml`.
 
@@ -63,7 +63,7 @@ These settings are configured in `treechop-client.toml`.
 - `settingsScreen.showTooltips` (default: `true`)
   - Show tooltips in the settings screen (can be toggled in-game).
 
-#### Common Settings
+### Common Settings
 
 These settings are configured in `treechop-common.toml`.
 
@@ -155,16 +155,9 @@ like Carry On, Project MMO, The One Probe, Terraformers mods, MultiMine,
 Apotheosis, Silent Gear, and Tinkers' Construct. See the config file for
 detailed compatibility options.
 
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-
-### Modpacks
+## Modpacks
 
 This mod is installed in the following modpacks:
 
 - harleycolonies-1.20.1-0.1.2
 - harleycolonies-1.21.1
-

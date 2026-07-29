@@ -7,7 +7,7 @@ categories:
   - server-utility
 ---
 
-[Website](https://www.curseforge.com/minecraft/mc-mods/moderately-enough-effect-descriptions-meed-a-jeed-addon)
+[Website](<https://www.curseforge.com/minecraft/mc-mods/moderately-enough-effect-descriptions-meed-a-jeed-addon>)
 
 Client/Server: both
 
@@ -16,7 +16,7 @@ Enough Effect Descriptions (JEED) that provides additional effect
 descriptions and information. The mod extends JEED's functionality with
 more detailed effect information and descriptions.
 
-### Features
+## Features
 
 - **Extended Effect Descriptions**: Additional effect descriptions beyond
   JEED's base functionality.
@@ -24,15 +24,8 @@ more detailed effect information and descriptions.
   Descriptions.
 - **Enhanced Information**: More detailed information about status effects.
 
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-
-### Modpacks
+## Modpacks
 
 This mod is installed in the following modpacks:
 
 - harleycolonies-1.20.1-0.1.2
-

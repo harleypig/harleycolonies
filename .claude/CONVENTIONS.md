@@ -63,7 +63,7 @@ surface.
 | 3 | Type-check | **Off** | `bin/mpmanager/` carries no type annotations; adding them is not currently worth the churn. |
 | 4 | Code smell / complexity | **Off** | Deferred until Python lint (dim 2) lands — `ruff` covers part of it. |
 | 5 | Security | **Planned** | No SAST/SCA yet. `bin/requirements.txt` is unpinned, so there is nothing for SCA to resolve against; pinning is the prerequisite. |
-| 6 | Tests | **Active (failing)** | `pytest bin/tests/` — **34 of 103 fail on `master`**, pre-existing: the fixtures assert an old `mods/` schema the code replaced with `modpacks/`. Tracked; not a required check until fixed. |
+| 6 | Tests | **Active (failing)** | `pytest bin/tests/` — **34 of 103 fail on `master`**, pre-existing: the fixtures assert an old `mods/` schema the code replaced. Tracked; not a required check until fixed. |
 | 7 | UI/UX & accessibility | **N/A** | No UI. The wiki is Gollum-rendered Markdown. |
 | 8 | End-to-end | **N/A** | No running application. |
 | 9 | Compatibility | **Off** | The packs target fixed Minecraft/loader versions declared in `pack.toml`; there is no compatibility matrix to sweep. |
@@ -85,9 +85,9 @@ surface.
 
 ## Repo layout gotchas
 
-Two names mislead, both deliberate to leave alone for now:
-
-- **`modpacks/`** is the mod *metadata and wiki* store (`modpacks/mods.yaml`,
-  per-mod `wiki.md`), **not** the modpacks. The actual packs are the two
-  `harleycolonies-*` directories. A rename is tracked as an issue.
+- **`moddata/`** is the mod metadata and wiki store (`moddata/mods.yaml`,
+  per-mod `wiki.md`). It was called `modpacks/` until #7 renamed it — that
+  name collided with the actual packs. Inside it, `moddata/<pack-name>/`
+  holds per-modpack *state* (`info.yaml`, `mods.yaml`) and shares its name
+  with the real pack at the repo root; they are different things.
 - **`archive/`** is retained historical config, not live content.

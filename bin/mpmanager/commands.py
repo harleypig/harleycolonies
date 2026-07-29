@@ -409,7 +409,7 @@ def modpack_migrate_from_central():
             changed = True
     if changed:
         data.save_mods(mods_data)
-        print("  Removed central 'modpacks' references from modpacks/mods.yaml")
+        print("  Removed central 'modpacks' references from moddata/mods.yaml")
     else:
         print("  No central 'modpacks' references found")
     return 0
@@ -699,7 +699,7 @@ def update_mod_side(mod_slug, new_side, modpack_dir=None):
 
 
 def copy_custom_configs(mod_slug, modpack_dir):
-    """Copy custom config files from modpacks/<mod-slug>/config/ to modpack."""
+    """Copy custom config files from moddata/<mod-slug>/config/ to modpack."""
     mod_dir = wiki.get_mod_dir(mod_slug)
     config_dir = mod_dir / "config"
 
@@ -721,7 +721,7 @@ def copy_custom_configs(mod_slug, modpack_dir):
 # New command functions for restructured CLI
 
 def mod_create(mod_slug, modpack_dir, curseforge_id=None, category=None, file_id=None):
-    """Create mod entry in modpacks/mods.yaml and install using Packwiz."""
+    """Create mod entry in moddata/mods.yaml and install using Packwiz."""
     print(f"Creating mod: {mod_slug} in modpack: {modpack_dir}")
 
     # Check packwiz availability
@@ -763,7 +763,7 @@ def mod_create(mod_slug, modpack_dir, curseforge_id=None, category=None, file_id
             "no file found" in error_lower):
             # Mod exists but no matching file - mark as rejected
             print(f"Mod {mod_slug} exists but no matching file found for modpack {modpack_dir}")
-            print(f"Marking as rejected in modpacks/mods.yaml")
+            print(f"Marking as rejected in moddata/mods.yaml")
             
             # Create or update mod entry
             mod = data.get_mod(mod_slug)
@@ -818,7 +818,7 @@ def mod_create(mod_slug, modpack_dir, curseforge_id=None, category=None, file_id
         mod_name = mod_slug
         mod_side = None
 
-    # Create or update mod entry in modpacks/mods.yaml
+    # Create or update mod entry in moddata/mods.yaml
     mod = data.get_mod(mod_slug)
     if not mod:
         mod_data = {"name": mod_name}
@@ -954,7 +954,7 @@ def mod_remove(mod_slug, from_modpack=None):
 
 
 def mod_sync(modpack_dir, mod_slug=None):
-    """Sync mod(s) from modpack TOML to modpacks/mods.yaml."""
+    """Sync mod(s) from modpack TOML to moddata/mods.yaml."""
     print(f"Syncing mod(s) from modpack: {modpack_dir}")
 
     modpack_path = packwiz.get_modpack_path(modpack_dir)
@@ -992,7 +992,7 @@ def mod_sync(modpack_dir, mod_slug=None):
             if not mod_side:
                 mod_side = toml_data.get("side")
 
-        # Check if mod exists in modpacks/mods.yaml
+        # Check if mod exists in moddata/mods.yaml
         mod = data.get_mod(mod_slug_from_file)
         if not mod:
             # Create new mod entry
@@ -1107,7 +1107,7 @@ def modpack_remove(modpack_dir, from_filesystem=False):
 
 
 def modpack_sync_from(modpack_dir):
-    """Sync modpacks/mods.yaml FROM modpack (imports all mods)."""
+    """Sync moddata/mods.yaml FROM modpack (imports all mods)."""
     return sync_from_modpack(modpack_dir)
 
 

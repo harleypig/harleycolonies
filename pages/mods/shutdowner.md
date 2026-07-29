@@ -4,7 +4,7 @@ categories:
   - server-utility
 ---
 
-[Website](https://www.curseforge.com/minecraft/mc-mods/shutdowner)
+[Website](<https://www.curseforge.com/minecraft/mc-mods/shutdowner>)
 
 Client/Server: server
 
@@ -15,12 +15,12 @@ when shutdowns hang, and send warning messages to players before shutdown.
 This is useful for scheduled server restarts, maintenance windows, and
 preventing server hangs during shutdown.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config file, `shutdowner.json`.
 
-#### Shutdown Settings
+### Shutdown Settings
 
 - `shouldAutoShutDown` (default: `true`)
   - Whether to use the timed shutdown. When enabled, the server will
@@ -45,7 +45,7 @@ the same names as in the mod's config file, `shutdowner.json`.
   - Set the disconnect message for the players. This message is shown to
     players when they are disconnected during shutdown.
 
-#### Hang Detection
+### Hang Detection
 
 - `shouldDetectShutDownHang` (default: `true`)
   - Whether to kill the server when shutdown takes too long. When enabled,
@@ -67,14 +67,8 @@ the same names as in the mod's config file, `shutdowner.json`.
     remaining threads is logged during shutdown, which can help identify
     what's preventing clean shutdown.
 
-### Modpacks
+## Modpacks
 
 This mod is installed in the following modpacks:
 
 - harleycolonies-1.21.1
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-

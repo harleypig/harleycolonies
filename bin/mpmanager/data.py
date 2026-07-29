@@ -15,7 +15,7 @@ def get_repo_root():
 
 def get_mods_yaml_path():
     """Get path to mods.yaml file."""
-    return get_repo_root() / "modpacks" / "mods.yaml"
+    return get_repo_root() / "moddata" / "mods.yaml"
 
 
 def load_mods():
@@ -38,13 +38,13 @@ def save_mods(data):
 
 
 def get_modpack_info_path(modpack_dir: str) -> Path:
-    """Get path to per-modpack info.yaml (under modpacks/<modpack>/info.yaml)."""
-    return get_repo_root() / "modpacks" / modpack_dir / "info.yaml"
+    """Get path to per-modpack info.yaml (under moddata/<modpack>/info.yaml)."""
+    return get_repo_root() / "moddata" / modpack_dir / "info.yaml"
 
 
 def get_modpack_state_path(modpack_dir: str) -> Path:
-    """Get path to per-modpack mods.yaml (state) under modpacks/<modpack>/mods.yaml."""
-    return get_repo_root() / "modpacks" / modpack_dir / "mods.yaml"
+    """Get path to per-modpack mods.yaml (state) under moddata/<modpack>/mods.yaml."""
+    return get_repo_root() / "moddata" / modpack_dir / "mods.yaml"
 
 
 def load_modpack_info(modpack_dir: str) -> dict:
@@ -226,9 +226,9 @@ def _deep_compare_dicts(dict1, dict2):
 def merge_metadata(mod_slug, new_metadata, modpack_dir):
     """Merge metadata for a mod, storing canonical or version-specific.
     
-    If mod has no existing metadata, store in modpacks/<mod-slug>/metadata.
+    If mod has no existing metadata, store in moddata/<mod-slug>/metadata.
     If mod has existing metadata, compare and store differences in
-    modpacks/<mod-slug>/versions/<modpack-dir>/metadata.
+    moddata/<mod-slug>/versions/<modpack-dir>/metadata.
     
     Note: curseforge_id and modrinth_id are stored at the top level,
     not in the metadata dict.
@@ -425,7 +425,7 @@ def update_mod_from_remote(mod_slug, remote_metadata, modpack_dir, force_remote=
 
 def list_modpacks_with_mod(mod_slug: str) -> list:
     """Return list of modpack dirs that have this mod installed per state files."""
-    root = get_repo_root() / "modpacks"
+    root = get_repo_root() / "moddata"
     modpacks = []
     # Scan top-level directories only
     for child in root.iterdir():

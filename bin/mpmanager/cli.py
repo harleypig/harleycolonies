@@ -107,7 +107,7 @@ def main():
     # modpack sync
     modpack_sync = modpack_subparsers.add_parser("sync", help="Sync modpack")
     modpack_sync.add_argument("modpack_dir", nargs="?", help="Modpack directory name (for syncing TO modpack)")
-    modpack_sync.add_argument("--from", dest="from_dir", help="Sync modpacks/mods.yaml FROM modpack (imports all mods)")
+    modpack_sync.add_argument("--from", dest="from_dir", help="Sync moddata/mods.yaml FROM modpack (imports all mods)")
 
     # modpack migrate-state
     modpack_migrate = modpack_subparsers.add_parser("migrate-state", help="Migrate central modpack data to per-modpack files")

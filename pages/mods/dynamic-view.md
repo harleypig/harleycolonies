@@ -2,8 +2,6 @@
 title: Dynamic View[Forge]
 ---
 
-
-
 Client/Server: both
 
 **Dynamic View** automatically adjusts chunk view distance and simulation
@@ -12,12 +10,12 @@ and dynamically increases or decreases render distances to maintain optimal
 performance. This helps prevent lag spikes and maintains consistent TPS
 (ticks per second) by balancing visual quality with server load.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config file, `dynamicview.json`.
 
-#### View Distance Settings
+### View Distance Settings
 
 - `minChunkViewDist` (default: `10`)
   - The minimum chunk view distance allowed to use. This is the lowest
@@ -30,7 +28,7 @@ the same names as in the mod's config file, `dynamicview.json`.
     will set, even if server performance is excellent. Range: `3` to
     `200`.
 
-#### Performance Settings
+### Performance Settings
 
 - `meanAvgTickTime` (default: `45`)
   - The average tick time to stabilize the distances around, in
@@ -43,7 +41,7 @@ the same names as in the mod's config file, `dynamicview.json`.
     the mod recalculates and adjusts view distance. Lower values mean more
     frequent adjustments but more calculations. Range: `1` to `1000`.
 
-#### Simulation Distance Settings
+### Simulation Distance Settings
 
 - `minSimulationDist` (default: `4`)
   - The minimum simulation distance allowed to use. This is the lowest
@@ -58,22 +56,15 @@ the same names as in the mod's config file, `dynamicview.json`.
     mod automatically adjusts simulation distance along with view distance
     to optimize performance.
 
-#### Debug Settings
+### Debug Settings
 
 - `logMessages` (default: `false`)
   - Whether to output log messages for actions done. This can be helpful
     to balance the other settings nicely. When enabled, logs view distance
     changes and performance metrics.
 
-### Modpacks
+## Modpacks
 
 This mod is installed in the following modpacks:
 
 - harleycolonies-1.21.1
-
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-

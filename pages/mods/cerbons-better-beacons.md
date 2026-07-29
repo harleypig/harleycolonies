@@ -2,8 +2,6 @@
 title: CERBON's Better Beacons [Forge | Fabric | NeoForge]
 ---
 
-
-
 Client/Server: both
 
 **CERBON's Better Beacons** enhances Minecraft's beacon system with a
@@ -15,12 +13,12 @@ Patrol Bane. The mod allows payment items to influence beacon range,
 base blocks to affect effect strength, and supports beam redirection
 using amethyst clusters and transparency adjustment using tinted glass.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and lists use
 the same names as in the mod's config file.
 
-#### Beacon Effects
+### Beacon Effects
 
 - `beaconEffects.isTertiaryEffectsEnabled` (default: `true`)
   - Enables tertiary effects for level 5 beacons. When enabled,
@@ -53,7 +51,7 @@ the same names as in the mod's config file.
   - List of tertiary effects available when the beacon reaches level
     5. These effects require `isTertiaryEffectsEnabled` to be `true`.
 
-#### Beacon Range and Amplifier
+### Beacon Range and Amplifier
 
 - `beaconRangeAndAmplifier.isPaymentItemRangeEnabled` (default: `true`)
   - If `true`, the type of payment item used affects the beacon's
@@ -66,7 +64,7 @@ the same names as in the mod's config file.
     affects the strength (amplifier) of primary effects. Stronger
     base blocks like netherite provide stronger effects.
 
-#### Beacon Beam
+### Beacon Beam
 
 - `beaconBeam.allowRedirecting` (default: `true`)
   - If `true`, allows the beacon beam to be redirected using
@@ -82,7 +80,7 @@ the same names as in the mod's config file.
   - Maximum horizontal distance the beacon beam can be redirected
     from its original position.
 
-#### Beacon Buttons
+### Beacon Buttons
 
 - `beaconButtons.cancelButtonRemoveEffects` (default: `true`)
   - If `true`, clicking the cancel button removes all active beacon
@@ -96,7 +94,7 @@ the same names as in the mod's config file.
   - If `true`, displays a tooltip when hovering over the confirm
     button.
 
-#### Beacon Payment Items UI
+### Beacon Payment Items UI
 
 The payment items UI configuration controls which items appear in the
 beacon payment interface and their positions. Each payment slot can be
@@ -167,9 +165,10 @@ effects are enabled, one for when they are disabled).
 
 - `beaconPaymentItemsUI.sixth.tertiaryPosX` (default: `119`)
   - X position of the sixth payment slot when tertiary effects are
-    enabled.### Modpacks
+    enabled.
+
+## Modpacks
 
 This mod is installed in the following modpacks:
 
 - harleycolonies-1.21.1
-

@@ -4,7 +4,7 @@ categories:
   - utility-qol
 ---
 
-[Website](https://www.curseforge.com/minecraft/mc-mods/kleeslabs) | [Issues](https://github.com/ModdingForBlockheads/KleeSlabs/issues) | [Source](https://github.com/ModdingForBlockheads/KleeSlabs)
+[Website](<https://www.curseforge.com/minecraft/mc-mods/kleeslabs>) | [Issues](<https://github.com/ModdingForBlockheads/KleeSlabs/issues>) | [Source](<https://github.com/ModdingForBlockheads/KleeSlabs>)
 
 Client/Server: both
 
@@ -14,12 +14,12 @@ removal more intuitive by allowing players to break the top or bottom half
 of a double slab independently. The mod includes configurable activation
 modes and compatibility options for other mods.
 
-### Configuration
+## Configuration
 
 Below are the available options and their defaults. Paths and values use
 the same names as in the mod's config file, `kleeslabs-common.toml`.
 
-#### General Settings
+### General Settings
 
 - `mode` (default: `"ALWAYS"`)
   - Control whether KleeSlabs should trigger `ALWAYS`,
@@ -35,16 +35,9 @@ the same names as in the mod's config file, `kleeslabs-common.toml`.
     word 'slab' in their name upon world load. This is useful for debugging
     and identifying which blocks are recognized as slabs.
 
-### Modpacks
-
-This mod is installed in the following modpacks:
-
-- harleycolonies-1.21.1
-
-### Modpacks
+## Modpacks
 
 This mod is installed in the following modpacks:
 
 - harleycolonies-1.20.1-0.1.2
 - harleycolonies-1.21.1
-

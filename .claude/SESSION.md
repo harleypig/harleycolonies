@@ -60,7 +60,7 @@ tracked as GitHub issues — this file no longer duplicates them:
 | Was | Now |
 | --- | --- |
 | Rescue assets from the stale clone | [#6](https://github.com/harleypig/harleycolonies/issues/6) |
-| `modpacks/` is misleadingly named | [#7](https://github.com/harleypig/harleycolonies/issues/7) |
+| `modpacks/` is misleadingly named | **done** — renamed to `moddata/` in #7 |
 | Stale `WORKFLOW.md` | **done** — corrected in #3 |
 | `.gitignore` too narrow | **done** — hardened in #3 |
 | `AGENTS.md` is generic boilerplate | **done** — deleted in #3 |
@@ -76,7 +76,7 @@ backlog), [#8](https://github.com/harleypig/harleycolonies/issues/8)
 - Packs: `harleycolonies-1.20.1-0.1.2/` (Forge 1.20.1),
   `harleycolonies-1.21.1/` (NeoForge 1.21.1).
 - Tooling: `bin/modpack-manager` + `bin/mpmanager/` (Python; tests in
-  `bin/tests/`). Mod data: `modpacks/mods.yaml`.
+  `bin/tests/`). Mod data: `moddata/mods.yaml`.
 - Server: `server/docker-compose.yml` (itzg, ARCLIGHT/NeoForge, RCON).
 - Wiki (Gollum): `pages/`.
 - Branches present: `master`, `docs/baritone` (merged, deletable),
