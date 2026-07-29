@@ -15,10 +15,16 @@ root [`WORKFLOW.md`](../WORKFLOW.md) — this file does not duplicate them.
 | `moddata/<mod-slug>/` | Per-mod custom `config/` and `wiki.md` |
 | `harleycolonies-1.20.1-0.1.2/` | Packwiz pack — Forge 1.20.1 |
 | `harleycolonies-1.21.1/` | Packwiz pack — NeoForge 1.21.1 |
-| `pages/` | Gollum wiki source |
-| `server/docker-compose.yml` | itzg server stack (RCON) |
+| `pages/` | Gollum wiki source — covers pack mods **and** other useful mods |
+| `pages/style/` | The Lazybones MineColonies style — a deliverable in its own right, currently a design doc |
+| `server/docker-compose.yml` | itzg server stack (RCON) — an **operated** service, not just config |
 | `archive/` | Retained historical config — not live |
 | `docs/` | Server/infrastructure docs |
+
+This repo produces four things, not one: the **server**, the **modpack**, the
+**wiki**, and the **Lazybones style**. None is deliverable yet — see
+[`CONVENTIONS.md`](CONVENTIONS.md) *Deliverability*. Modpack **building**
+belongs to packwiz (fork: `harleypig/packwiz`), not here.
 
 `moddata/` also holds a per-modpack state directory
 (`moddata/harleycolonies-1.21.1/` — `info.yaml`, `mods.yaml`) that shares its
