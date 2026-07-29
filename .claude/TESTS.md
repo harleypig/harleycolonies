@@ -46,13 +46,21 @@ This is fixture drift, not flaky tests:
 
 - `conftest.py` builds a `mods/` directory and mod entries with a flat
   schema.
-- The code moved to `modpacks/` (`data.py` resolves
-  `get_repo_root() / "modpacks" / "mods.yaml"`) and to a nested schema with
-  `mod["modpacks"]` and `mod["side"]`.
+- The code moved to a nested schema with `mod["modpacks"]` and `mod["side"]`,
+  and the store is now `moddata/` (`data.py` resolves
+  `get_repo_root() / "moddata" / "mods.yaml"`).
 
 So the failures surface as `KeyError: 'modpacks'`, `KeyError: 'side'`, and
 path assertions against `mods/`. The 69 passing tests are the ones that never
 touch the changed schema.
+
+Note the two senses of the word: `modpacks` is still a **key** inside a mod
+entry (which packs it is in), while the **directory** is now `moddata/`.
+Fixture repairs need both right.
+
+A second defect: the suite is **order-dependent**. `test_packwiz.py` and
+`test_toml_updates.py` pass in isolation but fail in the full run, so the
+full-suite figure overstates the real breakage by 7.
 
 Consequences to respect:
 
@@ -69,5 +77,5 @@ Consequences to respect:
 
 Per the global `testing.md`: cover success and failure paths, and each bug
 fix lands a regression test that fails before the fix. New tests should use
-the current `modpacks/` schema — do not copy the stale fixture patterns from
+the current `moddata/` schema — do not copy the stale fixture patterns from
 the failing modules.
