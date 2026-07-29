@@ -1,0 +1,166 @@
+#!/usr/bin/env bash
+#
+# backup-instance — archive the irreplaceable files from a Minecraft
+# instance (waypoints, settings, blueprints) into a timestamped tarball.
+#
+# Regenerable data is deliberately excluded: mods re-download from the
+# pack, and Distant Horizons / JourneyMap map tiles and baritone .bcr
+# caches all rebuild themselves. The result is a few MB, not gigabytes.
+#
+# The copy is file-level on purpose. JourneyMap exposes no API for its
+# settings, and the waypoint-manager mod's /wm export is not finished,
+# so the on-disk files are the source of truth for both.
+#
+# This file is a single flat section of helpers plus a main flow, so it
+# uses thin separators only (no thick section separators).
+
+set -euo pipefail
+
+#-----------------------------------------------------------------------
+# Backup manifest — paths relative to the instance root. Anything not
+# present in a given instance is silently skipped.
+
+readonly backup_files=(options.txt servers.dat baritone/settings.txt)
+readonly backup_dirs=(journeymap/config blueprints jm_waypoint_manager)
+
+#-----------------------------------------------------------------------
+# Resolve the default destination relative to this script: it lives in
+# <repo>/bin, so the repo's parent (the ../minecraft tree) is where
+# backups land by default.
+
+script_dir=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
+repo_dir=$(dirname "$script_dir")
+default_dest="$(dirname "$repo_dir")/backups"
+
+#-----------------------------------------------------------------------
+
+die() {
+  printf 'error: %s\n' "$*" >&2
+  exit 1
+}
+
+#-----------------------------------------------------------------------
+
+usage() {
+  cat <<EOF
+Usage: ${0##*/} [options] <instance-path>
+
+Archive the irreplaceable files from a Minecraft instance into a
+timestamped .tar.gz: waypoints, JourneyMap settings, blueprints,
+options.txt, baritone settings, and servers.dat.
+
+Options:
+  -d, --dest DIR   Destination directory for the archive.
+  -n, --dry-run    List what would be archived; create nothing.
+  -h, --help       Show this help.
+
+Destination precedence: --dest, then \$MC_BACKUP_DIR, then the default
+($default_dest).
+EOF
+}
+
+#-----------------------------------------------------------------------
+# Emit the backup file list as NUL-delimited paths relative to the
+# instance, so names containing spaces survive. waypoint directories are
+# discovered (one per world/server) rather than listed.
+
+build_manifest() {
+  local instance=$1
+
+  (
+    cd "$instance"
+
+    local item
+
+    for item in "${backup_files[@]}"; do
+      [[ -f $item ]] && printf '%s\0' "$item"
+    done
+
+    for item in "${backup_dirs[@]}"; do
+      [[ -d $item ]] && printf '%s\0' "$item"
+    done
+
+    if [[ -d journeymap/data ]]; then
+      find journeymap/data -type d -name waypoints -print0
+    fi
+  )
+}
+
+#-----------------------------------------------------------------------
+
+dest_arg=""
+dry_run=0
+
+while (( $# )); do
+  case $1 in
+    -d|--dest)
+      [[ ${2:-} ]] || die "$1 requires a directory argument"
+      dest_arg=$2
+      shift 2
+      ;;
+
+    -n|--dry-run)
+      dry_run=1
+      shift
+      ;;
+
+    -h|--help)
+      usage
+      exit 0
+      ;;
+
+    -*)
+      die "unknown option: $1 (try --help)"
+      ;;
+
+    *)
+      break
+      ;;
+  esac
+done
+
+#-----------------------------------------------------------------------
+
+(( $# == 1 )) || { usage >&2; exit 1; }
+
+instance=$1
+
+[[ -d $instance ]] || die "instance path is not a directory: $instance"
+
+dest=${dest_arg:-${MC_BACKUP_DIR:-$default_dest}}
+
+#-----------------------------------------------------------------------
+# Build the manifest once; reuse it for the count, the dry-run listing,
+# and the archive itself.
+
+manifest=$(mktemp)
+trap 'rm -f "$manifest"' EXIT
+
+build_manifest "$instance" > "$manifest"
+
+[[ -s $manifest ]] || die "no backup-worthy files found under: $instance"
+
+count=$(tr -cd '\0' < "$manifest" | wc -c)
+
+#-----------------------------------------------------------------------
+
+if (( dry_run )); then
+  printf 'Would back up %d item(s) from %s:\n\n' "$count" "$instance"
+  tr '\0' '\n' < "$manifest" | sed 's/^/  /'
+  exit 0
+fi
+
+#-----------------------------------------------------------------------
+
+mkdir -p "$dest"
+
+name=$(basename "$instance")
+stamp=$(date +%Y%m%d-%H%M%S)
+archive="$dest/${name// /-}-$stamp.tar.gz"
+
+tar --null --create --gzip --file "$archive" \
+  --directory "$instance" --files-from "$manifest"
+
+size=$(du -h "$archive" | cut -f1)
+
+printf 'Backed up %d item(s) (%s) -> %s\n' "$count" "$size" "$archive"

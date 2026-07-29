@@ -1,5 +1,44 @@
 # TODO
 
+## Tooling: backup, mod lists & blueprints
+
+- **Wiki page: client-side-only mods.** A curated reference list of
+  known client-side-only mods that work on any server, so they can be
+  installed when connecting to any server I play on. This is a general
+  "mods I can always run client-side" catalogue, separate from the
+  HarleyColonies pack's mod list (though some may also end up in my own
+  modpack). Approach: use **packwiz** to maintain a "fake" modpack — a
+  packwiz directory used only as a tracking store, never built or
+  published — to hold these mods. `packwiz` then handles fetching each
+  mod's metadata into per-mod `.pw.toml` files (name, side, links,
+  source). Generate the wiki page under `pages/` by parsing those
+  `.pw.toml` files for the name and `metadata.*.website` / `source`
+  link, the same data shape as the real packs. Seed the fake pack from
+  `MyCSOMods.txt` rescued from the stale clone (see migration checklist
+  in `.claude/CLAUDE.md`) and grow it over time.
+
+- **Backup script: mod reinstall manifest.** `bin/backup-instance`
+  excludes mod jars (regenerable), so the backup needs a record of which
+  mods to reinstall. The script is **instance-agnostic** (works against
+  any server/instance), so it must read the defining mod list **from the
+  target instance itself**, not from this repo's packs. Discover whatever
+  the target uses to define its mods (e.g. a packwiz pack bundled in the
+  instance, a Modrinth `modrinth.index.json`, a MultiMC/Prism manifest,
+  or, failing any of those, the jars present in the instance `mods/`
+  dir), compare it against what is actually installed, and write a
+  manifest of mod names to the backup directory. Decide what the manifest
+  captures: mods present in the instance, and ideally flag drift
+  (installed-but-not-in-list / in-list-but-not-installed). Handle the
+  case where the target has no machine-readable mod list at all.
+
+- **Default blueprints directory.** Keep a canonical/default
+  `blueprints/` set tracked in the repo so a fresh instance starts from
+  a known baseline. Decide its home and how the backup script and a new
+  instance relate to it (seed-from vs back-up-to). Relates to the
+  Blueprints & Schematics section below.
+
+## Game design
+
 - Add or create a datapack that [increases jungle sapling
     resources](https://www.youtube.com/watch?v=htbD9vbf9cw)
 

@@ -1,78 +1,105 @@
 ---
-title: Baritone Settings Documentation
+title: Settings
 ---
 
-This document provides a comprehensive reference for all Baritone settings, organized by capability.
+Baritone has a large pool of settings that control pathfinding,
+building, rendering, and everything in between. This page is a
+hub: each topic page below owns the settings that belong to its
+feature and discusses them in context. For the `#set` command
+itself (reading, writing, toggling, resetting, saving, loading),
+see [`set` in system](system#set-setting-settings).
 
-Settings can be modified using the `#set` command in-game, or by editing the `settings.txt` file in your `minecraft/baritone/` directory.
+## Where settings live
 
-## Quick Links
+Settings are stored in `minecraft/baritone/settings.txt`, one
+per line:
 
-- [Basic Permissions & Actions](settings_basic) - Core permissions for breaking, placing, sprinting, etc.
-- [Pathfinding & Movement](settings_pathing) - Pathfinding algorithm, movement types, and path optimization
-- [Mining](settings_mining) - Mining behavior, ore detection, and mining-related settings
-- [Building & Schematics](settings_building) - Schematic building, block substitution, and builder behavior
-- [Farming](settings_farming) - Crop farming and replanting settings
-- [Rendering & Visual](settings_rendering) - Visual rendering, colors, and display options
-- [Chat & Control](settings_chat) - Chat commands, prefixes, and control settings
-- [Performance & Caching](settings_performance) - Chunk caching, performance optimization, and memory management
-- [Elytra](settings_elytra) - Elytra flight and pathfinding settings
-- [Advanced/Internal](settings_advanced) - Advanced A* settings, internal optimizations, and debugging
-
-## Using Settings
-
-### In-Game Commands
-
-- `#set <setting>` - View current value of a setting
-- `#set <setting> <value>` - Set a setting to a value
-- `#set toggle <setting>` - Toggle a boolean setting
-- `#set reset <setting>` - Reset a setting to default
-- `#set reset all` - Reset all settings to defaults
-- `#set list` - List all settings
-- `#set modified` - List only modified settings
-- `#set save` - Save settings to disk
-- `#set load [filename]` - Load settings from file
-
-### Settings File Format
-
-Settings are saved in `minecraft/baritone/settings.txt` with the format:
 ```
 settingname value
 ```
 
 For example:
+
 ```
 allowBreak true
 blockBreakSpeed 6
 costHeuristic 3.563
 ```
 
-Comments can be added using `#` or `//`:
+Comments use `#` or `//`:
+
 ```
-# This is a comment
+# this is a comment
 allowBreak true
 ```
 
-## Setting Types
+`#set save` writes the current in-memory values to that file;
+`#set load [filename]` reads them back. The file is rewritten
+wholesale on save, so hand-edited comments survive only until
+the next `#set save`.
 
-- **Boolean**: `true` or `false`
-- **Integer**: Whole numbers (e.g., `5`, `100`)
-- **Double/Float**: Decimal numbers (e.g., `3.563`, `0.5`)
-- **String**: Text values (e.g., `"#", "schematic"`)
-- **List**: Comma-separated values (e.g., `dirt,cobblestone,stone`)
-- **Map**: Key-value mappings (e.g., `stone->cobblestone,andesite`)
-- **Color**: RGB color values or color names
-- **Rotation/Mirror**: Enum values (e.g., `NONE`, `CLOCKWISE_90`)
+## Where settings are documented
+
+Each topic page has a Settings Index near the top listing every
+setting it owns, alphabetical, linked to a section that
+discusses the setting in context rather than as an isolated
+definition.
+
+- [Pathfinding and Navigation](pathfinding) — movement rules, cost
+  tuning, avoidance, fall safety, timeouts, path shape, goal
+  behavior, A* internals.
+- [Building and Schematics](building) — schematic loading, block
+  substitution, builder pacing, scaffolding, map-art mode.
+- [Mining](mining) — ore scanning, legit mode, branch mining,
+  tunnel behavior, pickup.
+- [Farming](farming) — crop detection, replanting, harvest
+  passes, range centering.
+- [Following](following) — follow distance, target selection,
+  lost-target handling.
+- [Exploration](exploration) — chunk scanning, exploration
+  radius, explore filter.
+- [Elytra](elytra) — takeoff, firework pacing, nether
+  pathfinder cache, landing.
+- [Rendering](rendering) — what is drawn, colors, layers,
+  frustum culling.
+- [Waypoints](waypoints) — automatic bed/death waypoints.
+- [Chat and Control](chat) — prefix and chat-control settings,
+  output channels, censoring, debug output.
+- [Inventory](inventory) — moving items between inventory and
+  hotbar, pacing, anticheat-safe swaps.
+- [Tools and Item Handling](tools) — auto-tool, durability
+  protection, silk touch preference, right-click rate.
+- [Look and Rotation](look) — freeLook, block interactions,
+  smoothing, jitter, anticheat rotation sync.
+- [Chunk Caching](caching) — the 2-bit chunk cache, packer
+  queue, eviction, sync.
+
+## Setting types
+
+Values in `settings.txt` and `#set` are parsed as:
+
+- **Boolean** — `true` or `false`
+- **Integer** — whole numbers (e.g., `5`, `100`)
+- **Double / Float** — decimals (e.g., `3.563`, `0.5`)
+- **Long** — whole numbers, larger range (used for time values)
+- **String** — text (e.g., `"#"`, `schematic`)
+- **List** — comma-separated (e.g.,
+  `dirt,cobblestone,stone`)
+- **Map** — key-value mappings (e.g.,
+  `stone->cobblestone,andesite`)
+- **Color** — RGB values or color names
+- **Rotation / Mirror** — enum values (e.g., `NONE`,
+  `CLOCKWISE_90`)
+
+Setting names are case-insensitive when used via `#set`.
 
 ## Notes
 
-- Settings marked as `@JavaOnly` can only be modified programmatically via the API
-- Some settings have dependencies on others (e.g., `allowParkourAscend` requires `allowParkour`)
-- Default values are shown for each setting in the detailed documentation
-- Settings are case-insensitive when using commands
-
-## Statistics
-
-- **Total Settings**: 226
-- **User-Configurable**: 226
-- **Java-Only (API)**: 0
+- A few settings are marked `@JavaOnly` in the source and are
+  not exposed to `#set`; they can only be changed
+  programmatically via the API.
+- Some settings gate others — for example, `allowParkourAscend`
+  has no effect unless `allowParkour` is also on. The topic page
+  that owns each setting calls out these dependencies.
+- Default values are shown alongside each setting on its topic
+  page.
