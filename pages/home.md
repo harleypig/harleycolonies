@@ -10,6 +10,7 @@ HarleyColonies modpack and related resources.
 - [Resources](resources) - Useful links, tutorials, and external resources
 - [Style Guide](style) - Guide to creating custom Minecolonies styles
 - [Mods](mods) - Mod list and documentation
+- [Client-Side-Only Mods](client-side-mods) - Mods and resource packs that run client-side on any server
 
 ## Documentation
 
