@@ -1,0 +1,12 @@
+allowInventory true
+allowDiagonalDescend true
+allowDiagonalAscend true
+buildIgnoreExisting true
+allowParkour true
+allowParkourPlace true
+avoidance true
+maxFallHeightBucket 200
+primaryTimeoutMS 2000
+renderPathAsLine true
+replantNetherWart true
+buildInLayers true

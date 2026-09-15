@@ -1,0 +1,80 @@
+Set RAM to 8192
+
+Add to additional arguments:
+
+-XX:+UseZGC -XX:+ZGenerational -XX:+AlwaysPreTouch -XX:+DisableExplicitGC -XX:+UseDynamicNumberOfGCThreads -XX:+PerfDisableSharedMem
+
+baritone
+- 1.21.1 Neoforge: baritone-api-neoforge-1.11.2.jar
+
+## Resource Packs
+
+- Better Lanterns
+- CLEAN WATER
+- Clear Glass with Connected Textures!
+- Fast Better Grass
+- Fresh Animations
+- Fresh Animations: Extensions (should be loaded above Fresh Animations)
+- Fresh Animations: Objects
+- HD Font - Inconsolata
+- Lower Shield - Enhanced Combat Visibility
+- Low On Fire
+- Motschen's Better Leaves
+- Xray Ultimate
+
+## Mods
+
+### JourneyMap
+
+- JourneyMap
+- JourneyMap Integration
+- Compass to Map: JourneyMap & Explorer's Compass & Nature's Compass ...
+
+Needs to be verified
+
+- JourneyMap Extra InfoSlots
+
+### Just Enough Items (JEI)
+
+- JEI Enhancements
+- JEI Integration: Reborn
+- JER Integration
+- Just Enough Advancements (JEA)
+- Just Enough Beacons Reforged
+- Just Enough Breeding (JEBr)
+- Just Enough Crafting Tree (JECT)
+- Just Enough Effect Descriptions (JEED)
+- Just Enough Markers (JEM)
+- Just Enough Resources (JER)
+- Smithing Template Viewer for JEI/EMI
+
+### Tooltips
+
+- Durability Tooltip
+- Durability Viewer
+- Enchantment Descriptions
+- Food Effect Tooltips (Forge)
+- Held Item Tooltips
+- Mod Name Tooltip
+
+### Other Mods
+
+- Automatic ToolSwap
+- Better Ping Display
+- Catalogue
+- Compact Help Command
+- Ding (Forge)
+- Distant Horizons: A Level of Detail mod
+- Inventory Sorter
+- Just Zoom
+- AutoTorch [Auto Torch]
+- Forgematica
+- Sounds Be Gone!
+
+#### Issues
+
+- Configured (version mismatch with jei for Minecolonies Official)
+  - jei 19.21.2.313 (wants >=19.25.0.322)
+
+- Equipment Compare (version mismatch with curios for Minecolonies Official)
+  - curios 9.0.15+1.21.1 (wants >= 9.3.0)
