@@ -1,0 +1,11 @@
+allowSprint false
+allowInventory true
+ticksBetweenInventoryMoves 5
+inventoryMoveOnlyIfStationary true
+buildIgnoreBlocks spawner,torch,wall_torch
+buildValidSubstitutes dirt->grass_block
+allowParkour true
+farmMaxScanSize 30
+buildInLayers true
+layerHeight 2
+legitMine true
