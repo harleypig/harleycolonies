@@ -39,7 +39,10 @@ Key ones already documented by itzg and useful here:
 
 ## References
 
-- itzg packwiz docs: https://docker-minecraft-server.readthedocs.io/en/latest/mods-and-plugins/packwiz/
-- Packwiz: https://packwiz.infra.link/
+- [itzg packwiz docs][itzg-packwiz]
+- [Packwiz][packwiz]
 - Pendulum (CurseForge) and its MCP / Baritone API
 - Existing repo: `server/`, `bin/modpack-manager`, `WORKFLOW.md`
+
+[itzg-packwiz]: https://docker-minecraft-server.readthedocs.io/en/latest/mods-and-plugins/packwiz/
+[packwiz]: https://packwiz.infra.link/
